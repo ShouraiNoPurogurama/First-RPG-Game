@@ -1,16 +1,41 @@
 using UnityEngine;
 
-public class PlayerState : MonoBehaviour
+public class PlayerState
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected PlayerStateMachine StateMachine;
+    protected Player Player;
+
+    protected Rigidbody2D Rb;
+
+    protected float xInput;
+    private readonly string _animationBoolName;
+
+    protected float stateTimer;
+
+    public PlayerState(PlayerStateMachine stateMachine, Player player, string animationBoolName)
     {
-        
+        StateMachine = stateMachine;
+        Player = player;
+        _animationBoolName = animationBoolName;
     }
 
-    // Update is called once per frame
-    void Update()
+    public virtual void Enter()
     {
+        Player.Animator.SetBool(_animationBoolName, true);
+        Rb = Player.Rb;
+    }
+
+    public virtual void Update()
+    {
+        stateTimer -= Time.deltaTime;
         
+        xInput = Input.GetAxisRaw("Horizontal");
+        
+        Player.Animator.SetFloat("yVelocity", Rb.linearVelocity.y);
+    }
+
+    public virtual void Exit()
+    {
+        Player.Animator.SetBool(_animationBoolName, false);
     }
 }
