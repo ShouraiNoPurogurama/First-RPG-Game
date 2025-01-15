@@ -1,7 +1,7 @@
-
 public class PlayerAirState : PlayerState
 {
-    public PlayerAirState(PlayerStateMachine stateMachine, Player player, string animationBoolName) : base(stateMachine, player, animationBoolName)
+    public PlayerAirState(PlayerStateMachine stateMachine, Player player, string animationBoolName) : base(stateMachine, player,
+        animationBoolName)
     {
     }
 
@@ -13,9 +13,20 @@ public class PlayerAirState : PlayerState
     public override void Update()
     {
         base.Update();
+
+        if (Player.IsWallDetected())
+        {
+            StateMachine.ChangeState(Player.WallSlideState);
+        }
+        
         if (Player.IsGroundDetected())
         {
             StateMachine.ChangeState(Player.IdleState);
+        }
+
+        if (xInput != 0)
+        {
+            Player.SetVelocity(0.8f * xInput, Rb.linearVelocity.y);
         }
     }
 

@@ -17,6 +17,11 @@ public class PlayerJumpState : PlayerState
     {
         base.Update();
 
+        if (xInput != 0)
+        {
+            Player.SetVelocity(0.8f * xInput, Rb.linearVelocity.y);
+        }
+        
         if (Rb.linearVelocity.y < 0)
         {
             StateMachine.ChangeState(Player.AirState);

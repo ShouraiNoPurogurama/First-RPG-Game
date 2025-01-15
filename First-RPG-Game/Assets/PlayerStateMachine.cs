@@ -5,10 +5,10 @@ public class PlayerStateMachine
     /// <summary>
     /// Enter the state machine
     /// </summary>
-    /// <param name="startState">The state to be initialized</param>
-    public void Initialize(PlayerState startState)
+    /// <param name="state">The state to be initialized</param>
+    public void Initialize(PlayerState state)
     {
-        CurrentState = startState;
+        CurrentState = state;
         CurrentState.Enter();
     }
 

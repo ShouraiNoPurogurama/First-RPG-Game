@@ -10,7 +10,7 @@ public class PlayerDashState : PlayerState
     {
         base.Enter();
 
-        stateTimer = 1.5f;
+        StateTimer = Player.dashDuration;
         
     }
 
@@ -18,7 +18,9 @@ public class PlayerDashState : PlayerState
     {
         base.Update();
 
-        if (stateTimer <= 0)
+        Player.SetVelocity( Player.dashSpeed / Player.moveSpeed * Player.DashDir , 0);
+        
+        if (StateTimer <= 0)
         {
             StateMachine.ChangeState(Player.IdleState);
         }
@@ -27,5 +29,7 @@ public class PlayerDashState : PlayerState
     public override void Exit()
     {
         base.Exit();
+        
+        Player.SetVelocity(0, Rb.linearVelocity.y);
     }
 }
