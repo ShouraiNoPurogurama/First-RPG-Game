@@ -10,10 +10,10 @@ public class PlayerState
     protected float xInput;
     protected float yInput;
     private readonly string _animationBoolName;
-
     
     //Length of state animation
     protected float StateTimer;
+    protected bool TriggerCalled;
 
     public PlayerState(PlayerStateMachine stateMachine, Player player, string animationBoolName)
     {
@@ -26,6 +26,7 @@ public class PlayerState
     {
         Player.Animator.SetBool(_animationBoolName, true);
         Rb = Player.Rb;
+        TriggerCalled = false;
     }
 
     public virtual void Update()
@@ -41,5 +42,10 @@ public class PlayerState
     public virtual void Exit()
     {
         Player.Animator.SetBool(_animationBoolName, false);
+    }
+
+    public virtual void AnimationFinishTrigger()
+    {
+        TriggerCalled = true;
     }
 }

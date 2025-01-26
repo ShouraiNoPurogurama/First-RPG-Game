@@ -1,6 +1,9 @@
+using UnityEngine;
+
 public class PlayerIdleState : PlayerGroundedState
 {
-    public PlayerIdleState(PlayerStateMachine stateMachine, Player player, string animationBoolName) : base(stateMachine, player, animationBoolName)
+    public PlayerIdleState(PlayerStateMachine stateMachine, Player player, string animationBoolName) : base(stateMachine, player,
+        animationBoolName)
     {
     }
 
@@ -12,7 +15,8 @@ public class PlayerIdleState : PlayerGroundedState
     public override void Update()
     {
         base.Update();
-        if (xInput != 0)
+        if (xInput != 0 && (!Player.IsWallDetected() ||
+                            Player.IsWallDetected() && !Mathf.Approximately(xInput, Player.FacingDir)))
         {
             StateMachine.ChangeState(Player.MoveState);
         }

@@ -55,8 +55,10 @@ public class Player : MonoBehaviour
     public PlayerJumpState JumpState { get; private set; }
     public PlayerAirState AirState { get; private set; }
     public PlayerDashState DashState { get; private set; }
-
     public PlayerWallSlideState WallSlideState { get; private set; }
+    public PlayerWallJumpState WallJumpState { get; private set; }
+
+    public PlayerPrimaryAttack PrimaryAttack { get; set; }
 
     #endregion
 
@@ -77,9 +79,12 @@ public class Player : MonoBehaviour
         IdleState = new PlayerIdleState(StateMachine, this, "Idle");
         MoveState = new PlayerMoveState(StateMachine, this, "Move");
         JumpState = new PlayerJumpState(StateMachine, this, "Jump");
-        AirState = new PlayerAirState(StateMachine, this, "Air");
+        AirState = new PlayerAirState(StateMachine, this, "Jump");
         DashState = new PlayerDashState(StateMachine, this, "Dash");
         WallSlideState = new PlayerWallSlideState(StateMachine, this, "WallSlide");
+        WallJumpState = new PlayerWallJumpState(StateMachine, this, "Jump");
+        
+        PrimaryAttack = new PlayerPrimaryAttack(StateMachine, this, "Attack");
     }
 
     private void Start()
@@ -161,4 +166,6 @@ public class Player : MonoBehaviour
             StateMachine.ChangeState(DashState);
         }
     }
+
+    public void AnimationTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
 }
