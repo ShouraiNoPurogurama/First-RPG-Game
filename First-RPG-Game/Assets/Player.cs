@@ -1,12 +1,14 @@
 using System;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Player : MonoBehaviour
 {
     #region Consts
 
-    private readonly Type[] canDashStates = new []
+    private readonly Type[] canDashStates = new[]
     {
         typeof(PlayerIdleState),
         typeof(PlayerMoveState),
@@ -14,8 +16,19 @@ public class Player : MonoBehaviour
         typeof(PlayerAirState),
         typeof(PlayerWallSlideState),
     };
+
     #endregion
-    
+
+    public Vector2[] attackMovements = 
+    {
+        new Vector2(3f, 2f),
+        new Vector2(1f, 3f),
+        new Vector2(4f, 5f)
+    };
+
+
+    public bool IsBusy { get; private set; }
+
     [Header("Move info")]
     public float moveSpeed = 6;
 
@@ -58,7 +71,7 @@ public class Player : MonoBehaviour
     public PlayerWallSlideState WallSlideState { get; private set; }
     public PlayerWallJumpState WallJumpState { get; private set; }
 
-    public PlayerPrimaryAttack PrimaryAttack { get; set; }
+    public PlayerPrimaryAttackState PrimaryAttackState { get; set; }
 
     #endregion
 
@@ -83,8 +96,8 @@ public class Player : MonoBehaviour
         DashState = new PlayerDashState(StateMachine, this, "Dash");
         WallSlideState = new PlayerWallSlideState(StateMachine, this, "WallSlide");
         WallJumpState = new PlayerWallJumpState(StateMachine, this, "Jump");
-        
-        PrimaryAttack = new PlayerPrimaryAttack(StateMachine, this, "Attack");
+
+        PrimaryAttackState = new PlayerPrimaryAttackState(StateMachine, this, "Attack");
     }
 
     private void Start()
@@ -100,6 +113,15 @@ public class Player : MonoBehaviour
         CheckForDashInput();
     }
 
+    public IEnumerator BusyFor(float seconds)
+    {
+        IsBusy = true;
+
+        yield return new WaitForSeconds(seconds);
+
+        IsBusy = false;
+    }
+
     /// <summary>
     /// Called by PlayerMoveState to make movement for Player
     /// </summary>
@@ -111,6 +133,13 @@ public class Player : MonoBehaviour
         Rb.linearVelocity = new Vector2(xVelocity * moveSpeed, yVelocity);
         FlipController(xVelocity);
     }
+
+    public void ZeroVelocity()
+    {
+        Rb.linearVelocity = new Vector2(0, 0);
+    }
+
+    #region Collisions
 
     public bool IsGroundDetected()
         => Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
@@ -125,6 +154,8 @@ public class Player : MonoBehaviour
         Gizmos.DrawLine(wallCheck.position,
             new Vector3(groundCheck.position.x + wallCheckDistance * FacingDir, groundCheck.position.y));
     }
+
+    #endregion
 
     public void FlipController(float xVelocity)
     {
@@ -163,6 +194,7 @@ public class Player : MonoBehaviour
             {
                 DashDir = forcedDirection ?? FacingDir;
             }
+
             StateMachine.ChangeState(DashState);
         }
     }
