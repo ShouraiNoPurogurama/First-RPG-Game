@@ -8,6 +8,7 @@ public class EnemyStateMachine
         CurrentState.Enter();
     }
 
+    // ReSharper disable Unity.PerformanceAnalysis
     public void ChangeState(EnemyState newState)
     {
         CurrentState.Exit();

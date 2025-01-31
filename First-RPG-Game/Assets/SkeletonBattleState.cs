@@ -5,8 +5,9 @@ public class SkeletonBattleState : EnemyState
     private EnemySkeleton _skeleton;
     private Transform _player;
     private int _moveDir;
-    
-    public SkeletonBattleState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, EnemySkeleton skeleton) : base(enemyBase, stateMachine, animBoolName)
+
+    public SkeletonBattleState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, EnemySkeleton skeleton) :
+        base(enemyBase, stateMachine, animBoolName)
     {
         _skeleton = skeleton;
     }
@@ -15,8 +16,6 @@ public class SkeletonBattleState : EnemyState
     {
         base.Enter();
 
-        Debug.Log(("Im in battle state"));
-        
         _player = GameObject.Find("Player").transform;
     }
 
@@ -26,18 +25,26 @@ public class SkeletonBattleState : EnemyState
 
         if (_skeleton.IsPlayerDetected())
         {
-            if (_skeleton.IsPlayerDetected().distance < _skeleton.attackDistance)
+            StateTimer = _skeleton.battleTime;
+            if (_skeleton.IsPlayerDetected().distance < _skeleton.attackDistance && CanAttack())
             {
-                Debug.Log("I ATTACK");
-                _skeleton.SetZeroVelocity();
-                return;
+                StateMachine.ChangeState(_skeleton.AttackState);
+            }
+        }
+        else
+        {
+            if (StateTimer < 0 || Vector2.Distance(_player.transform.position, _skeleton.transform.position) > 7)
+            {
+                StateMachine.ChangeState(_skeleton.IdleState);
             }
         }
         
+
         if (_player.position.x > _skeleton.transform.position.x)
         {
             _moveDir = 1;
-        } else if (_player.position.x < _skeleton.transform.position.x)
+        }
+        else if (_player.position.x < _skeleton.transform.position.x)
         {
             _moveDir = -1;
         }
@@ -48,5 +55,16 @@ public class SkeletonBattleState : EnemyState
     public override void Exit()
     {
         base.Exit();
+    }
+
+    private bool CanAttack()
+    {
+        if (Time.time >= _skeleton.lastTimeAttacked + _skeleton.attackCooldown)
+        {
+            _skeleton.lastTimeAttacked = Time.time;
+            return true;
+        }
+
+        return false;
     }
 }

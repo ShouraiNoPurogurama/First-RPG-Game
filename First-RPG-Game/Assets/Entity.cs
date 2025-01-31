@@ -7,8 +7,10 @@ public class Entity : MonoBehaviour
 
 
     [Header("Collision info")]
+    public Transform attackCheck;
+    public float attackCheckRadius;
+    
     [SerializeField] protected Transform groundCheck;
-
     [SerializeField] protected float groundCheckDistance;
     [SerializeField] protected LayerMask whatIsGround;
     [SerializeField] protected Transform wallCheck;
@@ -35,6 +37,11 @@ public class Entity : MonoBehaviour
     {
     }
 
+    public virtual void Damage()
+    {
+        Debug.Log(gameObject.name + " was damaged!");
+    }
+    
     #region Collisions
 
     public virtual bool IsGroundDetected()
@@ -49,6 +56,8 @@ public class Entity : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawLine(wallCheck.position,
             new Vector3(groundCheck.position.x + wallCheckDistance * FacingDir, wallCheck.position.y));
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(attackCheck.position, attackCheckRadius);
     }
 
     #endregion
