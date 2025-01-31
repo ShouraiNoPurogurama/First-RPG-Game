@@ -1,15 +1,22 @@
+using System.Collections;
 using UnityEngine;
 
 public class Entity : MonoBehaviour
 {
-    public int FacingDir { get; protected set; } = 1;
+    public int FacingDir { get; private set; } = 1;
     private bool _isFacingRight = true;
 
+    [Header("Knock back info")]
+    [SerializeField] protected Vector2 knockBackDirection;
+
+    [SerializeField] protected float knockBackDuration;
+    protected bool IsKnocked;
 
     [Header("Collision info")]
     public Transform attackCheck;
+
     public float attackCheckRadius;
-    
+
     [SerializeField] protected Transform groundCheck;
     [SerializeField] protected float groundCheckDistance;
     [SerializeField] protected LayerMask whatIsGround;
@@ -20,6 +27,7 @@ public class Entity : MonoBehaviour
 
     public Animator Animator { get; private set; }
     public Rigidbody2D Rb { get; private set; }
+    public EntityFX FX { get; private set; }
 
     #endregion
 
@@ -31,6 +39,7 @@ public class Entity : MonoBehaviour
     {
         Animator = GetComponentInChildren<Animator>();
         Rb = GetComponent<Rigidbody2D>();
+        FX = GetComponent<EntityFX>();
     }
 
     protected virtual void Update()
@@ -39,9 +48,22 @@ public class Entity : MonoBehaviour
 
     public virtual void Damage()
     {
+        FX.StartCoroutine("FlashFX");
+        StartCoroutine(nameof(HitKnockBack));
         Debug.Log(gameObject.name + " was damaged!");
     }
-    
+
+    protected virtual IEnumerator HitKnockBack()
+    {
+        IsKnocked = true;
+
+        Rb.linearVelocity = new Vector2(knockBackDirection.x * -FacingDir, knockBackDirection.y);
+
+        yield return new WaitForSeconds(knockBackDuration);
+
+        IsKnocked = false;
+    }
+
     #region Collisions
 
     public virtual bool IsGroundDetected()
@@ -49,7 +71,7 @@ public class Entity : MonoBehaviour
 
     public virtual bool IsWallDetected()
         => Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDir, wallCheckDistance, whatIsGround);
-    
+
     protected virtual void OnDrawGizmos()
     {
         Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
@@ -84,9 +106,11 @@ public class Entity : MonoBehaviour
     }
 
     #endregion
-    
+
     public void SetZeroVelocity()
     {
+        if (IsKnocked) 
+            return;
         Rb.linearVelocity = new Vector2(0, 0);
     }
 
