@@ -5,6 +5,7 @@ public class Entity : MonoBehaviour
     public int FacingDir { get; protected set; } = 1;
     private bool _isFacingRight = true;
 
+
     [Header("Collision info")]
     [SerializeField] protected Transform groundCheck;
 
@@ -41,20 +42,20 @@ public class Entity : MonoBehaviour
 
     public virtual bool IsWallDetected()
         => Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDir, wallCheckDistance, whatIsGround);
-
+    
     protected virtual void OnDrawGizmos()
     {
         Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
         Gizmos.color = Color.blue;
         Gizmos.DrawLine(wallCheck.position,
-            new Vector3(groundCheck.position.x + wallCheckDistance * FacingDir, groundCheck.position.y));
+            new Vector3(groundCheck.position.x + wallCheckDistance * FacingDir, wallCheck.position.y));
     }
 
     #endregion
 
     #region Flip
 
-    protected void FlipController(float xVelocity)
+    protected virtual void FlipController(float xVelocity)
     {
         if (xVelocity > 0 && !_isFacingRight)
         {
@@ -66,7 +67,7 @@ public class Entity : MonoBehaviour
         }
     }
 
-    private void Flip()
+    public virtual void Flip()
     {
         FacingDir *= -1;
         _isFacingRight = !_isFacingRight;
@@ -74,4 +75,22 @@ public class Entity : MonoBehaviour
     }
 
     #endregion
+    
+    public void SetZeroVelocity()
+    {
+        Rb.linearVelocity = new Vector2(0, 0);
+    }
+
+
+    /// <summary>
+    /// Called by PlayerMoveState to make movement for Player
+    /// </summary>
+    /// <remarks><see cref="Entity.FacingDir"/> can only be change through this message.</remarks>
+    /// <param name="xVelocity">Velocity for x axis</param>
+    /// <param name="yVelocity">Velocity for y axis</param>
+    public void SetVelocity(float xVelocity, float yVelocity)
+    {
+        Rb.linearVelocity = new Vector2(xVelocity, yVelocity);
+        FlipController(xVelocity);
+    }
 }

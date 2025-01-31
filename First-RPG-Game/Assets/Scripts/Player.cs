@@ -26,14 +26,13 @@ public class Player : Entity
         new Vector2(4f, 5f)
     };
 
-
-    public bool IsBusy { get; private set; }
-
     [Header("Move info")]
     public float moveSpeed = 6;
 
     public float jumpForce = 12;
 
+    public bool IsBusy { get; private set; }
+    
     [Header("Dash info")]
     [SerializeField] private float dashCooldown = 2;
 
@@ -107,24 +106,6 @@ public class Player : Entity
 
         IsBusy = false;
     }
-
-    /// <summary>
-    /// Called by PlayerMoveState to make movement for Player
-    /// </summary>
-    /// <remarks><see cref="Entity.FacingDir"/> can only be change through this message.</remarks>
-    /// <param name="xVelocity">Velocity for x axis</param>
-    /// <param name="yVelocity">Velocity for y axis</param>
-    public void SetVelocity(float xVelocity, float yVelocity)
-    {
-        Rb.linearVelocity = new Vector2(xVelocity * moveSpeed, yVelocity);
-        FlipController(xVelocity);
-    }
-
-    public void ZeroVelocity()
-    {
-        Rb.linearVelocity = new Vector2(0, 0);
-    }
-
 
     public void CheckForDashInput(float? forcedDirection = null)
     {

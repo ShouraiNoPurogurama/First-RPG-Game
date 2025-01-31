@@ -18,7 +18,7 @@ public class PlayerDashState : PlayerState
     {
         base.Update();
 
-        Player.SetVelocity( Player.dashSpeed / Player.moveSpeed * Player.DashDir , 0);
+        Player.SetVelocity( Player.dashSpeed * Player.DashDir , 0);
         
         if (StateTimer <= 0)
         {

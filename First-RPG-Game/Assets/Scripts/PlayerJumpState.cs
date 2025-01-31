@@ -19,7 +19,7 @@ public class PlayerJumpState : PlayerState
 
         if (xInput != 0)
         {
-            Player.SetVelocity(0.8f * xInput, Rb.linearVelocity.y);
+            Player.SetVelocity(0.8f * xInput * Player.moveSpeed, Rb.linearVelocity.y);
         }
         
         if (Rb.linearVelocity.y < 0)

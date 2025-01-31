@@ -3,32 +3,34 @@ using UnityEngine;
 public class EnemyState
 {
     protected EnemyStateMachine StateMachine;
-    protected Enemy Enemy;
+    protected Enemy EnemyBase;
+    protected Rigidbody2D Rb;
 
     protected bool TriggerCalled;
-    private string _animBoolName;
-    private float _stateTimer;
+    protected string AnimBoolName;
+    protected float StateTimer;
 
-    public EnemyState(Enemy enemy, bool triggerCalled, string animBoolName)
+    public EnemyState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName)
     {
-        Enemy = enemy;
-        this.TriggerCalled = triggerCalled;
-        this._animBoolName = animBoolName;
+        StateMachine = stateMachine;
+        EnemyBase = enemyBase;
+        AnimBoolName = animBoolName;
     }
 
     public virtual void Enter()
     {
         TriggerCalled = false;
-        Enemy.Animator.SetBool(_animBoolName, true);
+        Rb = EnemyBase.Rb;
+        EnemyBase.Animator.SetBool(AnimBoolName, true);
     }
 
     public virtual void Update()
     {
-        _stateTimer -= Time.deltaTime;
+        StateTimer -= Time.deltaTime;
     }
 
     public virtual void Exit()
     {
-        Enemy.Animator.SetBool(_animBoolName, false);
+        EnemyBase.Animator.SetBool(AnimBoolName, false);
     }
 }

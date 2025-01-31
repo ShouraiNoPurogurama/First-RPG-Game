@@ -43,7 +43,7 @@ public class PlayerPrimaryAttackState : PlayerState
 
         if (StateTimer < 0)
         {
-            Player.ZeroVelocity();
+            Player.SetZeroVelocity();
         }
 
         //Change state when player trigger is called (animation ends)

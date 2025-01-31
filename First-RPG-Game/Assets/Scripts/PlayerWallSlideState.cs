@@ -29,7 +29,7 @@ public class PlayerWallSlideState : PlayerState
         
         if (xInput != 0 && !Mathf.Approximately(Player.FacingDir, xInput))
         {
-            Player.SetVelocity(xInput, Rb.linearVelocity.y);
+            Player.SetVelocity(xInput * Player.moveSpeed, Rb.linearVelocity.y);
             StateMachine.ChangeState(Player.AirState);
         }
 
