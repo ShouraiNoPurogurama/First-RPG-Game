@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Linq;
+using Skills;
 using UnityEngine;
 
 namespace MainCharacter
@@ -9,7 +10,7 @@ namespace MainCharacter
     {
         #region Consts
 
-        private readonly Type[] canDashStates = new[]
+        private readonly Type[] _canDashStates = 
         {
             typeof(PlayerIdleState),
             typeof(PlayerMoveState),
@@ -19,6 +20,8 @@ namespace MainCharacter
         };
 
         #endregion
+
+        #region Player attack
 
         [Header("Attack details")]
         public Vector2[] attackMovements =
@@ -30,20 +33,27 @@ namespace MainCharacter
 
         public float counterAttackDuration = .2f;
 
+        #endregion
+
+        #region Player move
+
         [Header("Move info")]
         public float moveSpeed = 6;
 
         public float jumpForce = 12;
 
-        public bool IsBusy { get; private set; }
-    
-        [Header("Dash info")]
-        [SerializeField] private float dashCooldown = 2;
 
-        private float _dashUsageTimer;
+        #endregion
+        public bool IsBusy { get; private set; }
+
+        #region Player Dash
+
+        [Header("Dash info")]
         public float dashSpeed = 24;
         public float dashDuration = .1f;
         public float DashDir { get; private set; }
+
+        #endregion
 
 
         #region States
@@ -58,15 +68,19 @@ namespace MainCharacter
         public PlayerWallJumpState WallJumpState { get; private set; }
         public PlayerPrimaryAttackState PrimaryAttackState { get; private set; }
         public PlayerCounterAttackState CounterAttackState { get; private set; }
+        public PlayerAimSwordState AimSwordState { get; private set; }
+        public PlayerCatchSwordState CatchSwordState { get; private set; }
 
         #endregion
 
-        #region Skill Cooldown
+        // #region Skill Cooldown
+        //
+        // public float Timer;
+        // public float Cooldown;
+        //
+        // #endregion
 
-        public float Timer;
-        public float Cooldown;
-
-        #endregion
+        public SkillManager Skill { get; private set; } 
 
         /// <summary>
         /// Initialize player states when first awoke
@@ -86,7 +100,8 @@ namespace MainCharacter
 
             PrimaryAttackState = new PlayerPrimaryAttackState(StateMachine, this, "Attack");
             CounterAttackState = new PlayerCounterAttackState(StateMachine, this, "CounterAttack");
-            
+            AimSwordState = new PlayerAimSwordState(StateMachine, this, "AimSword");
+            CatchSwordState = new PlayerCatchSwordState(StateMachine, this, "CatchSword");
             
         }
 
@@ -95,6 +110,8 @@ namespace MainCharacter
             base.Start();
 
             StateMachine.Initialize(IdleState);
+
+            Skill = SkillManager.Instance;
         }
 
         protected override void Update()
@@ -116,16 +133,13 @@ namespace MainCharacter
 
         public void CheckForDashInput(float? forcedDirection = null)
         {
-            if (!canDashStates.Contains(StateMachine.CurrentState.GetType()))
+            if (!_canDashStates.Contains(StateMachine.CurrentState.GetType()))
             {
                 return;
             }
-
-            _dashUsageTimer -= Time.deltaTime;
-
-            if (Input.GetKeyDown(KeyCode.LeftShift) && _dashUsageTimer <= 0)
+            
+            if (Input.GetKeyDown(KeyCode.LeftShift) && SkillManager.Instance.Dash.CanUseSkill())
             {
-                _dashUsageTimer = dashCooldown;
                 DashDir = Input.GetAxisRaw("Horizontal");
 
                 if (DashDir == 0)

@@ -1,3 +1,5 @@
+using Skills;
+
 namespace MainCharacter
 {
     public class PlayerDashState : PlayerState
@@ -10,6 +12,8 @@ namespace MainCharacter
         {
             base.Enter();
 
+            Player.Skill.Clone.CreateClone(Player.transform);
+            
             StateTimer = Player.dashDuration;
         
         }

@@ -18,7 +18,8 @@ namespace Enemies.Skeleton
         {
             base.Enter();
 
-            _player = GameObject.Find("Player").transform;
+            // _player = GameObject.Find("Player").transform;
+            _player = PlayerManager.Instance.player.transform;
         }
 
         public override void Update()

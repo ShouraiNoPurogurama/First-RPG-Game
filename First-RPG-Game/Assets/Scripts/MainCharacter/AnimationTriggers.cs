@@ -1,4 +1,5 @@
 using Enemies;
+using Skills;
 using UnityEngine;
 
 namespace MainCharacter
@@ -23,6 +24,11 @@ namespace MainCharacter
                     hit.GetComponent<Enemy>().Damage();
                 }
             }
+        }
+
+        private void ThrowSword()
+        {
+            SkillManager.Instance.Sword.CreateSword();
         }
     }
 }
