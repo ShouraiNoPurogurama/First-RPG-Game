@@ -8,6 +8,7 @@ namespace MainCharacter
 {
     public class Player : Entity
     {
+        
         #region Consts
 
         private readonly Type[] _canDashStates = 
@@ -42,9 +43,9 @@ namespace MainCharacter
 
         public float jumpForce = 12;
 
+        public float swordReturnImpact = 8;
 
         #endregion
-        public bool IsBusy { get; private set; }
 
         #region Player Dash
 
@@ -81,6 +82,7 @@ namespace MainCharacter
         // #endregion
 
         public SkillManager Skill { get; private set; } 
+        public GameObject ThrownSword { get; private set; } 
 
         /// <summary>
         /// Initialize player states when first awoke
@@ -122,13 +124,15 @@ namespace MainCharacter
             CheckForDashInput();
         }
 
-        public IEnumerator BusyFor(float seconds)
+        public void AssignNewSword(GameObject newSword)
         {
-            IsBusy = true;
+            ThrownSword = newSword;
+        }
 
-            yield return new WaitForSeconds(seconds);
-
-            IsBusy = false;
+        public void CatchSword()
+        {
+            StateMachine.ChangeState(CatchSwordState);
+            Destroy(ThrownSword);
         }
 
         public void CheckForDashInput(float? forcedDirection = null)

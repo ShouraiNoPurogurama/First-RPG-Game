@@ -4,10 +4,11 @@ namespace Enemies.Skeleton
 {
     public class SkeletonGroundedState : EnemyState
     {
-        protected EnemySkeleton Skeleton;
+        protected readonly EnemySkeleton Skeleton;
 
-        protected Transform Player;
-        public SkeletonGroundedState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, EnemySkeleton skeleton) : base(enemyBase, stateMachine, animBoolName)
+        private Transform _player;
+
+        protected SkeletonGroundedState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, EnemySkeleton skeleton) : base(enemyBase, stateMachine, animBoolName)
         {
             Skeleton = skeleton;
         }
@@ -16,14 +17,14 @@ namespace Enemies.Skeleton
         {
             base.Enter();
 
-            Player = GameObject.Find("Player").transform;
+            _player = GameObject.Find("Player").transform;
         }
 
         public override void Update()
         {
             base.Update();
             
-            if (Skeleton.IsPlayerDetected() || Vector2.Distance(Skeleton.transform.position, Player.position) < 2)
+            if (Skeleton.IsPlayerDetected() || Vector2.Distance(Skeleton.transform.position, _player.position) < 2)
             {
                 StateMachine.ChangeState(Skeleton.BattleState);
             }

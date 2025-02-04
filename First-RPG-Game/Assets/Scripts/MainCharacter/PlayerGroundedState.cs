@@ -1,3 +1,4 @@
+using Skills.SkillControllers;
 using UnityEngine;
 
 namespace MainCharacter
@@ -17,7 +18,7 @@ namespace MainCharacter
         {
             base.Update();
 
-            if (Input.GetKeyDown(KeyCode.Mouse1))
+            if (Input.GetKeyDown(KeyCode.Mouse1) && HasNoThrownSword())
             {
                 StateMachine.ChangeState(Player.AimSwordState);
             }
@@ -46,6 +47,18 @@ namespace MainCharacter
         public override void Exit()
         {
             base.Exit();
+        }
+
+        private bool HasNoThrownSword()
+        {
+            if (!Player.ThrownSword)
+            {
+                return true;
+            }
+
+            Player.ThrownSword.GetComponent<SwordSkillController>().ReturnSword();
+
+            return false;
         }
     }
 }

@@ -10,7 +10,7 @@ namespace Skills
         private float _cooldownTimer;
         protected Player Player;
 
-        private void Start()
+        protected virtual void Start()
         {
             Player = PlayerManager.Instance.player;
         }
@@ -29,7 +29,7 @@ namespace Skills
                 return true;
             }
         
-            Debug.Log("SKill is on cooldown");
+            Debug.Log("Skill is on cooldown");
             return false;
         }
 

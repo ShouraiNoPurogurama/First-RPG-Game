@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace Enemies.Skeleton
 {
     public class SkeletonMoveState : SkeletonGroundedState
@@ -17,7 +19,7 @@ namespace Enemies.Skeleton
         
             Skeleton.SetVelocity(Skeleton.FacingDir * Skeleton.moveSpeed, Skeleton.Rb.linearVelocity.y);
 
-            if (Skeleton.IsWallDetected() || !Skeleton.IsGroundDetected())
+            if (!Skeleton.IsBusy && (Skeleton.IsWallDetected() || !Skeleton.IsGroundDetected()))
             {
                 Skeleton.Flip();
             }
