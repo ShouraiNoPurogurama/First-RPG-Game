@@ -9,7 +9,7 @@ namespace Enemies.Skeleton
         public SkeletonBattleState BattleState { get; private set; }
         public SkeletonAttackState AttackState { get; private set; }
         public SkeletonStunnedState StunnedState { get; private set; }
-    
+
         protected override void Awake()
         {
             base.Awake();
@@ -19,7 +19,7 @@ namespace Enemies.Skeleton
             BattleState = new SkeletonBattleState(this, StateMachine, "Move", this);
             AttackState = new SkeletonAttackState(this, StateMachine, "Attack", this);
             StunnedState = new SkeletonStunnedState(this, StateMachine, "Stunned", this);
-            
+
             counterImage.SetActive(false);
         }
 
@@ -43,6 +43,16 @@ namespace Enemies.Skeleton
             }
 
             return false;
+        }
+
+        public override void Flip()
+        {
+            if (IsBusy)
+                return;
+            
+            base.Flip();
+            
+            StartCoroutine("BusyFor", .4f);
         }
     }
 }

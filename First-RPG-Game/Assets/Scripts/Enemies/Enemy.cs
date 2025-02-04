@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace Enemies
@@ -15,13 +16,12 @@ namespace Enemies
 
         [Header("Move info")]
         public float moveSpeed;
-
         public float idleTime;
         public float battleTime;
+        private float _defaultMoveSpeed;
 
         [Header("Attack info")]
         public float attackDistance;
-
         public float attackCooldown;
         [HideInInspector] public float lastTimeAttacked;
 
@@ -31,6 +31,8 @@ namespace Enemies
         {
             base.Awake();
             StateMachine = new EnemyStateMachine();
+
+            _defaultMoveSpeed = moveSpeed;
         }
 
         protected override void Start()
@@ -45,6 +47,31 @@ namespace Enemies
             StateMachine.CurrentState.Update();
         }
 
+        public virtual void FreezeTime(bool timeFrozen)
+        {
+            if (timeFrozen)
+            {
+                moveSpeed = 0;
+                Animator.speed = 0;
+            }
+            else
+            {
+                moveSpeed = _defaultMoveSpeed;
+                Animator.speed = 1;
+            }
+        }
+
+        protected virtual IEnumerator FreeTimerFor(float seconds)
+        {
+            FreezeTime(true);
+            
+            yield return new WaitForSeconds(seconds);
+
+            FreezeTime(false);
+        }
+        
+        #region Counter attack window
+
         public virtual void OpenCounterAttackWindow()
         {
             CanBeStunned = true;
@@ -56,6 +83,8 @@ namespace Enemies
             CanBeStunned = false;
             counterImage.SetActive(false);
         }
+
+        #endregion
 
         public virtual bool IsCanBeStunned()
         {

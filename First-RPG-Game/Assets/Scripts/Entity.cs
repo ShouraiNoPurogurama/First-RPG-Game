@@ -5,12 +5,13 @@ public class Entity : MonoBehaviour
 {
     public int FacingDir { get; private set; } = 1;
     private bool _isFacingRight = true;
+    public bool IsBusy { get; private set; }
 
     [Header("Knock back info")]
     [SerializeField] protected Vector2 knockBackDirection;
 
     [SerializeField] protected float knockBackDuration;
-    protected bool IsKnocked;
+    private bool _isKnocked;
 
     [Header("Collision info")]
     public Transform attackCheck;
@@ -55,13 +56,13 @@ public class Entity : MonoBehaviour
 
     protected virtual IEnumerator HitKnockBack()
     {
-        IsKnocked = true;
+        _isKnocked = true;
 
         Rb.linearVelocity = new Vector2(knockBackDirection.x * -FacingDir, knockBackDirection.y);
 
         yield return new WaitForSeconds(knockBackDuration);
 
-        IsKnocked = false;
+        _isKnocked = false;
     }
 
     #region Collisions
@@ -88,6 +89,8 @@ public class Entity : MonoBehaviour
 
     protected virtual void FlipController(float xVelocity)
     {
+        if(IsBusy) 
+            return;
         if (xVelocity > 0 && !_isFacingRight)
         {
             Flip();
@@ -109,7 +112,7 @@ public class Entity : MonoBehaviour
 
     public void SetZeroVelocity()
     {
-        if (IsKnocked) 
+        if (_isKnocked) 
             return;
         Rb.linearVelocity = new Vector2(0, 0);
     }
@@ -121,9 +124,18 @@ public class Entity : MonoBehaviour
     /// <remarks><see cref="Entity.FacingDir"/> can only be change through this message.</remarks>
     /// <param name="xVelocity">Velocity for x axis</param>
     /// <param name="yVelocity">Velocity for y axis</param>
-    public void SetVelocity(float xVelocity, float yVelocity)
+    public virtual void SetVelocity(float xVelocity, float yVelocity)
     {
         Rb.linearVelocity = new Vector2(xVelocity, yVelocity);
         FlipController(xVelocity);
+    }
+    
+    public IEnumerator BusyFor(float seconds)
+    {
+        IsBusy = true;
+
+        yield return new WaitForSeconds(seconds);
+
+        IsBusy = false;
     }
 }
