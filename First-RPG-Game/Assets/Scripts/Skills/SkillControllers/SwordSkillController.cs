@@ -13,7 +13,7 @@ namespace Skills.SkillControllers
         private Player _player;
         private bool _canRotate = true;
         private bool _isReturning;
-        [SerializeField] private float returnSpeed = 15;
+        private float _returnSpeed = 15;
 
         private float _freezeTimeDuration;
 
@@ -26,7 +26,7 @@ namespace Skills.SkillControllers
         private int _amountOfBounce;
         private int _targetIndex;
         private List<Transform> _enemyTargets;
-        [SerializeField] private float bounceSpeed;
+        private float _bounceSpeed;
 
         [Header("Spin info")]
         private float _maxTravelDistance;
@@ -47,9 +47,10 @@ namespace Skills.SkillControllers
             _circleCollider2D = GetComponent<CircleCollider2D>();
         }
 
-        public void SetupSword(Vector2 dir, float gravityScale, Player player, float freezeTimeDuration)
+        public void SetupSword(Vector2 dir, float gravityScale, Player player, float freezeTimeDuration, float returnSpeed)
         {
             _player = player;
+            _returnSpeed = returnSpeed;
 
             _rb.linearVelocity = dir;
             _rb.gravityScale = gravityScale;
@@ -63,11 +64,13 @@ namespace Skills.SkillControllers
             //Returns the min value if the given value is less than the min value.
             //Returns the max value if the given value is greater than the max value.
             _spinDirection = Mathf.Clamp(_rb.linearVelocity.x, -1, 1);
-
+            
+            Invoke("DestroyMe", 7);
         }
 
-        public void SetupBounce(bool isBouncing, int amountOfBounce)
+        public void SetupBounce(bool isBouncing, int amountOfBounce, float bounceSpeed)
         {
+            _bounceSpeed = bounceSpeed;
             _isBouncing = isBouncing;
             _amountOfBounce = amountOfBounce;
             _enemyTargets = new List<Transform>();
@@ -116,11 +119,11 @@ namespace Skills.SkillControllers
             Enemy targetEnemy = targetTransform.GetComponent<Enemy>();
 
             transform.position =
-                Vector2.MoveTowards(transform.position, targetTransform.position, bounceSpeed * Time.deltaTime);
+                Vector2.MoveTowards(transform.position, targetTransform.position, _bounceSpeed * Time.deltaTime);
 
             if (Vector2.Distance(transform.position, targetTransform.position) < 0.1f)
             {
-                targetEnemy.Damage();
+                SwordSkillDamage(targetEnemy);
 
                 _targetIndex++;
                 _amountOfBounce--;
@@ -136,6 +139,12 @@ namespace Skills.SkillControllers
                     _targetIndex = 0;
                 }
             }
+        }
+
+        private void SwordSkillDamage(Enemy targetEnemy)
+        {
+            targetEnemy.Damage();
+            targetEnemy.StartCoroutine("FreeTimerFor", 1f);
         }
 
         private void SpinningLogic()
@@ -174,7 +183,7 @@ namespace Skills.SkillControllers
                         var enemy = hit.GetComponent<Enemy>();
                         if (enemy is not null)
                         {
-                            enemy.Damage();
+                            SwordSkillDamage(enemy);
                         }
                     }
                 }
@@ -187,7 +196,7 @@ namespace Skills.SkillControllers
             {
                 transform.position =
                     Vector2.MoveTowards(transform.position, _player.transform.position,
-                        1.5f * returnSpeed *
+                        1.5f * _returnSpeed *
                         Time.deltaTime); //maxDistanceDelta: maximum distance the object can move in one frame (one Update() cycle)
 
                 if (Vector2.Distance(transform.position, _player.transform.position) < 1)
@@ -218,9 +227,7 @@ namespace Skills.SkillControllers
 
             if (enemy is not null)
             {
-                enemy.Damage();
-                
-                enemy.StartCoroutine("FreeTimerFor", _freezeTimeDuration);
+                SwordSkillDamage(enemy);
                 
                 SetupTargetForBouncing();
             }
@@ -273,6 +280,11 @@ namespace Skills.SkillControllers
 
             _animator.SetBool("Rotation", false);
             transform.parent = collision.transform;
+        }
+
+        private void DestroyMe()
+        {
+            Destroy(gameObject);
         }
     }
 }

@@ -52,7 +52,7 @@ namespace Enemies.Skeleton
             
             base.Flip();
             
-            StartCoroutine("BusyFor", .4f);
+            StartCoroutine("BusyFor", .3f);
         }
     }
 }

@@ -4,15 +4,18 @@ namespace MainCharacter
 {
     public class PlayerAimSwordState : PlayerState
     {
+        private readonly Camera _camera;
+
         public PlayerAimSwordState(PlayerStateMachine stateMachine, Player player, string animationBoolName) : base(stateMachine,
             player, animationBoolName)
         {
+            _camera = Camera.main;
         }
 
         public override void Enter()
         {
             base.Enter();
-
+            
             Player.Skill.Sword.SetDotsActive(true);
         }
 
@@ -27,7 +30,7 @@ namespace MainCharacter
                 StateMachine.ChangeState(Player.IdleState);
             }
 
-            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 mousePosition = _camera!.ScreenToWorldPoint(Input.mousePosition);
 
             if (Player.transform.position.x > mousePosition.x && Player.FacingDir == 1)
             {

@@ -26,7 +26,7 @@ namespace Enemies.Skeleton
         {
             base.Update();
             
-            if(StateTimer < 0)
+            if(StateTimer <= 0)
                 StateMachine.ChangeState(_skeleton.IdleState);
         }
 

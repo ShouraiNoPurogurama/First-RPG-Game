@@ -1,9 +1,12 @@
-using Skills;
+using UnityEngine;
 
 namespace MainCharacter
 {
     public class PlayerDashState : PlayerState
     {
+        private bool _activateAttack;
+        private float _originalStateTimer;
+        
         public PlayerDashState(PlayerStateMachine stateMachine, Player player, string animationBoolName) : base(stateMachine, player, animationBoolName)
         {
         }
@@ -15,16 +18,36 @@ namespace MainCharacter
             Player.Skill.Clone.CreateClone(Player.transform);
             
             StateTimer = Player.dashDuration;
-        
+
+            _originalStateTimer = StateTimer;
         }
 
         public override void Update()
         {
             base.Update();
+            
+            float xVelocity = Player.dashSpeed * Player.DashDir;
 
-            Player.SetVelocity( Player.dashSpeed * Player.DashDir , 0);
+            if (StateTimer >= 0 && StateTimer < 0.8 * _originalStateTimer)
+            {
+                xVelocity *= 1.2f * StateTimer / _originalStateTimer;
+            }
+            
+            Player.SetVelocity(xVelocity, 0);
         
-            if (StateTimer <= 0)
+            if (Input.GetKey(KeyCode.Mouse0))
+            {
+                _activateAttack = true;
+            }
+
+            if (_activateAttack && StateTimer <= .08f)
+            {
+                Player.isDashAttack = true;
+                _activateAttack = false;
+                StateMachine.ChangeState(Player.DashAttackState);
+            }
+            
+            else if (StateTimer <= 0)
             {
                 StateMachine.ChangeState(Player.IdleState);
             }

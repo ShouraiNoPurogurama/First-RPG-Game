@@ -35,23 +35,37 @@ namespace MainCharacter
             Player.Animator.SetInteger("ComboCounter", _comboCounter);
             Player.Animator.speed = 1.2f;
 
-            Player.SetVelocity(Player.attackMovements[_comboCounter].x * attackDir / Player.moveSpeed,
-                Player.attackMovements[_comboCounter].y);
+            float xAttackVelocity = Player.isDashAttack
+                ? Player.moveSpeed * attackDir
+                : Player.attackMovements[_comboCounter].x * attackDir;
+            
+            Player.SetVelocity(xAttackVelocity, Player.attackMovements[_comboCounter].y);
 
             StateTimer = .1f;
+
+            Player.isDashAttack = false;
         }
 
         public override void Update()
         {
             base.Update();
 
-            if (StateTimer < 0)
+            if (StateTimer < 0 && Player.IsGroundDetected() && !Player.isDashAttack)
             {
                 Player.SetZeroVelocity();
             }
+            else if(!Player.IsGroundDetected() && Player.isDashAttack)
+            {
+                Player.SetVelocity(Rb.linearVelocity.x, 0);
+            }
 
+            if (TriggerCalled && !Player.IsGroundDetected())
+            {
+                StateMachine.ChangeState(Player.AirState);
+            }
+            
             //Change state when player trigger is called (animation ends)
-            if (TriggerCalled)
+            else if (TriggerCalled)
             {
                 StateMachine.ChangeState(Player.IdleState);
             }
@@ -61,7 +75,7 @@ namespace MainCharacter
         {
             base.Exit();
 
-            Player.StartCoroutine("BusyFor", .15f);
+            Player.StartCoroutine("BusyFor", .1f);
             Player.Animator.speed = 1;
 
             _comboCounter++;

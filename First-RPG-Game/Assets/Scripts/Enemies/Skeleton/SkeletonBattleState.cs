@@ -41,15 +41,8 @@ namespace Enemies.Skeleton
                     StateMachine.ChangeState(_skeleton.IdleState);
                 }
             }
-            
-            if (_player.position.x > _skeleton.transform.position.x)
-            {
-                _moveDir = 1;
-            }
-            else if (_player.position.x < _skeleton.transform.position.x)
-            {
-                _moveDir = -1;
-            }
+
+            _moveDir = _player.position.x > _skeleton.transform.position.x ? 1 : -1;
         
             _skeleton.SetVelocity(_skeleton.moveSpeed * _moveDir, Rb.linearVelocity.y);
         }

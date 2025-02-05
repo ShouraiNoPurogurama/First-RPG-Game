@@ -76,7 +76,7 @@ public class Entity : MonoBehaviour
     protected virtual void OnDrawGizmos()
     {
         Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
-        Gizmos.color = Color.blue;
+        Gizmos.color = Color.yellow;
         Gizmos.DrawLine(wallCheck.position,
             new Vector3(groundCheck.position.x + wallCheckDistance * FacingDir, wallCheck.position.y));
         Gizmos.color = Color.yellow;

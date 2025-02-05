@@ -11,7 +11,7 @@ namespace Enemies
         public float stunDuration;
 
         public Vector2 stunDirection;
-        protected bool CanBeStunned;
+        private bool _canBeStunned;
         [SerializeField] protected GameObject counterImage;
 
         [Header("Move info")]
@@ -30,6 +30,7 @@ namespace Enemies
         protected override void Awake()
         {
             base.Awake();
+            
             StateMachine = new EnemyStateMachine();
 
             _defaultMoveSpeed = moveSpeed;
@@ -74,13 +75,13 @@ namespace Enemies
 
         public virtual void OpenCounterAttackWindow()
         {
-            CanBeStunned = true;
+            _canBeStunned = true;
             counterImage.SetActive(true);
         }
 
         public virtual void CloseCounterAttackWindow()
         {
-            CanBeStunned = false;
+            _canBeStunned = false;
             counterImage.SetActive(false);
         }
 
@@ -88,7 +89,7 @@ namespace Enemies
 
         public virtual bool IsCanBeStunned()
         {
-            if (CanBeStunned)
+            if (_canBeStunned)
             {
                 CloseCounterAttackWindow();
                 return true;

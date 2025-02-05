@@ -23,7 +23,7 @@ namespace MainCharacter
             Player = player;
             _animationBoolName = animationBoolName;
         }
-
+        
         public virtual void Enter()
         {
             Player.Animator.SetBool(_animationBoolName, true);

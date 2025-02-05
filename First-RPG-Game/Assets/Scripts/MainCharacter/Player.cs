@@ -27,12 +27,13 @@ namespace MainCharacter
         [Header("Attack details")]
         public Vector2[] attackMovements =
         {
-            new Vector2(3f, 2f),
-            new Vector2(1f, 3f),
-            new Vector2(4f, 5f)
+            new (3f, 2f),
+            new (1f, 3f),
+            new (4f, 5f)
         };
 
         public float counterAttackDuration = .2f;
+        public bool isDashAttack;
 
         #endregion
 
@@ -56,7 +57,6 @@ namespace MainCharacter
 
         #endregion
 
-
         #region States
 
         public PlayerStateMachine StateMachine { get; private set; }
@@ -72,6 +72,8 @@ namespace MainCharacter
         public PlayerAimSwordState AimSwordState { get; private set; }
         public PlayerCatchSwordState CatchSwordState { get; private set; }
 
+        public PlayerDashAttackState DashAttackState { get; private set; }
+
         #endregion
 
         // #region Skill Cooldown
@@ -83,6 +85,7 @@ namespace MainCharacter
 
         public SkillManager Skill { get; private set; } 
         public GameObject ThrownSword { get; private set; } 
+        
 
         /// <summary>
         /// Initialize player states when first awoke
@@ -96,15 +99,16 @@ namespace MainCharacter
             MoveState = new PlayerMoveState(StateMachine, this, "Move");
             JumpState = new PlayerJumpState(StateMachine, this, "Jump");
             AirState = new PlayerAirState(StateMachine, this, "Jump");
+            WallJumpState = new PlayerWallJumpState(StateMachine, this, "Jump");
             DashState = new PlayerDashState(StateMachine, this, "Dash");
             WallSlideState = new PlayerWallSlideState(StateMachine, this, "WallSlide");
-            WallJumpState = new PlayerWallJumpState(StateMachine, this, "Jump");
 
             PrimaryAttackState = new PlayerPrimaryAttackState(StateMachine, this, "Attack");
             CounterAttackState = new PlayerCounterAttackState(StateMachine, this, "CounterAttack");
             AimSwordState = new PlayerAimSwordState(StateMachine, this, "AimSword");
             CatchSwordState = new PlayerCatchSwordState(StateMachine, this, "CatchSword");
-            
+            DashAttackState = new PlayerDashAttackState(StateMachine, this, "DashAttack");
+
         }
 
         protected override void Start()

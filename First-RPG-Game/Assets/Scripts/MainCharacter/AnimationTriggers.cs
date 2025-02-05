@@ -19,9 +19,10 @@ namespace MainCharacter
 
             foreach (var hit in colliders)
             {
-                if (hit.GetComponent<Enemy>() is not null)
+                var enemy = hit.GetComponent<Enemy>();
+                if (enemy is not null)
                 {
-                    hit.GetComponent<Enemy>().Damage();
+                    enemy.Damage();
                 }
             }
         }
