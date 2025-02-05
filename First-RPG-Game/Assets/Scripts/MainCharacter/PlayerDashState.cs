@@ -28,7 +28,7 @@ namespace MainCharacter
             
             float xVelocity = Player.dashSpeed * Player.DashDir;
 
-            if (StateTimer >= 0 && StateTimer < 0.8 * _originalStateTimer)
+            if (StateTimer >= 0 && StateTimer < 0.6 * _originalStateTimer)
             {
                 xVelocity *= 1.2f * StateTimer / _originalStateTimer;
             }
