@@ -9,6 +9,7 @@ namespace Skills
         public DashSkill Dash { get; private set; }
         public CloneSkill Clone { get; private set; }
         public SwordSkill Sword { get; private set; }
+        public BlackHoleSkill BlackHole { get; private set; }
 
         private void Awake()
         {
@@ -27,6 +28,7 @@ namespace Skills
             Dash = GetComponent<DashSkill>();
             Clone = GetComponent<CloneSkill>();
             Sword = GetComponent<SwordSkill>();
+            BlackHole = GetComponent<BlackHoleSkill>();
         }
     }
 }

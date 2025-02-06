@@ -16,7 +16,7 @@ namespace MainCharacter
         {
             base.Enter();
             
-            Player.Skill.Sword.SetDotsActive(true);
+            Player.SkillManager.Sword.SetDotsActive(true);
         }
 
         public override void Update()

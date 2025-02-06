@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d337cd5c8bbbd34db16a029fc0e3884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorLoosingSpeed: 1
+  colorLoosingSpeed: 1.2
   attackCheck: {fileID: 3980733055008852685}
   attackCheckRadius: 0.8
 --- !u!1 &7940271474075059545

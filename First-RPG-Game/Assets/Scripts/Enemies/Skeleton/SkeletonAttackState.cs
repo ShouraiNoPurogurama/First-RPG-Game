@@ -19,11 +19,12 @@ namespace Enemies.Skeleton
         public override void Update()
         {
             base.Update();
-        
+            
             _skeleton.SetZeroVelocity();
-
+            
             if (TriggerCalled)
             {
+                TriggerCalled = false;
                 StateMachine.ChangeState(_skeleton.BattleState);
             }
         }
@@ -31,7 +32,6 @@ namespace Enemies.Skeleton
         public override void Exit()
         {
             base.Exit();
-
             _skeleton.lastTimeAttacked = Time.time;
         }
     }

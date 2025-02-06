@@ -26,8 +26,8 @@ namespace Skills.SkillControllers
         private void Update()
         {
             _cloneTimer -= Time.deltaTime;
-
-            if (_cloneTimer < 0)
+            
+            if (_cloneTimer < .4)
             {
                 _spriteRenderer.color = new Color(1, 1, 1, _spriteRenderer.color.a - Time.deltaTime * colorLoosingSpeed);
                 if (_spriteRenderer.color.a <= 0)
@@ -37,14 +37,16 @@ namespace Skills.SkillControllers
             }
         }
 
-        public void SetupClone(Transform newTransform, float cloneDuration, bool canAttack)
+        public void SetupClone(Transform newTransform, float cloneDuration, bool canAttack, Vector3 offset)
         {
             if (canAttack)
             {
                 _animator.SetInteger("AttackNumber", Random.Range(1, 3));
             }
-
-            transform.position = newTransform.position;
+            
+            transform.position = newTransform.position + offset;
+            
+            FaceClosestTarget();
 
             _cloneTimer = cloneDuration;
         }

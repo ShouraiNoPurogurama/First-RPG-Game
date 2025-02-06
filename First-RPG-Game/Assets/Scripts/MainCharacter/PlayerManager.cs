@@ -1,21 +1,23 @@
-using MainCharacter;
 using UnityEngine;
 
-public class PlayerManager : MonoBehaviour
+namespace MainCharacter
 {
-    public static PlayerManager Instance;
-    public Player player;
-
-    private void Awake()
+    public class PlayerManager : MonoBehaviour
     {
-        //When have multiple scenes
-        if (Instance is not null)
+        public static PlayerManager Instance;
+        public Player player;
+
+        private void Awake()
         {
-            Destroy(Instance.gameObject);
-        }
-        else
-        {
-            Instance = this;
+            //When have multiple scenes
+            if (Instance is not null)
+            {
+                Destroy(Instance.gameObject);
+            }
+            else
+            {
+                Instance = this;
+            }
         }
     }
 }

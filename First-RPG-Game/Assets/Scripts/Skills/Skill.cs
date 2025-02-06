@@ -24,7 +24,7 @@ namespace Skills
         {
             if (_cooldownTimer <= 0)
             {
-                // UseSkill();
+                UseSkill();
                 _cooldownTimer = coolDown;
                 return true;
             }

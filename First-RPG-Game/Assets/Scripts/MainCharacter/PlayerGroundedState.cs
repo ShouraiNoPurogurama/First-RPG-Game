@@ -5,7 +5,8 @@ namespace MainCharacter
 {
     public class PlayerGroundedState : PlayerState
     {
-        public PlayerGroundedState(PlayerStateMachine stateMachine, Player player, string animationBoolName) : base(stateMachine, player, animationBoolName)
+        public PlayerGroundedState(PlayerStateMachine stateMachine, Player player, string animationBoolName) : base(stateMachine,
+            player, animationBoolName)
         {
         }
 
@@ -22,25 +23,30 @@ namespace MainCharacter
             {
                 StateMachine.ChangeState(Player.AimSwordState);
             }
-            
+
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 StateMachine.ChangeState(Player.CounterAttackState);
             }
-            
+
             if (Input.GetKey(KeyCode.Mouse0))
             {
                 StateMachine.ChangeState(Player.PrimaryAttackState);
             }
-        
+
             if (!Player.IsGroundDetected())
             {
                 StateMachine.ChangeState(Player.AirState);
             }
-        
+
             if (Input.GetKeyDown(KeyCode.Space) && Player.IsGroundDetected())
             {
                 StateMachine.ChangeState(Player.JumpState);
+            }
+
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                StateMachine.ChangeState(Player.BlackHoleState);
             }
         }
 

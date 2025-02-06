@@ -15,7 +15,7 @@ namespace MainCharacter
         {
             base.Enter();
 
-            Player.Skill.Clone.CreateClone(Player.transform);
+            Player.SkillManager.Clone.CreateClone(Player.transform, new Vector3());
             
             StateTimer = Player.dashDuration;
 

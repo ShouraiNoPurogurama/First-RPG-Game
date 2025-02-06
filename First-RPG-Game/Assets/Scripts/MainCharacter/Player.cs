@@ -71,8 +71,8 @@ namespace MainCharacter
         public PlayerCounterAttackState CounterAttackState { get; private set; }
         public PlayerAimSwordState AimSwordState { get; private set; }
         public PlayerCatchSwordState CatchSwordState { get; private set; }
-
         public PlayerDashAttackState DashAttackState { get; private set; }
+        public PlayerBlackHoleState BlackHoleState { get; private set; }
 
         #endregion
 
@@ -83,7 +83,7 @@ namespace MainCharacter
         //
         // #endregion
 
-        public SkillManager Skill { get; private set; } 
+        public SkillManager SkillManager { get; private set; } 
         public GameObject ThrownSword { get; private set; } 
         
 
@@ -108,7 +108,7 @@ namespace MainCharacter
             AimSwordState = new PlayerAimSwordState(StateMachine, this, "AimSword");
             CatchSwordState = new PlayerCatchSwordState(StateMachine, this, "CatchSword");
             DashAttackState = new PlayerDashAttackState(StateMachine, this, "DashAttack");
-
+            BlackHoleState = new PlayerBlackHoleState(StateMachine, this, "Jump");
         }
 
         protected override void Start()
@@ -117,7 +117,7 @@ namespace MainCharacter
 
             StateMachine.Initialize(IdleState);
 
-            Skill = SkillManager.Instance;
+            SkillManager = SkillManager.Instance;
         }
 
         protected override void Update()
@@ -159,6 +159,11 @@ namespace MainCharacter
             }
         }
 
+        public void ExitBlackHoleAbility()
+        {
+            StateMachine.ChangeState(AirState);
+        }
+        
         public void AnimationTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
     }
 }

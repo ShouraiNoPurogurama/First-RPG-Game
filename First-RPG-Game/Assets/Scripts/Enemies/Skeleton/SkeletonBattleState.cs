@@ -1,3 +1,4 @@
+using MainCharacter;
 using UnityEngine;
 
 namespace Enemies.Skeleton
@@ -29,8 +30,10 @@ namespace Enemies.Skeleton
             if (_skeleton.IsPlayerDetected())
             {
                 StateTimer = _skeleton.battleTime;
+                
                 if (_skeleton.IsPlayerDetected().distance < _skeleton.attackDistance && CanAttack())
                 {
+                    Debug.Log("Enemy entered attack state");
                     StateMachine.ChangeState(_skeleton.AttackState);
                 }
             }

@@ -1,4 +1,5 @@
 using System.Collections;
+using MainCharacter;
 using UnityEngine;
 
 public class Entity : MonoBehaviour
@@ -6,6 +7,8 @@ public class Entity : MonoBehaviour
     public int FacingDir { get; private set; } = 1;
     private bool _isFacingRight = true;
     public bool IsBusy { get; private set; }
+    
+    public SpriteRenderer Sr { get; private set; }
 
     [Header("Knock back info")]
     [SerializeField] protected Vector2 knockBackDirection;
@@ -23,6 +26,7 @@ public class Entity : MonoBehaviour
     [SerializeField] protected LayerMask whatIsGround;
     [SerializeField] protected Transform wallCheck;
     [SerializeField] protected float wallCheckDistance;
+    private EntityFX _entityFX;
 
     #region Components
 
@@ -41,6 +45,7 @@ public class Entity : MonoBehaviour
         Animator = GetComponentInChildren<Animator>();
         Rb = GetComponent<Rigidbody2D>();
         FX = GetComponent<EntityFX>();
+        Sr = GetComponentInChildren<SpriteRenderer>();
     }
 
     protected virtual void Update()
@@ -49,8 +54,8 @@ public class Entity : MonoBehaviour
 
     public virtual void Damage()
     {
-        FX.StartCoroutine("FlashFX");
         StartCoroutine(nameof(HitKnockBack));
+        FX.Flash();
         Debug.Log(gameObject.name + " was damaged!");
     }
 
@@ -137,5 +142,10 @@ public class Entity : MonoBehaviour
         yield return new WaitForSeconds(seconds);
 
         IsBusy = false;
+    }
+
+    public void SetTransparent(bool transparent)
+    {
+        Sr.color = transparent ? Color.clear : Color.white;
     }
 }

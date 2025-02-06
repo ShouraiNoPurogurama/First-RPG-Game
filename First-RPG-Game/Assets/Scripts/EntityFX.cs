@@ -8,12 +8,12 @@ public class EntityFX : MonoBehaviour
     [SerializeField] private Material hitMat;
     [SerializeField] private float flashDuration;
     private Material _originalMat;
+    private Coroutine _flashRoutine;
 
     private void Start()
     {
         _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         _originalMat = _spriteRenderer.material;
-        
     }
 
     private IEnumerator FlashFX()
@@ -23,8 +23,20 @@ public class EntityFX : MonoBehaviour
         yield return new WaitForSeconds(flashDuration);
 
         _spriteRenderer.material = _originalMat;
+
+        _flashRoutine = null;
     }
 
+    public void Flash()
+    {
+        if (_flashRoutine is not null)
+        {
+            StopCoroutine(_flashRoutine);
+        }
+
+        _flashRoutine = StartCoroutine(FlashFX());
+    }
+    
     private void RedColorBlink()
     {
         if (_spriteRenderer.color != Color.white)
