@@ -11,6 +11,8 @@ namespace Skills.SkillControllers
         public TextMeshProUGUI MyText { get; private set; }
 
         private BlackHoleSkillController _blackHole;
+        
+        public bool ChangeColorFinished { get; private set; }
         public Transform Enemy { get; private set; }
 
         public void SetupHotKey(KeyCode myNewHotKey, Transform enemy, BlackHoleSkillController myBlackHole)
@@ -32,6 +34,7 @@ namespace Skills.SkillControllers
             }
         }
 
+        
         public IEnumerator ChangeColorTemporarily(float seconds)
         {
             MyText.color = new Color(235 / 255f, 91 / 255f, 52 / 255f);
