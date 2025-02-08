@@ -158,11 +158,6 @@ namespace MainCharacter
                 StateMachine.ChangeState(DashState);
             }
         }
-
-        public void ExitBlackHoleAbility()
-        {
-            StateMachine.ChangeState(AirState);
-        }
         
         public void AnimationTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
     }

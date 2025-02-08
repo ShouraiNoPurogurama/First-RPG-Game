@@ -49,6 +49,11 @@ namespace MainCharacter
                     }
                 }
             }
+
+            if (Player.SkillManager.BlackHole.SkillFinished())
+            {
+                StateMachine.ChangeState(Player.AirState);
+            }
         }
 
         public override void Exit()
@@ -58,5 +63,7 @@ namespace MainCharacter
             Player.Rb.gravityScale = _defaultGravity;
             Player.SetTransparent(false);
         }
+        
+        //Exit state in blackhole skills controller when all the attacks is over
     }
 }
