@@ -42,6 +42,10 @@ namespace Skills.SkillControllers
         [SerializeField] private List<Transform> targets = new();
         [SerializeField] private List<GameObject> createdHotKeys = new();
         
+        private Dictionary<KeyCode, Transform> _hotkeyToEnemy = new();
+
+        private Dictionary<KeyCode, BlackHoleHotkeyController> _newHotkeyScripts = new();
+        
         public bool PlayerCanExitState { get; private set; }
 
         public void SetupBlackHole(float maxSize, float growSpeed, float shrinkSpeed, int attackAmount, float cloneAttackCooldown, float blackHoleDuration, int triggerAttackMount)
@@ -69,6 +73,12 @@ namespace Skills.SkillControllers
             {
                 FinishBlackHoleAbility();
             }
+            else
+            {
+                PullEnemiesToCenter();
+
+                PullHotkeysTogether();
+            }
 
             // CloneAttackLogic();
 
@@ -90,22 +100,20 @@ namespace Skills.SkillControllers
                     Destroy(gameObject);
                 }
             }
-
-            PullEnemiesToCenter();
-
+            
             foreach (var key in _hotkeyToEnemy.Keys)
             {
-                if (Input.GetKeyDown(key))
+                if (Input.GetKeyDown(key) && _totalTriggerableAmountLeft > 0)
                 {
-                    TriggerCloneAttack(key);
+                    StartCoroutine(_newHotkeyScripts[key].ChangeColorTemporarily(0.25f));
                     
-                    _hotkeyToEnemy.Remove(key);
+                    TriggerCloneAttack(key);
                     
                     _totalTriggerableAmountLeft--;
                     
                     if (_totalTriggerableAmountLeft <= 0)
                     {
-                        ExtendBlackHoleDuration(_attackAmountPerTrigger * _cloneAttackCooldown + 0.4f);
+                        _blackHoleTimer = _attackAmountPerTrigger * _cloneAttackCooldown + 0.4f;
                     }
 
                     break;
@@ -115,7 +123,7 @@ namespace Skills.SkillControllers
 
         private void ExtendBlackHoleDuration(float seconds)
         {
-            _blackHoleTimer = seconds;
+            _blackHoleTimer += seconds;
         }
 
         private void TriggerCloneAttack(KeyCode key)
@@ -130,8 +138,6 @@ namespace Skills.SkillControllers
             StartCoroutine(DelayedCloneAttack(enemyTarget));
             
             ExtendBlackHoleDuration(_attackAmountPerTrigger * _cloneAttackCooldown + 0.4f);
-            
-            Debug.Log("_blackHoleTimer " + _blackHoleTimer);
         }
 
 
@@ -250,6 +256,19 @@ namespace Skills.SkillControllers
             }
         }
 
+        private void PullHotkeysTogether()
+        {
+            
+            foreach (var hotkey in _newHotkeyScripts.Values)
+            {
+                if(hotkey == null) continue;
+                
+                // Vector3 direction = (transform.position - hotkey.transform.position).normalized;
+                hotkey.transform.position = hotkey.Enemy.transform.position + new Vector3(0, 2);
+                
+            }
+        }
+
         private void DestroyHotKeys()
         {
             if (createdHotKeys.Count <= 0) return;
@@ -259,9 +278,7 @@ namespace Skills.SkillControllers
                 Destroy(hotKey);
             }
         }
-
-        private Dictionary<KeyCode, Transform> _hotkeyToEnemy = new();
-
+        
         private void CreateHotkey(Collider2D collision, Enemy enemy)
         {
             if (!_canCreateHotKeys || keyCodes.Count <= 0 || _cloneAttackReleased)
@@ -275,7 +292,8 @@ namespace Skills.SkillControllers
 
             BlackHoleHotkeyController newHotkeyScript = newHotKey.GetComponent<BlackHoleHotkeyController>();
             newHotkeyScript.SetupHotKey(chosenKey, enemy.transform, this);
-
+            _newHotkeyScripts.Add(chosenKey, newHotkeyScript);
+            
             // Store hotkey and enemy target
             _hotkeyToEnemy[chosenKey] = enemy.transform;
         }

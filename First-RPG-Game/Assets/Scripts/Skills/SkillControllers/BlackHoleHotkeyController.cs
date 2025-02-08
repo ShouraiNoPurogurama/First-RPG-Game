@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -7,31 +8,36 @@ namespace Skills.SkillControllers
     {
         private SpriteRenderer _spriteRenderer;
         private KeyCode _myHotKey;
-        private TextMeshProUGUI _myText;
+        public TextMeshProUGUI MyText { get; private set; }
 
-        private Transform _enemy;
         private BlackHoleSkillController _blackHole;
+        public Transform Enemy { get; private set; }
 
         public void SetupHotKey(KeyCode myNewHotKey, Transform enemy, BlackHoleSkillController myBlackHole)
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
-            _enemy = enemy;
+            Enemy = enemy;
             _blackHole = myBlackHole;
             
-            _myText = GetComponentInChildren<TextMeshProUGUI>();
+            MyText = GetComponentInChildren<TextMeshProUGUI>();
             _myHotKey = myNewHotKey;
-            _myText.text = myNewHotKey.ToString();
+            MyText.text = myNewHotKey.ToString();
         }
 
         private void Update()
         {
-            if (Input.GetKeyDown(_myHotKey) && !_blackHole.ContainsEnemy(_enemy))
+            if (Input.GetKeyDown(_myHotKey) && !_blackHole.ContainsEnemy(Enemy))
             {
-                _blackHole.AddEnemyToList(_enemy);
-
-                _myText.color = Color.clear;
-                _spriteRenderer.color = Color.clear;
+                _blackHole.AddEnemyToList(Enemy);
             }
         }
+
+        public IEnumerator ChangeColorTemporarily(float seconds)
+        {
+            MyText.color = new Color(235 / 255f, 91 / 255f, 52 / 255f);
+            yield return new WaitForSeconds(seconds);
+            MyText.color = Color.white;
+        }
+
     }
 }

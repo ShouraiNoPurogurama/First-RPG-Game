@@ -31,7 +31,7 @@ namespace Enemies.Skeleton
             {
                 StateTimer = _skeleton.battleTime;
                 
-                if (_skeleton.IsPlayerDetected().distance < _skeleton.attackDistance && CanAttack())
+                if (_skeleton.IsGroundDetected() && _skeleton.IsPlayerDetected().distance < _skeleton.attackDistance && CanAttack())
                 {
                     Debug.Log("Enemy entered attack state");
                     StateMachine.ChangeState(_skeleton.AttackState);
