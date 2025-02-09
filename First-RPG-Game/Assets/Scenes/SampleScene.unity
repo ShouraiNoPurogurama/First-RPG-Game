@@ -4302,7 +4302,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89ba9099edd1bfe44a410cc5e0ba26d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coolDown: 1
 --- !u!114 &897957627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4342,7 +4341,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b9483088de093d4e9108643f922668f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coolDown: 0
   clonePrefab: {fileID: 4718327779524394063, guid: 15f5098239ed1ef49a7cc2fce047282c, type: 3}
   cloneDuration: 1.2
   canAttack: 1
@@ -4358,7 +4356,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 401f635cee24f42448f593e194d6080a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coolDown: 0
   swordType: 1
   bounceAmount: 3
   bounceGravity: 5
@@ -4390,7 +4387,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1076796e76453244198b453bbfdba91a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coolDown: 1
   maxSize: 12
   growSpeed: 3
   shrinkSpeed: 5
@@ -4411,12 +4407,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c67ef70e3acb3d54e985ee6e919568d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coolDown: 0
   crystalPrefab: {fileID: 2729212711605294040, guid: 71c2c16b5ef9abd4b934b0eb2dcc7612, type: 3}
   crystalDuration: 1.5
-  canMoveToEnemy: 0
-  moveSpeed: 0
+  canMoveToEnemy: 1
+  moveSpeed: 5
   canExplode: 1
+  canUseMultiStacks: 1
+  stackAmount: 3
+  multiStackCooldown: 4
+  useTimeWindow: 0
+  crystalLeft:
+  - {fileID: 2729212711605294040, guid: 71c2c16b5ef9abd4b934b0eb2dcc7612, type: 3}
+  - {fileID: 2729212711605294040, guid: 71c2c16b5ef9abd4b934b0eb2dcc7612, type: 3}
+  - {fileID: 2729212711605294040, guid: 71c2c16b5ef9abd4b934b0eb2dcc7612, type: 3}
 --- !u!1 &915651623
 GameObject:
   m_ObjectHideFlags: 0
@@ -6704,7 +6707,7 @@ MonoBehaviour:
   isDashAttack: 0
   moveSpeed: 6
   jumpForce: 12
-  swordReturnImpact: 8
+  swordReturnImpact: 4
   dashSpeed: 24
   dashDuration: 0.35
 --- !u!4 &1948976712
