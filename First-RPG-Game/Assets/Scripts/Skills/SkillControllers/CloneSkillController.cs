@@ -1,5 +1,4 @@
 using Enemies;
-using Unity.Mathematics;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -37,7 +36,7 @@ namespace Skills.SkillControllers
             }
         }
 
-        public void SetupClone(Transform newTransform, float cloneDuration, bool canAttack, Vector3 offset)
+        public void SetupClone(Transform newTransform, float cloneDuration, bool canAttack, Vector3 offset, Transform closestEnemy)
         {
             if (canAttack)
             {
@@ -45,6 +44,8 @@ namespace Skills.SkillControllers
             }
             
             transform.position = newTransform.position + offset;
+
+            _closestEnemy = closestEnemy;
             
             FaceClosestTarget();
 
@@ -68,25 +69,7 @@ namespace Skills.SkillControllers
 
         private void FaceClosestTarget()
         {
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 25);
-
-            float closestDistance = math.INFINITY;
-
-            foreach (var hit in colliders)
-            {
-                if (hit.GetComponent<Enemy>() is not null)
-                {
-                    float distanceToEnemy = Vector2.Distance(transform.position, hit.transform.position);
-
-                    if (distanceToEnemy < closestDistance)
-                    {
-                        closestDistance = distanceToEnemy;
-                        _closestEnemy = hit.transform;
-                    }
-                }
-            }
-
-            if (_closestEnemy is not null)
+            if (_closestEnemy)
             {
                 if (transform.position.x > _closestEnemy.position.x)
                 {

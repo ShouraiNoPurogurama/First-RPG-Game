@@ -17,12 +17,15 @@ namespace Skills.SkillControllers
         private bool _canGrow;
         [SerializeField] private float growSpeed;
 
-        public void SetUpCrystal(float crystalDuration, bool canExplode, bool canMove, float moveSpeed)
+        private Transform _closestTarget;
+        
+        public void SetUpCrystal(float crystalDuration, bool canExplode, bool canMove, float moveSpeed, Transform closestTarget)
         {
             _crystalExistTimer = crystalDuration;
             _canExplode = canExplode;
             _canMove = canMove;
             _moveSpeed = moveSpeed;
+            _closestTarget = closestTarget;
         }
 
         private void Update()
@@ -34,6 +37,17 @@ namespace Skills.SkillControllers
                 FinishCrystal();
             }
 
+            if (_canMove)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, _closestTarget.position, growSpeed * Time.deltaTime);
+
+                if (Vector2.Distance(transform.position, _closestTarget.position) < 1)
+                {
+                    FinishCrystal();
+                    _canMove = false;
+                }
+            }
+            
             if (_canGrow)
             {
                 transform.localScale = Vector2.Lerp(transform.localScale, new Vector2(3, 3), growSpeed * Time.deltaTime);
@@ -44,6 +58,7 @@ namespace Skills.SkillControllers
         {
             if (_canExplode)
             {
+                _canGrow = true;
                 Animator.SetTrigger("Explode");
             }
             else

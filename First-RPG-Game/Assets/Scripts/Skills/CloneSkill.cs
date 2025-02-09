@@ -14,8 +14,13 @@ namespace Skills
         public void CreateClone(Transform clonePosition, Vector3 offset)
         {
             GameObject newClone = Instantiate(clonePrefab);
+
+            Vector3 spawnPosition = clonePosition.position + offset;
             
-            newClone.GetComponent<CloneSkillController>().SetupClone(clonePosition, cloneDuration, canAttack, offset);
+            //Optimized with adding offset instead of using just original clone position 
+            Transform closestEnemy = FindClosestEnemy(spawnPosition);
+            
+            newClone.GetComponent<CloneSkillController>().SetupClone(clonePosition, cloneDuration, canAttack, offset, closestEnemy);
         }
     }
 }

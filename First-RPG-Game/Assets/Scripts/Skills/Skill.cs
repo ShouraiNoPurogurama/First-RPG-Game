@@ -1,13 +1,14 @@
-using System;
+using Enemies;
 using MainCharacter;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace Skills
 {
     public class Skill : MonoBehaviour
     {
-        public float coolDown;
-        private float _cooldownTimer;
+        protected float CoolDown;
+        protected float CooldownTimer;
         protected Player Player;
 
         protected virtual void Start()
@@ -17,15 +18,15 @@ namespace Skills
 
         protected virtual void Update()
         {
-            _cooldownTimer -= Time.deltaTime;
+            CooldownTimer -= Time.deltaTime;
         }
 
         public virtual bool CanUseSkill()
         {
-            if (_cooldownTimer <= 0)
+            if (CooldownTimer <= 0)
             {
                 UseSkill();
-                _cooldownTimer = coolDown;
+                CooldownTimer = CoolDown;
                 return true;
             }
         
@@ -36,6 +37,29 @@ namespace Skills
         public virtual void UseSkill()
         {
             //Do some skill specific things
+        }
+
+        protected virtual Transform FindClosestEnemy(Vector3 position)
+        {
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(position, 25);
+
+            float closestDistance = math.INFINITY;
+            Transform closestEnemy = null;
+
+            foreach (var hit in colliders)
+            {
+                if (hit.GetComponent<Enemy>() is not null)
+                {
+                    float distanceToEnemy = Vector2.Distance(position, hit.transform.position);
+
+                    if (distanceToEnemy < closestDistance)
+                    {
+                        closestDistance = distanceToEnemy;
+                        closestEnemy = hit.transform;
+                    }
+                }
+            }
+            return closestEnemy;
         }
     }
 }
