@@ -23,7 +23,7 @@ namespace MainCharacter
         {
             base.Update();
             
-            // Player.SetZeroVelocity();
+            Player.SetZeroVelocity();
 
             if (Input.GetKeyUp(KeyCode.Mouse1))
             {
