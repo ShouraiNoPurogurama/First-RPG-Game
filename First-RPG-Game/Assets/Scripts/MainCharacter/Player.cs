@@ -126,6 +126,11 @@ namespace MainCharacter
 
             StateMachine.CurrentState.Update();
             CheckForDashInput();
+
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                SkillManager.Crystal.CanUseSkill();
+            }
         }
 
         public void AssignNewSword(GameObject newSword)

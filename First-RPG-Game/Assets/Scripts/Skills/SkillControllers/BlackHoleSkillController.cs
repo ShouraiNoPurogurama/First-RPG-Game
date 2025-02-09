@@ -24,6 +24,7 @@ namespace Skills.SkillControllers
         private bool _canShrink;
         private float _blackHoleTimer;
         private float _pullSpeed = 3f;
+        private bool _playerCanDisappear = true;
 
         private List<Enemy> _enemiesInBlackHole = new();
 
@@ -75,13 +76,17 @@ namespace Skills.SkillControllers
 
             if (_blackHoleTimer <= 0)
             {
-                Debug.Log("Finish black hole");
                 FinishBlackHoleAbility();
             }
 
             HandleBlackHoleScaling();
             HandleEnemyPulling();
             HandleAttackLogic();
+
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                FinishBlackHoleAbility();
+            }
         }
 
         private void UpdateTimers()
@@ -207,7 +212,12 @@ namespace Skills.SkillControllers
 
             Transform enemyTarget = _hotkeyToEnemy[key];
 
-            PlayerManager.Instance.player.SetTransparent(true);
+            if (_playerCanDisappear)
+            {
+                _playerCanDisappear = false;
+                PlayerManager.Instance.player.SetTransparent(true);
+            }
+            
             //Start attack sequence
             StartCoroutine(DelayedCloneAttack(enemyTarget));
 
