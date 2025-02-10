@@ -5,6 +5,8 @@ namespace MainCharacter
 {
     public class PlayerCounterAttackState : PlayerState
     {
+        private bool _canCreatClone;
+        
         public PlayerCounterAttackState(PlayerStateMachine stateMachine, Player player, string animationBoolName) : base(
             stateMachine, player, animationBoolName)
         {
@@ -31,8 +33,13 @@ namespace MainCharacter
                 var enemy = hit.GetComponent<Enemy>();
                 if (enemy is not null && enemy.IsCanBeStunned())
                 {
-                    StateTimer = 100; // any value long enough
+                    StateTimer = 100; //any value long enough
                     Player.Animator.SetBool("SuccessfulCounterAttack", true);
+                    if (_canCreatClone)
+                    {
+                        _canCreatClone = false;
+                        Player.SkillManager.Clone.CreateCloneOnCounterAttack(enemy.transform);
+                    }
                 }
             }
 
@@ -44,6 +51,7 @@ namespace MainCharacter
 
         public override void Exit()
         {
+            _canCreatClone = true;
             base.Exit();
         }
     }

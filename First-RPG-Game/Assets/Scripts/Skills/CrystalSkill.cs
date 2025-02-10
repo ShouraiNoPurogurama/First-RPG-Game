@@ -25,8 +25,11 @@ namespace Skills
 
         [SerializeField] private int stackAmount;
         [SerializeField] private float multiStackCooldown;
-        [SerializeField] private float useTimeWindow;
+        [SerializeField] private float useTimeWindow; //If last time use skill exceeds this duration, reset the skill
         [SerializeField] private List<GameObject> crystalLeft = new();
+
+        [Header("Crystal mirrage")]
+        [SerializeField] private bool cloneInsteadOfCrystal;
 
         public override void UseSkill()
         {
@@ -36,15 +39,10 @@ namespace Skills
             {
                 return;
             }
-            
+
             if (!_currentCrystal)
             {
-                _currentCrystal = Instantiate(crystalPrefab, Player.transform.position, Quaternion.identity);
-
-                CrystalSkillController currentCrystalScript = _currentCrystal.GetComponent<CrystalSkillController>();
-
-                currentCrystalScript.SetUpCrystal(crystalDuration, canExplode, canMoveToEnemy, moveSpeed,
-                    FindClosestEnemy(_currentCrystal.transform.position));
+                CreateCrystal();
             }
             else
             {
@@ -54,19 +52,38 @@ namespace Skills
                 }
 
                 Vector2 playerPosition = Player.transform.position;
-
                 Player.transform.position = _currentCrystal.transform.position;
-
                 _currentCrystal.transform.position = playerPosition;
 
-                _currentCrystal.GetComponent<CrystalSkillController>()?.FinishCrystal();
+                if (cloneInsteadOfCrystal)
+                {
+                    SkillManager.Instance.Clone.CreateClone(_currentCrystal.transform, Vector3.zero);
+                    Destroy(_currentCrystal);
+                }
+                else
+                {
+                    _currentCrystal.GetComponent<CrystalSkillController>()?.FinishCrystal();
+                }
             }
         }
+
+        public void CreateCrystal()
+        {
+            _currentCrystal = Instantiate(crystalPrefab, Player.transform.position, Quaternion.identity);
+
+            CrystalSkillController currentCrystalScript = _currentCrystal.GetComponent<CrystalSkillController>();
+
+            currentCrystalScript.SetUpCrystal(crystalDuration, canExplode, canMoveToEnemy, moveSpeed,
+                FindClosestEnemy(_currentCrystal.transform.position));
+        }
+
+        public void CurrentCrystalChooseRandomTarget() =>
+            _currentCrystal.GetComponent<CrystalSkillController>().ChooseRandomEnemy();
 
         private void RefillCrystal()
         {
             int amountToAdd = stackAmount - crystalLeft.Count;
-            
+
             for (int i = 0; i < amountToAdd; i++)
             {
                 crystalLeft.Add(crystalPrefab);
@@ -83,15 +100,16 @@ namespace Skills
                     {
                         Invoke("ResetAbility", useTimeWindow);
                     }
-                    
-                    CoolDown = 0; //Allows continuous use of the crystal as long as there are remaining crystals.
+
+                    CooldownTimer = -1; //Allows continuous use of the crystal as long as there are remaining crystals.
                     GameObject crystalToSpawn = crystalLeft[^1]; //Index from end of collection
                     GameObject newCrystal = Instantiate(crystalToSpawn, Player.transform.position, Quaternion.identity);
 
                     crystalLeft.Remove(crystalToSpawn);
 
                     newCrystal.GetComponent<CrystalSkillController>()
-                        .SetUpCrystal(crystalDuration, canExplode, canMoveToEnemy, moveSpeed, FindClosestEnemy(newCrystal.transform.position));
+                        .SetUpCrystal(crystalDuration, canExplode, canMoveToEnemy, moveSpeed,
+                            FindClosestEnemy(newCrystal.transform.position));
 
                     if (crystalLeft.Count <= 0)
                     {
@@ -110,7 +128,7 @@ namespace Skills
         {
             if (CooldownTimer > 0) //Assure the skill is not on cooldown already
                 return;
-            
+
             CooldownTimer = multiStackCooldown; //Wait for multiStackCooldown for next usage
             RefillCrystal();
         }

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace MainCharacter
@@ -15,7 +16,7 @@ namespace MainCharacter
         {
             base.Enter();
 
-            Player.SkillManager.Clone.CreateClone(Player.transform, new Vector3());
+            Player.SkillManager.Clone.CreateCloneOfDashStart();
             
             StateTimer = Player.dashDuration;
 
@@ -57,6 +58,8 @@ namespace MainCharacter
         {
             base.Exit();
         
+            Player.SkillManager.Clone.CreateCloneOnDashOver();
+            
             Player.SetVelocity(0, Rb.linearVelocity.y);
         }
     }

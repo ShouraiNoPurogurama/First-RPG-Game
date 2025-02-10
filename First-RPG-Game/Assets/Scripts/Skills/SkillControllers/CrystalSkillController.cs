@@ -1,6 +1,6 @@
-using System;
 using Enemies;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Skills.SkillControllers
 {
@@ -8,6 +8,7 @@ namespace Skills.SkillControllers
     {
         private Animator Animator => GetComponent<Animator>();
         private CircleCollider2D CircleCollider => GetComponent<CircleCollider2D>();
+        [SerializeField] private LayerMask whatIsEnemy;
 
         private float _crystalExistTimer;
         private bool _canExplode;
@@ -18,7 +19,7 @@ namespace Skills.SkillControllers
         [SerializeField] private float growSpeed;
 
         private Transform _closestTarget;
-        
+
         public void SetUpCrystal(float crystalDuration, bool canExplode, bool canMove, float moveSpeed, Transform closestTarget)
         {
             _crystalExistTimer = crystalDuration;
@@ -47,10 +48,22 @@ namespace Skills.SkillControllers
                     _canMove = false;
                 }
             }
-            
+
             if (_canGrow)
             {
                 transform.localScale = Vector2.Lerp(transform.localScale, new Vector2(3, 3), growSpeed * Time.deltaTime);
+            }
+        }
+
+        public void ChooseRandomEnemy()
+        {
+            var skillRadius = SkillManager.Instance.BlackHole.GetBlackHoleRadius();
+            
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, skillRadius, whatIsEnemy);
+
+            if (colliders.Length > 0)
+            {
+                _closestTarget = colliders[Random.Range(0, colliders.Length - 1)].transform;
             }
         }
 

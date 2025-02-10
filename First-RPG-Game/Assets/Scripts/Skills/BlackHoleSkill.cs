@@ -56,5 +56,7 @@ namespace Skills
 
             return false;
         }
+
+        public float GetBlackHoleRadius() => maxSize / 2; //Actual radius of black hole
     }
 }

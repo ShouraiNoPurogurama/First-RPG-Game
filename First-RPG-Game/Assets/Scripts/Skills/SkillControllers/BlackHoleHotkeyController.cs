@@ -6,18 +6,15 @@ namespace Skills.SkillControllers
 {
     public class BlackHoleHotkeyController : MonoBehaviour
     {
-        private SpriteRenderer _spriteRenderer;
         private KeyCode _myHotKey;
         public TextMeshProUGUI MyText { get; private set; }
 
         private BlackHoleSkillController _blackHole;
         
-        public bool ChangeColorFinished { get; private set; }
         public Transform Enemy { get; private set; }
 
         public void SetupHotKey(KeyCode myNewHotKey, Transform enemy, BlackHoleSkillController myBlackHole)
         {
-            _spriteRenderer = GetComponent<SpriteRenderer>();
             Enemy = enemy;
             _blackHole = myBlackHole;
             

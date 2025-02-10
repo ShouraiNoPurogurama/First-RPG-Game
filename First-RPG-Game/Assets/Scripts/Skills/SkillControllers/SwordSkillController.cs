@@ -218,7 +218,7 @@ namespace Skills.SkillControllers
         //Disable rotation, prevent Rigidbody-driven movement and assign sword to enemy's collider2D as a children
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (_isReturning)
+            if (_isReturning) //Prevent stuck into all colliders
             {
                 return;
             }

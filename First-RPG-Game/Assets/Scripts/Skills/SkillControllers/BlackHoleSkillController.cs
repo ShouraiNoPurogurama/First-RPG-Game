@@ -68,6 +68,11 @@ namespace Skills.SkillControllers
             _cinemachineVirtualCamera = _virtualCamera.GetComponent<CinemachineVirtualCamera>();
             _originalCameraTarget = _cinemachineVirtualCamera.m_Follow;
             _totalTriggerableAmountLeft = _totalTriggerableAmount;
+
+            if (SkillManager.Instance.Clone.crystalInsteadOfClone)
+            {
+                _playerCanDisappear = false;
+            }
         }
 
         private void Update()
@@ -233,9 +238,16 @@ namespace Skills.SkillControllers
                 {
                     _cloneAttackTimer = _cloneAttackCooldown;
 
-                    float xOffset = Random.Range(0, 100) > 50 ? 1.5f : -1.5f;
-                    SkillManager.Instance.Clone.CreateClone(enemyTarget, new Vector3(xOffset, 0));
-
+                    if (SkillManager.Instance.Clone.crystalInsteadOfClone)
+                    {
+                        SkillManager.Instance.Crystal.CreateCrystal();
+                        SkillManager.Instance.Crystal.CurrentCrystalChooseRandomTarget();
+                    }
+                    else
+                    {
+                        float xOffset = Random.Range(0, 100) > 50 ? 1.5f : -1.5f;
+                        SkillManager.Instance.Clone.CreateClone(enemyTarget, new Vector3(xOffset, 0));
+                    }
                     _cinemachineVirtualCamera.Follow = enemyTarget;
                 }
 

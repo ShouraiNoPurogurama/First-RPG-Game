@@ -11,10 +11,14 @@ namespace Skills.SkillControllers
 
         [SerializeField] private float colorLoosingSpeed;
         private float _cloneTimer;
+        private int _cloneFacingDir = 1;
 
         [SerializeField] private Transform attackCheck;
         [SerializeField] private float attackCheckRadius = .8f;
         private Transform _closestEnemy;
+
+        private bool _canDuplicateClone;
+        private float _chanceToDuplicate;
 
         private void Awake()
         {
@@ -36,7 +40,7 @@ namespace Skills.SkillControllers
             }
         }
 
-        public void SetupClone(Transform newTransform, float cloneDuration, bool canAttack, Vector3 offset, Transform closestEnemy)
+        public void SetupClone(Transform newTransform, float cloneDuration, bool canAttack, Vector3 offset, Transform closestEnemy, bool canDuplicate, float chanceToDuplicate)
         {
             if (canAttack)
             {
@@ -46,6 +50,10 @@ namespace Skills.SkillControllers
             transform.position = newTransform.position + offset;
 
             _closestEnemy = closestEnemy;
+
+            _canDuplicateClone = canDuplicate;
+
+            _chanceToDuplicate = chanceToDuplicate;
             
             FaceClosestTarget();
 
@@ -59,6 +67,14 @@ namespace Skills.SkillControllers
             foreach (var hit in colliders)
             {
                 hit.GetComponent<Enemy>()?.Damage();
+
+                if (_canDuplicateClone)
+                {
+                    if (Random.Range(0, 100) < _chanceToDuplicate)
+                    {
+                        SkillManager.Instance.Clone.CreateClone(hit.transform, new Vector3(1.2f * _cloneFacingDir, 0));
+                    }
+                }
             }
         }
 
@@ -73,6 +89,7 @@ namespace Skills.SkillControllers
             {
                 if (transform.position.x > _closestEnemy.position.x)
                 {
+                    _cloneFacingDir = -1;
                     transform.Rotate(0, 180, 0);
                 }
             }
