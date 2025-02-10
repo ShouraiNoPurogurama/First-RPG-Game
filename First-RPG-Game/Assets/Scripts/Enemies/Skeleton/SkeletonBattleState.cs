@@ -20,7 +20,14 @@ namespace Enemies.Skeleton
             base.Enter();
 
             // _player = GameObject.Find("Player").transform;
-            _player = PlayerManager.Instance.player.transform;
+            AttachCurrentPlayerIfNotExists();
+            
+            //if player in attack range, block skeleton movement
+            if (PlayerInAttackRange() && !CanAttack())
+            {
+                _skeleton.SetZeroVelocity();
+                StateMachine.ChangeState(_skeleton.IdleState);
+            }
         }
 
         public override void Update()
@@ -30,11 +37,13 @@ namespace Enemies.Skeleton
             if (_skeleton.IsPlayerDetected())
             {
                 StateTimer = _skeleton.battleTime;
-                
-                if (_skeleton.IsGroundDetected() && _skeleton.IsPlayerDetected().distance < _skeleton.attackDistance && CanAttack())
+
+                if (_skeleton.IsGroundDetected() && _skeleton.IsPlayerDetected().distance <= _skeleton.attackDistance &&
+                    CanAttack())
                 {
                     Debug.Log("Enemy entered attack state");
                     StateMachine.ChangeState(_skeleton.AttackState);
+                    return;
                 }
             }
             else
@@ -46,7 +55,15 @@ namespace Enemies.Skeleton
             }
 
             _moveDir = _player.position.x > _skeleton.transform.position.x ? 1 : -1;
-        
+
+            //if player in attack range, block skeleton movement
+            if (PlayerInAttackRange())
+            {
+                _skeleton.SetZeroVelocity();
+                StateMachine.ChangeState(_skeleton.IdleState);
+                return;
+            }
+
             _skeleton.SetVelocity(_skeleton.moveSpeed * _moveDir, Rb.linearVelocity.y);
         }
 
@@ -55,15 +72,37 @@ namespace Enemies.Skeleton
             base.Exit();
         }
 
-        private bool CanAttack()
+        public bool CanAttack()
         {
-            if (Time.time >= _skeleton.lastTimeAttacked + _skeleton.attackCooldown)
+            AttachCurrentPlayerIfNotExists();
+            
+            if (Mathf.Approximately(_skeleton.lastTimeAttacked, 0) || Time.time >= _skeleton.lastTimeAttacked + _skeleton.attackCooldown)
             {
-                _skeleton.lastTimeAttacked = Time.time;
+                // _skeleton.lastTimeAttacked = Time.time;
                 return true;
             }
 
             return false;
+        }
+
+        public bool PlayerInAttackRange()
+        {
+            AttachCurrentPlayerIfNotExists();
+            
+            var result = _skeleton.IsPlayerDetected().distance <= _skeleton.attackDistance &&
+                   (_skeleton.FacingDir == -1 && _player.transform.position.x <= _skeleton.transform.position.x ||
+                    _skeleton.FacingDir == 1 && _player.transform.position.x >= _skeleton.transform.position.x);
+            
+            return result;
+        }
+
+        private void AttachCurrentPlayerIfNotExists()
+        {
+            if (!_player)
+            {
+                Debug.Log("ASSIGNED NEW PLAYER");
+                _player = PlayerManager.Instance.player.transform;
+            }
         }
     }
 }

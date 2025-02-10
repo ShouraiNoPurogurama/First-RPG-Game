@@ -25,6 +25,7 @@ namespace Enemies.Skeleton
             if (TriggerCalled)
             {
                 TriggerCalled = false;
+                _skeleton.lastTimeAttacked = Time.time;
                 StateMachine.ChangeState(_skeleton.BattleState);
             }
         }
@@ -32,7 +33,6 @@ namespace Enemies.Skeleton
         public override void Exit()
         {
             base.Exit();
-            _skeleton.lastTimeAttacked = Time.time;
         }
     }
 }
