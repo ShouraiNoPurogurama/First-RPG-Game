@@ -14,7 +14,9 @@ namespace MainCharacter
 
         public override void Enter()
         {
+            SetPlayerLocalScale(-1);
             base.Enter();
+            
         }
 
         public override void Update()
@@ -52,7 +54,15 @@ namespace MainCharacter
 
         public override void Exit()
         {
+            SetPlayerLocalScale(1);
             base.Exit();
+        }
+
+        private void SetPlayerLocalScale(float xScale)
+        {
+            var scale = Player.transform.localScale;
+            scale.x = xScale;
+            Player.Animator.transform.localScale = scale;
         }
     }
 }

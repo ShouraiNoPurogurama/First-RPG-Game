@@ -33,7 +33,7 @@ namespace MainCharacter
             }
 
             Player.Animator.SetInteger("ComboCounter", _comboCounter);
-            Player.Animator.speed = 1.2f;
+            // Player.Animator.speed = 1.2f;
 
             float xAttackVelocity = Player.isDashAttack
                 ? Player.moveSpeed * attackDir

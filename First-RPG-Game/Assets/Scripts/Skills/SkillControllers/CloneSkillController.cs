@@ -19,6 +19,9 @@ namespace Skills.SkillControllers
 
         private bool _canDuplicateClone;
         private float _chanceToDuplicate;
+        
+        //Fix sprite position
+        private readonly Vector3 _defaultYOffset = new Vector3(0, -0.3f);
 
         private void Awake()
         {
@@ -47,7 +50,7 @@ namespace Skills.SkillControllers
                 _animator.SetInteger("AttackNumber", Random.Range(1, 3));
             }
             
-            transform.position = newTransform.position + offset;
+            transform.position = newTransform.position + offset + _defaultYOffset;
 
             _closestEnemy = closestEnemy;
 
