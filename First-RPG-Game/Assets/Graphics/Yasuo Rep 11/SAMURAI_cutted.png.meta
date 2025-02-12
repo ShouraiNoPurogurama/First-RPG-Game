@@ -1,0 +1,5564 @@
+fileFormatVersion: 2
+guid: 4bc1cdd33148c9746b2a9719dadcfaa4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7831157364141582370
+    second: SAMURAI_cutted_0
+  - first:
+      213: 7035569753634846363
+    second: SAMURAI_cutted_1
+  - first:
+      213: 5709919535752373968
+    second: SAMURAI_cutted_2
+  - first:
+      213: -7010968481138934949
+    second: SAMURAI_cutted_3
+  - first:
+      213: -8770566786525411348
+    second: SAMURAI_cutted_4
+  - first:
+      213: -7053318611177028668
+    second: SAMURAI_cutted_5
+  - first:
+      213: -8086642102377292502
+    second: SAMURAI_cutted_6
+  - first:
+      213: 3576443752027686333
+    second: SAMURAI_cutted_7
+  - first:
+      213: 5976227335485219399
+    second: SAMURAI_cutted_8
+  - first:
+      213: 2102139186812329291
+    second: SAMURAI_cutted_9
+  - first:
+      213: -280509867748427138
+    second: SAMURAI_cutted_10
+  - first:
+      213: 5587372276767555271
+    second: SAMURAI_cutted_11
+  - first:
+      213: 8312824798254118010
+    second: SAMURAI_cutted_12
+  - first:
+      213: -1475245214303789479
+    second: SAMURAI_cutted_13
+  - first:
+      213: 4030068626533369816
+    second: SAMURAI_cutted_14
+  - first:
+      213: -3662577154537914589
+    second: SAMURAI_cutted_15
+  - first:
+      213: 1970082237833694384
+    second: SAMURAI_cutted_16
+  - first:
+      213: 2213726907504040471
+    second: SAMURAI_cutted_17
+  - first:
+      213: 910793795812225177
+    second: SAMURAI_cutted_18
+  - first:
+      213: -4323457766698938640
+    second: SAMURAI_cutted_19
+  - first:
+      213: -2601488475264105762
+    second: SAMURAI_cutted_20
+  - first:
+      213: -8595339991655995065
+    second: SAMURAI_cutted_21
+  - first:
+      213: -2296998897152124517
+    second: SAMURAI_cutted_22
+  - first:
+      213: -7341368688448824348
+    second: SAMURAI_cutted_23
+  - first:
+      213: 5871425235921486677
+    second: SAMURAI_cutted_24
+  - first:
+      213: -8795145896452045891
+    second: SAMURAI_cutted_25
+  - first:
+      213: -7119862779903321885
+    second: SAMURAI_cutted_26
+  - first:
+      213: -3084596630808204362
+    second: SAMURAI_cutted_27
+  - first:
+      213: 7549414275394687308
+    second: SAMURAI_cutted_28
+  - first:
+      213: 8466086840793452073
+    second: SAMURAI_cutted_29
+  - first:
+      213: 1929735883619818369
+    second: SAMURAI_cutted_30
+  - first:
+      213: -1056600454143821249
+    second: SAMURAI_cutted_31
+  - first:
+      213: 8458530317049251642
+    second: SAMURAI_cutted_32
+  - first:
+      213: 8581006783032501107
+    second: SAMURAI_cutted_33
+  - first:
+      213: 3171501715278072567
+    second: SAMURAI_cutted_34
+  - first:
+      213: -7305107144923647750
+    second: SAMURAI_cutted_35
+  - first:
+      213: 2736966950762863330
+    second: SAMURAI_cutted_36
+  - first:
+      213: -279789995955368821
+    second: SAMURAI_cutted_37
+  - first:
+      213: 9046926610580657806
+    second: SAMURAI_cutted_38
+  - first:
+      213: 4136130375115087666
+    second: SAMURAI_cutted_39
+  - first:
+      213: 4360696252622988091
+    second: SAMURAI_cutted_40
+  - first:
+      213: 6854940156522974773
+    second: SAMURAI_cutted_41
+  - first:
+      213: -7821170680818138494
+    second: SAMURAI_cutted_42
+  - first:
+      213: 7658610590153508212
+    second: SAMURAI_cutted_43
+  - first:
+      213: -7941870096763794096
+    second: SAMURAI_cutted_44
+  - first:
+      213: 6836155193470227863
+    second: SAMURAI_cutted_45
+  - first:
+      213: -305451845400666024
+    second: SAMURAI_cutted_46
+  - first:
+      213: 7761827622985325771
+    second: SAMURAI_cutted_47
+  - first:
+      213: 5480650976761116907
+    second: SAMURAI_cutted_48
+  - first:
+      213: -2220306218336638876
+    second: SAMURAI_cutted_49
+  - first:
+      213: 4843229022268963962
+    second: SAMURAI_cutted_50
+  - first:
+      213: 6668490877275694458
+    second: SAMURAI_cutted_51
+  - first:
+      213: -1220548623825768467
+    second: SAMURAI_cutted_52
+  - first:
+      213: -2507868700238015030
+    second: SAMURAI_cutted_53
+  - first:
+      213: 6339795755350368208
+    second: SAMURAI_cutted_54
+  - first:
+      213: -5329580057437211951
+    second: SAMURAI_cutted_55
+  - first:
+      213: -173422998360663833
+    second: SAMURAI_cutted_56
+  - first:
+      213: -3635868584168287627
+    second: SAMURAI_cutted_57
+  - first:
+      213: 7343532441969427580
+    second: SAMURAI_cutted_58
+  - first:
+      213: 902418845437940077
+    second: SAMURAI_cutted_59
+  - first:
+      213: 5340397483200405067
+    second: SAMURAI_cutted_60
+  - first:
+      213: 4686476421302839300
+    second: SAMURAI_cutted_61
+  - first:
+      213: 5422626921457593911
+    second: SAMURAI_cutted_62
+  - first:
+      213: 9035308448675809115
+    second: SAMURAI_cutted_63
+  - first:
+      213: 7967437152962348399
+    second: SAMURAI_cutted_64
+  - first:
+      213: 6811864687376801670
+    second: SAMURAI_cutted_65
+  - first:
+      213: -4247097004357939661
+    second: SAMURAI_cutted_66
+  - first:
+      213: 4421191657263150241
+    second: SAMURAI_cutted_67
+  - first:
+      213: -7161534396277038249
+    second: SAMURAI_cutted_68
+  - first:
+      213: 327264075194728691
+    second: SAMURAI_cutted_69
+  - first:
+      213: -6870383088285272643
+    second: SAMURAI_cutted_70
+  - first:
+      213: 4718800987982818556
+    second: SAMURAI_cutted_71
+  - first:
+      213: 6228898798140649455
+    second: SAMURAI_cutted_72
+  - first:
+      213: 5727188027301550183
+    second: SAMURAI_cutted_73
+  - first:
+      213: 8476913204601957430
+    second: SAMURAI_cutted_74
+  - first:
+      213: -8456193565697135323
+    second: SAMURAI_cutted_75
+  - first:
+      213: -3705842202355223017
+    second: SAMURAI_cutted_76
+  - first:
+      213: -536949695468352184
+    second: SAMURAI_cutted_77
+  - first:
+      213: -1381733898791666585
+    second: SAMURAI_cutted_78
+  - first:
+      213: -269555303254660010
+    second: SAMURAI_cutted_79
+  - first:
+      213: -149754286148900533
+    second: SAMURAI_cutted_80
+  - first:
+      213: 432735595720725744
+    second: SAMURAI_cutted_81
+  - first:
+      213: 5825221648750664397
+    second: SAMURAI_cutted_82
+  - first:
+      213: 1422882425309052904
+    second: SAMURAI_cutted_83
+  - first:
+      213: 2381707006109831931
+    second: SAMURAI_cutted_84
+  - first:
+      213: 4593853016395559626
+    second: SAMURAI_cutted_85
+  - first:
+      213: -4005166004046814581
+    second: SAMURAI_cutted_86
+  - first:
+      213: 5941445667235894581
+    second: SAMURAI_cutted_87
+  - first:
+      213: -6766594507732362550
+    second: SAMURAI_cutted_88
+  - first:
+      213: -7995593200032520935
+    second: SAMURAI_cutted_89
+  - first:
+      213: -7988850638596800623
+    second: SAMURAI_cutted_90
+  - first:
+      213: -7100667453179887101
+    second: SAMURAI_cutted_91
+  - first:
+      213: 4435390600482340374
+    second: SAMURAI_cutted_92
+  - first:
+      213: -1396767065417280482
+    second: SAMURAI_cutted_93
+  - first:
+      213: 4970161110975368266
+    second: SAMURAI_cutted_94
+  - first:
+      213: 8326732562126274709
+    second: SAMURAI_cutted_95
+  - first:
+      213: -2243422666441529220
+    second: SAMURAI_cutted_96
+  - first:
+      213: 6906902547798436166
+    second: SAMURAI_cutted_97
+  - first:
+      213: 5823689794344706993
+    second: SAMURAI_cutted_98
+  - first:
+      213: 1846186546854728833
+    second: SAMURAI_cutted_99
+  - first:
+      213: 6141239992661554188
+    second: SAMURAI_cutted_100
+  - first:
+      213: 5670764021196461744
+    second: SAMURAI_cutted_101
+  - first:
+      213: -9101219845950254123
+    second: SAMURAI_cutted_102
+  - first:
+      213: 199361086978894832
+    second: SAMURAI_cutted_103
+  - first:
+      213: -5083670815845507041
+    second: SAMURAI_cutted_104
+  - first:
+      213: -7701900416685486783
+    second: SAMURAI_cutted_105
+  - first:
+      213: -5895156987184846954
+    second: SAMURAI_cutted_106
+  - first:
+      213: -5401574709094155745
+    second: SAMURAI_cutted_107
+  - first:
+      213: 7015006092460185539
+    second: SAMURAI_cutted_108
+  - first:
+      213: 1690004766608828886
+    second: SAMURAI_cutted_109
+  - first:
+      213: 7015698550391094846
+    second: SAMURAI_cutted_110
+  - first:
+      213: 3195218681498962895
+    second: SAMURAI_cutted_111
+  - first:
+      213: 3379886819275286727
+    second: SAMURAI_cutted_112
+  - first:
+      213: -5712128521797414958
+    second: SAMURAI_cutted_113
+  - first:
+      213: 6912117805244206704
+    second: SAMURAI_cutted_114
+  - first:
+      213: -1216688206589787339
+    second: SAMURAI_cutted_115
+  - first:
+      213: 5217046941805789866
+    second: SAMURAI_cutted_116
+  - first:
+      213: -5146476271748320283
+    second: SAMURAI_cutted_117
+  - first:
+      213: -2710472884878021568
+    second: SAMURAI_cutted_118
+  - first:
+      213: 2571373515251427278
+    second: SAMURAI_cutted_119
+  - first:
+      213: 325183717189319911
+    second: SAMURAI_cutted_120
+  - first:
+      213: 2515645206935028137
+    second: SAMURAI_cutted_121
+  - first:
+      213: -8859475230917374858
+    second: SAMURAI_cutted_122
+  - first:
+      213: 1033126512385919167
+    second: SAMURAI_cutted_123
+  - first:
+      213: 8806788198980679168
+    second: SAMURAI_cutted_124
+  - first:
+      213: 5434675768621853458
+    second: SAMURAI_cutted_125
+  - first:
+      213: -7922557001105288150
+    second: SAMURAI_cutted_126
+  - first:
+      213: 273645945022678130
+    second: SAMURAI_cutted_127
+  - first:
+      213: -3900897051074794733
+    second: SAMURAI_cutted_128
+  - first:
+      213: 8014422920992072651
+    second: SAMURAI_cutted_129
+  - first:
+      213: 7293180604988356329
+    second: SAMURAI_cutted_130
+  - first:
+      213: 7312448825457880651
+    second: SAMURAI_cutted_131
+  - first:
+      213: -2551646619149934837
+    second: SAMURAI_cutted_132
+  - first:
+      213: 7049154441588284226
+    second: SAMURAI_cutted_133
+  - first:
+      213: -6993405892040874853
+    second: SAMURAI_cutted_134
+  - first:
+      213: 2319681642268926845
+    second: SAMURAI_cutted_135
+  - first:
+      213: -4370070731322186455
+    second: SAMURAI_cutted_136
+  - first:
+      213: -1409900715879648412
+    second: SAMURAI_cutted_137
+  - first:
+      213: 6176815681851696805
+    second: SAMURAI_cutted_138
+  - first:
+      213: 3523132954235793333
+    second: SAMURAI_cutted_139
+  - first:
+      213: 8901144126288011797
+    second: SAMURAI_cutted_140
+  - first:
+      213: -7839166568410575796
+    second: SAMURAI_cutted_141
+  - first:
+      213: 546879660502370894
+    second: SAMURAI_cutted_142
+  - first:
+      213: -8101278965210774941
+    second: SAMURAI_cutted_143
+  - first:
+      213: 4433803798635341746
+    second: SAMURAI_cutted_144
+  - first:
+      213: 4213443977569287938
+    second: SAMURAI_cutted_145
+  - first:
+      213: 8787374918289662725
+    second: SAMURAI_cutted_146
+  - first:
+      213: 2464925433739153270
+    second: SAMURAI_cutted_147
+  - first:
+      213: 5046943729107946328
+    second: SAMURAI_cutted_148
+  - first:
+      213: -1972166834845993258
+    second: SAMURAI_cutted_149
+  - first:
+      213: 7144114882714051069
+    second: SAMURAI_cutted_150
+  - first:
+      213: 7542003264980738246
+    second: SAMURAI_cutted_151
+  - first:
+      213: 5078361373490971433
+    second: SAMURAI_cutted_152
+  - first:
+      213: 5962167134409556555
+    second: SAMURAI_cutted_153
+  - first:
+      213: 1818621354330465506
+    second: SAMURAI_cutted_154
+  - first:
+      213: -5928667191411059540
+    second: SAMURAI_cutted_155
+  - first:
+      213: 1289572601573094674
+    second: SAMURAI_cutted_156
+  - first:
+      213: -8744299758487742806
+    second: SAMURAI_cutted_157
+  - first:
+      213: -4955198241865736235
+    second: SAMURAI_cutted_158
+  - first:
+      213: 4722134793318057719
+    second: SAMURAI_cutted_159
+  - first:
+      213: 5242628691766686202
+    second: SAMURAI_cutted_160
+  - first:
+      213: -6927923849791570951
+    second: SAMURAI_cutted_161
+  - first:
+      213: -7512668399675070002
+    second: SAMURAI_cutted_162
+  - first:
+      213: 4342283353518267578
+    second: SAMURAI_cutted_163
+  - first:
+      213: -1763267752367220378
+    second: SAMURAI_cutted_164
+  - first:
+      213: -251172055444755962
+    second: SAMURAI_cutted_165
+  - first:
+      213: 3594335356700850885
+    second: SAMURAI_cutted_166
+  - first:
+      213: 4500241212891034829
+    second: SAMURAI_cutted_167
+  - first:
+      213: 2229050083127389138
+    second: SAMURAI_cutted_168
+  - first:
+      213: -29920746080259673
+    second: SAMURAI_cutted_169
+  - first:
+      213: 9218957470125123925
+    second: SAMURAI_cutted_170
+  - first:
+      213: 5139022911544165337
+    second: SAMURAI_cutted_171
+  - first:
+      213: -4245009867897347694
+    second: SAMURAI_cutted_172
+  - first:
+      213: -1569235004788988270
+    second: SAMURAI_cutted_173
+  - first:
+      213: 4023650113278732213
+    second: SAMURAI_cutted_174
+  - first:
+      213: 5916374240419439114
+    second: SAMURAI_cutted_175
+  - first:
+      213: 8668456714305402284
+    second: SAMURAI_cutted_176
+  - first:
+      213: -2515271927540099324
+    second: SAMURAI_cutted_177
+  - first:
+      213: 380394028861396591
+    second: SAMURAI_cutted_178
+  - first:
+      213: -7112440679529515662
+    second: SAMURAI_cutted_179
+  - first:
+      213: 2697852050600696606
+    second: SAMURAI_cutted_180
+  - first:
+      213: 6072043574136686590
+    second: SAMURAI_cutted_181
+  - first:
+      213: 4017533437373679598
+    second: SAMURAI_cutted_182
+  - first:
+      213: -6177768271755715722
+    second: SAMURAI_cutted_183
+  - first:
+      213: 8954118940243179793
+    second: SAMURAI_cutted_184
+  - first:
+      213: 7091947545975666432
+    second: SAMURAI_cutted_185
+  - first:
+      213: 6663571786739402672
+    second: SAMURAI_cutted_186
+  - first:
+      213: 2301242762233569726
+    second: SAMURAI_cutted_187
+  - first:
+      213: -3384809277037804715
+    second: SAMURAI_cutted_188
+  - first:
+      213: -1601868004808331895
+    second: SAMURAI_cutted_189
+  - first:
+      213: 4129659031472658382
+    second: SAMURAI_cutted_190
+  - first:
+      213: 6663067077973777963
+    second: SAMURAI_cutted_191
+  - first:
+      213: -8468147137345441739
+    second: SAMURAI_cutted_192
+  - first:
+      213: -512079142423872333
+    second: SAMURAI_cutted_193
+  - first:
+      213: 1386635075389983008
+    second: SAMURAI_cutted_194
+  - first:
+      213: 8227815163666412107
+    second: SAMURAI_cutted_195
+  - first:
+      213: 7204724544666576725
+    second: SAMURAI_cutted_196
+  - first:
+      213: -8589802792932908980
+    second: SAMURAI_cutted_197
+  - first:
+      213: 499096100565464759
+    second: SAMURAI_cutted_198
+  - first:
+      213: 873874034902547562
+    second: SAMURAI_cutted_199
+  - first:
+      213: -7136243416514569376
+    second: SAMURAI_cutted_200
+  - first:
+      213: -5003844142416497913
+    second: SAMURAI_cutted_201
+  - first:
+      213: 7237447738851555055
+    second: SAMURAI_cutted_202
+  - first:
+      213: 8469215954327217804
+    second: SAMURAI_cutted_203
+  - first:
+      213: 7951927591685328032
+    second: SAMURAI_cutted_204
+  - first:
+      213: 9003723216595951669
+    second: SAMURAI_cutted_205
+  - first:
+      213: -545176857826286990
+    second: SAMURAI_cutted_206
+  - first:
+      213: -1319363137338376679
+    second: SAMURAI_cutted_207
+  - first:
+      213: -8344368711236498404
+    second: SAMURAI_cutted_208
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 80
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SAMURAI_cutted_0
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 13155
+        width: 100
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 228e7d5a12cddac60800000000000000
+      internalID: 7831157364141582370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_1
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 13155
+        width: 105
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9633e53a6d53a160800000000000000
+      internalID: 7035569753634846363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_2
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 13155
+        width: 105
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d66598b095bd3f40800000000000000
+      internalID: 5709919535752373968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_3
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 13155
+        width: 105
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5bf046ef4904be90800000000000000
+      internalID: -7010968481138934949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_4
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 13155
+        width: 105
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce74052e9ffa84680800000000000000
+      internalID: -8770566786525411348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 12780
+        width: 110
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c3442dd7149d1e90800000000000000
+      internalID: -7053318611177028668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_6
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 12780
+        width: 110
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2d551e4ad976cf80800000000000000
+      internalID: -8086642102377292502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_7
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 12780
+        width: 110
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db586c6c4a412a130800000000000000
+      internalID: 3576443752027686333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_8
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 12780
+        width: 110
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74263942913dfe250800000000000000
+      internalID: 5976227335485219399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_9
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 12780
+        width: 105
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4d906ae37c4c2d10800000000000000
+      internalID: 2102139186812329291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_10
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 12405
+        width: 100
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7afcd0f2cd6b1cf0800000000000000
+      internalID: -280509867748427138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_11
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 12405
+        width: 105
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce78988b755a8d40800000000000000
+      internalID: 5587372276767555271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_12
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 12405
+        width: 105
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a74befb5c161d5370800000000000000
+      internalID: 8312824798254118010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_13
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 12405
+        width: 105
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ed3d43b40e68be0800000000000000
+      internalID: -1475245214303789479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_14
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 12405
+        width: 105
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d7c7f8401eade730800000000000000
+      internalID: 4030068626533369816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_15
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 12030
+        width: 110
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32f7e4dab79eb2dc0800000000000000
+      internalID: -3662577154537914589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_16
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 12030
+        width: 110
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc426c7b53275b10800000000000000
+      internalID: 1970082237833694384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_17
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 12030
+        width: 110
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a908fb4ecb8be10800000000000000
+      internalID: 2213726907504040471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_18
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 12030
+        width: 110
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9907407b12ac3ac00800000000000000
+      internalID: 910793795812225177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_19
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 12030
+        width: 105
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fe818e511efff3c0800000000000000
+      internalID: -4323457766698938640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_20
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 11655
+        width: 130
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed24c98d308a5ebd0800000000000000
+      internalID: -2601488475264105762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_21
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 11655
+        width: 125
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 749a2a151d737b880800000000000000
+      internalID: -8595339991655995065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_22
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 11655
+        width: 125
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9998cd4cab6f10e0800000000000000
+      internalID: -2296998897152124517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_23
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 11655
+        width: 125
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb15d7f2183e1a90800000000000000
+      internalID: -7341368688448824348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_24
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 11655
+        width: 125
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5534d58d42e7b7150800000000000000
+      internalID: 5871425235921486677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_25
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 11280
+        width: 135
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db3cd36e76d51f580800000000000000
+      internalID: -8795145896452045891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_26
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 11280
+        width: 125
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e8565a368a213d90800000000000000
+      internalID: -7119862779903321885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_27
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 11280
+        width: 125
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb6f4905bf4135d0800000000000000
+      internalID: -3084596630808204362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_28
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 11280
+        width: 125
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41d923f848e4c860800000000000000
+      internalID: 7549414275394687308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_29
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 11280
+        width: 130
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92e4a1f50259d7570800000000000000
+      internalID: 8466086840793452073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_30
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 10905
+        width: 125
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18bdb7ddf8cc7ca10800000000000000
+      internalID: 1929735883619818369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_31
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 10905
+        width: 125
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3abd3d2c733651f0800000000000000
+      internalID: -1056600454143821249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_32
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 10905
+        width: 125
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a37c795128cb26570800000000000000
+      internalID: 8458530317049251642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_33
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 10905
+        width: 125
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373aedd743cd51770800000000000000
+      internalID: 8581006783032501107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_34
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 10905
+        width: 125
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa01b7b100730c20800000000000000
+      internalID: 3171501715278072567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_35
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 10530
+        width: 125
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af078ac71cb0f9a90800000000000000
+      internalID: -7305107144923647750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_36
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 10530
+        width: 125
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea543ec0f8abf520800000000000000
+      internalID: 2736966950762863330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_37
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 10530
+        width: 135
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c4f572b7cfd1cf0800000000000000
+      internalID: -279789995955368821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_38
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 10530
+        width: 125
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8650b4d1d32d8d70800000000000000
+      internalID: 9046926610580657806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_39
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 10530
+        width: 125
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f107979ac766930800000000000000
+      internalID: 4136130375115087666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_40
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 10155
+        width: 125
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3368f6432e448c30800000000000000
+      internalID: 4360696252622988091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_41
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 10155
+        width: 130
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53ecc1ad0c3a12f50800000000000000
+      internalID: 6854940156522974773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_42
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 10155
+        width: 125
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 282822244be957390800000000000000
+      internalID: -7821170680818138494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_43
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 10155
+        width: 125
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 475052331c9d84a60800000000000000
+      internalID: 7658610590153508212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_44
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 10155
+        width: 125
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05dc81e893fc8c190800000000000000
+      internalID: -7941870096763794096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 9780
+        width: 140
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7951c30dde6eede50800000000000000
+      internalID: 6836155193470227863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_46
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 9780
+        width: 130
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 850e7ea3a21d2cbf0800000000000000
+      internalID: -305451845400666024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_47
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 9780
+        width: 150
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bccdad3691d87bb60800000000000000
+      internalID: 7761827622985325771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_48
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 9795
+        width: 160
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be87ebf860f2f0c40800000000000000
+      internalID: 5480650976761116907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_49
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 9805
+        width: 160
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46824731243ef21e0800000000000000
+      internalID: -2220306218336638876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_50
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 9420
+        width: 160
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7c343e922b963340800000000000000
+      internalID: 4843229022268963962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_51
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 9405
+        width: 150
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7563f72f1d3b8c50800000000000000
+      internalID: 6668490877275694458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_52
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 9405
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: defe5cd4e7dbf0fe0800000000000000
+      internalID: -1220548623825768467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_53
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 9405
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac51ef254b2423dd0800000000000000
+      internalID: -2507868700238015030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_54
+      rect:
+        serializedVersion: 2
+        x: 2075
+        y: 9405
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df103a56aa7bf750800000000000000
+      internalID: 6339795755350368208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_55
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 9030
+        width: 130
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2f272dc278906b0800000000000000
+      internalID: -5329580057437211951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_56
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 9055
+        width: 135
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e854daa3b0e79df0800000000000000
+      internalID: -173422998360663833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_57
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 9065
+        width: 155
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57295ae49ccca8dc0800000000000000
+      internalID: -3635868584168287627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_58
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 9050
+        width: 140
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c74052829d779e560800000000000000
+      internalID: 7343532441969427580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_59
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 9030
+        width: 125
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6152f0a829068c00800000000000000
+      internalID: 902418845437940077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_60
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 8655
+        width: 115
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4edc816737ec1a40800000000000000
+      internalID: 5340397483200405067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_61
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 8655
+        width: 115
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 408eff3a975b90140800000000000000
+      internalID: 4686476421302839300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_62
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 8655
+        width: 130
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e23fa647a014b40800000000000000
+      internalID: 5422626921457593911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_63
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 8655
+        width: 150
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b574867b92dd36d70800000000000000
+      internalID: 9035308448675809115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_64
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 8670
+        width: 160
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f65029890e5029e60800000000000000
+      internalID: 7967437152962348399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_65
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 8305
+        width: 160
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68f1f15a7da988e50800000000000000
+      internalID: 6811864687376801670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_66
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 8295
+        width: 160
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33e8e90d6c74f05c0800000000000000
+      internalID: -4247097004357939661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_67
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 8280
+        width: 150
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a43717436a3b5d30800000000000000
+      internalID: 4421191657263150241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_68
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 8280
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7536a27f86e1d9c90800000000000000
+      internalID: -7161534396277038249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_69
+      rect:
+        serializedVersion: 2
+        x: 2075
+        y: 8280
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f08ab541fcaa8400800000000000000
+      internalID: 327264075194728691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_70
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 7905
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db5b7e76bfe77a0a0800000000000000
+      internalID: -6870383088285272643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_71
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 7905
+        width: 130
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc6a7e4f7c8c7140800000000000000
+      internalID: 4718800987982818556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_72
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 7930
+        width: 135
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fefe70d647e717650800000000000000
+      internalID: 6228898798140649455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_73
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 7940
+        width: 155
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768dd29ba2f0b7f40800000000000000
+      internalID: 5727188027301550183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_74
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 7925
+        width: 140
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c2e10a5ab04a570800000000000000
+      internalID: 8476913204601957430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_75
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 7530
+        width: 125
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52dadac31c095aa80800000000000000
+      internalID: -8456193565697135323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_76
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 7530
+        width: 115
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71637feb624329cc0800000000000000
+      internalID: -3705842202355223017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_77
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 7530
+        width: 115
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84dca5bc81f5c88f0800000000000000
+      internalID: -536949695468352184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_78
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 7500
+        width: 95
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c386cf65813dce0800000000000000
+      internalID: -1381733898791666585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_79
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 7500
+        width: 175
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65cee2e31e8524cf0800000000000000
+      internalID: -269555303254660010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_80
+      rect:
+        serializedVersion: 2
+        x: 1955
+        y: 7500
+        width: 85
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b49a08a2547fbedf0800000000000000
+      internalID: -149754286148900533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_81
+      rect:
+        serializedVersion: 2
+        x: 2105
+        y: 7500
+        width: 150
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f4d9984bb2610600800000000000000
+      internalID: 432735595720725744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_82
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 7200
+        width: 55
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcad2b7e93857d050800000000000000
+      internalID: 5825221648750664397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_83
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 7125
+        width: 150
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ef31bde6081fb310800000000000000
+      internalID: 1422882425309052904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_84
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 7225
+        width: 25
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf25c3a37e58d0120800000000000000
+      internalID: 2381707006109831931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_85
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 7125
+        width: 115
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac23d98aaf4a0cf30800000000000000
+      internalID: 4593853016395559626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_86
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 7125
+        width: 110
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b82a1565dbaca68c0800000000000000
+      internalID: -4005166004046814581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_87
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 7125
+        width: 125
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53511efea51447250800000000000000
+      internalID: 5941445667235894581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_88
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 7125
+        width: 110
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acad08b652a3812a0800000000000000
+      internalID: -6766594507732362550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_89
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 7200
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9156887d852f90190800000000000000
+      internalID: -7995593200032520935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_90
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 7125
+        width: 55
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19ff8c2cba6e12190800000000000000
+      internalID: -7988850638596800623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_91
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 7145
+        width: 35
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3020901829c557d90800000000000000
+      internalID: -7100667453179887101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_92
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 6750
+        width: 115
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61e3bdd504cad8d30800000000000000
+      internalID: 4435390600482340374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_93
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 6750
+        width: 135
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1496df11cfad9ce0800000000000000
+      internalID: -1396767065417280482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_94
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 6750
+        width: 115
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4cc528823f89f440800000000000000
+      internalID: 4970161110975368266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_95
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 6915
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5900739f52f7e8370800000000000000
+      internalID: 8326732562126274709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_96
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 6750
+        width: 110
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7861b598f2cdd0e0800000000000000
+      internalID: -2243422666441529220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_97
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 6925
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64924cbd54f3adf50800000000000000
+      internalID: 6906902547798436166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_98
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 6750
+        width: 110
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b3ebf14307e1d050800000000000000
+      internalID: 5823689794344706993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_99
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 6885
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 184916202e8fe9910800000000000000
+      internalID: 1846186546854728833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_100
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 6885
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c04b3035c311a3550800000000000000
+      internalID: 6141239992661554188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_101
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 6850
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b61b7015d992be40800000000000000
+      internalID: 5670764021196461744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_102
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 6850
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d3566b35c8f1b180800000000000000
+      internalID: -9101219845950254123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_103
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 6375
+        width: 115
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fba9633ad544c200800000000000000
+      internalID: 199361086978894832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_104
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 6405
+        width: 130
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f102282d35c2379b0800000000000000
+      internalID: -5083670815845507041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_105
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 6405
+        width: 140
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d4700a06a5d1590800000000000000
+      internalID: -7701900416685486783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_106
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 6405
+        width: 130
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6976fab34f1303ea0800000000000000
+      internalID: -5895156987184846954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_107
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 6405
+        width: 150
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a75bcbb60c905b0800000000000000
+      internalID: -5401574709094155745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_108
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 6045
+        width: 160
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c75a4ebfde4a5160800000000000000
+      internalID: 7015006092460185539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_109
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 6055
+        width: 160
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d9af66916a147710800000000000000
+      internalID: 1690004766608828886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_110
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 6045
+        width: 160
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3eb84b29a4cc5160800000000000000
+      internalID: 7015698550391094846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_111
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 6030
+        width: 150
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcb007a3672b75c20800000000000000
+      internalID: 3195218681498962895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_112
+      rect:
+        serializedVersion: 2
+        x: 2075
+        y: 6030
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8adeb9725c7ee20800000000000000
+      internalID: 3379886819275286727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_113
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 5655
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df43e2af517ab0b0800000000000000
+      internalID: -5712128521797414958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_114
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 5655
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ecb3b9586ccef50800000000000000
+      internalID: 6912117805244206704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_115
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 5655
+        width: 130
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5330fcbb5847d1fe0800000000000000
+      internalID: -1216688206589787339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_116
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 5680
+        width: 135
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa24fde6d8ca66840800000000000000
+      internalID: 5217046941805789866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_117
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 5690
+        width: 155
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e3f679191b0498b0800000000000000
+      internalID: -5146476271748320283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_118
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 5300
+        width: 140
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c648b9547726ad0800000000000000
+      internalID: -2710472884878021568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_119
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 5280
+        width: 125
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec7a861a69a5fa320800000000000000
+      internalID: 2571373515251427278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_120
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 5280
+        width: 115
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec7fcd2ed8438400800000000000000
+      internalID: 325183717189319911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_121
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 5280
+        width: 115
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a1c64cbcfd59e220800000000000000
+      internalID: 2515645206935028137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_122
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 5297
+        width: 120
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67c4ccc8732dc0580800000000000000
+      internalID: -8859475230917374858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_123
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 4920
+        width: 120
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb80dcad617665e00800000000000000
+      internalID: 1033126512385919167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_124
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 4920
+        width: 120
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0067854e43ff73a70800000000000000
+      internalID: 8806788198980679168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_125
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 4920
+        width: 130
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21be02241d8db6b40800000000000000
+      internalID: 5434675768621853458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_126
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 4915
+        width: 140
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a24d55c026c6d0290800000000000000
+      internalID: -7922557001105288150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_127
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 4920
+        width: 145
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2748d43898f2cc300800000000000000
+      internalID: 273645945022678130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_128
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 4550
+        width: 130
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b6155ccca3dd9c0800000000000000
+      internalID: -3900897051074794733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_129
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 4550
+        width: 130
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc32b753f23f83f60800000000000000
+      internalID: 8014422920992072651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_130
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 4550
+        width: 130
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6791b8e15963560800000000000000
+      internalID: 7293180604988356329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_131
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 4500
+        width: 115
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ea3a7b6790b7560800000000000000
+      internalID: 7312448825457880651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_132
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 4500
+        width: 115
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0fdd394beab69cd0800000000000000
+      internalID: -2551646619149934837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_133
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 4125
+        width: 110
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b9cb9dd90a3d160800000000000000
+      internalID: 7049154441588284226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_134
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 4125
+        width: 95
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b94a7c2d46e62fe90800000000000000
+      internalID: -6993405892040874853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_135
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 4125
+        width: 105
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d732f67d92a213020800000000000000
+      internalID: 2319681642268926845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_136
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 4125
+        width: 100
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 925a530d2d36a53c0800000000000000
+      internalID: -4370070731322186455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_137
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 4125
+        width: 160
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 463bc65d4c60f6ce0800000000000000
+      internalID: -1409900715879648412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_138
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 3750
+        width: 180
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a625dfe22578b550800000000000000
+      internalID: 6176815681851696805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_139
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 3845
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bf62b961cea4e030800000000000000
+      internalID: 3523132954235793333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_140
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 3750
+        width: 180
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 512a3fd2c67378b70800000000000000
+      internalID: 8901144126288011797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_141
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 3845
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c05ca2a8fa53390800000000000000
+      internalID: -7839166568410575796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_142
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 3750
+        width: 155
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a412b5728e69700800000000000000
+      internalID: 546879660502370894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_143
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 3850
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362844c14b9729f80800000000000000
+      internalID: -8101278965210774941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_144
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 3750
+        width: 105
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b7ef654019088d30800000000000000
+      internalID: 4433803798635341746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_145
+      rect:
+        serializedVersion: 2
+        x: 2075
+        y: 3750
+        width: 115
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20fb60c49f8297a30800000000000000
+      internalID: 4213443977569287938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_146
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 3375
+        width: 135
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50325d04ee603f970800000000000000
+      internalID: 8787374918289662725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_147
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 3375
+        width: 115
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67f09db4f9c253220800000000000000
+      internalID: 2464925433739153270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_148
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 3540
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85b4ddee4985a0640800000000000000
+      internalID: 5046943729107946328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_149
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 3375
+        width: 110
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6b23376b471a4e0800000000000000
+      internalID: -1972166834845993258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_150
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 3550
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df1a0ca72aef42360800000000000000
+      internalID: 7144114882714051069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_151
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 3375
+        width: 110
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c06300a2049aa860800000000000000
+      internalID: 7542003264980738246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_152
+      rect:
+        serializedVersion: 2
+        x: 2075
+        y: 3375
+        width: 115
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9238efb43c6f97640800000000000000
+      internalID: 5078361373490971433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_153
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 3510
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b428df97b6fddb250800000000000000
+      internalID: 5962167134409556555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_154
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 3510
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4aecd7c7a0d3910800000000000000
+      internalID: 1818621354330465506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_155
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 3475
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca45e60d99429bda0800000000000000
+      internalID: -5928667191411059540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_156
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 3475
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21537dcd27b75e110800000000000000
+      internalID: 1289572601573094674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_157
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 3030
+        width: 105
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa6ddcde2b106a680800000000000000
+      internalID: -8744299758487742806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_158
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 3030
+        width: 105
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dfd3f9e3799b3bb0800000000000000
+      internalID: -4955198241865736235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_159
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 3030
+        width: 100
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f64c395394688140800000000000000
+      internalID: 4722134793318057719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_160
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 3030
+        width: 100
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af1360eb40f81c840800000000000000
+      internalID: 5242628691766686202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_161
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 3025
+        width: 280
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb773ed6f11bdf90800000000000000
+      internalID: -6927923849791570951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_162
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2655
+        width: 245
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec9a012f4e3adb790800000000000000
+      internalID: -7512668399675070002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_163
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 2655
+        width: 190
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc5c8024b3e24c30800000000000000
+      internalID: 4342283353518267578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_164
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 2655
+        width: 190
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6691048425d9787e0800000000000000
+      internalID: -1763267752367220378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_165
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 2655
+        width: 190
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ae5b9a858a38cf0800000000000000
+      internalID: -251172055444755962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_166
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 2655
+        width: 280
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5caf7cb96f4a1e130800000000000000
+      internalID: 3594335356700850885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_167
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 2280
+        width: 240
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc471f13a81147e30800000000000000
+      internalID: 4500241212891034829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_168
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 2280
+        width: 105
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dbec579d3d2fee10800000000000000
+      internalID: 2229050083127389138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_169
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 2280
+        width: 105
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a1b87e6d33b59ff0800000000000000
+      internalID: -29920746080259673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_170
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 2280
+        width: 110
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559ed3699f050ff70800000000000000
+      internalID: 9218957470125123925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_171
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 2280
+        width: 275
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d30f2f3c1a715740800000000000000
+      internalID: 5139022911544165337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_172
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1905
+        width: 245
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29163f32402b615c0800000000000000
+      internalID: -4245009867897347694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_173
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1905
+        width: 195
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296a17ac315f83ae0800000000000000
+      internalID: -1569235004788988270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_174
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 1905
+        width: 195
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b76076b570e6d730800000000000000
+      internalID: 4023650113278732213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_175
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 1675
+        width: 125
+        height: 375
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a02e87e760f2b1250800000000000000
+      internalID: 5916374240419439114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_176
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 1875
+        width: 105
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca5f507447b8c4870800000000000000
+      internalID: 8668456714305402284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_177
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1500
+        width: 110
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf9c5c305ae41942a388fb1ff359aa1
+      internalID: -810901537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_178
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1650
+        width: 135
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10248c7de28511346a9afdabc5b25418
+      internalID: 829305649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_179
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 1535
+        width: 190
+        height: 340
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a3489c43cd3e249b9bbf4086bbc8ba
+      internalID: 370110334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_180
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1670
+        width: 130
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578741e6f3882ad43a7181c9a21caada
+      internalID: 956619003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_181
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 1670
+        width: 55
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c7bb49663ce2a488b041b487dcd76d
+      internalID: 2039472518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_182
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 1665
+        width: 125
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ef50ba12e310942b6c6b6565e27e45
+      internalID: -467874923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_183
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 1500
+        width: 35
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02bdb3dfc59eab49a1d3cc35863fd27
+      internalID: 1638461008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_184
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1205
+        width: 115
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d610b982f133d24e9f07bda2e2b2998
+      internalID: -1804537113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_185
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1125
+        width: 145
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c165af5d86602e4cb46c646ddccfe65
+      internalID: -1037276291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_186
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 1125
+        width: 110
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8657e55ced933c24b88d4329df1336ca
+      internalID: -38301076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_187
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 1125
+        width: 105
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140385010476f864593a924c271782a7
+      internalID: 42759806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_188
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 1125
+        width: 105
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55aee25b77f73d04b98792d3d9c9c6b5
+      internalID: 1029355116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_189
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 1140
+        width: 55
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca565f45fc7a41c41bcc92f728f006a1
+      internalID: -1270419156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_190
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1140
+        width: 55
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae2f7c8f33ccff4db13edebed37d9d4
+      internalID: 2093996011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_191
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 1145
+        width: 35
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c97d27c2119dfa499396849fa18b170
+      internalID: -628337948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_192
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 1145
+        width: 35
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9654d676e166b468152b27daed7071
+      internalID: 1010141539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_193
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 1145
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cee7999e5d1c4a498e92bbc6ae4aa6b
+      internalID: -1939170726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_194
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 1145
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b9fae414e030e4893186b14b0ec2ab
+      internalID: 1849358116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_195
+      rect:
+        serializedVersion: 2
+        x: 2010
+        y: 1150
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c6586473a81b14bb6632c3579904e1
+      internalID: -1070356829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_196
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 1150
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248e4b5490e51744ba5d01e5c1e616f2
+      internalID: 1047470704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_197
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 750
+        width: 115
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84751b3917c52ff4383b76bf001950ed
+      internalID: 1844265806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_198
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 750
+        width: 115
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 740f7985b1fa1da468903d73a2212a4d
+      internalID: -1673059868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_199
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 750
+        width: 110
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1e88bdc627c204da1b80482235d407
+      internalID: -2081520155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_200
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 750
+        width: 85
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac900980eed72e54aa57c8b5778b7a66
+      internalID: 1368587881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_201
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 750
+        width: 95
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d486366d364c7eb4daf94719f9eaf51b
+      internalID: 2138131324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_202
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 375
+        width: 80
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd94989ae6590984aabb0df3a7b643f4
+      internalID: 2016417847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_203
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 375
+        width: 80
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f5d6ded390d0b4eab5bbe2726232b1
+      internalID: -1555382982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_204
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 375
+        width: 80
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a9012cb2ce62b439424a9e8ca9c100
+      internalID: -2089436098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_205
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 405
+        width: 150
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e01a941ffaa5942864607385f210e2
+      internalID: -1630915843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_206
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 405
+        width: 165
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fbc7c255d34c8143bcec4f4004f8892
+      internalID: 1330278641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_207
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 30
+        width: 165
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c973f69722cf3f48998e922924a0eb4
+      internalID: -768725010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI_cutted_208
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 30
+        width: 165
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bfdcfea44d0db042948ae8c75294eb5
+      internalID: -326971446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 99a0066e35cce924b9b4c9bbd8d2cd97
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SAMURAI_cutted_0: 7831157364141582370
+      SAMURAI_cutted_1: 7035569753634846363
+      SAMURAI_cutted_10: -280509867748427138
+      SAMURAI_cutted_100: 6141239992661554188
+      SAMURAI_cutted_101: 5670764021196461744
+      SAMURAI_cutted_102: -9101219845950254123
+      SAMURAI_cutted_103: 199361086978894832
+      SAMURAI_cutted_104: -5083670815845507041
+      SAMURAI_cutted_105: -7701900416685486783
+      SAMURAI_cutted_106: -5895156987184846954
+      SAMURAI_cutted_107: -5401574709094155745
+      SAMURAI_cutted_108: 7015006092460185539
+      SAMURAI_cutted_109: 1690004766608828886
+      SAMURAI_cutted_11: 5587372276767555271
+      SAMURAI_cutted_110: 7015698550391094846
+      SAMURAI_cutted_111: 3195218681498962895
+      SAMURAI_cutted_112: 3379886819275286727
+      SAMURAI_cutted_113: -5712128521797414958
+      SAMURAI_cutted_114: 6912117805244206704
+      SAMURAI_cutted_115: -1216688206589787339
+      SAMURAI_cutted_116: 5217046941805789866
+      SAMURAI_cutted_117: -5146476271748320283
+      SAMURAI_cutted_118: -2710472884878021568
+      SAMURAI_cutted_119: 2571373515251427278
+      SAMURAI_cutted_12: 8312824798254118010
+      SAMURAI_cutted_120: 325183717189319911
+      SAMURAI_cutted_121: 2515645206935028137
+      SAMURAI_cutted_122: -8859475230917374858
+      SAMURAI_cutted_123: 1033126512385919167
+      SAMURAI_cutted_124: 8806788198980679168
+      SAMURAI_cutted_125: 5434675768621853458
+      SAMURAI_cutted_126: -7922557001105288150
+      SAMURAI_cutted_127: 273645945022678130
+      SAMURAI_cutted_128: -3900897051074794733
+      SAMURAI_cutted_129: 8014422920992072651
+      SAMURAI_cutted_13: -1475245214303789479
+      SAMURAI_cutted_130: 7293180604988356329
+      SAMURAI_cutted_131: 7312448825457880651
+      SAMURAI_cutted_132: -2551646619149934837
+      SAMURAI_cutted_133: 7049154441588284226
+      SAMURAI_cutted_134: -6993405892040874853
+      SAMURAI_cutted_135: 2319681642268926845
+      SAMURAI_cutted_136: -4370070731322186455
+      SAMURAI_cutted_137: -1409900715879648412
+      SAMURAI_cutted_138: 6176815681851696805
+      SAMURAI_cutted_139: 3523132954235793333
+      SAMURAI_cutted_14: 4030068626533369816
+      SAMURAI_cutted_140: 8901144126288011797
+      SAMURAI_cutted_141: -7839166568410575796
+      SAMURAI_cutted_142: 546879660502370894
+      SAMURAI_cutted_143: -8101278965210774941
+      SAMURAI_cutted_144: 4433803798635341746
+      SAMURAI_cutted_145: 4213443977569287938
+      SAMURAI_cutted_146: 8787374918289662725
+      SAMURAI_cutted_147: 2464925433739153270
+      SAMURAI_cutted_148: 5046943729107946328
+      SAMURAI_cutted_149: -1972166834845993258
+      SAMURAI_cutted_15: -3662577154537914589
+      SAMURAI_cutted_150: 7144114882714051069
+      SAMURAI_cutted_151: 7542003264980738246
+      SAMURAI_cutted_152: 5078361373490971433
+      SAMURAI_cutted_153: 5962167134409556555
+      SAMURAI_cutted_154: 1818621354330465506
+      SAMURAI_cutted_155: -5928667191411059540
+      SAMURAI_cutted_156: 1289572601573094674
+      SAMURAI_cutted_157: -8744299758487742806
+      SAMURAI_cutted_158: -4955198241865736235
+      SAMURAI_cutted_159: 4722134793318057719
+      SAMURAI_cutted_16: 1970082237833694384
+      SAMURAI_cutted_160: 5242628691766686202
+      SAMURAI_cutted_161: -6927923849791570951
+      SAMURAI_cutted_162: -7512668399675070002
+      SAMURAI_cutted_163: 4342283353518267578
+      SAMURAI_cutted_164: -1763267752367220378
+      SAMURAI_cutted_165: -251172055444755962
+      SAMURAI_cutted_166: 3594335356700850885
+      SAMURAI_cutted_167: 4500241212891034829
+      SAMURAI_cutted_168: 2229050083127389138
+      SAMURAI_cutted_169: -29920746080259673
+      SAMURAI_cutted_17: 2213726907504040471
+      SAMURAI_cutted_170: 9218957470125123925
+      SAMURAI_cutted_171: 5139022911544165337
+      SAMURAI_cutted_172: -4245009867897347694
+      SAMURAI_cutted_173: -1569235004788988270
+      SAMURAI_cutted_174: 4023650113278732213
+      SAMURAI_cutted_175: 5916374240419439114
+      SAMURAI_cutted_176: 8668456714305402284
+      SAMURAI_cutted_177: -810901537
+      SAMURAI_cutted_178: 829305649
+      SAMURAI_cutted_179: 370110334
+      SAMURAI_cutted_18: 910793795812225177
+      SAMURAI_cutted_180: 956619003
+      SAMURAI_cutted_181: 2039472518
+      SAMURAI_cutted_182: -467874923
+      SAMURAI_cutted_183: 1638461008
+      SAMURAI_cutted_184: -1804537113
+      SAMURAI_cutted_185: -1037276291
+      SAMURAI_cutted_186: -38301076
+      SAMURAI_cutted_187: 42759806
+      SAMURAI_cutted_188: 1029355116
+      SAMURAI_cutted_189: -1270419156
+      SAMURAI_cutted_19: -4323457766698938640
+      SAMURAI_cutted_190: 2093996011
+      SAMURAI_cutted_191: -628337948
+      SAMURAI_cutted_192: 1010141539
+      SAMURAI_cutted_193: -1939170726
+      SAMURAI_cutted_194: 1849358116
+      SAMURAI_cutted_195: -1070356829
+      SAMURAI_cutted_196: 1047470704
+      SAMURAI_cutted_197: 1844265806
+      SAMURAI_cutted_198: -1673059868
+      SAMURAI_cutted_199: -2081520155
+      SAMURAI_cutted_2: 5709919535752373968
+      SAMURAI_cutted_20: -2601488475264105762
+      SAMURAI_cutted_200: 1368587881
+      SAMURAI_cutted_201: 2138131324
+      SAMURAI_cutted_202: 2016417847
+      SAMURAI_cutted_203: -1555382982
+      SAMURAI_cutted_204: -2089436098
+      SAMURAI_cutted_205: -1630915843
+      SAMURAI_cutted_206: 1330278641
+      SAMURAI_cutted_207: -768725010
+      SAMURAI_cutted_208: -326971446
+      SAMURAI_cutted_21: -8595339991655995065
+      SAMURAI_cutted_22: -2296998897152124517
+      SAMURAI_cutted_23: -7341368688448824348
+      SAMURAI_cutted_24: 5871425235921486677
+      SAMURAI_cutted_25: -8795145896452045891
+      SAMURAI_cutted_26: -7119862779903321885
+      SAMURAI_cutted_27: -3084596630808204362
+      SAMURAI_cutted_28: 7549414275394687308
+      SAMURAI_cutted_29: 8466086840793452073
+      SAMURAI_cutted_3: -7010968481138934949
+      SAMURAI_cutted_30: 1929735883619818369
+      SAMURAI_cutted_31: -1056600454143821249
+      SAMURAI_cutted_32: 8458530317049251642
+      SAMURAI_cutted_33: 8581006783032501107
+      SAMURAI_cutted_34: 3171501715278072567
+      SAMURAI_cutted_35: -7305107144923647750
+      SAMURAI_cutted_36: 2736966950762863330
+      SAMURAI_cutted_37: -279789995955368821
+      SAMURAI_cutted_38: 9046926610580657806
+      SAMURAI_cutted_39: 4136130375115087666
+      SAMURAI_cutted_4: -8770566786525411348
+      SAMURAI_cutted_40: 4360696252622988091
+      SAMURAI_cutted_41: 6854940156522974773
+      SAMURAI_cutted_42: -7821170680818138494
+      SAMURAI_cutted_43: 7658610590153508212
+      SAMURAI_cutted_44: -7941870096763794096
+      SAMURAI_cutted_45: 6836155193470227863
+      SAMURAI_cutted_46: -305451845400666024
+      SAMURAI_cutted_47: 7761827622985325771
+      SAMURAI_cutted_48: 5480650976761116907
+      SAMURAI_cutted_49: -2220306218336638876
+      SAMURAI_cutted_5: -7053318611177028668
+      SAMURAI_cutted_50: 4843229022268963962
+      SAMURAI_cutted_51: 6668490877275694458
+      SAMURAI_cutted_52: -1220548623825768467
+      SAMURAI_cutted_53: -2507868700238015030
+      SAMURAI_cutted_54: 6339795755350368208
+      SAMURAI_cutted_55: -5329580057437211951
+      SAMURAI_cutted_56: -173422998360663833
+      SAMURAI_cutted_57: -3635868584168287627
+      SAMURAI_cutted_58: 7343532441969427580
+      SAMURAI_cutted_59: 902418845437940077
+      SAMURAI_cutted_6: -8086642102377292502
+      SAMURAI_cutted_60: 5340397483200405067
+      SAMURAI_cutted_61: 4686476421302839300
+      SAMURAI_cutted_62: 5422626921457593911
+      SAMURAI_cutted_63: 9035308448675809115
+      SAMURAI_cutted_64: 7967437152962348399
+      SAMURAI_cutted_65: 6811864687376801670
+      SAMURAI_cutted_66: -4247097004357939661
+      SAMURAI_cutted_67: 4421191657263150241
+      SAMURAI_cutted_68: -7161534396277038249
+      SAMURAI_cutted_69: 327264075194728691
+      SAMURAI_cutted_7: 3576443752027686333
+      SAMURAI_cutted_70: -6870383088285272643
+      SAMURAI_cutted_71: 4718800987982818556
+      SAMURAI_cutted_72: 6228898798140649455
+      SAMURAI_cutted_73: 5727188027301550183
+      SAMURAI_cutted_74: 8476913204601957430
+      SAMURAI_cutted_75: -8456193565697135323
+      SAMURAI_cutted_76: -3705842202355223017
+      SAMURAI_cutted_77: -536949695468352184
+      SAMURAI_cutted_78: -1381733898791666585
+      SAMURAI_cutted_79: -269555303254660010
+      SAMURAI_cutted_8: 5976227335485219399
+      SAMURAI_cutted_80: -149754286148900533
+      SAMURAI_cutted_81: 432735595720725744
+      SAMURAI_cutted_82: 5825221648750664397
+      SAMURAI_cutted_83: 1422882425309052904
+      SAMURAI_cutted_84: 2381707006109831931
+      SAMURAI_cutted_85: 4593853016395559626
+      SAMURAI_cutted_86: -4005166004046814581
+      SAMURAI_cutted_87: 5941445667235894581
+      SAMURAI_cutted_88: -6766594507732362550
+      SAMURAI_cutted_89: -7995593200032520935
+      SAMURAI_cutted_9: 2102139186812329291
+      SAMURAI_cutted_90: -7988850638596800623
+      SAMURAI_cutted_91: -7100667453179887101
+      SAMURAI_cutted_92: 4435390600482340374
+      SAMURAI_cutted_93: -1396767065417280482
+      SAMURAI_cutted_94: 4970161110975368266
+      SAMURAI_cutted_95: 8326732562126274709
+      SAMURAI_cutted_96: -2243422666441529220
+      SAMURAI_cutted_97: 6906902547798436166
+      SAMURAI_cutted_98: 5823689794344706993
+      SAMURAI_cutted_99: 1846186546854728833
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

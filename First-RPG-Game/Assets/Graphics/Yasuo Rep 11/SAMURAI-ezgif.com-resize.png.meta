@@ -1,0 +1,5388 @@
+fileFormatVersion: 2
+guid: 981aa9bac5b38ec45b6de26b76ae9a06
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4519205928087584444
+    second: SAMURAI-ezgif.com-resize_0
+  - first:
+      213: -7226245652843843204
+    second: SAMURAI-ezgif.com-resize_1
+  - first:
+      213: 3720290892057203558
+    second: SAMURAI-ezgif.com-resize_2
+  - first:
+      213: 6734203656603012183
+    second: SAMURAI-ezgif.com-resize_3
+  - first:
+      213: 8102749765085829905
+    second: SAMURAI-ezgif.com-resize_4
+  - first:
+      213: 5775997646700378489
+    second: SAMURAI-ezgif.com-resize_5
+  - first:
+      213: 662939285393611479
+    second: SAMURAI-ezgif.com-resize_6
+  - first:
+      213: -2436799552796235436
+    second: SAMURAI-ezgif.com-resize_7
+  - first:
+      213: -7302829524060539652
+    second: SAMURAI-ezgif.com-resize_8
+  - first:
+      213: -5371322875594350401
+    second: SAMURAI-ezgif.com-resize_9
+  - first:
+      213: 989403349830115638
+    second: SAMURAI-ezgif.com-resize_10
+  - first:
+      213: -8408990903185508867
+    second: SAMURAI-ezgif.com-resize_11
+  - first:
+      213: 5158715608552598732
+    second: SAMURAI-ezgif.com-resize_12
+  - first:
+      213: -777879727480309742
+    second: SAMURAI-ezgif.com-resize_13
+  - first:
+      213: -8037213037712058144
+    second: SAMURAI-ezgif.com-resize_14
+  - first:
+      213: 7649047155927514508
+    second: SAMURAI-ezgif.com-resize_15
+  - first:
+      213: 1109844534204451526
+    second: SAMURAI-ezgif.com-resize_16
+  - first:
+      213: 4249374979678748061
+    second: SAMURAI-ezgif.com-resize_17
+  - first:
+      213: 109775113192007132
+    second: SAMURAI-ezgif.com-resize_18
+  - first:
+      213: 2189716606888293959
+    second: SAMURAI-ezgif.com-resize_19
+  - first:
+      213: 6084344590689656120
+    second: SAMURAI-ezgif.com-resize_20
+  - first:
+      213: 3359274460260589656
+    second: SAMURAI-ezgif.com-resize_21
+  - first:
+      213: 8412115187068376901
+    second: SAMURAI-ezgif.com-resize_22
+  - first:
+      213: -3663191816012706915
+    second: SAMURAI-ezgif.com-resize_23
+  - first:
+      213: -5279331688909712078
+    second: SAMURAI-ezgif.com-resize_24
+  - first:
+      213: 2598218866896137452
+    second: SAMURAI-ezgif.com-resize_25
+  - first:
+      213: 2296512579836552669
+    second: SAMURAI-ezgif.com-resize_26
+  - first:
+      213: 952721931482681168
+    second: SAMURAI-ezgif.com-resize_27
+  - first:
+      213: -501424075712348160
+    second: SAMURAI-ezgif.com-resize_28
+  - first:
+      213: -6570673525998398151
+    second: SAMURAI-ezgif.com-resize_29
+  - first:
+      213: -583757016350073432
+    second: SAMURAI-ezgif.com-resize_30
+  - first:
+      213: -3194231118677465684
+    second: SAMURAI-ezgif.com-resize_31
+  - first:
+      213: -543277110826873262
+    second: SAMURAI-ezgif.com-resize_32
+  - first:
+      213: 8054094470491059818
+    second: SAMURAI-ezgif.com-resize_33
+  - first:
+      213: 7076674514133130570
+    second: SAMURAI-ezgif.com-resize_34
+  - first:
+      213: -4777492871717158044
+    second: SAMURAI-ezgif.com-resize_35
+  - first:
+      213: 8309109934737246537
+    second: SAMURAI-ezgif.com-resize_36
+  - first:
+      213: -3778037396609622340
+    second: SAMURAI-ezgif.com-resize_37
+  - first:
+      213: -4500433483609727237
+    second: SAMURAI-ezgif.com-resize_38
+  - first:
+      213: 538456497700116484
+    second: SAMURAI-ezgif.com-resize_39
+  - first:
+      213: -5879395107958484833
+    second: SAMURAI-ezgif.com-resize_40
+  - first:
+      213: -2545758181152994586
+    second: SAMURAI-ezgif.com-resize_41
+  - first:
+      213: 2731697273251460711
+    second: SAMURAI-ezgif.com-resize_42
+  - first:
+      213: -6918245020175490653
+    second: SAMURAI-ezgif.com-resize_43
+  - first:
+      213: 5466999042570181213
+    second: SAMURAI-ezgif.com-resize_44
+  - first:
+      213: 6719206899042266217
+    second: SAMURAI-ezgif.com-resize_45
+  - first:
+      213: 613722984596110990
+    second: SAMURAI-ezgif.com-resize_46
+  - first:
+      213: -8104342837320888131
+    second: SAMURAI-ezgif.com-resize_47
+  - first:
+      213: -8887155957262028514
+    second: SAMURAI-ezgif.com-resize_48
+  - first:
+      213: 8022473414306053010
+    second: SAMURAI-ezgif.com-resize_49
+  - first:
+      213: -6807311286594750927
+    second: SAMURAI-ezgif.com-resize_50
+  - first:
+      213: -1458426703086988636
+    second: SAMURAI-ezgif.com-resize_51
+  - first:
+      213: 5555316475405290755
+    second: SAMURAI-ezgif.com-resize_52
+  - first:
+      213: 2041095693576069394
+    second: SAMURAI-ezgif.com-resize_53
+  - first:
+      213: 317241363872302875
+    second: SAMURAI-ezgif.com-resize_54
+  - first:
+      213: -2556188843221374218
+    second: SAMURAI-ezgif.com-resize_55
+  - first:
+      213: -7727596555729519449
+    second: SAMURAI-ezgif.com-resize_56
+  - first:
+      213: 7422805988809727901
+    second: SAMURAI-ezgif.com-resize_57
+  - first:
+      213: 2683848550722954625
+    second: SAMURAI-ezgif.com-resize_58
+  - first:
+      213: -540031168829054783
+    second: SAMURAI-ezgif.com-resize_59
+  - first:
+      213: -8472289183532693794
+    second: SAMURAI-ezgif.com-resize_60
+  - first:
+      213: -33484273719536885
+    second: SAMURAI-ezgif.com-resize_61
+  - first:
+      213: -5094485653008238848
+    second: SAMURAI-ezgif.com-resize_62
+  - first:
+      213: -7964050649543988461
+    second: SAMURAI-ezgif.com-resize_63
+  - first:
+      213: 7324933287828174091
+    second: SAMURAI-ezgif.com-resize_64
+  - first:
+      213: 8447755875748619438
+    second: SAMURAI-ezgif.com-resize_65
+  - first:
+      213: -8638278224683895553
+    second: SAMURAI-ezgif.com-resize_66
+  - first:
+      213: -8242072298340267066
+    second: SAMURAI-ezgif.com-resize_67
+  - first:
+      213: 1606888236792305389
+    second: SAMURAI-ezgif.com-resize_68
+  - first:
+      213: -4289901350915675
+    second: SAMURAI-ezgif.com-resize_69
+  - first:
+      213: -8596307594562478762
+    second: SAMURAI-ezgif.com-resize_70
+  - first:
+      213: 3979604481120612245
+    second: SAMURAI-ezgif.com-resize_71
+  - first:
+      213: 2088524862270566221
+    second: SAMURAI-ezgif.com-resize_72
+  - first:
+      213: -8252156024809925293
+    second: SAMURAI-ezgif.com-resize_73
+  - first:
+      213: -7032285535270122620
+    second: SAMURAI-ezgif.com-resize_74
+  - first:
+      213: 3070719793714339499
+    second: SAMURAI-ezgif.com-resize_75
+  - first:
+      213: 2565914179916722862
+    second: SAMURAI-ezgif.com-resize_76
+  - first:
+      213: 7065413672584394022
+    second: SAMURAI-ezgif.com-resize_77
+  - first:
+      213: 2504881375285490455
+    second: SAMURAI-ezgif.com-resize_78
+  - first:
+      213: 2065823386673579149
+    second: SAMURAI-ezgif.com-resize_79
+  - first:
+      213: -6013416441202160970
+    second: SAMURAI-ezgif.com-resize_80
+  - first:
+      213: 4130917039924323245
+    second: SAMURAI-ezgif.com-resize_81
+  - first:
+      213: -9036959409539182953
+    second: SAMURAI-ezgif.com-resize_82
+  - first:
+      213: -3892106079827384448
+    second: SAMURAI-ezgif.com-resize_83
+  - first:
+      213: -274949405907474588
+    second: SAMURAI-ezgif.com-resize_84
+  - first:
+      213: -3441175345467138616
+    second: SAMURAI-ezgif.com-resize_85
+  - first:
+      213: 3218142120161138769
+    second: SAMURAI-ezgif.com-resize_86
+  - first:
+      213: 8067694839596197609
+    second: SAMURAI-ezgif.com-resize_87
+  - first:
+      213: 2588735961579988463
+    second: SAMURAI-ezgif.com-resize_88
+  - first:
+      213: -5565996128107924548
+    second: SAMURAI-ezgif.com-resize_89
+  - first:
+      213: -3922895996785078384
+    second: SAMURAI-ezgif.com-resize_90
+  - first:
+      213: 5930198824175985708
+    second: SAMURAI-ezgif.com-resize_91
+  - first:
+      213: 4914414808214889595
+    second: SAMURAI-ezgif.com-resize_92
+  - first:
+      213: 5843323624885733831
+    second: SAMURAI-ezgif.com-resize_93
+  - first:
+      213: 1669937932211885055
+    second: SAMURAI-ezgif.com-resize_94
+  - first:
+      213: -6113073884226593920
+    second: SAMURAI-ezgif.com-resize_95
+  - first:
+      213: 3134270092162518954
+    second: SAMURAI-ezgif.com-resize_96
+  - first:
+      213: 2545095924433549773
+    second: SAMURAI-ezgif.com-resize_97
+  - first:
+      213: 1285993098994700392
+    second: SAMURAI-ezgif.com-resize_98
+  - first:
+      213: 7147230768004730729
+    second: SAMURAI-ezgif.com-resize_99
+  - first:
+      213: 2588003296340833738
+    second: SAMURAI-ezgif.com-resize_100
+  - first:
+      213: -6852132624774714583
+    second: SAMURAI-ezgif.com-resize_101
+  - first:
+      213: 2664691301803026613
+    second: SAMURAI-ezgif.com-resize_102
+  - first:
+      213: -6140267772694849884
+    second: SAMURAI-ezgif.com-resize_103
+  - first:
+      213: 6280413902539858404
+    second: SAMURAI-ezgif.com-resize_104
+  - first:
+      213: 4362776212768440971
+    second: SAMURAI-ezgif.com-resize_105
+  - first:
+      213: -6272206892158130359
+    second: SAMURAI-ezgif.com-resize_106
+  - first:
+      213: 6479270692113725435
+    second: SAMURAI-ezgif.com-resize_107
+  - first:
+      213: -6991527424856326476
+    second: SAMURAI-ezgif.com-resize_108
+  - first:
+      213: -208394859388380899
+    second: SAMURAI-ezgif.com-resize_109
+  - first:
+      213: -8002932269579349479
+    second: SAMURAI-ezgif.com-resize_110
+  - first:
+      213: -2969702190177725288
+    second: SAMURAI-ezgif.com-resize_111
+  - first:
+      213: -7896071512578299457
+    second: SAMURAI-ezgif.com-resize_112
+  - first:
+      213: 6896283371935210212
+    second: SAMURAI-ezgif.com-resize_113
+  - first:
+      213: -1603255868693946065
+    second: SAMURAI-ezgif.com-resize_114
+  - first:
+      213: 7184135038702731995
+    second: SAMURAI-ezgif.com-resize_115
+  - first:
+      213: -98892658431345233
+    second: SAMURAI-ezgif.com-resize_116
+  - first:
+      213: 3885968454145777430
+    second: SAMURAI-ezgif.com-resize_117
+  - first:
+      213: 3100651882071479278
+    second: SAMURAI-ezgif.com-resize_118
+  - first:
+      213: -7471988013803822183
+    second: SAMURAI-ezgif.com-resize_119
+  - first:
+      213: -9132843291905546675
+    second: SAMURAI-ezgif.com-resize_120
+  - first:
+      213: 2591984161620933858
+    second: SAMURAI-ezgif.com-resize_121
+  - first:
+      213: -3722181824768737855
+    second: SAMURAI-ezgif.com-resize_122
+  - first:
+      213: -366805668944580838
+    second: SAMURAI-ezgif.com-resize_123
+  - first:
+      213: -6647907361813070563
+    second: SAMURAI-ezgif.com-resize_124
+  - first:
+      213: 5147148465825497900
+    second: SAMURAI-ezgif.com-resize_125
+  - first:
+      213: -5677651855556092084
+    second: SAMURAI-ezgif.com-resize_126
+  - first:
+      213: -4139257480502576066
+    second: SAMURAI-ezgif.com-resize_127
+  - first:
+      213: 2796893650286270469
+    second: SAMURAI-ezgif.com-resize_128
+  - first:
+      213: 922940386939458807
+    second: SAMURAI-ezgif.com-resize_129
+  - first:
+      213: -238442780891489433
+    second: SAMURAI-ezgif.com-resize_130
+  - first:
+      213: -2721884905714211442
+    second: SAMURAI-ezgif.com-resize_131
+  - first:
+      213: -545466156560842937
+    second: SAMURAI-ezgif.com-resize_132
+  - first:
+      213: 119237132999997230
+    second: SAMURAI-ezgif.com-resize_133
+  - first:
+      213: -5768690366963924135
+    second: SAMURAI-ezgif.com-resize_134
+  - first:
+      213: -8641180928801177966
+    second: SAMURAI-ezgif.com-resize_135
+  - first:
+      213: 468169491387024853
+    second: SAMURAI-ezgif.com-resize_136
+  - first:
+      213: 3606811735511863724
+    second: SAMURAI-ezgif.com-resize_137
+  - first:
+      213: -8450308929982054459
+    second: SAMURAI-ezgif.com-resize_138
+  - first:
+      213: -7062871950401177381
+    second: SAMURAI-ezgif.com-resize_139
+  - first:
+      213: 4357167643753710875
+    second: SAMURAI-ezgif.com-resize_140
+  - first:
+      213: -1732098967651064434
+    second: SAMURAI-ezgif.com-resize_141
+  - first:
+      213: -586971539823091592
+    second: SAMURAI-ezgif.com-resize_142
+  - first:
+      213: -3457415535764492797
+    second: SAMURAI-ezgif.com-resize_143
+  - first:
+      213: 7695805480918260226
+    second: SAMURAI-ezgif.com-resize_144
+  - first:
+      213: 5962716663723285088
+    second: SAMURAI-ezgif.com-resize_145
+  - first:
+      213: -880833766374461942
+    second: SAMURAI-ezgif.com-resize_146
+  - first:
+      213: 1117152093738614343
+    second: SAMURAI-ezgif.com-resize_147
+  - first:
+      213: 5339313063944888749
+    second: SAMURAI-ezgif.com-resize_148
+  - first:
+      213: -3709331894717382156
+    second: SAMURAI-ezgif.com-resize_149
+  - first:
+      213: 7199935235223866149
+    second: SAMURAI-ezgif.com-resize_150
+  - first:
+      213: 1622185283982205270
+    second: SAMURAI-ezgif.com-resize_151
+  - first:
+      213: -5041821008189360814
+    second: SAMURAI-ezgif.com-resize_152
+  - first:
+      213: 8493112147540406003
+    second: SAMURAI-ezgif.com-resize_153
+  - first:
+      213: -5368310063415013407
+    second: SAMURAI-ezgif.com-resize_154
+  - first:
+      213: 1921380158346302642
+    second: SAMURAI-ezgif.com-resize_155
+  - first:
+      213: -5514590613896499925
+    second: SAMURAI-ezgif.com-resize_156
+  - first:
+      213: 4123723087809295857
+    second: SAMURAI-ezgif.com-resize_157
+  - first:
+      213: -7009871865633856041
+    second: SAMURAI-ezgif.com-resize_158
+  - first:
+      213: -6216677354589437471
+    second: SAMURAI-ezgif.com-resize_159
+  - first:
+      213: -5746696090682978504
+    second: SAMURAI-ezgif.com-resize_160
+  - first:
+      213: 485715984574246325
+    second: SAMURAI-ezgif.com-resize_161
+  - first:
+      213: 4907484405975749596
+    second: SAMURAI-ezgif.com-resize_162
+  - first:
+      213: 4762196054559355410
+    second: SAMURAI-ezgif.com-resize_163
+  - first:
+      213: -3954171470289720760
+    second: SAMURAI-ezgif.com-resize_164
+  - first:
+      213: -1204926333881622784
+    second: SAMURAI-ezgif.com-resize_165
+  - first:
+      213: -7808057552715952329
+    second: SAMURAI-ezgif.com-resize_166
+  - first:
+      213: -3135808668641650960
+    second: SAMURAI-ezgif.com-resize_167
+  - first:
+      213: 5054193056914006674
+    second: SAMURAI-ezgif.com-resize_168
+  - first:
+      213: 2129078797589358693
+    second: SAMURAI-ezgif.com-resize_169
+  - first:
+      213: -5182914317376821493
+    second: SAMURAI-ezgif.com-resize_170
+  - first:
+      213: 3898395308967217201
+    second: SAMURAI-ezgif.com-resize_171
+  - first:
+      213: 6252127431427928298
+    second: SAMURAI-ezgif.com-resize_172
+  - first:
+      213: 4918574547154288903
+    second: SAMURAI-ezgif.com-resize_173
+  - first:
+      213: 3778362854952061117
+    second: SAMURAI-ezgif.com-resize_174
+  - first:
+      213: 6190807164181112997
+    second: SAMURAI-ezgif.com-resize_175
+  - first:
+      213: 4148562005440730146
+    second: SAMURAI-ezgif.com-resize_176
+  - first:
+      213: -3400190097986432883
+    second: SAMURAI-ezgif.com-resize_177
+  - first:
+      213: 4579814219530168916
+    second: SAMURAI-ezgif.com-resize_178
+  - first:
+      213: 5621880453971777926
+    second: SAMURAI-ezgif.com-resize_179
+  - first:
+      213: 609683498869466926
+    second: SAMURAI-ezgif.com-resize_180
+  - first:
+      213: 3891162067017528988
+    second: SAMURAI-ezgif.com-resize_181
+  - first:
+      213: -3685141242867914301
+    second: SAMURAI-ezgif.com-resize_182
+  - first:
+      213: 4261653463985181217
+    second: SAMURAI-ezgif.com-resize_183
+  - first:
+      213: 7985856266046208619
+    second: SAMURAI-ezgif.com-resize_184
+  - first:
+      213: 1278775500483283640
+    second: SAMURAI-ezgif.com-resize_185
+  - first:
+      213: -8894332901781028452
+    second: SAMURAI-ezgif.com-resize_186
+  - first:
+      213: -2628371143950346726
+    second: SAMURAI-ezgif.com-resize_187
+  - first:
+      213: -8293994913573473514
+    second: SAMURAI-ezgif.com-resize_188
+  - first:
+      213: -3544733429408515570
+    second: SAMURAI-ezgif.com-resize_189
+  - first:
+      213: 2814141919848377376
+    second: SAMURAI-ezgif.com-resize_190
+  - first:
+      213: -4725230665697246225
+    second: SAMURAI-ezgif.com-resize_191
+  - first:
+      213: 2786896579926702915
+    second: SAMURAI-ezgif.com-resize_192
+  - first:
+      213: -3214927110434047709
+    second: SAMURAI-ezgif.com-resize_193
+  - first:
+      213: 2388231108744182400
+    second: SAMURAI-ezgif.com-resize_194
+  - first:
+      213: -7121472298474973276
+    second: SAMURAI-ezgif.com-resize_195
+  - first:
+      213: -343330359077115774
+    second: SAMURAI-ezgif.com-resize_196
+  - first:
+      213: -7451306460793522994
+    second: SAMURAI-ezgif.com-resize_197
+  - first:
+      213: -6359219727982469544
+    second: SAMURAI-ezgif.com-resize_198
+  - first:
+      213: 5907789241406578632
+    second: SAMURAI-ezgif.com-resize_199
+  - first:
+      213: 1684481548967631123
+    second: SAMURAI-ezgif.com-resize_200
+  - first:
+      213: -8564924240092620957
+    second: SAMURAI-ezgif.com-resize_201
+  - first:
+      213: -8772336236595748220
+    second: SAMURAI-ezgif.com-resize_202
+  - first:
+      213: 1213520037613687536
+    second: SAMURAI-ezgif.com-resize_203
+  - first:
+      213: 6054627457474137796
+    second: SAMURAI-ezgif.com-resize_204
+  - first:
+      213: -8052372378050453052
+    second: SAMURAI-ezgif.com-resize_205
+  - first:
+      213: 8050695468878952951
+    second: SAMURAI-ezgif.com-resize_206
+  - first:
+      213: -3952914780468142384
+    second: SAMURAI-ezgif.com-resize_207
+  - first:
+      213: -6075547691943116799
+    second: SAMURAI-ezgif.com-resize_208
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 80
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_0
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 13154
+        width: 162
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4410085f62e8841c0800000000000000
+      internalID: -4519205928087584444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_1
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 13154
+        width: 162
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7138827dd737bb90800000000000000
+      internalID: -7226245652843843204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_2
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 13154
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 663d03afad021a330800000000000000
+      internalID: 3720290892057203558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_3
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 13154
+        width: 162
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75c85fcdb82b47d50800000000000000
+      internalID: 6734203656603012183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_4
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 13154
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b12db2bffb27070800000000000000
+      internalID: 8102749765085829905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 12779
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9797113d147782050800000000000000
+      internalID: 5775997646700378489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_6
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 12779
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da998584cb333900800000000000000
+      internalID: 662939285393611479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_7
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 12779
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 459efbaa7bfbe2ed0800000000000000
+      internalID: -2436799552796235436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_8
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 12779
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf4f22b6d3327aa90800000000000000
+      internalID: -7302829524060539652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_9
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 12779
+        width: 162
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb0e44a9d4a3575b0800000000000000
+      internalID: -5371322875594350401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_10
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 12404
+        width: 102
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 631a436ca111bbd00800000000000000
+      internalID: 989403349830115638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_11
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 12404
+        width: 162
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df5f22883534d4b80800000000000000
+      internalID: -8408990903185508867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_12
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 12404
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccc6a019380779740800000000000000
+      internalID: 5158715608552598732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_13
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 12404
+        width: 162
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 218fe8d528a6435f0800000000000000
+      internalID: -777879727480309742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_14
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 12404
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e8d80f3355167090800000000000000
+      internalID: -8037213037712058144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_15
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 12029
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d7547acdfd62a60800000000000000
+      internalID: 7649047155927514508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_16
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 12029
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca4a2149b5f66f00800000000000000
+      internalID: 1109844534204451526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_17
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 12029
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d3f25a700d8fa30800000000000000
+      internalID: 4249374979678748061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_18
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 12029
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5ecf242eff58100800000000000000
+      internalID: 109775113192007132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_19
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 12029
+        width: 162
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 746b95007af636e10800000000000000
+      internalID: 2189716606888293959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_20
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 11654
+        width: 132
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d50234b2fef6450800000000000000
+      internalID: 6084344590689656120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_21
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 11654
+        width: 127
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 850efdac25a8e9e20800000000000000
+      internalID: 3359274460260589656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_22
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 11654
+        width: 127
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54711ee7136ddb470800000000000000
+      internalID: 8412115187068376901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_23
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 11654
+        width: 127
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9bc176a37ab92dc0800000000000000
+      internalID: -3663191816012706915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_24
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 11654
+        width: 127
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 235d21fcccb0cb6b0800000000000000
+      internalID: -5279331688909712078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_25
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 11279
+        width: 137
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cecef022b4abe0420800000000000000
+      internalID: 2598218866896137452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_26
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 11279
+        width: 127
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd5af5f160adedf10800000000000000
+      internalID: 2296512579836552669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_27
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 11279
+        width: 127
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05fcfb78c8fb83d00800000000000000
+      internalID: 952721931482681168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_28
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 11279
+        width: 127
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0004655b5759a09f0800000000000000
+      internalID: -501424075712348160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_29
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 11279
+        width: 132
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9355dc3bd3740d4a0800000000000000
+      internalID: -6570673525998398151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_30
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 10904
+        width: 127
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8addf45261416e7f0800000000000000
+      internalID: -583757016350073432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_31
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 10904
+        width: 127
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca52bb8a8bfcba3d0800000000000000
+      internalID: -3194231118677465684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_32
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 10904
+        width: 127
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25e409a9854e578f0800000000000000
+      internalID: -543277110826873262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_33
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 10904
+        width: 127
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a66be0d9f34e5cf60800000000000000
+      internalID: 8054094470491059818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_34
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 10904
+        width: 127
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d17fd0af5653260800000000000000
+      internalID: 7076674514133130570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_35
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 10529
+        width: 127
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4638650ab8fe2bdb0800000000000000
+      internalID: -4777492871717158044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_36
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 10529
+        width: 127
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 949ceab4673ef4370800000000000000
+      internalID: 8309109934737246537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_37
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 10529
+        width: 137
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbe11f23107b19bc0800000000000000
+      internalID: -3778037396609622340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_38
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 10529
+        width: 127
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfe1b2a479f3b81c0800000000000000
+      internalID: -4500433483609727237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_39
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 10529
+        width: 127
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4089a60f45bf87700800000000000000
+      internalID: 538456497700116484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_40
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 10154
+        width: 127
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9017f7bc41386ea0800000000000000
+      internalID: -5879395107958484833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_41
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 10154
+        width: 132
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eac4581c66abacd0800000000000000
+      internalID: -2545758181152994586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_42
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 10154
+        width: 127
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7667e066230f8e520800000000000000
+      internalID: 2731697273251460711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_43
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 10154
+        width: 127
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a1235ffec47dff90800000000000000
+      internalID: -6918245020175490653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_44
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 10154
+        width: 127
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5adbcfe9aeaedb40800000000000000
+      internalID: 5466999042570181213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_45
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 9779
+        width: 142
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96ca4c5231b6f3d50800000000000000
+      internalID: 6719206899042266217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_46
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 9779
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8ef7578dc1648800800000000000000
+      internalID: 613722984596110990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_47
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 9779
+        width: 152
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db0d18bc027978f80800000000000000
+      internalID: -8104342837320888131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_48
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 9794
+        width: 162
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1176e73eba7aa480800000000000000
+      internalID: -8887155957262028514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_49
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 9804
+        width: 162
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b3abfb01d855f60800000000000000
+      internalID: 8022473414306053010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_50
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 9419
+        width: 162
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136330793729781a0800000000000000
+      internalID: -6807311286594750927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_51
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 9404
+        width: 152
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a25e8ff3a0a2cbe0800000000000000
+      internalID: -1458426703086988636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_52
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 9404
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d486ba6e2781d40800000000000000
+      internalID: 5555316475405290755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_53
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 9404
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2116e2818bd635c10800000000000000
+      internalID: 2041095693576069394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_54
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 9404
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b174ba1f651176400800000000000000
+      internalID: 317241363872302875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_55
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 9029
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa29f45ac7968cd0800000000000000
+      internalID: -2556188843221374218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_56
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 9054
+        width: 137
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7acb53800ef02c490800000000000000
+      internalID: -7727596555729519449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_57
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 9064
+        width: 157
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f55a718ba130760800000000000000
+      internalID: 7422805988809727901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_58
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 9049
+        width: 142
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 185e9c88902fe3520800000000000000
+      internalID: 2683848550722954625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_59
+      rect:
+        serializedVersion: 2
+        x: 2084
+        y: 9029
+        width: 127
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c02e4e538c6188f0800000000000000
+      internalID: -540031168829054783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_60
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 8654
+        width: 117
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed6462d20e16c6a80800000000000000
+      internalID: -8472289183532693794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_61
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 8654
+        width: 117
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b03926ffa3a098ff0800000000000000
+      internalID: -33484273719536885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_62
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 8654
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 007be135a40cc49b0800000000000000
+      internalID: -5094485653008238848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_63
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 8654
+        width: 152
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b26bc21220a7190800000000000000
+      internalID: -7964050649543988461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_64
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 8669
+        width: 162
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b05be60240467a560800000000000000
+      internalID: 7324933287828174091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_65
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 8304
+        width: 162
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea4273bf5357c3570800000000000000
+      internalID: 8447755875748619438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_66
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 8294
+        width: 162
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff479b2e8bbae1880800000000000000
+      internalID: -8638278224683895553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_67
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 8279
+        width: 152
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb475cb9e64e9d80800000000000000
+      internalID: -8242072298340267066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_68
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 8279
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de652c37650dc4610800000000000000
+      internalID: 1606888236792305389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_69
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 8279
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a17bd18b52c0fff0800000000000000
+      internalID: -4289901350915675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_70
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 7904
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d5c16b9c7c3b880800000000000000
+      internalID: -8596307594562478762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_71
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 7904
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f2fb3d0356a3730800000000000000
+      internalID: 3979604481120612245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_72
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 7929
+        width: 137
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4f6538fb4eebfc10800000000000000
+      internalID: 2088524862270566221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_73
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 7939
+        width: 157
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 355da1631d37a7d80800000000000000
+      internalID: -8252156024809925293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_74
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 7924
+        width: 142
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b4b17709d486e90800000000000000
+      internalID: -7032285535270122620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_75
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 7529
+        width: 127
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae9a1d02636d9a20800000000000000
+      internalID: 3070719793714339499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_76
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 7529
+        width: 117
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea2f2121a55fb9320800000000000000
+      internalID: 2565914179916722862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_77
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 7529
+        width: 117
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625b4911d446d0260800000000000000
+      internalID: 7065413672584394022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_78
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 1905
+        width: 114
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7133262e65023c220800000000000000
+      internalID: 2504881375285490455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_79
+      rect:
+        serializedVersion: 2
+        x: 1493
+        y: 7499
+        width: 288
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d848f5bcc674bac10800000000000000
+      internalID: 2065823386673579149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_81
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 7500
+        width: 307
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da32c494927f35930800000000000000
+      internalID: 4130917039924323245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_83
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 7130
+        width: 343
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08720c344267cf9c0800000000000000
+      internalID: -3892106079827384448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_85
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 7135
+        width: 292
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cd5993614d7e30d0800000000000000
+      internalID: -3441175345467138616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_86
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 7124
+        width: 112
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1585de4353329ac20800000000000000
+      internalID: 3218142120161138769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_87
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 7124
+        width: 127
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6226e46b536ff60800000000000000
+      internalID: 8067694839596197609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_88
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 7124
+        width: 112
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5214f24a90de320800000000000000
+      internalID: 2588735961579988463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_92
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 6749
+        width: 117
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b74619afa32833440800000000000000
+      internalID: 4914414808214889595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_93
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 6751
+        width: 142
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c946f8a0e7a71150800000000000000
+      internalID: 5843323624885733831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_94
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 6749
+        width: 158
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff3907e93bfcc2710800000000000000
+      internalID: 1669937932211885055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_95
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 6914
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08bd4f4d0bff92ba0800000000000000
+      internalID: -6113073884226593920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_96
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 6749
+        width: 147
+        height: 197
+      alignment: 9
+      pivot: {x: 0.5138528, y: 0.50000256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf4a71fa0a2f7b20800000000000000
+      internalID: 3134270092162518954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_97
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 6924
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc9f72f324ff15320800000000000000
+      internalID: 2545095924433549773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_98
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 6749
+        width: 112
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 860de29f8e3c8d110800000000000000
+      internalID: 1285993098994700392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_99
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 6884
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f0aae0480103360800000000000000
+      internalID: 7147230768004730729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_100
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 6884
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac57fe3494f6ae320800000000000000
+      internalID: 2588003296340833738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_101
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 6849
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b20729ea558e0a0800000000000000
+      internalID: -6852132624774714583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_102
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 6849
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8ea00fe92eaf420800000000000000
+      internalID: 2664691301803026613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_103
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 6374
+        width: 117
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a69eb64ef269caa0800000000000000
+      internalID: -6140267772694849884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_104
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 6404
+        width: 132
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e120575b23882750800000000000000
+      internalID: 6280413902539858404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_105
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 6404
+        width: 142
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b82469cb9d1bb8c30800000000000000
+      internalID: 4362776212768440971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_106
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 6404
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947682b2015a4f8a0800000000000000
+      internalID: -6272206892158130359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_107
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 6404
+        width: 152
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf7b907ad5efae950800000000000000
+      internalID: 6479270692113725435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_108
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 6044
+        width: 162
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4be790c89da19fe90800000000000000
+      internalID: -6991527424856326476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_109
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 6054
+        width: 162
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d195321caf1ab1df0800000000000000
+      internalID: -208394859388380899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_110
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 6044
+        width: 162
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 912563e808fdfe090800000000000000
+      internalID: -8002932269579349479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_111
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 6029
+        width: 152
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 894d1c9979f79c6d0800000000000000
+      internalID: -2969702190177725288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_112
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 6029
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb960b36bc48b6290800000000000000
+      internalID: -7896071512578299457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_113
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 5654
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ea91ae403584bf50800000000000000
+      internalID: 6896283371935210212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_114
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 5654
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f21ef66284710c9e0800000000000000
+      internalID: -1603255868693946065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_115
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 5654
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2405821cc23b360800000000000000
+      internalID: 7184135038702731995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_116
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 5679
+        width: 137
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fad3e4fa6a9a0aef0800000000000000
+      internalID: -98892658431345233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_117
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 5689
+        width: 157
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61f9bb568bbbde530800000000000000
+      internalID: 3885968454145777430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_118
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 5299
+        width: 142
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee35403757ab70b20800000000000000
+      internalID: 3100651882071479278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_119
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 5279
+        width: 127
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9932f3f5d7a2e4890800000000000000
+      internalID: -7471988013803822183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_120
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 5279
+        width: 117
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4629a4f96f914180800000000000000
+      internalID: -9132843291905546675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_121
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 5279
+        width: 117
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ecbad0bcd398f320800000000000000
+      internalID: 2591984161620933858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_122
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 5294
+        width: 122
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cd7e31f957285cc0800000000000000
+      internalID: -3722181824768737855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_123
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 4919
+        width: 122
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f65f00038d8eaf0800000000000000
+      internalID: -366805668944580838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_124
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 4919
+        width: 122
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d7d6ff973edb3a0800000000000000
+      internalID: -6647907361813070563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_125
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 4919
+        width: 132
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c23c9b742485e6740800000000000000
+      internalID: 5147148465825497900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_126
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 4914
+        width: 142
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4fdd3708bde431b0800000000000000
+      internalID: -5677651855556092084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_127
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 4919
+        width: 147
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3cf3c090476e86c0800000000000000
+      internalID: -4139257480502576066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_128
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 4549
+        width: 132
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508dbd3d4ff80d620800000000000000
+      internalID: 2796893650286270469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_129
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 4549
+        width: 132
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f453685461fecc00800000000000000
+      internalID: 922940386939458807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_130
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 4549
+        width: 132
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76bd4b9dd81e0bcf0800000000000000
+      internalID: -238442780891489433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_131
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 4499
+        width: 117
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e852863791ce93ad0800000000000000
+      internalID: -2721884905714211442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_132
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 4499
+        width: 117
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74f713dab6d1e68f0800000000000000
+      internalID: -545466156560842937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_133
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 4124
+        width: 112
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e27308c6a8d97a100800000000000000
+      internalID: 119237132999997230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_134
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 4124
+        width: 97
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 953c5e1dcae71ffa0800000000000000
+      internalID: -5768690366963924135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_135
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 4124
+        width: 107
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29efcea6abb541880800000000000000
+      internalID: -8641180928801177966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_136
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 4124
+        width: 102
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d58cc40ca54f7600800000000000000
+      internalID: 468169491387024853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_137
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 4124
+        width: 162
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca115eae928fd0230800000000000000
+      internalID: 3606811735511863724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_138
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 3749
+        width: 182
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cfbb12ccc87aba80800000000000000
+      internalID: -8450308929982054459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_139
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 3844
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd8744eb163abfd90800000000000000
+      internalID: -7062871950401177381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_140
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 3749
+        width: 182
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1504c003e4c77c30800000000000000
+      internalID: 4357167643753710875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_141
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 3844
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e85665d7a2956f7e0800000000000000
+      internalID: -1732098967651064434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_142
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 3749
+        width: 157
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870a4939e78aad7f0800000000000000
+      internalID: -586971539823091592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_143
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 3849
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e27dd63eac400d0800000000000000
+      internalID: -3457415535764492797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_144
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 3749
+        width: 107
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20a13ae8f4efcca60800000000000000
+      internalID: 7695805480918260226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_145
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 3749
+        width: 117
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a578db633dfb250800000000000000
+      internalID: 5962716663723285088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_146
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 3374
+        width: 142
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0ea4193b56a6c3f0800000000000000
+      internalID: -880833766374461942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_147
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 3374
+        width: 157
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ebf5b09ebe08f00800000000000000
+      internalID: 1117152093738614343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_148
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 3539
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da1a90951fc091a40800000000000000
+      internalID: 5339313063944888749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_149
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 3371
+        width: 148
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f1085d6b4ec58cc0800000000000000
+      internalID: -3709331894717382156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_150
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 3549
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52b465513fe4be360800000000000000
+      internalID: 7199935235223866149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_151
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 3374
+        width: 112
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65120abcbe8238610800000000000000
+      internalID: 1622185283982205270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_152
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 3374
+        width: 117
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25575c9718ad70ab0800000000000000
+      internalID: -5041821008189360814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_153
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 3509
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fe63bfef789dd570800000000000000
+      internalID: 8493112147540406003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_154
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 3509
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ef4ef9907eef75b0800000000000000
+      internalID: -5368310063415013407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_155
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 3474
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b417b8f21d1aaa10800000000000000
+      internalID: 1921380158346302642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_156
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 3474
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2deef0ed0d3873b0800000000000000
+      internalID: -5514590613896499925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_157
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 3029
+        width: 107
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f533f8cc486a3930800000000000000
+      internalID: 4123723087809295857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_158
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 3029
+        width: 107
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d5a3e79daee7be90800000000000000
+      internalID: -7009871865633856041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_159
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 3029
+        width: 102
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e14b7422ece9b9a0800000000000000
+      internalID: -6216677354589437471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_160
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 3028
+        width: 102
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83f07b25a52af30b0800000000000000
+      internalID: -5746696090682978504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_161
+      rect:
+        serializedVersion: 2
+        x: 2056
+        y: 3024
+        width: 282
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bde6425d1c9db600800000000000000
+      internalID: 485715984574246325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_162
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 2654
+        width: 247
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd314f6f013ea1440800000000000000
+      internalID: 4907484405975749596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_163
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 2654
+        width: 192
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 212f6c69418b61240800000000000000
+      internalID: 4762196054559355410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_164
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 2654
+        width: 192
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84aa5647ff5ff19c0800000000000000
+      internalID: -3954171470289720760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_165
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 2654
+        width: 192
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00fd87022ed374fe0800000000000000
+      internalID: -1204926333881622784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_166
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 2654
+        width: 282
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73f4f80560534a390800000000000000
+      internalID: -7808057552715952329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_167
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 2279
+        width: 242
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6160e41ae5b74d0800000000000000
+      internalID: -3135808668641650960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_168
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 2279
+        width: 107
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292ea979ec9142640800000000000000
+      internalID: 5054193056914006674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_169
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 2279
+        width: 107
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5682125d2e10c8d10800000000000000
+      internalID: 2129078797589358693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_170
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 2279
+        width: 112
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07e77b73e69218b0800000000000000
+      internalID: -5182914317376821493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_171
+      rect:
+        serializedVersion: 2
+        x: 2054
+        y: 2279
+        width: 277
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1384a0101e1e91630800000000000000
+      internalID: 3898395308967217201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_172
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1904
+        width: 247
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae0bcb016c404c650800000000000000
+      internalID: 6252127431427928298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_173
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 1904
+        width: 197
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 701c86cad79424440800000000000000
+      internalID: 4918574547154288903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_174
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 1904
+        width: 197
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8c2f97ff07f6430800000000000000
+      internalID: 3778362854952061117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_175
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1674
+        width: 128
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a865f5c05a2ae550800000000000000
+      internalID: 6190807164181112997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_176
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 1874
+        width: 107
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2241af6f927a29930800000000000000
+      internalID: 4148562005440730146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_177
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1499
+        width: 112
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d80d7b0fe1910d0d0800000000000000
+      internalID: -3400190097986432883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_178
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1512
+        width: 220
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ae06c84c4ce8f30800000000000000
+      internalID: 4579814219530168916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_180
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 1669
+        width: 132
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e27288779e7067800800000000000000
+      internalID: 609683498869466926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_181
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 1669
+        width: 57
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c96fd00a84f200630800000000000000
+      internalID: 3891162067017528988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_182
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 1664
+        width: 127
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c967b7709fbbdcc0800000000000000
+      internalID: -3685141242867914301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_184
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1204
+        width: 117
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6af20d86f573de60800000000000000
+      internalID: 7985856266046208619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_185
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 1124
+        width: 147
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ba47cdda8f1fb110800000000000000
+      internalID: 1278775500483283640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_186
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 1124
+        width: 112
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c91c54b995bf09480800000000000000
+      internalID: -8894332901781028452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_187
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1124
+        width: 107
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a16d3face56268bd0800000000000000
+      internalID: -2628371143950346726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_188
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 1124
+        width: 107
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6137e8fc19fc5ec80800000000000000
+      internalID: -8293994913573473514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_189
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1139
+        width: 57
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a37ac0ab39ecec0800000000000000
+      internalID: -3544733429408515570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_190
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 1139
+        width: 57
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02c29188a27dd0720800000000000000
+      internalID: 2814141919848377376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_191
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 1144
+        width: 37
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe34551bebb9c6eb0800000000000000
+      internalID: -4725230665697246225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_192
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 1144
+        width: 37
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b38408cab0da620800000000000000
+      internalID: 2786896579926702915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_193
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 1144
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3293ec393d84263d0800000000000000
+      internalID: -3214927110434047709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_194
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 1144
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08afb3e3a83b42120800000000000000
+      internalID: 2388231108744182400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_195
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 1149
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a75d9bfca27b2d90800000000000000
+      internalID: -7121472298474973276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_196
+      rect:
+        serializedVersion: 2
+        x: 2299
+        y: 1149
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288e9928bde3c3bf0800000000000000
+      internalID: -343330359077115774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_197
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 749
+        width: 117
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec434dba044a79890800000000000000
+      internalID: -7451306460793522994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_198
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 749
+        width: 117
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85ed2f899538fb7a0800000000000000
+      internalID: -6359219727982469544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_199
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 749
+        width: 112
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cfd9e5a30facf150800000000000000
+      internalID: 5907789241406578632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_200
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 749
+        width: 87
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3195ae44b0b706710800000000000000
+      internalID: 1684481548967631123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_201
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 749
+        width: 97
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 367952558c6432980800000000000000
+      internalID: -8564924240092620957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_202
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 374
+        width: 82
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4826c6faba6624680800000000000000
+      internalID: -8772336236595748220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_203
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 374
+        width: 82
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f258c17b0a47d010800000000000000
+      internalID: 1213520037613687536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_204
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 374
+        width: 82
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce8212089b560450800000000000000
+      internalID: 6054627457474137796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_205
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 404
+        width: 152
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1a2274cf9304090800000000000000
+      internalID: -8052372378050453052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_206
+      rect:
+        serializedVersion: 2
+        x: 2109
+        y: 404
+        width: 167
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f97061efd0d9bf60800000000000000
+      internalID: 8050695468878952951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_207
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 29
+        width: 167
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de1eca53fc6429c0800000000000000
+      internalID: -3952914780468142384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAMURAI-ezgif.com-resize_208
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 29
+        width: 167
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10049c550915faba0800000000000000
+      internalID: -6075547691943116799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 58a2f06097fe3d1449ed20e23cc187e2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SAMURAI-ezgif.com-resize_0: -4519205928087584444
+      SAMURAI-ezgif.com-resize_1: -7226245652843843204
+      SAMURAI-ezgif.com-resize_10: 989403349830115638
+      SAMURAI-ezgif.com-resize_100: 2588003296340833738
+      SAMURAI-ezgif.com-resize_101: -6852132624774714583
+      SAMURAI-ezgif.com-resize_102: 2664691301803026613
+      SAMURAI-ezgif.com-resize_103: -6140267772694849884
+      SAMURAI-ezgif.com-resize_104: 6280413902539858404
+      SAMURAI-ezgif.com-resize_105: 4362776212768440971
+      SAMURAI-ezgif.com-resize_106: -6272206892158130359
+      SAMURAI-ezgif.com-resize_107: 6479270692113725435
+      SAMURAI-ezgif.com-resize_108: -6991527424856326476
+      SAMURAI-ezgif.com-resize_109: -208394859388380899
+      SAMURAI-ezgif.com-resize_11: -8408990903185508867
+      SAMURAI-ezgif.com-resize_110: -8002932269579349479
+      SAMURAI-ezgif.com-resize_111: -2969702190177725288
+      SAMURAI-ezgif.com-resize_112: -7896071512578299457
+      SAMURAI-ezgif.com-resize_113: 6896283371935210212
+      SAMURAI-ezgif.com-resize_114: -1603255868693946065
+      SAMURAI-ezgif.com-resize_115: 7184135038702731995
+      SAMURAI-ezgif.com-resize_116: -98892658431345233
+      SAMURAI-ezgif.com-resize_117: 3885968454145777430
+      SAMURAI-ezgif.com-resize_118: 3100651882071479278
+      SAMURAI-ezgif.com-resize_119: -7471988013803822183
+      SAMURAI-ezgif.com-resize_12: 5158715608552598732
+      SAMURAI-ezgif.com-resize_120: -9132843291905546675
+      SAMURAI-ezgif.com-resize_121: 2591984161620933858
+      SAMURAI-ezgif.com-resize_122: -3722181824768737855
+      SAMURAI-ezgif.com-resize_123: -366805668944580838
+      SAMURAI-ezgif.com-resize_124: -6647907361813070563
+      SAMURAI-ezgif.com-resize_125: 5147148465825497900
+      SAMURAI-ezgif.com-resize_126: -5677651855556092084
+      SAMURAI-ezgif.com-resize_127: -4139257480502576066
+      SAMURAI-ezgif.com-resize_128: 2796893650286270469
+      SAMURAI-ezgif.com-resize_129: 922940386939458807
+      SAMURAI-ezgif.com-resize_13: -777879727480309742
+      SAMURAI-ezgif.com-resize_130: -238442780891489433
+      SAMURAI-ezgif.com-resize_131: -2721884905714211442
+      SAMURAI-ezgif.com-resize_132: -545466156560842937
+      SAMURAI-ezgif.com-resize_133: 119237132999997230
+      SAMURAI-ezgif.com-resize_134: -5768690366963924135
+      SAMURAI-ezgif.com-resize_135: -8641180928801177966
+      SAMURAI-ezgif.com-resize_136: 468169491387024853
+      SAMURAI-ezgif.com-resize_137: 3606811735511863724
+      SAMURAI-ezgif.com-resize_138: -8450308929982054459
+      SAMURAI-ezgif.com-resize_139: -7062871950401177381
+      SAMURAI-ezgif.com-resize_14: -8037213037712058144
+      SAMURAI-ezgif.com-resize_140: 4357167643753710875
+      SAMURAI-ezgif.com-resize_141: -1732098967651064434
+      SAMURAI-ezgif.com-resize_142: -586971539823091592
+      SAMURAI-ezgif.com-resize_143: -3457415535764492797
+      SAMURAI-ezgif.com-resize_144: 7695805480918260226
+      SAMURAI-ezgif.com-resize_145: 5962716663723285088
+      SAMURAI-ezgif.com-resize_146: -880833766374461942
+      SAMURAI-ezgif.com-resize_147: 1117152093738614343
+      SAMURAI-ezgif.com-resize_148: 5339313063944888749
+      SAMURAI-ezgif.com-resize_149: -3709331894717382156
+      SAMURAI-ezgif.com-resize_15: 7649047155927514508
+      SAMURAI-ezgif.com-resize_150: 7199935235223866149
+      SAMURAI-ezgif.com-resize_151: 1622185283982205270
+      SAMURAI-ezgif.com-resize_152: -5041821008189360814
+      SAMURAI-ezgif.com-resize_153: 8493112147540406003
+      SAMURAI-ezgif.com-resize_154: -5368310063415013407
+      SAMURAI-ezgif.com-resize_155: 1921380158346302642
+      SAMURAI-ezgif.com-resize_156: -5514590613896499925
+      SAMURAI-ezgif.com-resize_157: 4123723087809295857
+      SAMURAI-ezgif.com-resize_158: -7009871865633856041
+      SAMURAI-ezgif.com-resize_159: -6216677354589437471
+      SAMURAI-ezgif.com-resize_16: 1109844534204451526
+      SAMURAI-ezgif.com-resize_160: -5746696090682978504
+      SAMURAI-ezgif.com-resize_161: 485715984574246325
+      SAMURAI-ezgif.com-resize_162: 4907484405975749596
+      SAMURAI-ezgif.com-resize_163: 4762196054559355410
+      SAMURAI-ezgif.com-resize_164: -3954171470289720760
+      SAMURAI-ezgif.com-resize_165: -1204926333881622784
+      SAMURAI-ezgif.com-resize_166: -7808057552715952329
+      SAMURAI-ezgif.com-resize_167: -3135808668641650960
+      SAMURAI-ezgif.com-resize_168: 5054193056914006674
+      SAMURAI-ezgif.com-resize_169: 2129078797589358693
+      SAMURAI-ezgif.com-resize_17: 4249374979678748061
+      SAMURAI-ezgif.com-resize_170: -5182914317376821493
+      SAMURAI-ezgif.com-resize_171: 3898395308967217201
+      SAMURAI-ezgif.com-resize_172: 6252127431427928298
+      SAMURAI-ezgif.com-resize_173: 4918574547154288903
+      SAMURAI-ezgif.com-resize_174: 3778362854952061117
+      SAMURAI-ezgif.com-resize_175: 6190807164181112997
+      SAMURAI-ezgif.com-resize_176: 4148562005440730146
+      SAMURAI-ezgif.com-resize_177: -3400190097986432883
+      SAMURAI-ezgif.com-resize_178: 4579814219530168916
+      SAMURAI-ezgif.com-resize_179: 5621880453971777926
+      SAMURAI-ezgif.com-resize_18: 109775113192007132
+      SAMURAI-ezgif.com-resize_180: 609683498869466926
+      SAMURAI-ezgif.com-resize_181: 3891162067017528988
+      SAMURAI-ezgif.com-resize_182: -3685141242867914301
+      SAMURAI-ezgif.com-resize_183: 4261653463985181217
+      SAMURAI-ezgif.com-resize_184: 7985856266046208619
+      SAMURAI-ezgif.com-resize_185: 1278775500483283640
+      SAMURAI-ezgif.com-resize_186: -8894332901781028452
+      SAMURAI-ezgif.com-resize_187: -2628371143950346726
+      SAMURAI-ezgif.com-resize_188: -8293994913573473514
+      SAMURAI-ezgif.com-resize_189: -3544733429408515570
+      SAMURAI-ezgif.com-resize_19: 2189716606888293959
+      SAMURAI-ezgif.com-resize_190: 2814141919848377376
+      SAMURAI-ezgif.com-resize_191: -4725230665697246225
+      SAMURAI-ezgif.com-resize_192: 2786896579926702915
+      SAMURAI-ezgif.com-resize_193: -3214927110434047709
+      SAMURAI-ezgif.com-resize_194: 2388231108744182400
+      SAMURAI-ezgif.com-resize_195: -7121472298474973276
+      SAMURAI-ezgif.com-resize_196: -343330359077115774
+      SAMURAI-ezgif.com-resize_197: -7451306460793522994
+      SAMURAI-ezgif.com-resize_198: -6359219727982469544
+      SAMURAI-ezgif.com-resize_199: 5907789241406578632
+      SAMURAI-ezgif.com-resize_2: 3720290892057203558
+      SAMURAI-ezgif.com-resize_20: 6084344590689656120
+      SAMURAI-ezgif.com-resize_200: 1684481548967631123
+      SAMURAI-ezgif.com-resize_201: -8564924240092620957
+      SAMURAI-ezgif.com-resize_202: -8772336236595748220
+      SAMURAI-ezgif.com-resize_203: 1213520037613687536
+      SAMURAI-ezgif.com-resize_204: 6054627457474137796
+      SAMURAI-ezgif.com-resize_205: -8052372378050453052
+      SAMURAI-ezgif.com-resize_206: 8050695468878952951
+      SAMURAI-ezgif.com-resize_207: -3952914780468142384
+      SAMURAI-ezgif.com-resize_208: -6075547691943116799
+      SAMURAI-ezgif.com-resize_21: 3359274460260589656
+      SAMURAI-ezgif.com-resize_22: 8412115187068376901
+      SAMURAI-ezgif.com-resize_23: -3663191816012706915
+      SAMURAI-ezgif.com-resize_24: -5279331688909712078
+      SAMURAI-ezgif.com-resize_25: 2598218866896137452
+      SAMURAI-ezgif.com-resize_26: 2296512579836552669
+      SAMURAI-ezgif.com-resize_27: 952721931482681168
+      SAMURAI-ezgif.com-resize_28: -501424075712348160
+      SAMURAI-ezgif.com-resize_29: -6570673525998398151
+      SAMURAI-ezgif.com-resize_3: 6734203656603012183
+      SAMURAI-ezgif.com-resize_30: -583757016350073432
+      SAMURAI-ezgif.com-resize_31: -3194231118677465684
+      SAMURAI-ezgif.com-resize_32: -543277110826873262
+      SAMURAI-ezgif.com-resize_33: 8054094470491059818
+      SAMURAI-ezgif.com-resize_34: 7076674514133130570
+      SAMURAI-ezgif.com-resize_35: -4777492871717158044
+      SAMURAI-ezgif.com-resize_36: 8309109934737246537
+      SAMURAI-ezgif.com-resize_37: -3778037396609622340
+      SAMURAI-ezgif.com-resize_38: -4500433483609727237
+      SAMURAI-ezgif.com-resize_39: 538456497700116484
+      SAMURAI-ezgif.com-resize_4: 8102749765085829905
+      SAMURAI-ezgif.com-resize_40: -5879395107958484833
+      SAMURAI-ezgif.com-resize_41: -2545758181152994586
+      SAMURAI-ezgif.com-resize_42: 2731697273251460711
+      SAMURAI-ezgif.com-resize_43: -6918245020175490653
+      SAMURAI-ezgif.com-resize_44: 5466999042570181213
+      SAMURAI-ezgif.com-resize_45: 6719206899042266217
+      SAMURAI-ezgif.com-resize_46: 613722984596110990
+      SAMURAI-ezgif.com-resize_47: -8104342837320888131
+      SAMURAI-ezgif.com-resize_48: -8887155957262028514
+      SAMURAI-ezgif.com-resize_49: 8022473414306053010
+      SAMURAI-ezgif.com-resize_5: 5775997646700378489
+      SAMURAI-ezgif.com-resize_50: -6807311286594750927
+      SAMURAI-ezgif.com-resize_51: -1458426703086988636
+      SAMURAI-ezgif.com-resize_52: 5555316475405290755
+      SAMURAI-ezgif.com-resize_53: 2041095693576069394
+      SAMURAI-ezgif.com-resize_54: 317241363872302875
+      SAMURAI-ezgif.com-resize_55: -2556188843221374218
+      SAMURAI-ezgif.com-resize_56: -7727596555729519449
+      SAMURAI-ezgif.com-resize_57: 7422805988809727901
+      SAMURAI-ezgif.com-resize_58: 2683848550722954625
+      SAMURAI-ezgif.com-resize_59: -540031168829054783
+      SAMURAI-ezgif.com-resize_6: 662939285393611479
+      SAMURAI-ezgif.com-resize_60: -8472289183532693794
+      SAMURAI-ezgif.com-resize_61: -33484273719536885
+      SAMURAI-ezgif.com-resize_62: -5094485653008238848
+      SAMURAI-ezgif.com-resize_63: -7964050649543988461
+      SAMURAI-ezgif.com-resize_64: 7324933287828174091
+      SAMURAI-ezgif.com-resize_65: 8447755875748619438
+      SAMURAI-ezgif.com-resize_66: -8638278224683895553
+      SAMURAI-ezgif.com-resize_67: -8242072298340267066
+      SAMURAI-ezgif.com-resize_68: 1606888236792305389
+      SAMURAI-ezgif.com-resize_69: -4289901350915675
+      SAMURAI-ezgif.com-resize_7: -2436799552796235436
+      SAMURAI-ezgif.com-resize_70: -8596307594562478762
+      SAMURAI-ezgif.com-resize_71: 3979604481120612245
+      SAMURAI-ezgif.com-resize_72: 2088524862270566221
+      SAMURAI-ezgif.com-resize_73: -8252156024809925293
+      SAMURAI-ezgif.com-resize_74: -7032285535270122620
+      SAMURAI-ezgif.com-resize_75: 3070719793714339499
+      SAMURAI-ezgif.com-resize_76: 2565914179916722862
+      SAMURAI-ezgif.com-resize_77: 7065413672584394022
+      SAMURAI-ezgif.com-resize_78: 2504881375285490455
+      SAMURAI-ezgif.com-resize_79: 2065823386673579149
+      SAMURAI-ezgif.com-resize_8: -7302829524060539652
+      SAMURAI-ezgif.com-resize_80: -6013416441202160970
+      SAMURAI-ezgif.com-resize_81: 4130917039924323245
+      SAMURAI-ezgif.com-resize_82: -9036959409539182953
+      SAMURAI-ezgif.com-resize_83: -3892106079827384448
+      SAMURAI-ezgif.com-resize_84: -274949405907474588
+      SAMURAI-ezgif.com-resize_85: -3441175345467138616
+      SAMURAI-ezgif.com-resize_86: 3218142120161138769
+      SAMURAI-ezgif.com-resize_87: 8067694839596197609
+      SAMURAI-ezgif.com-resize_88: 2588735961579988463
+      SAMURAI-ezgif.com-resize_89: -5565996128107924548
+      SAMURAI-ezgif.com-resize_9: -5371322875594350401
+      SAMURAI-ezgif.com-resize_90: -3922895996785078384
+      SAMURAI-ezgif.com-resize_91: 5930198824175985708
+      SAMURAI-ezgif.com-resize_92: 4914414808214889595
+      SAMURAI-ezgif.com-resize_93: 5843323624885733831
+      SAMURAI-ezgif.com-resize_94: 1669937932211885055
+      SAMURAI-ezgif.com-resize_95: -6113073884226593920
+      SAMURAI-ezgif.com-resize_96: 3134270092162518954
+      SAMURAI-ezgif.com-resize_97: 2545095924433549773
+      SAMURAI-ezgif.com-resize_98: 1285993098994700392
+      SAMURAI-ezgif.com-resize_99: 7147230768004730729
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
