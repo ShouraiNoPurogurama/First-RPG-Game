@@ -144,6 +144,7 @@ namespace Skills.SkillControllers
         private void SwordSkillDamage(Enemy targetEnemy)
         {
             targetEnemy.Damage();
+            targetEnemy?.FX.CreateHitFx(targetEnemy.transform, false);
             targetEnemy.StartCoroutine("FreeTimerFor", 1f);
         }
 

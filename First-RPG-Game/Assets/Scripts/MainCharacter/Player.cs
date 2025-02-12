@@ -73,6 +73,8 @@ namespace MainCharacter
         public PlayerCatchSwordState CatchSwordState { get; private set; }
         public PlayerDashAttackState DashAttackState { get; private set; }
         public PlayerBlackHoleState BlackHoleState { get; private set; }
+        public PlayerFallAfterAttackState FallAfterAttackState  { get; private set; }
+        public PlayerLandingAttackState LandingAttackState { get; private set; }
 
         #endregion
 
@@ -109,6 +111,8 @@ namespace MainCharacter
             CatchSwordState = new PlayerCatchSwordState(StateMachine, this, "CatchSword");
             DashAttackState = new PlayerDashAttackState(StateMachine, this, "DashAttack");
             BlackHoleState = new PlayerBlackHoleState(StateMachine, this, "Jump");
+            FallAfterAttackState = new PlayerFallAfterAttackState(StateMachine, this, "FallAfterAttack");
+            LandingAttackState = new PlayerLandingAttackState(StateMachine, this, "LandingAttack");
         }
 
         protected override void Start()

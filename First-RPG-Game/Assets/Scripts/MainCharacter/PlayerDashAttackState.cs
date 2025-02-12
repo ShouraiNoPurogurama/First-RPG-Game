@@ -6,7 +6,6 @@ namespace MainCharacter
     {
         private float _flyUpTime = 0.25f;
         private float _elapsedTime;
-        private bool _gravityIncreased;
 
         public PlayerDashAttackState(PlayerStateMachine stateMachine, Player player, string animationBoolName)
             : base(stateMachine, player, animationBoolName)
@@ -17,7 +16,6 @@ namespace MainCharacter
         {
             base.Enter();
             _elapsedTime = 0f;
-            _gravityIncreased = false;
         }
 
         public override void Update()
@@ -33,26 +31,15 @@ namespace MainCharacter
                     10f * Time.deltaTime);
                 Player.transform.position = new Vector2(Player.transform.position.x, newY);
             }
-            else if (!_gravityIncreased)
+            else
             {
-                //Increase gravity after 0.5s
-                if (Player.Rb)
-                {
-                    Player.Rb.gravityScale *= 2f;
-                }
-
-                _gravityIncreased = true;
+                StateMachine.ChangeState(Player.FallAfterAttackState);
             }
         }
 
         public override void Exit()
         {
             base.Exit();
-            
-            if (_gravityIncreased && Player.Rb )
-            {
-                Player.Rb.gravityScale /= 2f;
-            }
         }
     }
 }

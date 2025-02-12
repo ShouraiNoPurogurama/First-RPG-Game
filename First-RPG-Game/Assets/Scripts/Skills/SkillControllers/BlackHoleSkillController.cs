@@ -334,7 +334,7 @@ namespace Skills.SkillControllers
         {
             foreach (var enemy in _enemiesInBlackHole)
             {
-                if (enemy == null) continue;
+                if (!enemy) continue;
 
                 Vector3 direction = (transform.position - enemy.transform.position).normalized;
 

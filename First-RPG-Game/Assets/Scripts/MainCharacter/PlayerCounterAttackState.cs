@@ -7,7 +7,10 @@ namespace MainCharacter
     {
         private bool _canCreatClone;
         private bool _successfulCounterAttack;
-        
+
+        private float _flyUpTime = 0.25f;
+        private float _elapsedTime;
+
         public PlayerCounterAttackState(PlayerStateMachine stateMachine, Player player, string animationBoolName) : base(
             stateMachine, player, animationBoolName)
         {
@@ -20,6 +23,8 @@ namespace MainCharacter
             _successfulCounterAttack = false;
             StateTimer = Player.counterAttackDuration;
             Player.Animator.SetBool("SuccessfulCounterAttack", false);
+
+            _elapsedTime = 0f;
         }
 
         public override void Update()
@@ -27,19 +32,20 @@ namespace MainCharacter
             base.Update();
 
             Player.SetZeroVelocity();
-            
+
             Collider2D[] colliders = Physics2D.OverlapCircleAll(Player.attackCheck.position, Player.attackCheckRadius);
+
+            _elapsedTime += Time.deltaTime;
 
             foreach (var hit in colliders)
             {
                 var enemy = hit.GetComponent<Enemy>();
                 if (enemy is not null && enemy.IsCanBeStunned(false))
                 {
-                    enemy.Damage();
                     _successfulCounterAttack = true;
                     StateTimer = 100; //any value long enough
                     Player.Animator.SetBool("SuccessfulCounterAttack", true);
-                    
+
                     if (_canCreatClone)
                     {
                         _canCreatClone = false;
@@ -50,10 +56,19 @@ namespace MainCharacter
 
             if (_successfulCounterAttack)
             {
-                float newY = Mathf.MoveTowards(Player.transform.position.y, Player.transform.position.y + 10, 8f * Time.deltaTime);
-                Player.transform.position = new Vector2(Player.transform.position.x, newY);
+                if (_elapsedTime <= _flyUpTime)
+                {
+                    //Initial quick fly-up phase
+                    float newY = Mathf.MoveTowards(Player.transform.position.y, Player.transform.position.y + 10,
+                        10f * Time.deltaTime);
+                    Player.transform.position = new Vector2(Player.transform.position.x, newY);
+                }
+                else
+                {
+                    StateMachine.ChangeState(Player.FallAfterAttackState);
+                }
             }
-            
+
             if (StateTimer < 0 || TriggerCalled)
             {
                 StateMachine.ChangeState(Player.IdleState);
@@ -63,6 +78,7 @@ namespace MainCharacter
         public override void Exit()
         {
             _canCreatClone = true;
+
             base.Exit();
         }
     }

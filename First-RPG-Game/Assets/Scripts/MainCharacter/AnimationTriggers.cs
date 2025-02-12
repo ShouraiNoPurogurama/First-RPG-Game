@@ -35,6 +35,7 @@ namespace MainCharacter
             foreach (var hit in colliders)
             {
                 var enemy = hit.GetComponent<Enemy>();
+                enemy?.FX.CreateHitFx(enemy.transform, false);
                 enemy?.IsCanBeStunned(true);
             }
         }

@@ -43,7 +43,7 @@ public class EntityFX : MonoBehaviour
     public void CreateHitFx(Transform target,bool critical)
     {
         float zRotation = 0;
-        float xPosition = 0;
+        float xPosition = .5f;
         float yPosition = 0;
 
         Vector3 hitRotation = new Vector3(0,0,zRotation);

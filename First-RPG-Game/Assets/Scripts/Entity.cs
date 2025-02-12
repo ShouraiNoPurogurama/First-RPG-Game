@@ -75,6 +75,9 @@ public class Entity : MonoBehaviour
     public virtual bool IsGroundDetected()
         => Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
 
+    public virtual bool IsGroundDetected(float overrideDistance)
+        => Physics2D.Raycast(groundCheck.position, Vector2.down, overrideDistance, whatIsGround);
+    
     public virtual bool IsWallDetected()
         => Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDir, wallCheckDistance, whatIsGround);
 

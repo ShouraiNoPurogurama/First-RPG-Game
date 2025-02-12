@@ -11,7 +11,7 @@ namespace MainCharacter
             base.Enter();
 
             StateTimer = .4f;
-            Player.SetVelocity( -Player.FacingDir * Player.moveSpeed * 0.7f, Rb.linearVelocity.y + Player.jumpForce * 0.9f);
+            Player.SetVelocity( -Player.FacingDir * Player.moveSpeed * 0.7f, Rb.linearVelocity.y + Player.jumpForce);
 
             Player.StartCoroutine("BusyFor", .18f);
         }
