@@ -57,7 +57,8 @@ public class Entity : MonoBehaviour
         FX.Flash();
         Debug.Log(gameObject.name + " was damaged!");
     }
-
+    
+    
     protected virtual IEnumerator HitKnockBack()
     {
         _isKnocked = true;

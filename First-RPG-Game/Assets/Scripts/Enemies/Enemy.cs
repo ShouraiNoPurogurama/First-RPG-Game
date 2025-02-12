@@ -87,8 +87,14 @@ namespace Enemies
 
         #endregion
 
-        public virtual bool IsCanBeStunned()
+        public virtual bool IsCanBeStunned(bool forceStun)
         {
+            if (forceStun)
+            {
+                Damage();
+                return true;
+            }
+            
             if (_canBeStunned)
             {
                 CloseCounterAttackWindow();

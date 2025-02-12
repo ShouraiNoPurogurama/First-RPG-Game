@@ -6,7 +6,7 @@ namespace MainCharacter
     public class PlayerCounterAttackState : PlayerState
     {
         private bool _canCreatClone;
-        private bool _successfullCounterAttack;
+        private bool _successfulCounterAttack;
         
         public PlayerCounterAttackState(PlayerStateMachine stateMachine, Player player, string animationBoolName) : base(
             stateMachine, player, animationBoolName)
@@ -17,7 +17,7 @@ namespace MainCharacter
         {
             base.Enter();
 
-            _successfullCounterAttack = false;
+            _successfulCounterAttack = false;
             StateTimer = Player.counterAttackDuration;
             Player.Animator.SetBool("SuccessfulCounterAttack", false);
         }
@@ -33,9 +33,10 @@ namespace MainCharacter
             foreach (var hit in colliders)
             {
                 var enemy = hit.GetComponent<Enemy>();
-                if (enemy is not null && enemy.IsCanBeStunned())
+                if (enemy is not null && enemy.IsCanBeStunned(false))
                 {
-                    _successfullCounterAttack = true;
+                    enemy.Damage();
+                    _successfulCounterAttack = true;
                     StateTimer = 100; //any value long enough
                     Player.Animator.SetBool("SuccessfulCounterAttack", true);
                     
@@ -47,9 +48,9 @@ namespace MainCharacter
                 }
             }
 
-            if (_successfullCounterAttack)
+            if (_successfulCounterAttack)
             {
-                float newY = Mathf.MoveTowards(Player.transform.position.y, Player.transform.position.y + 10, 6f * Time.deltaTime);
+                float newY = Mathf.MoveTowards(Player.transform.position.y, Player.transform.position.y + 10, 8f * Time.deltaTime);
                 Player.transform.position = new Vector2(Player.transform.position.x, newY);
             }
             

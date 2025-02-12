@@ -34,9 +34,9 @@ namespace Enemies.Skeleton
             base.Update();
         }
 
-        public override bool IsCanBeStunned()
+        public override bool IsCanBeStunned(bool forceStun)
         {
-            if (base.IsCanBeStunned())
+            if (base.IsCanBeStunned(forceStun))
             {
                 StateMachine.ChangeState(StunnedState);
                 return true;

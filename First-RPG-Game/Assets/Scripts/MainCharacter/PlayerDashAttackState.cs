@@ -1,24 +1,58 @@
+using UnityEngine;
+
 namespace MainCharacter
 {
     public class PlayerDashAttackState : PlayerPrimaryAttackState
     {
-        public PlayerDashAttackState(PlayerStateMachine stateMachine, Player player, string animationBoolName) : base(stateMachine, player, animationBoolName)
+        private float _flyUpTime = 0.25f;
+        private float _elapsedTime;
+        private bool _gravityIncreased;
+
+        public PlayerDashAttackState(PlayerStateMachine stateMachine, Player player, string animationBoolName)
+            : base(stateMachine, player, animationBoolName)
         {
         }
 
         public override void Enter()
         {
             base.Enter();
+            _elapsedTime = 0f;
+            _gravityIncreased = false;
         }
 
         public override void Update()
         {
             base.Update();
+
+            _elapsedTime += Time.deltaTime;
+
+            if (_elapsedTime <= _flyUpTime)
+            {
+                //Initial quick fly-up phase
+                float newY = Mathf.MoveTowards(Player.transform.position.y, Player.transform.position.y + 10,
+                    10f * Time.deltaTime);
+                Player.transform.position = new Vector2(Player.transform.position.x, newY);
+            }
+            else if (!_gravityIncreased)
+            {
+                //Increase gravity after 0.5s
+                if (Player.Rb)
+                {
+                    Player.Rb.gravityScale *= 2f;
+                }
+
+                _gravityIncreased = true;
+            }
         }
 
         public override void Exit()
         {
             base.Exit();
+            
+            if (_gravityIncreased && Player.Rb )
+            {
+                Player.Rb.gravityScale /= 2f;
+            }
         }
     }
 }

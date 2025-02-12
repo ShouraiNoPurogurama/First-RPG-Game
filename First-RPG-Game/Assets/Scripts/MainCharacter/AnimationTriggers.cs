@@ -22,8 +22,20 @@ namespace MainCharacter
                 var enemy = hit.GetComponent<Enemy>();
                 if (enemy is not null)
                 {
+                    enemy.FX.CreateHitFx(enemy.transform, false);
                     enemy.Damage();
                 }
+            }
+        }
+        
+        private void StunAttackTrigger()
+        {
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(Player.attackCheck.position, Player.attackCheckRadius);
+
+            foreach (var hit in colliders)
+            {
+                var enemy = hit.GetComponent<Enemy>();
+                enemy?.IsCanBeStunned(true);
             }
         }
 
