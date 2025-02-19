@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace MainCharacter
 {
-    public class AnimationTriggers : MonoBehaviour
+    public class PlayerAnimationTriggers : MonoBehaviour
     {
         private Player Player => GetComponentInParent<Player>();
     
@@ -23,7 +23,10 @@ namespace MainCharacter
                 if (enemy is not null)
                 {
                     enemy.FX.CreateHitFx(enemy.transform, false);
-                    enemy.Damage();
+                    
+                    Player.Stats.DoDamage(enemy.GetComponent<EnemyStats>());
+                    enemy.DamageEffect();
+                    // hit.GetComponent<CharacterStats>().TakeDamage(Player.Stats.damage.FinalValue);
                 }
             }
         }
@@ -37,6 +40,7 @@ namespace MainCharacter
                 var enemy = hit.GetComponent<Enemy>();
                 enemy?.FX.CreateHitFx(enemy.transform, false);
                 enemy?.IsCanBeStunned(true);
+                hit.GetComponent<CharacterStats>().TakeDamage(Player.Stats.damage.FinalValue);
             }
         }
 

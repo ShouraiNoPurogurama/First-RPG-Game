@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Linq;
 using Skills;
 using UnityEngine;
@@ -75,15 +74,10 @@ namespace MainCharacter
         public PlayerBlackHoleState BlackHoleState { get; private set; }
         public PlayerFallAfterAttackState FallAfterAttackState  { get; private set; }
         public PlayerLandingAttackState LandingAttackState { get; private set; }
+        public PlayerDeadState DeadState { get; private set; }
 
         #endregion
-
-        // #region Skill Cooldown
-        //
-        // public float Timer;
-        // public float Cooldown;
-        //
-        // #endregion
+        
 
         public SkillManager SkillManager { get; private set; } 
         public GameObject ThrownSword { get; private set; } 
@@ -113,6 +107,7 @@ namespace MainCharacter
             BlackHoleState = new PlayerBlackHoleState(StateMachine, this, "Jump");
             FallAfterAttackState = new PlayerFallAfterAttackState(StateMachine, this, "FallAfterAttack");
             LandingAttackState = new PlayerLandingAttackState(StateMachine, this, "LandingAttack");
+            DeadState = new PlayerDeadState(StateMachine, this, "Die");
         }
 
         protected override void Start()
@@ -167,7 +162,14 @@ namespace MainCharacter
                 StateMachine.ChangeState(DashState);
             }
         }
-        
+
+        public override void Die()
+        {
+            base.Die();
+            
+            StateMachine.ChangeState(DeadState);
+        }
+
         public void AnimationTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
     }
 }

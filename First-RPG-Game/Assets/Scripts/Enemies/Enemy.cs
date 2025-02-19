@@ -16,21 +16,25 @@ namespace Enemies
 
         [Header("Move info")]
         public float moveSpeed;
+
         public float idleTime;
         public float battleTime;
         private float _defaultMoveSpeed;
 
         [Header("Attack info")]
         public float attackDistance;
+
         public float attackCooldown;
         [HideInInspector] public float lastTimeAttacked;
-
+        
         protected EnemyStateMachine StateMachine { get; private set; }
+        
+        public string LastAnimBoolName { get; private set; }
 
         protected override void Awake()
         {
             base.Awake();
-            
+
             StateMachine = new EnemyStateMachine();
 
             _defaultMoveSpeed = moveSpeed;
@@ -65,12 +69,12 @@ namespace Enemies
         protected virtual IEnumerator FreeTimerFor(float seconds)
         {
             FreezeTime(true);
-            
+
             yield return new WaitForSeconds(seconds);
 
             FreezeTime(false);
         }
-        
+
         #region Counter attack window
 
         public virtual void OpenCounterAttackWindow()
@@ -91,10 +95,10 @@ namespace Enemies
         {
             if (forceStun)
             {
-                Damage();
+                DamageEffect();
                 return true;
             }
-            
+
             if (_canBeStunned)
             {
                 CloseCounterAttackWindow();
@@ -102,6 +106,11 @@ namespace Enemies
             }
 
             return false;
+        }
+
+        public virtual void AssignLastAnimBoolName(string animName)
+        {
+            LastAnimBoolName = animName;
         }
         
         public virtual void AnimationFinishTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
