@@ -124,6 +124,7 @@ namespace MainCharacter
             base.Update();
 
             StateMachine.CurrentState.Update();
+            
             CheckForDashInput();
 
             if (Input.GetKeyDown(KeyCode.F))
@@ -143,7 +144,7 @@ namespace MainCharacter
             Destroy(ThrownSword);
         }
 
-        public void CheckForDashInput(float? forcedDirection = null)
+        public void CheckForDashInput()
         {
             if (!_canDashStates.Contains(StateMachine.CurrentState.GetType()))
             {
@@ -156,7 +157,12 @@ namespace MainCharacter
 
                 if (DashDir == 0)
                 {
-                    DashDir = forcedDirection ?? FacingDir;
+                    DashDir = FacingDir;
+                }
+                
+                if (StateMachine.CurrentState == WallSlideState)
+                {
+                    DashDir = -FacingDir;
                 }
 
                 StateMachine.ChangeState(DashState);
