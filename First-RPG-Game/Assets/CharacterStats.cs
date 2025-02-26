@@ -8,7 +8,7 @@ public class CharacterStats : MonoBehaviour
     public Stat damage;
     public Stat strength;
 
-    [SerializeField] private int currentHp;
+    public int currentHp;
 
     public CharacterStats(Stat maxHp)
     {
@@ -33,11 +33,15 @@ public class CharacterStats : MonoBehaviour
         damage.AddModifier(4);
     }
 
+    public event System.Action OnHealthChanged;
+
     public virtual void TakeDamage(int dmg)
     {
-        currentHp -= dmg;
+        currentHp = Mathf.Max(0, currentHp - dmg);
 
-        if (currentHp < 0)
+        OnHealthChanged?.Invoke();
+
+        if (currentHp <= 0)
         {
             Die();
         }

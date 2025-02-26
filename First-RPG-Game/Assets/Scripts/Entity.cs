@@ -5,6 +5,9 @@ public class Entity : MonoBehaviour
 {
     public int FacingDir { get; private set; } = 1;
     private bool _isFacingRight = true;
+
+    public System.Action onFlipped;
+
     public bool IsBusy { get; private set; }
     
     public SpriteRenderer Sr { get; private set; }
@@ -120,6 +123,8 @@ public class Entity : MonoBehaviour
         FacingDir *= -1;
         _isFacingRight = !_isFacingRight;
         transform.Rotate(0, 180, 0);
+
+        onFlipped?.Invoke();
     }
 
     #endregion

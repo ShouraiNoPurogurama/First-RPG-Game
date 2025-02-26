@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d8997b9caa2665e4bb701eb2e0d4eb99
+guid: 14ecdc3bbbbf9c14c96af68f2b33fbaa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7517924307148179274
-    second: WindSkill_0
+      213: -371575476621790198
+    second: red_image_no_bg_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WindSkill_0
+      name: red_image_no_bg_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 7200
-        height: 2700
+        x: 168
+        y: 38
+        width: 294
+        height: 564
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a4787df5358055860800000000000000
-      internalID: 7517924307148179274
+      spriteID: a0436bc9216e7daf0800000000000000
+      internalID: -371575476621790198
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      WindSkill_0: 7517924307148179274
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
