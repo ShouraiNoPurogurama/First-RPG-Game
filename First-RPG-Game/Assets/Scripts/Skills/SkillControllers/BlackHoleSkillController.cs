@@ -250,7 +250,7 @@ namespace Skills.SkillControllers
                     }
                     _cinemachineVirtualCamera.Follow = enemyTarget;
 
-                    if (Mathf.Approximately(enemyTarget.transform.position.z, -10))
+                    if (Mathf.Approximately(enemyTarget.transform.position.z, 10))
                     {
                         _cinemachineVirtualCamera.Follow = _originalCameraTarget;
                     }

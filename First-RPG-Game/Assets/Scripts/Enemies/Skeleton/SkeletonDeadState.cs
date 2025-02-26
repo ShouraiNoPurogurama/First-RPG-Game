@@ -18,7 +18,7 @@ namespace Enemies.Skeleton
             _skeleton.Animator.SetBool(_skeleton.LastAnimBoolName, true);
             _skeleton.Animator.speed = 0;
             _skeleton.CapsuleCollider.enabled = false;
-            _skeleton.transform.position = new Vector3(_skeleton.transform.position.x, _skeleton.transform.position.y, -10);
+            _skeleton.transform.position = new Vector3(_skeleton.transform.position.x, _skeleton.transform.position.y, 10);
 
             StateTimer = .15f;
         }
