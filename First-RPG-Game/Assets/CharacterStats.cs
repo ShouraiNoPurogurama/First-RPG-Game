@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -49,7 +48,6 @@ public class CharacterStats : MonoBehaviour
         this.maxHp = maxHp;
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected virtual void Start()
     {
         critPower.SetDefaultValue(150);
@@ -111,7 +109,6 @@ public class CharacterStats : MonoBehaviour
         if (CanCrit())
         {
             totalDamage = CalculateCriticalDamage(totalDamage);
-            Debug.Log("CRIT DMG: " + totalDamage);
         }
 
         totalDamage = DecreaseDamageByArmor(targetStats, totalDamage);
@@ -146,21 +143,21 @@ public class CharacterStats : MonoBehaviour
             if (Random.value < .5f && fireDamageVal > 0)
             {
                 canApplyIgnite = true;
-                targetStats.ApplyAilments(canApplyIgnite, canApplyChill, canApplyShock);
+                targetStats.ApplyAilments(true, false, false);
                 return;
             }
 
             if (Random.value < .5f && iceDamageVal > 0)
             {
                 canApplyChill = true;
-                targetStats.ApplyAilments(canApplyIgnite, canApplyChill, canApplyShock);
+                targetStats.ApplyAilments(false, true, false);
                 return;
             }
 
             if (Random.value < .5f && lightingDamageVal > 0)
             {
                 canApplyShock = true;
-                targetStats.ApplyAilments(canApplyIgnite, canApplyChill, canApplyShock);
+                targetStats.ApplyAilments(false, false, true);
                 return;
             }
         }
@@ -175,7 +172,7 @@ public class CharacterStats : MonoBehaviour
 
     private static int DecreaseDamageByResistance(CharacterStats targetStats, int totalMagicalDamage)
     {
-        totalMagicalDamage -= targetStats.magicResistance.FinalValue + (targetStats.intelligence.FinalValue * 3);
+        totalMagicalDamage -= targetStats.magicResistance.FinalValue + targetStats.intelligence.FinalValue * 3;
 
         totalMagicalDamage = Mathf.Clamp(totalMagicalDamage, 0, int.MaxValue);
         return totalMagicalDamage;
