@@ -10,13 +10,13 @@ namespace MainCharacter
         private void Awake()
         {
             //When have multiple scenes
-            if (Instance is not null)
+            if (Instance == null)
             {
-                Destroy(Instance.gameObject);
+                Instance = this;
             }
             else
             {
-                Instance = this;
+                Destroy(gameObject);
             }
         }
     }

@@ -98,11 +98,22 @@ namespace Enemies.Skeleton
 
         private void AttachCurrentPlayerIfNotExists()
         {
-            if (!_player)
+            if (_player == null)
+    {
+        if (PlayerManager.Instance != null && PlayerManager.Instance.player !=null)
+        {
+            _player = PlayerManager.Instance.player.transform;
+        }
+        else
+        {
+            Debug.LogWarning("Player not found, attempting to find by tag...");
+            GameObject foundPlayer = GameObject.FindGameObjectWithTag("Player");
+            if (foundPlayer != null)
             {
-                Debug.Log("ASSIGNED NEW PLAYER");
-                _player = PlayerManager.Instance.player.transform;
+                _player = foundPlayer.transform;
             }
+        }
+    }
         }
     }
 }

@@ -1,17 +1,16 @@
-using System;
-using System.Collections;
-using System.Linq;
 using Skills;
+using System;
+using System.Linq;
 using UnityEngine;
 
 namespace MainCharacter
 {
     public class Player : Entity
     {
-        
+
         #region Consts
 
-        private readonly Type[] _canDashStates = 
+        private readonly Type[] _canDashStates =
         {
             typeof(PlayerIdleState),
             typeof(PlayerMoveState),
@@ -73,7 +72,7 @@ namespace MainCharacter
         public PlayerCatchSwordState CatchSwordState { get; private set; }
         public PlayerDashAttackState DashAttackState { get; private set; }
         public PlayerBlackHoleState BlackHoleState { get; private set; }
-        public PlayerFallAfterAttackState FallAfterAttackState  { get; private set; }
+        public PlayerFallAfterAttackState FallAfterAttackState { get; private set; }
         public PlayerLandingAttackState LandingAttackState { get; private set; }
 
         #endregion
@@ -85,9 +84,9 @@ namespace MainCharacter
         //
         // #endregion
 
-        public SkillManager SkillManager { get; private set; } 
-        public GameObject ThrownSword { get; private set; } 
-        
+        public SkillManager SkillManager { get; private set; }
+        public GameObject ThrownSword { get; private set; }
+
 
         /// <summary>
         /// Initialize player states when first awoke
@@ -154,8 +153,8 @@ namespace MainCharacter
             {
                 return;
             }
-            
-            if (Input.GetKeyDown(KeyCode.LeftShift) && SkillManager.Instance.Dash.CanUseSkill())
+
+            if (Input.GetKeyDown(KeyCode.R) && SkillManager.Instance.Dash.CanUseSkill())
             {
                 DashDir = Input.GetAxisRaw("Horizontal");
 
@@ -167,7 +166,7 @@ namespace MainCharacter
                 StateMachine.ChangeState(DashState);
             }
         }
-        
+
         public void AnimationTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
     }
 }
