@@ -16,6 +16,8 @@ public class ItemData_Equipment : ItemData
 {
     public EquipmentType equipmentType;
 
+    public ItemEffect[] itemEffects;
+
     [Header("Major stats")]
     public int strength; // = 1 dmg and 1% crit chance
     public int agility; // = 1% evasion and 1% crit chance
@@ -88,5 +90,13 @@ public class ItemData_Equipment : ItemData
         playerStats.fireDamage.AddModifier(fireDamage);
         playerStats.iceDamage.AddModifier(iceDamage);
         playerStats.lightingDamage.AddModifier(lightingDamage);
+    }
+
+    public void ExecuteItemEffect()
+    {
+        foreach (var item in itemEffects)
+        {
+            item.ExecuteEffect();
+        }
     }
 }

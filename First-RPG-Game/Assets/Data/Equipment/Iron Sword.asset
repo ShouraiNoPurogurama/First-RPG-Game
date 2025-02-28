@@ -10,23 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f2cbe725f38e5de40bdd23a309c62c6d, type: 3}
-  m_Name: Wooden Sword
+  m_Name: Iron Sword
   m_EditorClassIdentifier: 
-  itemName: Wooden sword
-  icon: {fileID: -440586251, guid: 9c7355b0cb8a5024bba44738f70d9e74, type: 3}
+  itemName: Iron sword
+  icon: {fileID: 1863113123, guid: be55291aae08d434db3da3b59db3ab4a, type: 3}
   itemType: 1
+  dropChance: 58.8
   equipmentType: 0
+  itemEffects: []
   strength: 0
-  agility: 5
+  agility: 0
   intelligence: 0
   vitality: 0
   maxHp: 0
   armor: 0
   evasion: 0
   magicResistance: 0
-  damage: 12
-  critChance: 7
+  damage: 45
+  critChance: 0
   critPower: 0
   fireDamage: 0
   iceDamage: 0
   lightingDamage: 0
+  craftingMaterials:
+  - data: {fileID: 11400000, guid: bb042b55143cd3f46ba63c04468cf874, type: 2}
+    stackSize: 2
+  - data: {fileID: 11400000, guid: 2bfd63e89ea1e974abe058a08c341400, type: 2}
+    stackSize: 1

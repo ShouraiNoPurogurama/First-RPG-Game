@@ -228,5 +228,5 @@ MonoBehaviour:
   itemImage: {fileID: 6907823524266572318}
   itemText: {fileID: 7560237631147099831}
   item:
-    data: {fileID: 11400000, guid: 91dd9d7ddfef5434cad86e7d1e2f0a89, type: 2}
+    data: {fileID: 0}
     stackSize: 0

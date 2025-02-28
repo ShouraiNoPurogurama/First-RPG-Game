@@ -238,4 +238,17 @@ public class Inventory : MonoBehaviour
         Debug.Log("Here is your item " + itemToCraft.name);
         return true;
     }
+    public List<InventoryItem> GetEquipmentList() => equipment;
+    public List<InventoryItem> GetStashList() => stash;
+    public ItemData_Equipment GetEquipment(EquipmentType type)
+    {
+        foreach (KeyValuePair<ItemData_Equipment, InventoryItem> key in equipmentDictionary)
+        {
+            if (key.Key.equipmentType == type)
+            {
+                return key.Key;
+            }
+        }
+        return null;
+    }
 }

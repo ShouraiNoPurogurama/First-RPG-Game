@@ -3,6 +3,7 @@ using Enemies;
 public class EnemyStats : CharacterStats
 {
     private Enemy _enemy;
+    private ItemDrop myDropSystem;
     public EnemyStats(Stat maxHp) : base(maxHp)
     {
     }
@@ -12,6 +13,7 @@ public class EnemyStats : CharacterStats
     {
         base.Start();
         _enemy = GetComponent<Enemy>();
+        myDropSystem = GetComponent<ItemDrop>();
     }
 
     // Update is called once per frame
@@ -30,5 +32,6 @@ public class EnemyStats : CharacterStats
     {
         base.Die();
         _enemy.Die();
+        myDropSystem.GenerateDrop();
     }
 }
