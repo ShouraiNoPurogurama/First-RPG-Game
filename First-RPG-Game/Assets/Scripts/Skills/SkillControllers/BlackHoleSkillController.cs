@@ -249,6 +249,11 @@ namespace Skills.SkillControllers
                         SkillManager.Instance.Clone.CreateClone(enemyTarget, new Vector3(xOffset, 0));
                     }
                     _cinemachineVirtualCamera.Follow = enemyTarget;
+
+                    if (Mathf.Approximately(enemyTarget.transform.position.z, 10))
+                    {
+                        _cinemachineVirtualCamera.Follow = _originalCameraTarget;
+                    }
                 }
 
                 yield return new WaitForSeconds(_cloneAttackCooldown);

@@ -44,6 +44,10 @@ namespace MainCharacter
         public float jumpForce = 12;
 
         public float swordReturnImpact = 8;
+        
+        private float _defaultMoveSpeed;
+        
+        private float _defaultJumpForce;
 
         #endregion
 
@@ -53,7 +57,8 @@ namespace MainCharacter
         public float dashSpeed = 24;
         public float dashDuration = .1f;
         public float DashDir { get; private set; }
-
+        
+        private float _defaultDashSpeed;
         #endregion
 
         #region States
@@ -117,6 +122,9 @@ namespace MainCharacter
             StateMachine.Initialize(IdleState);
 
             SkillManager = SkillManager.Instance;
+            
+            _defaultMoveSpeed = moveSpeed;
+            _defaultJumpForce = jumpForce;
         }
 
         protected override void Update()
@@ -167,6 +175,16 @@ namespace MainCharacter
 
                 StateMachine.ChangeState(DashState);
             }
+        }
+
+        public override void SlowEntityBy(float slowPercentage, float slowDuration)
+        {
+            base.SlowEntityBy(slowPercentage, slowDuration);
+        }
+
+        protected override void ReturnDefaultSpeed()
+        {
+            base.ReturnDefaultSpeed();
         }
 
         public override void Die()

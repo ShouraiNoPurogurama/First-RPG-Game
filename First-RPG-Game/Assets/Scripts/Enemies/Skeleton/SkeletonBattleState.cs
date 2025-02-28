@@ -99,7 +99,6 @@ namespace Enemies.Skeleton
         {
             if (!_player)
             {
-                Debug.Log("ASSIGNED NEW PLAYER");
                 _player = PlayerManager.Instance.player.transform;
             }
         }
