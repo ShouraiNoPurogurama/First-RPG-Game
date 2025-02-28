@@ -29,26 +29,15 @@ public class ParallaxBackgroundMultiLayers : MonoBehaviour
         var backgroundEdgeRight = _startXPosition + _length / 2;
         var backgroundEdgeLeft = _startXPosition - _length / 2;
 
-        if (cameraPositionX > backgroundEdgeRight)
+        if (cameraPositionX > backgroundEdgeRight && distanceToMove != 0)
         {
-            // UpdateSortingOrder(-2);
             _startXPosition += _length;
             _startCameraXPosition += _length;
         }
-        else if (cameraPositionX < backgroundEdgeLeft)
+        else if (cameraPositionX < backgroundEdgeLeft && distanceToMove != 0)
         {
-            // UpdateSortingOrder(-2);
             _startXPosition -= 0.9f * _length;
             _startCameraXPosition -= 0.9f * _length;
-        }
-    }
-
-    private void UpdateSortingOrder(int change)
-    {
-        SpriteRenderer[] spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
-        foreach (var sr in spriteRenderers)
-        {
-            sr.sortingOrder += change;
         }
     }
 }

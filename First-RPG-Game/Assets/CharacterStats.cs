@@ -1,8 +1,11 @@
+using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class CharacterStats : MonoBehaviour
 {
+    private EntityFX _fx;
+    
     [Header("Major stats")]
     public Stat strength; // = 1 dmg and 1% crit chance
 
@@ -33,6 +36,7 @@ public class CharacterStats : MonoBehaviour
     public bool isChilled; // reduce armor by 30%
     public bool isShocked; // reduce attack accuracy by 20%
 
+    [SerializeField] protected float ailmentDuration = 4;
     private float _igniteTimer;
     private float _chilledTimer;
     private float _shockedTimer;
@@ -41,7 +45,9 @@ public class CharacterStats : MonoBehaviour
     private float _igniteDamageTimer = .5f;
     private int _igniteDamage;
 
-    [SerializeField] private int currentHp;
+    [SerializeField] public int currentHp;
+    
+    public Action OnHealthChanged;
 
     public CharacterStats(Stat maxHp)
     {
@@ -50,8 +56,10 @@ public class CharacterStats : MonoBehaviour
 
     protected virtual void Start()
     {
+        _fx= GetComponent<EntityFX>();
+        
         critPower.SetDefaultValue(150);
-        currentHp = maxHp.FinalValue;
+        currentHp = GetMaxHealthValue();
 
         damage.AddModifier(4);
     }
@@ -82,9 +90,7 @@ public class CharacterStats : MonoBehaviour
 
         if (_igniteDamageTimer <= 0 && isIgnited)
         {
-            Debug.Log("Take burn damage " + _igniteDamage);
-
-            currentHp -= _igniteDamage;
+            DecreaseHealthBy(_igniteDamage);
 
             if (currentHp < 0)
             {
@@ -114,7 +120,8 @@ public class CharacterStats : MonoBehaviour
         totalDamage = DecreaseDamageByArmor(targetStats, totalDamage);
 
         DoMagicalDamage(targetStats);
-        // targetStats.TakeDamage(totalDamage);
+        
+        targetStats.TakeDamage(totalDamage);
     }
 
     public virtual void DoMagicalDamage(CharacterStats targetStats)
@@ -188,19 +195,24 @@ public class CharacterStats : MonoBehaviour
         if (ignite)
         {
             isIgnited = true;
-            _igniteTimer = 2;
+            _igniteTimer = ailmentDuration;
+            
+            _fx.IgniteFxFor(ailmentDuration);
         }
 
         if (chill)
         {
             isChilled = true;
-            _chilledTimer = 2;
+            _chilledTimer = ailmentDuration;
+            
+            _fx.ChillFxFor(ailmentDuration);
         }
 
         if (shock)
         {
             isShocked = true;
-            _shockedTimer = 2;
+            _shockedTimer = ailmentDuration;
+            _fx.ShockFxFor(ailmentDuration);
         }
 
         isChilled = chill;
@@ -250,6 +262,13 @@ public class CharacterStats : MonoBehaviour
         }
     }
 
+    protected virtual void DecreaseHealthBy(int dmg)
+    {
+        currentHp -= dmg;
+
+        OnHealthChanged?.Invoke();
+    }
+
     protected virtual void Die()
     {
     }
@@ -258,24 +277,23 @@ public class CharacterStats : MonoBehaviour
     {
         int totalCritChance = critChance.FinalValue + agility.FinalValue;
 
-        if (Random.Range(0, 100) <= totalCritChance)
-        {
-            return true;
-        }
-
-        return false;
+        return Random.Range(0, 100) <= totalCritChance;
     }
 
-    private int CalculateCriticalDamage(int damage)
+    private int CalculateCriticalDamage(int dmg)
     {
         float totalCritPower = (critPower.FinalValue * 0.01f + strength.FinalValue * 0.01f);
 
         Debug.Log("Total crit power % " + totalCritPower);
 
-        float critDamage = damage * totalCritPower;
+        float critDamage = dmg * totalCritPower;
 
-        Debug.Log("Total crit damage  " + critDamage);
 
         return Mathf.RoundToInt(critDamage);
+    }
+
+    public int GetMaxHealthValue()
+    {
+        return maxHp.FinalValue + vitality.FinalValue * 5;
     }
 }
