@@ -55,7 +55,7 @@ namespace Skills.SkillControllers
             _rb.linearVelocity = dir;
             _rb.gravityScale = gravityScale;
             _freezeTimeDuration = freezeTimeDuration;
-            
+
             if (_pierceAmount <= 0)
             {
                 _animator.SetBool("Rotation", true);
@@ -64,7 +64,7 @@ namespace Skills.SkillControllers
             //Returns the min value if the given value is less than the min value.
             //Returns the max value if the given value is greater than the max value.
             _spinDirection = Mathf.Clamp(_rb.linearVelocity.x, -1, 1);
-            
+
             Invoke("DestroyMe", 7);
         }
 
@@ -107,10 +107,10 @@ namespace Skills.SkillControllers
             BouncingLogic();
 
             SpinningLogic();
-            
+
             ReturningLogic();
         }
-        
+
         private void BouncingLogic()
         {
             if (!_isBouncing || _enemyTargets.Count <= 0) return;
@@ -152,6 +152,9 @@ namespace Skills.SkillControllers
         {
             if (_isSpinning)
             {
+                transform.localScale = new Vector3(1.5f, 1.5f);
+                _animator.speed = 1.5f;
+                
                 if (Vector2.Distance(_player.transform.position, transform.position) > _maxTravelDistance && !_wasStopped)
                 {
                     StopWhenSpinning();
@@ -163,7 +166,7 @@ namespace Skills.SkillControllers
 
                     transform.position = Vector2.MoveTowards(transform.position,
                         new Vector2(transform.position.x + _spinDirection, transform.position.y), 1.5f * Time.deltaTime);
-                    
+
                     if (_spinTimer < 0)
                     {
                         _isSpinning = false;
@@ -190,7 +193,7 @@ namespace Skills.SkillControllers
                 }
             }
         }
-        
+
         private void ReturningLogic()
         {
             if (_isReturning)
@@ -213,7 +216,6 @@ namespace Skills.SkillControllers
             _rb.constraints = RigidbodyConstraints2D.FreezePosition;
             _spinTimer = _spinDuration;
         }
-        
 
 
         //Disable rotation, prevent Rigidbody-driven movement and assign sword to enemy's collider2D as a children
@@ -229,7 +231,7 @@ namespace Skills.SkillControllers
             if (enemy is not null)
             {
                 SwordSkillDamage(enemy);
-                
+
                 SetupTargetForBouncing();
             }
 

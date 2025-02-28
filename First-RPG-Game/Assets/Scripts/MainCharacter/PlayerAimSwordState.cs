@@ -45,7 +45,7 @@ namespace MainCharacter
         public override void Exit()
         {
             base.Exit();
-            Player.StartCoroutine("BusyFor", .2f);
+            Player.StartCoroutine("BusyFor", .15f);
         }
     }
 }
