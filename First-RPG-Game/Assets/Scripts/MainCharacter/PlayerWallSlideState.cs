@@ -29,7 +29,7 @@ namespace MainCharacter
                 return;
             }
         
-            Player.CheckForDashInput(-Player.FacingDir);
+            Player.CheckForDashInput();
         
             if (xInput != 0 && !Mathf.Approximately(Player.FacingDir, xInput))
             {

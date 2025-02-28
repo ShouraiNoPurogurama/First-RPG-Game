@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 namespace MainCharacter
@@ -15,7 +14,7 @@ namespace MainCharacter
         public override void Enter()
         {
             base.Enter();
-
+            
             Player.SkillManager.Clone.CreateCloneOfDashStart();
             
             StateTimer = Player.dashDuration;
@@ -26,6 +25,11 @@ namespace MainCharacter
         public override void Update()
         {
             base.Update();
+
+            if (Player.IsWallDetected() && !Player.IsGroundDetected() && StateTimer/Player.dashDuration < 0.90)
+            {
+                StateMachine.ChangeState(Player.WallSlideState);
+            }
             
             float xVelocity = Player.dashSpeed * Player.DashDir;
 

@@ -15,9 +15,9 @@ public class EnemyStats : CharacterStats
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-        
+        base.Update();
     }
 
     public override void TakeDamage(int dmg)
