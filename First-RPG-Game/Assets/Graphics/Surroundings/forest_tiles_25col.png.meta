@@ -647,7 +647,28 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      forest_tiles_25col_0: 1271639944458316612
+      forest_tiles_25col_1: 7513014612206244619
+      forest_tiles_25col_10: 9059537623554568352
+      forest_tiles_25col_11: -6295797477880718441
+      forest_tiles_25col_12: -3272558561766385934
+      forest_tiles_25col_13: 7825820602411039346
+      forest_tiles_25col_14: 8234455430158621072
+      forest_tiles_25col_15: 6532502253285907319
+      forest_tiles_25col_16: 6320187805344344156
+      forest_tiles_25col_17: -1927804745876506082
+      forest_tiles_25col_18: -4952959917913358926
+      forest_tiles_25col_19: 2912811692824761288
+      forest_tiles_25col_2: -1097960579883351544
+      forest_tiles_25col_20: 2735398079901749716
+      forest_tiles_25col_3: -6141252874676387152
+      forest_tiles_25col_4: -6146211210830713254
+      forest_tiles_25col_5: 1143544889896282158
+      forest_tiles_25col_6: 7895563572046564887
+      forest_tiles_25col_7: 7928884352615083242
+      forest_tiles_25col_8: 4264155697003850885
+      forest_tiles_25col_9: -3654854669526251922
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

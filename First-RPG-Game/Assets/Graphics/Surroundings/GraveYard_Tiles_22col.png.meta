@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GraveYard_Tiles_22col_0: -5187150861116502153
+      GraveYard_Tiles_22col_1: -4258664510062812162
+      GraveYard_Tiles_22col_2: 5081797757199843060
+      GraveYard_Tiles_22col_3: -9106168170961234891
+      GraveYard_Tiles_22col_4: 6240965485918104043
+      GraveYard_Tiles_22col_5: 2338524085338500787
+      GraveYard_Tiles_22col_6: -5607998916762109161
+      GraveYard_Tiles_22col_7: 4804206945754881315
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
