@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Thunder claw
   icon: {fileID: 367297872, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
-  itemType: 0
-  dropChance: 84.7
+  itemType: 1
+  dropChance: 97.6
   equipmentType: 0
   itemEffects:
-  - {fileID: 11400000, guid: b715fb71796df9e4a9d2aeb0b0c68125, type: 2}
+  - {fileID: 11400000, guid: 8bfddb40a2946a04fbcaf45f7e7869f0, type: 2}
   strength: 0
   agility: 0
   intelligence: 0

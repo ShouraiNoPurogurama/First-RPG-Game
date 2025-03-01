@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using UnityEngine;
 using static UnityEditor.Timeline.Actions.MenuPriority;
 
@@ -15,6 +16,8 @@ public class Inventory : MonoBehaviour
 
     public List<InventoryItem> equipment;
     public Dictionary<ItemData_Equipment, InventoryItem> equipmentDictionary;
+
+    public List<InventoryItem> startItem;
 
     [Header("Inventory UI")]
     [SerializeField] private Transform inventorySlotParent;
@@ -46,7 +49,17 @@ public class Inventory : MonoBehaviour
         inventoryItemSlot = inventorySlotParent.GetComponentsInChildren<Ui_ItemSlot>();
         stashItemSlot = stashSlotParent.GetComponentsInChildren<Ui_ItemSlot>();
         equipmentItemSlot = equipmentSlotParent.GetComponentsInChildren<UI_EquimentSlot>();
+        AddStartingItem();
     }
+
+    private void AddStartingItem()
+    {
+        for(int i = 0; i < startItem.Count; i++)
+        {
+            AddItem(startItem[i].data);
+        }
+    }
+
 
     public void EquipItem(ItemData item)
     {

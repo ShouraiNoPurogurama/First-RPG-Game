@@ -9,20 +9,33 @@ public class ItemDrop : MonoBehaviour
     private List<ItemData> dropList = new List<ItemData>();
 
     [SerializeField] private GameObject dropPrefab;
-    [SerializeField] private ItemData item;
 
     public void GenerateDrop()
     {
-        for (int i = 0; i < possibleDrop.Length; i++)
+        dropList.Clear();
+
+        // Add items to dropList based on dropChance
+        foreach (var item in possibleDrop)
         {
-            if(Random.Range(0, 100) <= possibleDrop[i].dropChance) {
-                dropList.Add(possibleDrop[i]);
+            if (Random.Range(0, 100) <= item.dropChance)
+            {
+                dropList.Add(item);
             }
         }
-        for (int i = 0;i < possibleItemDrop; i++) 
+
+        // Prevent errors when dropList is empty
+        if (dropList.Count == 0)
         {
-            ItemData randomItem = dropList[Random.Range(0, dropList.Count - 1)];
-            dropList.Remove(randomItem);
+            return;
+        }
+
+        int dropsToGenerate = Mathf.Min(possibleItemDrop, dropList.Count);
+
+        for (int i = 0; i < dropsToGenerate; i++)
+        {
+            int randomIndex = Random.Range(0, dropList.Count);
+            ItemData randomItem = dropList[randomIndex];
+            dropList.RemoveAt(randomIndex);
             DropItem(randomItem);
         }
 

@@ -27,7 +27,10 @@ namespace MainCharacter
                     Player.Stats.DoDamage(enemy.GetComponent<EnemyStats>());
                     enemy.DamageEffect();
                     // hit.GetComponent<CharacterStats>().TakeDamage(Player.Stats.damage.FinalValue);
-                    Inventory.instance.GetEquipment(EquipmentType.Weapon).ExecuteItemEffect();
+                    if(Inventory.instance.GetEquipment(EquipmentType.Weapon) != null)
+                    {
+                        Inventory.instance.GetEquipment(EquipmentType.Weapon).Effect(enemy.GetComponent<EnemyStats>().transform);
+                    }
                 }
             }
         }
