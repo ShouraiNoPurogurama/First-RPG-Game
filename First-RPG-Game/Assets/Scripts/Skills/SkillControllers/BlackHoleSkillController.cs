@@ -245,7 +245,7 @@ namespace Skills.SkillControllers
                     }
                     else
                     {
-                        float xOffset = Random.Range(0, 100) > 50 ? 1.5f : -1.5f;
+                        float xOffset = Random.Range(0, 100) > 50 ? 1.7f : -1.7f;
                         SkillManager.Instance.Clone.CreateClone(enemyTarget, new Vector3(xOffset, 0));
                     }
                     _cinemachineVirtualCamera.Follow = enemyTarget;

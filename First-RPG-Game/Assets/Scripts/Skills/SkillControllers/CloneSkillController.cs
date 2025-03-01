@@ -55,7 +55,7 @@ namespace Skills.SkillControllers
             }
 
             _player = player;
-            
+
             transform.position = newTransform.position + offset + _defaultYOffset;
 
             _closestEnemy = closestEnemy;
@@ -78,17 +78,18 @@ namespace Skills.SkillControllers
             foreach (var hit in colliders)
             {
                 var enemy = hit.GetComponent<Enemy>();
-
-                if (!enemy) return;
-
-                _player.Stats.DoDamage(enemy.GetComponent<EnemyStats>());
-                
-                if (_canDuplicateClone)
+                if (enemy is not null)
                 {
-                    if (Random.Range(0, 100) < _chanceToDuplicate)
+                    _player.Stats.DoDamage(enemy.GetComponent<EnemyStats>());
+                    enemy.FX.CreateHitFx(enemy.transform, false);
+
+                    if (_canDuplicateClone)
                     {
-                        SkillManager.Instance.Clone.CreateClone(enemy.transform,
-                            new Vector3(1.2f * _cloneFacingDir, 0));
+                        if (Random.Range(0, 100) < _chanceToDuplicate)
+                        {
+                            SkillManager.Instance.Clone.CreateClone(enemy.transform,
+                                new Vector3(1.2f * _cloneFacingDir, 0));
+                        }
                     }
                 }
             }
