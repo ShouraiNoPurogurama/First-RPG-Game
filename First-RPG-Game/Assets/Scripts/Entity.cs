@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Stats;
 using UnityEngine;
 
 public class Entity : MonoBehaviour
@@ -70,10 +71,9 @@ public class Entity : MonoBehaviour
         Animator.speed = 1;
     }
     
-    public virtual void DamageEffect()
+    public virtual void DamageImpact()
     {
         StartCoroutine(nameof(HitKnockBack));
-        FX.Flash();
     }
     
     
@@ -81,7 +81,7 @@ public class Entity : MonoBehaviour
     {
         _isKnocked = true;
 
-        Rb.linearVelocity = new Vector2(knockBackDirection.x * -FacingDir, knockBackDirection.y);
+        Rb.linearVelocity = new Vector2(knockBackDirection.x * 1.2f * -FacingDir, knockBackDirection.y);
 
         yield return new WaitForSeconds(knockBackDuration);
 

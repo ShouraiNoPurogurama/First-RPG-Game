@@ -1,4 +1,6 @@
 using Enemies;
+using MainCharacter;
+using Stats;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -6,6 +8,7 @@ namespace Skills.SkillControllers
 {
     public class CloneSkillController : MonoBehaviour
     {
+        private Player _player;
         private SpriteRenderer _spriteRenderer;
         private Animator _animator;
 
@@ -44,13 +47,15 @@ namespace Skills.SkillControllers
         }
 
         public void SetupClone(Transform newTransform, float cloneDuration, bool canAttack, Vector3 offset,
-            Transform closestEnemy, bool canDuplicate, float chanceToDuplicate, int facingDir)
+            Transform closestEnemy, bool canDuplicate, float chanceToDuplicate, int facingDir, Player player)
         {
             if (canAttack)
             {
                 _animator.SetInteger("AttackNumber", Random.Range(1, 3));
             }
 
+            _player = player;
+            
             transform.position = newTransform.position + offset + _defaultYOffset;
 
             _closestEnemy = closestEnemy;
@@ -76,8 +81,8 @@ namespace Skills.SkillControllers
 
                 if (!enemy) return;
 
-                enemy.DamageEffect();
-
+                _player.Stats.DoDamage(enemy.GetComponent<EnemyStats>());
+                
                 if (_canDuplicateClone)
                 {
                     if (Random.Range(0, 100) < _chanceToDuplicate)

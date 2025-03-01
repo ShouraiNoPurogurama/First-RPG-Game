@@ -41,7 +41,7 @@ namespace Skills
             Transform closestEnemy = FindClosestEnemy(spawnPosition);
 
             newClone.GetComponent<CloneSkillController>()
-                .SetupClone(clonePosition, cloneDuration, canAttack, offset, closestEnemy, canDuplicateClone, chanceToDuplicate, Player.FacingDir);
+                .SetupClone(clonePosition, cloneDuration, canAttack, offset, closestEnemy, canDuplicateClone, chanceToDuplicate, Player.FacingDir, Player);
         }
 
         public void CreateCloneOfDashStart()

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Enemies;
 using MainCharacter;
+using Stats;
 using UnityEngine;
 
 namespace Skills.SkillControllers
@@ -81,12 +82,13 @@ namespace Skills.SkillControllers
             _pierceAmount = pierceAmount;
         }
 
-        public void SetupSpin(bool isSpinning, float maxTravelDistance, float spinDuration, float hitTimer)
+        public void SetupSpin(bool isSpinning, float maxTravelDistance, float spinDuration, float hitTimer, float hitCooldown)
         {
             _isSpinning = isSpinning;
             _maxTravelDistance = maxTravelDistance;
             _spinDuration = spinDuration;
             _hitTimer = hitTimer;
+            _hitCooldown = hitCooldown;
         }
 
         public void ReturnSword()
@@ -143,8 +145,8 @@ namespace Skills.SkillControllers
 
         private void SwordSkillDamage(Enemy targetEnemy)
         {
-            targetEnemy.DamageEffect();
-            targetEnemy?.FX.CreateHitFx(targetEnemy.transform, false);
+            _player.Stats.DoDamage(targetEnemy.GetComponent<EnemyStats>());
+            targetEnemy.FX.CreateHitFx(targetEnemy.transform, false);
             targetEnemy.StartCoroutine("FreeTimerFor", 1f);
         }
 
@@ -178,16 +180,18 @@ namespace Skills.SkillControllers
                     if (_hitTimer < 0)
                     {
                         _hitTimer = _hitCooldown;
-                    }
+                        
+                        Debug.Log("hitcooldown " + _hitCooldown);
+                        
+                        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 1);
 
-                    Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 1);
-
-                    foreach (var hit in colliders)
-                    {
-                        var enemy = hit.GetComponent<Enemy>();
-                        if (enemy is not null)
+                        foreach (var hit in colliders)
                         {
-                            SwordSkillDamage(enemy);
+                            var enemy = hit.GetComponent<Enemy>();
+                            if (enemy is not null)
+                            {
+                                SwordSkillDamage(enemy);
+                            }
                         }
                     }
                 }
