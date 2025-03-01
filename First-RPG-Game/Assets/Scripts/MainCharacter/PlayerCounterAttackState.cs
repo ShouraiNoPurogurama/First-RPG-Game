@@ -8,7 +8,7 @@ namespace MainCharacter
         private bool _canCreatClone;
         private bool _successfulCounterAttack;
 
-        private float _flyUpTime = 0.25f;
+        private float _flyUpTime = 0.3f;
         private float _elapsedTime;
 
         public PlayerCounterAttackState(PlayerStateMachine stateMachine, Player player, string animationBoolName) : base(

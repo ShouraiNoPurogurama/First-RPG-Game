@@ -1,4 +1,6 @@
 using Enemies;
+using MainCharacter;
+using Stats;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -6,6 +8,7 @@ namespace Skills.SkillControllers
 {
     public class CloneSkillController : MonoBehaviour
     {
+        private Player _player;
         private SpriteRenderer _spriteRenderer;
         private Animator _animator;
 
@@ -19,7 +22,7 @@ namespace Skills.SkillControllers
 
         private bool _canDuplicateClone;
         private float _chanceToDuplicate;
-        
+
         //Fix sprite position
         private readonly Vector3 _defaultYOffset = new Vector3(0, -0.3f);
 
@@ -32,7 +35,7 @@ namespace Skills.SkillControllers
         private void Update()
         {
             _cloneTimer -= Time.deltaTime;
-            
+
             if (_cloneTimer < .4)
             {
                 _spriteRenderer.color = new Color(1, 1, 1, _spriteRenderer.color.a - Time.deltaTime * colorLoosingSpeed);
@@ -43,13 +46,16 @@ namespace Skills.SkillControllers
             }
         }
 
-        public void SetupClone(Transform newTransform, float cloneDuration, bool canAttack, Vector3 offset, Transform closestEnemy, bool canDuplicate, float chanceToDuplicate)
+        public void SetupClone(Transform newTransform, float cloneDuration, bool canAttack, Vector3 offset,
+            Transform closestEnemy, bool canDuplicate, float chanceToDuplicate, int facingDir, Player player)
         {
             if (canAttack)
             {
                 _animator.SetInteger("AttackNumber", Random.Range(1, 3));
             }
-            
+
+            _player = player;
+
             transform.position = newTransform.position + offset + _defaultYOffset;
 
             _closestEnemy = closestEnemy;
@@ -57,7 +63,9 @@ namespace Skills.SkillControllers
             _canDuplicateClone = canDuplicate;
 
             _chanceToDuplicate = chanceToDuplicate;
-            
+
+            _cloneFacingDir = facingDir;
+
             FaceClosestTarget();
 
             _cloneTimer = cloneDuration;
@@ -69,13 +77,19 @@ namespace Skills.SkillControllers
 
             foreach (var hit in colliders)
             {
-                hit.GetComponent<Enemy>()?.DamageEffect();
-
-                if (_canDuplicateClone)
+                var enemy = hit.GetComponent<Enemy>();
+                if (enemy is not null)
                 {
-                    if (Random.Range(0, 100) < _chanceToDuplicate)
+                    _player.Stats.DoDamage(enemy.GetComponent<EnemyStats>());
+                    enemy.FX.CreateHitFx(enemy.transform, false);
+
+                    if (_canDuplicateClone)
                     {
-                        SkillManager.Instance.Clone.CreateClone(hit.transform, new Vector3(1.2f * _cloneFacingDir, 0));
+                        if (Random.Range(0, 100) < _chanceToDuplicate)
+                        {
+                            SkillManager.Instance.Clone.CreateClone(enemy.transform,
+                                new Vector3(1.2f * _cloneFacingDir, 0));
+                        }
                     }
                 }
             }
