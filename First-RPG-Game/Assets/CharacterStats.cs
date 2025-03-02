@@ -281,4 +281,10 @@ public class CharacterStats : MonoBehaviour
 
         return Mathf.RoundToInt(critDamage);
     }
+
+    public void RecoverHP(int hpModify)
+    {
+        this.currentHp += hpModify;
+    }
+
 }

@@ -144,10 +144,15 @@ public class Inventory : MonoBehaviour
         if(item.itemType == ItemType.Equipment)
         {
             AddToInventory(item);
-        } else
+        } else if (item.itemType == ItemType.Material)
         {
             AddToStash(item);
+        } else
+        {
+            ItemData_Buff itemData = (ItemData_Buff)item;
+            itemData.AddModifiers();
         }
+         
         UpdateSlotUI();
     }
     private void AddToStash(ItemData item)
