@@ -65,7 +65,10 @@ public class Entity : MonoBehaviour
     {
         
     }
+    public virtual void FastEntityBy(float slowPercentage, float slowDuration)
+    {
 
+    }
     protected virtual void ReturnDefaultSpeed()
     {
         Animator.speed = 1;

@@ -134,7 +134,7 @@ namespace Stats
             //If equipments have ailment effects then do magical damage
             DoMagicalDamage(targetStats);
 
-            targetStats.TakeDamage(totalDamage);
+            //targetStats.TakeDamage(totalDamage);
         }
 
         public virtual void DoMagicalDamage(CharacterStats targetStats)
@@ -402,6 +402,11 @@ namespace Stats
         public int GetMaxHealthValue()
         {
             return maxHp.ModifiedValue + vitality.ModifiedValue * 5;
+        }
+        public void RecoverHP(int hpModify)
+        {
+            this.currentHp += hpModify;
+            OnHealthChanged?.Invoke();
         }
     }
 }
