@@ -27,6 +27,7 @@ namespace Skills
             {
                 UseSkill();
                 CooldownTimer = CoolDown;
+                Player.FX.CreatePopUpText("CoolDown", null);
                 return true;
             }
         

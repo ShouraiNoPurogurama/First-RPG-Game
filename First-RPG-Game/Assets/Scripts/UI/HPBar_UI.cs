@@ -3,46 +3,38 @@ using UnityEngine.UI;
 
 public class HPBar_UI : MonoBehaviour
 {
-    private Entity entity;
-    private RectTransform rectTransform;
-    private CharacterStats myStats;
-    private Slider slider;
+    private Entity _entity;
+    private CharacterStats _characterStats;
+    private RectTransform _rectTransform;
+    private Slider _slider;
 
-
-    void Start()
+    private void Start()
     {
-        entity = GetComponentInParent<Entity>();
-        rectTransform = GetComponent<RectTransform>();
-        slider = GetComponentInChildren<Slider>();
-        myStats = GetComponentInParent<CharacterStats>();
+        _rectTransform = GetComponent<RectTransform>();
+        _entity = GetComponentInParent<Entity>();
+        _slider = GetComponentInChildren<Slider>();
+        _characterStats = GetComponentInParent<CharacterStats>();
 
-        entity.onFlipped += FlipUI;
+        _characterStats.onHPChanged += UpdateHealthUI;
+        _entity.OnFlipped += FlipUI;
 
-        myStats.onHPChanged += UpdateHpUI;
-
-        UpdateHpUI();
-
+        UpdateHealthUI();
     }
 
-    private void Update()
+    private void UpdateHealthUI()
     {
-        UpdateHpUI();
-    }
-    private void UpdateHpUI()
-    {
-        if (slider == null || myStats == null) return;
-
-        slider.maxValue = myStats.maxHp.FinalValue;
-        slider.value = myStats.currentHp;
+        _slider.maxValue = _characterStats.GetMaxHealthValue();
+        _slider.value = _characterStats.currentHp;
     }
 
-    private void FlipUI() => rectTransform.Rotate(0, 180, 0);
+    private void FlipUI()
+    {
+        _rectTransform.Rotate(0, 180, 0);
+    }
 
     private void OnDisable()
     {
-         entity.onFlipped -= FlipUI;
-
-        myStats.onHPChanged -= UpdateHpUI;
+        _entity.OnFlipped -= FlipUI;
+        _characterStats.onHPChanged -= UpdateHealthUI;
     }
-
 }

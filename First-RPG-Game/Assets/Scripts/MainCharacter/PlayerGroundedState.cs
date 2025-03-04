@@ -47,6 +47,7 @@ namespace MainCharacter
             if (Input.GetKeyDown(KeyCode.R))
             {
                 StateMachine.ChangeState(Player.BlackHoleState);
+                Player.FX.CreatePopUpText("Cooldown!",Color.yellow);
             }
         }
 

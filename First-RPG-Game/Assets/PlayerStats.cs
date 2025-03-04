@@ -1,4 +1,5 @@
 using MainCharacter;
+using UnityEngine;
 
 public class PlayerStats : CharacterStats
 {
@@ -22,10 +23,10 @@ public class PlayerStats : CharacterStats
         base.Update();
     }
 
-    public override void TakeDamage(int dmg)
+    public override void TakeDamage(int dmg, Color? color = null)
     {
-        base.TakeDamage(dmg);
-        
+        base.TakeDamage(dmg, color); 
+
         _player.DamageEffect();
     }
 

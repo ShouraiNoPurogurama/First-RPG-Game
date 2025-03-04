@@ -47,7 +47,7 @@ public class CharacterStats : MonoBehaviour
 
     [SerializeField] public int currentHp;
     
-    public Action OnHealthChanged;
+    public Action onHPChanged;
 
     public CharacterStats(Stat maxHp)
     {
@@ -90,7 +90,7 @@ public class CharacterStats : MonoBehaviour
 
         if (_igniteDamageTimer <= 0 && isIgnited)
         {
-            DecreaseHealthBy(_igniteDamage);
+            DecreaseHPBy(_igniteDamage);
 
             if (currentHp < 0)
             {
@@ -121,7 +121,7 @@ public class CharacterStats : MonoBehaviour
 
         DoMagicalDamage(targetStats);
         
-        targetStats.TakeDamage(totalDamage);
+        targetStats.TakeDamage(totalDamage, null);
     }
 
     public virtual void DoMagicalDamage(CharacterStats targetStats)
@@ -134,7 +134,18 @@ public class CharacterStats : MonoBehaviour
 
         totalMagicalDamage = DecreaseDamageByResistance(targetStats, totalMagicalDamage);
 
-        targetStats.TakeDamage(totalMagicalDamage);
+        // Setup Color
+        Color damageColor = Color.white;
+        if (fireDamageVal > iceDamageVal && fireDamageVal > lightingDamageVal)
+            damageColor = Color.red;
+        else if (iceDamageVal > fireDamageVal && iceDamageVal > lightingDamageVal)
+            damageColor = Color.blue; 
+        else if (lightingDamageVal > fireDamageVal && lightingDamageVal > iceDamageVal)
+            damageColor = Color.yellow;
+
+        targetStats.TakeDamage(totalMagicalDamage, damageColor);
+
+        //targetStats.TakeDamage(totalMagicalDamage);
 
         if (Mathf.Max(fireDamageVal, iceDamageVal, lightingDamageVal) <= 0)
         {
@@ -253,9 +264,15 @@ public class CharacterStats : MonoBehaviour
     }
 
 
-    public virtual void TakeDamage(int dmg)
+    public virtual void TakeDamage(int dmg, Color? color = null)
     {
         DecreaseHPBy(dmg);
+
+        _fx.Flash();
+
+        if (dmg > 0) _fx.CreatePopUpText(dmg.ToString(), color);
+
+        Debug.Log("dmg");
 
         if (currentHp <= 0)
         {
@@ -263,11 +280,13 @@ public class CharacterStats : MonoBehaviour
         }
     }
 
-    protected virtual void DecreaseHealthBy(int dmg)
+    protected virtual void DecreaseHPBy(int dmg)
     {
         currentHp -= dmg;
 
-        OnHealthChanged?.Invoke();
+        if (dmg > 0) _fx.CreatePopUpText(dmg.ToString(), null);
+
+        onHPChanged?.Invoke();
     }
 
     protected virtual void Die()
