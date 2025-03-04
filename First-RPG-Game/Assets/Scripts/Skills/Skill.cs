@@ -7,7 +7,7 @@ namespace Skills
 {
     public class Skill : MonoBehaviour
     {
-        protected float CoolDown;
+        [SerializeField] protected float CoolDown;
         protected float CooldownTimer;
         protected Player Player;
 
@@ -31,7 +31,7 @@ namespace Skills
                 return true;
             }
         
-            Debug.Log("Skill is on cooldown");
+            Player.FX.CreatePopupText("Cooldown!", Color.white);
             return false;
         }
 

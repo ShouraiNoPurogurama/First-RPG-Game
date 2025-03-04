@@ -1,4 +1,6 @@
 using Enemies;
+using MainCharacter;
+using Stats;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -6,6 +8,7 @@ namespace Skills.SkillControllers
 {
     public class CloneSkillController : MonoBehaviour
     {
+        private Player _player;
         private SpriteRenderer _spriteRenderer;
         private Animator _animator;
 
@@ -44,12 +47,14 @@ namespace Skills.SkillControllers
         }
 
         public void SetupClone(Transform newTransform, float cloneDuration, bool canAttack, Vector3 offset,
-            Transform closestEnemy, bool canDuplicate, float chanceToDuplicate, int facingDir)
+            Transform closestEnemy, bool canDuplicate, float chanceToDuplicate, int facingDir, Player player)
         {
             if (canAttack)
             {
                 _animator.SetInteger("AttackNumber", Random.Range(1, 3));
             }
+
+            _player = player;
 
             transform.position = newTransform.position + offset + _defaultYOffset;
 
@@ -73,17 +78,18 @@ namespace Skills.SkillControllers
             foreach (var hit in colliders)
             {
                 var enemy = hit.GetComponent<Enemy>();
-
-                if (!enemy) return;
-
-                enemy.DamageEffect();
-
-                if (_canDuplicateClone)
+                if (enemy is not null)
                 {
-                    if (Random.Range(0, 100) < _chanceToDuplicate)
+                    _player.Stats.DoDamage(enemy.GetComponent<EnemyStats>());
+                    enemy.FX.CreateHitFx(enemy.transform, false);
+
+                    if (_canDuplicateClone)
                     {
-                        SkillManager.Instance.Clone.CreateClone(enemy.transform,
-                            new Vector3(1.2f * _cloneFacingDir, 0));
+                        if (Random.Range(0, 100) < _chanceToDuplicate)
+                        {
+                            SkillManager.Instance.Clone.CreateClone(enemy.transform,
+                                new Vector3(1.2f * _cloneFacingDir, 0));
+                        }
                     }
                 }
             }

@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,6 +5,7 @@ using Cinemachine;
 using Enemies;
 using MainCharacter;
 using UnityEngine;
+using UnityEngine.UIElements;
 using Random = UnityEngine.Random;
 
 namespace Skills.SkillControllers
@@ -245,7 +245,7 @@ namespace Skills.SkillControllers
                     }
                     else
                     {
-                        float xOffset = Random.Range(0, 100) > 50 ? 1.5f : -1.5f;
+                        float xOffset = Random.Range(0, 100) > 50 ? 1.7f : -1.7f;
                         SkillManager.Instance.Clone.CreateClone(enemyTarget, new Vector3(xOffset, 0));
                     }
                     _cinemachineVirtualCamera.Follow = enemyTarget;

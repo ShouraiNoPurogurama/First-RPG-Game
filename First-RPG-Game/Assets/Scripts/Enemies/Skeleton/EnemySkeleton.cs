@@ -60,8 +60,9 @@ namespace Enemies.Skeleton
 
         public override void Die()
         {
-            base.Die();
+            transform.position = new Vector3(transform.position.x, transform.position.y, 10);
             StateMachine.ChangeState(DeadState);
+            base.Die();
         }
     }
 }

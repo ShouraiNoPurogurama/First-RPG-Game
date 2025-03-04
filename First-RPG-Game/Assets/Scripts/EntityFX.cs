@@ -24,6 +24,9 @@ public class EntityFX : MonoBehaviour
     [SerializeField] private Color[] igniteColor;
     [SerializeField] private Color[] shockColor;
 
+    [Header("Popup FX")]
+    [SerializeField] private GameObject popupFxPrefab;
+    
     private void Start()
     {
         _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
@@ -166,5 +169,18 @@ public class EntityFX : MonoBehaviour
         {
             _spriteRenderer.color = shockColor[1];
         }
+    }
+
+    public void CreatePopupText(string text, Color color)
+    {
+        var randomX = Random.Range(-1, 2);
+        var randomY = Random.Range(1, 3);
+        
+        Vector3 positionOffset = new Vector3(randomX, randomY, 0);
+        
+        GameObject newText = Instantiate(popupFxPrefab, transform.position + positionOffset, Quaternion.identity);
+        
+        newText.GetComponent<TextMeshPro>().text = text;
+        newText.GetComponent<TextMeshPro>().color = color;
     }
 }
