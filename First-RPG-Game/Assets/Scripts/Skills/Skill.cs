@@ -21,6 +21,17 @@ namespace Skills
             CooldownTimer -= Time.deltaTime;
         }
 
+        public bool CanUseSkillWithNoLogic()
+        {
+            if (CooldownTimer <= 0)
+            {
+                return true;
+            }
+            
+            Player.FX.CreatePopupText("Cooldown!", Color.white);
+            return false;
+        }
+        
         public virtual bool CanUseSkill()
         {
             if (CooldownTimer <= 0)
