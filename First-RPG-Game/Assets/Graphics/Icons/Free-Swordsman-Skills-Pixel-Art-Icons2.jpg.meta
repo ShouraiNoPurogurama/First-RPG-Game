@@ -1,0 +1,3031 @@
+fileFormatVersion: 2
+guid: 45a19240dea3a524482c36deaaff594e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1167588791106288667
+    second: Free-Swordsman-Skills-Pixel-Art-Icons2_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 860
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c3e91c1db143010800000000000000
+      internalID: 1167588791106288667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 860
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7774d1d7a1b3e142852e27d190416a9
+      internalID: 147718290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 860
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3631fe5bed45841af2a6be9ca62317
+      internalID: -193956559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 860
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ccf0e847fcf4cf4bb2a291923643817
+      internalID: 791200308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 860
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf0eaccd1408a8499207df0e3e510df
+      internalID: -1834193372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 860
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee791076f551406419e0df3a01f19dff
+      internalID: -520562364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 860
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99df7ab686df1e24bbf01d2fd5c11000
+      internalID: -463477865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 860
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa343d06b3dc20439f5407c005b61ac
+      internalID: 1011953663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_8
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 860
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee914beef04d4b147b9f997962d32cb5
+      internalID: 1433372908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_9
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 860
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2d89f951fbe0749bd3a1922b5a3370
+      internalID: -1300600268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_10
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 860
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91f9ecdb840a864d8e2c7bcf6872159
+      internalID: -1177350447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_11
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 860
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb47239504f943740b678c0a301a6065
+      internalID: 1152480389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_12
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 860
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c47e85d38873142bb464a5466c4b42
+      internalID: 439906486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_13
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 860
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e5421f7bc266945899773e7cc36cdf
+      internalID: 1106434781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 760
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d2bd46c9ee75c478b72f89b592daf1
+      internalID: 1408920794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_15
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 760
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931e2d1cb6a5f3b4a991b69c6646acaf
+      internalID: 1511597402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_16
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 760
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550fd464a4c97964d9b3004ba5852241
+      internalID: -111825792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_17
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 760
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abee42e36c9c2c047ad53922a906ebf4
+      internalID: -532982083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_18
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 760
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6807ea1eb1adf4d48b17b8a51ae3ccb3
+      internalID: -278411788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_19
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 760
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16058c82e5179c5448fe6a01c8514317
+      internalID: 1753260411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_20
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 760
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d5b27774133ed488732fcbe682e771
+      internalID: -361153299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_21
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 760
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22021ca9e6ede2a4f90f9b1906bceeee
+      internalID: 628208767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_22
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 760
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf18df2fb97d2a4a874b43042a081e7
+      internalID: 1113376442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_23
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 760
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c1dd004800a6944a9e84722f2077174
+      internalID: 1549989516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_24
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 760
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81855187f2de29d4dba22065d61204df
+      internalID: -1092065677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_25
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 760
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d08414e0ae104840bc9da3454b67bba
+      internalID: 359120079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_26
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 760
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6618f86185ec554e910d2a72696dc22
+      internalID: -965168557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_27
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 760
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11beb496394d30246a347ff3671584a3
+      internalID: -1700097818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 660
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cab552b8c8f0ce418bcd3703eea6b9d
+      internalID: -444885863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_29
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 660
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67be2b54988df274281a6e31dc30a593
+      internalID: 840039992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_30
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 660
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6740144d044a3b7489f5a5a456f0d527
+      internalID: 943016003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_31
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 660
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29c233187568c54f9624ae013ebc247
+      internalID: -1665761954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_32
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 660
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf73567ba2a7fc4bb811a5628fb74c6
+      internalID: -194671027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_33
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 660
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4909f0782dcf84b8831e21c0033e37
+      internalID: 768197409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_34
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 660
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65769dfd12ed77142995078cbfee7238
+      internalID: -2128583786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_35
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 660
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1b83d127ad3da408338ebc79429343
+      internalID: 1737968129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_36
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 660
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83bc6c55ff46d8248bf3def41a5c175f
+      internalID: -1106695738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_37
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 660
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0b5c861dc9ee54fb89a536ffb5a2b3
+      internalID: -1840403527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_38
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 660
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d5c298afc4ee142afd686b0235bfdc
+      internalID: -1164634235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_39
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 660
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66460bbee3ea0940b2def5313d51a87
+      internalID: -829155160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_40
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 660
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1afdb2b58d1ca87498e23a550a8776c7
+      internalID: 1397409848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_41
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 660
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eaf483a1e031a24d84170856ea226c1
+      internalID: 926666718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 560
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e5255f9cd84f54e87fa297094b150f
+      internalID: -1476839016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_43
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 560
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5a82820a14f9f428c32e4f4900988b
+      internalID: -2066121068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_44
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 560
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c6bfa02c061a34bae1963f0c1947ab
+      internalID: 1136404986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_45
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 560
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45bf3462e6078742bb1825c9c993c05
+      internalID: 474252624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_46
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 560
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a05e9d39e8e01b48ad44e7e1c845aeb
+      internalID: -1881968857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_47
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 560
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cff163bfaafc1440bbb97b4e27f2219
+      internalID: -125327399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_48
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 560
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b451fd82dce4e4e897a7f4c1db879e
+      internalID: 2081490284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_49
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 560
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8efbf0d4d1c2c42a0b7aafa6d6e250
+      internalID: -1196027841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_50
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 560
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8f3363dec32a44b8bc61cae5cad514
+      internalID: 1428611752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_51
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 560
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035ab6a24c1c3b242ad74a0bc5b350e6
+      internalID: -1100892014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_52
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 560
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476f281591e070f41aa907154a6c0b51
+      internalID: -1443239108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_53
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 560
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4eb44c71f9883b48862135e6def74eb
+      internalID: -472250015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_54
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 560
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986d09fd9f2a726449af10af3a8487dc
+      internalID: -1321287349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_55
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 560
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbdd4dd3b9250f94c962baba0295c1f2
+      internalID: -1285070556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 460
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0982547dca2761408ec293e5e67cc7e
+      internalID: -1680273545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_57
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 460
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79725974221ddf745bf207a0a794e6b0
+      internalID: 1511694394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_58
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 460
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc39eda7229201d4483e0c60b7998199
+      internalID: 1414831412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_59
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 460
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33059ed4541fe4143908daa392f9b56f
+      internalID: 566030540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_60
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 460
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60ba5b80ae96c345a849ad9b955c289
+      internalID: 303712001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_61
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 460
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db1066b7ac677148a4e66f76d5c0b1f
+      internalID: 984393924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_62
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 460
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1801dbc1893bb47b3585156b5d7664
+      internalID: -1031045951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_63
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 460
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae98dd1882f782e44aab7b6ee8b48cd5
+      internalID: 1077485600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_64
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 460
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ccae1260e4e3045bfbbce252dcccd7
+      internalID: 1700601549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_65
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 460
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7eb2bc5006cac74e8b1bc56627c29ca
+      internalID: -578941633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_66
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 460
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77cddfb0fe9971a4ca2167de597a23f9
+      internalID: -2020676403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_67
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 460
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183baf9924c7b5f4dbf0b04b7678c2c4
+      internalID: -972992191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_68
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 460
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94010fc987887bc49a8b5ee0b5b1714a
+      internalID: -1624066405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_69
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 460
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664778ecba223374680c394bcc9a6340
+      internalID: 2135237463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f549e870a0d98499c38e933abd4319
+      internalID: 1846710387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_71
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 360
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6406c9606f3d34d905e0e2beb44928
+      internalID: 1044579430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_72
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 360
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf8e57fefb627d4aacacf48a408ca46
+      internalID: -321907741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_73
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 360
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f902906a0c2fce244937b980fa8223ea
+      internalID: -502179352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_74
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 360
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b87fd8837741e44bf625a34314ed50
+      internalID: -1019576382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_75
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 360
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b78e26210cce24bbb0210153eda966
+      internalID: 626255602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_76
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 360
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9b42506e359aa49bfdd5f389ef5050
+      internalID: 2116477259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_77
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 360
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0331b90537e30945b104fd9f210ed4e
+      internalID: -778266295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_78
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 360
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b57a2d4ee30b914fb69513e32bcf70d
+      internalID: 1287340401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_79
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 360
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7098c8841f7e2c34dbe835719c19e2cf
+      internalID: 310972506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_80
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 360
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219fe4c46e9a47647879c86afc13172a
+      internalID: -1919391728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_81
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 360
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6650e092c8de24bb5b8b27e0d492ac
+      internalID: 801258159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_82
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 360
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140aa54f6ac885541ae9e12308a5264c
+      internalID: 1050359158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_83
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 360
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140bc3af48c50db4989e350b29753a75
+      internalID: -1441086434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c7cde9089c1de4ba5d5400ba89dcb1
+      internalID: -1176840440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_85
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 549
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2cb1063b1793a244b0f849669e9c42c
+      internalID: -1832981744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_86
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 22
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afceb5b2abb07347ae957590d1ca7c1
+      internalID: -1865598013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_87
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 266
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6568bcdac3efa44aec48f130f47cba
+      internalID: -1496474729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_88
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 22
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2908dea5edefad34899808dd2723b0a3
+      internalID: 641931262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_89
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 341
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ac37187156b154aa5000ea332a7b33
+      internalID: -2116798861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_90
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 197
+        width: 126
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15afbddcc0815fb4ea198b5125772d64
+      internalID: 619664133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_91
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 260
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e5669abf5354a489132394003e7c7d
+      internalID: 1118700529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_92
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 260
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aabd759db05b7a340a70acac62802587
+      internalID: -1552399721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_93
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 260
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde4a9f729932e1469bb87f4fb1cf0b1
+      internalID: 1189632207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_94
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 260
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d70decdfec5b424e9ae5ce22b5aa1e1
+      internalID: 1650510198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_95
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 260
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7856acf98c31af40b0287f72dffe134
+      internalID: 1316664111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_96
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 260
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e478767f220c64d499918aa6294ebca0
+      internalID: -354280789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_97
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 260
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6b2bb6522528e4fb66894576aa0b32
+      internalID: -787563878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_98
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f611db2fe04e5594f82e1ca7187022a2
+      internalID: -1977635057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_99
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 43
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26347ed320563734088200336ad09ca0
+      internalID: 1904131486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_100
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 194
+        width: 130
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a18907ae09b4e740aae23ec4d71867a
+      internalID: 1954292553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_101
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 50
+        width: 127
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c3fc22a62b3974c8eda5b1bae7e43a
+      internalID: 413759860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_102
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8fb1f686d84c248b8832fe86df310b
+      internalID: -639076862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_103
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 218
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856f977aabbfd264085c7088d9a95bc0
+      internalID: -997306097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_104
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 160
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d91155068ddff4a8fe53bbdfcf2893
+      internalID: -1975254092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_105
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 160
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77613d758dd466a42ab681f9eaa451df
+      internalID: -1190982081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_106
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 160
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c740d2e10b46c4abfcc872533769b4
+      internalID: 207937257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_107
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 160
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590a7b6bb1f627940bc005d972b0537b
+      internalID: -848992339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_108
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 160
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc6c2043d95ba849a86c8279ce38137
+      internalID: -362257053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_109
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 160
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d878672b348ae2419c78dd9b6799a4c
+      internalID: 257395744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_110
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 160
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5b8fccbe914d04081501c7694086be
+      internalID: -227589197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_111
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 160
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e242e9af824434d99fcf40cd69dc0c
+      internalID: 1657829185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2697b7a88b04e004587158cc96c7ffba
+      internalID: -254130502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_113
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 60
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e8ea9495e2d3c40b614d7263cde9cd
+      internalID: -1641614272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_114
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7f8d9bfa2f17b43845d2dcf033858d
+      internalID: -1948470828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_115
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 412
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c31713daf46bf4287f52353ccde441
+      internalID: -963637038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_116
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 51
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b1a09d1f6166a428882176ff2d86ae
+      internalID: -1900743905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_117
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 93
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba94f71a9e63ea4fb2ccea39e4022d1
+      internalID: 1299504968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_118
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 60
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c540e629cd5c5b409720ad2c6e626db
+      internalID: -170039115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_119
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 54
+        width: 124
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3052516af995c4488de34db30d1e2c8
+      internalID: 874984886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_120
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 60
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6900547eb7bee2498a56ac314b8eec5
+      internalID: 525481888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_121
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 60
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e0353ac94197a48966f21c2b0d3e17
+      internalID: -2138088397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_122
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 60
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3d2bc7ee97722448e71a07212e80fa
+      internalID: -463090750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_123
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 60
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd4da9f345820d449427ab18bd9d5d5
+      internalID: 786498429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_124
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 60
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4a182493c52b94eaf85e0a3b7fc281
+      internalID: -1965851406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free-Swordsman-Skills-Pixel-Art-Icons2_125
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 60
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af7bb6177dc5c8a4da63c315935d7543
+      internalID: -697903195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7e354c544e251d4429159ca9911a1dc4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Free-Swordsman-Skills-Pixel-Art-Icons2_0: 1167588791106288667
+      Free-Swordsman-Skills-Pixel-Art-Icons2_1: 147718290
+      Free-Swordsman-Skills-Pixel-Art-Icons2_10: -1177350447
+      Free-Swordsman-Skills-Pixel-Art-Icons2_100: 1954292553
+      Free-Swordsman-Skills-Pixel-Art-Icons2_101: 413759860
+      Free-Swordsman-Skills-Pixel-Art-Icons2_102: -639076862
+      Free-Swordsman-Skills-Pixel-Art-Icons2_103: -997306097
+      Free-Swordsman-Skills-Pixel-Art-Icons2_104: -1975254092
+      Free-Swordsman-Skills-Pixel-Art-Icons2_105: -1190982081
+      Free-Swordsman-Skills-Pixel-Art-Icons2_106: 207937257
+      Free-Swordsman-Skills-Pixel-Art-Icons2_107: -848992339
+      Free-Swordsman-Skills-Pixel-Art-Icons2_108: -362257053
+      Free-Swordsman-Skills-Pixel-Art-Icons2_109: 257395744
+      Free-Swordsman-Skills-Pixel-Art-Icons2_11: 1152480389
+      Free-Swordsman-Skills-Pixel-Art-Icons2_110: -227589197
+      Free-Swordsman-Skills-Pixel-Art-Icons2_111: 1657829185
+      Free-Swordsman-Skills-Pixel-Art-Icons2_112: -254130502
+      Free-Swordsman-Skills-Pixel-Art-Icons2_113: -1641614272
+      Free-Swordsman-Skills-Pixel-Art-Icons2_114: -1948470828
+      Free-Swordsman-Skills-Pixel-Art-Icons2_115: -963637038
+      Free-Swordsman-Skills-Pixel-Art-Icons2_116: -1900743905
+      Free-Swordsman-Skills-Pixel-Art-Icons2_117: 1299504968
+      Free-Swordsman-Skills-Pixel-Art-Icons2_118: -170039115
+      Free-Swordsman-Skills-Pixel-Art-Icons2_119: 874984886
+      Free-Swordsman-Skills-Pixel-Art-Icons2_12: 439906486
+      Free-Swordsman-Skills-Pixel-Art-Icons2_120: 525481888
+      Free-Swordsman-Skills-Pixel-Art-Icons2_121: -2138088397
+      Free-Swordsman-Skills-Pixel-Art-Icons2_122: -463090750
+      Free-Swordsman-Skills-Pixel-Art-Icons2_123: 786498429
+      Free-Swordsman-Skills-Pixel-Art-Icons2_124: -1965851406
+      Free-Swordsman-Skills-Pixel-Art-Icons2_125: -697903195
+      Free-Swordsman-Skills-Pixel-Art-Icons2_13: 1106434781
+      Free-Swordsman-Skills-Pixel-Art-Icons2_14: 1408920794
+      Free-Swordsman-Skills-Pixel-Art-Icons2_15: 1511597402
+      Free-Swordsman-Skills-Pixel-Art-Icons2_16: -111825792
+      Free-Swordsman-Skills-Pixel-Art-Icons2_17: -532982083
+      Free-Swordsman-Skills-Pixel-Art-Icons2_18: -278411788
+      Free-Swordsman-Skills-Pixel-Art-Icons2_19: 1753260411
+      Free-Swordsman-Skills-Pixel-Art-Icons2_2: -193956559
+      Free-Swordsman-Skills-Pixel-Art-Icons2_20: -361153299
+      Free-Swordsman-Skills-Pixel-Art-Icons2_21: 628208767
+      Free-Swordsman-Skills-Pixel-Art-Icons2_22: 1113376442
+      Free-Swordsman-Skills-Pixel-Art-Icons2_23: 1549989516
+      Free-Swordsman-Skills-Pixel-Art-Icons2_24: -1092065677
+      Free-Swordsman-Skills-Pixel-Art-Icons2_25: 359120079
+      Free-Swordsman-Skills-Pixel-Art-Icons2_26: -965168557
+      Free-Swordsman-Skills-Pixel-Art-Icons2_27: -1700097818
+      Free-Swordsman-Skills-Pixel-Art-Icons2_28: -444885863
+      Free-Swordsman-Skills-Pixel-Art-Icons2_29: 840039992
+      Free-Swordsman-Skills-Pixel-Art-Icons2_3: 791200308
+      Free-Swordsman-Skills-Pixel-Art-Icons2_30: 943016003
+      Free-Swordsman-Skills-Pixel-Art-Icons2_31: -1665761954
+      Free-Swordsman-Skills-Pixel-Art-Icons2_32: -194671027
+      Free-Swordsman-Skills-Pixel-Art-Icons2_33: 768197409
+      Free-Swordsman-Skills-Pixel-Art-Icons2_34: -2128583786
+      Free-Swordsman-Skills-Pixel-Art-Icons2_35: 1737968129
+      Free-Swordsman-Skills-Pixel-Art-Icons2_36: -1106695738
+      Free-Swordsman-Skills-Pixel-Art-Icons2_37: -1840403527
+      Free-Swordsman-Skills-Pixel-Art-Icons2_38: -1164634235
+      Free-Swordsman-Skills-Pixel-Art-Icons2_39: -829155160
+      Free-Swordsman-Skills-Pixel-Art-Icons2_4: -1834193372
+      Free-Swordsman-Skills-Pixel-Art-Icons2_40: 1397409848
+      Free-Swordsman-Skills-Pixel-Art-Icons2_41: 926666718
+      Free-Swordsman-Skills-Pixel-Art-Icons2_42: -1476839016
+      Free-Swordsman-Skills-Pixel-Art-Icons2_43: -2066121068
+      Free-Swordsman-Skills-Pixel-Art-Icons2_44: 1136404986
+      Free-Swordsman-Skills-Pixel-Art-Icons2_45: 474252624
+      Free-Swordsman-Skills-Pixel-Art-Icons2_46: -1881968857
+      Free-Swordsman-Skills-Pixel-Art-Icons2_47: -125327399
+      Free-Swordsman-Skills-Pixel-Art-Icons2_48: 2081490284
+      Free-Swordsman-Skills-Pixel-Art-Icons2_49: -1196027841
+      Free-Swordsman-Skills-Pixel-Art-Icons2_5: -520562364
+      Free-Swordsman-Skills-Pixel-Art-Icons2_50: 1428611752
+      Free-Swordsman-Skills-Pixel-Art-Icons2_51: -1100892014
+      Free-Swordsman-Skills-Pixel-Art-Icons2_52: -1443239108
+      Free-Swordsman-Skills-Pixel-Art-Icons2_53: -472250015
+      Free-Swordsman-Skills-Pixel-Art-Icons2_54: -1321287349
+      Free-Swordsman-Skills-Pixel-Art-Icons2_55: -1285070556
+      Free-Swordsman-Skills-Pixel-Art-Icons2_56: -1680273545
+      Free-Swordsman-Skills-Pixel-Art-Icons2_57: 1511694394
+      Free-Swordsman-Skills-Pixel-Art-Icons2_58: 1414831412
+      Free-Swordsman-Skills-Pixel-Art-Icons2_59: 566030540
+      Free-Swordsman-Skills-Pixel-Art-Icons2_6: -463477865
+      Free-Swordsman-Skills-Pixel-Art-Icons2_60: 303712001
+      Free-Swordsman-Skills-Pixel-Art-Icons2_61: 984393924
+      Free-Swordsman-Skills-Pixel-Art-Icons2_62: -1031045951
+      Free-Swordsman-Skills-Pixel-Art-Icons2_63: 1077485600
+      Free-Swordsman-Skills-Pixel-Art-Icons2_64: 1700601549
+      Free-Swordsman-Skills-Pixel-Art-Icons2_65: -578941633
+      Free-Swordsman-Skills-Pixel-Art-Icons2_66: -2020676403
+      Free-Swordsman-Skills-Pixel-Art-Icons2_67: -972992191
+      Free-Swordsman-Skills-Pixel-Art-Icons2_68: -1624066405
+      Free-Swordsman-Skills-Pixel-Art-Icons2_69: 2135237463
+      Free-Swordsman-Skills-Pixel-Art-Icons2_7: 1011953663
+      Free-Swordsman-Skills-Pixel-Art-Icons2_70: 1846710387
+      Free-Swordsman-Skills-Pixel-Art-Icons2_71: 1044579430
+      Free-Swordsman-Skills-Pixel-Art-Icons2_72: -321907741
+      Free-Swordsman-Skills-Pixel-Art-Icons2_73: -502179352
+      Free-Swordsman-Skills-Pixel-Art-Icons2_74: -1019576382
+      Free-Swordsman-Skills-Pixel-Art-Icons2_75: 626255602
+      Free-Swordsman-Skills-Pixel-Art-Icons2_76: 2116477259
+      Free-Swordsman-Skills-Pixel-Art-Icons2_77: -778266295
+      Free-Swordsman-Skills-Pixel-Art-Icons2_78: 1287340401
+      Free-Swordsman-Skills-Pixel-Art-Icons2_79: 310972506
+      Free-Swordsman-Skills-Pixel-Art-Icons2_8: 1433372908
+      Free-Swordsman-Skills-Pixel-Art-Icons2_80: -1919391728
+      Free-Swordsman-Skills-Pixel-Art-Icons2_81: 801258159
+      Free-Swordsman-Skills-Pixel-Art-Icons2_82: 1050359158
+      Free-Swordsman-Skills-Pixel-Art-Icons2_83: -1441086434
+      Free-Swordsman-Skills-Pixel-Art-Icons2_84: -1176840440
+      Free-Swordsman-Skills-Pixel-Art-Icons2_85: -1832981744
+      Free-Swordsman-Skills-Pixel-Art-Icons2_86: -1865598013
+      Free-Swordsman-Skills-Pixel-Art-Icons2_87: -1496474729
+      Free-Swordsman-Skills-Pixel-Art-Icons2_88: 641931262
+      Free-Swordsman-Skills-Pixel-Art-Icons2_89: -2116798861
+      Free-Swordsman-Skills-Pixel-Art-Icons2_9: -1300600268
+      Free-Swordsman-Skills-Pixel-Art-Icons2_90: 619664133
+      Free-Swordsman-Skills-Pixel-Art-Icons2_91: 1118700529
+      Free-Swordsman-Skills-Pixel-Art-Icons2_92: -1552399721
+      Free-Swordsman-Skills-Pixel-Art-Icons2_93: 1189632207
+      Free-Swordsman-Skills-Pixel-Art-Icons2_94: 1650510198
+      Free-Swordsman-Skills-Pixel-Art-Icons2_95: 1316664111
+      Free-Swordsman-Skills-Pixel-Art-Icons2_96: -354280789
+      Free-Swordsman-Skills-Pixel-Art-Icons2_97: -787563878
+      Free-Swordsman-Skills-Pixel-Art-Icons2_98: -1977635057
+      Free-Swordsman-Skills-Pixel-Art-Icons2_99: 1904131486
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

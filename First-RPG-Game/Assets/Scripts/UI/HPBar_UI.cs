@@ -1,3 +1,4 @@
+using Stats;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,7 +16,7 @@ public class HPBar_UI : MonoBehaviour
         _slider = GetComponentInChildren<Slider>();
         _characterStats = GetComponentInParent<CharacterStats>();
 
-        _characterStats.onHPChanged += UpdateHealthUI;
+        _characterStats.OnHPChanged += UpdateHealthUI;
         _entity.OnFlipped += FlipUI;
 
         UpdateHealthUI();
@@ -35,6 +36,6 @@ public class HPBar_UI : MonoBehaviour
     private void OnDisable()
     {
         _entity.OnFlipped -= FlipUI;
-        _characterStats.onHPChanged -= UpdateHealthUI;
+        _characterStats.OnHPChanged -= UpdateHealthUI;
     }
 }

@@ -27,13 +27,24 @@ public class Inventory : MonoBehaviour
     private Ui_ItemSlot[] inventoryItemSlot;
     private Ui_ItemSlot[] stashItemSlot;
     private UI_EquimentSlot[] equipmentItemSlot;
+
+    [Header("Item Cooldown")]
+    public float flaskcooldown { get; private set; }
+
+
     private void Awake()
     {
         if (instance == null)
+        {
             instance = this;
+            Debug.Log("Inventory instance set.");
+        }
         else
+        {
             Destroy(gameObject);
+        }
     }
+
 
     private void Start()
     {

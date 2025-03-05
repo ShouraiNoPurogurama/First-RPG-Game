@@ -23,6 +23,7 @@ namespace Skills
             {
                 Instance = this;
             }
+            
         }
 
         private void Start()

@@ -35,10 +35,9 @@ namespace Stats
         public Stat critPower;
 
         [Header("Magic stats")]
-        public Stat fireDamage;
-
-        public Stat iceDamage;
-        public Stat lightingDamage;
+        public Stat fireDamage = new Stat();
+        public Stat iceDamage = new Stat();
+        public Stat lightingDamage = new Stat();
 
         public bool isIgnited; //does damage over time
         public bool isChilled; // reduce armor by 30%
@@ -58,7 +57,7 @@ namespace Stats
 
         [SerializeField] public int currentHp;
 
-        public Action OnHealthChanged;
+        public System.Action OnHPChanged;
 
         public CharacterStats(Stat maxHp)
         {
@@ -101,7 +100,7 @@ namespace Stats
 
             if (_igniteDamageTimer <= 0 && isIgnited)
             {
-                DecreaseHealthBy(_igniteDamage, Color.red);
+                DecreaseHPBy(_igniteDamage);
 
                 if (currentHp < 0)
                 {
@@ -134,7 +133,7 @@ namespace Stats
             //If equipments have ailment effects then do magical damage
             DoMagicalDamage(targetStats);
 
-            //targetStats.TakeDamage(totalDamage);
+            targetStats.TakeDamage(totalDamage,Color.red);
         }
 
         public virtual void DoMagicalDamage(CharacterStats targetStats)
@@ -156,9 +155,16 @@ namespace Stats
             bool canApplyChill = iceDamageVal > fireDamageVal && iceDamageVal > lightingDamageVal;
             bool canApplyShock = lightingDamageVal > fireDamageVal && lightingDamageVal > iceDamageVal;
 
-            Color magicDmgColor = Color.magenta;
+            // Setup Color
+            Color damageColor = Color.white;
+            if (fireDamageVal > iceDamageVal && fireDamageVal > lightingDamageVal)
+                damageColor = Color.red;
+            else if (iceDamageVal > fireDamageVal && iceDamageVal > lightingDamageVal)
+                damageColor = Color.blue;
+            else if (lightingDamageVal > fireDamageVal && lightingDamageVal > iceDamageVal)
+                damageColor = Color.yellow;
 
-            targetStats.TakeDamage(totalMagicalDamage, magicDmgColor);
+            targetStats.TakeDamage(totalMagicalDamage, damageColor);
 
 
             while (!canApplyIgnite && !canApplyChill && !canApplyShock)
@@ -344,23 +350,16 @@ namespace Stats
             return false;
         }
 
-        public virtual void TakeDamage(int dmg, Color dmgColor = default)
+        public virtual void TakeDamage(int dmg, Color? color)
         {
-            GetComponent<Entity>().DamageImpact();
 
             _fx.Flash();
 
-            if (dmgColor == default)
-            {
-                dmgColor = Color.white;
-            }
+            DecreaseHPBy(dmg);
 
-            if (dmg > 0)
-                _fx.CreatePopupText(dmg.ToString(), dmgColor);
+            if (dmg > 0) _fx.CreatePopUpText(dmg.ToString(), color);
 
-            currentHp -= dmg;
-
-            OnHealthChanged?.Invoke();
+            Debug.Log("dmg");
 
             if (currentHp <= 0)
             {
@@ -368,14 +367,13 @@ namespace Stats
             }
         }
 
-        protected virtual void DecreaseHealthBy(int dmg, Color dmgColor)
+        protected virtual void DecreaseHPBy(int dmg)
         {
-            if (dmg > 0)
-                _fx.CreatePopupText(dmg.ToString(), dmgColor);
-
             currentHp -= dmg;
 
-            OnHealthChanged?.Invoke();
+            if (dmg > 0) _fx.CreatePopUpText(dmg.ToString(), Color.green);
+
+            OnHPChanged?.Invoke();
         }
 
         protected virtual void Die()
@@ -406,7 +404,7 @@ namespace Stats
         public void RecoverHP(int hpModify)
         {
             this.currentHp += hpModify;
-            OnHealthChanged?.Invoke();
+            OnHPChanged?.Invoke();
         }
     }
 }
