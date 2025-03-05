@@ -1,4 +1,6 @@
-﻿using NUnit.Framework;
+﻿using Assets.Scripts.Inventory_and_Item;
+using Assets.Scripts.UI;
+using NUnit.Framework;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using UnityEngine;
@@ -8,12 +10,15 @@ public class Inventory : MonoBehaviour
 {
     public static Inventory instance;
 
+    //Use for contain equipment and stash
     public List<InventoryItem> inventory;
     public Dictionary<ItemData, InventoryItem> inventoryDictionay;
 
+    //Use for caft
     public List<InventoryItem> stash;
     public Dictionary<ItemData, InventoryItem> stashDictionary;
 
+    //In equip UI
     public List<InventoryItem> equipment;
     public Dictionary<ItemData_Equipment, InventoryItem> equipmentDictionary;
 
@@ -23,10 +28,12 @@ public class Inventory : MonoBehaviour
     [SerializeField] private Transform inventorySlotParent;
     [SerializeField] private Transform stashSlotParent;
     [SerializeField] private Transform equipmentSlotParent;
+    [SerializeField] private Transform statSlotParent;
 
     private Ui_ItemSlot[] inventoryItemSlot;
     private Ui_ItemSlot[] stashItemSlot;
     private UI_EquimentSlot[] equipmentItemSlot;
+    private UI_StatSlot[] statSlots;
     private void Awake()
     {
         if (instance == null)
@@ -49,6 +56,7 @@ public class Inventory : MonoBehaviour
         inventoryItemSlot = inventorySlotParent.GetComponentsInChildren<Ui_ItemSlot>();
         stashItemSlot = stashSlotParent.GetComponentsInChildren<Ui_ItemSlot>();
         equipmentItemSlot = equipmentSlotParent.GetComponentsInChildren<UI_EquimentSlot>();
+        statSlots = statSlotParent.GetComponentsInChildren<UI_StatSlot>();
         AddStartingItem();
     }
 
@@ -138,6 +146,20 @@ public class Inventory : MonoBehaviour
         {
             stashItemSlot[i].UpdateSlot(stash[i]);
         }
+
+        for (int i = 0; i < statSlots.Length; i++)
+        {
+            statSlots[i].UpdateStatValueUI();
+        }
+    }
+    public bool CanAddItem()
+    {
+        if (inventory.Count >= inventoryItemSlot.Length)
+        {
+            return false;
+        }
+
+        return true;
     }
     public void AddItem(ItemData item)
     {
@@ -149,10 +171,14 @@ public class Inventory : MonoBehaviour
         {
             AddToStash(item);
         }
-        else
+        else if (item.itemType == ItemType.Buff)
         {
             ItemData_Buff itemData = (ItemData_Buff)item;
             itemData.AddModifiers();
+        } else if (item.itemType == ItemType.Gold)
+        {
+            ItemData_Gold itemData = (ItemData_Gold)item;
+            itemData.AddGold();
         }
 
         UpdateSlotUI();

@@ -6,6 +6,7 @@ using UnityEngine;
 
 public enum EquipmentType
 {
+    Element,
     Weapon,
     Armor
 }
@@ -96,6 +97,44 @@ public class ItemData_Equipment : ItemData
         foreach (var item in itemEffects)
         {
             item.ExecuteEffect(enemyPosition);
+        }
+    }
+
+    public override string GetDescription()
+    {
+        sb.Length = 0;
+
+        AddItemDescription(strength, "Strength");
+        AddItemDescription(agility, "Agility");
+        AddItemDescription(intelligence, "Intelligence");
+        AddItemDescription(vitality, "Vitality");
+
+        AddItemDescription(damage, "Damage");
+        AddItemDescription(critChance, "Crit.Chance");
+        AddItemDescription(critPower, "Crit.Power");
+
+        AddItemDescription(maxHp, "Hp");
+        AddItemDescription(evasion, "Evasion");
+        AddItemDescription(armor, "Armor");
+        AddItemDescription(magicResistance, "Magic Resist.");
+
+        AddItemDescription(fireDamage, "Fire damage");
+        AddItemDescription(iceDamage, "Ice damage");
+        AddItemDescription(lightingDamage, "Lighting dmg. ");
+
+        return sb.ToString();
+    }
+
+
+
+    private void AddItemDescription(int _value, string _name)
+    {
+        if (_value != 0)
+        {
+            if (sb.Length > 0)
+                sb.AppendLine();
+            if (_value > 0)
+                sb.Append("+ " + _value + " " + _name);
         }
     }
 }

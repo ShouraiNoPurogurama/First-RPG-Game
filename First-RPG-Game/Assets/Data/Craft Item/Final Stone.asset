@@ -31,9 +31,15 @@ MonoBehaviour:
   critPower: 0
   fireDamage: 0
   iceDamage: 0
-  lightingDamage: 0
+  lightingDamage: 12
   craftingMaterials:
   - data: {fileID: 11400000, guid: 920b0a1256053934d94557c96746e85d, type: 2}
     stackSize: 1
   - data: {fileID: 11400000, guid: 23fc8ae4af3958d4884462e628bd1d64, type: 2}
+    stackSize: 1
+  - data: {fileID: 11400000, guid: b6178ab6f200e604eb762b93db36438e, type: 2}
+    stackSize: 1
+  - data: {fileID: 11400000, guid: 93fc51ec7ae47344d95619c97b632c7b, type: 2}
+    stackSize: 1
+  - data: {fileID: 11400000, guid: e5f3ca059273e4440b5d7d06c778a218, type: 2}
     stackSize: 1
