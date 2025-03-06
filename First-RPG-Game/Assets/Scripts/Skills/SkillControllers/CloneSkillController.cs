@@ -69,7 +69,7 @@ namespace Skills.SkillControllers
 
             foreach (var hit in colliders)
             {
-                hit.GetComponent<Enemy>()?.Damage();
+                hit.GetComponent<Enemy>()?.DamageEffect();
 
                 if (_canDuplicateClone)
                 {

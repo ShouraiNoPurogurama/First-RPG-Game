@@ -68,21 +68,17 @@ namespace MainCharacter
         public PlayerWallJumpState WallJumpState { get; private set; }
         public PlayerPrimaryAttackState PrimaryAttackState { get; private set; }
         public PlayerCounterAttackState CounterAttackState { get; private set; }
+        public PlayerCounterWaterAttack CounterWaterAttackState { get; private set; }
         public PlayerAimSwordState AimSwordState { get; private set; }
         public PlayerCatchSwordState CatchSwordState { get; private set; }
         public PlayerDashAttackState DashAttackState { get; private set; }
         public PlayerBlackHoleState BlackHoleState { get; private set; }
         public PlayerFallAfterAttackState FallAfterAttackState { get; private set; }
         public PlayerLandingAttackState LandingAttackState { get; private set; }
+        public PlayerDeadState DeadState { get; private set; }
 
         #endregion
 
-        // #region Skill Cooldown
-        //
-        // public float Timer;
-        // public float Cooldown;
-        //
-        // #endregion
 
         public SkillManager SkillManager { get; private set; }
         public GameObject ThrownSword { get; private set; }
@@ -106,12 +102,14 @@ namespace MainCharacter
 
             PrimaryAttackState = new PlayerPrimaryAttackState(StateMachine, this, "Attack");
             CounterAttackState = new PlayerCounterAttackState(StateMachine, this, "CounterAttack");
+            CounterWaterAttackState = new PlayerCounterWaterAttack(StateMachine, this, "CounterAttack");
             AimSwordState = new PlayerAimSwordState(StateMachine, this, "AimSword");
             CatchSwordState = new PlayerCatchSwordState(StateMachine, this, "CatchSword");
             DashAttackState = new PlayerDashAttackState(StateMachine, this, "DashAttack");
             BlackHoleState = new PlayerBlackHoleState(StateMachine, this, "Jump");
             FallAfterAttackState = new PlayerFallAfterAttackState(StateMachine, this, "FallAfterAttack");
             LandingAttackState = new PlayerLandingAttackState(StateMachine, this, "LandingAttack");
+            DeadState = new PlayerDeadState(StateMachine, this, "Die");
         }
 
         protected override void Start()
@@ -128,6 +126,7 @@ namespace MainCharacter
             base.Update();
 
             StateMachine.CurrentState.Update();
+
             CheckForDashInput();
 
             if (Input.GetKeyDown(KeyCode.F))
@@ -147,7 +146,7 @@ namespace MainCharacter
             Destroy(ThrownSword);
         }
 
-        public void CheckForDashInput(float? forcedDirection = null)
+        public void CheckForDashInput()
         {
             if (!_canDashStates.Contains(StateMachine.CurrentState.GetType()))
             {
@@ -160,11 +159,23 @@ namespace MainCharacter
 
                 if (DashDir == 0)
                 {
-                    DashDir = forcedDirection ?? FacingDir;
+                    DashDir = FacingDir;
+                }
+
+                if (StateMachine.CurrentState == WallSlideState)
+                {
+                    DashDir = -FacingDir;
                 }
 
                 StateMachine.ChangeState(DashState);
             }
+        }
+
+        public override void Die()
+        {
+            base.Die();
+
+            StateMachine.ChangeState(DeadState);
         }
 
         public void AnimationTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();

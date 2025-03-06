@@ -11,6 +11,7 @@ public class LoadingScreen : MonoBehaviour
     private void Awake()
     {
         loadingCanvas.SetActive(false);
+        DontDestroyOnLoad(gameObject);
     }
     /// <summary>
     /// Show the loading screen

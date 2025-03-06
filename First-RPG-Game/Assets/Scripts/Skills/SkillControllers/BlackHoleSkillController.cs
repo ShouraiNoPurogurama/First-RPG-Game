@@ -351,7 +351,7 @@ namespace Skills.SkillControllers
         {
             foreach (var hotkey in _newHotkeyScripts.Values)
             {
-                if (hotkey == null) continue;
+                if (!hotkey) continue;
 
                 // Vector3 direction = (transform.position - hotkey.transform.position).normalized;
                 hotkey.transform.position = hotkey.Enemy.transform.position + new Vector3(0, 2);
@@ -384,7 +384,7 @@ namespace Skills.SkillControllers
             newHotkeyScript.SetupHotKey(chosenKey, enemy.transform, this);
             _newHotkeyScripts.Add(chosenKey, newHotkeyScript);
 
-            // Store hotkey and enemy target
+            //Store hotkey and enemy target
             _hotkeyToEnemy[chosenKey] = enemy.transform;
         }
 

@@ -4,30 +4,32 @@ using UnityEngine;
 
 public class WaterBarrierTrigger : MonoBehaviour
 {
-    private Animator animator;
-
+    private Animator anim;
+    [SerializeField] private float waterInterval = 5f;
+    [SerializeField] private float waterDuration = 1f;
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
+        StartCoroutine(WaterColumnRoutine());
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private IEnumerator WaterColumnRoutine()
     {
-        if (collision.CompareTag("Player"))
+        while (true)
         {
-            Player player = collision.GetComponent<Player>();
-            if (player != null)
-            {
-                player.Damage();
-                StartCoroutine(PauseAnimation(5f));
-            }
+            yield return new WaitForSeconds(waterInterval);
+            anim.SetBool("isWaterPulse", true);
+            yield return new WaitForSeconds(waterDuration);
+            anim.SetBool("isWaterPulse", false);
         }
     }
-
-    private IEnumerator PauseAnimation(float delay)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        animator.enabled = false; // Tắt animator để dừng animation
-        yield return new WaitForSeconds(delay); // Đợi 1.5 giây
-        animator.enabled = true; // Bật lại animator để animation tiếp tục
+        Player player = collision.GetComponent<Player>();
+        if (player != null)
+        {
+            player.Stats.TakeDamage(1);
+        }
+
     }
 }

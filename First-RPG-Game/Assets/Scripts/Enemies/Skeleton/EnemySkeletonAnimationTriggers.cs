@@ -19,9 +19,10 @@ namespace Enemies.Skeleton
             foreach (var hit in colliders)
             {
                 var player = hit.GetComponent<Player>();
-                if (player is not null)
+                if (player)
                 {
-                    player.Damage();
+                    Skeleton.Stats.DoDamage(player.GetComponent<PlayerStats>());
+                    // player.Damage();
                 }
             }
         }

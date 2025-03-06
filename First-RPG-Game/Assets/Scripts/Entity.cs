@@ -27,11 +27,15 @@ public class Entity : MonoBehaviour
     [SerializeField] protected float wallCheckDistance;
     private EntityFX _entityFX;
 
+    public CharacterStats Stats { get; private set; }
+
     #region Components
 
     public Animator Animator { get; private set; }
     public Rigidbody2D Rb { get; private set; }
     public EntityFX FX { get; private set; }
+    
+    public CapsuleCollider2D CapsuleCollider { get; private set; }
 
     #endregion
 
@@ -45,17 +49,18 @@ public class Entity : MonoBehaviour
         Rb = GetComponent<Rigidbody2D>();
         FX = GetComponent<EntityFX>();
         Sr = GetComponentInChildren<SpriteRenderer>();
+        Stats = GetComponent<CharacterStats>();
+        CapsuleCollider = GetComponent<CapsuleCollider2D>();
     }
 
     protected virtual void Update()
     {
     }
 
-    public virtual void Damage()
+    public virtual void DamageEffect()
     {
         StartCoroutine(nameof(HitKnockBack));
         FX.Flash();
-        Debug.Log(gameObject.name + " was damaged!");
     }
     
     
@@ -150,5 +155,10 @@ public class Entity : MonoBehaviour
     public void SetTransparent(bool transparent)
     {
         Sr.color = transparent ? Color.clear : Color.white;
+    }
+
+    public virtual void Die()
+    {
+        
     }
 }

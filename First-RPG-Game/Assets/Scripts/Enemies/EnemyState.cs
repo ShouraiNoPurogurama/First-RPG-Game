@@ -24,6 +24,8 @@ namespace Enemies
             TriggerCalled = false;
             Rb = _enemyBase.Rb;
             _enemyBase.Animator.SetBool(_animBoolName, true);
+            
+            _enemyBase.AssignLastAnimBoolName(_animBoolName); //Anim bool name will be used for dead state
         }
 
         public virtual void Update()
