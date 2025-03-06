@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Enemies;
 using MainCharacter;
+using Stats;
 using UnityEngine;
 
 namespace Skills.SkillControllers
@@ -55,7 +56,7 @@ namespace Skills.SkillControllers
             _rb.linearVelocity = dir;
             _rb.gravityScale = gravityScale;
             _freezeTimeDuration = freezeTimeDuration;
-            
+
             if (_pierceAmount <= 0)
             {
                 _animator.SetBool("Rotation", true);
@@ -64,7 +65,7 @@ namespace Skills.SkillControllers
             //Returns the min value if the given value is less than the min value.
             //Returns the max value if the given value is greater than the max value.
             _spinDirection = Mathf.Clamp(_rb.linearVelocity.x, -1, 1);
-            
+
             Invoke("DestroyMe", 7);
         }
 
@@ -81,12 +82,13 @@ namespace Skills.SkillControllers
             _pierceAmount = pierceAmount;
         }
 
-        public void SetupSpin(bool isSpinning, float maxTravelDistance, float spinDuration, float hitTimer)
+        public void SetupSpin(bool isSpinning, float maxTravelDistance, float spinDuration, float hitTimer, float hitCooldown)
         {
             _isSpinning = isSpinning;
             _maxTravelDistance = maxTravelDistance;
             _spinDuration = spinDuration;
             _hitTimer = hitTimer;
+            _hitCooldown = hitCooldown;
         }
 
         public void ReturnSword()
@@ -107,10 +109,10 @@ namespace Skills.SkillControllers
             BouncingLogic();
 
             SpinningLogic();
-            
+
             ReturningLogic();
         }
-        
+
         private void BouncingLogic()
         {
             if (!_isBouncing || _enemyTargets.Count <= 0) return;
@@ -143,8 +145,8 @@ namespace Skills.SkillControllers
 
         private void SwordSkillDamage(Enemy targetEnemy)
         {
-            targetEnemy.DamageEffect();
-            targetEnemy?.FX.CreateHitFx(targetEnemy.transform, false);
+            _player.Stats.DoDamage(targetEnemy.GetComponent<EnemyStats>());
+            targetEnemy.FX.CreateHitFx(targetEnemy.transform, false);
             targetEnemy.StartCoroutine("FreeTimerFor", 1f);
         }
 
@@ -152,6 +154,9 @@ namespace Skills.SkillControllers
         {
             if (_isSpinning)
             {
+                transform.localScale = new Vector3(1.5f, 1.5f);
+                _animator.speed = 1.5f;
+                
                 if (Vector2.Distance(_player.transform.position, transform.position) > _maxTravelDistance && !_wasStopped)
                 {
                     StopWhenSpinning();
@@ -163,7 +168,7 @@ namespace Skills.SkillControllers
 
                     transform.position = Vector2.MoveTowards(transform.position,
                         new Vector2(transform.position.x + _spinDirection, transform.position.y), 1.5f * Time.deltaTime);
-                    
+
                     if (_spinTimer < 0)
                     {
                         _isSpinning = false;
@@ -175,22 +180,24 @@ namespace Skills.SkillControllers
                     if (_hitTimer < 0)
                     {
                         _hitTimer = _hitCooldown;
-                    }
+                        
+                        Debug.Log("hitcooldown " + _hitCooldown);
+                        
+                        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 1);
 
-                    Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 1);
-
-                    foreach (var hit in colliders)
-                    {
-                        var enemy = hit.GetComponent<Enemy>();
-                        if (enemy is not null)
+                        foreach (var hit in colliders)
                         {
-                            SwordSkillDamage(enemy);
+                            var enemy = hit.GetComponent<Enemy>();
+                            if (enemy is not null)
+                            {
+                                SwordSkillDamage(enemy);
+                            }
                         }
                     }
                 }
             }
         }
-        
+
         private void ReturningLogic()
         {
             if (_isReturning)
@@ -213,7 +220,6 @@ namespace Skills.SkillControllers
             _rb.constraints = RigidbodyConstraints2D.FreezePosition;
             _spinTimer = _spinDuration;
         }
-        
 
 
         //Disable rotation, prevent Rigidbody-driven movement and assign sword to enemy's collider2D as a children
@@ -229,7 +235,7 @@ namespace Skills.SkillControllers
             if (enemy is not null)
             {
                 SwordSkillDamage(enemy);
-                
+
                 SetupTargetForBouncing();
             }
 

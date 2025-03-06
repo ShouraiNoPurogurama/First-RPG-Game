@@ -1,5 +1,6 @@
 using Enemies;
 using Skills;
+using Stats;
 using UnityEngine;
 
 namespace MainCharacter
@@ -7,7 +8,7 @@ namespace MainCharacter
     public class PlayerAnimationTriggers : MonoBehaviour
     {
         private Player Player => GetComponentInParent<Player>();
-    
+
         private void AnimationTrigger()
         {
             Player.AnimationTrigger();
@@ -22,15 +23,12 @@ namespace MainCharacter
                 var enemy = hit.GetComponent<Enemy>();
                 if (enemy is not null)
                 {
-                    enemy.FX.CreateHitFx(enemy.transform, false);
-                    
                     Player.Stats.DoDamage(enemy.GetComponent<EnemyStats>());
-                    enemy.DamageEffect();
-                    // hit.GetComponent<CharacterStats>().TakeDamage(Player.Stats.damage.FinalValue);
+                    enemy.FX.CreateHitFx(enemy.transform, false);
                 }
             }
         }
-        
+
         private void StunAttackTrigger()
         {
             Collider2D[] colliders = Physics2D.OverlapCircleAll(Player.attackCheck.position, Player.attackCheckRadius);
@@ -38,9 +36,12 @@ namespace MainCharacter
             foreach (var hit in colliders)
             {
                 var enemy = hit.GetComponent<Enemy>();
-                enemy?.FX.CreateHitFx(enemy.transform, false);
-                enemy?.IsCanBeStunned(true);
-                enemy?.GetComponent<CharacterStats>().TakeDamage(Player.Stats.damage.FinalValue);
+                if (enemy)
+                {
+                    enemy.FX.CreateHitFx(enemy.transform, false);
+                    enemy.IsCanBeStunned(true);
+                    enemy.GetComponent<CharacterStats>().TakeDamage(Player.Stats.damage.ModifiedValue);
+                }
             }
         }
 

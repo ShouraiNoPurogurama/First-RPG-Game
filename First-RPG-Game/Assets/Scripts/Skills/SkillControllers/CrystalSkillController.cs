@@ -1,4 +1,6 @@
 using Enemies;
+using MainCharacter;
+using Stats;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -6,6 +8,7 @@ namespace Skills.SkillControllers
 {
     public class CrystalSkillController : MonoBehaviour
     {
+        private Player _player;
         private Animator Animator => GetComponent<Animator>();
         private CircleCollider2D CircleCollider => GetComponent<CircleCollider2D>();
         [SerializeField] private LayerMask whatIsEnemy;
@@ -20,8 +23,10 @@ namespace Skills.SkillControllers
 
         private Transform _closestTarget;
 
-        public void SetUpCrystal(float crystalDuration, bool canExplode, bool canMove, float moveSpeed, Transform closestTarget)
+        public void SetUpCrystal(float crystalDuration, bool canExplode, bool canMove, float moveSpeed, Transform closestTarget,
+            Player player)
         {
+            _player = player;
             _crystalExistTimer = crystalDuration;
             _canExplode = canExplode;
             _canMove = canMove;
@@ -58,7 +63,7 @@ namespace Skills.SkillControllers
         public void ChooseRandomEnemy()
         {
             var skillRadius = SkillManager.Instance.BlackHole.GetBlackHoleRadius();
-            
+
             Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, skillRadius, whatIsEnemy);
 
             if (colliders.Length > 0)
@@ -88,7 +93,12 @@ namespace Skills.SkillControllers
 
             foreach (var hit in colliders)
             {
-                hit.GetComponent<Enemy>()?.DamageEffect();
+                var enemy = hit.GetComponent<Enemy>();
+
+                if (enemy)
+                {
+                    _player.Stats.DoMagicalDamage(enemy.GetComponent<EnemyStats>());
+                }
             }
         }
     }

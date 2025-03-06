@@ -34,7 +34,7 @@ namespace Enemies.Skeleton
         {
             base.Exit();
             
-            _skeleton.FX.Invoke("CancelRedBlink", 0);
+            _skeleton.FX.Invoke("CancelColorChange", 0);
         }
     }
 }
