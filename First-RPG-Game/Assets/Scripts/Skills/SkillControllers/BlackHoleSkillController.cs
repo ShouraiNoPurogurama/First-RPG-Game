@@ -339,7 +339,7 @@ namespace Skills.SkillControllers
         {
             foreach (var enemy in _enemiesInBlackHole)
             {
-                if (!enemy) continue;
+                if (!enemy || Mathf.Approximately(enemy.transform.position.z, 10)) continue;
 
                 Vector3 direction = (transform.position - enemy.transform.position).normalized;
 
@@ -349,6 +349,11 @@ namespace Skills.SkillControllers
                 }
 
                 enemy.transform.position += direction * (_pullSpeed * Time.deltaTime);
+                
+                if (Mathf.Approximately(enemy.transform.position.z, 10))
+                {
+                    _cinemachineVirtualCamera.Follow = _originalCameraTarget;
+                }
             }
         }
 
