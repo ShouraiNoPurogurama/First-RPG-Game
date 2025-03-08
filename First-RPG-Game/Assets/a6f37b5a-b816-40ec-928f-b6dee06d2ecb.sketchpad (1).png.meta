@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ab6419acd48c04b48904a837ddc8d759
+guid: 7ea2e7360067c7746b4286d6cd511fcd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2424553518018739129
-    second: boss_0
+      213: 677583465075769453
+    second: a6f37b5a-b816-40ec-928f-b6dee06d2ecb.sketchpad (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boss_0
+      name: a6f37b5a-b816-40ec-928f-b6dee06d2ecb.sketchpad (1)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 894
-        height: 558
+        x: 127
+        y: 157
+        width: 358
+        height: 145
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 744c193db614a5ed0800000000000000
-      internalID: -2424553518018739129
+      spriteID: d60058d4292476900800000000000000
+      internalID: 677583465075769453
       vertices: []
       indices: 
       edges: []
