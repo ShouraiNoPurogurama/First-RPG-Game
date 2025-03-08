@@ -3,7 +3,7 @@ using UnityEngine;
 public class MagicSkeletonDeadState : EnemyState
 {
     private Enemy_Magic_Skeleton magicSkeleton;
-    protected MagicSkeletonDeadState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, Enemy_Magic_Skeleton _enemy) : base(enemyBase, stateMachine, animBoolName)
+    public MagicSkeletonDeadState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, Enemy_Magic_Skeleton _enemy) : base(enemyBase, stateMachine, animBoolName)
     {
         magicSkeleton = _enemy;
     }

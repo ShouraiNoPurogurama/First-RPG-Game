@@ -1,4 +1,5 @@
 ﻿using Enemies;
+using System.Diagnostics;
 
 public class MagicSkeletonIdleState : MagicSkeletonGroundedState
 {
@@ -16,18 +17,22 @@ public class MagicSkeletonIdleState : MagicSkeletonGroundedState
     {
         if (MagicSkeleton.BattleState.PlayerInAttackRange() && MagicSkeleton.BattleState.CanAttack())
         {
+            Debug.WriteLine("MagicSkeletonIdleState: Magic Skeleton Attack State");
             StateMachine.ChangeState(MagicSkeleton.AttackState);
+            return;
         }
 
         base.Update();
 
         if (MagicSkeleton.BattleState.PlayerInAttackRange() && !MagicSkeleton.BattleState.CanAttack())
         {
+            Debug.WriteLine("MagicSkeletonIdleState: Magic Skeleton return");
             return;
         }
 
-        if (StateTimer <= 0)
+        if (StateTimer < 0)
         {
+            Debug.WriteLine("MagicSkeletonIdleState: Magic Skeleton Move State");
             StateMachine.ChangeState(MagicSkeleton.MoveState);
         }
     }

@@ -16,6 +16,8 @@ public class MagicSkeletonGroundedState : EnemyState
         base.Enter();
 
         _player = GameObject.Find("Player").transform;
+        //_player = PlayerManager.Instance.player.transform;
+
     }
 
     public override void Update()
@@ -24,6 +26,9 @@ public class MagicSkeletonGroundedState : EnemyState
 
         if (MagicSkeleton.IsPlayerDetected() || Vector2.Distance(MagicSkeleton.transform.position, _player.position) < 2)
         {
+            Debug.Log("MagicSkeletonGroundedState: Move Magic Skeleton Battle State");
+            Debug.Log("Distance: " + Vector2.Distance(MagicSkeleton.transform.position, _player.position));
+            Debug.Log("Player Detected: " + MagicSkeleton.IsPlayerDetected().collider);
             StateMachine.ChangeState(MagicSkeleton.BattleState);
         }
     }

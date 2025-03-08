@@ -12,7 +12,7 @@ public class MagicSkeletonJumpState : EnemyState
     {
         base.Enter();
 
-        Rb.linearVelocity = new Vector2(magicSkeleton.jumpVelocity.x * magicSkeleton.FacingDir, magicSkeleton.jumpVelocity.y);
+        Rb.linearVelocity = new Vector2(magicSkeleton.jumpVelocity.x * -magicSkeleton.FacingDir, magicSkeleton.jumpVelocity.y);
     }
     public override void Exit()
     {
@@ -22,7 +22,7 @@ public class MagicSkeletonJumpState : EnemyState
     {
         base.Update();
 
-        magicSkeleton.Animator.SetFloat("yVelocity", magicSkeleton.Rb.linearVelocity.y);
+        magicSkeleton.Animator.SetFloat("yVelocity", Rb.linearVelocity.y);
 
         if (Rb.linearVelocity.y < 0 && magicSkeleton.IsGroundDetected())
         {

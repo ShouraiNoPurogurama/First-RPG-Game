@@ -6,6 +6,7 @@ namespace Enemies
     public class Enemy : Entity
     {
         public LayerMask whatIsPlayer;
+        [SerializeField] public float detectRange = 50f;
 
         [Header("Stunned info")]
         public float stunDuration;
@@ -26,9 +27,9 @@ namespace Enemies
 
         public float attackCooldown;
         [HideInInspector] public float lastTimeAttacked;
-        
+
         protected EnemyStateMachine StateMachine { get; private set; }
-        
+
         public string LastAnimBoolName { get; private set; }
 
         protected override void Awake()
@@ -111,14 +112,14 @@ namespace Enemies
         {
             moveSpeed *= 1 - slowPercentage;
             Animator.speed *= 1 - slowPercentage;
-            
+
             Invoke("ReturnDefaultSpeed", slowDuration);
         }
 
         protected override void ReturnDefaultSpeed()
         {
             base.ReturnDefaultSpeed();
-            
+
             moveSpeed = _defaultMoveSpeed;
         }
 
@@ -126,11 +127,16 @@ namespace Enemies
         {
             LastAnimBoolName = animName;
         }
-        
+
         public virtual void AnimationFinishTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
 
         public virtual RaycastHit2D IsPlayerDetected()
-            => Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDir, 50, whatIsPlayer);
+            => Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDir, detectRange, whatIsPlayer);
+
+        public virtual void AnimationSpecialAttackTrigger()
+        {
+
+        }
 
 
         protected override void OnDrawGizmos()

@@ -1,5 +1,5 @@
+using Stats;
 using UnityEngine;
-
 public class WaterAnimationTrigger : MonoBehaviour
 {
     private Animator anim;
