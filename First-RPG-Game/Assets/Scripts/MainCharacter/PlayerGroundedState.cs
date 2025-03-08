@@ -1,3 +1,4 @@
+using Skills;
 using Skills.SkillControllers;
 using UnityEngine;
 
@@ -42,9 +43,9 @@ namespace MainCharacter
             if (Input.GetKeyDown(KeyCode.Space) && Player.IsGroundDetected())
             {
                 StateMachine.ChangeState(Player.JumpState);
-            }
+            } 
 
-            if (Input.GetKeyDown(KeyCode.R))
+            if (Input.GetKeyDown(KeyCode.R) && SkillManager.Instance.BlackHole.CanUseSkillWithNoLogic())
             {
                 StateMachine.ChangeState(Player.BlackHoleState);
             }

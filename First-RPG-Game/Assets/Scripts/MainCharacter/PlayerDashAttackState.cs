@@ -4,7 +4,7 @@ namespace MainCharacter
 {
     public class PlayerDashAttackState : PlayerPrimaryAttackState
     {
-        private float _flyUpTime = 0.25f;
+        private float _flyUpTime = 0.3f;
         private float _elapsedTime;
 
         public PlayerDashAttackState(PlayerStateMachine stateMachine, Player player, string animationBoolName)

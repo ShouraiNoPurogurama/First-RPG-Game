@@ -1,4 +1,5 @@
 using MainCharacter;
+using Stats;
 using UnityEngine;
 
 namespace Enemies.Skeleton
@@ -22,7 +23,6 @@ namespace Enemies.Skeleton
                 if (player)
                 {
                     Skeleton.Stats.DoDamage(player.GetComponent<PlayerStats>());
-                    // player.Damage();
                 }
             }
         }

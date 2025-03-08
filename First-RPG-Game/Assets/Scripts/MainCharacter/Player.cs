@@ -7,10 +7,9 @@ namespace MainCharacter
 {
     public class Player : Entity
     {
-        
         #region Consts
 
-        private readonly Type[] _canDashStates = 
+        private readonly Type[] _canDashStates =
         {
             typeof(PlayerIdleState),
             typeof(PlayerMoveState),
@@ -26,9 +25,9 @@ namespace MainCharacter
         [Header("Attack details")]
         public Vector2[] attackMovements =
         {
-            new (3f, 2f),
-            new (1f, 3f),
-            new (4f, 5f)
+            new(3f, 2f),
+            new(1f, 3f),
+            new(4f, 5f)
         };
 
         public float counterAttackDuration = .2f;
@@ -45,14 +44,21 @@ namespace MainCharacter
 
         public float swordReturnImpact = 8;
 
+        private float _defaultMoveSpeed;
+
+        private float _defaultJumpForce;
+
         #endregion
 
         #region Player Dash
 
         [Header("Dash info")]
         public float dashSpeed = 24;
+
         public float dashDuration = .1f;
         public float DashDir { get; private set; }
+
+        private float _defaultDashSpeed;
 
         #endregion
 
@@ -72,16 +78,16 @@ namespace MainCharacter
         public PlayerCatchSwordState CatchSwordState { get; private set; }
         public PlayerDashAttackState DashAttackState { get; private set; }
         public PlayerBlackHoleState BlackHoleState { get; private set; }
-        public PlayerFallAfterAttackState FallAfterAttackState  { get; private set; }
+        public PlayerFallAfterAttackState FallAfterAttackState { get; private set; }
         public PlayerLandingAttackState LandingAttackState { get; private set; }
         public PlayerDeadState DeadState { get; private set; }
 
         #endregion
-        
 
-        public SkillManager SkillManager { get; private set; } 
-        public GameObject ThrownSword { get; private set; } 
-        
+
+        public SkillManager SkillManager { get; private set; }
+        public GameObject ThrownSword { get; private set; }
+
 
         /// <summary>
         /// Initialize player states when first awoke
@@ -117,6 +123,10 @@ namespace MainCharacter
             StateMachine.Initialize(IdleState);
 
             SkillManager = SkillManager.Instance;
+
+            _defaultMoveSpeed = moveSpeed;
+            _defaultJumpForce = jumpForce;
+            _defaultDashSpeed = dashSpeed;
         }
 
         protected override void Update()
@@ -124,7 +134,7 @@ namespace MainCharacter
             base.Update();
 
             StateMachine.CurrentState.Update();
-            
+
             CheckForDashInput();
 
             if (Input.GetKeyDown(KeyCode.F))
@@ -150,7 +160,7 @@ namespace MainCharacter
             {
                 return;
             }
-            
+
             if (Input.GetKeyDown(KeyCode.LeftShift) && SkillManager.Instance.Dash.CanUseSkill())
             {
                 DashDir = Input.GetAxisRaw("Horizontal");
@@ -159,7 +169,7 @@ namespace MainCharacter
                 {
                     DashDir = FacingDir;
                 }
-                
+
                 if (StateMachine.CurrentState == WallSlideState)
                 {
                     DashDir = -FacingDir;
@@ -169,10 +179,40 @@ namespace MainCharacter
             }
         }
 
+        public override void SlowEntityBy(float slowPercentage, float slowDuration)
+        {
+            moveSpeed *= 1 - slowPercentage;
+            jumpForce *= 1 - slowPercentage;
+            dashSpeed *= 1 - slowPercentage;
+            Animator.speed *= 1 - slowPercentage;
+            
+            Invoke("ReturnDefaultSpeed", slowDuration);
+        }
+
+        public override void FastEntityBy(float increasePercentage, float increaseDuration)
+        {
+            moveSpeed *= 1 + increasePercentage;
+            jumpForce *= 1 + increasePercentage;
+            dashSpeed *= 1 + increasePercentage;
+            Animator.speed *= 1 + increasePercentage;
+
+            Invoke("ReturnDefaultSpeed", increaseDuration);
+        }
+
+
+        protected override void ReturnDefaultSpeed()
+        {
+            base.ReturnDefaultSpeed();
+            
+            moveSpeed = _defaultMoveSpeed;
+            jumpForce = _defaultJumpForce;
+            dashSpeed = _defaultDashSpeed;
+        }
+
         public override void Die()
         {
             base.Die();
-            
+
             StateMachine.ChangeState(DeadState);
         }
 
