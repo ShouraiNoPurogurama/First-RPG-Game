@@ -27,6 +27,7 @@ namespace Stats
 
         public override void TakeDamage(int dmg, Color? color = null)
         {
+            if (color is null || color == default) color = Color.white;
             base.TakeDamage(dmg, color);
         }
 

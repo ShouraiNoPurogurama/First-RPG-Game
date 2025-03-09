@@ -359,8 +359,6 @@ namespace Stats
 
             if (dmg > 0) _fx.CreatePopUpText(dmg.ToString(), color);
 
-            Debug.Log("dmg");
-
             if (currentHp <= 0)
             {
                 Die();
