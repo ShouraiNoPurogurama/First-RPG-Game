@@ -191,6 +191,17 @@ namespace MainCharacter
             Invoke("ReturnDefaultSpeed", slowDuration);
         }
 
+        public override void FastEntityBy(float increasePercentage, float increaseDuration)
+        {
+            moveSpeed *= 1 + increasePercentage;
+            jumpForce *= 1 + increasePercentage;
+            dashSpeed *= 1 + increasePercentage;
+            Animator.speed *= 1 + increasePercentage;
+
+            Invoke("ReturnDefaultSpeed", increaseDuration);
+        }
+
+
         protected override void ReturnDefaultSpeed()
         {
             base.ReturnDefaultSpeed();

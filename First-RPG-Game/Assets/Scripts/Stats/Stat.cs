@@ -43,5 +43,16 @@ namespace Stats
         {
             baseValue = value;
         }
+        public int GetValue()
+        {
+            int finalValue = baseValue;
+
+            foreach (int modifier in modifiers)
+            {
+                finalValue += modifier;
+            }
+
+            return finalValue;
+        }
     }
 }

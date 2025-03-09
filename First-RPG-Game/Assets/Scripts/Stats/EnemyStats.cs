@@ -6,6 +6,8 @@ namespace Stats
     public class EnemyStats : CharacterStats
     {
         private Enemy _enemy;
+        private ItemDrop myDropSystem;
+
         public EnemyStats(Stat maxHp) : base(maxHp)
         {
         }
@@ -15,6 +17,7 @@ namespace Stats
         {
             base.Start();
             _enemy = GetComponent<Enemy>();
+            myDropSystem = GetComponent<ItemDrop>();
         }
 
         // Update is called once per frame
@@ -32,6 +35,7 @@ namespace Stats
         {
             base.Die();
             _enemy.Die();
+            myDropSystem.GenerateDrop();
         }
     }
 }

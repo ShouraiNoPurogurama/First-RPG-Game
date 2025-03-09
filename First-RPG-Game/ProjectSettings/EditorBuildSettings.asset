@@ -17,6 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level2_Boss.unity
     guid: 2658b9c3fa6321f489445cf943e0ca82
+    path: Assets/Scenes/InventoryScene.unity
+    guid: 536f4c494d02dc945ad6c3a785ee51c5
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
