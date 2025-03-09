@@ -15,11 +15,11 @@ public class UI_MainMenu : MonoBehaviour
     }
     public void ContinueGame()
     {
-        SceneManager.LoadScene(sceneName);
+        StartCoroutine(LoadSceneWithFadeEffect(1.5f));
     }
     public void NewGame()
     {
-        //SaveManager.Instance.DeleteSave();
+        SaveManager.instance.DeleteSavedData();
         SceneManager.LoadScene(sceneName);
     }
     public void ExitGame()
