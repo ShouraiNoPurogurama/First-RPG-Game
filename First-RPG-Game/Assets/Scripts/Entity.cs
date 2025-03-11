@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using Stats;
 using UnityEngine;
 
 public class Entity : MonoBehaviour
@@ -27,6 +29,8 @@ public class Entity : MonoBehaviour
     [SerializeField] protected float wallCheckDistance;
     private EntityFX _entityFX;
 
+    public Action OnFlipped;
+    
     public CharacterStats Stats { get; private set; }
 
     #region Components
@@ -57,10 +61,22 @@ public class Entity : MonoBehaviour
     {
     }
 
-    public virtual void DamageEffect()
+    public virtual void SlowEntityBy(float slowPercentage, float slowDuration)
+    {
+        
+    }
+    public virtual void FastEntityBy(float slowPercentage, float slowDuration)
+    {
+
+    }
+    protected virtual void ReturnDefaultSpeed()
+    {
+        Animator.speed = 1;
+    }
+    
+    public virtual void DamageImpact()
     {
         StartCoroutine(nameof(HitKnockBack));
-        FX.Flash();
     }
     
     
@@ -68,7 +84,7 @@ public class Entity : MonoBehaviour
     {
         _isKnocked = true;
 
-        Rb.linearVelocity = new Vector2(knockBackDirection.x * -FacingDir, knockBackDirection.y);
+        Rb.linearVelocity = new Vector2(knockBackDirection.x * 1.2f * -FacingDir, knockBackDirection.y);
 
         yield return new WaitForSeconds(knockBackDuration);
 
@@ -119,6 +135,11 @@ public class Entity : MonoBehaviour
         FacingDir *= -1;
         _isFacingRight = !_isFacingRight;
         transform.Rotate(0, 180, 0);
+
+        if (OnFlipped != null)
+        {
+            OnFlipped();
+        }
     }
 
     #endregion

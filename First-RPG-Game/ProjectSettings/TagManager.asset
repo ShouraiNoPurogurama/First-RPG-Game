@@ -15,7 +15,7 @@ TagManager:
   - Player
   - Enemy
   - Sword
-  - 
+  - Item
   - 
   - 
   - 
@@ -51,11 +51,17 @@ TagManager:
   - name: ForeGround
     uniqueID: 3681588029
     locked: 0
+  - name: Item
+    uniqueID: 4056777469
+    locked: 0
   - name: Enemy
     uniqueID: 3605304875
     locked: 0
   - name: Player
     uniqueID: 424146261
+    locked: 0
+  - name: FX
+    uniqueID: 1060432067
     locked: 0
   m_RenderingLayers:
   - Default

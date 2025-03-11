@@ -7,7 +7,7 @@ namespace Skills
 {
     public class Skill : MonoBehaviour
     {
-        protected float CoolDown;
+        [SerializeField] protected float CoolDown;
         protected float CooldownTimer;
         protected Player Player;
 
@@ -21,6 +21,17 @@ namespace Skills
             CooldownTimer -= Time.deltaTime;
         }
 
+        public bool CanUseSkillWithNoLogic()
+        {
+            if (CooldownTimer <= 0)
+            {
+                return true;
+            }
+            
+            Player.FX.CreatePopupText("Cooldown!", Color.white);
+            return false;
+        }
+        
         public virtual bool CanUseSkill()
         {
             if (CooldownTimer <= 0)
@@ -30,7 +41,7 @@ namespace Skills
                 return true;
             }
         
-            Debug.Log("Skill is on cooldown");
+            Player.FX.CreatePopupText("Cooldown!", Color.white);
             return false;
         }
 

@@ -74,7 +74,7 @@ namespace Skills
             CrystalSkillController currentCrystalScript = _currentCrystal.GetComponent<CrystalSkillController>();
 
             currentCrystalScript.SetUpCrystal(crystalDuration, canExplode, canMoveToEnemy, moveSpeed,
-                FindClosestEnemy(_currentCrystal.transform.position));
+                FindClosestEnemy(_currentCrystal.transform.position), Player);
         }
 
         public void CurrentCrystalChooseRandomTarget() =>
@@ -109,7 +109,7 @@ namespace Skills
 
                     newCrystal.GetComponent<CrystalSkillController>()
                         .SetUpCrystal(crystalDuration, canExplode, canMoveToEnemy, moveSpeed,
-                            FindClosestEnemy(newCrystal.transform.position));
+                            FindClosestEnemy(newCrystal.transform.position), Player);
 
                     if (crystalLeft.Count <= 0)
                     {

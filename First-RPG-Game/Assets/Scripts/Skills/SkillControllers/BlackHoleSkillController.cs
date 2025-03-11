@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,6 +5,7 @@ using Cinemachine;
 using Enemies;
 using MainCharacter;
 using UnityEngine;
+using UnityEngine.UIElements;
 using Random = UnityEngine.Random;
 
 namespace Skills.SkillControllers
@@ -245,10 +245,15 @@ namespace Skills.SkillControllers
                     }
                     else
                     {
-                        float xOffset = Random.Range(0, 100) > 50 ? 1.5f : -1.5f;
+                        float xOffset = Random.Range(0, 100) > 50 ? 1.7f : -1.7f;
                         SkillManager.Instance.Clone.CreateClone(enemyTarget, new Vector3(xOffset, 0));
                     }
                     _cinemachineVirtualCamera.Follow = enemyTarget;
+
+                    if (Mathf.Approximately(enemyTarget.transform.position.z, 10))
+                    {
+                        _cinemachineVirtualCamera.Follow = _originalCameraTarget;
+                    }
                 }
 
                 yield return new WaitForSeconds(_cloneAttackCooldown);
@@ -334,7 +339,7 @@ namespace Skills.SkillControllers
         {
             foreach (var enemy in _enemiesInBlackHole)
             {
-                if (!enemy) continue;
+                if (!enemy || Mathf.Approximately(enemy.transform.position.z, 10)) continue;
 
                 Vector3 direction = (transform.position - enemy.transform.position).normalized;
 
@@ -344,6 +349,11 @@ namespace Skills.SkillControllers
                 }
 
                 enemy.transform.position += direction * (_pullSpeed * Time.deltaTime);
+                
+                if (Mathf.Approximately(enemy.transform.position.z, 10))
+                {
+                    _cinemachineVirtualCamera.Follow = _originalCameraTarget;
+                }
             }
         }
 

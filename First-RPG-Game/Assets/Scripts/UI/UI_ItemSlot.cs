@@ -1,0 +1,72 @@
+﻿using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using UnityEngine.EventSystems;
+
+public class Ui_ItemSlot : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
+{
+    [SerializeField] private Image itemImage;
+    [SerializeField] private TextMeshProUGUI itemText;
+
+    private Assets.Scripts.UI.UI ui;
+    public InventoryItem item;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private void Start()
+    {
+        ui = GetComponentInParent<Assets.Scripts.UI.UI>();
+    }
+    public void UpdateSlot(InventoryItem item)
+    {
+        this.item = item;
+        itemImage.color = Color.white;
+        if (item != null)
+        {
+            itemImage.sprite = item.data.icon;
+            if (item.stackSize > 1)
+            {
+                itemText.text = item.stackSize.ToString();
+            }
+            else
+            {
+                itemText.text = "";
+            }
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    public void CleanUpSlot()
+    {
+        item = null;
+        itemImage.sprite = null;
+        itemImage.color = Color.clear;
+        itemText.text = "";
+    }
+    public virtual void OnPointerDown(PointerEventData eventData)
+    {
+
+        if (item.data.itemType == ItemType.Equipment)
+        {
+            Inventory.instance.EquipItem(item.data);
+        }
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        ui.toolTipUI.HideToolTip();
+
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if (item == null)
+        {
+            return;
+        }
+        ui.toolTipUI.ShowToolTip(item.data);
+    }
+}

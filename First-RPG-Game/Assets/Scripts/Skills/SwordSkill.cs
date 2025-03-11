@@ -109,7 +109,7 @@ namespace Skills
             } 
             else if (swordType == SwordType.Spin)
             {
-                newSwordScript.SetupSpin(true, maxTravelDistance, spinDuration, hitCooldown);
+                newSwordScript.SetupSpin(true, maxTravelDistance, spinDuration, hitCooldown, hitCooldown);
             }
 
             newSwordScript.SetupSword(_finalDir, swordGravity, Player, freezeTimeDuration, returnSpeed);
