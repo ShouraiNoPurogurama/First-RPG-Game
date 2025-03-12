@@ -1,41 +1,44 @@
-using Skills;
+﻿using Skills;
 using Stats;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UI_InGame : MonoBehaviour
 {
+
+    [Header("Skill UI")]
+    [SerializeField] private Image dashSkillImage;
+    [SerializeField] private Image crystalSkillImage;
+    [SerializeField] private Image cloneSkillImage;
+    [SerializeField] private Image blackholeSkillImage;
+    [SerializeField] private Image swordSkillImage;
+
     [Header("Cooldown UI")]
     [SerializeField] private Image dashImage;
     [SerializeField] private Image crystalImage;
     [SerializeField] private Image cloneImage;
     [SerializeField] private Image blackholeImage;
     [SerializeField] private Image swordImage;
-    [SerializeField] private Image flaskImage;
 
-    [Header("Major stats UI")]
-    [SerializeField] private Image statImage; 
-    [SerializeField] private Sprite fireSprite;
-    [SerializeField] private Sprite iceSprite;
-    [SerializeField] private Sprite lightningSprite;
+    [Header("Màu sắc UI")]
+    [SerializeField] private Color color1 = Color.red;
+    [SerializeField] private Color color2 = Color.blue;
+    [SerializeField] private Color color3 = Color.green;
+    [SerializeField] private Color color4 = Color.yellow;
+    [SerializeField] private Color color5 = Color.magenta;
 
     private SkillManager skillManager;
-    private Inventory inventory;
     private CharacterStats characterStats;
-
-    private int currentStatIndex = 0;
+    private PlayerStats playerStats;
 
     void Start()
     {
         skillManager = SkillManager.Instance;
-        inventory = Inventory.instance;
-        characterStats = FindObjectOfType<PlayerStats>();
 
-        statImage.sprite = fireSprite;
-        SetStat(0);
+        playerStats = FindObjectOfType<PlayerStats>();
+
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (skillManager == null) return;
@@ -55,20 +58,14 @@ public class UI_InGame : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
             SetCooldownOf(cloneImage);
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-            SetCooldownOf(flaskImage);
-
         CheckCooldownOf(dashImage, skillManager.Dash.CoolDown);
         CheckCooldownOf(swordImage, skillManager.Sword.CoolDown);
         CheckCooldownOf(cloneImage, skillManager.Clone.CoolDown);
         CheckCooldownOf(crystalImage, skillManager.Crystal.CoolDown);
         CheckCooldownOf(blackholeImage, skillManager.BlackHole.CoolDown);
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            currentStatIndex = (currentStatIndex + 1) % 3; // loop
-            SetStat(currentStatIndex);
-        }
+        // Cập nhật màu UI theo cooldown
+        UpdateUIColor();
     }
 
     private void SetCooldownOf(Image _image)
@@ -79,44 +76,32 @@ public class UI_InGame : MonoBehaviour
 
     private void CheckCooldownOf(Image _image, float _cooldown)
     {
-        if(_image.fillAmount >0)
-            _image.fillAmount -= 1 / _cooldown *Time.deltaTime;
+        if (_image.fillAmount > 0)
+            _image.fillAmount -= 1 / _cooldown * Time.deltaTime;
     }
 
-    private void SetStat(int index)
+    private void UpdateUIColor()
     {
-        if (characterStats == null)
-        {
-            Debug.LogError("characterStats is NULL in SetStat!");
-            return;
-        }
+    
+        int fireDamageVal = playerStats.fireDamage.ModifiedValue;
+        int iceDamageVal = playerStats.iceDamage.ModifiedValue;
+        int lightningDamageVal = playerStats.lightingDamage.ModifiedValue;
+        //Debug.Log(iceDamageVal);
 
-        if (characterStats.fireDamage == null || characterStats.iceDamage == null || characterStats.lightingDamage == null)
-        {
-            Debug.LogError("One of the damage stats is NULL! Check CharacterStats initialization.");
-            return;
-        }
+     
+        Color selectedColor;
+        if (fireDamageVal >= iceDamageVal && fireDamageVal >= lightningDamageVal)
+            selectedColor = color1; 
+        else if (iceDamageVal >= fireDamageVal && iceDamageVal >= lightningDamageVal)
+            selectedColor = color2; 
+        else
+            selectedColor = color3; 
 
-        switch (index)
-        {
-            case 0: // Fire
-                characterStats.fireDamage.SetDefaultValue(100);
-                characterStats.iceDamage.SetDefaultValue(100);
-                characterStats.lightingDamage.SetDefaultValue(100);
-                statImage.sprite = fireSprite;
-                break;
-            case 1: // Ice
-                characterStats.fireDamage.SetDefaultValue(0);
-                characterStats.iceDamage.SetDefaultValue(100);
-                characterStats.lightingDamage.SetDefaultValue(0);
-                statImage.sprite = iceSprite;
-                break;
-            case 2: // Lightning
-                characterStats.fireDamage.SetDefaultValue(0);
-                characterStats.iceDamage.SetDefaultValue(0);
-                characterStats.lightingDamage.SetDefaultValue(100);
-                statImage.sprite = lightningSprite;
-                break;
-        }
+
+        dashSkillImage.color = selectedColor;
+        crystalSkillImage.color = selectedColor;
+        cloneSkillImage.color = selectedColor;
+        blackholeSkillImage.color = selectedColor;
+        swordSkillImage.color = selectedColor;
     }
 }

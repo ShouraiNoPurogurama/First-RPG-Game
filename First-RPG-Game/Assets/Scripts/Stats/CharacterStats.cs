@@ -369,7 +369,7 @@ namespace Stats
         {
             currentHp -= dmg;
 
-            if (dmg > 0) _fx.CreatePopUpText(dmg.ToString(), Color.green);
+            if (dmg > 0) _fx.CreatePopUpText(dmg.ToString(), Color.red);
 
             OnHPChanged?.Invoke();
         }

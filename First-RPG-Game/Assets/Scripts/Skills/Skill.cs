@@ -42,7 +42,6 @@ namespace Skills
                 return true;
             }
         
-            //Player.FX.CreatePopUpText("Cooldown!", Color.white);
             return false;
         }
 

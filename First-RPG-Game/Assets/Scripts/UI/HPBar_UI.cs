@@ -1,4 +1,4 @@
-using Stats;
+﻿using Stats;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +8,10 @@ public class HPBar_UI : MonoBehaviour
     private CharacterStats _characterStats;
     private RectTransform _rectTransform;
     private Slider _slider;
+    private Image _fillImage; 
+
+    [SerializeField] private Color normalColor = Color.red;
+    [SerializeField] private Color lowHPColor = Color.yellow; 
 
     private void Start()
     {
@@ -15,6 +19,9 @@ public class HPBar_UI : MonoBehaviour
         _entity = GetComponentInParent<Entity>();
         _slider = GetComponentInChildren<Slider>();
         _characterStats = GetComponentInParent<CharacterStats>();
+
+        // Lấy component Image từ Fill Area
+        _fillImage = _slider.fillRect.GetComponent<Image>();
 
         _characterStats.OnHPChanged += UpdateHealthUI;
         _entity.OnFlipped += FlipUI;
@@ -24,8 +31,21 @@ public class HPBar_UI : MonoBehaviour
 
     private void UpdateHealthUI()
     {
-        _slider.maxValue = _characterStats.GetMaxHealthValue();
-        _slider.value = _characterStats.currentHp;
+        float maxHp = _characterStats.GetMaxHealthValue();
+        float currentHp = _characterStats.currentHp;
+
+        _slider.maxValue = maxHp;
+        _slider.value = currentHp;
+
+        // change if hp < 30%
+        if (currentHp / maxHp <= 0.3f)
+        {
+            _fillImage.color = lowHPColor;
+        }
+        else
+        {
+            _fillImage.color = normalColor;
+        }
     }
 
     private void FlipUI()
