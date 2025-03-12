@@ -34,7 +34,7 @@ namespace Stats
         protected override void Die()
         {
             base.Die();
-        
+            GetComponent<Collider2D>().enabled = false; // Hide player Die
             _player.Die();
         }
     }
