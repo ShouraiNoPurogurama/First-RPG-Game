@@ -95,7 +95,6 @@ namespace Enemies
         {
             if (forceStun)
             {
-                DamageEffect();
                 return true;
             }
 
@@ -106,6 +105,21 @@ namespace Enemies
             }
 
             return false;
+        }
+
+        public override void SlowEntityBy(float slowPercentage, float slowDuration)
+        {
+            moveSpeed *= 1 - slowPercentage;
+            Animator.speed *= 1 - slowPercentage;
+            
+            Invoke("ReturnDefaultSpeed", slowDuration);
+        }
+
+        protected override void ReturnDefaultSpeed()
+        {
+            base.ReturnDefaultSpeed();
+            
+            moveSpeed = _defaultMoveSpeed;
         }
 
         public virtual void AssignLastAnimBoolName(string animName)
