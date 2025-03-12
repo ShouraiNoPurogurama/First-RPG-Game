@@ -273,17 +273,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &710091815 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8876571991486499401, guid: 3be2f94949e25034292ba517fe5cfd49, type: 3}
-  m_PrefabInstance: {fileID: 1857938489}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46d92a1174d0a0a4898e08fc0f02494a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &772927724
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,7 +576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: data.gameDev
-  encryptData: 1
+  encryptData: 0
 --- !u!114 &838545539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -600,9 +589,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 510715375bcf42848a25c76b8a3a2efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadingScreenInstance: {fileID: 710091815}
-  checkpoints: []
-  closetCheckpointId: 
 --- !u!4 &838545540
 Transform:
   m_ObjectHideFlags: 0
@@ -1873,6 +1859,10 @@ PrefabInstance:
     - target: {fileID: 2804911639366826441, guid: 1c687102db9b9fb43af495f56088721e, type: 3}
       propertyPath: m_Name
       value: DarkScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 2804911639366826441, guid: 1c687102db9b9fb43af495f56088721e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4856732818203939168, guid: 1c687102db9b9fb43af495f56088721e, type: 3}
       propertyPath: m_Pivot.x

@@ -3,7 +3,12 @@ using System.Collections.Generic;
 [System.Serializable]
 public class GameData
 {
-    public int currency;
+    public string screenName;
+    public int gold;
+    public int strength;
+    public int agility;
+    public int intelligence;
+    public int vitality;
     public SerializableDictionary<string, int> inventory;
     public SerializableDictionary<string, int> skillTree;
     public List<string> equipmentId;
@@ -12,7 +17,8 @@ public class GameData
     public SerializableDictionary<string, bool> checkpoints;
     public GameData()
     {
-        this.currency = 0;
+        screenName = string.Empty;
+        this.gold = 0;
         this.inventory = new SerializableDictionary<string, int>();
         this.skillTree = new SerializableDictionary<string, int>();
         this.equipmentId = new List<string>();

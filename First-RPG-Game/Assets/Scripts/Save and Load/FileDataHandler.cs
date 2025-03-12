@@ -31,7 +31,7 @@ public class FileDataHandler
             Directory.CreateDirectory(Path.GetDirectoryName(fullPath));
 
             string jsonData = JsonUtility.ToJson(data, true);
-
+            Debug.Log(jsonData);
             if (!encryptData)
             {
                 File.WriteAllText(fullPath, jsonData);

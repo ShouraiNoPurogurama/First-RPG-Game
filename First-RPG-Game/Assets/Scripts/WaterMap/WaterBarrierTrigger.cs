@@ -28,7 +28,7 @@ public class WaterBarrierTrigger : MonoBehaviour
         Player player = collision.GetComponent<Player>();
         if (player != null)
         {
-            player.Stats.TakeDamage(1);
+            player.Stats.TakeDamage(20);
         }
 
     }

@@ -1,13 +1,14 @@
 ﻿using MainCharacter;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
 public class SceneController : MonoBehaviour, ISaveManager
 {
     public static SceneController instance;
     private Transform player;
+    private EnemySpawner enemySpawner;
 
     [Header("Loading Screen Reference")]
     public LoadingScreen loadingScreenInstance;
@@ -16,15 +17,11 @@ public class SceneController : MonoBehaviour, ISaveManager
 
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
+        if (instance != null)
+            Destroy(instance.gameObject);
         else
-        {
-            Destroy(gameObject);
-        }
+            instance = this;
+        enemySpawner = FindObjectOfType<EnemySpawner>();
     }
 
     private void Start()
@@ -35,6 +32,8 @@ public class SceneController : MonoBehaviour, ISaveManager
     {
         if (Input.GetKeyDown(KeyCode.M))
             RestartScene();
+        if (Input.GetKeyDown(KeyCode.O))
+            LoadMenuScene();
     }
 
     /// <summary>
@@ -93,23 +92,40 @@ public class SceneController : MonoBehaviour, ISaveManager
         if (loadingScreenInstance != null)
             loadingScreenInstance.HideLoadingScreen();
     }
-
+    /// <summary>
+    /// Load checkpoints from GameData
+    /// </summary>
+    /// <param name="_data"></param>
     public void LoadData(GameData _data)
     {
-        foreach (KeyValuePair<string, bool> pair in _data.checkpoints)
+        Checkpoint[] allCheckpoints = FindObjectsOfType<Checkpoint>();
+
+        List<Checkpoint> toActivate = new List<Checkpoint>();
+
+        foreach (var pair in _data.checkpoints)
         {
-            foreach (Checkpoint checkpoint in checkpoints)
+            string checkpointId = pair.Key;
+            bool isActive = pair.Value;
+
+            Checkpoint matchedCheckpoint = allCheckpoints
+                .FirstOrDefault(c => c.id == checkpointId);
+
+            if (matchedCheckpoint != null && isActive)
             {
-                if (checkpoint.id == pair.Key && pair.Value == true)
-                {
-                    checkpoint.ActivateCheckpoint();
-                }
+                toActivate.Add(matchedCheckpoint);
             }
+        }
+
+        foreach (Checkpoint cp in toActivate)
+        {
+            cp.ActivateCheckpoint();
         }
         closetCheckpointId = _data.closeCheckpointId;
         Invoke("PlacePlayerAtClosetCheckpoint", .1f);
     }
-
+    /// <summary>
+    /// Place player at the closet checkpoint
+    /// </summary>
     private void PlacePlayerAtClosetCheckpoint()
     {
         foreach (Checkpoint checkpoint in checkpoints)
@@ -119,18 +135,44 @@ public class SceneController : MonoBehaviour, ISaveManager
                 PlayerManager.Instance.player.transform.position = checkpoint.transform.position;
             }
         }
+        enemySpawner.SpawnAllEnemies();
     }
-
+    /// <summary>
+    /// Load the main menu scene
+    /// </summary>
+    public void LoadMenuScene()
+    {
+        SaveManager.instance.SaveGame();
+        SceneManager.LoadScene("MainMenu");
+    }
     public void SaveData(ref GameData _data)
     {
-        _data.closeCheckpointId = FindClosestCheckpoint().id;
+        //_data.closeCheckpointId = FindClosestCheckpoint().id;
+        Checkpoint cp = FindClosestCheckpoint();
+        if (cp != null)
+        {
+            _data.closeCheckpointId = cp.id;
+        }
+        else
+        {
+            _data.closeCheckpointId = "";
+            Debug.LogWarning("Không tìm thấy checkpoint nào để lưu.");
+        }
         _data.checkpoints.Clear();
         foreach (Checkpoint checkpoint in checkpoints)
         {
             _data.checkpoints.Add(checkpoint.id, checkpoint.activationStatus);
         }
+        Scene currentScene = SceneManager.GetActiveScene();
+        if (currentScene.name != "MainMenu")
+        {
+            _data.screenName = currentScene.name;
+        }
     }
-
+    /// <summary>
+    /// Find the closest checkpoint to the player
+    /// </summary>
+    /// <returns></returns>
     private Checkpoint FindClosestCheckpoint()
     {
         float closestDistance = Mathf.Infinity;
@@ -149,11 +191,37 @@ public class SceneController : MonoBehaviour, ISaveManager
 
         return closestCheckpoint;
     }
+    /// <summary>
+    /// Restart the current scene
+    /// </summary>
     public void RestartScene()
     {
         SaveManager.instance.SaveGame();
         Scene scene = SceneManager.GetActiveScene();
-        DontDestroyOnLoad(gameObject);
         SceneManager.LoadScene(scene.name);
+    }
+    /// <summary>
+    /// Get all checkpoints in the scene
+    /// </summary>
+    /// <returns></returns>
+    public SerializableDictionary<string, bool> GetCheckpoints()
+    {
+        SerializableDictionary<string, bool> checkpointsData = new SerializableDictionary<string, bool>();
+        foreach (Checkpoint checkpoint in checkpoints)
+        {
+            checkpointsData.Add(checkpoint.id, checkpoint.activationStatus);
+        }
+        return checkpointsData;
+    }
+    public void PauseGame(bool _paused)
+    {
+        if (_paused)
+        {
+            Time.timeScale = 0.0f;
+        }
+        else
+        {
+            Time.timeScale = 1.0f;
+        }
     }
 }

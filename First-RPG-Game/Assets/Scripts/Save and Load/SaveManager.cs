@@ -50,11 +50,25 @@ public class SaveManager : MonoBehaviour
     }
     public void SaveGame()
     {
-        foreach (ISaveManager saveManager in saveManagers)
+        if (GameManager.Instance.isDied)
         {
-            saveManager.SaveData(ref gameData);
+            GameManager.Instance.latestCheckpointData.checkpoints = SceneController.instance.GetCheckpoints();
+            Debug.Log("Update " + string.Join(", ", GameManager.Instance.latestCheckpointData.checkpoints.Select(kvp => kvp.Key + "=" + kvp.Value)));
+            fileDataHandler.Save(GameManager.Instance.latestCheckpointData);
         }
-        fileDataHandler.Save(gameData);
+        else
+        {
+            foreach (ISaveManager saveManager in saveManagers)
+            {
+                saveManager.SaveData(ref gameData);
+            }
+            fileDataHandler.Save(gameData);
+        }
+        //foreach (ISaveManager saveManager in saveManagers)
+        //{
+        //    saveManager.SaveData(ref gameData);
+        //}
+        //fileDataHandler.Save(gameData);
     }
     private void OnApplicationQuit()
     {
@@ -73,6 +87,14 @@ public class SaveManager : MonoBehaviour
             return true;
         }
         return false;
+    }
+    public GameData GetGameData()
+    {
+        foreach (ISaveManager saveManager in saveManagers)
+        {
+            saveManager.SaveData(ref gameData);
+        }
+        return gameData;
     }
 }
 
