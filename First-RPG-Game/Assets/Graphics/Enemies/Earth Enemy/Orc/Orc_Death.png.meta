@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Orc_Death_0: -6634240400177418082
+      Orc_Death_1: 370393475637858559
+      Orc_Death_2: -9080859390935191118
+      Orc_Death_3: 8470104493075811987
+      Orc_Death_4: -8082230524833895754
+      Orc_Death_5: 9064599263267570789
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
