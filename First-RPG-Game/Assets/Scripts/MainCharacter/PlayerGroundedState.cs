@@ -42,7 +42,7 @@ namespace MainCharacter
             if (Input.GetKeyDown(KeyCode.Space) && Player.IsGroundDetected())
             {
                 StateMachine.ChangeState(Player.JumpState);
-            }
+            } 
 
             if (Input.GetKeyDown(KeyCode.R))
             {

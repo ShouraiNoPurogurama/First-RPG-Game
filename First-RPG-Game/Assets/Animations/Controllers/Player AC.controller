@@ -332,9 +332,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: FallAfterAttack
     m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: LandingAttack
-    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -7958278440226771455}
   m_Solo: 0

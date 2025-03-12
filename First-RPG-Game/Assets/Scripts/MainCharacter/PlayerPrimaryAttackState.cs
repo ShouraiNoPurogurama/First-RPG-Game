@@ -18,6 +18,8 @@ namespace MainCharacter
         {
             base.Enter();
 
+            AudioManager.instance.PlaySfx(2, null);
+
             xInput = 0; //Fix bug on attack direction
 
             if (_comboCounter > 2 || Time.time >= _lastTimeAttacked + _comboWindow)

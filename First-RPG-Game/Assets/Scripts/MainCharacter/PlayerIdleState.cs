@@ -23,7 +23,13 @@ namespace MainCharacter
                                                   Player.IsWallDetected() && !Mathf.Approximately(xInput, Player.FacingDir)))
             {
                 StateMachine.ChangeState(Player.MoveState);
+                
+            } else if(xInput == 0 && Mathf.Abs(Rb.linearVelocity.x) > .5f )
+
+            {
+                Player.SetZeroVelocity();
             }
+            
         }
 
         public override void Exit()
