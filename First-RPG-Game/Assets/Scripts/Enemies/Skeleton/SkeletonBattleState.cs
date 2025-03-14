@@ -21,7 +21,7 @@ namespace Enemies.Skeleton
 
             // _player = GameObject.Find("Player").transform;
             AttachCurrentPlayerIfNotExists();
-            
+
             //if player in attack range, block skeleton movement
             if (PlayerInAttackRange() && !CanAttack())
             {
@@ -74,7 +74,7 @@ namespace Enemies.Skeleton
         public bool CanAttack()
         {
             AttachCurrentPlayerIfNotExists();
-            
+
             if (Mathf.Approximately(_skeleton.lastTimeAttacked, 0) || Time.time >= _skeleton.lastTimeAttacked + _skeleton.attackCooldown)
             {
                 // _skeleton.lastTimeAttacked = Time.time;
@@ -87,11 +87,11 @@ namespace Enemies.Skeleton
         public bool PlayerInAttackRange()
         {
             AttachCurrentPlayerIfNotExists();
-            
+
             var result = _skeleton.IsPlayerDetected().distance <= _skeleton.attackDistance &&
                    (_skeleton.FacingDir == -1 && _player.transform.position.x <= _skeleton.transform.position.x ||
                     _skeleton.FacingDir == 1 && _player.transform.position.x >= _skeleton.transform.position.x);
-            
+
             return result;
         }
 

@@ -1,6 +1,6 @@
+using Skills;
 using System;
 using System.Linq;
-using Skills;
 using UnityEngine;
 
 namespace MainCharacter
@@ -74,6 +74,7 @@ namespace MainCharacter
         public PlayerWallJumpState WallJumpState { get; private set; }
         public PlayerPrimaryAttackState PrimaryAttackState { get; private set; }
         public PlayerCounterAttackState CounterAttackState { get; private set; }
+        public PlayerCounterWaterAttack CounterWaterAttackState { get; private set; }
         public PlayerAimSwordState AimSwordState { get; private set; }
         public PlayerCatchSwordState CatchSwordState { get; private set; }
         public PlayerDashAttackState DashAttackState { get; private set; }
@@ -107,6 +108,7 @@ namespace MainCharacter
 
             PrimaryAttackState = new PlayerPrimaryAttackState(StateMachine, this, "Attack");
             CounterAttackState = new PlayerCounterAttackState(StateMachine, this, "CounterAttack");
+            CounterWaterAttackState = new PlayerCounterWaterAttack(StateMachine, this, "CounterAttack");
             AimSwordState = new PlayerAimSwordState(StateMachine, this, "AimSword");
             CatchSwordState = new PlayerCatchSwordState(StateMachine, this, "CatchSword");
             DashAttackState = new PlayerDashAttackState(StateMachine, this, "DashAttack");

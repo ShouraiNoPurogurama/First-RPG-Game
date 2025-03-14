@@ -1,12 +1,10 @@
 ﻿using Assets.Scripts.Inventory_and_Item;
 using Assets.Scripts.UI;
-using NUnit.Framework;
 using System.Collections.Generic;
-using System.Collections.Specialized;
+using UnityEditor;
 using UnityEngine;
-using static UnityEditor.Timeline.Actions.MenuPriority;
 
-public class Inventory : MonoBehaviour
+public class Inventory : MonoBehaviour, ISaveManager
 {
     public static Inventory instance;
 
@@ -29,6 +27,10 @@ public class Inventory : MonoBehaviour
     [SerializeField] private Transform stashSlotParent;
     [SerializeField] private Transform equipmentSlotParent;
     [SerializeField] private Transform statSlotParent;
+
+    [Header("DataBase")]
+    public List<InventoryItem> loadedItems;
+    public List<ItemData_Equipment> loadedEquipment;
 
     private Ui_ItemSlot[] inventoryItemSlot;
     private Ui_ItemSlot[] stashItemSlot;
@@ -57,14 +59,34 @@ public class Inventory : MonoBehaviour
         stashItemSlot = stashSlotParent.GetComponentsInChildren<Ui_ItemSlot>();
         equipmentItemSlot = equipmentSlotParent.GetComponentsInChildren<UI_EquimentSlot>();
         statSlots = statSlotParent.GetComponentsInChildren<UI_StatSlot>();
-        AddStartingItem();
+        //AddStartingItem();
     }
 
     private void AddStartingItem()
     {
-        for (int i = 0; i < startItem.Count; i++)
+        if (loadedItems.Count > 0)
         {
-            AddItem(startItem[i].data);
+            foreach (InventoryItem item in loadedItems)
+            {
+                for (int i = 0; i < item.stackSize; i++)
+                {
+                    AddItem(item.data);
+                }
+            }
+        }
+        else
+        {
+            // Nếu không có gì load thì thêm startItem mặc định
+            for (int i = 0; i < startItem.Count; i++)
+            {
+                AddItem(startItem[i].data);
+            }
+        }
+
+        // Trang bị luôn các món equipment đã load được
+        foreach (ItemData_Equipment item in loadedEquipment)
+        {
+            EquipItem(item);
         }
     }
 
@@ -175,7 +197,8 @@ public class Inventory : MonoBehaviour
         {
             ItemData_Buff itemData = (ItemData_Buff)item;
             itemData.AddModifiers();
-        } else if (item.itemType == ItemType.Gold)
+        }
+        else if (item.itemType == ItemType.Gold)
         {
             ItemData_Gold itemData = (ItemData_Gold)item;
             itemData.AddGold();
@@ -298,4 +321,70 @@ public class Inventory : MonoBehaviour
         }
         return null;
     }
+
+    public void LoadData(GameData _data)
+    {
+        foreach (KeyValuePair<string, int> pair in _data.inventory)
+        {
+            foreach (var item in GetItemDataBase())
+            {
+                if (item != null && item.itemId == pair.Key)
+                {
+                    InventoryItem itemToLoad = new InventoryItem(item);
+                    itemToLoad.stackSize = pair.Value;
+
+                    loadedItems.Add(itemToLoad);
+                }
+            }
+        }
+
+        foreach (string loadedItemId in _data.equipmentId)
+        {
+            foreach (var item in GetItemDataBase())
+            {
+                if (item != null && loadedItemId == item.itemId)
+                {
+                    loadedEquipment.Add(item as ItemData_Equipment);
+                }
+            }
+        }
+        AddStartingItem();
+    }
+
+    public void SaveData(ref GameData _data)
+    {
+        _data.inventory.Clear();
+        _data.equipmentId.Clear();
+
+        foreach (KeyValuePair<ItemData, InventoryItem> pair in inventoryDictionay)
+        {
+            _data.inventory.Add(pair.Key.itemId, pair.Value.stackSize);
+        }
+
+        foreach (KeyValuePair<ItemData, InventoryItem> pair in stashDictionary)
+        {
+            _data.inventory.Add(pair.Key.itemId, pair.Value.stackSize);
+        }
+        foreach (KeyValuePair<ItemData_Equipment, InventoryItem> pair in equipmentDictionary)
+        {
+            _data.equipmentId.Add(pair.Key.itemId);
+        }
+    }
+
+#if UNITY_EDITOR
+    private List<ItemData> GetItemDataBase()
+    {
+        List<ItemData> itemDataBase = new List<ItemData>();
+
+        string[] assetName = AssetDatabase.FindAssets("", new[] { "Assets/Data/Items" });
+
+        foreach (string guid in assetName)
+        {
+            string path = AssetDatabase.GUIDToAssetPath(guid);
+            ItemData item = AssetDatabase.LoadAssetAtPath<ItemData>(path);
+            itemDataBase.Add(item);
+        }
+        return itemDataBase;
+    }
+#endif
 }
