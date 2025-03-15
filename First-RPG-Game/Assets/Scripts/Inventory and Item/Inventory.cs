@@ -1,6 +1,8 @@
 ﻿using Assets.Scripts.Inventory_and_Item;
 using Assets.Scripts.UI;
+using MainCharacter;
 using NUnit.Framework;
+using Stats;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using UnityEngine;
@@ -92,6 +94,10 @@ public class Inventory : MonoBehaviour
         }
 
         //add item to equipment ui
+        if(newEquipment.itemName == "Final Stone")
+        {
+            GameObject.Find("Player").GetComponent<Player>().EquippedFinalAilment = true;
+        }
         equipment.Add(newItem);
         equipmentDictionary.Add(newEquipment, newItem);
         //add information stat to player
@@ -106,6 +112,10 @@ public class Inventory : MonoBehaviour
     {
         if (equipmentDictionary.TryGetValue(item, out InventoryItem value))
         {
+            if (item.itemName == "Final Stone")
+            {
+                GameObject.Find("Player").GetComponent<Player>().EquippedFinalAilment = false;
+            }
             equipment.Remove(value);
             equipmentDictionary.Remove(item);
             item.RemoveModifiers();

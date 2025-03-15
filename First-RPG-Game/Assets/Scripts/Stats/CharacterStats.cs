@@ -152,7 +152,7 @@ namespace Stats
             //If equipments have ailment effects then do magical damage
             DoMagicalDamage(targetStats);
 
-            //targetStats.TakeDamage(totalDamage);
+            targetStats.TakeDamage(totalDamage);
         }
 
         public virtual void DoMagicalDamage(CharacterStats targetStats)
