@@ -1,21 +1,19 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
 using System.IO;
-using System.Security.Cryptography;
 using System.Text;
+using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class FileDataHandler
+public class FileDataHandler : MonoBehaviour
 {
     private string dataDirPath;
     private string dataFileName;
     private bool encryptData;
-    private readonly string passphrase = "SuperSecretPassphrase!!!";
-    private const int SaltSize = 16;
-    private const int Iterations = 200000;
-    private const int KeySizeBits = 256;
-    private const int IvSize = 16;
-    private const int HmacSize = 32;
-
+    private string apiUrl = "http://prn-222.food/api/v1/Data";
+    private string token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImRhdGhsZWNueCIsImV4cCI6MTc0MjExMjg4OCwiaXNzIjoiUlBHLUFQSSIsImF1ZCI6IlVuaXR5R2FtZUNsaWVudCJ9.Y-MS5ncVMvGrJxoqWdu4N-Q-N958PMkYcDx6XpclexQ";
     public FileDataHandler(string _dataDirPath, string _dataFileName, bool _encryptData)
     {
         dataDirPath = _dataDirPath;
@@ -23,36 +21,61 @@ public class FileDataHandler
         encryptData = _encryptData;
     }
 
-    public void Save(GameData data)
+    public async void Save(GameData data)
     {
-        string fullPath = Path.Combine(dataDirPath, dataFileName);
         try
         {
-            Directory.CreateDirectory(Path.GetDirectoryName(fullPath));
-
             string jsonData = JsonUtility.ToJson(data, true);
-            Debug.Log(jsonData);
-            if (!encryptData)
-            {
-                File.WriteAllText(fullPath, jsonData);
-            }
-            else
-            {
-                byte[] encryptedBytes = EncryptAndHmac(jsonData);
-
-                File.WriteAllBytes(fullPath, encryptedBytes);
-            }
+            GameData gameData = JsonUtility.FromJson<GameData>(jsonData);
+            TargetData targetData = new TargetData();
+            targetData.screenName = gameData.screenName;
+            targetData.gold = gameData.gold;
+            targetData.strength = gameData.strength;
+            targetData.agility = gameData.agility;
+            targetData.intelligence = gameData.intelligence;
+            targetData.vitality = gameData.vitality;
+            targetData.inventory = new Dictionary<string, int>(gameData.inventory);
+            targetData.equipmentId = gameData.equipmentId;
+            targetData.closeCheckpointId = gameData.closeCheckpointId;
+            targetData.checkPoints = new Dictionary<string, bool>(gameData.checkpoints);
+            string targetJson = JsonConvert.SerializeObject(targetData, Formatting.Indented);
+            await PostDataAsync(targetJson);
         }
         catch (Exception e)
         {
             Debug.LogError("Error saving data: " + e.Message);
         }
     }
+    public async Task PostDataAsync(string jsonData)
+    {
+        Debug.Log("🟢 Dữ liệu gửi lên API: " + jsonData);
+        byte[] jsonToSend = Encoding.UTF8.GetBytes(jsonData);
 
-    public GameData Load()
+        using (UnityWebRequest request = new UnityWebRequest(apiUrl, "POST"))
+        {
+            request.uploadHandler = new UploadHandlerRaw(jsonToSend);
+            request.downloadHandler = new DownloadHandlerBuffer();
+            request.SetRequestHeader("Content-Type", "application/json");
+            request.SetRequestHeader("Authorization", "Bearer " + token);
+            request.SetRequestHeader("accept", "*/*");
+
+            var tcs = new TaskCompletionSource<bool>();
+            request.SendWebRequest().completed += operation => tcs.SetResult(true);
+            await tcs.Task;
+
+            if (request.result == UnityWebRequest.Result.Success)
+            {
+                Debug.Log("🟢 Dữ liệu gửi thành công: " + request.downloadHandler.text);
+            }
+            else
+            {
+                Debug.LogError("🔴 Lỗi khi gửi API: " + request.error);
+            }
+        }
+    }
+    public async Task<GameData> Load()
     {
         string fullPath = Path.Combine(dataDirPath, dataFileName);
-
         if (!File.Exists(fullPath))
         {
             return null;
@@ -60,19 +83,9 @@ public class FileDataHandler
 
         try
         {
-            if (!encryptData)
-            {
-                string jsonData = File.ReadAllText(fullPath);
-                return JsonUtility.FromJson<GameData>(jsonData);
-            }
-            else
-            {
-                byte[] fileBytes = File.ReadAllBytes(fullPath);
-
-                string decryptedJson = DecryptAndVerifyHmac(fileBytes);
-
-                return JsonUtility.FromJson<GameData>(decryptedJson);
-            }
+            string jsonData = File.ReadAllText(fullPath);
+            string json = JsonUtility.ToJson(await GetDataFromAPIAsync("dathlecnx"));
+            return JsonUtility.FromJson<GameData>(json);
         }
         catch (Exception e)
         {
@@ -89,230 +102,61 @@ public class FileDataHandler
             File.Delete(fullPath);
         }
     }
-    private byte[] GenerateRandomBytes(int length)
+    public async Task<GameData> GetDataFromAPIAsync(string username)
     {
-        byte[] randomBytes = new byte[length];
-        using (var rng = new RNGCryptoServiceProvider())
+        string getUrl = $"{apiUrl}?username={username}";
+        using (UnityWebRequest request = UnityWebRequest.Get(getUrl))
         {
-            rng.GetBytes(randomBytes);
-        }
-        return randomBytes;
-    }
+            request.SetRequestHeader("accept", "*/*");
+            request.SetRequestHeader("Authorization", "Bearer " + token);
 
-    private byte[] EncryptAndHmac(string plainText)
-    {
-        byte[] salt = GenerateRandomBytes(SaltSize);
+            var tcs = new TaskCompletionSource<bool>();
+            request.SendWebRequest().completed += operation => tcs.SetResult(true);
+            await tcs.Task;
 
-        byte[] key = DeriveKeyFromPassphrase(passphrase, salt, Iterations, KeySizeBits);
-
-        byte[] iv = GenerateRandomBytes(IvSize);
-
-        byte[] ciphertext;
-        using (Aes aes = Aes.Create())
-        {
-            aes.Key = key;
-            aes.IV = iv;
-            aes.Mode = CipherMode.CBC;
-            aes.Padding = PaddingMode.PKCS7;
-
-            byte[] plainBytes = Encoding.UTF8.GetBytes(plainText);
-
-            using (var msEncrypt = new MemoryStream())
+            if (request.result == UnityWebRequest.Result.Success)
             {
-                using (var encryptor = aes.CreateEncryptor())
-                using (var csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write))
-                {
-                    csEncrypt.Write(plainBytes, 0, plainBytes.Length);
-                }
-                ciphertext = msEncrypt.ToArray();
+                string jsonResult = request.downloadHandler.text;
+                TargetData targetData = JsonConvert.DeserializeObject<TargetData>(jsonResult);
+                GameData gameData = ConvertTargetDataToGameData(targetData);
+                Debug.Log("🟢 Dữ liệu GET API thành công: ");
+                return gameData;
             }
-        }
-        byte[] dataForHmac = Combine(salt, iv, ciphertext);
-        byte[] hmac = ComputeHmacSha256(key, dataForHmac);
-
-        byte[] finalBytes = Combine(salt, iv, ciphertext, hmac);
-
-        return finalBytes;
-    }
-    private string DecryptAndVerifyHmac(byte[] encryptedData)
-    {
-        byte[] salt = new byte[SaltSize];
-        Buffer.BlockCopy(encryptedData, 0, salt, 0, SaltSize);
-
-        byte[] iv = new byte[IvSize];
-        Buffer.BlockCopy(encryptedData, SaltSize, iv, 0, IvSize);
-
-        int offsetCipher = SaltSize + IvSize;
-        int offsetHmac = encryptedData.Length - HmacSize;
-        int cipherLength = offsetHmac - offsetCipher;
-
-        byte[] ciphertext = new byte[cipherLength];
-        Buffer.BlockCopy(encryptedData, offsetCipher, ciphertext, 0, cipherLength);
-
-        byte[] hmacFromFile = new byte[HmacSize];
-        Buffer.BlockCopy(encryptedData, offsetHmac, hmacFromFile, 0, HmacSize);
-
-        byte[] key = DeriveKeyFromPassphrase(passphrase, salt, Iterations, KeySizeBits);
-
-        byte[] dataForHmac = Combine(salt, iv, ciphertext);
-        byte[] hmacCalc = ComputeHmacSha256(key, dataForHmac);
-
-        if (!CompareBytes(hmacCalc, hmacFromFile))
-        {
-            throw new CryptographicException("HMAC mismatch! Dữ liệu có thể đã bị chỉnh sửa hoặc sai passphrase.");
-        }
-
-        using (Aes aes = Aes.Create())
-        {
-            aes.Key = key;
-            aes.IV = iv;
-            aes.Mode = CipherMode.CBC;
-            aes.Padding = PaddingMode.PKCS7;
-
-            using (var msDecrypt = new MemoryStream(ciphertext))
-            using (var decryptor = aes.CreateDecryptor())
-            using (var csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
-            using (var srDecrypt = new StreamReader(csDecrypt))
+            else
             {
-                return srDecrypt.ReadToEnd();
+                Debug.LogError("🔴 Lỗi GET API: " + request.error);
+                return null;
             }
         }
     }
-    private byte[] DeriveKeyFromPassphrase(string pass, byte[] salt, int iterations, int keySizeBits)
+    private GameData ConvertTargetDataToGameData(TargetData targetData)
     {
-        using (var pbkdf2 = new Rfc2898DeriveBytes(pass, salt, iterations, HashAlgorithmName.SHA256))
+        GameData gameData = new GameData();
+        gameData.screenName = targetData.screenName;
+        gameData.gold = targetData.gold;
+        gameData.strength = targetData.strength;
+        gameData.agility = targetData.agility;
+        gameData.intelligence = targetData.intelligence;
+        gameData.vitality = targetData.vitality;
+
+        gameData.inventory = new SerializableDictionary<string, int>();
+        foreach (var kvp in targetData.inventory)
         {
-            return pbkdf2.GetBytes(keySizeBits / 8);
-        }
-    }
-    private byte[] ComputeHmacSha256(byte[] key, byte[] data)
-    {
-        using (var hmac = new HMACSHA256(key))
-        {
-            return hmac.ComputeHash(data);
-        }
-    }
-    private byte[] Combine(params byte[][] arrays)
-    {
-        int totalLength = 0;
-        foreach (var arr in arrays)
-        {
-            totalLength += arr.Length;
+            gameData.inventory.Add(kvp.Key, kvp.Value);
         }
 
-        byte[] combined = new byte[totalLength];
-        int offset = 0;
-        foreach (var arr in arrays)
+        List<string> equipList = new List<string>(targetData.equipmentId);
+        equipList.Reverse();
+        gameData.equipmentId = equipList;
+
+        gameData.closeCheckpointId = "";
+
+        gameData.checkpoints = new SerializableDictionary<string, bool>();
+        foreach (var kvp in targetData.checkPoints)
         {
-            Buffer.BlockCopy(arr, 0, combined, offset, arr.Length);
-            offset += arr.Length;
+            gameData.checkpoints.Add(kvp.Key, kvp.Value);
         }
 
-        return combined;
-    }
-    private bool CompareBytes(byte[] a, byte[] b)
-    {
-        if (a.Length != b.Length) return false;
-        int diff = 0;
-        for (int i = 0; i < a.Length; i++)
-        {
-            diff |= a[i] ^ b[i];
-        }
-        return diff == 0;
+        return gameData;
     }
 }
-
-
-//using System;
-//using System.IO;
-//using UnityEngine;
-
-//public class FileDataHandler
-//{
-//    private string dataDirPath = "";
-//    private string dataFileName = "";
-
-//    private bool encryptData = false;
-//    private string codeWord = "PkHIQBKzaBPBLAV6PKHkY_zphnai3MMYQKijAGmkspA";
-
-//    public FileDataHandler(string _dataDirPath, string _dataFileName, bool encryptData)
-//    {
-//        this.dataDirPath = _dataDirPath;
-//        this.dataFileName = _dataFileName;
-//        this.encryptData = encryptData;
-//    }
-//    public void Save(GameData _data)
-//    {
-//        string fullPath = Path.Combine(dataDirPath, dataFileName);
-//        try
-//        {
-//            Directory.CreateDirectory(Path.GetDirectoryName(fullPath));
-//            string dataToStore = JsonUtility.ToJson(_data, true);
-
-//            if (encryptData)
-//            {
-//                dataToStore = EncryptDecrypt(dataToStore);
-//            }
-
-//            using (FileStream stream = new FileStream(fullPath, FileMode.Create))
-//            {
-//                using (StreamWriter writer = new StreamWriter(stream))
-//                {
-//                    writer.Write(dataToStore);
-//                }
-//            }
-//        }
-//        catch (Exception e)
-//        {
-//            Debug.LogError("Error saving data: " + e.Message);
-//        }
-//    }
-//    public GameData Load()
-//    {
-//        string fullPath = Path.Combine(dataDirPath, dataFileName);
-//        GameData loadData = null;
-//        if (File.Exists(fullPath))
-//        {
-//            try
-//            {
-//                string dataToLoad = "";
-//                using (FileStream stream = new FileStream(fullPath, FileMode.Open))
-//                {
-//                    using (StreamReader reader = new StreamReader(stream))
-//                    {
-//                        dataToLoad = reader.ReadToEnd();
-//                    }
-//                }
-//                if (encryptData)
-//                {
-//                    dataToLoad = EncryptDecrypt(dataToLoad);
-//                }
-//                loadData = JsonUtility.FromJson<GameData>(dataToLoad);
-//            }
-//            catch (Exception e)
-//            {
-//                Debug.LogError("Error loading data: " + e.Message);
-//            }
-//        }
-//        return loadData;
-//    }
-//    public void Delete()
-//    {
-//        string fullPath = Path.Combine(dataDirPath, dataFileName);
-//        if (File.Exists(fullPath))
-//        {
-//            File.Delete(fullPath);
-//        }
-//    }
-//    private string EncryptDecrypt(string _data)
-//    {
-//        string modifiedData = "";
-
-//        for (int i = 0; i < _data.Length; i++)
-//        {
-//            modifiedData += (char)(_data[i] ^ codeWord[(i % codeWord.Length)]);
-//        }
-
-//        return modifiedData;
-//    }
-//}

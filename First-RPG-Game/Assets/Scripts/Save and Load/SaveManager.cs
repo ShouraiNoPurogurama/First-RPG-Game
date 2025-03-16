@@ -35,9 +35,9 @@ public class SaveManager : MonoBehaviour
     {
         gameData = new GameData();
     }
-    public void LoadGame()
+    public async void LoadGame()
     {
-        gameData = fileDataHandler.Load();
+        gameData = await fileDataHandler.Load();
         if (this.gameData == null)
         {
             Debug.Log("No save data found");
