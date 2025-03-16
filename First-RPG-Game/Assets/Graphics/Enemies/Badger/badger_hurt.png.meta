@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      badger_hurt_0: -2184068880988434738
+      badger_hurt_1: 5210861488164529539
+      badger_hurt_2: 8854510648239930689
+      badger_hurt_3: 363591237502581243
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

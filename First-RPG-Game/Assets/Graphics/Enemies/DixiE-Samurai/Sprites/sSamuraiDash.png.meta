@@ -472,7 +472,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sSamuraiDash_0: 8468708875346132880
+      sSamuraiDash_1: -5497672662177857207
+      sSamuraiDash_10: -4459855038409298043
+      sSamuraiDash_11: 1365455449461088453
+      sSamuraiDash_12: 102664573764361858
+      sSamuraiDash_13: -48961803463854289
+      sSamuraiDash_2: 715267553527198647
+      sSamuraiDash_3: -9024986181919208380
+      sSamuraiDash_4: -4169609855754835310
+      sSamuraiDash_5: -397390785629529997
+      sSamuraiDash_6: 8722919631112541709
+      sSamuraiDash_7: 3773094003030592637
+      sSamuraiDash_8: -7127223692568077637
+      sSamuraiDash_9: 3478370235990937733
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

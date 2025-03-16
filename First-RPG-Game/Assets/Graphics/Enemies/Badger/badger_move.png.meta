@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      badger_move_0: 6850963254945984978
+      badger_move_1: 2344760308203685902
+      badger_move_2: -4872671892399650409
+      badger_move_3: 6048661255408985241
+      badger_move_4: 2639985024342389115
+      badger_move_5: 2333129754391797174
+      badger_move_6: -3885027044539270384
+      badger_move_7: -112460230014481473
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
