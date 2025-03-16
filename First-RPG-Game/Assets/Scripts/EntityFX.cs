@@ -14,11 +14,21 @@ public class EntityFX : MonoBehaviour
     [Header("Hit FX")]
     [SerializeField] private GameObject hitFx;
 
-    [Header("Ailment FX")]
+    [Header("Ailment Colors")]
     [SerializeField] private Color[] chillColor;
-
     [SerializeField] private Color[] igniteColor;
     [SerializeField] private Color[] shockColor;
+    
+    [SerializeField] private Color[] windColor;
+    [SerializeField] private Color[] earthColor;
+    
+    [Header("Ailment particles")]
+    [SerializeField] private ParticleSystem igniteFX;
+    [SerializeField] private ParticleSystem chillFX;
+    [SerializeField] private ParticleSystem shockFX;
+    
+    [SerializeField] private ParticleSystem windFX;
+    [SerializeField] private ParticleSystem earthFX;
 
     [Header("Popup FX")]
     [SerializeField] private GameObject popupFxPrefab;
@@ -98,10 +108,18 @@ public class EntityFX : MonoBehaviour
     {
         CancelInvoke();
         _spriteRenderer.color = Color.white;
+        
+        igniteFX.Stop();
+        chillFX.Stop();
+        shockFX.Stop();
+        earthFX.Stop();
+        windFX.Stop();
     }
 
     public void IgniteFxFor(float seconds)
     {
+        igniteFX.Play();
+        
         InvokeRepeating("IgniteColorFX", 0, .3f);
         Invoke("CancelColorChange", seconds);
     }
@@ -120,6 +138,8 @@ public class EntityFX : MonoBehaviour
 
     public void ChillFxFor(float seconds)
     {
+        chillFX.Play();
+        
         InvokeRepeating("ChillColorFX", 0, .3f);
         Invoke("CancelColorChange", seconds);
     }
@@ -137,9 +157,12 @@ public class EntityFX : MonoBehaviour
 
     public void ShockFxFor(float seconds)
     {
+        shockFX.Play();
+        
         InvokeRepeating("ShockColorFX", 0, .3f);
         Invoke("CancelColorChange", seconds);
     }
+    
     
     private void ShockColorFX()
     {
@@ -150,6 +173,46 @@ public class EntityFX : MonoBehaviour
         else
         {
             _spriteRenderer.color = shockColor[1];
+        }
+    }
+    
+    public void WindFxFor(float seconds)
+    {
+        windFX.Play();
+    
+        InvokeRepeating("WindColorFX", 0, .3f);
+        Invoke("CancelColorChange", seconds);
+    }
+
+    private void WindColorFX()
+    {
+        if (_spriteRenderer.color != windColor[0])
+        {
+            _spriteRenderer.color = windColor[0];
+        }
+        else
+        {
+            _spriteRenderer.color = windColor[1];
+        }
+    }
+
+    public void EarthFxFor(float seconds)
+    {
+        earthFX.Play();
+    
+        InvokeRepeating("EarthColorFX", 0, .3f);
+        Invoke("CancelColorChange", seconds);
+    }
+
+    private void EarthColorFX()
+    {
+        if (_spriteRenderer.color != earthColor[0])
+        {
+            _spriteRenderer.color = earthColor[0];
+        }
+        else
+        {
+            _spriteRenderer.color = earthColor[1];
         }
     }
 

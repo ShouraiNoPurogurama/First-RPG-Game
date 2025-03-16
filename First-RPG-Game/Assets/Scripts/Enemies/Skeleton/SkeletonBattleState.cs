@@ -21,13 +21,13 @@ namespace Enemies.Skeleton
 
             // _player = GameObject.Find("Player").transform;
             AttachCurrentPlayerIfNotExists();
-
+            
             //if player in attack range, block skeleton movement
-            if (PlayerInAttackRange() && !CanAttack())
-            {
-                _skeleton.SetZeroVelocity();
-                StateMachine.ChangeState(_skeleton.IdleState);
-            }
+            // if (PlayerInAttackRange() && !CanAttack())
+            // {
+            //     _skeleton.SetZeroVelocity();
+            //     StateMachine.ChangeState(_skeleton.IdleState);
+            // }
         }
 
         public override void Update()
@@ -38,9 +38,11 @@ namespace Enemies.Skeleton
             {
                 StateTimer = _skeleton.battleTime;
 
-                if (_skeleton.IsGroundDetected() && _skeleton.IsPlayerDetected().distance <= _skeleton.attackDistance &&
+                if (_skeleton.IsGroundDetected() &&
+                    _skeleton.IsPlayerDetected().distance <= _skeleton.attackDistance &&
                     CanAttack())
                 {
+                    Debug.Log(_skeleton.IsPlayerDetected().collider.gameObject.name);
                     StateMachine.ChangeState(_skeleton.AttackState);
                     return;
                 }
@@ -75,9 +77,9 @@ namespace Enemies.Skeleton
         {
             AttachCurrentPlayerIfNotExists();
 
-            if (Mathf.Approximately(_skeleton.lastTimeAttacked, 0) || Time.time >= _skeleton.lastTimeAttacked + _skeleton.attackCooldown)
+            if (Mathf.Approximately(_skeleton.lastTimeAttacked, 0) ||
+                Time.time >= _skeleton.lastTimeAttacked + _skeleton.attackCooldown)
             {
-                // _skeleton.lastTimeAttacked = Time.time;
                 return true;
             }
 
@@ -88,9 +90,17 @@ namespace Enemies.Skeleton
         {
             AttachCurrentPlayerIfNotExists();
 
-            var result = _skeleton.IsPlayerDetected().distance <= _skeleton.attackDistance &&
-                   (_skeleton.FacingDir == -1 && _player.transform.position.x <= _skeleton.transform.position.x ||
-                    _skeleton.FacingDir == 1 && _player.transform.position.x >= _skeleton.transform.position.x);
+            var result = _skeleton.IsPlayerDetected().distance != 0 &&
+                         _skeleton.IsPlayerDetected().distance <= _skeleton.attackDistance &&
+                         (_skeleton.FacingDir == -1 && _player.transform.position.x <= _skeleton.transform.position.x ||
+                          _skeleton.FacingDir == 1 && _player.transform.position.x >= _skeleton.transform.position.x);
+
+            if (Mathf.Abs(_player.transform.position.x - _skeleton.transform.position.x) < _skeleton.attackDistance &&
+                Mathf.Abs(_player.transform.position.y - _skeleton.transform.position.y) <=
+                _skeleton.CapsuleCollider.bounds.size.y) 
+            {
+                result = true;
+            }
 
             return result;
         }

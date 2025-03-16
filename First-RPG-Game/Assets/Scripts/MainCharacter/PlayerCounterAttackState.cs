@@ -39,12 +39,17 @@ namespace MainCharacter
 
             foreach (var hit in colliders)
             {
+                if (hit.GetComponent<ArrowController>() != null)
+                {
+                    hit.GetComponent<ArrowController>().FlipArrow();
+                    SuccessfulCounterAttack();
+                }
+                
                 var enemy = hit.GetComponent<Enemy>();
                 if (enemy is not null && enemy.IsCanBeStunned(false))
                 {
                     _successfulCounterAttack = true;
-                    StateTimer = 100; //any value long enough
-                    Player.Animator.SetBool("SuccessfulCounterAttack", true);
+                    SuccessfulCounterAttack();
 
                     if (_canCreatClone)
                     {
@@ -73,6 +78,12 @@ namespace MainCharacter
             {
                 StateMachine.ChangeState(Player.IdleState);
             }
+        }
+
+        private void SuccessfulCounterAttack()
+        {
+            StateTimer = 100; //any value long enough
+            Player.Animator.SetBool("SuccessfulCounterAttack", true);
         }
 
         public override void Exit()
