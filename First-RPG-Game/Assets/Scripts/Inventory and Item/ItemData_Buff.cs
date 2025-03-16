@@ -1,26 +1,27 @@
 ﻿using MainCharacter;
-using NUnit.Framework;
 using Stats;
-using System.Collections.Generic;
 using UnityEngine;
 
-public enum BuffType
+namespace Inventory_and_Item
 {
-    Weapon,
-    Armor,
-    Amulet,
-    Flask
-}
-
-[CreateAssetMenu(fileName = "New Item Data", menuName = "Data/Buff")]
-public class ItemData_Buff : ItemData
-{
-    [Header("Major stats")]
-    public int hpPlus; // 
-
-    public void AddModifiers()
+    public enum BuffType
     {
-        PlayerStats playerStats = PlayerManager.Instance.player.GetComponent<PlayerStats>();
-        playerStats.RecoverHP(hpPlus);
+        Weapon,
+        Armor,
+        Amulet,
+        Flask
+    }
+
+    [CreateAssetMenu(fileName = "New Item Data", menuName = "Data/Buff")]
+    public class ItemData_Buff : ItemData
+    {
+        [Header("Major stats")]
+        public int hpPlus; // 
+
+        public void AddModifiers()
+        {
+            PlayerStats playerStats = PlayerManager.Instance.player.GetComponent<PlayerStats>();
+            playerStats.RecoverHP(hpPlus);
+        }
     }
 }

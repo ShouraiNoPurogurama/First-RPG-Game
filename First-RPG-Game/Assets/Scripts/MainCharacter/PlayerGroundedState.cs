@@ -53,6 +53,7 @@ namespace MainCharacter
             if (Input.GetKeyDown(KeyCode.R) && SkillManager.Instance.BlackHole.CanUseSkillWithNoLogic())
             {
                 StateMachine.ChangeState(Player.BlackHoleState);
+                Player.FX.CreatePopUpText("Cooldown!",Color.white);
             }
         }
 
