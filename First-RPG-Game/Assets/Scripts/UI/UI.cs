@@ -1,8 +1,7 @@
 using System.Collections;
-using UI;
 using UnityEngine;
 
-namespace Assets.Scripts.UI
+namespace UI
 {
     public class UI : MonoBehaviour
     {

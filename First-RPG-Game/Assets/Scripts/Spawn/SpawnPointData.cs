@@ -1,10 +1,13 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class SpawnPointData
+namespace Spawn
 {
-    public Transform spawnPoint;
-    public List<EnemyData> enemyList;
+    [System.Serializable]
+    public class SpawnPointData
+    {
+        public Transform spawnPoint;
+        public List<EnemyData> enemyList;
+    }
 }
 

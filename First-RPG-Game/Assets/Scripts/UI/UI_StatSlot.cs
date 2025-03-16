@@ -3,7 +3,7 @@ using Stats;
 using TMPro;
 using UnityEngine;
 
-namespace Assets.Scripts.UI
+namespace UI
 {
     public class UI_StatSlot : MonoBehaviour
     {

@@ -1,15 +1,18 @@
 using UnityEngine;
 
-public class SpotLightFollow : MonoBehaviour
+namespace WaterMap
 {
-    public Transform player;
-    public
-    void Update()
+    public class SpotLightFollow : MonoBehaviour
     {
-        Vector3 offset = new Vector3(0, 1, 0);
-        if (player != null)
+        public Transform player;
+        public
+            void Update()
         {
-            transform.position = player.position + offset;
+            Vector3 offset = new Vector3(0, 1, 0);
+            if (player != null)
+            {
+                transform.position = player.position + offset;
+            }
         }
     }
 }

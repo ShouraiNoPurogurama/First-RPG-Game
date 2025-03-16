@@ -1,44 +1,46 @@
-﻿using Enemies;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 
-public class MagicSkeletonIdleState : MagicSkeletonGroundedState
+namespace Enemies.Map_Water.Magic_Skeleton
 {
-    public MagicSkeletonIdleState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, Enemy_Magic_Skeleton _magic_Skeleton_Enemy) : base(enemyBase, stateMachine, animBoolName, _magic_Skeleton_Enemy)
+    public class MagicSkeletonIdleState : MagicSkeletonGroundedState
     {
-    }
-    public override void Enter()
-    {
-        base.Enter();
-
-        StateTimer = MagicSkeleton.idleTime;
-    }
-
-    public override void Update()
-    {
-        if (MagicSkeleton.BattleState.PlayerInAttackRange() && MagicSkeleton.BattleState.CanAttack())
+        public MagicSkeletonIdleState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, Enemy_Magic_Skeleton _magic_Skeleton_Enemy) : base(enemyBase, stateMachine, animBoolName, _magic_Skeleton_Enemy)
         {
-            Debug.WriteLine("MagicSkeletonIdleState: Magic Skeleton Attack State");
-            StateMachine.ChangeState(MagicSkeleton.AttackState);
-            return;
+        }
+        public override void Enter()
+        {
+            base.Enter();
+
+            StateTimer = MagicSkeleton.idleTime;
         }
 
-        base.Update();
-
-        if (MagicSkeleton.BattleState.PlayerInAttackRange() && !MagicSkeleton.BattleState.CanAttack())
+        public override void Update()
         {
-            Debug.WriteLine("MagicSkeletonIdleState: Magic Skeleton return");
-            return;
+            if (MagicSkeleton.BattleState.PlayerInAttackRange() && MagicSkeleton.BattleState.CanAttack())
+            {
+                Debug.WriteLine("MagicSkeletonIdleState: Magic Skeleton Attack State");
+                StateMachine.ChangeState(MagicSkeleton.AttackState);
+                return;
+            }
+
+            base.Update();
+
+            if (MagicSkeleton.BattleState.PlayerInAttackRange() && !MagicSkeleton.BattleState.CanAttack())
+            {
+                Debug.WriteLine("MagicSkeletonIdleState: Magic Skeleton return");
+                return;
+            }
+
+            if (StateTimer < 0)
+            {
+                Debug.WriteLine("MagicSkeletonIdleState: Magic Skeleton Move State");
+                StateMachine.ChangeState(MagicSkeleton.MoveState);
+            }
         }
 
-        if (StateTimer < 0)
+        public override void Exit()
         {
-            Debug.WriteLine("MagicSkeletonIdleState: Magic Skeleton Move State");
-            StateMachine.ChangeState(MagicSkeleton.MoveState);
+            base.Exit();
         }
-    }
-
-    public override void Exit()
-    {
-        base.Exit();
     }
 }

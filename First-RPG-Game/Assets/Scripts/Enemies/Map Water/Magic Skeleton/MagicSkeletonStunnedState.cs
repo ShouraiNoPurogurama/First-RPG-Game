@@ -1,36 +1,38 @@
-﻿using Enemies;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class MagicSkeletonStunnedState : EnemyState
+namespace Enemies.Map_Water.Magic_Skeleton
 {
-    private Enemy_Magic_Skeleton MagicSkeleton;
-    public MagicSkeletonStunnedState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, Enemy_Magic_Skeleton magic_Skeleton) : base(enemyBase, stateMachine, animBoolName)
+    public class MagicSkeletonStunnedState : EnemyState
     {
-        MagicSkeleton = magic_Skeleton;
-    }
-    public override void Enter()
-    {
-        base.Enter();
+        private Enemy_Magic_Skeleton MagicSkeleton;
+        public MagicSkeletonStunnedState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, Enemy_Magic_Skeleton magic_Skeleton) : base(enemyBase, stateMachine, animBoolName)
+        {
+            MagicSkeleton = magic_Skeleton;
+        }
+        public override void Enter()
+        {
+            base.Enter();
 
-        MagicSkeleton.FX.InvokeRepeating("RedColorBlink", 0, .1f);
+            MagicSkeleton.FX.InvokeRepeating("RedColorBlink", 0, .1f);
 
-        StateTimer = MagicSkeleton.stunDuration;
+            StateTimer = MagicSkeleton.stunDuration;
 
-        Rb.linearVelocity = new Vector2(-MagicSkeleton.FacingDir * MagicSkeleton.stunDirection.x, MagicSkeleton.stunDirection.y);
-    }
+            Rb.linearVelocity = new Vector2(-MagicSkeleton.FacingDir * MagicSkeleton.stunDirection.x, MagicSkeleton.stunDirection.y);
+        }
 
-    public override void Update()
-    {
-        base.Update();
+        public override void Update()
+        {
+            base.Update();
 
-        if (StateTimer <= 0)
-            StateMachine.ChangeState(MagicSkeleton.IdleState);
-    }
+            if (StateTimer <= 0)
+                StateMachine.ChangeState(MagicSkeleton.IdleState);
+        }
 
-    public override void Exit()
-    {
-        base.Exit();
+        public override void Exit()
+        {
+            base.Exit();
 
-        MagicSkeleton.FX.Invoke("CancelRedBlink", 0);
+            MagicSkeleton.FX.Invoke("CancelRedBlink", 0);
+        }
     }
 }

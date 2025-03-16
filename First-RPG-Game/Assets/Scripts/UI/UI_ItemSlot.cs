@@ -11,12 +11,12 @@ namespace UI
         [SerializeField] private Image itemImage;
         [SerializeField] private TextMeshProUGUI itemText;
 
-        private Assets.Scripts.UI.UI ui;
+        private UI ui;
         public InventoryItem item;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         private void Start()
         {
-            ui = GetComponentInParent<Assets.Scripts.UI.UI>();
+            ui = GetComponentInParent<UI>();
         }
         public void UpdateSlot(InventoryItem item)
         {

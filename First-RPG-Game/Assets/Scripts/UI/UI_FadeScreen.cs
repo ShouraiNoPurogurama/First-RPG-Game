@@ -1,12 +1,15 @@
 using UnityEngine;
 
-public class UI_FadeScreen : MonoBehaviour
+namespace UI
 {
-    private Animator anim;
-    private void Start()
+    public class UI_FadeScreen : MonoBehaviour
     {
-        anim = GetComponent<Animator>();
+        private Animator anim;
+        private void Start()
+        {
+            anim = GetComponent<Animator>();
+        }
+        public void FadeOut() => anim.SetTrigger("FadeOut");
+        public void FadeIn() => anim.SetTrigger("FadeIn");
     }
-    public void FadeOut() => anim.SetTrigger("FadeOut");
-    public void FadeIn() => anim.SetTrigger("FadeIn");
 }

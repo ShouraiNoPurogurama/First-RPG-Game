@@ -1,35 +1,38 @@
-﻿using MainCharacter;
-using System.Collections;
+﻿using System.Collections;
+using MainCharacter;
 using UnityEngine;
 
-public class WaterBarrierTrigger : MonoBehaviour
+namespace WaterMap
 {
-    private Animator anim;
-    [SerializeField] private float waterInterval = 5f;
-    [SerializeField] private float waterDuration = 1f;
-    private void Start()
+    public class WaterBarrierTrigger : MonoBehaviour
     {
-        anim = GetComponent<Animator>();
-        StartCoroutine(WaterColumnRoutine());
-    }
-
-    private IEnumerator WaterColumnRoutine()
-    {
-        while (true)
+        private Animator anim;
+        [SerializeField] private float waterInterval = 5f;
+        [SerializeField] private float waterDuration = 1f;
+        private void Start()
         {
-            yield return new WaitForSeconds(waterInterval);
-            anim.SetBool("isWaterPulse", true);
-            yield return new WaitForSeconds(waterDuration);
-            anim.SetBool("isWaterPulse", false);
-        }
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Player player = collision.GetComponent<Player>();
-        if (player != null)
-        {
-            player.Stats.TakeDamage(20);
+            anim = GetComponent<Animator>();
+            StartCoroutine(WaterColumnRoutine());
         }
 
+        private IEnumerator WaterColumnRoutine()
+        {
+            while (true)
+            {
+                yield return new WaitForSeconds(waterInterval);
+                anim.SetBool("isWaterPulse", true);
+                yield return new WaitForSeconds(waterDuration);
+                anim.SetBool("isWaterPulse", false);
+            }
+        }
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            Player player = collision.GetComponent<Player>();
+            if (player != null)
+            {
+                player.Stats.TakeDamage(20);
+            }
+
+        }
     }
 }

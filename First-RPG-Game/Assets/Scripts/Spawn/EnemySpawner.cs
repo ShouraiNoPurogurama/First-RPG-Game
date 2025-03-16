@@ -1,36 +1,39 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour
+namespace Spawn
 {
-    [Header("List spawn enemy")]
-    public List<SpawnPointData> spawnPointGroups;
-    [Header("Reference to Player")]
-    public Transform player;
-    public void SpawnAllEnemies()
+    public class EnemySpawner : MonoBehaviour
     {
-        Debug.LogWarning("SpawnPoint in");
-        foreach (SpawnPointData group in spawnPointGroups)
+        [Header("List spawn enemy")]
+        public List<SpawnPointData> spawnPointGroups;
+        [Header("Reference to Player")]
+        public Transform player;
+        public void SpawnAllEnemies()
         {
-            if (group.spawnPoint == null)
+            Debug.LogWarning("SpawnPoint in");
+            foreach (SpawnPointData group in spawnPointGroups)
             {
-                Debug.LogWarning("SpawnPoint trống, bỏ qua nhóm này.");
-                continue;
-            }
-
-            float playerX = player.position.x;
-            float spawnX = group.spawnPoint.position.x;
-
-            if (spawnX < playerX)
-            {
-                continue;
-            }
-
-            if (group.enemyList != null && group.enemyList.Count > 0)
-            {
-                foreach (EnemyData enemyData in group.enemyList)
+                if (group.spawnPoint == null)
                 {
-                    Instantiate(enemyData.enemyPrefab, group.spawnPoint.position, Quaternion.identity);
+                    Debug.LogWarning("SpawnPoint trống, bỏ qua nhóm này.");
+                    continue;
+                }
+
+                float playerX = player.position.x;
+                float spawnX = group.spawnPoint.position.x;
+
+                if (spawnX < playerX)
+                {
+                    continue;
+                }
+
+                if (group.enemyList != null && group.enemyList.Count > 0)
+                {
+                    foreach (EnemyData enemyData in group.enemyList)
+                    {
+                        Instantiate(enemyData.enemyPrefab, group.spawnPoint.position, Quaternion.identity);
+                    }
                 }
             }
         }

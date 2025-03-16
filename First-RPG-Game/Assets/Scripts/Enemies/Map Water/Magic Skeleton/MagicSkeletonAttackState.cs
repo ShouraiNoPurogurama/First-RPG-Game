@@ -1,35 +1,37 @@
-using Enemies;
 using UnityEngine;
 
-public class MagicSkeletonAttackState : EnemyState
+namespace Enemies.Map_Water.Magic_Skeleton
 {
-    private Enemy_Magic_Skeleton magicSkeleton;
-
-    public MagicSkeletonAttackState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, Enemy_Magic_Skeleton _enemy) : base(enemyBase, stateMachine, animBoolName)
+    public class MagicSkeletonAttackState : EnemyState
     {
-        magicSkeleton = _enemy;
-    }
-    public override void Enter()
-    {
-        base.Enter();
-    }
+        private Enemy_Magic_Skeleton magicSkeleton;
 
-    public override void Update()
-    {
-        base.Update();
-
-        magicSkeleton.SetZeroVelocity();
-
-        if (TriggerCalled)
+        public MagicSkeletonAttackState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, Enemy_Magic_Skeleton _enemy) : base(enemyBase, stateMachine, animBoolName)
         {
-            TriggerCalled = false;
-            magicSkeleton.lastTimeAttacked = Time.time;
-            StateMachine.ChangeState(magicSkeleton.BattleState);
+            magicSkeleton = _enemy;
         }
-    }
+        public override void Enter()
+        {
+            base.Enter();
+        }
 
-    public override void Exit()
-    {
-        base.Exit();
+        public override void Update()
+        {
+            base.Update();
+
+            magicSkeleton.SetZeroVelocity();
+
+            if (TriggerCalled)
+            {
+                TriggerCalled = false;
+                magicSkeleton.lastTimeAttacked = Time.time;
+                StateMachine.ChangeState(magicSkeleton.BattleState);
+            }
+        }
+
+        public override void Exit()
+        {
+            base.Exit();
+        }
     }
 }

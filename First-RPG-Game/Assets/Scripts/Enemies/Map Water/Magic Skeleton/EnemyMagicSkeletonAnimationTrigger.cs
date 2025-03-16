@@ -2,32 +2,35 @@
 using Stats;
 using UnityEngine;
 
-public class EnemyMagicSkeletonAnimationTrigger : MonoBehaviour
+namespace Enemies.Map_Water.Magic_Skeleton
 {
-    private Enemy_Magic_Skeleton Skeleton => GetComponentInParent<Enemy_Magic_Skeleton>();
-
-    private void AnimationTrigger()
+    public class EnemyMagicSkeletonAnimationTrigger : MonoBehaviour
     {
-        Skeleton.AnimationFinishTrigger();
-    }
+        private Enemy_Magic_Skeleton Skeleton => GetComponentInParent<Enemy_Magic_Skeleton>();
 
-    private void AttackTrigger()
-    {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(Skeleton.attackCheck.position, Skeleton.attackCheckRadius);
-
-        foreach (var hit in colliders)
+        private void AnimationTrigger()
         {
-            var player = hit.GetComponent<Player>();
-            if (player)
+            Skeleton.AnimationFinishTrigger();
+        }
+
+        private void AttackTrigger()
+        {
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(Skeleton.attackCheck.position, Skeleton.attackCheckRadius);
+
+            foreach (var hit in colliders)
             {
-                Skeleton.Stats.DoDamage(player.GetComponent<PlayerStats>());
+                var player = hit.GetComponent<Player>();
+                if (player)
+                {
+                    Skeleton.Stats.DoDamage(player.GetComponent<PlayerStats>());
+                }
             }
         }
+        private void SpecialAttackTrigger()
+        {
+            Skeleton.AnimationSpecialAttackTrigger();
+        }
+        private void OpenCounterWindow() => Skeleton.OpenCounterAttackWindow();
+        private void CloseCounterWindow() => Skeleton.CloseCounterAttackWindow();
     }
-    private void SpecialAttackTrigger()
-    {
-        Skeleton.AnimationSpecialAttackTrigger();
-    }
-    private void OpenCounterWindow() => Skeleton.OpenCounterAttackWindow();
-    private void CloseCounterWindow() => Skeleton.CloseCounterAttackWindow();
 }

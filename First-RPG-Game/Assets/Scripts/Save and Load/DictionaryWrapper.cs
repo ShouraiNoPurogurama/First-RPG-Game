@@ -1,19 +1,22 @@
 ﻿using System.Collections.Generic;
 
-[System.Serializable]
-public class DictionaryWrapper<T>
+namespace Save_and_Load
 {
-    public List<string> keys = new List<string>();
-    public List<T> values = new List<T>();
-
-    public DictionaryWrapper() { }
-
-    public DictionaryWrapper(Dictionary<string, T> dict)
+    [System.Serializable]
+    public class DictionaryWrapper<T>
     {
-        foreach (var kvp in dict)
+        public List<string> keys = new List<string>();
+        public List<T> values = new List<T>();
+
+        public DictionaryWrapper() { }
+
+        public DictionaryWrapper(Dictionary<string, T> dict)
         {
-            keys.Add(kvp.Key);
-            values.Add(kvp.Value);
+            foreach (var kvp in dict)
+            {
+                keys.Add(kvp.Key);
+                values.Add(kvp.Value);
+            }
         }
     }
 }

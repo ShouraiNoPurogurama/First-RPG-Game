@@ -1,35 +1,38 @@
-﻿using Enemies;
-using UnityEngine;
-public class MagicSkeletonDeadState : EnemyState
+﻿using UnityEngine;
+
+namespace Enemies.Map_Water.Magic_Skeleton
 {
-    private Enemy_Magic_Skeleton magicSkeleton;
-    public MagicSkeletonDeadState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, Enemy_Magic_Skeleton _enemy) : base(enemyBase, stateMachine, animBoolName)
+    public class MagicSkeletonDeadState : EnemyState
     {
-        magicSkeleton = _enemy;
-    }
-    public override void Enter()
-    {
-        base.Enter();
-
-        magicSkeleton.Animator.SetBool(magicSkeleton.LastAnimBoolName, true);
-        magicSkeleton.Animator.speed = 0;
-        magicSkeleton.CapsuleCollider.enabled = false;
-
-        StateTimer = .15f;
-    }
-
-    public override void Update()
-    {
-        base.Update();
-
-        if (StateTimer > 0)
+        private Enemy_Magic_Skeleton magicSkeleton;
+        public MagicSkeletonDeadState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, Enemy_Magic_Skeleton _enemy) : base(enemyBase, stateMachine, animBoolName)
         {
-            Rb.linearVelocity = new Vector2(0, 10);
+            magicSkeleton = _enemy;
         }
-    }
+        public override void Enter()
+        {
+            base.Enter();
 
-    public override void Exit()
-    {
-        base.Exit();
+            magicSkeleton.Animator.SetBool(magicSkeleton.LastAnimBoolName, true);
+            magicSkeleton.Animator.speed = 0;
+            magicSkeleton.CapsuleCollider.enabled = false;
+
+            StateTimer = .15f;
+        }
+
+        public override void Update()
+        {
+            base.Update();
+
+            if (StateTimer > 0)
+            {
+                Rb.linearVelocity = new Vector2(0, 10);
+            }
+        }
+
+        public override void Exit()
+        {
+            base.Exit();
+        }
     }
 }

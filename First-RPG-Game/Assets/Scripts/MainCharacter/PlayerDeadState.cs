@@ -1,3 +1,4 @@
+using Manager_Controller;
 using UnityEngine;
 
 namespace MainCharacter
@@ -14,7 +15,7 @@ namespace MainCharacter
         {
             base.Enter();
             GameManager.Instance.isDied = true;
-            GameObject.Find("Canvas").GetComponent<Assets.Scripts.UI.UI>().SwitchOnEndScreen();
+            GameObject.Find("Canvas").GetComponent<UI.UI>().SwitchOnEndScreen();
             Debug.Log("Died");
         }
 

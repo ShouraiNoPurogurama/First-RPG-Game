@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 
-[System.Serializable]
-public class EnemyData
+namespace Spawn
 {
-    public string enemyName;
-    public GameObject enemyPrefab;
+    [System.Serializable]
+    public class EnemyData
+    {
+        public string enemyName;
+        public GameObject enemyPrefab;
+    }
 }
 
