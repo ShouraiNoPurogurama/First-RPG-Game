@@ -1,27 +1,29 @@
 using MainCharacter;
-using System.Collections;
 using UnityEngine;
 
-public class FireBall : MonoBehaviour
+namespace Enemies.Enemies_Fire
 {
-
-    void Start()
+    public class FireBall : MonoBehaviour
     {
-       
-    }
-    void Update()
-    {
-        
-    }
 
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Player player = collision.GetComponent<Player>();
-        if (player != null)
+        void Start()
         {
-            player.Stats.TakeDamage(1,Color.yellow);
+       
+        }
+        void Update()
+        {
+        
         }
 
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            Player player = collision.GetComponent<Player>();
+            if (player != null)
+            {
+                player.Stats.TakeDamage(1,Color.yellow);
+            }
+
+        }
     }
 }

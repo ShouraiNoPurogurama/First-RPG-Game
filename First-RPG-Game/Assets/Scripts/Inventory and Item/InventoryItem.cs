@@ -1,18 +1,20 @@
 ﻿using System;
-using UnityEngine;
 
-[Serializable]
-public class InventoryItem
+namespace Inventory_and_Item
 {
-    public ItemData data;
-    public int stackSize;
-
-    public InventoryItem(ItemData newItemData)
+    [Serializable]
+    public class InventoryItem
     {
-        data = newItemData;
-        AddStack();
-    }
+        public ItemData data;
+        public int stackSize;
 
-    public void AddStack() => stackSize++;
-    public void RemoveStack() => stackSize--;
+        public InventoryItem(ItemData newItemData)
+        {
+            data = newItemData;
+            AddStack();
+        }
+
+        public void AddStack() => stackSize++;
+        public void RemoveStack() => stackSize--;
+    }
 }

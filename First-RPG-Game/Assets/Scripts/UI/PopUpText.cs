@@ -1,40 +1,43 @@
 using TMPro;
 using UnityEngine;
 
-public class PopUpText : MonoBehaviour
+namespace UI
 {
-
-    private TextMeshPro myText;
-
-    [SerializeField] private float speed;
-    [SerializeField] private float desapearanceSpeed;
-    [SerializeField] private float colorDesapearanceSpeed;
-
-    [SerializeField] private float lifeTime;
-
-    private float textTimer;
-    void Start()
+    public class PopUpText : MonoBehaviour
     {
-        myText = GetComponent<TextMeshPro>();
-        textTimer = lifeTime;
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        transform.position = 
-            Vector2.MoveTowards(transform.position, 
-            new Vector2(transform.position.x, transform.position.y + 1), speed * Time.deltaTime);
-       textTimer -= Time.deltaTime;
+        private TextMeshPro myText;
 
-        if(textTimer < 0)
+        [SerializeField] private float speed;
+        [SerializeField] private float desapearanceSpeed;
+        [SerializeField] private float colorDesapearanceSpeed;
+
+        [SerializeField] private float lifeTime;
+
+        private float textTimer;
+        void Start()
         {
-            float alpha = myText.color.a - colorDesapearanceSpeed * Time.deltaTime;
-            myText.color = new Color(myText.color.r, myText.color.g,myText.color.b, alpha);
+            myText = GetComponent<TextMeshPro>();
+            textTimer = lifeTime;
+        }
 
-            if (myText.color.a < 50) speed = desapearanceSpeed;
+        // Update is called once per frame
+        void Update()
+        {
+            transform.position = 
+                Vector2.MoveTowards(transform.position, 
+                    new Vector2(transform.position.x, transform.position.y + 1), speed * Time.deltaTime);
+            textTimer -= Time.deltaTime;
 
-            if(myText.color.a < 0) Destroy(gameObject);
+            if(textTimer < 0)
+            {
+                float alpha = myText.color.a - colorDesapearanceSpeed * Time.deltaTime;
+                myText.color = new Color(myText.color.r, myText.color.g,myText.color.b, alpha);
+
+                if (myText.color.a < 50) speed = desapearanceSpeed;
+
+                if(myText.color.a < 0) Destroy(gameObject);
+            }
         }
     }
 }
