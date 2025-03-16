@@ -1,0 +1,818 @@
+fileFormatVersion: 2
+guid: 201ab96072af6da4e85229396d8f11d5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -208517475370129656
+    second: ImpalerBoss_attack1_0
+  - first:
+      213: -4504802615904481884
+    second: ImpalerBoss_attack1_1
+  - first:
+      213: -7110272750803015136
+    second: ImpalerBoss_attack1_2
+  - first:
+      213: -3859993534982482789
+    second: ImpalerBoss_attack1_3
+  - first:
+      213: 5404611725140142836
+    second: ImpalerBoss_attack1_4
+  - first:
+      213: -760987695880600014
+    second: ImpalerBoss_attack1_5
+  - first:
+      213: 6368905748091934624
+    second: ImpalerBoss_attack1_6
+  - first:
+      213: 2370661748094869658
+    second: ImpalerBoss_attack1_7
+  - first:
+      213: -2952301884378096569
+    second: ImpalerBoss_attack1_8
+  - first:
+      213: 6267387566624751820
+    second: ImpalerBoss_attack1_9
+  - first:
+      213: -7858093428780185127
+    second: ImpalerBoss_attack1_10
+  - first:
+      213: -8682059598947055629
+    second: ImpalerBoss_attack1_11
+  - first:
+      213: 1965498481131138291
+    second: ImpalerBoss_attack1_12
+  - first:
+      213: 4357308254792624124
+    second: ImpalerBoss_attack1_13
+  - first:
+      213: -5168694965573977894
+    second: ImpalerBoss_attack1_14
+  - first:
+      213: -6450573470476115404
+    second: ImpalerBoss_attack1_15
+  - first:
+      213: 4037992386643509515
+    second: ImpalerBoss_attack1_16
+  - first:
+      213: 6914824193514736919
+    second: ImpalerBoss_attack1_17
+  - first:
+      213: -9039337548017072341
+    second: ImpalerBoss_attack1_18
+  - first:
+      213: -8104131186714351957
+    second: ImpalerBoss_attack1_19
+  - first:
+      213: 1082271792852001855
+    second: ImpalerBoss_attack1_20
+  - first:
+      213: -8364978535935780368
+    second: ImpalerBoss_attack1_21
+  - first:
+      213: -7452272273841653083
+    second: ImpalerBoss_attack1_22
+  - first:
+      213: -7626262123429309601
+    second: ImpalerBoss_attack1_23
+  - first:
+      213: -1598364932018515903
+    second: ImpalerBoss_attack1_24
+  - first:
+      213: -275397692956626818
+    second: ImpalerBoss_attack1_25
+  - first:
+      213: -7437176487978435467
+    second: ImpalerBoss_attack1_26
+  - first:
+      213: 7092859637999760236
+    second: ImpalerBoss_attack1_27
+  - first:
+      213: 8931790349639641255
+    second: ImpalerBoss_attack1_28
+  - first:
+      213: -5563945303855786540
+    second: ImpalerBoss_attack1_29
+  - first:
+      213: -7045272982722381941
+    second: ImpalerBoss_attack1_30
+  - first:
+      213: -1625703984180412244
+    second: ImpalerBoss_attack1_31
+  - first:
+      213: 7808673884046441443
+    second: ImpalerBoss_attack1_32
+  - first:
+      213: -2017473125787870066
+    second: ImpalerBoss_attack1_33
+  - first:
+      213: -5187074811979122885
+    second: ImpalerBoss_attack1_34
+  - first:
+      213: -884173770919184576
+    second: ImpalerBoss_attack1_35
+  - first:
+      213: 2120497681348927489
+    second: ImpalerBoss_attack1_36
+  - first:
+      213: 4181249261553077861
+    second: ImpalerBoss_attack1_37
+  - first:
+      213: -5400084308025210208
+    second: ImpalerBoss_attack1_38
+  - first:
+      213: -8272098675353324317
+    second: ImpalerBoss_attack1_39
+  - first:
+      213: -4136510173773350540
+    second: ImpalerBoss_attack1_40
+  - first:
+      213: 1088910717563516720
+    second: ImpalerBoss_attack1_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1060
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8072a1ff5723b1df0800000000000000
+      internalID: -208517475370129656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1060
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad43c763e9bb71c0800000000000000
+      internalID: -4504802615904481884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1060
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a2f30ea9c335d90800000000000000
+      internalID: -7110272750803015136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1060
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b949010c45c8e6ac0800000000000000
+      internalID: -3859993534982482789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1060
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4faa3e9aab9010b40800000000000000
+      internalID: 5404611725140142836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 795
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2360894f8bd6075f0800000000000000
+      internalID: -760987695880600014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_6
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 795
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a796f2b806e26850800000000000000
+      internalID: 6368905748091934624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_7
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 795
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a902dc1bc4846e020800000000000000
+      internalID: 2370661748094869658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_8
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 795
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74c5deff3115707d0800000000000000
+      internalID: -2952301884378096569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_9
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 795
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc04e5a29cb3af650800000000000000
+      internalID: 6267387566624751820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 530
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d9c9b519a172f290800000000000000
+      internalID: -7858093428780185127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_11
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 530
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f78df55bc0238780800000000000000
+      internalID: -8682059598947055629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_12
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 530
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc2466747ad64b10800000000000000
+      internalID: 1965498481131138291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_13
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 530
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7aacf85c4487c30800000000000000
+      internalID: 4357308254792624124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_14
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 530
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad8fc90505b1548b0800000000000000
+      internalID: -5168694965573977894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 265
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43266beea95fa76a0800000000000000
+      internalID: -6450573470476115404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_16
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 265
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b014e937ea4d90830800000000000000
+      internalID: 4037992386643509515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_17
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 265
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d09bab7f366ff50800000000000000
+      internalID: 6914824193514736919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_18
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 265
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b27879d7462dd8280800000000000000
+      internalID: -9039337548017072341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_19
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 265
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6e9ba8f97588f80800000000000000
+      internalID: -8104131186714351957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f346e532670050f00800000000000000
+      internalID: 1082271792852001855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_21
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f9d7c35750a9eb80800000000000000
+      internalID: -8364978535935780368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_22
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aafc2cc9d5349890800000000000000
+      internalID: -7452272273841653083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_23
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f53daf021031a2690800000000000000
+      internalID: -7626262123429309601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_attack1_24
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1405895109771d9e0800000000000000
+      internalID: -1598364932018515903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b21eb9a208ddce6429fb0779503d50a8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ImpalerBoss_attack1_0: -208517475370129656
+      ImpalerBoss_attack1_1: -4504802615904481884
+      ImpalerBoss_attack1_10: -7858093428780185127
+      ImpalerBoss_attack1_11: -8682059598947055629
+      ImpalerBoss_attack1_12: 1965498481131138291
+      ImpalerBoss_attack1_13: 4357308254792624124
+      ImpalerBoss_attack1_14: -5168694965573977894
+      ImpalerBoss_attack1_15: -6450573470476115404
+      ImpalerBoss_attack1_16: 4037992386643509515
+      ImpalerBoss_attack1_17: 6914824193514736919
+      ImpalerBoss_attack1_18: -9039337548017072341
+      ImpalerBoss_attack1_19: -8104131186714351957
+      ImpalerBoss_attack1_2: -7110272750803015136
+      ImpalerBoss_attack1_20: 1082271792852001855
+      ImpalerBoss_attack1_21: -8364978535935780368
+      ImpalerBoss_attack1_22: -7452272273841653083
+      ImpalerBoss_attack1_23: -7626262123429309601
+      ImpalerBoss_attack1_24: -1598364932018515903
+      ImpalerBoss_attack1_3: -3859993534982482789
+      ImpalerBoss_attack1_4: 5404611725140142836
+      ImpalerBoss_attack1_5: -760987695880600014
+      ImpalerBoss_attack1_6: 6368905748091934624
+      ImpalerBoss_attack1_7: 2370661748094869658
+      ImpalerBoss_attack1_8: -2952301884378096569
+      ImpalerBoss_attack1_9: 6267387566624751820
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
