@@ -21,7 +21,7 @@ namespace Enemies.Skeleton
 
             // _player = GameObject.Find("Player").transform;
             AttachCurrentPlayerIfNotExists();
-
+            
             //if player in attack range, block skeleton movement
             // if (PlayerInAttackRange() && !CanAttack())
             // {

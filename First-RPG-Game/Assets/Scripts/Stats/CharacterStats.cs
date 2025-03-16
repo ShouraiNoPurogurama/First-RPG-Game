@@ -1,6 +1,6 @@
-using System;
 using Enemies;
 using MainCharacter;
+using System;
 using UI;
 using Unity.Mathematics;
 using UnityEngine;
@@ -82,6 +82,8 @@ namespace Stats
         [SerializeField] public int currentHp;
 
         public Action OnHealthChanged;
+
+        public bool isDead { get; private set; }
 
         public CharacterStats(Stat maxHp)
         {
@@ -473,8 +475,16 @@ namespace Stats
 
         protected virtual void Die()
         {
+            isDead = false;
         }
 
+        public void KillEntity()
+        {
+            if (!isDead)
+            {
+                Die();
+            }
+        }
         private bool CanCrit()
         {
             int totalCritChance = critChance.ModifiedValue + agility.ModifiedValue;

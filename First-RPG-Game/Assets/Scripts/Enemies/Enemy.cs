@@ -129,15 +129,15 @@ namespace Enemies
         {
             moveSpeed *= 1 - slowPercentage;
             Animator.speed *= 1 - slowPercentage;
-            
+
             Invoke("ReturnDefaultSpeed", slowDuration);
         }
 
         protected override void ReturnDefaultSpeed()
         {
             base.ReturnDefaultSpeed();
-            
-            moveSpeed = defaultMoveSpeed;
+
+            moveSpeed = _defaultMoveSpeed;
         }
 
         public virtual void AssignLastAnimBoolName(string animName)
