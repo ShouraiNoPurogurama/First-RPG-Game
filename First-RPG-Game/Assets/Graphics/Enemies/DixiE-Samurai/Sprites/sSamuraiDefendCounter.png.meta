@@ -1,0 +1,680 @@
+fileFormatVersion: 2
+guid: 81fadd58d91b8d04baa022520f323a0c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6844719208754866157
+    second: sSamuraiDefendCounter_0
+  - first:
+      213: -2737263987158361588
+    second: sSamuraiDefendCounter_1
+  - first:
+      213: 5345865705378059690
+    second: sSamuraiDefendCounter_2
+  - first:
+      213: -7812843810621334648
+    second: sSamuraiDefendCounter_3
+  - first:
+      213: 4801903643607392522
+    second: sSamuraiDefendCounter_4
+  - first:
+      213: -6161820802333772142
+    second: sSamuraiDefendCounter_5
+  - first:
+      213: 5857383645203561764
+    second: sSamuraiDefendCounter_6
+  - first:
+      213: -7031075898685214702
+    second: sSamuraiDefendCounter_7
+  - first:
+      213: 1758256867605444212
+    second: sSamuraiDefendCounter_8
+  - first:
+      213: -2315672751253459752
+    second: sSamuraiDefendCounter_9
+  - first:
+      213: -6461447255475635443
+    second: sSamuraiDefendCounter_10
+  - first:
+      213: 2619471684301930201
+    second: sSamuraiDefendCounter_11
+  - first:
+      213: -7583681755425993058
+    second: sSamuraiDefendCounter_12
+  - first:
+      213: -1975227408621933566
+    second: sSamuraiDefendCounter_13
+  - first:
+      213: 8065341797228917615
+    second: sSamuraiDefendCounter_14
+  - first:
+      213: 1089908705013250895
+    second: sSamuraiDefendCounter_15
+  - first:
+      213: -8538953479376504851
+    second: sSamuraiDefendCounter_16
+  - first:
+      213: 8370529406967516325
+    second: sSamuraiDefendCounter_17
+  - first:
+      213: 8077217315189894578
+    second: sSamuraiDefendCounter_18
+  - first:
+      213: 4589418430803281393
+    second: sSamuraiDefendCounter_19
+  - first:
+      213: 2550199562511264937
+    second: sSamuraiDefendCounter_20
+  - first:
+      213: -3005943960660829770
+    second: sSamuraiDefendCounter_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_0
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 14
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3189fdef42ca201a0800000000000000
+      internalID: -6844719208754866157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_1
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 22
+        width: 109
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ad4f408e8430ad0800000000000000
+      internalID: -2737263987158361588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 14
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa590021984503a40800000000000000
+      internalID: 5345865705378059690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_3
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 25
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88b5e4ec2f3339390800000000000000
+      internalID: -7812843810621334648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_4
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 26
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a016fda1ce9c3a240800000000000000
+      internalID: 4801903643607392522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_5
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 23
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296784380a0dc7aa0800000000000000
+      internalID: -6161820802333772142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_6
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 22
+        width: 41
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d7a8d346b994150800000000000000
+      internalID: 5857383645203561764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_7
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 21
+        width: 29
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210be0ee8b99c6e90800000000000000
+      internalID: -7031075898685214702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_8
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 23
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47673813e45966810800000000000000
+      internalID: 1758256867605444212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_9
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 22
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dc6c75d6e31ddfd0800000000000000
+      internalID: -2315672751253459752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_10
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 25
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0bb37294f35456a0800000000000000
+      internalID: -6461447255475635443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_11
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 21
+        width: 63
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9deb20a4e9b3a5420800000000000000
+      internalID: 2619471684301930201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_12
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 24
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e093e9f9951c690800000000000000
+      internalID: -7583681755425993058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_13
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 14
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20c697613259694e0800000000000000
+      internalID: -1975227408621933566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_14
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 23
+        width: 34
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f63b0ffe1a9ddef60800000000000000
+      internalID: 8065341797228917615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_15
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 24
+        width: 31
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4bbbef4132202f00800000000000000
+      internalID: 1089908705013250895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_16
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 23
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de77d244d0b8f7980800000000000000
+      internalID: -8538953479376504851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_17
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 24
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac824c85281a2470800000000000000
+      internalID: 8370529406967516325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_18
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 24
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd278d6a5a081070800000000000000
+      internalID: 8077217315189894578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_19
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 14
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f509ad3fb3e0bf30800000000000000
+      internalID: 4589418430803281393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_20
+      rect:
+        serializedVersion: 2
+        x: 1955
+        y: 14
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ac27d59df0246320800000000000000
+      internalID: 2550199562511264937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sSamuraiDefendCounter_21
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 14
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b9941ad4edb846d0800000000000000
+      internalID: -3005943960660829770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
