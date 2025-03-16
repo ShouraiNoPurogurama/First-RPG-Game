@@ -1,0 +1,1976 @@
+fileFormatVersion: 2
+guid: fee48c1602c22c44b8badfa18ddaa154
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6512886681320080702
+    second: fireQueen_0
+  - first:
+      213: -6493244300500258977
+    second: fireQueen_1
+  - first:
+      213: 3985332649675094645
+    second: fireQueen_2
+  - first:
+      213: 3013088815202067483
+    second: fireQueen_3
+  - first:
+      213: 8284750141673098106
+    second: fireQueen_4
+  - first:
+      213: -3780318115254267482
+    second: fireQueen_5
+  - first:
+      213: -4767466577486143311
+    second: fireQueen_6
+  - first:
+      213: 3336390318234991484
+    second: fireQueen_7
+  - first:
+      213: -6332366468224356224
+    second: fireQueen_8
+  - first:
+      213: -8437537240611991282
+    second: fireQueen_9
+  - first:
+      213: 4458672331988257365
+    second: fireQueen_10
+  - first:
+      213: -3853062270057847615
+    second: fireQueen_11
+  - first:
+      213: -1176708602233300907
+    second: fireQueen_12
+  - first:
+      213: -6726852482035789989
+    second: fireQueen_13
+  - first:
+      213: -800268002130325069
+    second: fireQueen_14
+  - first:
+      213: -5542434119396973169
+    second: fireQueen_15
+  - first:
+      213: 5458426157100558232
+    second: fireQueen_16
+  - first:
+      213: -1797607301585023641
+    second: fireQueen_17
+  - first:
+      213: -1558243019618697713
+    second: fireQueen_18
+  - first:
+      213: -6825931958527488979
+    second: fireQueen_19
+  - first:
+      213: 4528848793951785534
+    second: fireQueen_20
+  - first:
+      213: 6312871480954384449
+    second: fireQueen_21
+  - first:
+      213: 3300382934244698547
+    second: fireQueen_22
+  - first:
+      213: -8678561079212840527
+    second: fireQueen_23
+  - first:
+      213: 6718032675107967712
+    second: fireQueen_24
+  - first:
+      213: -6469082196633600052
+    second: fireQueen_25
+  - first:
+      213: -8853367125802869614
+    second: fireQueen_26
+  - first:
+      213: -1028734194631624648
+    second: fireQueen_27
+  - first:
+      213: -4692501484766582324
+    second: fireQueen_28
+  - first:
+      213: -7264846825654261779
+    second: fireQueen_29
+  - first:
+      213: -8331753349012496340
+    second: fireQueen_30
+  - first:
+      213: 8401870036019518662
+    second: fireQueen_31
+  - first:
+      213: 7953612761948414383
+    second: fireQueen_32
+  - first:
+      213: -4145410521125033286
+    second: fireQueen_33
+  - first:
+      213: 4011890726173083195
+    second: fireQueen_34
+  - first:
+      213: -5590559132404743555
+    second: fireQueen_35
+  - first:
+      213: 7239276425566323057
+    second: fireQueen_36
+  - first:
+      213: 2238291942124267167
+    second: fireQueen_37
+  - first:
+      213: 6578328591712990368
+    second: fireQueen_38
+  - first:
+      213: 7801641630020161363
+    second: fireQueen_39
+  - first:
+      213: 3255217215069504877
+    second: fireQueen_40
+  - first:
+      213: -6037913343384701070
+    second: fireQueen_41
+  - first:
+      213: 7409254445294536966
+    second: fireQueen_42
+  - first:
+      213: -8914026555994782417
+    second: fireQueen_43
+  - first:
+      213: -3786761601981255195
+    second: fireQueen_44
+  - first:
+      213: 3798615104295603526
+    second: fireQueen_45
+  - first:
+      213: 9063685921826430512
+    second: fireQueen_46
+  - first:
+      213: -3560001871091446897
+    second: fireQueen_47
+  - first:
+      213: 8160606554711669614
+    second: fireQueen_48
+  - first:
+      213: 287112749538302056
+    second: fireQueen_49
+  - first:
+      213: 8912249330661669172
+    second: fireQueen_50
+  - first:
+      213: -1123901046882662762
+    second: fireQueen_51
+  - first:
+      213: 3528589762970730719
+    second: fireQueen_52
+  - first:
+      213: -5772827256446111251
+    second: fireQueen_53
+  - first:
+      213: -8581507091966045515
+    second: fireQueen_54
+  - first:
+      213: -2588212088743631806
+    second: fireQueen_55
+  - first:
+      213: -6247560533119753476
+    second: fireQueen_56
+  - first:
+      213: -7377822111130349187
+    second: fireQueen_57
+  - first:
+      213: 8115233049968399000
+    second: fireQueen_58
+  - first:
+      213: -5176661359780882569
+    second: fireQueen_59
+  - first:
+      213: 5293295248141392417
+    second: fireQueen_60
+  - first:
+      213: 4158096934582179888
+    second: fireQueen_61
+  - first:
+      213: 397907997227219112
+    second: fireQueen_62
+  - first:
+      213: -3047667702301532982
+    second: fireQueen_63
+  - first:
+      213: 7842738085744614618
+    second: fireQueen_64
+  - first:
+      213: 394042260564727736
+    second: fireQueen_65
+  - first:
+      213: -1989633205232083148
+    second: fireQueen_66
+  - first:
+      213: -123915517601430323
+    second: fireQueen_67
+  - first:
+      213: -2502064636191045671
+    second: fireQueen_68
+  - first:
+      213: -2627627168450919290
+    second: fireQueen_69
+  - first:
+      213: -5534532688900907370
+    second: fireQueen_70
+  - first:
+      213: -2995605737885373869
+    second: fireQueen_71
+  - first:
+      213: 4632757465434326449
+    second: fireQueen_72
+  - first:
+      213: -7157399934311289278
+    second: fireQueen_73
+  - first:
+      213: 5646296759119937369
+    second: fireQueen_74
+  - first:
+      213: 2187469501512863135
+    second: fireQueen_75
+  - first:
+      213: 3016184925460324128
+    second: fireQueen_76
+  - first:
+      213: -3509330359209331729
+    second: fireQueen_77
+  - first:
+      213: -4820056491555316076
+    second: fireQueen_78
+  - first:
+      213: -3315388008102421181
+    second: fireQueen_79
+  - first:
+      213: 3980160734641814710
+    second: fireQueen_80
+  - first:
+      213: -3771435683142274912
+    second: fireQueen_81
+  - first:
+      213: -9141593470518604323
+    second: fireQueen_82
+  - first:
+      213: 987666774571135669
+    second: fireQueen_83
+  - first:
+      213: -5075293905249637108
+    second: fireQueen_84
+  - first:
+      213: 7354561291559095026
+    second: fireQueen_85
+  - first:
+      213: 4901964357823663090
+    second: fireQueen_86
+  - first:
+      213: -5462500410824628838
+    second: fireQueen_87
+  - first:
+      213: -1592629906278616428
+    second: fireQueen_88
+  - first:
+      213: 4447191048409247594
+    second: fireQueen_89
+  - first:
+      213: 420701992210864268
+    second: fireQueen_90
+  - first:
+      213: -4863065627148693797
+    second: fireQueen_91
+  - first:
+      213: 2338567998229131146
+    second: fireQueen_92
+  - first:
+      213: -6383696360895679101
+    second: fireQueen_93
+  - first:
+      213: 4286845562077763606
+    second: fireQueen_94
+  - first:
+      213: 1266677895823253967
+    second: fireQueen_95
+  - first:
+      213: 1562861073177536249
+    second: fireQueen_96
+  - first:
+      213: 1350452367415834695
+    second: fireQueen_97
+  - first:
+      213: 3336909233572662830
+    second: fireQueen_98
+  - first:
+      213: -2178293361221516339
+    second: fireQueen_99
+  - first:
+      213: -6099660436669561371
+    second: fireQueen_100
+  - first:
+      213: -2721159271750502400
+    second: fireQueen_101
+  - first:
+      213: -8731857054474044740
+    second: fireQueen_102
+  - first:
+      213: 6629959657930530827
+    second: fireQueen_103
+  - first:
+      213: 1341342593358472424
+    second: fireQueen_104
+  - first:
+      213: 3482858114498147851
+    second: fireQueen_105
+  - first:
+      213: 1464986377758610144
+    second: fireQueen_106
+  - first:
+      213: -5009563421219468559
+    second: fireQueen_107
+  - first:
+      213: 2855687852474755157
+    second: fireQueen_108
+  - first:
+      213: 6733889534100345455
+    second: fireQueen_109
+  - first:
+      213: -629450903610847209
+    second: fireQueen_110
+  - first:
+      213: -2984347621787296009
+    second: fireQueen_111
+  - first:
+      213: -9000674836441137
+    second: fireQueen_112
+  - first:
+      213: -512417572863067729
+    second: fireQueen_113
+  - first:
+      213: 1667225553069046618
+    second: fireQueen_114
+  - first:
+      213: -5325923272304702235
+    second: fireQueen_115
+  - first:
+      213: -2563552722704868189
+    second: fireQueen_116
+  - first:
+      213: 6328978391132673180
+    second: fireQueen_117
+  - first:
+      213: -4903397257661857548
+    second: fireQueen_118
+  - first:
+      213: -6626713674058869501
+    second: fireQueen_119
+  - first:
+      213: -367842710870309580
+    second: fireQueen_120
+  - first:
+      213: 5327815980357076754
+    second: fireQueen_121
+  - first:
+      213: -8876873446840830289
+    second: fireQueen_122
+  - first:
+      213: -6396307877308716627
+    second: fireQueen_123
+  - first:
+      213: 3870366821663318859
+    second: fireQueen_124
+  - first:
+      213: 1793936873298488502
+    second: fireQueen_125
+  - first:
+      213: 2374626884072302030
+    second: fireQueen_126
+  - first:
+      213: -569829458902850907
+    second: fireQueen_127
+  - first:
+      213: -5498473558547739390
+    second: fireQueen_128
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fireQueen_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a351470f42d094c9f34d8f20cf2ca4
+      internalID: 1840382674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_1
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 3000
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7a3eeec788c7743befbdf783a7b136
+      internalID: 1539149659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_2
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3000
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485c2cbba6d2cd74b800da569bd54e8c
+      internalID: 1594050640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_3
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 3000
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89450ae4f69abb144b325444bde467a7
+      internalID: 625114888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_4
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3000
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3601f49febc3074dac1b0f5b2270f4b
+      internalID: -856851598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2750
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c362738c118b6fa4786140d184f32bf3
+      internalID: -1084724434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_6
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 2750
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241c597a721cf424393aad76792f08e7
+      internalID: 1583908949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_7
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2750
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bbbdfa495d3af94fb9729c196fff7a7
+      internalID: 434927453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_8
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2750
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51129d366f908464d8f8c978f11a1056
+      internalID: -1925079391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_9
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2750
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5742ba0f546e94c8a5ba9b1ba0c4a2
+      internalID: -1541077718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2500
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78455e5eaf9c374dab2ba576fb16d8b
+      internalID: 1932470296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_11
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 2500
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3b450aca2c30b4abff4fc6ddfc4196
+      internalID: -1162241356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_12
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2500
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6033ecd9ceb584d80d85196601fa06
+      internalID: 729876568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_13
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2500
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815734f51c6773e438821619c811ff42
+      internalID: -354200862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_14
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2500
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14fb4f7f61bb0b45b7f80cc69567751
+      internalID: 1782780918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2250
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b6ba4e71da7cf4b8c491eec123d0e9
+      internalID: 1792178738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_16
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 2250
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92c2ba66c9efa14ba8b9bfca90774c0
+      internalID: -1562246151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_17
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2250
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0d3f886ea00584dbc1074bcf7d5201
+      internalID: 1561404219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_18
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2250
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6de9cb6a533d8341bacb7f8d872a236
+      internalID: -710303351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_19
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2250
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3e49815ffce0840b6ec93e3e5beb67
+      internalID: 1135852814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aec2843ff6a68b409cd5493a0bd31a7
+      internalID: -1401353280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_21
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 2000
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25062411554d67a4392f30458f263282
+      internalID: 1386423064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_22
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2000
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a8db8998fd1da4f917b1118aac2922
+      internalID: 1730340971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_23
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2000
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e78fa29ce267f46a4259026422d56d
+      internalID: 1554035479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_24
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2000
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2dd1596e7f69b4d92868f36b604b1e
+      internalID: 1727367111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1750
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977b8052cac7ca34fae8f5f1b82cc60f
+      internalID: 75254297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_26
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1750
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ea8289c86c323449c14065d466f905
+      internalID: 303313138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_27
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1750
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 336609568b1870d4aaa18597ed831b5e
+      internalID: 173128811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_28
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1750
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2249ffbc05a1dee42820236289f4a549
+      internalID: -2016457352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_29
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1750
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded5f4ffe6c56aa44a5ee3fe56b579dd
+      internalID: 769622774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807947f1df2e7f745a5f791fa4f24d90
+      internalID: 1282289518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_31
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1500
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabf2c1d1c9ac6a4a8a0569ee0c00c5a
+      internalID: -2121587421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_32
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1500
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8db04af331632a4aaf3127ee46b9a57
+      internalID: 374823840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_33
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1500
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bce260e42a525c41a8079bcd8a87277
+      internalID: 945389169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_34
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1500
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9db0d9ae74df54db6b7c3d67ec638f
+      internalID: 2055149846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1250
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8563b83369a715f4a9c04f989f9d67f5
+      internalID: -974467099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_36
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1250
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aacb6da1a6279fc4cb4b37e54d251444
+      internalID: 1027621456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_37
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1250
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d3164b143ccbb4b80f3a3459cadd1b
+      internalID: -1594816872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_38
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1250
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115c2d8d9d027404bbf7147a0f3d85a0
+      internalID: 1807935667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_39
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1250
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193f6ae5279864a4fb20cfce57f49677
+      internalID: -120983719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fac328a76445c441994686011b3fc71
+      internalID: -1873565986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_41
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5b5b8d84ca34b41ba9bc420a7e1adc
+      internalID: 151369388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_42
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8f853f1067a0645959e8e71c7cc061
+      internalID: 509522070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_43
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5283a32f8041f4aa84cfd39ee9813f
+      internalID: 221173774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_44
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1000
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33e4a806ffe56b40a9a64d5483e67f9
+      internalID: 558104361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082f255495a8bef4e96fed06e05ccdaa
+      internalID: -1000658735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_46
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 750
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c4348f451e01a45ad284f3eaf60a57
+      internalID: -1973392090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_47
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 750
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979b1679c21cd7547989bba349a569df
+      internalID: 526563822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_48
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 750
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b44995c5e3db840ae958eb7e512ba1
+      internalID: 1865331844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_49
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 750
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae64cedcc9b75384db63dbec4e529239
+      internalID: 632380027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd021d7caa75e149b8e921710c858e7
+      internalID: -564936265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_51
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 500
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054912b1aadebe1478359bed27f760aa
+      internalID: 1946440323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_52
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9a91b299e39f94aaeec0d985f81f30
+      internalID: -752622354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_53
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 500
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d40c97d8842e24aa7b7ab572ec08b3
+      internalID: 822318910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_54
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 500
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb26e0b42ea2f247b40a6430e82c79a
+      internalID: -942088795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea6ee6a98dab6c4ca6a72bb912b6a13
+      internalID: 194022310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_56
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 250
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159fee38297ff244a8b2f2dad11a9819
+      internalID: 1041579944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_57
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 250
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceace12014c0e2b48aee3d61a266efba
+      internalID: 1345997399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_58
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 250
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2670b4bb1cb0726469e976690a49deaa
+      internalID: -1280443403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_59
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 250
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51874a6826046f141b7fc3a0097cd98f
+      internalID: 794730174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ab69715e2c14b4a8be2a3ec8eec2a3
+      internalID: -858434992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_61
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca76e05d68ff3840b3d0023020bef59
+      internalID: 1815334039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_62
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27fe15765b106204d996b884171abf72
+      internalID: -1226070809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireQueen_63
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 250
+        height: 250
+      alignment: 9
+      pivot: {x: 0.469, y: 0.361}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c827ead01a1624390ed6c29d25db25
+      internalID: -1134130297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2162a5bbb74c73a41ab57e84c544d356
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fireQueen_0: 1840382674
+      fireQueen_1: 1539149659
+      fireQueen_10: 1932470296
+      fireQueen_11: -1162241356
+      fireQueen_12: 729876568
+      fireQueen_13: -354200862
+      fireQueen_14: 1782780918
+      fireQueen_15: 1792178738
+      fireQueen_16: -1562246151
+      fireQueen_17: 1561404219
+      fireQueen_18: -710303351
+      fireQueen_19: 1135852814
+      fireQueen_2: 1594050640
+      fireQueen_20: -1401353280
+      fireQueen_21: 1386423064
+      fireQueen_22: 1730340971
+      fireQueen_23: 1554035479
+      fireQueen_24: 1727367111
+      fireQueen_25: 75254297
+      fireQueen_26: 303313138
+      fireQueen_27: 173128811
+      fireQueen_28: -2016457352
+      fireQueen_29: 769622774
+      fireQueen_3: 625114888
+      fireQueen_30: 1282289518
+      fireQueen_31: -2121587421
+      fireQueen_32: 374823840
+      fireQueen_33: 945389169
+      fireQueen_34: 2055149846
+      fireQueen_35: -974467099
+      fireQueen_36: 1027621456
+      fireQueen_37: -1594816872
+      fireQueen_38: 1807935667
+      fireQueen_39: -120983719
+      fireQueen_4: -856851598
+      fireQueen_40: -1873565986
+      fireQueen_41: 151369388
+      fireQueen_42: 509522070
+      fireQueen_43: 221173774
+      fireQueen_44: 558104361
+      fireQueen_45: -1000658735
+      fireQueen_46: -1973392090
+      fireQueen_47: 526563822
+      fireQueen_48: 1865331844
+      fireQueen_49: 632380027
+      fireQueen_5: -1084724434
+      fireQueen_50: -564936265
+      fireQueen_51: 1946440323
+      fireQueen_52: -752622354
+      fireQueen_53: 822318910
+      fireQueen_54: -942088795
+      fireQueen_55: 194022310
+      fireQueen_56: 1041579944
+      fireQueen_57: 1345997399
+      fireQueen_58: -1280443403
+      fireQueen_59: 794730174
+      fireQueen_6: 1583908949
+      fireQueen_60: -858434992
+      fireQueen_61: 1815334039
+      fireQueen_62: -1226070809
+      fireQueen_63: -1134130297
+      fireQueen_7: 434927453
+      fireQueen_8: -1925079391
+      fireQueen_9: -1541077718
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

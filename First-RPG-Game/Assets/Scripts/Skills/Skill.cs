@@ -7,7 +7,7 @@ namespace Skills
 {
     public class Skill : MonoBehaviour
     {
-        [SerializeField] protected float CoolDown;
+        [SerializeField] public float CoolDown;
         protected float CooldownTimer;
         protected Player Player;
 
@@ -28,7 +28,7 @@ namespace Skills
                 return true;
             }
             
-            Player.FX.CreatePopupText("Cooldown!", Color.white);
+            Player.FX.CreatePopUpText("Cooldown!", Color.white);
             return false;
         }
         
@@ -38,10 +38,10 @@ namespace Skills
             {
                 UseSkill();
                 CooldownTimer = CoolDown;
+                Player.FX.CreatePopUpText("CoolDown", null);
                 return true;
             }
         
-            Player.FX.CreatePopupText("Cooldown!", Color.white);
             return false;
         }
 

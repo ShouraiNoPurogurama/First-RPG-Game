@@ -2,12 +2,12 @@ using System;
 using System.Collections;
 using Stats;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class Entity : MonoBehaviour
 {
     public int FacingDir { get; private set; } = 1;
     private bool _isFacingRight = true;
+    
     public bool IsBusy { get; private set; }
 
     public SpriteRenderer Sr { get; private set; }
@@ -85,7 +85,7 @@ public class Entity : MonoBehaviour
     {
         Animator.speed = 1;
     }
-
+    
     public virtual void DamageImpact()
     {
         StartCoroutine(nameof(HitKnockBack));
@@ -201,5 +201,6 @@ public class Entity : MonoBehaviour
 
     public virtual void Die()
     {
+        
     }
 }

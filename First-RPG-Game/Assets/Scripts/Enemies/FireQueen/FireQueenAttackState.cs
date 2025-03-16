@@ -1,0 +1,44 @@
+﻿using System;
+using UnityEngine;
+
+namespace Enemies.FireQueen
+{
+    public class FireQueenAttackState : EnemyState
+    {
+        private EnemyFireQueen fireQueen;
+        public FireQueenAttackState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, EnemyFireQueen _fireQueen) : base(enemyBase, stateMachine, animBoolName)
+        {
+            fireQueen = _fireQueen;
+        }
+
+        public override void Enter()
+        {
+            base.Enter();
+        }
+        public override void Update()
+        {
+            try
+            {
+                base.Update();
+
+                fireQueen.SetZeroVelocity();
+
+                if (TriggerCalled)
+                {
+                    TriggerCalled = false;
+                    fireQueen.lastTimeAttacked = Time.time;
+                    StateMachine.ChangeState(fireQueen.BattleState);
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError("Exception in Update(): " + ex.Message);
+            }
+        }
+
+        public override void Exit()
+        {
+            base.Exit();
+        }
+    }
+}

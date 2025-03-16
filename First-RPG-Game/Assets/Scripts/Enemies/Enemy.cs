@@ -137,7 +137,7 @@ namespace Enemies
         {
             base.ReturnDefaultSpeed();
 
-            moveSpeed = _defaultMoveSpeed;
+            moveSpeed = defaultMoveSpeed;
         }
 
         public virtual void AssignLastAnimBoolName(string animName)
