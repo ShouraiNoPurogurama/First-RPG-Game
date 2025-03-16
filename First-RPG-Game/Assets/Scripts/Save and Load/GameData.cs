@@ -10,7 +10,6 @@ public class GameData
     public int intelligence;
     public int vitality;
     public SerializableDictionary<string, int> inventory;
-    public SerializableDictionary<string, int> skillTree;
     public List<string> equipmentId;
     public string closeCheckpointId;
 
@@ -20,7 +19,6 @@ public class GameData
         screenName = string.Empty;
         this.gold = 0;
         this.inventory = new SerializableDictionary<string, int>();
-        this.skillTree = new SerializableDictionary<string, int>();
         this.equipmentId = new List<string>();
         this.closeCheckpointId = string.Empty;
         checkpoints = new SerializableDictionary<string, bool>();
