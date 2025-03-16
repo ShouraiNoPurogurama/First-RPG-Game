@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sSamuraiShurikenCloned_0: -8864889813961689713
+      sSamuraiShurikenCloned_1: -7300716688736016325
+      sSamuraiShurikenCloned_2: -6450169456606728920
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

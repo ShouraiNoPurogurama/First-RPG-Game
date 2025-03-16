@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sSamuraiClimb_0: 836589899863879891
+      sSamuraiClimb_1: -5529150759256023078
+      sSamuraiClimb_2: 4735678875470722306
+      sSamuraiClimb_3: -347300970959271423
+      sSamuraiClimb_4: -5300392251991988965
+      sSamuraiClimb_5: 8538620293104508604
+      sSamuraiClimb_6: -1661836376168207673
+      sSamuraiClimb_7: 459859000589544312
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

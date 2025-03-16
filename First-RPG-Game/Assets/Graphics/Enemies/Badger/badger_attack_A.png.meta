@@ -497,7 +497,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      badger_attack_A_0: -9134001243788223633
+      badger_attack_A_1: -4128308350390960355
+      badger_attack_A_10: 5106666027728546506
+      badger_attack_A_11: -6784319521297111305
+      badger_attack_A_12: 8599173328104911533
+      badger_attack_A_13: 1235506627439852834
+      badger_attack_A_14: -1516014874233535125
+      badger_attack_A_2: 7143110874469345187
+      badger_attack_A_3: 3158870357045514654
+      badger_attack_A_4: -2037451288702844374
+      badger_attack_A_5: 1751690883452589285
+      badger_attack_A_6: -6871953114407765949
+      badger_attack_A_7: -5062687390215178380
+      badger_attack_A_8: -7166364375600091017
+      badger_attack_A_9: 1015532040221254725
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -497,7 +497,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sSamuraiHeal_0: 5566225744217169852
+      sSamuraiHeal_1: 6656716630605191634
+      sSamuraiHeal_10: -3878204121969805803
+      sSamuraiHeal_11: -7261662904389351416
+      sSamuraiHeal_12: -7718690111497536863
+      sSamuraiHeal_13: 3041490930640734863
+      sSamuraiHeal_14: -1126777252516279223
+      sSamuraiHeal_2: -4055245341482732698
+      sSamuraiHeal_3: 3057350921033184616
+      sSamuraiHeal_4: -4163533208180090198
+      sSamuraiHeal_5: 8088232012110351295
+      sSamuraiHeal_6: -6134482043532659619
+      sSamuraiHeal_7: 2381546191767488228
+      sSamuraiHeal_8: 3761267994593371553
+      sSamuraiHeal_9: -4195946651923345785
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

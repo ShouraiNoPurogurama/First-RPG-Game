@@ -672,7 +672,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sSamuraiDefendCounter_0: -6844719208754866157
+      sSamuraiDefendCounter_1: -2737263987158361588
+      sSamuraiDefendCounter_10: -6461447255475635443
+      sSamuraiDefendCounter_11: 2619471684301930201
+      sSamuraiDefendCounter_12: -7583681755425993058
+      sSamuraiDefendCounter_13: -1975227408621933566
+      sSamuraiDefendCounter_14: 8065341797228917615
+      sSamuraiDefendCounter_15: 1089908705013250895
+      sSamuraiDefendCounter_16: -8538953479376504851
+      sSamuraiDefendCounter_17: 8370529406967516325
+      sSamuraiDefendCounter_18: 8077217315189894578
+      sSamuraiDefendCounter_19: 4589418430803281393
+      sSamuraiDefendCounter_2: 5345865705378059690
+      sSamuraiDefendCounter_20: 2550199562511264937
+      sSamuraiDefendCounter_21: -3005943960660829770
+      sSamuraiDefendCounter_3: -7812843810621334648
+      sSamuraiDefendCounter_4: 4801903643607392522
+      sSamuraiDefendCounter_5: -6161820802333772142
+      sSamuraiDefendCounter_6: 5857383645203561764
+      sSamuraiDefendCounter_7: -7031075898685214702
+      sSamuraiDefendCounter_8: 1758256867605444212
+      sSamuraiDefendCounter_9: -2315672751253459752
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
