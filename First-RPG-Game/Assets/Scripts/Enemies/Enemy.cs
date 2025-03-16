@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Enemies
 {
@@ -8,23 +9,24 @@ namespace Enemies
         public LayerMask whatIsPlayer;
 
         [Header("Stunned info")]
-        public float stunDuration;
+        public float stunDuration = 1f;
 
-        public Vector2 stunDirection;
+        public Vector2 stunDirection = new Vector2(5,8);
         private bool _canBeStunned;
         [SerializeField] protected GameObject counterImage;
 
         [Header("Move info")]
-        public float moveSpeed;
+        public float moveSpeed = 2f;
 
-        public float idleTime;
-        public float battleTime;
-        private float _defaultMoveSpeed;
+        public float idleTime = 1f;
+        public float battleTime = 3f;
+        public float defaultMoveSpeed;
 
         [Header("Attack info")]
         public float attackDistance;
 
         public float attackCooldown;
+        private float _defaultAttackCooldown;
         [HideInInspector] public float lastTimeAttacked;
         
         protected EnemyStateMachine StateMachine { get; private set; }
@@ -37,7 +39,8 @@ namespace Enemies
 
             StateMachine = new EnemyStateMachine();
 
-            _defaultMoveSpeed = moveSpeed;
+            defaultMoveSpeed = moveSpeed;
+            _defaultAttackCooldown = attackCooldown;
         }
 
         protected override void Start()
@@ -61,7 +64,7 @@ namespace Enemies
             }
             else
             {
-                moveSpeed = _defaultMoveSpeed;
+                moveSpeed = defaultMoveSpeed;
                 Animator.speed = 1;
             }
         }
@@ -107,6 +110,21 @@ namespace Enemies
             return false;
         }
 
+        public override void ReduceAttackSpeedBy(float slowPercentage, float slowDuration)
+        {
+            //Increase attack cooldown bc we dont have attack speed
+            attackCooldown *= 1 + slowPercentage;
+            
+            Invoke("ReturnDefaultAttackSpeed", slowDuration);
+        }
+
+        protected override void ReturnDefaultAttackSpeed()
+        {
+            base.ReturnDefaultAttackSpeed();
+
+            attackCooldown = _defaultAttackCooldown;
+        }
+
         public override void SlowEntityBy(float slowPercentage, float slowDuration)
         {
             moveSpeed *= 1 - slowPercentage;
@@ -119,7 +137,7 @@ namespace Enemies
         {
             base.ReturnDefaultSpeed();
             
-            moveSpeed = _defaultMoveSpeed;
+            moveSpeed = defaultMoveSpeed;
         }
 
         public virtual void AssignLastAnimBoolName(string animName)
@@ -129,6 +147,16 @@ namespace Enemies
         
         public virtual void AnimationFinishTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
 
+        public virtual void AnimationSpecialAttackTrigger()
+        {
+            
+        }
+        
+        public virtual void SecondaryAnimationSpecialAttackTrigger()
+        {
+            
+        }
+        
         public virtual RaycastHit2D IsPlayerDetected()
             => Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDir, 50, whatIsPlayer);
 
@@ -140,6 +168,7 @@ namespace Enemies
             Gizmos.color = Color.yellow;
             Gizmos.DrawLine(transform.position,
                 new Vector3(transform.position.x + attackDistance * FacingDir, transform.position.y));
+            
         }
     }
 }
