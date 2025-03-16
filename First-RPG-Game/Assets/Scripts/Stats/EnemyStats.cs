@@ -36,6 +36,8 @@ namespace Stats
             base.Die();
             _enemy.Die();
             myDropSystem.GenerateDrop();
+
+            Destroy(gameObject, 5f);
         }
     }
 }

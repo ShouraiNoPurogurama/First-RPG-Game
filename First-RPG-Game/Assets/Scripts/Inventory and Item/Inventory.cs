@@ -1,19 +1,22 @@
-﻿using NUnit.Framework;
+﻿using Assets.Scripts.Inventory_and_Item;
+using Assets.Scripts.UI;
 using System.Collections.Generic;
-using System.Collections.Specialized;
+using UnityEditor;
 using UnityEngine;
-using static UnityEditor.Timeline.Actions.MenuPriority;
 
-public class Inventory : MonoBehaviour
+public class Inventory : MonoBehaviour, ISaveManager
 {
     public static Inventory instance;
 
+    //Use for contain equipment and stash
     public List<InventoryItem> inventory;
     public Dictionary<ItemData, InventoryItem> inventoryDictionay;
 
+    //Use for caft
     public List<InventoryItem> stash;
     public Dictionary<ItemData, InventoryItem> stashDictionary;
 
+    //In equip UI
     public List<InventoryItem> equipment;
     public Dictionary<ItemData_Equipment, InventoryItem> equipmentDictionary;
 
@@ -23,28 +26,23 @@ public class Inventory : MonoBehaviour
     [SerializeField] private Transform inventorySlotParent;
     [SerializeField] private Transform stashSlotParent;
     [SerializeField] private Transform equipmentSlotParent;
+    [SerializeField] private Transform statSlotParent;
+
+    [Header("DataBase")]
+    public List<InventoryItem> loadedItems;
+    public List<ItemData_Equipment> loadedEquipment;
 
     private Ui_ItemSlot[] inventoryItemSlot;
     private Ui_ItemSlot[] stashItemSlot;
     private UI_EquimentSlot[] equipmentItemSlot;
-
-    [Header("Item Cooldown")]
-    public float flaskcooldown { get; private set; }
-
-
+    private UI_StatSlot[] statSlots;
     private void Awake()
     {
         if (instance == null)
-        {
             instance = this;
-            Debug.Log("Inventory instance set.");
-        }
         else
-        {
             Destroy(gameObject);
-        }
     }
-
 
     private void Start()
     {
@@ -60,14 +58,35 @@ public class Inventory : MonoBehaviour
         inventoryItemSlot = inventorySlotParent.GetComponentsInChildren<Ui_ItemSlot>();
         stashItemSlot = stashSlotParent.GetComponentsInChildren<Ui_ItemSlot>();
         equipmentItemSlot = equipmentSlotParent.GetComponentsInChildren<UI_EquimentSlot>();
-        AddStartingItem();
+        statSlots = statSlotParent.GetComponentsInChildren<UI_StatSlot>();
+        //AddStartingItem();
     }
 
     private void AddStartingItem()
     {
-        for (int i = 0; i < startItem.Count; i++)
+        if (loadedItems.Count > 0)
         {
-            AddItem(startItem[i].data);
+            foreach (InventoryItem item in loadedItems)
+            {
+                for (int i = 0; i < item.stackSize; i++)
+                {
+                    AddItem(item.data);
+                }
+            }
+        }
+        else
+        {
+            // Nếu không có gì load thì thêm startItem mặc định
+            for (int i = 0; i < startItem.Count; i++)
+            {
+                AddItem(startItem[i].data);
+            }
+        }
+
+        // Trang bị luôn các món equipment đã load được
+        foreach (ItemData_Equipment item in loadedEquipment)
+        {
+            EquipItem(item);
         }
     }
 
@@ -149,6 +168,20 @@ public class Inventory : MonoBehaviour
         {
             stashItemSlot[i].UpdateSlot(stash[i]);
         }
+
+        for (int i = 0; i < statSlots.Length; i++)
+        {
+            statSlots[i].UpdateStatValueUI();
+        }
+    }
+    public bool CanAddItem()
+    {
+        if (inventory.Count >= inventoryItemSlot.Length)
+        {
+            return false;
+        }
+
+        return true;
     }
     public void AddItem(ItemData item)
     {
@@ -160,10 +193,15 @@ public class Inventory : MonoBehaviour
         {
             AddToStash(item);
         }
-        else
+        else if (item.itemType == ItemType.Buff)
         {
             ItemData_Buff itemData = (ItemData_Buff)item;
             itemData.AddModifiers();
+        }
+        else if (item.itemType == ItemType.Gold)
+        {
+            ItemData_Gold itemData = (ItemData_Gold)item;
+            itemData.AddGold();
         }
 
         UpdateSlotUI();
@@ -283,4 +321,70 @@ public class Inventory : MonoBehaviour
         }
         return null;
     }
+
+    public void LoadData(GameData _data)
+    {
+        foreach (KeyValuePair<string, int> pair in _data.inventory)
+        {
+            foreach (var item in GetItemDataBase())
+            {
+                if (item != null && item.itemId == pair.Key)
+                {
+                    InventoryItem itemToLoad = new InventoryItem(item);
+                    itemToLoad.stackSize = pair.Value;
+
+                    loadedItems.Add(itemToLoad);
+                }
+            }
+        }
+
+        foreach (string loadedItemId in _data.equipmentId)
+        {
+            foreach (var item in GetItemDataBase())
+            {
+                if (item != null && loadedItemId == item.itemId)
+                {
+                    loadedEquipment.Add(item as ItemData_Equipment);
+                }
+            }
+        }
+        AddStartingItem();
+    }
+
+    public void SaveData(ref GameData _data)
+    {
+        _data.inventory.Clear();
+        _data.equipmentId.Clear();
+
+        foreach (KeyValuePair<ItemData, InventoryItem> pair in inventoryDictionay)
+        {
+            _data.inventory.Add(pair.Key.itemId, pair.Value.stackSize);
+        }
+
+        foreach (KeyValuePair<ItemData, InventoryItem> pair in stashDictionary)
+        {
+            _data.inventory.Add(pair.Key.itemId, pair.Value.stackSize);
+        }
+        foreach (KeyValuePair<ItemData_Equipment, InventoryItem> pair in equipmentDictionary)
+        {
+            _data.equipmentId.Add(pair.Key.itemId);
+        }
+    }
+
+#if UNITY_EDITOR
+    private List<ItemData> GetItemDataBase()
+    {
+        List<ItemData> itemDataBase = new List<ItemData>();
+
+        string[] assetName = AssetDatabase.FindAssets("", new[] { "Assets/Data/Items" });
+
+        foreach (string guid in assetName)
+        {
+            string path = AssetDatabase.GUIDToAssetPath(guid);
+            ItemData item = AssetDatabase.LoadAssetAtPath<ItemData>(path);
+            itemDataBase.Add(item);
+        }
+        return itemDataBase;
+    }
+#endif
 }

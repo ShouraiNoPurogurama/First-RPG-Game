@@ -10,29 +10,36 @@ namespace Skills
         public CloneSkill Clone { get; private set; }
         public SwordSkill Sword { get; private set; }
         public BlackHoleSkill BlackHole { get; private set; }
-        
         public CrystalSkill Crystal { get; private set; }
 
         private void Awake()
         {
-            if (Instance is not null && Instance != this)
+            if (Instance != null && Instance != this)
             {
-                Destroy(Instance.gameObject);
+                Destroy(gameObject);
+                return;
             }
-            else
-            {
-                Instance = this;
-            }
-            
+
+            Instance = this;
         }
 
         private void Start()
         {
+            if (this == null) return;
+
             Dash = GetComponent<DashSkill>();
             Clone = GetComponent<CloneSkill>();
             Sword = GetComponent<SwordSkill>();
             BlackHole = GetComponent<BlackHoleSkill>();
             Crystal = GetComponent<CrystalSkill>();
+        }
+
+        private void OnDestroy()
+        {
+            if (Instance == this)
+            {
+                Instance = null;
+            }
         }
     }
 }

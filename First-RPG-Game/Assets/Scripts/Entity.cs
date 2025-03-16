@@ -7,17 +7,15 @@ public class Entity : MonoBehaviour
 {
     public int FacingDir { get; private set; } = 1;
     private bool _isFacingRight = true;
-
-    public System.Action onFlipped;
-
-    public bool IsBusy { get; private set; }
     
+    public bool IsBusy { get; private set; }
+
     public SpriteRenderer Sr { get; private set; }
 
     [Header("Knock back info")]
-    [SerializeField] protected Vector2 knockBackDirection;
+    [SerializeField] protected Vector2 knockBackPower = new Vector2(5,5);
 
-    [SerializeField] protected float knockBackDuration;
+    [SerializeField] protected float knockBackDuration = 0.25f;
     private bool _isKnocked;
 
     [Header("Collision info")]
@@ -26,14 +24,16 @@ public class Entity : MonoBehaviour
     public float attackCheckRadius;
 
     [SerializeField] protected Transform groundCheck;
-    [SerializeField] protected float groundCheckDistance;
+    [SerializeField] protected float groundCheckDistance = 0.6f;
     [SerializeField] protected LayerMask whatIsGround;
     [SerializeField] protected Transform wallCheck;
-    [SerializeField] protected float wallCheckDistance;
+    [SerializeField] protected float wallCheckDistance = 0.54f;
     private EntityFX _entityFX;
 
     public Action OnFlipped;
-    
+
+    public int KnockBackDir { get; private set; }
+
     public CharacterStats Stats { get; private set; }
 
     #region Components
@@ -41,7 +41,7 @@ public class Entity : MonoBehaviour
     public Animator Animator { get; private set; }
     public Rigidbody2D Rb { get; private set; }
     public EntityFX FX { get; private set; }
-    
+
     public CapsuleCollider2D CapsuleCollider { get; private set; }
 
     #endregion
@@ -64,14 +64,22 @@ public class Entity : MonoBehaviour
     {
     }
 
-    public virtual void SlowEntityBy(float slowPercentage, float slowDuration)
-    {
-        
-    }
-    public virtual void FastEntityBy(float slowPercentage, float slowDuration)
+    public virtual void ReduceAttackSpeedBy(float slowPercentage, float slowDuration)
     {
 
     }
+    
+    public virtual void SlowEntityBy(float slowPercentage, float slowDuration)
+    {
+    }
+
+    public virtual void FastEntityBy(float slowPercentage, float slowDuration)
+    {
+
+    protected virtual void ReturnDefaultAttackSpeed()
+    {
+    }
+    
     protected virtual void ReturnDefaultSpeed()
     {
         Animator.speed = 1;
@@ -81,15 +89,25 @@ public class Entity : MonoBehaviour
     {
         StartCoroutine(nameof(HitKnockBack));
     }
-    
+
+    public virtual void SetupKnockBackDir(Transform damageDirection)
+    {
+        if (damageDirection.position.x >= transform.position.x)
+        {
+            KnockBackDir = -1;
+        }
+        else if (damageDirection.position.x < transform.position.x)
+        {
+            KnockBackDir = 1;
+        }
+    }
+
     protected virtual IEnumerator HitKnockBack()
     {
         _isKnocked = true;
-
-        Rb.linearVelocity = new Vector2(knockBackDirection.x * 1.2f * -FacingDir, knockBackDirection.y);
+        Rb.linearVelocity = new Vector2(knockBackPower.x * 1.2f * KnockBackDir, knockBackPower.y);
 
         yield return new WaitForSeconds(knockBackDuration);
-
         _isKnocked = false;
     }
 
@@ -100,7 +118,7 @@ public class Entity : MonoBehaviour
 
     public virtual bool IsGroundDetected(float overrideDistance)
         => Physics2D.Raycast(groundCheck.position, Vector2.down, overrideDistance, whatIsGround);
-    
+
     public virtual bool IsWallDetected()
         => Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDir, wallCheckDistance, whatIsGround);
 
@@ -120,7 +138,7 @@ public class Entity : MonoBehaviour
 
     protected virtual void FlipController(float xVelocity)
     {
-        if(IsBusy) 
+        if (IsBusy)
             return;
         if (xVelocity > 0 && !_isFacingRight)
         {
@@ -148,7 +166,7 @@ public class Entity : MonoBehaviour
 
     public void SetZeroVelocity()
     {
-        if (_isKnocked) 
+        if (_isKnocked)
             return;
         Rb.linearVelocity = new Vector2(0, 0);
     }
@@ -165,7 +183,7 @@ public class Entity : MonoBehaviour
         Rb.linearVelocity = new Vector2(xVelocity, yVelocity);
         FlipController(xVelocity);
     }
-    
+
     public IEnumerator BusyFor(float seconds)
     {
         IsBusy = true;

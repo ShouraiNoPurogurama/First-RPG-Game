@@ -5,6 +5,7 @@ namespace Stats
 {
     public class PlayerStats : CharacterStats
     {
+        public int Gold;
         private Player _player;
     
         public PlayerStats(Stat maxHp) : base(maxHp)

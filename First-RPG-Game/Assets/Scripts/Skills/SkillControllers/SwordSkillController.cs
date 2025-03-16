@@ -181,8 +181,6 @@ namespace Skills.SkillControllers
                     {
                         _hitTimer = _hitCooldown;
                         
-                        Debug.Log("hitcooldown " + _hitCooldown);
-                        
                         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 1);
 
                         foreach (var hit in colliders)
