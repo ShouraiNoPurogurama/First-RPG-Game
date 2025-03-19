@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SnapBG.ai_1741879471757_0: -6870981472844551423
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
