@@ -22,7 +22,7 @@ namespace Enemies.Skeleton
                 var player = hit.GetComponent<Player>();
                 if (player)
                 {
-                    Enemy.Stats.DoDamage(player.GetComponent<PlayerStats>());
+                    Enemy.Stats.DoMagicalDamage(player.GetComponent<PlayerStats>());
                 }
             }
         }
@@ -32,6 +32,7 @@ namespace Enemies.Skeleton
 
         private void SpecialAttackTrigger()
         {
+            Debug.Log("Special attack triggered");
             Enemy.AnimationSpecialAttackTrigger();
         }
         

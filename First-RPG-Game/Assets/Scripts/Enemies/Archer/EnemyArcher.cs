@@ -8,6 +8,8 @@ namespace Enemies.Archer
     {
         [Header("Soul specific info")]
         public Vector2 jumpVelocity;
+        [SerializeField] public float runSpeed;
+        [SerializeField] public float runDuration = 0.25f;
 
         [FormerlySerializedAs("arrow")] [SerializeField]
         private GameObject arrowPrefab;
@@ -15,6 +17,7 @@ namespace Enemies.Archer
         public float jumpCooldown;
         [HideInInspector] public float lastTimeJumped;
         public float safeDistance; //How close player should be to trigger jump on battle state
+        public float meleeAttackDistance; //How close player should be to trigger melee attack on battle state
         [SerializeField] private float arrowSpeed;
         [SerializeField] private float arrowDamage;
         private CharacterStats _myStats;
@@ -32,6 +35,8 @@ namespace Enemies.Archer
         public ArcherStunnedState StunnedState { get; private set; }
         public ArcherJumpState JumpState { get; private set; }
         public ArcherMeleeAttackState MeleeAttackState { get; private set; }
+        
+        public ArcherRunState RunState { get; private set; }
 
         #endregion
 
@@ -47,6 +52,7 @@ namespace Enemies.Archer
             StunnedState = new ArcherStunnedState(this, StateMachine, "Stunned", this);
             JumpState = new ArcherJumpState(this, StateMachine, "Jump", this);
             MeleeAttackState = new ArcherMeleeAttackState(this, StateMachine, "MeleeAttack", this);
+            RunState = new ArcherRunState(this, StateMachine, "Run", this);
         }
 
         protected override void Start()
@@ -93,12 +99,12 @@ namespace Enemies.Archer
         }
 
         public bool GroundBehindCheck() =>
-            Physics2D.BoxCast(groundBehindCheck.position, groundBehindCheckSize, 0,Vector2.zero, whatIsGround);
+            Physics2D.BoxCast(groundBehindCheck.position, groundBehindCheckSize, 0, Vector2.zero, whatIsGround);
 
         protected override void OnDrawGizmos()
         {
             base.OnDrawGizmos();
-            
+
             Gizmos.DrawWireCube(groundBehindCheck.position, groundBehindCheckSize);
         }
     }

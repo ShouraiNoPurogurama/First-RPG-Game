@@ -13,7 +13,7 @@ namespace Enemies
 
         public Vector2 stunDirection = new Vector2(5,8);
         private bool _canBeStunned;
-        [SerializeField] protected GameObject counterImage;
+        [SerializeField] public GameObject counterImage;
 
         [Header("Move info")]
         public float moveSpeed = 2f;
@@ -165,7 +165,7 @@ namespace Enemies
         {
             base.OnDrawGizmos();
 
-            Gizmos.color = Color.yellow;
+            Gizmos.color = Color.magenta;
             Gizmos.DrawLine(transform.position,
                 new Vector3(transform.position.x + attackDistance * FacingDir, transform.position.y));
             

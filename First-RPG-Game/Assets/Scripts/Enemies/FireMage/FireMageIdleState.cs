@@ -33,7 +33,7 @@ namespace Enemies.FireMage
             /*
             if (fireMage.BattleState.PlayerInAttackRange() && fireMage.BattleState.CanAttack())
             {
-                StateMachine.ChangeState(fireMage.AttackState);
+                StateMachine.ChangeState(fireMage.TongueAttackState);
             }
 
             base.Update();

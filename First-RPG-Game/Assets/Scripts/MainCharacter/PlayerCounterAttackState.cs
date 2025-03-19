@@ -39,7 +39,7 @@ namespace MainCharacter
 
             foreach (var hit in colliders)
             {
-                if (hit.GetComponent<ArrowController>() != null)
+                if (hit.GetComponent<ArrowController>())
                 {
                     hit.GetComponent<ArrowController>().FlipArrow();
                     SuccessfulCounterAttack();

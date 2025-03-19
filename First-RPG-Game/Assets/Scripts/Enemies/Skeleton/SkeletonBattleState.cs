@@ -18,16 +18,7 @@ namespace Enemies.Skeleton
         public override void Enter()
         {
             base.Enter();
-
-            // _player = GameObject.Find("Player").transform;
             AttachCurrentPlayerIfNotExists();
-            
-            //if player in attack range, block skeleton movement
-            // if (PlayerInAttackRange() && !CanAttack())
-            // {
-            //     _skeleton.SetZeroVelocity();
-            //     StateMachine.ChangeState(_skeleton.IdleState);
-            // }
         }
 
         public override void Update()

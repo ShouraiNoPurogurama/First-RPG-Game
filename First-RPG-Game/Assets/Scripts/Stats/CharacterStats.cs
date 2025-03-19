@@ -174,13 +174,15 @@ namespace Stats
 
             totalDamage = DecreaseDamageByArmor(targetStats, totalDamage);
 
+            Debug.Log("Total damage: " + totalDamage);
+            
             //If equipments have ailment effects then do magical damage
-            DoMagicalDamage(targetStats);
+            // DoMagicalDamage(targetStats);
 
             targetStats.TakeDamage(totalDamage, Color.red);
         }
 
-        public virtual void DoMagicalDamage(CharacterStats targetStats)
+        public virtual void DoMagicalDamage(CharacterStats targetStats, float dmgScale = 1)
         {
             int fireDamageVal = fireDamage.ModifiedValue;
             int iceDamageVal = iceDamage.ModifiedValue;
@@ -218,11 +220,8 @@ namespace Stats
                                  earthDamageVal > lightingDamageVal && earthDamageVal > windDamageVal;
             bool canApplyWind = windDamageVal > fireDamageVal && windDamageVal > iceDamageVal &&
                                 windDamageVal > lightingDamageVal && windDamageVal > earthDamageVal;
-
-
-            Color magicDmgColor = Color.magenta;
-
-            targetStats.TakeDamage(totalMagicalDamage, damageColor);
+            
+            targetStats.TakeDamage(Mathf.RoundToInt(totalMagicalDamage * dmgScale), damageColor);
 
             while (!canApplyIgnite && !canApplyChill && !canApplyShock && !canApplyWind && !canApplyEarth)
             {
@@ -272,6 +271,9 @@ namespace Stats
                 targetStats.SetupShockDamage(Mathf.RoundToInt(lightingDamageVal * .4f));
             }
 
+            Debug.Log("Wind damage: " +windDamage);
+            Debug.Log("CAN APPLY WIND: " + canApplyWind);
+            
             targetStats.ApplyAilments(canApplyIgnite, canApplyChill, canApplyShock, canApplyEarth, canApplyWind);
         }
 
@@ -519,9 +521,9 @@ namespace Stats
             return maxHp.ModifiedValue + vitality.ModifiedValue * 5;
         }
 
-        public void RecoverHP(int hpModify)
+        public void RecoverHPBy(int hpModify)
         {
-            this.currentHp += hpModify;
+            currentHp += hpModify;
             OnHPChanged?.Invoke();
         }
 

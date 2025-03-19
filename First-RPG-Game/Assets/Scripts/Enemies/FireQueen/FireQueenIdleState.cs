@@ -33,7 +33,7 @@ namespace Enemies.FireQueen
             /*
             if (fireQueen.BattleState.PlayerInAttackRange() && fireQueen.BattleState.CanAttack())
             {
-                StateMachine.ChangeState(fireQueen.AttackState);
+                StateMachine.ChangeState(fireQueen.TongueAttackState);
             }
 
             base.Update();

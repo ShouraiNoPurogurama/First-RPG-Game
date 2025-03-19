@@ -14,7 +14,7 @@ namespace Enemies.Soul
         [SerializeField] private float growSpeed;
         [SerializeField] private float maxSize;
 
-        [FormerlySerializedAs("safeDistance")] public float explodeDistance; //How close player should be to trigger jump on battle state
+        [FormerlySerializedAs("TriggerLeapDistance")] public float explodeDistance; //How close player should be to trigger jump on battle state
         private CharacterStats _myStats;
 
         #region States
@@ -28,6 +28,11 @@ namespace Enemies.Soul
 
         #endregion
 
+        
+        //TODO
+        //If hp >= 30%, be invincible and flash + raise an attack 
+        //If hp < 30%, move quickly to player and explode
+        
         protected override void Awake()
         {
             base.Awake();

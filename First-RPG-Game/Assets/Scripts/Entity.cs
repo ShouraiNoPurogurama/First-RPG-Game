@@ -24,9 +24,9 @@ public class Entity : MonoBehaviour
     public float attackCheckRadius;
 
     [SerializeField] protected Transform groundCheck;
-    [SerializeField] protected float groundCheckDistance = 0.6f;
+    [SerializeField] public float groundCheckDistance = 0.6f;
     [SerializeField] protected LayerMask whatIsGround;
-    [SerializeField] protected Transform wallCheck;
+    [SerializeField] public Transform wallCheck;
     [SerializeField] protected float wallCheckDistance = 0.54f;
     private EntityFX _entityFX;
 
@@ -106,10 +106,12 @@ public class Entity : MonoBehaviour
     protected virtual IEnumerator HitKnockBack()
     {
         _isKnocked = true;
-        Rb.linearVelocity = new Vector2(knockBackPower.x * 1.2f * KnockBackDir, knockBackPower.y);
+        Rb.linearVelocity = new Vector2(knockBackPower.x * KnockBackDir, knockBackPower.y);
 
         yield return new WaitForSeconds(knockBackDuration);
         _isKnocked = false;
+
+        Rb.linearVelocity = new Vector2(KnockBackDir, Rb.linearVelocity.y);
     }
 
     #region Collisions
@@ -171,6 +173,7 @@ public class Entity : MonoBehaviour
             return;
         Rb.linearVelocity = new Vector2(0, 0);
     }
+    
 
 
     /// <summary>
@@ -197,6 +200,7 @@ public class Entity : MonoBehaviour
     public void SetTransparent(bool transparent)
     {
         Sr.color = transparent ? Color.clear : Color.white;
+        
     }
 
     public virtual void Die()
