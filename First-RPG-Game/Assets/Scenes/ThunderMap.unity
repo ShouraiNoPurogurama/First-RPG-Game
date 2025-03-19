@@ -564,6 +564,7 @@ GameObject:
   - component: {fileID: 370942115}
   - component: {fileID: 370942117}
   - component: {fileID: 370942116}
+  - component: {fileID: 370942118}
   m_Layer: 7
   m_Name: Animator
   m_TagString: Untagged
@@ -663,6 +664,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &370942118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370942114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a93af3c02e51a54ba4794e96b37b7fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &454763013
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,9 +874,17 @@ MonoBehaviour:
   lightingDamage:
     baseValue: 0
     modifiers: 
+  earthDamage:
+    baseValue: 0
+    modifiers: 
+  windDamage:
+    baseValue: 0
+    modifiers: 
   isIgnited: 0
   isChilled: 0
   isShocked: 0
+  isEarthAffected: 0
+  isWindAffected: 0
   ailmentDuration: 0
   ShockEffectPrefab: {fileID: 0}
   currentHp: 0
@@ -880,13 +901,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262a1e0589b702e4aa6d299b38222017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  popUpTextPrefab: {fileID: 0}
   hitMat: {fileID: 2100000, guid: d9d92a4940250db4d85c1b424738b172, type: 2}
   flashDuration: 0
   hitFx: {fileID: 1057642753625682144, guid: 9426a43a35b7f864f8f046884b5ef95a, type: 3}
   chillColor: []
   igniteColor: []
   shockColor: []
-  popupFxPrefab: {fileID: 0}
+  windColor: []
+  earthColor: []
+  igniteFX: {fileID: 0}
+  chillFX: {fileID: 0}
+  shockFX: {fileID: 0}
+  windFX: {fileID: 0}
+  earthFX: {fileID: 0}
 --- !u!50 &501512609
 Rigidbody2D:
   serializedVersion: 5
@@ -963,7 +991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0ee56fdf9aff041adaca0eeba17235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockBackDirection: {x: 4, y: 4}
+  knockBackPower: {x: 5, y: 5}
   knockBackDuration: 0.2
   attackCheck: {fileID: 1181523584}
   attackCheckRadius: 0.85
@@ -1004,6 +1032,37 @@ Transform:
   - {fileID: 1181523584}
   - {fileID: 2021271462}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &516343913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 516343914}
+  m_Layer: 7
+  m_Name: AttackCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &516343914
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516343913}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.62, y: -0.04, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1155935797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &674473768
 GameObject:
@@ -1181,9 +1240,17 @@ MonoBehaviour:
   lightingDamage:
     baseValue: 0
     modifiers: 
+  earthDamage:
+    baseValue: 0
+    modifiers: 
+  windDamage:
+    baseValue: 0
+    modifiers: 
   isIgnited: 0
   isChilled: 0
   isShocked: 0
+  isEarthAffected: 0
+  isWindAffected: 0
   ailmentDuration: 0
   ShockEffectPrefab: {fileID: 0}
   currentHp: 0
@@ -1199,13 +1266,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262a1e0589b702e4aa6d299b38222017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  popUpTextPrefab: {fileID: 0}
   hitMat: {fileID: 2100000, guid: d9d92a4940250db4d85c1b424738b172, type: 2}
   flashDuration: 0.15
   hitFx: {fileID: 1057642753625682144, guid: 9426a43a35b7f864f8f046884b5ef95a, type: 3}
   chillColor: []
   igniteColor: []
   shockColor: []
-  popupFxPrefab: {fileID: 0}
+  windColor: []
+  earthColor: []
+  igniteFX: {fileID: 0}
+  chillFX: {fileID: 0}
+  shockFX: {fileID: 0}
+  windFX: {fileID: 0}
+  earthFX: {fileID: 0}
 --- !u!50 &871017624
 Rigidbody2D:
   serializedVersion: 5
@@ -1245,7 +1319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69771012e95168e498a96c6869cfbfe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockBackDirection: {x: 3, y: 4}
+  knockBackPower: {x: 5, y: 5}
   knockBackDuration: 0.25
   attackCheck: {fileID: 2104737588}
   attackCheckRadius: 0.8
@@ -1265,6 +1339,7 @@ MonoBehaviour:
   moveSpeed: 3
   idleTime: 1
   battleTime: 3
+  defaultMoveSpeed: 0
   attackDistance: 0.98
   attackCooldown: 2
   lastTimeAttacked: 0
@@ -2429,6 +2504,8 @@ Transform:
   m_Children:
   - {fileID: 370942115}
   - {fileID: 303163143}
+  - {fileID: 1890614926}
+  - {fileID: 516343914}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1155935798
@@ -2443,16 +2520,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddd7597959091234c8a80fad0dd81f92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockBackDirection: {x: 0, y: 0}
-  knockBackDuration: 0
-  attackCheck: {fileID: 0}
-  attackCheckRadius: 0
+  knockBackPower: {x: 7, y: 12}
+  knockBackDuration: 0.07
+  attackCheck: {fileID: 516343914}
+  attackCheckRadius: 0.8
   groundCheck: {fileID: 303163143}
   groundCheckDistance: 0.4
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
-  wallCheck: {fileID: 1155935797}
+  wallCheck: {fileID: 1890614926}
   wallCheckDistance: 0.54
   whatIsPlayer:
     serializedVersion: 2
@@ -2461,66 +2538,38 @@ MonoBehaviour:
   stunDirection: {x: 0, y: 0}
   counterImage: {fileID: 0}
   moveSpeed: 1.5
-  idleTime: 2
+  idleTime: 1
   battleTime: 3
-  attackDistance: 0
-  attackCooldown: 0
+  defaultMoveSpeed: 0
+  attackDistance: 1.5
+  attackCooldown: 0.4
   lastTimeAttacked: 0
---- !u!212 &1155935799
-SpriteRenderer:
+--- !u!114 &1155935799
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155935794}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 4723107735738678597, guid: 284e564c236d63a4b9952f47686291c7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.8, y: 0.68}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 262a1e0589b702e4aa6d299b38222017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popUpTextPrefab: {fileID: 0}
+  hitMat: {fileID: 2100000, guid: d9d92a4940250db4d85c1b424738b172, type: 2}
+  flashDuration: 0.15
+  hitFx: {fileID: 1057642753625682144, guid: 9426a43a35b7f864f8f046884b5ef95a, type: 3}
+  chillColor: []
+  igniteColor: []
+  shockColor: []
+  windColor: []
+  earthColor: []
+  igniteFX: {fileID: 0}
+  chillFX: {fileID: 0}
+  shockFX: {fileID: 0}
+  windFX: {fileID: 0}
+  earthFX: {fileID: 0}
 --- !u!1 &1181523583
 GameObject:
   m_ObjectHideFlags: 0
@@ -101157,7 +101206,7 @@ Transform:
   m_GameObject: {fileID: 1405780742}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.546732, y: 4.0213375, z: -9.998132}
+  m_LocalPosition: {x: 10.519911, y: 4.0213375, z: -9.998132}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -101326,7 +101375,7 @@ Transform:
   m_GameObject: {fileID: 1434060090}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.546732, y: 4.0213375, z: -9.998132}
+  m_LocalPosition: {x: 10.519911, y: 4.0213375, z: -9.998132}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -108929,6 +108978,37 @@ Transform:
   - {fileID: 114698836}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1890614925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1890614926}
+  m_Layer: 7
+  m_Name: WallCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1890614926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890614925}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.71, y: -0.02, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1155935797}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2021271461
 GameObject:
   m_ObjectHideFlags: 0
@@ -108998,8 +109078,8 @@ SceneRoots:
   - {fileID: 1851341863}
   - {fileID: 674473769}
   - {fileID: 871017626}
-  - {fileID: 1155935797}
   - {fileID: 936356949}
   - {fileID: 501512612}
   - {fileID: 176403026}
   - {fileID: 1780523542}
+  - {fileID: 1155935797}

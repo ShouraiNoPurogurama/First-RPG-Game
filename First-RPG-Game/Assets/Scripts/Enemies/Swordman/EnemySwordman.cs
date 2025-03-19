@@ -8,7 +8,7 @@ namespace Enemies.Swordman
         public EnemySwordmanMoveState MoveState { get; private set; }
 
         public EnemySwordmanBattleState BattleState { get; private set; }
-        //public EnemySwordmanAttackState AttackState { get; private set; }
+        public EnemySwordmanAttackState AttackState { get; private set; }
         //    //public enemyswordmanstunnedstate stunnedstate { get; private set; }
         //    //public enemyswordmandeadstate deadstate { get; private set; }
 
@@ -70,7 +70,7 @@ namespace Enemies.Swordman
             IdleState = new EnemySwordmanIdleState(this, StateMachine, "Idle", this);
             MoveState = new EnemySwordmanMoveState(this, StateMachine, "Move", this);
             BattleState = new EnemySwordmanBattleState(this, StateMachine, "Move", this);
-            //AttackState = new EnemySwordmanAttackState(this, StateMachine,"Attack", this);
+            AttackState = new EnemySwordmanAttackState(this, StateMachine,"Attack", this);
         }
 
         protected override void Start()

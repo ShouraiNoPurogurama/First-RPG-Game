@@ -5,7 +5,7 @@ namespace Enemies.Swordman
 {
     public class EnemySwordmanAttackState : EnemyState
     {
-        EnemySwordman enemy;
+        private EnemySwordman enemy;
         public EnemySwordmanAttackState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, EnemySwordman _enemy) : base(enemyBase, stateMachine, animBoolName )
         {
             this.enemy = _enemy;
@@ -18,11 +18,18 @@ namespace Enemies.Swordman
         public override void Update()
         {
             base.Update();
+            enemy.SetZeroVelocity();
+
+            if(TriggerCalled)
+            {
+                StateMachine.ChangeState(enemy.BattleState);
+            }
         }
 
         public override void Exit()
         {
             base.Exit();
+            enemy.lastTimeAttacked = Time.time;
         }
 
 

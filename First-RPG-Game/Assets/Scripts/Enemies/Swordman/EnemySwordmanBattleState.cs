@@ -9,7 +9,7 @@ namespace Enemies.Swordman
         private EnemySwordman enemy;
         private int moveDir;
         public EnemySwordmanBattleState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, EnemySwordman _enemy) : base(enemyBase, stateMachine, animBoolName )
-        {
+        { 
             this.enemy = _enemy;
         }
 
@@ -23,6 +23,23 @@ namespace Enemies.Swordman
         public override void Update()
         {
             base.Update();
+            if (enemy.IsPlayerDetected())
+            { 
+                StateTimer = enemy.battleTime;
+                if (enemy.IsPlayerDetected().distance < enemy.attackDistance)
+                {
+                    if (CanAttack())
+                        StateMachine.ChangeState(enemy.AttackState);
+
+
+                }
+            }
+            else
+            { 
+                if(StateTimer < 0 || Vector2.Distance(player.transform.position, enemy.transform.position)>8)
+                    StateMachine.ChangeState(enemy.IdleState);
+            }
+
 
             if (player.position.x > enemy.transform.position.x) 
             {
@@ -39,7 +56,16 @@ namespace Enemies.Swordman
         {
             base.Exit();
         }
+        private bool CanAttack()
+        {
+            if (Time.time > enemy.lastTimeAttacked + enemy.attackCooldown)
+            {
+                enemy.lastTimeAttacked = Time.time;
+                return true;
 
+            }
+            return false;
+        }
 
     }
 }
