@@ -1,14 +1,9 @@
 ﻿using MainCharacter;
 using Stats;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 
-namespace Assets.Scripts.UI
+namespace UI
 {
     public class UI_StatSlot : MonoBehaviour
     {
@@ -16,6 +11,10 @@ namespace Assets.Scripts.UI
         [SerializeField] private StatType statType;
         [SerializeField] private TextMeshProUGUI statValueText;
         [SerializeField] private TextMeshProUGUI statNameText;
+
+        [Header("Souls info")]
+        [SerializeField] private float goldAmount;
+        [SerializeField] private float increaseRate = 100;
 
         private void OnValidate()
         {
@@ -41,6 +40,8 @@ namespace Assets.Scripts.UI
         }
         public void Upgrade()
         {
+            UpdateGold();
+
             if (PlayerManager.Instance.player.GetComponent<PlayerStats>().Gold < 50)
             {
                 return;
@@ -49,6 +50,18 @@ namespace Assets.Scripts.UI
             playerStats.GetStat(statType).AddModifier(1);
             PlayerManager.Instance.player.GetComponent<PlayerStats>().Gold -= 50;
             UpdateStatValueUI();
+        }
+
+        private void UpdateGold()
+        {
+            if (goldAmount < PlayerManager.Instance.player.GetComponent<PlayerStats>().Gold)
+            {
+                goldAmount += Time.deltaTime * increaseRate;
+            }
+            else
+            {
+                goldAmount = PlayerManager.Instance.player.GetComponent<PlayerStats>().Gold;
+            }
         }
     }
 }

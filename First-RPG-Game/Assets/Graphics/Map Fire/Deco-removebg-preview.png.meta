@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: 0331c31ea2a74134e809a3c89974985c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1061740448534292128
+    second: Deco-removebg-preview_0
+  - first:
+      213: -5284184568239614027
+    second: Deco-removebg-preview_1
+  - first:
+      213: 7225434387891680974
+    second: Deco-removebg-preview_2
+  - first:
+      213: -6455625038769905666
+    second: Deco-removebg-preview_3
+  - first:
+      213: -1344004487041346512
+    second: Deco-removebg-preview_4
+  - first:
+      213: 5540072990469530582
+    second: Deco-removebg-preview_5
+  - first:
+      213: -6342730907712458177
+    second: Deco-removebg-preview_6
+  - first:
+      213: 3501537375506962313
+    second: Deco-removebg-preview_7
+  - first:
+      213: 2790101062445492962
+    second: Deco-removebg-preview_8
+  - first:
+      213: -5837995997974613857
+    second: Deco-removebg-preview_9
+  - first:
+      213: -5134141930666906272
+    second: Deco-removebg-preview_10
+  - first:
+      213: 7353115311536257143
+    second: Deco-removebg-preview_11
+  - first:
+      213: -1573997290451932544
+    second: Deco-removebg-preview_12
+  - first:
+      213: 8210386475065616172
+    second: Deco-removebg-preview_13
+  - first:
+      213: -2900016869239277051
+    second: Deco-removebg-preview_14
+  - first:
+      213: 7943757010156494825
+    second: Deco-removebg-preview_15
+  - first:
+      213: -6690978321044239066
+    second: Deco-removebg-preview_16
+  - first:
+      213: 3575899037199716735
+    second: Deco-removebg-preview_17
+  - first:
+      213: 2619663185802995746
+    second: Deco-removebg-preview_18
+  - first:
+      213: 1808708072802910888
+    second: Deco-removebg-preview_19
+  - first:
+      213: -1620146143744756407
+    second: Deco-removebg-preview_20
+  - first:
+      213: 1492605121281356122
+    second: Deco-removebg-preview_21
+  - first:
+      213: 5913302824008575914
+    second: Deco-removebg-preview_22
+  - first:
+      213: 2402842850617777910
+    second: Deco-removebg-preview_23
+  - first:
+      213: -6112277782652426349
+    second: Deco-removebg-preview_24
+  - first:
+      213: 5373730123077254411
+    second: Deco-removebg-preview_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Deco-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 342
+        width: 344
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a6ec86005f0cbe00800000000000000
+      internalID: 1061740448534292128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 155
+        width: 186
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b71a7ac12ecaa6b0800000000000000
+      internalID: -5284184568239614027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 231
+        width: 113
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec6fc263b46e54460800000000000000
+      internalID: 7225434387891680974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 98
+        width: 38
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff90090b330966a0800000000000000
+      internalID: -6455625038769905666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 129
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0349e553a03295de0800000000000000
+      internalID: -1344004487041346512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 139
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d32ca2480b42ec40800000000000000
+      internalID: 5540072990469530582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 168
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3278eb38d71af7a0800000000000000
+      internalID: -6342730907712458177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 167
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98798dae0b5f79030800000000000000
+      internalID: 3501537375506962313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 138
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eae08a322e68b620800000000000000
+      internalID: 2790101062445492962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 167
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f90329422954bfea0800000000000000
+      internalID: -5837995997974613857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 111
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d292cad1ddfb8b0800000000000000
+      internalID: -5134141930666906272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 111
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778ba98da638b0660800000000000000
+      internalID: 7353115311536257143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 138
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a6f21cdc9082ae0800000000000000
+      internalID: -1573997290451932544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 121
+        width: 92
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2725f2aff621f170800000000000000
+      internalID: 8210386475065616172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 72
+        width: 74
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a3a5ab50211c7d0800000000000000
+      internalID: -2900016869239277051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 16
+        width: 10
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef9564b9e4ed3e60800000000000000
+      internalID: 7943757010156494825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 75
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d8156daaed423a0800000000000000
+      internalID: -6690978321044239066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 76
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7153f87a3520a130800000000000000
+      internalID: 3575899037199716735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 74
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 228a4f4b9c9ea5420800000000000000
+      internalID: 2619663185802995746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 59
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a28cc5c862d91910800000000000000
+      internalID: 1808708072802910888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 69
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 945ffd98aa51489e0800000000000000
+      internalID: -1620146143744756407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 17
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5177eb137cc6b410800000000000000
+      internalID: 1492605121281356122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 16
+        width: 22
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aab6852a695401250800000000000000
+      internalID: 5913302824008575914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 17
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fed82287dc985120800000000000000
+      internalID: 2402842850617777910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 31
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3976d7cadb3dc2ba0800000000000000
+      internalID: -6112277782652426349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deco-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 12
+        width: 134
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0df5d06313539a40800000000000000
+      internalID: 5373730123077254411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Deco-removebg-preview_0: 1061740448534292128
+      Deco-removebg-preview_1: -5284184568239614027
+      Deco-removebg-preview_10: -5134141930666906272
+      Deco-removebg-preview_11: 7353115311536257143
+      Deco-removebg-preview_12: -1573997290451932544
+      Deco-removebg-preview_13: 8210386475065616172
+      Deco-removebg-preview_14: -2900016869239277051
+      Deco-removebg-preview_15: 7943757010156494825
+      Deco-removebg-preview_16: -6690978321044239066
+      Deco-removebg-preview_17: 3575899037199716735
+      Deco-removebg-preview_18: 2619663185802995746
+      Deco-removebg-preview_19: 1808708072802910888
+      Deco-removebg-preview_2: 7225434387891680974
+      Deco-removebg-preview_20: -1620146143744756407
+      Deco-removebg-preview_21: 1492605121281356122
+      Deco-removebg-preview_22: 5913302824008575914
+      Deco-removebg-preview_23: 2402842850617777910
+      Deco-removebg-preview_24: -6112277782652426349
+      Deco-removebg-preview_25: 5373730123077254411
+      Deco-removebg-preview_3: -6455625038769905666
+      Deco-removebg-preview_4: -1344004487041346512
+      Deco-removebg-preview_5: 5540072990469530582
+      Deco-removebg-preview_6: -6342730907712458177
+      Deco-removebg-preview_7: 3501537375506962313
+      Deco-removebg-preview_8: 2790101062445492962
+      Deco-removebg-preview_9: -5837995997974613857
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

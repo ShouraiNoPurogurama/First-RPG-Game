@@ -1,5 +1,3 @@
-using UnityEngine;
-
 namespace Enemies.Skeleton
 {
     public class SkeletonIdleState : SkeletonGroundedState
@@ -18,18 +16,8 @@ namespace Enemies.Skeleton
 
         public override void Update()
         {
-            if (Skeleton.BattleState.PlayerInAttackRange() && Skeleton.BattleState.CanAttack())
-            {
-                StateMachine.ChangeState(Skeleton.AttackState);
-            }
-            
             base.Update();
-
-            if (Skeleton.BattleState.PlayerInAttackRange() && !Skeleton.BattleState.CanAttack())
-            {
-                return;
-            }
-
+            
             if (StateTimer <= 0)
             {
                 StateMachine.ChangeState(Skeleton.MoveState);

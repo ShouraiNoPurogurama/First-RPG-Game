@@ -1,72 +1,76 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
+﻿using Inventory_and_Item;
 using TMPro;
+using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class Ui_ItemSlot : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
+namespace UI
 {
-    [SerializeField] private Image itemImage;
-    [SerializeField] private TextMeshProUGUI itemText;
+    public class UiItemSlot : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
+    {
+        [SerializeField] private Image itemImage;
+        [SerializeField] private TextMeshProUGUI itemText;
 
-    private Assets.Scripts.UI.UI ui;
-    public InventoryItem item;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private void Start()
-    {
-        ui = GetComponentInParent<Assets.Scripts.UI.UI>();
-    }
-    public void UpdateSlot(InventoryItem item)
-    {
-        this.item = item;
-        itemImage.color = Color.white;
-        if (item != null)
+        private UI ui;
+        public InventoryItem item;
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        private void Start()
         {
-            itemImage.sprite = item.data.icon;
-            if (item.stackSize > 1)
+            ui = GetComponentInParent<UI>();
+        }
+        public void UpdateSlot(InventoryItem item)
+        {
+            this.item = item;
+            itemImage.color = Color.white;
+            if (item != null)
             {
-                itemText.text = item.stackSize.ToString();
+                itemImage.sprite = item.data.icon;
+                if (item.stackSize > 1)
+                {
+                    itemText.text = item.stackSize.ToString();
+                }
+                else
+                {
+                    itemText.text = "";
+                }
             }
-            else
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
+
+        public void CleanUpSlot()
+        {
+            item = null;
+            itemImage.sprite = null;
+            itemImage.color = Color.clear;
+            itemText.text = "";
+        }
+        public virtual void OnPointerDown(PointerEventData eventData)
+        {
+
+            if (item.data.itemType == ItemType.Equipment)
             {
-                itemText.text = "";
+                Inventory.instance.EquipItem(item.data);
             }
         }
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    public void CleanUpSlot()
-    {
-        item = null;
-        itemImage.sprite = null;
-        itemImage.color = Color.clear;
-        itemText.text = "";
-    }
-    public virtual void OnPointerDown(PointerEventData eventData)
-    {
-
-        if (item.data.itemType == ItemType.Equipment)
+        public void OnPointerExit(PointerEventData eventData)
         {
-            Inventory.instance.EquipItem(item.data);
+            ui.toolTipUI.HideToolTip();
+
         }
-    }
 
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        ui.toolTipUI.HideToolTip();
-
-    }
-
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        if (item == null)
+        public void OnPointerEnter(PointerEventData eventData)
         {
-            return;
+            if (item == null)
+            {
+                return;
+            }
+            ui.toolTipUI.ShowToolTip(item.data);
         }
-        ui.toolTipUI.ShowToolTip(item.data);
     }
 }

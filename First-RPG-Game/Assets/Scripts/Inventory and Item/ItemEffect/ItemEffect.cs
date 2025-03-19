@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Item Data", menuName = "Data/Item Effect")]
-public class ItemEffect : ScriptableObject
+namespace Inventory_and_Item.ItemEffect
 {
-    public virtual void ExecuteEffect(Transform enemyPosition)
+    [CreateAssetMenu(fileName = "New Item Data", menuName = "Data/Item Effect")]
+    public class ItemEffect : ScriptableObject
     {
-        Debug.Log("Effected");
+        public virtual void ExecuteEffect(Transform enemyPosition)
+        {
+            Debug.Log("Effected");
+        }
     }
 }

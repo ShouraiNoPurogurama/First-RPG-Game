@@ -1,6 +1,7 @@
+using Skills;
 using System;
 using System.Linq;
-using Skills;
+using MainCharacter.Water_Map;
 using UnityEngine;
 
 namespace MainCharacter
@@ -32,6 +33,9 @@ namespace MainCharacter
 
         public float counterAttackDuration = .2f;
         public bool isDashAttack;
+
+        private float _attackSpeed = 1;
+        private float _defaultAttackSpeed;
 
         #endregion
 
@@ -74,6 +78,7 @@ namespace MainCharacter
         public PlayerWallJumpState WallJumpState { get; private set; }
         public PlayerPrimaryAttackState PrimaryAttackState { get; private set; }
         public PlayerCounterAttackState CounterAttackState { get; private set; }
+        public PlayerCounterWaterAttack CounterWaterAttackState { get; private set; }
         public PlayerAimSwordState AimSwordState { get; private set; }
         public PlayerCatchSwordState CatchSwordState { get; private set; }
         public PlayerDashAttackState DashAttackState { get; private set; }
@@ -105,8 +110,9 @@ namespace MainCharacter
             DashState = new PlayerDashState(StateMachine, this, "Dash");
             WallSlideState = new PlayerWallSlideState(StateMachine, this, "WallSlide");
 
-            PrimaryAttackState = new PlayerPrimaryAttackState(StateMachine, this, "Attack");
+            PrimaryAttackState = new PlayerPrimaryAttackState(StateMachine, this, "Attack", _attackSpeed);
             CounterAttackState = new PlayerCounterAttackState(StateMachine, this, "CounterAttack");
+            CounterWaterAttackState = new PlayerCounterWaterAttack(StateMachine, this, "CounterAttack");
             AimSwordState = new PlayerAimSwordState(StateMachine, this, "AimSword");
             CatchSwordState = new PlayerCatchSwordState(StateMachine, this, "CatchSword");
             DashAttackState = new PlayerDashAttackState(StateMachine, this, "DashAttack");
@@ -127,6 +133,7 @@ namespace MainCharacter
             _defaultMoveSpeed = moveSpeed;
             _defaultJumpForce = jumpForce;
             _defaultDashSpeed = dashSpeed;
+            _defaultAttackSpeed = _attackSpeed;
         }
 
         protected override void Update()
@@ -177,6 +184,21 @@ namespace MainCharacter
 
                 StateMachine.ChangeState(DashState);
             }
+        }
+        
+        public override void ReduceAttackSpeedBy(float slowPercentage, float slowDuration)
+        {
+            //Increase attack cooldown bc we dont have attack speed
+             _attackSpeed *= 1 - slowPercentage;
+            
+            Invoke("ReturnDefaultAttackSpeed", slowDuration);
+        }
+
+        protected override void ReturnDefaultAttackSpeed()
+        {
+            base.ReturnDefaultAttackSpeed();
+
+            _attackSpeed = _defaultAttackSpeed;
         }
 
         public override void SlowEntityBy(float slowPercentage, float slowDuration)

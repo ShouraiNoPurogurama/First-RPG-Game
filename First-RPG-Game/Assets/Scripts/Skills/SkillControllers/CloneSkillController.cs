@@ -80,6 +80,7 @@ namespace Skills.SkillControllers
                 var enemy = hit.GetComponent<Enemy>();
                 if (enemy is not null)
                 {
+                    hit.GetComponent<Entity>().SetupKnockBackDir(transform);
                     _player.Stats.DoDamage(enemy.GetComponent<EnemyStats>());
                     enemy.FX.CreateHitFx(enemy.transform, false);
 
