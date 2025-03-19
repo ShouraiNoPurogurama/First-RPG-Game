@@ -18,7 +18,7 @@ namespace MainCharacter
         {
             base.Enter();
 
-            AudioManager.instance.PlaySfx(2, null);
+            //AudioManager.instance.PlaySfx(2, null);
 
             xInput = 0; //Fix bug on attack direction
 

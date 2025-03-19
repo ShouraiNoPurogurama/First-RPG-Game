@@ -1,28 +1,30 @@
-//using Enemies.Swordman;
-//using UnityEngine;
+using Enemies.Swordman;
+using UnityEngine;
 
-//namespace Enemies.Swordman
-//{
-//    public class EnemySwordmanAttackState : EnemyState
-//    {
-//        private EnemySwordman _enemySwordman;
+namespace Enemies.Swordman
+{
+    public class EnemySwordmanAttackState : EnemyState
+    {
+        EnemySwordman enemy;
+        public EnemySwordmanAttackState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, EnemySwordman _enemy) : base(enemyBase, stateMachine, animBoolName )
+        {
+            this.enemy = _enemy;
+        }
 
-//        public EnemySwordmanAttackState(EnemySwordman enemy, EnemyStateMachine stateMachine, string animBoolName)
-//            : base(enemy, stateMachine, animBoolName)
-//        {
-//            _enemySwordman = enemy;
-//        }
+        public override void Enter()
+        {
+            base.Enter();
+        }
+        public override void Update()
+        {
+            base.Update();
+        }
 
-//        public override void Enter()
-//        {
-//            base.Enter();
-//            _enemySwordman.Animator.SetTrigger("isAttacking");
-//        }
+        public override void Exit()
+        {
+            base.Exit();
+        }
 
-//        public override void AnimationFinishTrigger()
-//        {
-//            base.AnimationFinishTrigger();
-//            StateMachine.ChangeState(new EnemySwordmanMoveState(_enemySwordman, StateMachine, "isChasing"));
-//        }
-//    }
-//}
+
+    }
+}

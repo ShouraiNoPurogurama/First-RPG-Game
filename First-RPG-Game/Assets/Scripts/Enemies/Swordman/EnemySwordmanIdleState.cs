@@ -26,12 +26,10 @@ namespace Enemies.Swordman
     //        base.Exit();
     //    }
     //}
-    public class EnemySwordmanIdleState : EnemyState
+    public class EnemySwordmanIdleState : EnemySwordmanGroundedState
     {
-        private EnemySwordman enemy;
-        public  EnemySwordmanIdleState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName, EnemySwordman _enemy) : base(_enemyBase, _stateMachine, _animBoolName)
+        public EnemySwordmanIdleState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, EnemySwordman enemy) : base(enemyBase, stateMachine, animBoolName, enemy)
         {
-            enemy = _enemy;
         }
 
         public override void Enter()
@@ -52,6 +50,7 @@ namespace Enemies.Swordman
             {
                 StateMachine.ChangeState(enemy.MoveState);
             }
+ 
         }
 
     }

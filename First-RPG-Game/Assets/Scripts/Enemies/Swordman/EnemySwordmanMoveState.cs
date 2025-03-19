@@ -2,13 +2,10 @@ using Enemies.Swordman;
 using UnityEngine;
 namespace Enemies.Swordman
 {
-    public class EnemySwordmanMoveState : EnemyState
+    public class EnemySwordmanMoveState : EnemySwordmanGroundedState
     {
-        private EnemySwordman enemy;
-
-        public EnemySwordmanMoveState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, EnemySwordman _enemy) : base(enemyBase, stateMachine, animBoolName)
+        public EnemySwordmanMoveState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, EnemySwordman enemy) : base(enemyBase, stateMachine, animBoolName, enemy)
         {
-            this.enemy = _enemy;
         }
 
         public override void Enter()
@@ -24,12 +21,14 @@ namespace Enemies.Swordman
         public override void Update()
         {
             base.Update();
-            enemy.SetVelocity(enemy.moveSpeed* enemy.FacingDir, enemy.Rb.linearVelocityY);
+            enemy.SetVelocity(enemy.moveSpeed* enemy.FacingDir, Rb.linearVelocity.y);
             if(enemy.IsWallDetected()|| !enemy.IsGroundDetected())
             {
                 enemy.Flip();
                 StateMachine.ChangeState(enemy.IdleState);
             }
+ 
+
         }
 
         //public EnemySwordmanMoveState(EnemySwordman enemy, EnemyStateMachine stateMachine, string animBoolName)
