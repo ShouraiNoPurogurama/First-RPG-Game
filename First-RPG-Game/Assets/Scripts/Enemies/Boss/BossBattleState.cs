@@ -41,13 +41,10 @@ namespace Enemies.Boss
 
                 if (boss.IsGroundDetected() && boss.IsPlayerDetected().distance <= boss.attackDistance && CanAttack())
                 {
-                    if (!boss.isAttacking) // 🔥 Chỉ chuyển trạng thái nếu Boss không tấn công
-                    {
-                        Debug.Log("Start Attack");
-                        StateMachine.ChangeState(boss.AttackState);
-                        //boss.attackManager.HandleAttackLogic();
-                        return;
-                    }
+                    //Debug.Log("Start Attack");
+                    StateMachine.ChangeState(boss.AttackState);
+                    //boss.attackManager.HandleAttackLogic();
+                    return;
                 }
             }
             else
@@ -82,7 +79,7 @@ namespace Enemies.Boss
         {
             AttachCurrentPlayerIfNotExists();
 
-            if (Mathf.Approximately(boss.lastTimeAttacked, 0) || Time.time >= boss.lastTimeAttacked + boss.attackCooldown)
+            if (Mathf.Approximately(boss.lastTimeAttacked, 0) || Time.time >= boss.lastTimeAttacked)
             {
                 //Debug.Log(Time.time >= boss.lastTimeAttacked + boss.attackCooldown);
                 // _boss.lastTimeAttacked = Time.time;
