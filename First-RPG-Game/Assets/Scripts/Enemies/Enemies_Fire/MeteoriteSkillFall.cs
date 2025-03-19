@@ -5,19 +5,22 @@ namespace Enemies.Enemies_Fire
 {
     public class MeteoriteSkillFall : MonoBehaviour
     {
-        public float fallSpeed = 2f;
+        public float fallSpeed = 10f;
         public Transform groundCheck;
         public Transform wallCheck;  
         public LayerMask whatIsGround; 
         public float checkDistance = 0.2f;
         private Animator animator;
         private bool isExploding = false;
+        private Rigidbody2D rb;
         //private MeteoriteAnimationEvents meteoriteEvents;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
+            rb = GetComponent<Rigidbody2D>();
             //Animator animator = meteorite.GetComponent<Animator>();
             animator = GetComponent<Animator>();
+            rb.linearVelocity = Vector2.down * fallSpeed;
             //meteoriteEvents = GetComponent<MeteoriteAnimationEvents>();
         }
 
@@ -25,13 +28,13 @@ namespace Enemies.Enemies_Fire
         void Update()
         {
             if (isExploding) return;
-
-            transform.position += Vector3.down * fallSpeed * Time.deltaTime;
-            Debug.Log(IsGroundDetected() + "............" + IsWallDetected());
-            if (IsGroundDetected() || IsWallDetected())
+           
+            rb.linearVelocity = Vector2.down * fallSpeed;
+            
+            if (IsGroundDetected())
             {
+                rb.linearVelocity = Vector2.zero;
                 TriggerAnimation("Explode");
-                //Destroy(gameObject);
             }
         }
 
@@ -46,12 +49,14 @@ namespace Enemies.Enemies_Fire
                 //Debug.Log(player.StateMachine.CurrentState);
                 if (player.StateMachine.CurrentState is PlayerCounterAttackState)
                 {
+                    rb.linearVelocity = Vector2.zero;
                     TriggerAnimation("Explode");
-                    //Destroy(gameObject);
+                    //Destroy(gameObject);  
                     return;
                 }
                 //Debug.Log("Cham roi ne");
                 player.Stats.TakeDamage(30, Color.yellow);
+                rb.linearVelocity = Vector2.zero;
                 TriggerAnimation("Explode");
                 //Destroy(gameObject);
             }
@@ -62,20 +67,17 @@ namespace Enemies.Enemies_Fire
         {
             Destroy(gameObject);
         }
-
+       
         private bool IsGroundDetected()
         {
             return Physics2D.Raycast(groundCheck.position, Vector2.down, checkDistance, whatIsGround);
         }
-
-        private bool IsWallDetected()
-        {
-            return Physics2D.Raycast(wallCheck.position, Vector2.right, checkDistance, whatIsGround);
-        }
         private void TriggerAnimation(string animName)
         {
             isExploding = true;
+            rb.linearVelocity = Vector2.zero;
             animator.SetTrigger(animName);
+            //StartCoroutine(DestroyAfterAnimation());
         }
     }
 }

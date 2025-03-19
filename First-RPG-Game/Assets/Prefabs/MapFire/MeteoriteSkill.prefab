@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be823269dc05c8142ab2a5f2f1b0d600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallSpeed: 4
+  fallSpeed: 10
   groundCheck: {fileID: 8796510501949997203}
   wallCheck: {fileID: 4992030794905123884}
   whatIsGround:
@@ -209,7 +209,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.010185242, y: -0.46334076}
+  m_Offset: {x: -0.019619703, y: -0.79118395}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -219,7 +219,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.1425629, y: 1.9266815}
+  m_Size: {x: 2.6327386, y: 4.1321464}
   m_EdgeRadius: 0
 --- !u!50 &4341539819878545583
 Rigidbody2D:
@@ -236,7 +236,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0.5
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
