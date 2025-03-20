@@ -8,15 +8,19 @@ namespace MainCharacter
 
         private float _lastTimeAttacked;
         private readonly float _comboWindow = 2;
+        private float _attackSpeed;
 
-        public PlayerPrimaryAttackState(PlayerStateMachine stateMachine, Player player, string animationBoolName) : base(stateMachine,
+        public PlayerPrimaryAttackState(PlayerStateMachine stateMachine, Player player, string animationBoolName, float attackSpeed = 1) : base(stateMachine,
             player, animationBoolName)
         {
+            _attackSpeed = attackSpeed;
         }
 
         public override void Enter()
         {
             base.Enter();
+
+            //AudioManager.instance.PlaySfx(2, null);
 
             xInput = 0; //Fix bug on attack direction
 
@@ -33,7 +37,7 @@ namespace MainCharacter
             }
 
             Player.Animator.SetInteger("ComboCounter", _comboCounter);
-            // Player.Animator.speed = 1.2f;
+            Player.Animator.speed = _attackSpeed;
 
             float xAttackVelocity = Player.isDashAttack
                 ? Player.moveSpeed * attackDir

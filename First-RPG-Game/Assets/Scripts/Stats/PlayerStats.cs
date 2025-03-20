@@ -8,11 +8,11 @@ namespace Stats
         public int Gold;
         public int Ruby;
         private Player _player;
-    
+
         public PlayerStats(Stat maxHp) : base(maxHp)
         {
         }
-    
+
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         protected override void Start()
         {
@@ -27,15 +27,17 @@ namespace Stats
             base.Update();
         }
 
-        public override void TakeDamage(int dmg, Color dmgColor = default)
+        public override void TakeDamage(int dmg, Color color = default)
         {
-            base.TakeDamage(dmg, dmgColor);
+            if (color == default) color = Color.white;
+            
+            base.TakeDamage(dmg, color);
         }
 
         protected override void Die()
         {
             base.Die();
-        
+            GetComponent<Collider2D>().enabled = false; // Hide player Die
             _player.Die();
         }
     }

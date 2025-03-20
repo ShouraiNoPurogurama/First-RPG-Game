@@ -1,0 +1,773 @@
+fileFormatVersion: 2
+guid: cf80bbb7a1c2b1641aa1898bbc65c4b5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 992511962275909331
+    second: ImpalerBoss_death_0
+  - first:
+      213: 372400029528809179
+    second: ImpalerBoss_death_1
+  - first:
+      213: -3586352968928901006
+    second: ImpalerBoss_death_2
+  - first:
+      213: 959322856184414981
+    second: ImpalerBoss_death_3
+  - first:
+      213: 2505499491086570043
+    second: ImpalerBoss_death_4
+  - first:
+      213: -8390329978033268642
+    second: ImpalerBoss_death_5
+  - first:
+      213: 6419782144949157103
+    second: ImpalerBoss_death_6
+  - first:
+      213: 5789210906190070360
+    second: ImpalerBoss_death_7
+  - first:
+      213: 1304867164184429986
+    second: ImpalerBoss_death_8
+  - first:
+      213: 1704826074485949712
+    second: ImpalerBoss_death_9
+  - first:
+      213: 8924939780270132671
+    second: ImpalerBoss_death_10
+  - first:
+      213: 5815140009363666222
+    second: ImpalerBoss_death_11
+  - first:
+      213: 572578140974094218
+    second: ImpalerBoss_death_12
+  - first:
+      213: -3505136473943878333
+    second: ImpalerBoss_death_13
+  - first:
+      213: 1346291009340552560
+    second: ImpalerBoss_death_14
+  - first:
+      213: -6734222423207535910
+    second: ImpalerBoss_death_15
+  - first:
+      213: -5089444398765041151
+    second: ImpalerBoss_death_16
+  - first:
+      213: 6511332095254928579
+    second: ImpalerBoss_death_17
+  - first:
+      213: -1785219604113365504
+    second: ImpalerBoss_death_18
+  - first:
+      213: -5652173375895957864
+    second: ImpalerBoss_death_19
+  - first:
+      213: -949739522365969611
+    second: ImpalerBoss_death_20
+  - first:
+      213: -4138481482848745725
+    second: ImpalerBoss_death_21
+  - first:
+      213: -5892214398776319065
+    second: ImpalerBoss_death_22
+  - first:
+      213: 8061669714876013721
+    second: ImpalerBoss_death_23
+  - first:
+      213: -2661099751771811662
+    second: ImpalerBoss_death_24
+  - first:
+      213: 5785040565292362598
+    second: ImpalerBoss_death_25
+  - first:
+      213: 7189971751814225048
+    second: ImpalerBoss_death_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ImpalerBoss_death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1060
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3de08c20f5c16cd00800000000000000
+      internalID: 992511962275909331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1060
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bded8629ad70b2500800000000000000
+      internalID: 372400029528809179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1060
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27843dfd9f6ba3ec0800000000000000
+      internalID: -3586352968928901006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1060
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50309c31e03305d00800000000000000
+      internalID: 959322856184414981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1060
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b32132f238255c220800000000000000
+      internalID: 2505499491086570043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 795
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e58140fb65f8f8b80800000000000000
+      internalID: -8390329978033268642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_6
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 795
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fecf61de8d5a71950800000000000000
+      internalID: 6419782144949157103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_7
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 795
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852c64985a8675050800000000000000
+      internalID: 5789210906190070360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_8
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 795
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a5c848b5c1db1210800000000000000
+      internalID: 1304867164184429986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_9
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 795
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0150f8d3842c8a710800000000000000
+      internalID: 1704826074485949712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 530
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbd01cc9171cbdb70800000000000000
+      internalID: 8924939780270132671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_11
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 530
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e257841570783b050800000000000000
+      internalID: 5815140009363666222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_12
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 530
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a871aea19c432f700800000000000000
+      internalID: 572578140974094218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_13
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 530
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3455f4da2f04b5fc0800000000000000
+      internalID: -3505136473943878333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_14
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 530
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 075bb004a8cfea210800000000000000
+      internalID: 1346291009340552560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 265
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ada9e32b26c3b82a0800000000000000
+      internalID: -6734222423207535910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_16
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 265
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a128bc849ae59b0800000000000000
+      internalID: -5089444398765041151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_17
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 265
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cc1548ca06ec5a50800000000000000
+      internalID: 6511332095254928579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_18
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 265
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00662c28a30a937e0800000000000000
+      internalID: -1785219604113365504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_19
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 265
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89e0dc8d2427f81b0800000000000000
+      internalID: -5652173375895957864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b2a34bfe8d1d2f0800000000000000
+      internalID: -949739522365969611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_21
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 307c44994092196c0800000000000000
+      internalID: -4138481482848745725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_22
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3ee7cf836aa3ea0800000000000000
+      internalID: -5892214398776319065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_23
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c95b3a4edc0ef60800000000000000
+      internalID: 8061669714876013721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImpalerBoss_death_24
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 640
+        height: 265
+      alignment: 9
+      pivot: {x: 0.238, y: 0.23}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b0d2c7ffdfd11bd0800000000000000
+      internalID: -2661099751771811662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7b9bdcde77959b14b8623a4a5b373a6f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ImpalerBoss_death_0: 992511962275909331
+      ImpalerBoss_death_1: 372400029528809179
+      ImpalerBoss_death_10: 8924939780270132671
+      ImpalerBoss_death_11: 5815140009363666222
+      ImpalerBoss_death_12: 572578140974094218
+      ImpalerBoss_death_13: -3505136473943878333
+      ImpalerBoss_death_14: 1346291009340552560
+      ImpalerBoss_death_15: -6734222423207535910
+      ImpalerBoss_death_16: -5089444398765041151
+      ImpalerBoss_death_17: 6511332095254928579
+      ImpalerBoss_death_18: -1785219604113365504
+      ImpalerBoss_death_19: -5652173375895957864
+      ImpalerBoss_death_2: -3586352968928901006
+      ImpalerBoss_death_20: -949739522365969611
+      ImpalerBoss_death_21: -4138481482848745725
+      ImpalerBoss_death_22: -5892214398776319065
+      ImpalerBoss_death_23: 8061669714876013721
+      ImpalerBoss_death_24: -2661099751771811662
+      ImpalerBoss_death_3: 959322856184414981
+      ImpalerBoss_death_4: 2505499491086570043
+      ImpalerBoss_death_5: -8390329978033268642
+      ImpalerBoss_death_6: 6419782144949157103
+      ImpalerBoss_death_7: 5789210906190070360
+      ImpalerBoss_death_8: 1304867164184429986
+      ImpalerBoss_death_9: 1704826074485949712
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

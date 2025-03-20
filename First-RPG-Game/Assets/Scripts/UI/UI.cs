@@ -1,9 +1,16 @@
+using System.Collections;
 using UnityEngine;
 
-namespace Assets.Scripts.UI
+namespace UI
 {
     public class UI : MonoBehaviour
     {
+        [Header("End Screen")]
+        [SerializeField] private UI_FadeScreen fadeScreen;
+        [SerializeField] private GameObject endText;
+        [SerializeField] private GameObject restartButton;
+        [Space]
+
         [SerializeField] private GameObject characterUI;
         [SerializeField] public UI_ToolTip toolTipUI;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -16,7 +23,7 @@ namespace Assets.Scripts.UI
         // Update is called once per frame
         void Update()
         {
-            if(Input.GetKeyDown(KeyCode.P))
+            if (Input.GetKeyDown(KeyCode.P))
             {
                 SwitchWithKeyTo(characterUI);
             }
@@ -40,7 +47,9 @@ namespace Assets.Scripts.UI
         {
             for (int i = 0; i < transform.childCount; i++)
             {
-                transform.GetChild(i).gameObject.SetActive(false);
+                bool fadeScreen = transform.GetChild(i).GetComponent<UI_FadeScreen>() != null;
+                if (!fadeScreen)
+                    transform.GetChild(i).gameObject.SetActive(false);
             }
             if (menu != null)
             {
@@ -48,5 +57,21 @@ namespace Assets.Scripts.UI
                 menu.SetActive(true);
             }
         }
+        /// <summary>
+        /// Switch on end screen
+        /// </summary>
+        public void SwitchOnEndScreen()
+        {
+            fadeScreen.FadeOut();
+            StartCoroutine(EndScreenCorutione());
+        }
+        IEnumerator EndScreenCorutione()
+        {
+            yield return new WaitForSeconds(1);
+            endText.SetActive(true);
+            yield return new WaitForSeconds(1.5f);
+            restartButton.SetActive(true);
+        }
+        public void RestartGameButton() => SceneController.instance.RestartScene();
     }
 }

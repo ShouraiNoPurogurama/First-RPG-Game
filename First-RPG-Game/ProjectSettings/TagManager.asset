@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -14,6 +15,7 @@ TagManager:
   - Player
   - Enemy
   - Sword
+  - FX
   - Item
   - 
   - 
@@ -55,6 +57,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 424146261
+    locked: 0
+  - name: FX
+    uniqueID: 3332531077
     locked: 0
   - name: FX
     uniqueID: 1060432067

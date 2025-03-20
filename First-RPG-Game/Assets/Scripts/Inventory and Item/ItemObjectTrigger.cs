@@ -1,15 +1,18 @@
 ﻿using MainCharacter;
 using UnityEngine;
 
-public class ItemObjectTrigger : MonoBehaviour
+namespace Inventory_and_Item
 {
-    private ItemObject myItemObject => GetComponentInParent<ItemObject>();
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class ItemObjectTrigger : MonoBehaviour
     {
-        if (collision.GetComponent<Player>() != null)
+        private ItemObject myItemObject => GetComponentInParent<ItemObject>();
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            myItemObject.PickItem(collision);
-        }
+            if (collision.GetComponent<Player>() != null)
+            {
+                myItemObject.PickItem(collision);
+            }
 
+        }
     }
 }

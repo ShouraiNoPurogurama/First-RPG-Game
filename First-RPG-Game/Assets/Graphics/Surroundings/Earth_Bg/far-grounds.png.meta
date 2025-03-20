@@ -1,0 +1,2249 @@
+fileFormatVersion: 2
+guid: 965819e2ee7cc45448431632dead83d5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2722503770247739202
+    second: far-grounds_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: far-grounds_0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 94
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb8c8b2de39b73ad0800000000000000
+      internalID: -2722503770247739202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_1
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 94
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e95ebadc7099b94094aa62c1a60ac44
+      internalID: -682941260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 78
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096eb2652832e084e81a3b2db21b4efc
+      internalID: 70129919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_3
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 78
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6da0429e10be940bbf1a25189d4418
+      internalID: -1113702038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 62
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80fe1e486e90ee64aa8e22d461667ac7
+      internalID: -1617801734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_5
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 62
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9832f23d029724f9e6b63b14cd27bc
+      internalID: 339824592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 62
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0a6b65b825c524d9b67a0bb2d3d0a9
+      internalID: 394400882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_7
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 62
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce2db8bf90c13647a2b383786688925
+      internalID: 940141019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 62
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058a53d1146d95247a30b8ab0b208681
+      internalID: -69587134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_9
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 62
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d13b0d7c9ed0641b9055d31ceae3c1
+      internalID: -2048566388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_10
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 62
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03940e82778aaa346bd5c829ea86e9dd
+      internalID: -853485145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 46
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715ee14bcfe0c134591f3619ca85a1e9
+      internalID: 1524691146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_12
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 46
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4118626d998bd247ab3d481546b122d
+      internalID: 1022446119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_13
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 46
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d122aa8d25da2489b5f7d4a8b4cc57
+      internalID: 45117450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 46
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213973b8e7abdff42ba9111165e40ff1
+      internalID: 1389695208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_15
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 46
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34dde5d8273b564181a46d0afc3c616
+      internalID: 1430117163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_16
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 46
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c7aac6da41f2d49b54e49714764481
+      internalID: -1602004122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 46
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419f0e8e62548354ebc0d9b32234c98e
+      internalID: 2045750294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 46
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6a818379cc6c549bd8e376978216d1
+      internalID: 146723941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_19
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 46
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e22f91fed48fa404b9a6e6cee14f3311
+      internalID: -211281558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_20
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 46
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9204595e4a74016478cc74601b8c83d2
+      internalID: 1570220163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_21
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 46
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13431ae545847d346953640a34692e29
+      internalID: -103548572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 46
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c05c3aeae6857c408e6a4a7032ca056
+      internalID: 868211712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_23
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 46
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf15ca0878b71c46b71017ac8cb1d9f
+      internalID: 302760858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_24
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 46
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f807116e466a184b98362955c17c10f
+      internalID: -1950124512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_25
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 46
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baed62645ec683f489ec7bca1831a3aa
+      internalID: 1070160787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_26
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 46
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be79b08309064ab48864740c0945e0ad
+      internalID: -237026897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_27
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 46
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff096fc1443adf47bbd0c9ba9078f0f
+      internalID: -2013618417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_28
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 46
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd84d08a1f017784aa3d899620326b19
+      internalID: -273761266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_29
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee21c79302b43854190ac67ac67b6f51
+      internalID: 1711331471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64fe9640068ddb7428e571044245569d
+      internalID: -1749603424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_31
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12f928c72e9bc4498031dc365cd3149
+      internalID: 704815883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c82d96246bca64428ef8b8ed9d1bbc9
+      internalID: 138480439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_33
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86f173bf8a4e7f4c8eb2f7e9148eb9b
+      internalID: 1947007864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_34
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd2fba7ce85e1944ac596d63fe69d9f
+      internalID: 2111887391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_35
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921a407b09391e740a2c678ac0a8e9dd
+      internalID: -299113375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_36
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a233fbb1e0eec6b46a9c7d72fa16b984
+      internalID: 1932221565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_37
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7370bd2f4f0411246b9170948ae7ee88
+      internalID: 471885289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_38
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f678bd57cf22dd4f8e8b91ff604daeb
+      internalID: 83363015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_39
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afa15365eadc184d84f50785e31dc8f
+      internalID: 1102423331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_40
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ccc72551ed7474aaed473b07af964b
+      internalID: -1349378873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_41
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c5f13dca80b6a4dbfd3ade39831c7b
+      internalID: 1122829047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_42
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06180fb22de704d4fa13808c7c794605
+      internalID: 1021837734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_43
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178ded06fbe37f9408d7b242343d839e
+      internalID: 1109502993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_44
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c205d976c2e119e41a713bd58353139b
+      internalID: 2019470597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_45
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9e6002adaceaf45becb11e9870ac56
+      internalID: -1018307246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_46
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710d2478b0c48774d857c79375928929
+      internalID: -1790723298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_47
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d229a3150734b446a466d6df944da25
+      internalID: 1434779888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_48
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a9a48c4e09c214e8d9771efe3e4670
+      internalID: -1561770027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_49
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f89de76a56f54f4bbfffacd394fb256
+      internalID: -1510353174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_50
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76170aad4483c6439a834c0d3f97844
+      internalID: 704081083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_51
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0977398994524c46af036f0d2c66f90
+      internalID: 1517237237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_52
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3095f6623c3d2948b166f9c8e923cb4
+      internalID: 1428390645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_53
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed036280666cc54e9dfd6d8b5bafb1d
+      internalID: 1189983635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_54
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3524aba96e2b82d4b92f8690b0cfbc75
+      internalID: -1561221051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_55
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c31385f5e209514487cb5e7f802e317
+      internalID: 267932149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_56
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 30
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171fcfcfed0dd6845a009ed35e82d1b6
+      internalID: 1788469215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_57
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0026bcea118e75c408a67d222a8401bd
+      internalID: -533617637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_58
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9aeba88b265b74c9c03e34526945de
+      internalID: 1026406545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_59
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e403b07b4d9aca64d8229362da369873
+      internalID: -1009713178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_60
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a21e1e53fd79eb4098337ef5648227a
+      internalID: 1944387521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_61
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8faa6dbcc3a4a3f48b2a79905fd29732
+      internalID: -2067387383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_62
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d960eb4e4153e4941a145af839c65444
+      internalID: 1018498075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_63
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23824b8f07ca0643bfa446dce6ea86a
+      internalID: 152988882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_64
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825f61d7458470e4b8bd17ec7760abd7
+      internalID: 1871749132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_65
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474a07edb9f38ee499fb285be226230e
+      internalID: -1521186484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_66
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8de967483849f440b72eded07a8c01c
+      internalID: 1718532985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_67
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a2f9b3ef0252a4685785550b09d03a
+      internalID: 2012617139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_68
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917cf36f00181274bbe31deda599104d
+      internalID: -113228376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_69
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12fb38d3e213b045aaed101ad85c2cd
+      internalID: 379182626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_70
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6690002d933b3b479388154c1b81155
+      internalID: -1008845944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_71
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e5e93283abc784280f5c34d0d8fd22
+      internalID: -1652183959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_72
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dab1d0f656a3bf4d8773c1d12481f14
+      internalID: 2112018515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_73
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23b370be1051ae45b0a8ac0cc4a5b16
+      internalID: -1898079447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_74
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1972982bd3219a444abc5db964dc9dd9
+      internalID: 362513330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_75
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e9f761cb7e4e340b10729737d88c1d
+      internalID: -812892202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_76
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1fc6c099d65df419882ca2a1853a59
+      internalID: -2132664416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_77
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2351e40bd207e804497a0369463539ea
+      internalID: -2016359353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_78
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1e500f0e6f697469277b50944e9f53
+      internalID: 420265375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_79
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5405b95f2b80e1429e2c84fad2dbbb7
+      internalID: -1688483168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_80
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f4ed01b4848264ca117d8aa2ae8dda
+      internalID: 80099750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_81
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21dfdda2b5035c146b7fbeac4dbffe38
+      internalID: -917599205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_82
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa0dbb7e2273c5458e3e5bd5698d8b2
+      internalID: -482447944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_83
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4860f214447c0204dabd6c2709a00cab
+      internalID: 1981381609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_84
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9e66e9044d5ab4ebe7111c0fc13b88
+      internalID: -979100046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_85
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f0842bb6f092c44b68d5bd35e276bb
+      internalID: -1389386506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_86
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e3c35285fa0874297f777ab1456e38
+      internalID: 9904734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_87
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe504dfdea16bfb4bb17dded21f7c08b
+      internalID: 1977031288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_88
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fcb82156e0df8c478311d91410be259
+      internalID: -981952218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_89
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e40bfe1d181141429d185f63795473e
+      internalID: 1274247091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_90
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f3731165737b14fbf7bd6b9db9519a
+      internalID: -1426877335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: far-grounds_91
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 14
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc550663de0270439ed68112c16fd50
+      internalID: 2142125020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2f8c87c50a2109742bc31cc7b39b8034
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      far-grounds_0: -2722503770247739202
+      far-grounds_1: -682941260
+      far-grounds_10: -853485145
+      far-grounds_11: 1524691146
+      far-grounds_12: 1022446119
+      far-grounds_13: 45117450
+      far-grounds_14: 1389695208
+      far-grounds_15: 1430117163
+      far-grounds_16: -1602004122
+      far-grounds_17: 2045750294
+      far-grounds_18: 146723941
+      far-grounds_19: -211281558
+      far-grounds_2: 70129919
+      far-grounds_20: 1570220163
+      far-grounds_21: -103548572
+      far-grounds_22: 868211712
+      far-grounds_23: 302760858
+      far-grounds_24: -1950124512
+      far-grounds_25: 1070160787
+      far-grounds_26: -237026897
+      far-grounds_27: -2013618417
+      far-grounds_28: -273761266
+      far-grounds_29: 1711331471
+      far-grounds_3: -1113702038
+      far-grounds_30: -1749603424
+      far-grounds_31: 704815883
+      far-grounds_32: 138480439
+      far-grounds_33: 1947007864
+      far-grounds_34: 2111887391
+      far-grounds_35: -299113375
+      far-grounds_36: 1932221565
+      far-grounds_37: 471885289
+      far-grounds_38: 83363015
+      far-grounds_39: 1102423331
+      far-grounds_4: -1617801734
+      far-grounds_40: -1349378873
+      far-grounds_41: 1122829047
+      far-grounds_42: 1021837734
+      far-grounds_43: 1109502993
+      far-grounds_44: 2019470597
+      far-grounds_45: -1018307246
+      far-grounds_46: -1790723298
+      far-grounds_47: 1434779888
+      far-grounds_48: -1561770027
+      far-grounds_49: -1510353174
+      far-grounds_5: 339824592
+      far-grounds_50: 704081083
+      far-grounds_51: 1517237237
+      far-grounds_52: 1428390645
+      far-grounds_53: 1189983635
+      far-grounds_54: -1561221051
+      far-grounds_55: 267932149
+      far-grounds_56: 1788469215
+      far-grounds_57: -533617637
+      far-grounds_58: 1026406545
+      far-grounds_59: -1009713178
+      far-grounds_6: 394400882
+      far-grounds_60: 1944387521
+      far-grounds_61: -2067387383
+      far-grounds_62: 1018498075
+      far-grounds_63: 152988882
+      far-grounds_64: 1871749132
+      far-grounds_65: -1521186484
+      far-grounds_66: 1718532985
+      far-grounds_67: 2012617139
+      far-grounds_68: -113228376
+      far-grounds_69: 379182626
+      far-grounds_7: 940141019
+      far-grounds_70: -1008845944
+      far-grounds_71: -1652183959
+      far-grounds_72: 2112018515
+      far-grounds_73: -1898079447
+      far-grounds_74: 362513330
+      far-grounds_75: -812892202
+      far-grounds_76: -2132664416
+      far-grounds_77: -2016359353
+      far-grounds_78: 420265375
+      far-grounds_79: -1688483168
+      far-grounds_8: -69587134
+      far-grounds_80: 80099750
+      far-grounds_81: -917599205
+      far-grounds_82: -482447944
+      far-grounds_83: 1981381609
+      far-grounds_84: -979100046
+      far-grounds_85: -1389386506
+      far-grounds_86: 9904734
+      far-grounds_87: 1977031288
+      far-grounds_88: -981952218
+      far-grounds_89: 1274247091
+      far-grounds_9: -2048566388
+      far-grounds_90: -1426877335
+      far-grounds_91: 2142125020
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,21 +1,23 @@
-﻿using UnityEngine;
+﻿using Inventory_and_Item;
 using UnityEngine.EventSystems;
-using static UnityEditor.Progress;
 
-public class UI_EquimentSlot : Ui_ItemSlot
+namespace UI
 {
-    public EquipmentType equipmentType;
-
-    public override void OnPointerDown(PointerEventData eventData)
+    public class UI_EquimentSlot : UiItemSlot
     {
-        base.OnPointerDown(eventData);
-        Inventory.instance.UnEquipItem((ItemData_Equipment)item.data);
-        Inventory.instance.AddItem(item.data);
-        CleanUpSlot();
-    }
+        public EquipmentType equipmentType;
 
-    private void OnValidate()
-    {
-        gameObject.name = "Equipment slot - " + equipmentType.ToString();
+        public override void OnPointerDown(PointerEventData eventData)
+        {
+            base.OnPointerDown(eventData);
+            Inventory.instance.UnEquipItem((ItemData_Equipment)item.data);
+            Inventory.instance.AddItem(item.data);
+            CleanUpSlot();
+        }
+
+        private void OnValidate()
+        {
+            gameObject.name = "Equipment slot - " + equipmentType.ToString();
+        }
     }
 }
