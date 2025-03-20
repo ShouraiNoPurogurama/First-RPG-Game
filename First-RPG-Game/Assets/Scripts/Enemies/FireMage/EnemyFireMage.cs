@@ -56,9 +56,9 @@ namespace Enemies.FireMage
         public void SpawnFireballs()
         {
             // random ball fall
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 10; i++)
             {
-                Vector3 randomPos = transform.position + new Vector3(Random.Range(-8f, 8f), 20f, 0);
+                Vector3 randomPos = transform.position + new Vector3(Random.Range(-25f, 25f), 20f, 0);
                 Instantiate(MeteoritePrefab, randomPos, Quaternion.identity);
             }
         }

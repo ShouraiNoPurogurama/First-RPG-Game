@@ -13,7 +13,7 @@ namespace Enemies
 
         public Vector2 stunDirection = new Vector2(5,8);
         private bool _canBeStunned;
-        [SerializeField] protected GameObject counterImage;
+        [SerializeField] public GameObject counterImage;
 
         [Header("Move info")]
         public float moveSpeed = 2f;
@@ -153,6 +153,11 @@ namespace Enemies
         }
         
         public virtual void SecondaryAnimationSpecialAttackTrigger()
+        {
+            
+        }
+
+        public virtual void BusyMarker()
         {
             
         }

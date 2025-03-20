@@ -174,13 +174,15 @@ namespace Stats
 
             totalDamage = DecreaseDamageByArmor(targetStats, totalDamage);
 
+            Debug.Log("Total damage: " + totalDamage);
+            
             //If equipments have ailment effects then do magical damage
-            DoMagicalDamage(targetStats);
+            // DoMagicalDamage(targetStats);
 
             targetStats.TakeDamage(totalDamage, Color.red);
         }
 
-        public virtual void DoMagicalDamage(CharacterStats targetStats)
+        public virtual void DoMagicalDamage(CharacterStats targetStats, float dmgScale = 1)
         {
             int fireDamageVal = fireDamage.ModifiedValue;
             int iceDamageVal = iceDamage.ModifiedValue;
@@ -200,12 +202,16 @@ namespace Stats
 
             // Setup Color
             Color damageColor = Color.white;
-            if (fireDamageVal > iceDamageVal && fireDamageVal > lightingDamageVal)
+            if (fireDamageVal >= iceDamageVal && fireDamageVal >= lightingDamageVal && fireDamageVal >= earthDamageVal && fireDamageVal >= windDamageVal)
                 damageColor = Color.red;
-            else if (iceDamageVal > fireDamageVal && iceDamageVal > lightingDamageVal)
+            else if (iceDamageVal >= fireDamageVal && iceDamageVal >= lightingDamageVal && iceDamageVal >= earthDamageVal && iceDamageVal >= windDamageVal)
                 damageColor = Color.blue;
-            else if (lightingDamageVal > fireDamageVal && lightingDamageVal > iceDamageVal)
+            else if (lightingDamageVal >= fireDamageVal && lightingDamageVal >= iceDamageVal && lightingDamageVal >= earthDamageVal && lightingDamageVal >= windDamageVal)
                 damageColor = Color.yellow;
+            else if (earthDamageVal >= fireDamageVal && earthDamageVal >= iceDamageVal && earthDamageVal >= lightingDamageVal && earthDamageVal >= windDamageVal)
+                damageColor = new Color(0.545f, 0.271f, 0.075f); //(brown)
+            else if (windDamageVal >= fireDamageVal && windDamageVal >= iceDamageVal && windDamageVal >= lightingDamageVal && windDamageVal >= earthDamageVal)
+                damageColor = Color.green;
 
             //Use sort instead
             bool canApplyIgnite = fireDamageVal > iceDamageVal && fireDamageVal > lightingDamageVal &&
@@ -218,11 +224,8 @@ namespace Stats
                                  earthDamageVal > lightingDamageVal && earthDamageVal > windDamageVal;
             bool canApplyWind = windDamageVal > fireDamageVal && windDamageVal > iceDamageVal &&
                                 windDamageVal > lightingDamageVal && windDamageVal > earthDamageVal;
-
-
-            Color magicDmgColor = Color.magenta;
-
-            targetStats.TakeDamage(totalMagicalDamage, damageColor);
+            
+            targetStats.TakeDamage(Mathf.RoundToInt(totalMagicalDamage * dmgScale), damageColor);
 
             while (!canApplyIgnite && !canApplyChill && !canApplyShock && !canApplyWind && !canApplyEarth)
             {
@@ -271,7 +274,7 @@ namespace Stats
             {
                 targetStats.SetupShockDamage(Mathf.RoundToInt(lightingDamageVal * .4f));
             }
-
+            
             targetStats.ApplyAilments(canApplyIgnite, canApplyChill, canApplyShock, canApplyEarth, canApplyWind);
         }
 
@@ -519,9 +522,9 @@ namespace Stats
             return maxHp.ModifiedValue + vitality.ModifiedValue * 5;
         }
 
-        public void RecoverHP(int hpModify)
+        public void RecoverHPBy(int hpModify)
         {
-            this.currentHp += hpModify;
+            currentHp += hpModify;
             OnHPChanged?.Invoke();
         }
 

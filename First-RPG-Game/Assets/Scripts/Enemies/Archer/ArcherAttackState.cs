@@ -21,7 +21,7 @@ namespace Enemies.Archer
         {
             base.Update();
             
-            if (_archer.IsPlayerDetected().distance < _archer.safeDistance)
+            if (_archer.IsPlayerDetected().distance != 0 && _archer.IsPlayerDetected().distance < _archer.safeDistance)
             {
                 if (CanJump())
                 {

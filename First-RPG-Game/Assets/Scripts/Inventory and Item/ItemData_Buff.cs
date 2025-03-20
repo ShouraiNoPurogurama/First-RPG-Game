@@ -21,7 +21,7 @@ namespace Inventory_and_Item
         public void AddModifiers()
         {
             PlayerStats playerStats = PlayerManager.Instance.player.GetComponent<PlayerStats>();
-            playerStats.RecoverHP(hpPlus);
+            playerStats.RecoverHPBy(hpPlus);
         }
     }
 }
