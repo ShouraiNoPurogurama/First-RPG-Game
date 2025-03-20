@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "B\u1EA3n sao c\u1EE7a GhostMove_0_0": -9172967730901139861
+      "B\u1EA3n sao c\u1EE7a GhostMove_0_1": -3691226141810415218
+      "B\u1EA3n sao c\u1EE7a GhostMove_0_2": 3790866347450428977
+      "B\u1EA3n sao c\u1EE7a GhostMove_0_3": 4931222752205092784
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
