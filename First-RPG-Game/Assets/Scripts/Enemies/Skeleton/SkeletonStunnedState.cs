@@ -25,7 +25,7 @@ namespace Enemies.Skeleton
         public override void Update()
         {
             base.Update();
-            
+
             if(StateTimer <= 0)
                 StateMachine.ChangeState(_skeleton.IdleState);
         }
@@ -33,7 +33,7 @@ namespace Enemies.Skeleton
         public override void Exit()
         {
             base.Exit();
-            
+
             _skeleton.FX.Invoke("CancelColorChange", 0);
         }
     }

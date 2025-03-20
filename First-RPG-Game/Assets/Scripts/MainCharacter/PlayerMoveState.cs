@@ -9,7 +9,6 @@ namespace MainCharacter
         public override void Enter()
         {
             base.Enter();
-            AudioManager.instance.PlaySfx(13, null);
         }
 
         public override void Update()
@@ -27,7 +26,6 @@ namespace MainCharacter
         public override void Exit()
         {
             base.Exit();
-            AudioManager.instance.StopSfx(13);
         }
     }
 }

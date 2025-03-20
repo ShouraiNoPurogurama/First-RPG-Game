@@ -49,5 +49,10 @@ namespace MainCharacter
         {
             SkillManager.Instance.Sword.CreateSword();
         }
+
+        public void PlayFootstepSound()
+        {
+            SoundManager.PlaySFX("Footstep", false, true);
+        }
     }
 }
