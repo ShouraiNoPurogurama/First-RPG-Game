@@ -1,5 +1,5 @@
-using System.Collections;
 using Save_and_Load;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -34,7 +34,7 @@ namespace UI
         {
             fadeScreen.FadeOut();
             yield return new WaitForSeconds(_delay);
-            SceneManager.LoadScene(sceneName);
+            SceneManager.LoadScene(SaveManager.instance.GetGameData().screenName);
         }
     }
 }
