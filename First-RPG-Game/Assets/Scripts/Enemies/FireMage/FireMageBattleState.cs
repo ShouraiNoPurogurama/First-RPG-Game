@@ -39,7 +39,7 @@ namespace Enemies.FireMage
             {
                 StateTimer = fireMage.battleTime;
 
-                if (fireMage.IsGroundDetected() && fireMage.IsPlayerDetected().distance <= fireMage.attackDistance && CanAttack())
+                if (fireMage.IsGroundDetected() && fireMage.IsPlayerDetected().distance <= fireMage.attackDistance + 25 && CanAttack())
                 {
                     StateMachine.ChangeState(fireMage.AttackState);
                     return;

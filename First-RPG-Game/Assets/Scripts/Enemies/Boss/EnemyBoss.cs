@@ -18,16 +18,14 @@ namespace Enemies.Boss
         public int ultiDamage = 150; // Hồi gấp 5 lần chiêu thường
 
         #region States
-        public bool isAttacking = false;
-
-        public BossAttackManager attackManager;
+        
         public BossIdleState IdleState { get; private set; }
         public BossMoveState MoveState { get; private set; }
         public BossBattleState BattleState { get; private set; }
         public BossAttackState AttackState { get; private set; }
         public BossDeadState DeadState { get; private set; }
+        public BossAttackManager attackManager { get; private set; }
         #endregion
-
         protected override void Awake()
         {
             base.Awake();
@@ -44,6 +42,7 @@ namespace Enemies.Boss
             base.Start();
 
             StateMachine.Initialize(IdleState);
+            //attackManager = BossAttackManager.Instance;
         }
 
 
@@ -54,7 +53,7 @@ namespace Enemies.Boss
 
         public void PerformAttack(string attackType)
         {
-            Debug.Log("Boss thực hiện chiêu: " + attackType);
+            //Debug.Log("Boss thực hiện chiêu: " + attackType);
 
             switch (attackType)
             {
@@ -99,7 +98,10 @@ namespace Enemies.Boss
             StateMachine.ChangeState(DeadState);
             base.Die();
         }
-
+        public EnemyState GetCurrentState()
+        {
+            return StateMachine.CurrentState;
+        }
     }
 }
 

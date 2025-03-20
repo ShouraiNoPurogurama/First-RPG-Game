@@ -21,7 +21,7 @@ namespace Enemies.Enemies_Fire
             Player player = collision.GetComponent<Player>();
             if (player != null)
             {
-                player.Stats.TakeDamage(1,Color.yellow);
+                player.Stats.TakeDamage(80,Color.yellow);
             }
 
         }

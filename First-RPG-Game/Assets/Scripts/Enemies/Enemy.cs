@@ -156,9 +156,18 @@ namespace Enemies
         {
             
         }
-        
+
         public virtual RaycastHit2D IsPlayerDetected()
-            => Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDir, 50, whatIsPlayer);
+           => Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDir, 50, whatIsPlayer);
+
+
+        /* public virtual RaycastHit2D IsPlayerDetected()
+         {
+             RaycastHit2D frontCheck = Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDir, 25, whatIsPlayer);
+             RaycastHit2D backCheck = Physics2D.Raycast(wallCheck.position, Vector2.left * FacingDir, 25, whatIsPlayer);
+
+             return frontCheck.collider != null ? frontCheck : backCheck;
+         }*/
 
 
         protected override void OnDrawGizmos()

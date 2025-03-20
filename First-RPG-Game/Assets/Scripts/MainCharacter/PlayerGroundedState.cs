@@ -30,7 +30,7 @@ namespace MainCharacter
                 StateMachine.ChangeState(Player.CounterAttackState);
             }
 
-            if (Input.GetKeyDown(KeyCode.Q))
+            if (Input.GetKeyDown(KeyCode.K))
             {
                 StateMachine.ChangeState(Player.CounterWaterAttackState);
             }

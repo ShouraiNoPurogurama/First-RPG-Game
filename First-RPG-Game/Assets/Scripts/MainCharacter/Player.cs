@@ -230,7 +230,7 @@ namespace MainCharacter
             jumpForce = _defaultJumpForce;
             dashSpeed = _defaultDashSpeed;
         }
-
+        
         public override void Die()
         {
             base.Die();
