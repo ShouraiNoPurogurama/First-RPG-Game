@@ -16,7 +16,7 @@ public class RubyResponse
 public class APITrigger : MonoBehaviour
 {
     private string apiUrl = "http://prn-222.food/api/v1/data/ruby"; // Thay bằng API thật
-    private string token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImRhdGhsZWNueCIsImV4cCI6MTc0MjM3NDY3NiwiaXNzIjoiUlBHLUFQSSIsImF1ZCI6IlVuaXR5R2FtZUNsaWVudCJ9.58RtZD5PjgMGqouMAjTIiwO16Nq5P1J9mTgAGrbJDx8"; // Lấy token hợp lệ
+    private string token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImRhdGhsZWNueCIsImV4cCI6MTc0MjQ0OTIyMiwiaXNzIjoiUlBHLUFQSSIsImF1ZCI6IlVuaXR5R2FtZUNsaWVudCJ9.wLeuoUL5ek9ulCS8AgIDUEAJxf2scg3_Ov00-bV_tJ4"; // Lấy token hợp lệ
     public static APITrigger Instance;
     private void Awake()
     {
@@ -29,6 +29,7 @@ public class APITrigger : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        token = PlayerPrefs.GetString("authToken");
     }
 
     public async Task LoadRubyDB()
