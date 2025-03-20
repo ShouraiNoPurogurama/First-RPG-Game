@@ -18,6 +18,7 @@ namespace MainCharacter
             if (xInput == 0 || Player.IsWallDetected())
             {
                 StateMachine.ChangeState(Player.IdleState);
+                Player.SetVelocity(0, Rb.linearVelocity.y);
             }
         
             Player.SetVelocity(xInput * Player.moveSpeed, Rb.linearVelocity.y);

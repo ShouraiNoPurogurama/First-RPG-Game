@@ -8,12 +8,17 @@ namespace Enemies.Orc
 {
     public class Orc : Enemy
     {
-        public OrcMoveState MoveState { get; private set; }
+        #region States
+        public OrcIdleState idleState { get; private set; }
+        public OrcMoveState moveState { get; private set; }
+        #endregion
+
         protected override void Awake()
         {
             base.Awake();
 
-            MoveState = new OrcMoveState(this, StateMachine, "Move", this);
+            idleState = new OrcIdleState(this, StateMachine, "Idle", this);
+            moveState = new OrcMoveState(this, StateMachine, "Move", this);
 
             counterImage.SetActive(false);
         }
@@ -21,6 +26,7 @@ namespace Enemies.Orc
         protected override void Start()
         {
             base.Start();
+            StateMachine.Initialize(idleState);
         }
 
         protected override void Update()

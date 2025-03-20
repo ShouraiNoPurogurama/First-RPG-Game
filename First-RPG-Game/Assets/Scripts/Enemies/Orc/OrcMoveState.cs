@@ -17,10 +17,10 @@ namespace Enemies.Orc
         
             Orc.SetVelocity(Orc.FacingDir * Orc.moveSpeed, Rb.linearVelocity.y);
 
-            if (!Orc.IsBusy && (Orc.IsWallDetected() || !Orc.IsGroundDetected()))
-            {
-                Orc.Flip();
-            }
+            //if (!Orc.IsBusy && (Orc.IsWallDetected() || !Orc.IsGroundDetected()))
+            //{
+            //    Orc.Flip();
+            //}
         }
 
         public override void Exit()
