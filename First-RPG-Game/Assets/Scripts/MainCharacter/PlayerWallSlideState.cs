@@ -31,13 +31,13 @@ namespace MainCharacter
         
             Player.CheckForDashInput();
         
-            if (xInput != 0 && !Mathf.Approximately(Player.FacingDir, xInput))
+            if (xInput != 0 && !Mathf.Approximately(Player.FacingDir, xInput) || !Player.IsWallDetected())
             {
                 Player.SetVelocity(xInput * Player.moveSpeed, Rb.linearVelocity.y);
                 StateMachine.ChangeState(Player.AirState);
             }
 
-            if (yInput != 0)
+            if (yInput < 0)
             {
                 Rb.linearVelocity = new Vector2(Rb.linearVelocity.x, yInput * _wallSlideFallingEnchantedSpeed);
             }

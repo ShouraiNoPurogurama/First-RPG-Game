@@ -27,7 +27,8 @@ namespace Skills
             {
                 return true;
             }
-            
+
+            Debug.Log("Creating popup text");
             Player.FX.CreatePopUpText("Cooldown!", Color.white);
             return false;
         }
@@ -38,6 +39,7 @@ namespace Skills
             {
                 UseSkill();
                 CooldownTimer = CoolDown;
+                Debug.Log("Creating popup text");
                 Player.FX.CreatePopUpText("CoolDown", null);
                 return true;
             }
