@@ -9,8 +9,9 @@ namespace Enemies.WindBoss
         private Transform _player;
         private int _moveDir;
 
-        public WindBossBattleState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, WindBoss windBoss) : base(
-            enemyBase, stateMachine, animBoolName)
+        public WindBossBattleState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, WindBoss windBoss) :
+            base(
+                enemyBase, stateMachine, animBoolName)
         {
             _windBoss = windBoss;
         }
@@ -21,7 +22,7 @@ namespace Enemies.WindBoss
 
             AttachCurrentPlayerIfNotExists();
 
-            // FaceToPlayer();
+            _windBoss.SetVelocity(_windBoss.defaultMoveSpeed * _windBoss.FacingDir, Rb.linearVelocity.y);
         }
 
         public override void Update()
@@ -34,14 +35,20 @@ namespace Enemies.WindBoss
 
                 if (_windBoss.IsPlayerDetected().distance < _windBoss.triggerLeapDistance)
                 {
-                    if (CanLeap())
+                    if (_windBoss.Stats.currentHp <= _windBoss.Stats.maxHp.ModifiedValue * 0.5 && CanLeap())
                     {
                         StateMachine.ChangeState(_windBoss.LeapState);
                         return;
                     }
 
+                    if (CanSpinAttack() && _windBoss.IsPlayerDetected().distance < _windBoss.attackDistance)
+                    {
+                        StateMachine.ChangeState(_windBoss.EnterSpinAttackState);
+                        return;
+                    }
+
                     if (
-                        _windBoss.IsPlayerDetected().distance < _windBoss.meleeAttackDistance)
+                        _windBoss.IsPlayerDetected().distance < _windBoss.attackDistance)
                     {
                         if (CanMeleeAttack())
                         {
@@ -56,8 +63,7 @@ namespace Enemies.WindBoss
                     }
                 }
 
-                if (_windBoss.IsGroundDetected() &&
-                    _windBoss.IsPlayerDetected().distance <= _windBoss.attackDistance &&
+                if (_windBoss.IsGroundDetected() && _windBoss.IsPlayerDetected().distance <= _windBoss.attackDistance &&
                     CanAttack())
                 {
                     StateMachine.ChangeState(_windBoss.MeleeAttackState);
@@ -74,7 +80,8 @@ namespace Enemies.WindBoss
 
         private bool CanMeleeAttack()
         {
-            return Time.time >= _windBoss.lastTimeAttacked + _windBoss.attackCooldown && _windBoss.IsPlayerDetected().distance != 0 &&
+            return Time.time >= _windBoss.lastTimeAttacked + _windBoss.attackCooldown &&
+                   _windBoss.IsPlayerDetected().distance != 0 &&
                    _windBoss.IsPlayerDetected().distance < 2f;
         }
 
@@ -90,6 +97,19 @@ namespace Enemies.WindBoss
 
             if (Mathf.Approximately(_windBoss.lastTimeAttacked, 0) ||
                 Time.time >= _windBoss.lastTimeAttacked + _windBoss.attackCooldown)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        public bool CanSpinAttack()
+        {
+            AttachCurrentPlayerIfNotExists();
+
+            if (Mathf.Approximately(_windBoss.lastTimeAttacked, 0) ||
+                Time.time >= _windBoss.lastTimeSpin + _windBoss.spinCoolDown)
             {
                 return true;
             }
@@ -132,14 +152,6 @@ namespace Enemies.WindBoss
             }
 
             return false;
-        }
-
-        private void FaceToPlayer()
-        {
-            if (_player.transform.position.x > _windBoss.transform.position.x && _windBoss.FacingDir == -1)
-                _windBoss.Flip();
-            else if (_player.transform.position.x < _windBoss.transform.position.x && _windBoss.FacingDir == 1)
-                _windBoss.Flip();
         }
     }
 }

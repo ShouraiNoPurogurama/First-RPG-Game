@@ -156,6 +156,11 @@ namespace Enemies
         {
             
         }
+
+        public virtual void BusyMarker()
+        {
+            
+        }
         
         public virtual RaycastHit2D IsPlayerDetected()
             => Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDir, 50, whatIsPlayer);

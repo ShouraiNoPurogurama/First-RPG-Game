@@ -58,7 +58,7 @@ namespace Enemies.Archer
                 }
 
                 if (_archer.IsGroundDetected() &&
-                    _archer.IsPlayerDetected().distance <= _archer.attackDistance &&
+                    _archer.IsPlayerDetected().distance <= ((Enemy)_archer).attackDistance &&
                     CanAttack())
                 {
                     StateMachine.ChangeState(_archer.AttackState);
@@ -103,11 +103,11 @@ namespace Enemies.Archer
             AttachCurrentPlayerIfNotExists();
 
             var result = _archer.IsPlayerDetected().distance != 0 &&
-                         _archer.IsPlayerDetected().distance <= _archer.attackDistance &&
+                         _archer.IsPlayerDetected().distance <= ((Enemy)_archer).attackDistance &&
                          (_archer.FacingDir == -1 && _player.transform.position.x <= _archer.transform.position.x ||
                           _archer.FacingDir == 1 && _player.transform.position.x >= _archer.transform.position.x);
 
-            if (Mathf.Abs(_player.transform.position.x - _archer.transform.position.x) < _archer.attackDistance &&
+            if (Mathf.Abs(_player.transform.position.x - _archer.transform.position.x) < ((Enemy)_archer).attackDistance &&
                 Mathf.Abs(_player.transform.position.y - _archer.transform.position.y) <=
                 _archer.CapsuleCollider.bounds.size.y)
             {

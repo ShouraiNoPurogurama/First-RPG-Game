@@ -270,9 +270,6 @@ namespace Stats
             {
                 targetStats.SetupShockDamage(Mathf.RoundToInt(lightingDamageVal * .4f));
             }
-
-            Debug.Log("Wind damage: " +windDamage);
-            Debug.Log("CAN APPLY WIND: " + canApplyWind);
             
             targetStats.ApplyAilments(canApplyIgnite, canApplyChill, canApplyShock, canApplyEarth, canApplyWind);
         }

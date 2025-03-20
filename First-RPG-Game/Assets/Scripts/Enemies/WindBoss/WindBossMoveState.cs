@@ -17,8 +17,6 @@ namespace Enemies.WindBoss
         public override void Update()
         {
             base.Update();
-
-            Debug.Log(WindBoss.defaultMoveSpeed);
             
             WindBoss.SetVelocity(WindBoss.FacingDir * WindBoss.defaultMoveSpeed, Rb.linearVelocity.y);
             

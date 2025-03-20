@@ -1,3 +1,5 @@
+using System.Collections;
+using MainCharacter;
 using Stats;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -8,20 +10,31 @@ namespace Enemies.WindBoss
     {
         [Header("WindBoss specific info")]
         public Vector2 jumpVelocity;
+
         [SerializeField] public float runSpeed;
         [SerializeField] public float runDuration = 0.25f;
-        
+
         public float jumpCooldown;
         [HideInInspector] public float lastTimeJumped;
-        public float meleeAttackDistance; //How close player should be to trigger melee attack on battle state
 
+        [Header("Leap attack info")]
         public float triggerLeapDistance; //How close player should be to trigger jump on battle state
+
         [SerializeField] private GameObject hammerPrefab;
         [SerializeField] private float hammerSpeed;
         [SerializeField] private float hammerDamage;
         [SerializeField] public float leapCoolDown;
         [HideInInspector] public float lastTimeLeaped;
-        
+
+        [Header("Spin attack info")]
+        [SerializeField] private float spinDistance;
+
+        [SerializeField] public float spinDamageScale;
+        [SerializeField] public float spinCoolDown;
+        [HideInInspector] public float lastTimeSpin;
+        [SerializeField] public float spinDuration;
+
+
         private CharacterStats _myStats;
 
         [SerializeField] private Transform groundBehindCheck;
@@ -39,6 +52,8 @@ namespace Enemies.WindBoss
         public WindBossMeleeAttackState MeleeAttackState { get; private set; }
         public WindBossRunState RunState { get; private set; }
         public WindBossLeapState LeapState { get; private set; }
+        public WindBossEnterSpinAttackState EnterSpinAttackState { get; private set; }
+        public WindBossSpinAttackState SpinAttackState { get; private set; }
 
         #endregion
 
@@ -56,6 +71,8 @@ namespace Enemies.WindBoss
             MeleeAttackState = new WindBossMeleeAttackState(this, StateMachine, "Attack", this);
             // RunState = new WindBossRunState(this, StateMachine, "Run", this);
             LeapState = new WindBossLeapState(this, StateMachine, "Leap", this);
+            EnterSpinAttackState = new WindBossEnterSpinAttackState(this, StateMachine, "EnterSpinAttack", this);
+            SpinAttackState = new WindBossSpinAttackState(this, StateMachine, "SpinAttack", this);
         }
 
         protected override void Start()
@@ -96,8 +113,33 @@ namespace Enemies.WindBoss
         public override void AnimationSpecialAttackTrigger()
         {
             base.AnimationSpecialAttackTrigger();
-            GameObject newHammer = Instantiate(hammerPrefab, attackCheck.position, Quaternion.identity);
+            float xOffset = FacingDir < 0 ? -2.5f : 2.5f;
+
+            Vector3 spawnPosition = new Vector3(attackCheck.position.x + xOffset, attackCheck.position.y - 2f, 0f);
+
+            GameObject newHammer = Instantiate(hammerPrefab, spawnPosition, Quaternion.identity);
             newHammer.GetComponent<WindBossHammerController>().SetupHammer(hammerSpeed, Stats);
+        }
+
+        public override void SecondaryAnimationSpecialAttackTrigger()
+        {
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(attackCheck.position, attackCheckRadius);
+
+            foreach (var hit in colliders)
+            {
+                var player = hit.GetComponent<Player>();
+                if (player)
+                {
+                    Stats.DoMagicalDamage(player.GetComponent<PlayerStats>());
+                    Debug.Log("Freeze boss movement");
+                    SetZeroVelocity();
+                }
+            }
+        }
+
+        public override void BusyMarker()
+        {
+            StartCoroutine("BusyFor", .5f);
         }
 
         public bool GroundBehindCheck() =>

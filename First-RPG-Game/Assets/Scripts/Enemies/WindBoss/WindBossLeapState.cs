@@ -1,3 +1,4 @@
+using MainCharacter;
 using UnityEngine;
 
 namespace Enemies.WindBoss
@@ -6,7 +7,9 @@ namespace Enemies.WindBoss
     {
         private WindBoss _windBoss;
         private float _defaultGravity;
-        private float _flyTime = 1.25f;
+        private float _flyTime;
+        private float _stopTime;
+        private bool _isFlipped;
 
         public WindBossLeapState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, WindBoss windBoss) : base(
             enemyBase, stateMachine, animBoolName)
@@ -17,12 +20,16 @@ namespace Enemies.WindBoss
         public override void Enter()
         {
             base.Enter();
-            
+
+            Debug.Log("Leap State Entered");
+
             _windBoss.lastTimeLeaped = Time.time;
-            
+
             _defaultGravity = Rb.gravityScale;
 
-            StateTimer = _flyTime;
+            _flyTime = .25f;
+
+            _stopTime = 1f;
             
             Rb.gravityScale = 0;
         }
@@ -30,19 +37,22 @@ namespace Enemies.WindBoss
         public override void Update()
         {
             base.Update();
-            
-            if (StateTimer > 0)
+
+            _flyTime -= Time.deltaTime;
+
+            if (_flyTime > 0)
             {
-                Rb.linearVelocity = new Vector2(0, 10);
+                Rb.linearVelocity = new Vector2(0, 35);
             }
 
-            if (StateTimer < 0)
+            if (_flyTime < 0)
             {
-                Rb.linearVelocity = new Vector2(0, -.1f);
+                Rb.linearVelocity = new Vector2(0, 0);
+                _stopTime -= Time.deltaTime;
 
-                StateMachine.ChangeState(_windBoss.LeapAttackState);
+                if (_stopTime <= 0)
+                    StateMachine.ChangeState(_windBoss.LeapAttackState);
             }
-            
         }
 
         public override void Exit()
@@ -50,5 +60,7 @@ namespace Enemies.WindBoss
             Rb.gravityScale = _defaultGravity;
             base.Exit();
         }
+        
+        
     }
 }
