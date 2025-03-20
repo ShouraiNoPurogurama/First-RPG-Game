@@ -41,6 +41,7 @@ namespace Save_and_Load
         public async void LoadGame()
         {
             gameData = await fileDataHandler.Load();
+            await APITrigger.Instance.LoadRubyDB();
             if (this.gameData == null)
             {
                 Debug.Log("No save data found");

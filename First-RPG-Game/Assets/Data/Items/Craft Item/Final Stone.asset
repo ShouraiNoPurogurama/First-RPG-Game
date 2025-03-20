@@ -26,12 +26,12 @@ MonoBehaviour:
   armor: 0
   evasion: 0
   magicResistance: 0
-  damage: 100
+  damage: 3
   critChance: 0
   critPower: 0
   fireDamage: 0
   iceDamage: 0
-  lightingDamage: 12
+  lightingDamage: 40
   craftingMaterials:
   - data: {fileID: 11400000, guid: 920b0a1256053934d94557c96746e85d, type: 2}
     stackSize: 1

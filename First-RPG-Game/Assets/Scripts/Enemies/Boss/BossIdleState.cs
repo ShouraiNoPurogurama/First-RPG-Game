@@ -56,7 +56,6 @@ namespace Enemies.Boss
             //Debug.Log("atk" + boss.BattleState.CanAttack());
             if (boss.BattleState.PlayerInAttackRange() && boss.BattleState.CanAttack())
             {
-                Debug.Log("attacking dsdsđsdsd");
                 StateMachine.ChangeState(boss.AttackState);
             }
 

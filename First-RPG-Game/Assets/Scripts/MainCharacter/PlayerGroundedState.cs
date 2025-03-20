@@ -34,6 +34,10 @@ namespace MainCharacter
             // {
             //     StateMachine.ChangeState(Player.CounterWaterAttackState);
             // }
+            if (Input.GetKeyDown(KeyCode.K))
+            {
+                StateMachine.ChangeState(Player.CounterWaterAttackState);
+            }
 
             if (Input.GetKey(KeyCode.Mouse0))
             {

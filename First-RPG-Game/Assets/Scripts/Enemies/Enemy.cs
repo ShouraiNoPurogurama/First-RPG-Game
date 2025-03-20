@@ -170,7 +170,7 @@ namespace Enemies
         {
             base.OnDrawGizmos();
 
-            Gizmos.color = Color.magenta;
+            Gizmos.color = Color.yellow;
             Gizmos.DrawLine(transform.position,
                 new Vector3(transform.position.x + attackDistance * FacingDir, transform.position.y));
             
