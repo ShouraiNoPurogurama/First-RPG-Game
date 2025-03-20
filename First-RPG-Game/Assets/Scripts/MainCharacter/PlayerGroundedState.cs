@@ -30,6 +30,11 @@ namespace MainCharacter
                 StateMachine.ChangeState(Player.CounterAttackState);
             }
 
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                StateMachine.ChangeState(Player.CounterWaterAttackState);
+            }
+
             if (Input.GetKey(KeyCode.Mouse0))
             {
                 StateMachine.ChangeState(Player.PrimaryAttackState);
@@ -43,11 +48,12 @@ namespace MainCharacter
             if (Input.GetKeyDown(KeyCode.Space) && Player.IsGroundDetected())
             {
                 StateMachine.ChangeState(Player.JumpState);
-            } 
+            }
 
             if (Input.GetKeyDown(KeyCode.R) && SkillManager.Instance.BlackHole.CanUseSkillWithNoLogic())
             {
                 StateMachine.ChangeState(Player.BlackHoleState);
+                Player.FX.CreatePopUpText("Cooldown!",Color.white);
             }
         }
 

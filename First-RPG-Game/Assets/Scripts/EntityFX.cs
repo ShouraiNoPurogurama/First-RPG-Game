@@ -6,6 +6,10 @@ public class EntityFX : MonoBehaviour
 {
     private SpriteRenderer _spriteRenderer;
 
+    [Header("Pop Up Text")]
+    [SerializeField] private GameObject popUpTextPrefab;
+
+
     [SerializeField] private Material hitMat;
     [SerializeField] private float flashDuration;
     private Material _originalMat;
@@ -14,20 +18,42 @@ public class EntityFX : MonoBehaviour
     [Header("Hit FX")]
     [SerializeField] private GameObject hitFx;
 
-    [Header("Ailment FX")]
+    [Header("Ailment Colors")]
     [SerializeField] private Color[] chillColor;
-
     [SerializeField] private Color[] igniteColor;
     [SerializeField] private Color[] shockColor;
-
-    [Header("Popup FX")]
-    [SerializeField] private GameObject popupFxPrefab;
+    
+    [SerializeField] private Color[] windColor;
+    [SerializeField] private Color[] earthColor;
+    
+    [Header("Ailment particles")]
+    [SerializeField] private ParticleSystem igniteFX;
+    [SerializeField] private ParticleSystem chillFX;
+    [SerializeField] private ParticleSystem shockFX;
+    
+    [SerializeField] private ParticleSystem windFX;
+    [SerializeField] private ParticleSystem earthFX;
+    
     
     private void Start()
     {
         _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         _originalMat = _spriteRenderer.material;
     }
+
+    public void CreatePopUpText(string _text, Color? color)
+    {
+        float randomX = Random.Range(-1, 1);
+        float randomY = Random.Range(1.5f, 3);
+
+        Vector3 positionOffset = new Vector3(randomX, randomY);
+        GameObject newText = Instantiate(popUpTextPrefab, transform.position + positionOffset, Quaternion.identity);
+
+        TextMeshPro textMesh = newText.GetComponent<TextMeshPro>();
+        textMesh.text = _text;
+        textMesh.color = color ?? Color.white;
+    }
+
 
     private IEnumerator FlashFX()
     {
@@ -98,10 +124,18 @@ public class EntityFX : MonoBehaviour
     {
         CancelInvoke();
         _spriteRenderer.color = Color.white;
+        
+        igniteFX.Stop();
+        chillFX.Stop();
+        shockFX.Stop();
+        earthFX.Stop();
+        windFX.Stop();
     }
 
     public void IgniteFxFor(float seconds)
     {
+        igniteFX.Play();
+        
         InvokeRepeating("IgniteColorFX", 0, .3f);
         Invoke("CancelColorChange", seconds);
     }
@@ -120,6 +154,8 @@ public class EntityFX : MonoBehaviour
 
     public void ChillFxFor(float seconds)
     {
+        chillFX.Play();
+        
         InvokeRepeating("ChillColorFX", 0, .3f);
         Invoke("CancelColorChange", seconds);
     }
@@ -137,9 +173,12 @@ public class EntityFX : MonoBehaviour
 
     public void ShockFxFor(float seconds)
     {
+        shockFX.Play();
+        
         InvokeRepeating("ShockColorFX", 0, .3f);
         Invoke("CancelColorChange", seconds);
     }
+    
     
     private void ShockColorFX()
     {
@@ -152,17 +191,44 @@ public class EntityFX : MonoBehaviour
             _spriteRenderer.color = shockColor[1];
         }
     }
-
-    public void CreatePopupText(string text, Color color)
+    
+    public void WindFxFor(float seconds)
     {
-        var randomX = Random.Range(-1, 2);
-        var randomY = Random.Range(1, 3);
-        
-        Vector3 positionOffset = new Vector3(randomX, randomY, 0);
-        
-        GameObject newText = Instantiate(popupFxPrefab, transform.position + positionOffset, Quaternion.identity);
-        
-        newText.GetComponent<TextMeshPro>().text = text;
-        newText.GetComponent<TextMeshPro>().color = color;
+        windFX.Play();
+    
+        InvokeRepeating("WindColorFX", 0, .3f);
+        Invoke("CancelColorChange", seconds);
+    }
+
+    private void WindColorFX()
+    {
+        if (_spriteRenderer.color != windColor[0])
+        {
+            _spriteRenderer.color = windColor[0];
+        }
+        else
+        {
+            _spriteRenderer.color = windColor[1];
+        }
+    }
+
+    public void EarthFxFor(float seconds)
+    {
+        earthFX.Play();
+    
+        InvokeRepeating("EarthColorFX", 0, .3f);
+        Invoke("CancelColorChange", seconds);
+    }
+
+    private void EarthColorFX()
+    {
+        if (_spriteRenderer.color != earthColor[0])
+        {
+            _spriteRenderer.color = earthColor[0];
+        }
+        else
+        {
+            _spriteRenderer.color = earthColor[1];
+        }
     }
 }

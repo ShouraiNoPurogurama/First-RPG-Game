@@ -1,51 +1,52 @@
-﻿using NUnit.Framework;
-using System.Collections.Generic;
-using UnityEditor.Rendering;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemDrop : MonoBehaviour
+namespace Inventory_and_Item
 {
-    [SerializeField] private int possibleItemDrop;
-    [SerializeField] private ItemData[] possibleDrop;
-    private List<ItemData> dropList = new List<ItemData>();
-
-    [SerializeField] private GameObject dropPrefab;
-
-    public void GenerateDrop()
+    public class ItemDrop : MonoBehaviour
     {
-        dropList.Clear();
+        [SerializeField] private int possibleItemDrop;
+        [SerializeField] private ItemData[] possibleDrop;
+        private List<ItemData> dropList = new List<ItemData>();
 
-        // Add items to dropList based on dropChance
-        foreach (var item in possibleDrop)
+        [SerializeField] private GameObject dropPrefab;
+
+        public void GenerateDrop()
         {
-            if (Random.Range(0, 100) <= item.dropChance)
+            dropList.Clear();
+
+            // Add items to dropList based on dropChance
+            foreach (var item in possibleDrop)
             {
-                dropList.Add(item);
+                if (Random.Range(0, 100) <= item.dropChance)
+                {
+                    dropList.Add(item);
+                }
             }
+
+            // Prevent errors when dropList is empty
+            if (dropList.Count == 0)
+            {
+                return;
+            }
+
+            int dropsToGenerate = Mathf.Min(possibleItemDrop, dropList.Count);
+
+            for (int i = 0; i < dropsToGenerate; i++)
+            {
+                int randomIndex = Random.Range(0, dropList.Count);
+                ItemData randomItem = dropList[randomIndex];
+                dropList.RemoveAt(randomIndex);
+                DropItem(randomItem);
+            }
+
         }
 
-        // Prevent errors when dropList is empty
-        if (dropList.Count == 0)
+        public void DropItem(ItemData itemdata)
         {
-            return;
+            GameObject newDrop = Instantiate(dropPrefab, transform.position, Quaternion.identity);
+            Vector2 randomVelocity = new Vector2(Random.Range(-5, 5), Random.Range(12, 15));
+            newDrop.GetComponent<ItemObject>().SetupItem(itemdata, randomVelocity);
         }
-
-        int dropsToGenerate = Mathf.Min(possibleItemDrop, dropList.Count);
-
-        for (int i = 0; i < dropsToGenerate; i++)
-        {
-            int randomIndex = Random.Range(0, dropList.Count);
-            ItemData randomItem = dropList[randomIndex];
-            dropList.RemoveAt(randomIndex);
-            DropItem(randomItem);
-        }
-
-    }
-
-    public void DropItem(ItemData itemdata)
-    {
-        GameObject newDrop = Instantiate(dropPrefab, transform.position, Quaternion.identity);
-        Vector2 randomVelocity = new Vector2(Random.Range(-5, 5), Random.Range(12, 15));
-        newDrop.GetComponent<ItemObject>().SetupItem(itemdata, randomVelocity);
     }
 }

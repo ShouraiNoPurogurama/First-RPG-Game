@@ -1,4 +1,5 @@
 using Enemies;
+using Inventory_and_Item;
 using UnityEngine;
 
 namespace Stats
@@ -26,9 +27,9 @@ namespace Stats
             base.Update();
         }
 
-        public override void TakeDamage(int dmg, Color dmgColor = default)
+        public override void TakeDamage(int dmg, Color color = default)
         {
-            base.TakeDamage(dmg, dmgColor);
+            base.TakeDamage(dmg, color);
         }
 
         protected override void Die()
@@ -36,6 +37,8 @@ namespace Stats
             base.Die();
             _enemy.Die();
             myDropSystem.GenerateDrop();
+
+            Destroy(gameObject, 5f);
         }
     }
 }

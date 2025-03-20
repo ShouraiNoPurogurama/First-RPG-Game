@@ -1,15 +1,11 @@
 ﻿using MainCharacter;
 using Stats;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
-namespace Assets.Scripts.Inventory_and_Item
+
+namespace Inventory_and_Item
 {
     [CreateAssetMenu(fileName = "New Item Data", menuName = "Data/Gold")]
-    public class ItemData_Gold : ItemData
+    public class ItemDataGold : ItemData
     {
         public int goldAmount;
         public void AddGold()

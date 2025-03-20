@@ -97,6 +97,7 @@ namespace Skills.SkillControllers
 
                 if (enemy)
                 {
+                    enemy.GetComponent<Entity>().SetupKnockBackDir(transform);
                     _player.Stats.DoMagicalDamage(enemy.GetComponent<EnemyStats>());
                 }
             }

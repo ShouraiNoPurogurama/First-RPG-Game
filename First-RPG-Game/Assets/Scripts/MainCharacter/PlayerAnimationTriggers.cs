@@ -40,7 +40,7 @@ namespace MainCharacter
                 {
                     enemy.FX.CreateHitFx(enemy.transform, false);
                     enemy.IsCanBeStunned(true);
-                    enemy.GetComponent<CharacterStats>().TakeDamage(Player.Stats.damage.ModifiedValue);
+                    enemy.GetComponent<CharacterStats>().TakeDamage(Player.Stats.damage.ModifiedValue, Color.gray);
                 }
             }
         }
