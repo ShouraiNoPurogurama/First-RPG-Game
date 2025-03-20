@@ -136775,6 +136775,7 @@ MonoBehaviour:
   ShockEffectPrefab: {fileID: 4333819748659631814, guid: 4e2f0ca6f167acf46a3bd24e3def151c, type: 3}
   currentHp: 0
   Gold: 0
+  Ruby: 0
 --- !u!1 &1962704619
 GameObject:
   m_ObjectHideFlags: 0
