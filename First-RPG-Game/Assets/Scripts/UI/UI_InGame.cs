@@ -22,12 +22,12 @@ namespace UI
         [SerializeField] private Image blackholeImage;
         [SerializeField] private Image swordImage;
 
-        [Header("Màu sắc UI")]
+        [Header("Color UI")]
         [SerializeField] private Color color1 = Color.red;
         [SerializeField] private Color color2 = Color.blue;
-        [SerializeField] private Color color3 = Color.green;
-        [SerializeField] private Color color4 = Color.yellow;
-        [SerializeField] private Color color5 = Color.magenta;
+        [SerializeField] private Color color3 = Color.yellow;
+        [SerializeField] private Color color4 = new Color(0.545f, 0.271f, 0.075f);
+        [SerializeField] private Color color5 = Color.green;
 
         private SkillManager skillManager;
         private CharacterStats characterStats;
@@ -66,7 +66,7 @@ namespace UI
             CheckCooldownOf(crystalImage, skillManager.Crystal.CoolDown);
             CheckCooldownOf(blackholeImage, skillManager.BlackHole.CoolDown);
 
-            // Cập nhật màu UI theo cooldown
+            
             UpdateUIColor();
         }
 
@@ -88,16 +88,37 @@ namespace UI
             int fireDamageVal = playerStats.fireDamage.ModifiedValue;
             int iceDamageVal = playerStats.iceDamage.ModifiedValue;
             int lightningDamageVal = playerStats.lightingDamage.ModifiedValue;
-            //Debug.Log(iceDamageVal);
+            int earthDamageVal = playerStats.earthDamage.ModifiedValue;
+            int windDamageVal = playerStats.windDamage.ModifiedValue;
 
-     
+
+
             Color selectedColor;
-            if (fireDamageVal >= iceDamageVal && fireDamageVal >= lightningDamageVal)
+
+            if (fireDamageVal >= iceDamageVal && fireDamageVal >= lightningDamageVal &&
+                fireDamageVal >= earthDamageVal && fireDamageVal >= windDamageVal)
+            {
                 selectedColor = color1; 
-            else if (iceDamageVal >= fireDamageVal && iceDamageVal >= lightningDamageVal)
+            }
+            else if (iceDamageVal >= fireDamageVal && iceDamageVal >= lightningDamageVal &&
+                     iceDamageVal >= earthDamageVal && iceDamageVal >= windDamageVal)
+            {
                 selectedColor = color2; 
-            else
+            }
+            else if (lightningDamageVal >= fireDamageVal && lightningDamageVal >= iceDamageVal &&
+                     lightningDamageVal >= earthDamageVal && lightningDamageVal >= windDamageVal)
+            {
                 selectedColor = color3; 
+            }
+            else if (earthDamageVal >= fireDamageVal && earthDamageVal >= iceDamageVal &&
+                     earthDamageVal >= lightningDamageVal && earthDamageVal >= windDamageVal)
+            {
+                selectedColor = color4; 
+            }
+            else
+            {
+                selectedColor = color5; 
+            }
 
 
             dashSkillImage.color = selectedColor;

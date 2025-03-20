@@ -200,12 +200,16 @@ namespace Stats
 
             // Setup Color
             Color damageColor = Color.white;
-            if (fireDamageVal > iceDamageVal && fireDamageVal > lightingDamageVal)
+            if (fireDamageVal >= iceDamageVal && fireDamageVal >= lightingDamageVal && fireDamageVal >= earthDamageVal && fireDamageVal >= windDamageVal)
                 damageColor = Color.red;
-            else if (iceDamageVal > fireDamageVal && iceDamageVal > lightingDamageVal)
+            else if (iceDamageVal >= fireDamageVal && iceDamageVal >= lightingDamageVal && iceDamageVal >= earthDamageVal && iceDamageVal >= windDamageVal)
                 damageColor = Color.blue;
-            else if (lightingDamageVal > fireDamageVal && lightingDamageVal > iceDamageVal)
+            else if (lightingDamageVal >= fireDamageVal && lightingDamageVal >= iceDamageVal && lightingDamageVal >= earthDamageVal && lightingDamageVal >= windDamageVal)
                 damageColor = Color.yellow;
+            else if (earthDamageVal >= fireDamageVal && earthDamageVal >= iceDamageVal && earthDamageVal >= lightingDamageVal && earthDamageVal >= windDamageVal)
+                damageColor = new Color(0.545f, 0.271f, 0.075f); //(brown)
+            else if (windDamageVal >= fireDamageVal && windDamageVal >= iceDamageVal && windDamageVal >= lightingDamageVal && windDamageVal >= earthDamageVal)
+                damageColor = Color.green;
 
             //Use sort instead
             bool canApplyIgnite = fireDamageVal > iceDamageVal && fireDamageVal > lightingDamageVal &&
