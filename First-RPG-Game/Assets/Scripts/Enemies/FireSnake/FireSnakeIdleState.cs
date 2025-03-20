@@ -33,7 +33,7 @@ namespace Enemies.FireSnake
             /*
             if (fireSnake.BattleState.PlayerInAttackRange() && fireSnake.BattleState.CanAttack())
             {
-                StateMachine.ChangeState(fireSnake.AttackState);
+                StateMachine.ChangeState(fireSnake.TongueAttackState);
             }
 
             base.Update();

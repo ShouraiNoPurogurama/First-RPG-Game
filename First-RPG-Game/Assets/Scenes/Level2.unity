@@ -31382,7 +31382,7 @@ Transform:
   m_GameObject: {fileID: 882211997}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30.47051, y: 5.6883373, z: -9.998132}
+  m_LocalPosition: {x: 30.469442, y: 5.6883373, z: -9.998132}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -32537,9 +32537,17 @@ MonoBehaviour:
   lightingDamage:
     baseValue: 0
     modifiers: 
+  earthDamage:
+    baseValue: 0
+    modifiers: 
+  windDamage:
+    baseValue: 0
+    modifiers: 
   isIgnited: 0
   isChilled: 0
   isShocked: 0
+  isEarthAffected: 0
+  isWindAffected: 0
   ailmentDuration: 0
   ShockEffectPrefab: {fileID: 0}
   currentHp: 0
@@ -32555,13 +32563,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262a1e0589b702e4aa6d299b38222017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  popUpTextPrefab: {fileID: 0}
   hitMat: {fileID: 2100000, guid: d9d92a4940250db4d85c1b424738b172, type: 2}
   flashDuration: 0.15
   hitFx: {fileID: 1057642753625682144, guid: 9426a43a35b7f864f8f046884b5ef95a, type: 3}
   chillColor: []
   igniteColor: []
   shockColor: []
-  popupFxPrefab: {fileID: 1314646067}
+  windColor: []
+  earthColor: []
+  igniteFX: {fileID: 0}
+  chillFX: {fileID: 0}
+  shockFX: {fileID: 0}
+  windFX: {fileID: 0}
+  earthFX: {fileID: 0}
 --- !u!114 &1002867810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32574,7 +32589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b1f37f38e504c849835505b85210f50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockBackDirection: {x: 3, y: 4}
+  knockBackPower: {x: 5, y: 5}
   knockBackDuration: 0.25
   attackCheck: {fileID: 127556621}
   attackCheckRadius: 1.4
@@ -32588,13 +32603,13 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 64
-  detectRange: 10
   stunDuration: 1
   stunDirection: {x: 5, y: 8}
   counterImage: {fileID: 604275968}
   moveSpeed: 2
   idleTime: 1
   battleTime: 3
+  defaultMoveSpeed: 0
   attackDistance: 10
   attackCooldown: 2
   lastTimeAttacked: 0
@@ -32871,9 +32886,17 @@ MonoBehaviour:
   lightingDamage:
     baseValue: 0
     modifiers: 
+  earthDamage:
+    baseValue: 0
+    modifiers: 
+  windDamage:
+    baseValue: 0
+    modifiers: 
   isIgnited: 0
   isChilled: 0
   isShocked: 0
+  isEarthAffected: 0
+  isWindAffected: 0
   ailmentDuration: 4
   ShockEffectPrefab: {fileID: 4333819748659631814, guid: 4e2f0ca6f167acf46a3bd24e3def151c, type: 3}
   currentHp: 0
@@ -32889,6 +32912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262a1e0589b702e4aa6d299b38222017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  popUpTextPrefab: {fileID: 0}
   hitMat: {fileID: 2100000, guid: d9d92a4940250db4d85c1b424738b172, type: 2}
   flashDuration: 0.2
   hitFx: {fileID: 1057642753625682144, guid: 9426a43a35b7f864f8f046884b5ef95a, type: 3}
@@ -32901,7 +32925,13 @@ MonoBehaviour:
   shockColor:
   - {r: 1, g: 0.8901961, b: 0.38431373, a: 1}
   - {r: 1, g: 0.94653463, b: 0.6999999, a: 1}
-  popupFxPrefab: {fileID: 7055979430217318447, guid: 76d660feac31fd5408ab26278d893e1f, type: 3}
+  windColor: []
+  earthColor: []
+  igniteFX: {fileID: 0}
+  chillFX: {fileID: 0}
+  shockFX: {fileID: 0}
+  windFX: {fileID: 0}
+  earthFX: {fileID: 0}
 --- !u!50 &1025237465
 Rigidbody2D:
   serializedVersion: 5
@@ -32941,7 +32971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69771012e95168e498a96c6869cfbfe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockBackDirection: {x: 3, y: 4}
+  knockBackPower: {x: 5, y: 5}
   knockBackDuration: 0.25
   attackCheck: {fileID: 2023909837}
   attackCheckRadius: 0.8
@@ -32955,13 +32985,13 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 64
-  detectRange: 50
   stunDuration: 1
   stunDirection: {x: 5, y: 8}
   counterImage: {fileID: 2097062292}
   moveSpeed: 2
   idleTime: 1
   battleTime: 3
+  defaultMoveSpeed: 0
   attackDistance: 0.98
   attackCooldown: 2
   lastTimeAttacked: 0
@@ -49006,11 +49036,6 @@ RectTransform:
   m_AnchoredPosition: {x: 2.514, y: 5.028}
   m_SizeDelta: {x: 1794.29, y: 969.375}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1314646067 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7055979430217318447, guid: 76d660feac31fd5408ab26278d893e1f, type: 3}
-  m_PrefabInstance: {fileID: 1202485628}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1320023166
 GameObject:
   m_ObjectHideFlags: 0
@@ -53645,7 +53670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0ee56fdf9aff041adaca0eeba17235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockBackDirection: {x: 4, y: 4}
+  knockBackPower: {x: 5, y: 5}
   knockBackDuration: 0.2
   attackCheck: {fileID: 456317580}
   attackCheckRadius: 0.85
@@ -53704,7 +53729,7 @@ MonoBehaviour:
     baseValue: 0
     modifiers: 
   damage:
-    baseValue: 5
+    baseValue: 100
     modifiers: 
   critChance:
     baseValue: 100
@@ -53721,9 +53746,17 @@ MonoBehaviour:
   lightingDamage:
     baseValue: 5
     modifiers: 
+  earthDamage:
+    baseValue: 0
+    modifiers: 
+  windDamage:
+    baseValue: 0
+    modifiers: 
   isIgnited: 0
   isChilled: 0
   isShocked: 0
+  isEarthAffected: 0
+  isWindAffected: 0
   ailmentDuration: 4
   ShockEffectPrefab: {fileID: 4333819748659631814, guid: 4e2f0ca6f167acf46a3bd24e3def151c, type: 3}
   currentHp: 0
@@ -53740,6 +53773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262a1e0589b702e4aa6d299b38222017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  popUpTextPrefab: {fileID: 0}
   hitMat: {fileID: 2100000, guid: d9d92a4940250db4d85c1b424738b172, type: 2}
   flashDuration: 0.2
   hitFx: {fileID: 1057642753625682144, guid: 9426a43a35b7f864f8f046884b5ef95a, type: 3}
@@ -53752,7 +53786,13 @@ MonoBehaviour:
   shockColor:
   - {r: 1, g: 0.8901961, b: 0.38431373, a: 1}
   - {r: 1, g: 0.94653463, b: 0.6999999, a: 1}
-  popupFxPrefab: {fileID: 7055979430217318447, guid: 76d660feac31fd5408ab26278d893e1f, type: 3}
+  windColor: []
+  earthColor: []
+  igniteFX: {fileID: 0}
+  chillFX: {fileID: 0}
+  shockFX: {fileID: 0}
+  windFX: {fileID: 0}
+  earthFX: {fileID: 0}
 --- !u!50 &1567844084
 Rigidbody2D:
   serializedVersion: 5
@@ -55235,7 +55275,7 @@ Transform:
   m_GameObject: {fileID: 1656887623}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30.47051, y: 5.6883373, z: -9.998132}
+  m_LocalPosition: {x: 30.469442, y: 5.6883373, z: -9.998132}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59369,9 +59409,6 @@ MonoBehaviour:
     intelligence: 0
     vitality: 0
     inventory:
-      keys: []
-      values: 
-    skillTree:
       keys: []
       values: 
     equipmentId: []

@@ -30,7 +30,7 @@ public class MagicEnergyController : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer(targetLayerName))
         {
-            _myStats.DoDamage(collision.GetComponent<CharacterStats>());
+            _myStats.DoMagicalDamage(collision.GetComponent<CharacterStats>());
             Destroy(gameObject);
         }
 

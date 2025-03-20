@@ -33,7 +33,7 @@ namespace Enemies.FireWorm
             /*
             if (fireWorm.BattleState.PlayerInAttackRange() && fireWorm.BattleState.CanAttack())
             {
-                StateMachine.ChangeState(fireWorm.AttackState);
+                StateMachine.ChangeState(fireWorm.TongueAttackState);
             }
 
             base.Update();

@@ -39,5 +39,10 @@ namespace Enemies.Skeleton
         {
             Enemy.SecondaryAnimationSpecialAttackTrigger();
         }
+        
+        private void BusyMarker()
+        {
+            Enemy.BusyMarker(); 
+        }
     }
 }

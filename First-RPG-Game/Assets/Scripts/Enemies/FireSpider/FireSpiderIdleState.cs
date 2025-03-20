@@ -33,7 +33,7 @@ namespace Enemies.FireSpider
             /*
             if (fireSpider.BattleState.PlayerInAttackRange() && fireSpider.BattleState.CanAttack())
             {
-                StateMachine.ChangeState(fireSpider.AttackState);
+                StateMachine.ChangeState(fireSpider.TongueAttackState);
             }
 
             base.Update();
