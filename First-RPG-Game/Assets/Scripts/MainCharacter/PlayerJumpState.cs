@@ -18,6 +18,8 @@ namespace MainCharacter
         public override void Update()
         {
             base.Update();
+            //AudioManager.instance.PlaySfx(31, null);
+
 
             if (xInput != 0)
             {
@@ -33,6 +35,7 @@ namespace MainCharacter
         public override void Exit()
         {
             base.Exit();
+            //AudioManager.instance.StopSfx(31);
         }
     }
 }

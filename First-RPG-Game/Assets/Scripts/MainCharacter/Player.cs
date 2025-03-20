@@ -92,7 +92,7 @@ namespace MainCharacter
 
         public SkillManager SkillManager { get; private set; }
         public GameObject ThrownSword { get; private set; }
-
+        public bool EquippedFinalAilment { get; set; }
 
         /// <summary>
         /// Initialize player states when first awoke
