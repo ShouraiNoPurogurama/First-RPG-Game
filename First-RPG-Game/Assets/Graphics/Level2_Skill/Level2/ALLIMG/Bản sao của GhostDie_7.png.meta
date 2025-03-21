@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: fa4e536985a92c24dbdcc5f7d9886099
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 372979083333021176
+    second: "B\u1EA3n sao c\u1EE7a GhostDie_7_0"
+  - first:
+      213: 3718905533232003765
+    second: "B\u1EA3n sao c\u1EE7a GhostDie_7_1"
+  - first:
+      213: -5436972931878839407
+    second: "B\u1EA3n sao c\u1EE7a GhostDie_7_2"
+  - first:
+      213: 6785896595260991498
+    second: "B\u1EA3n sao c\u1EE7a GhostDie_7_3"
+  - first:
+      213: 455215645012629945
+    second: "B\u1EA3n sao c\u1EE7a GhostDie_7_4"
+  - first:
+      213: -8136405049562022406
+    second: "B\u1EA3n sao c\u1EE7a GhostDie_7_5"
+  - first:
+      213: -6480882424984209154
+    second: "B\u1EA3n sao c\u1EE7a GhostDie_7_6"
+  - first:
+      213: 914985738160708639
+    second: "B\u1EA3n sao c\u1EE7a GhostDie_7_7"
+  - first:
+      213: -3494688440225754422
+    second: "B\u1EA3n sao c\u1EE7a GhostDie_7_8"
+  - first:
+      213: -3139110187648519717
+    second: "B\u1EA3n sao c\u1EE7a GhostDie_7_9"
+  - first:
+      213: -688168700225923144
+    second: "B\u1EA3n sao c\u1EE7a GhostDie_7_10"
+  - first:
+      213: 7018429208218754743
+    second: "B\u1EA3n sao c\u1EE7a GhostDie_7_11"
+  - first:
+      213: 7258623099829356929
+    second: "B\u1EA3n sao c\u1EE7a GhostDie_7_12"
+  - first:
+      213: -160882237059255976
+    second: "B\u1EA3n sao c\u1EE7a GhostDie_7_13"
+  - first:
+      213: -4366582330178193712
+    second: "B\u1EA3n sao c\u1EE7a GhostDie_7_14"
+  - first:
+      213: 7323586506495780818
+    second: "B\u1EA3n sao c\u1EE7a GhostDie_7_15"
+  - first:
+      213: 5016967162639675408
+    second: "B\u1EA3n sao c\u1EE7a GhostDie_7_16"
+  - first:
+      213: 3810553156722751937
+    second: "B\u1EA3n sao c\u1EE7a GhostDie_7_17"
+  - first:
+      213: -1107248299418108341
+    second: "B\u1EA3n sao c\u1EE7a GhostDie_7_18"
+  - first:
+      213: -7210926011579553363
+    second: "B\u1EA3n sao c\u1EE7a GhostDie_7_19"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "B\u1EA3n sao c\u1EE7a GhostDie_7_18"
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 249
+        width: 317
+        height: 137
+      alignment: 9
+      pivot: {x: 0.5, y: 0.94}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e3703c98342a0f0800000000000000
+      internalID: -1107248299418108341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 441b7aa5521eb5f42938f3d6a6bb5046
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "B\u1EA3n sao c\u1EE7a GhostDie_7_18": -1107248299418108341
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
