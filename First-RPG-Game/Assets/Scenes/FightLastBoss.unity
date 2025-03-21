@@ -1279,7 +1279,7 @@ Transform:
   m_GameObject: {fileID: 68458243}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 225.3825, y: -2.6285698, z: -10}
+  m_LocalPosition: {x: 213.30872, y: -7.7226105, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3599,6 +3599,8 @@ MonoBehaviour:
   statType: 8
   statValueText: {fileID: 259791626}
   statNameText: {fileID: 784100961}
+  goldAmount: 0
+  increaseRate: 100
 --- !u!114 &259791626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3731,7 +3733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0ee56fdf9aff041adaca0eeba17235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockBackDirection: {x: 4, y: 4}
+  knockBackPower: {x: 5, y: 5}
   knockBackDuration: 0.2
   attackCheck: {fileID: 289677844}
   attackCheckRadius: 0.85
@@ -3807,13 +3809,22 @@ MonoBehaviour:
   lightingDamage:
     baseValue: 5
     modifiers: 
+  earthDamage:
+    baseValue: 0
+    modifiers: 
+  windDamage:
+    baseValue: 0
+    modifiers: 
   isIgnited: 0
   isChilled: 0
   isShocked: 0
+  isEarthAffected: 0
+  isWindAffected: 0
   ailmentDuration: 4
   ShockEffectPrefab: {fileID: 4333819748659631814, guid: 4e2f0ca6f167acf46a3bd24e3def151c, type: 3}
   currentHp: 0
   Gold: 120
+  Ruby: 0
 --- !u!114 &259808062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3826,6 +3837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262a1e0589b702e4aa6d299b38222017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  popUpTextPrefab: {fileID: 0}
   hitMat: {fileID: 2100000, guid: d9d92a4940250db4d85c1b424738b172, type: 2}
   flashDuration: 0.2
   hitFx: {fileID: 1057642753625682144, guid: 9426a43a35b7f864f8f046884b5ef95a, type: 3}
@@ -3838,7 +3850,13 @@ MonoBehaviour:
   shockColor:
   - {r: 1, g: 0.8901961, b: 0.38431373, a: 1}
   - {r: 1, g: 0.94653463, b: 0.6999999, a: 1}
-  popupFxPrefab: {fileID: 7055979430217318447, guid: 76d660feac31fd5408ab26278d893e1f, type: 3}
+  windColor: []
+  earthColor: []
+  igniteFX: {fileID: 0}
+  chillFX: {fileID: 0}
+  shockFX: {fileID: 0}
+  windFX: {fileID: 0}
+  earthFX: {fileID: 0}
 --- !u!50 &259808063
 Rigidbody2D:
   serializedVersion: 5
@@ -3912,7 +3930,7 @@ Transform:
   m_GameObject: {fileID: 259808059}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 193.7, y: -5.6, z: -0.085996196}
+  m_LocalPosition: {x: 201, y: -6.5, z: -0.085996196}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4638,6 +4656,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074f77e9bf6770947b426e13f013d3dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeScreen: {fileID: 0}
+  endText: {fileID: 0}
+  restartButton: {fileID: 0}
   characterUI: {fileID: 1391730468}
   toolTipUI: {fileID: 1990856210}
 --- !u!114 &334934218
@@ -5371,6 +5392,8 @@ MonoBehaviour:
   statType: 9
   statValueText: {fileID: 387774461}
   statNameText: {fileID: 1016253002}
+  goldAmount: 0
+  increaseRate: 100
 --- !u!114 &387774461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8285,6 +8308,8 @@ MonoBehaviour:
   statType: 5
   statValueText: {fileID: 456244466}
   statNameText: {fileID: 1619861445}
+  goldAmount: 0
+  increaseRate: 100
 --- !u!114 &456244466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9526,6 +9551,8 @@ MonoBehaviour:
   statType: 2
   statValueText: {fileID: 539151741}
   statNameText: {fileID: 404627607}
+  goldAmount: 0
+  increaseRate: 100
 --- !u!114 &539151741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11973,6 +12000,8 @@ MonoBehaviour:
   statType: 4
   statValueText: {fileID: 677951291}
   statNameText: {fileID: 936008225}
+  goldAmount: 0
+  increaseRate: 100
 --- !u!114 &677951291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12601,7 +12630,7 @@ Transform:
   m_GameObject: {fileID: 681317396}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 219.57913, y: -2.539999, z: -10}
+  m_LocalPosition: {x: 225.16766, y: -3.439999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16662,6 +16691,8 @@ MonoBehaviour:
   statType: 1
   statValueText: {fileID: 968575560}
   statNameText: {fileID: 264507355}
+  goldAmount: 0
+  increaseRate: 100
 --- !u!114 &968575560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16794,7 +16825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 639498bb334358e4a8b5bcf2ccfbfd25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockBackDirection: {x: 3, y: 4}
+  knockBackPower: {x: 5, y: 5}
   knockBackDuration: 0.25
   attackCheck: {fileID: 1918642485}
   attackCheckRadius: 3.52
@@ -16814,6 +16845,7 @@ MonoBehaviour:
   moveSpeed: 4
   idleTime: 2
   battleTime: 1
+  defaultMoveSpeed: 0
   attackDistance: 3
   attackCooldown: 2
   lastTimeAttacked: 0
@@ -16875,6 +16907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262a1e0589b702e4aa6d299b38222017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  popUpTextPrefab: {fileID: 0}
   hitMat: {fileID: 2100000, guid: d9d92a4940250db4d85c1b424738b172, type: 2}
   flashDuration: 0.2
   hitFx: {fileID: 1057642753625682144, guid: 9426a43a35b7f864f8f046884b5ef95a, type: 3}
@@ -16887,7 +16920,13 @@ MonoBehaviour:
   shockColor:
   - {r: 0.8396226, g: 0.69930345, b: 0.23366857, a: 0}
   - {r: 0.8301887, g: 0.7743477, b: 0.59131366, a: 0}
-  popupFxPrefab: {fileID: 7055979430217318447, guid: 76d660feac31fd5408ab26278d893e1f, type: 3}
+  windColor: []
+  earthColor: []
+  igniteFX: {fileID: 0}
+  chillFX: {fileID: 0}
+  shockFX: {fileID: 0}
+  windFX: {fileID: 0}
+  earthFX: {fileID: 0}
 --- !u!50 &972551340
 Rigidbody2D:
   serializedVersion: 5
@@ -16969,9 +17008,17 @@ MonoBehaviour:
   lightingDamage:
     baseValue: 0
     modifiers: 
+  earthDamage:
+    baseValue: 0
+    modifiers: 
+  windDamage:
+    baseValue: 0
+    modifiers: 
   isIgnited: 0
   isChilled: 0
   isShocked: 0
+  isEarthAffected: 0
+  isWindAffected: 0
   ailmentDuration: 0
   ShockEffectPrefab: {fileID: 4333819748659631814, guid: 4e2f0ca6f167acf46a3bd24e3def151c, type: 3}
   currentHp: 0
@@ -17864,6 +17911,8 @@ MonoBehaviour:
   statType: 3
   statValueText: {fileID: 1041289880}
   statNameText: {fileID: 1403813552}
+  goldAmount: 0
+  increaseRate: 100
 --- !u!114 &1041289880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19137,6 +19186,8 @@ MonoBehaviour:
   statType: 0
   statValueText: {fileID: 1216317902}
   statNameText: {fileID: 737482643}
+  goldAmount: 0
+  increaseRate: 100
 --- !u!114 &1216317902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20395,6 +20446,8 @@ MonoBehaviour:
   statType: 10
   statValueText: {fileID: 1315824033}
   statNameText: {fileID: 1083126486}
+  goldAmount: 0
+  increaseRate: 100
 --- !u!114 &1315824033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22070,6 +22123,8 @@ MonoBehaviour:
   statType: 7
   statValueText: {fileID: 1439023192}
   statNameText: {fileID: 622215212}
+  goldAmount: 0
+  increaseRate: 100
 --- !u!114 &1439023192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22609,11 +22664,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d724a654c13e5e74680df942b131d4d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sfx: []
-  _backgroundMusic:
-  - {fileID: 1280741240}
-  - {fileID: 1521867272}
-  playBackgroundMusic: 1
 --- !u!1 &1481342230
 GameObject:
   m_ObjectHideFlags: 0
@@ -28448,6 +28498,8 @@ MonoBehaviour:
   statType: 6
   statValueText: {fileID: 1997342235}
   statNameText: {fileID: 415666726}
+  goldAmount: 0
+  increaseRate: 100
 --- !u!114 &1997342235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28692,6 +28744,8 @@ MonoBehaviour:
   stashSlotParent: {fileID: 244390424}
   equipmentSlotParent: {fileID: 1902180191}
   statSlotParent: {fileID: 951214748}
+  loadedItems: []
+  loadedEquipment: []
 --- !u!1 &2033292823
 GameObject:
   m_ObjectHideFlags: 0
