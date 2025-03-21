@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6129647964884386048}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.07, y: 0.05, z: 0}
+  m_LocalPosition: {x: 15.424, y: 0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -125,8 +125,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.016437137, y: 0.0046126614}
-  m_Size: {x: 0.2781276, y: 0.08684009}
+  m_Offset: {x: 0.039813764, y: 0.0072288327}
+  m_Size: {x: 1.0760823, y: 0.12346879}
   m_Direction: 1
 --- !u!50 &2186505597973756682
 Rigidbody2D:
@@ -396,7 +396,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 0.41960785}
+      maxColor: {r: 1, g: 1, b: 1, a: 0.44313726}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

@@ -40,7 +40,7 @@ namespace MainCharacter
 
             Player.SetVelocity(xVelocity, 0);
 
-            if (Input.GetKey(KeyCode.Z))
+            if (Input.GetKey(KeyCode.Mouse0))
             {
                 _activateAttack = true;
             }

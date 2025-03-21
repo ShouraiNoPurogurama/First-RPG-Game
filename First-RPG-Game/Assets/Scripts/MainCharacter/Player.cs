@@ -3,6 +3,7 @@ using System;
 using System.Linq;
 using MainCharacter.Water_Map;
 using UnityEngine;
+using NUnit.Framework.Constraints;
 
 namespace MainCharacter
 {
@@ -109,7 +110,6 @@ namespace MainCharacter
             WallJumpState = new PlayerWallJumpState(StateMachine, this, "Jump");
             DashState = new PlayerDashState(StateMachine, this, "Dash");
             WallSlideState = new PlayerWallSlideState(StateMachine, this, "WallSlide");
-
             PrimaryAttackState = new PlayerPrimaryAttackState(StateMachine, this, "Attack", _attackSpeed);
             CounterAttackState = new PlayerCounterAttackState(StateMachine, this, "CounterAttack");
             CounterWaterAttackState = new PlayerCounterWaterAttack(StateMachine, this, "CounterAttack");

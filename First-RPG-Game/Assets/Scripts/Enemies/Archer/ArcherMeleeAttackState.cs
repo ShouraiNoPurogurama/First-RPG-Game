@@ -15,8 +15,6 @@ namespace Enemies.Archer
         {
             base.Update();
             
-            _archer.SetZeroVelocity();
-            
             if (TriggerCalled)
             {
                 TriggerCalled = false;

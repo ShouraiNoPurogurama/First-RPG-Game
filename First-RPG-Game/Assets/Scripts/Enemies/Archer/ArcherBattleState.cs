@@ -21,13 +21,15 @@ namespace Enemies.Archer
 
             AttachCurrentPlayerIfNotExists();
             _archer.SetZeroVelocity();
+
+            FaceToPlayer();
         }
 
         public override void Update()
         {
             base.Update();
 
-            if (_archer.IsPlayerDetected())
+            if (_archer.IsPlayerDetected() && _archer.IsPlayerDetected().distance != 0)
             {
                 StateTimer = _archer.battleTime;
 
@@ -39,15 +41,24 @@ namespace Enemies.Archer
                         return;
                     }
 
-                    if (CanMeleeAttack())
+                    if (
+                        _archer.IsPlayerDetected().distance < _archer.meleeAttackDistance)
                     {
-                        StateMachine.ChangeState(_archer.MeleeAttackState);
+                        if (CanMeleeAttack())
+                        {
+                            StateMachine.ChangeState(_archer.MeleeAttackState);
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        StateMachine.ChangeState(_archer.RunState);
                         return;
                     }
                 }
 
                 if (_archer.IsGroundDetected() &&
-                    _archer.IsPlayerDetected().distance <= _archer.attackDistance &&
+                    _archer.IsPlayerDetected().distance <= ((Enemy)_archer).attackDistance &&
                     CanAttack())
                 {
                     StateMachine.ChangeState(_archer.AttackState);
@@ -64,8 +75,8 @@ namespace Enemies.Archer
 
         private bool CanMeleeAttack()
         {
-            Debug.Log(_archer.lastTimeAttacked);
-            return Time.time >= _archer.lastTimeAttacked + _archer.attackCooldown && _archer.IsPlayerDetected().distance < 2f;
+            return Time.time >= _archer.lastTimeAttacked + _archer.attackCooldown && _archer.IsPlayerDetected().distance != 0 &&
+                   _archer.IsPlayerDetected().distance < 2f;
         }
 
         public override void Exit()
@@ -92,11 +103,11 @@ namespace Enemies.Archer
             AttachCurrentPlayerIfNotExists();
 
             var result = _archer.IsPlayerDetected().distance != 0 &&
-                         _archer.IsPlayerDetected().distance <= _archer.attackDistance &&
+                         _archer.IsPlayerDetected().distance <= ((Enemy)_archer).attackDistance &&
                          (_archer.FacingDir == -1 && _player.transform.position.x <= _archer.transform.position.x ||
                           _archer.FacingDir == 1 && _player.transform.position.x >= _archer.transform.position.x);
 
-            if (Mathf.Abs(_player.transform.position.x - _archer.transform.position.x) < _archer.attackDistance &&
+            if (Mathf.Abs(_player.transform.position.x - _archer.transform.position.x) < ((Enemy)_archer).attackDistance &&
                 Mathf.Abs(_player.transform.position.y - _archer.transform.position.y) <=
                 _archer.CapsuleCollider.bounds.size.y)
             {
@@ -122,6 +133,14 @@ namespace Enemies.Archer
             }
 
             return false;
+        }
+
+        private void FaceToPlayer()
+        {
+            if (_player.transform.position.x > _archer.transform.position.x && _archer.FacingDir == -1)
+                _archer.Flip();
+            else if (_player.transform.position.x < _archer.transform.position.x && _archer.FacingDir == 1)
+                _archer.Flip();
         }
     }
 }

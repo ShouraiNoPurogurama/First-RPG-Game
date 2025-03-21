@@ -13,7 +13,7 @@ namespace Enemies
 
         public Vector2 stunDirection = new Vector2(5,8);
         private bool _canBeStunned;
-        [SerializeField] protected GameObject counterImage;
+        [SerializeField] public GameObject counterImage;
 
         [Header("Move info")]
         public float moveSpeed = 2f;
@@ -157,17 +157,13 @@ namespace Enemies
             
         }
 
+        public virtual void BusyMarker()
+        {
+            
+        }
+        
         public virtual RaycastHit2D IsPlayerDetected()
-           => Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDir, 50, whatIsPlayer);
-
-
-        /* public virtual RaycastHit2D IsPlayerDetected()
-         {
-             RaycastHit2D frontCheck = Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDir, 25, whatIsPlayer);
-             RaycastHit2D backCheck = Physics2D.Raycast(wallCheck.position, Vector2.left * FacingDir, 25, whatIsPlayer);
-
-             return frontCheck.collider != null ? frontCheck : backCheck;
-         }*/
+            => Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDir, 50, whatIsPlayer);
 
 
         protected override void OnDrawGizmos()

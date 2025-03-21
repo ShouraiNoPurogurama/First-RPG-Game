@@ -25,7 +25,7 @@ namespace Enemies.Archer
         {
             base.Update();
             
-            if (StateTimer <= 0 && (Archer.IsPlayerDetected() || Vector2.Distance(Archer.transform.position, Player.position) < Archer.attackDistance + 5))
+            if (StateTimer <= 0 && (Archer.IsPlayerDetected() || Vector2.Distance(Archer.transform.position, Player.position) < ((Enemy)Archer).attackDistance + 5))
             {
                 StateMachine.ChangeState(Archer.BattleState);
             }

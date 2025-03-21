@@ -33,7 +33,7 @@ namespace Enemies.Boss
             /*
             if (boss.BattleState.PlayerInAttackRange() && boss.BattleState.CanAttack())
             {
-                StateMachine.ChangeState(boss.AttackState);
+                StateMachine.ChangeState(boss.TongueAttackState);
             }
 
             base.Update();
