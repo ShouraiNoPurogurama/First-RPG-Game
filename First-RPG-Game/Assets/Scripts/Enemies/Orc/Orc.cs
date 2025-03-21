@@ -33,6 +33,14 @@ namespace Enemies.Orc
         {
             base.Update();
         }
+
+        public override void Flip()
+        {
+            if (IsBusy)
+                return;
+
+            base.Flip();
+        }
     }
 
 }

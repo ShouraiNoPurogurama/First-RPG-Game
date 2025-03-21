@@ -23,11 +23,16 @@ namespace Enemies.Orc
         public override void Update()
         {
             base.Update();
-            
+
             //if (Orc.IsPlayerDetected() || Vector2.Distance(Orc.transform.position, _player.position) < 2)
             //{
             //    StateMachine.ChangeState(Orc.BattleState);
             //}
+
+            if (!Orc.IsBusy && (Orc.IsWallDetected() || !Orc.IsGroundDetected()))
+            {
+                Orc.Flip();
+            }
         }
 
         public override void Exit()
