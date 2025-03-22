@@ -11,6 +11,7 @@ namespace Enemies.Orc
         #region States
         public OrcIdleState idleState { get; private set; }
         public OrcMoveState moveState { get; private set; }
+        public OrcBattleState battleState { get; private set; }
         #endregion
 
         protected override void Awake()
@@ -19,6 +20,7 @@ namespace Enemies.Orc
 
             idleState = new OrcIdleState(this, StateMachine, "Idle", this);
             moveState = new OrcMoveState(this, StateMachine, "Move", this);
+            battleState = new OrcBattleState(this, StateMachine, "Battle", this);
 
             counterImage.SetActive(false);
         }

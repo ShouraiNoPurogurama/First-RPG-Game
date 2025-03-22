@@ -50,6 +50,12 @@ namespace MainCharacter
         private void ThrowSword()
         {
             SkillManager.Instance.Sword.CreateSword();
+            SoundManager.PlaySFX("Attack", 4, true);
+        }
+        private void PlayCatchSwordSound()
+        {
+            SkillManager.Instance.Sword.CreateSword();
+            SoundManager.PlaySFX("Hurt", null, true);
         }
 
         private void PlaySwordSound()

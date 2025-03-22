@@ -24,10 +24,10 @@ namespace Enemies.Orc
         {
             base.Update();
 
-            //if (Orc.IsPlayerDetected() || Vector2.Distance(Orc.transform.position, _player.position) < 2)
-            //{
-            //    StateMachine.ChangeState(Orc.BattleState);
-            //}
+            if (Orc.IsPlayerDetected() || Vector2.Distance(Orc.transform.position, _player.position) < 2)
+            {
+                StateMachine.ChangeState(Orc.battleState);
+            }
 
             if (!Orc.IsBusy && (Orc.IsWallDetected() || !Orc.IsGroundDetected()))
             {
