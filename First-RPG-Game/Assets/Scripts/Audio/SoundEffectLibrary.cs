@@ -36,7 +36,7 @@ public class SoundEffectLibrary : MonoBehaviour
         return null;
     }
 
-    public AudioClip[] GetClipWithName(string name)
+    public AudioClip[] GetClip(string name)
     {
         if (soundDictionary.ContainsKey(name))
         {
@@ -47,6 +47,26 @@ public class SoundEffectLibrary : MonoBehaviour
                     return soundEffectGroup.clips.ToArray();
                 }
             }
+            //List<AudioClip> clips = soundDictionary[name];
+            //if (clips.Count == 0)
+            //{
+            //    return null;
+            //}
+            //return clips;
+        }
+        return null;
+    }
+
+    public AudioClip GetClipWithIndex(string name, int index)
+    {
+        if (soundDictionary.ContainsKey(name))
+        {
+            List<AudioClip> clips = soundDictionary[name];
+            if (clips.Count == 0)
+            {
+                return null;
+            }
+            return clips[index];
         }
         return null;
     }

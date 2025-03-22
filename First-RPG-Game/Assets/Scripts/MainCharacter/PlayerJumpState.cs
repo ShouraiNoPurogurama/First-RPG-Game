@@ -13,6 +13,7 @@ namespace MainCharacter
             base.Enter();
 
             Rb.linearVelocity = new Vector2(Rb.linearVelocity.x, Player.jumpForce);
+            SoundManager.PlaySFX("WallJump", 0);
         }
 
         public override void Update()
@@ -34,6 +35,7 @@ namespace MainCharacter
         public override void Exit()
         {
             base.Exit();
+            SoundManager.PlaySFX("WallJump", 1);
         }
     }
 }

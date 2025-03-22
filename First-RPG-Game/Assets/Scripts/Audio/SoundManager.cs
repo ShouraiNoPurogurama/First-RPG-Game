@@ -64,11 +64,19 @@ public class SoundManager : MonoBehaviour
     }
 
     // Play SFX
-    public static void PlaySFX(string soundName, bool loop = false, bool randomPitch = false)
+    public static void PlaySFX(string soundName, int? element, bool randomPitch = false)
     {
+
         if (soundEffectLibrary == null) return;
 
         AudioClip clip = soundEffectLibrary.GetRandomClip(soundName);
+
+        if (element.HasValue)
+        {
+            clip = soundEffectLibrary.GetClipWithIndex(soundName, element.Value);
+        }
+
+        
         if (clip != null)
         {
             if (randomPitch)

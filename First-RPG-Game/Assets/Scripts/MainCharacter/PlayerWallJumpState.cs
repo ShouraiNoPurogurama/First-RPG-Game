@@ -14,6 +14,7 @@ namespace MainCharacter
             Player.SetVelocity( -Player.FacingDir * Player.moveSpeed * 0.7f, Rb.linearVelocity.y + Player.jumpForce);
 
             Player.StartCoroutine("BusyFor", .18f);
+            SoundManager.PlaySFX("WallJump", 0);
         }
 
         public override void Update()
@@ -36,6 +37,7 @@ namespace MainCharacter
         public override void Exit()
         {
             base.Exit();
+            SoundManager.PlaySFX("WallJump", 1);
         }
     }
 }
