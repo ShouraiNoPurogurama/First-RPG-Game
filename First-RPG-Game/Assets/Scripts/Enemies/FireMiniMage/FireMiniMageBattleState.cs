@@ -1,4 +1,5 @@
 ﻿using MainCharacter;
+using UnityEditor.Searcher;
 using UnityEngine;
 
 namespace Enemies.FireMiniMage
@@ -35,7 +36,7 @@ namespace Enemies.FireMiniMage
         {
             base.Update();
 
-            if (FireMiniMage.IsPlayerDetected())
+            if (FireMiniMage.IsPlayerDetected() && FireMiniMage.IsPlayerDetected().distance != 0)
             {
                 StateTimer = FireMiniMage.battleTime;
 
@@ -44,6 +45,16 @@ namespace Enemies.FireMiniMage
                     StateMachine.ChangeState(FireMiniMage.AttackState);
                     return;
                 }
+
+                if (FireMiniMage.IsGroundDetected() && FireMiniMage.IsPlayerDetected().distance <= FireMiniMage.attackDistance)
+                {
+                       if (CanThrowBallAttack())
+                       {
+                           StateMachine.ChangeState(FireMiniMage.ThrowAttackState);
+                           return;
+                       }
+                }
+                
             }
             else
             {
@@ -67,7 +78,11 @@ namespace Enemies.FireMiniMage
 
             FireMiniMage.SetVelocity(FireMiniMage.moveSpeed * _moveDir, Rb.linearVelocity.y);
         }
-
+        private bool CanThrowBallAttack()
+        {
+            return Time.time >= FireMiniMage.lastTimeAttacked + FireMiniMage.attackCooldown && FireMiniMage.IsPlayerDetected().distance != 0 &&
+                   FireMiniMage.IsPlayerDetected().distance <= FireMiniMage.throwballDistance;
+        }
         public override void Exit()
         {
             base.Exit();
@@ -77,7 +92,8 @@ namespace Enemies.FireMiniMage
         {
             AttachCurrentPlayerIfNotExists();
 
-            if (Mathf.Approximately(FireMiniMage.lastTimeAttacked, 0) || Time.time >= FireMiniMage.lastTimeAttacked + FireMiniMage.attackCooldown)
+            if (Mathf.Approximately(FireMiniMage.lastTimeAttacked, 0) || 
+                Time.time >= FireMiniMage.lastTimeAttacked + FireMiniMage.attackCooldown)
             {
                 // _FireMiniMage.lastTimeAttacked = Time.time;
                 return true;

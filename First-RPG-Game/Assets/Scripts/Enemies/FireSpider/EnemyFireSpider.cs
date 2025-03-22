@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 namespace Enemies.FireSpider
 {
     public class EnemyFireSpider : Enemy
     {
+        [SerializeField] private int healAmount = 10;
+        [SerializeField] private float healInterval = 3f;
         #region States
         public FireSpiderIdleState IdleState { get; private set; }
         public FireSpiderMoveState MoveState { get; private set; }
@@ -25,14 +28,24 @@ namespace Enemies.FireSpider
         protected override void Start()
         {
             base.Start();
-
             StateMachine.Initialize(IdleState);
+            InvokeRepeating(nameof(HealOverTime), healInterval, healInterval);
         }
 
 
         protected override void Update()
         {
             base.Update();
+        }
+        private void HealOverTime()
+        {
+
+            //Debug.Log("heal------------------------");
+            if (Stats.currentHp <= 0) return; // Nếu đã chết, không hồi máu nữa
+            Debug.Log("heal heal heal ------------------------");
+            Stats.RecoverHPBy(healAmount);
+            //Stats.currentHp = Mathf.Min(Stats.currentHp + healAmount, Stats.maxHp.ModifiedValue);
+            //Debug.Log("FireSpider healed: " + healAmount);
         }
 
         public override void Flip()
@@ -53,7 +66,7 @@ namespace Enemies.FireSpider
             base.Die();
         }
 
-
+        
     }
 }
 

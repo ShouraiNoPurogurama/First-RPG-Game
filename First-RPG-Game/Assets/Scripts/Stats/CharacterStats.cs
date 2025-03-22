@@ -477,6 +477,21 @@ namespace Stats
                 Die();
             }
         }
+        public virtual void TakeDamageNoImpact(int dmg, Color color = default)
+        {
+            if (color == default) color = Color.white;
+
+            _fx.Flash();
+
+            DecreaseHPBy(dmg);
+
+            if (dmg > 0) _fx.CreatePopUpText(dmg.ToString(), color);
+
+            if (currentHp <= 0)
+            {
+                Die();
+            }
+        }
 
         protected virtual void DecreaseHPBy(int dmg)
         {

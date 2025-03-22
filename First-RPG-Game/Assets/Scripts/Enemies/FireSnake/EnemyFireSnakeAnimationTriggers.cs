@@ -10,7 +10,7 @@ namespace Enemies.FireSnake
 
         private void AnimationTrigger()
         {
-            Debug.Log("AnimationTrigger() called!");
+            //Debug.Log("AnimationTrigger() called!");
             fireSnake.AnimationFinishTrigger();
         }
 
