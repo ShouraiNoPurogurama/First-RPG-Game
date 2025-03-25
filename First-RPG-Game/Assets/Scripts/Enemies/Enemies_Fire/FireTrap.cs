@@ -6,7 +6,7 @@ namespace Enemies.Enemies_Fire
 {
     public class FireTrap : MonoBehaviour
     {
-        public int trapdamage = 20;
+        public int trapdamage = 30;
         void Start()
         {
 
