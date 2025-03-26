@@ -42,8 +42,8 @@ namespace Enemies.Boss
                 if (boss.IsGroundDetected() && boss.IsPlayerDetected().distance <= boss.attackDistance && CanAttack())
                 {
                     //Debug.Log("Start Attack");
-                    StateMachine.ChangeState(boss.AttackState);
-                    //boss.attackManager.HandleAttackLogic();
+                    //StateMachine.ChangeState(boss.AttackState);
+                    boss.attackManager.HandleAttackLogic();
                     return;
                 }
             }
@@ -60,11 +60,13 @@ namespace Enemies.Boss
             //Debug.Log(_moveDir);
 
             //if player in attack range, block boss movement
-            if (PlayerInAttackRange() && CanAttack())
+            if (PlayerInAttackRange())
             {
+                Debug.Log("Loi ne");
                 boss.SetZeroVelocity();
-                StateMachine.ChangeState(boss.AttackState);
-                return;
+                //boss.attackManager.HandleAttackLogic();
+                StateMachine.ChangeState(boss.IdleState);
+                //return;
             }
 
             if (boss.IsWallDetected())
@@ -85,7 +87,7 @@ namespace Enemies.Boss
         {
             AttachCurrentPlayerIfNotExists();
 
-            if (Mathf.Approximately(boss.lastTimeAttacked, 0) || Time.time >= boss.lastTimeAttacked + boss.attackCooldown)
+            if (Mathf.Approximately(boss.lastTimeAttacked, 0) || Time.time >= boss.lastTimeAttacked)
             {
                 //Debug.Log(Time.time >= boss.lastTimeAttacked + boss.attackCooldown);
                 // _boss.lastTimeAttacked = Time.time;

@@ -72,8 +72,8 @@ namespace Enemies.FireMiniMage
             if (PlayerInAttackRange())
             {
                 FireMiniMage.SetZeroVelocity();
-                StateMachine.ChangeState(FireMiniMage.AttackState);
-                return;
+                StateMachine.ChangeState(FireMiniMage.IdleState);
+                //return;
             }
 
             if (FireMiniMage.IsWallDetected())

@@ -61,8 +61,8 @@ namespace Enemies.FireMage
             if (PlayerInAttackRange())
             {
                 fireMage.SetZeroVelocity();
-                StateMachine.ChangeState(fireMage.AttackState);
-                return;
+                StateMachine.ChangeState(fireMage.IdleState);
+                //return;
             }
 
             if (fireMage.IsWallDetected())

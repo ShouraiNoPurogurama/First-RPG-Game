@@ -61,8 +61,8 @@ namespace Enemies.FireSnake
             if (PlayerInAttackRange() && CanAttack())
             {
                 fireSnake.SetZeroVelocity();
-                StateMachine.ChangeState(fireSnake.AttackState);
-                return;
+                StateMachine.ChangeState(fireSnake.IdleState);
+                //return;
             }
             if (fireSnake.IsWallDetected())
             {

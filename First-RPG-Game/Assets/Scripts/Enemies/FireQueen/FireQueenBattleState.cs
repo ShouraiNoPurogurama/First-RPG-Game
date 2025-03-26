@@ -61,8 +61,8 @@ namespace Enemies.FireQueen
             if (PlayerInAttackRange())
             {
                 fireQueen.SetZeroVelocity();
-                StateMachine.ChangeState(fireQueen.AttackState);
-                return;
+                StateMachine.ChangeState(fireQueen.IdleState);
+                //return;
             }
 
             if (fireQueen.IsWallDetected())

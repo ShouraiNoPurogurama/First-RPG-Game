@@ -34,11 +34,6 @@ namespace Enemies.Boss
         void Update()
         {
 
-            if (boss.GetCurrentState() == boss.AttackState)
-            {
-                HandleAttackLogic();
-            }
-
         }
 
         public void HandleAttackLogic()
@@ -53,7 +48,7 @@ namespace Enemies.Boss
             {
                 if (hpPercent > 0.7f)
                 {
-                    Debug.Log("111111111111111111111111");
+                    //Debug.Log(boss.knockBackPlayer);
                     PhaseOne();
                 }
                 else if (hpPercent > 0.5f)
@@ -77,21 +72,16 @@ namespace Enemies.Boss
             //Debug.Log("count: " + normalAttackCountSinceLastSkill);
             if (normalAttackCountSinceLastSkill >= 2 && CanUseSkill1())
             {
-                Debug.Log("can skill");
                 UseSkill1();
                 normalAttackCountSinceLastSkill = 0;
             }
-            else if (CanUsePierceAttack())
+            else if (CanUsePierceAttack() && normalAttackCountSinceLastSkill == 1)
             {
-                Debug.Log("can pi");
-                //Debug.Log(animationDuration);
                 UsePierce();
                 normalAttackCountSinceLastSkill++;
             }
             else if (CanUseSlashUpAttack())
             {
-                Debug.Log("can slash");
-                //Debug.Log(animationDuration);
                 UseSlashUp();
                 normalAttackCountSinceLastSkill++;
             }
@@ -108,7 +98,7 @@ namespace Enemies.Boss
                 normalAttackCountSinceLastSkill++;
                 UseSkill1();
             }
-            else if (CanUsePierceAttack())
+            else if (CanUsePierceAttack() && normalAttackCountSinceLastSkill == 1)
             {
                 normalAttackCountSinceLastSkill++;
                 UsePierce();
@@ -137,7 +127,7 @@ namespace Enemies.Boss
                 normalAttackCountSinceLastSkill++;
                 UseSkill1();
             }
-            else if (CanUsePierceAttack())
+            else if (CanUsePierceAttack() && normalAttackCountSinceLastSkill == 1)
             {
                 normalAttackCountSinceLastSkill++;
                 UsePierce();
@@ -174,35 +164,38 @@ namespace Enemies.Boss
         }
         private void UseSlashUp()
         {
+            //animationDuration = boss.Animator.GetCurrentAnimatorStateInfo(0).length;
             boss.knockBackPlayer = new Vector2(1,15);
-            animationDuration = boss.Animator.GetCurrentAnimatorStateInfo(0).length;
+            //Debug.Log(boss.knockBackPlayer);
             boss.PerformAttack("SlashUp");
             boss.Stats.damage.SetDefaultValue(boss.SlashUpDamage);
             lastSlashUpAttackTime = Time.time + animationDuration;
-            boss.lastTimeAttacked = Time.time;
-            boss.attackCooldown = animationDuration;
+            //boss.lastTimeAttacked = Time.time;
+            //boss.attackCooldown = animationDuration;
 
         }
         private void UsePierce()
         {
             boss.knockBackPlayer = new Vector2(1, 5);
-            animationDuration = boss.Animator.GetCurrentAnimatorStateInfo(0).length;
+            //Debug.Log(boss.knockBackPlayer);
+            //animationDuration = boss.Animator.GetCurrentAnimatorStateInfo(0).length;
             boss.PerformAttack("Pierce");
             boss.Stats.damage.SetDefaultValue(boss.PierceDamage);
             lastPierceAttackTime = Time.time + animationDuration;
-            boss.lastTimeAttacked = Time.time;
-            boss.attackCooldown = animationDuration;
+            //boss.lastTimeAttacked = Time.time;
+            //boss.attackCooldown = animationDuration;
         }
 
         private void UseSkill1()
         {
             boss.knockBackPlayer = new Vector2(1, 15);
-            animationDuration = boss.Animator.GetCurrentAnimatorStateInfo(0).length;
+            //Debug.Log(boss.knockBackPlayer);
+            //animationDuration = boss.Animator.GetCurrentAnimatorStateInfo(0).length;
             boss.PerformAttack("Skill1");
             boss.Stats.damage.SetDefaultValue(boss.Skill1Damage);
             lastSkill1AttackTime = Time.time + animationDuration;
-            boss.lastTimeAttacked = Time.time;
-            boss.attackCooldown = animationDuration;
+            //boss.lastTimeAttacked = Time.time;
+            //boss.attackCooldown = animationDuration;
 
         }
         private void UseSkill2()
@@ -210,10 +203,10 @@ namespace Enemies.Boss
             boss.knockBackPlayer = new Vector2(1, 15);
             boss.PerformAttack("Skill2");
             boss.Stats.damage.SetDefaultValue(boss.Skill2Damage);
-            animationDuration = boss.Animator.GetCurrentAnimatorStateInfo(0).length;
+            //animationDuration = boss.Animator.GetCurrentAnimatorStateInfo(0).length;
             lastSkill2AttackTime = Time.time + animationDuration;
-            boss.lastTimeAttacked = Time.time;
-            boss.attackCooldown = animationDuration;
+            //boss.lastTimeAttacked = Time.time;
+            //boss.attackCooldown = animationDuration;
         }
 
         private void UseUlti()
@@ -221,10 +214,10 @@ namespace Enemies.Boss
             boss.knockBackPlayer = new Vector2(1, 15);
             boss.PerformAttack("Ulti");
             boss.Stats.damage.SetDefaultValue(boss.ultiDamage);
-            animationDuration = boss.Animator.GetCurrentAnimatorStateInfo(0).length;
+            //animationDuration = boss.Animator.GetCurrentAnimatorStateInfo(0).length;
             lastUltiAttackTime = Time.time + animationDuration;
-            boss.lastTimeAttacked = Time.time;
-            boss.attackCooldown = animationDuration;
+            //boss.lastTimeAttacked = Time.time;
+            //boss.attackCooldown = animationDuration;
         }
         private bool IsPerformingAttack()
         {

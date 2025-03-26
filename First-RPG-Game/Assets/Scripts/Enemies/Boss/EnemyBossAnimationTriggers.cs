@@ -23,7 +23,9 @@ namespace Enemies.Boss
                 var player = hit.GetComponent<Player>();
                 if (player)
                 {
-                    boss.Stats.DoDamage(player.GetComponent<PlayerStats>());
+                    //Vector2 knockBackValue = boss.knockBackPlayer;
+                    //player.BossAttackPlayerKnock(knockBackValue);
+                    boss.Stats.DoDamageDontKnock(player.GetComponent<PlayerStats>());
                 }
             }
         }
@@ -36,10 +38,13 @@ namespace Enemies.Boss
                 var player = hit.GetComponent<Player>();
                 if (player)
                 {
-                    player.BossAttackPlayerKnock(boss.knockBackPlayer);
-                    //boss.knockBackPlayer = new Vector2(5, 5);
+                    //Debug.Log("anim thuc te thuc thi:   " + boss.knockBackPlayer);
+                    Vector2 knockBackValue = boss.knockBackPlayer;
+                    player.BossAttackPlayerKnock(knockBackValue);
+                    boss.Stats.DoDamage(player.GetComponent<PlayerStats>());
                 }
             }
+            boss.knockBackPlayer = new Vector2(1, 5);
         }
 
         private void OpenCounterWindow() => boss.OpenCounterAttackWindow();

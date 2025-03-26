@@ -65,8 +65,8 @@ namespace Enemies.FireWorm
             if (PlayerInAttackRange())
             {
                 fireWorm.SetZeroVelocity();
-                StateMachine.ChangeState(fireWorm.AttackState);
-                return;
+                StateMachine.ChangeState(fireWorm.IdleState);
+                //return;
             }
 
             fireWorm.SetVelocity(fireWorm.moveSpeed * _moveDir, Rb.linearVelocity.y);

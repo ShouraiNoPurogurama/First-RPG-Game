@@ -23,7 +23,11 @@ namespace Enemies.Boss
         public BossIdleState IdleState { get; private set; }
         public BossMoveState MoveState { get; private set; }
         public BossBattleState BattleState { get; private set; }
-        public BossAttackState AttackState { get; private set; }
+        public BossAttackSlashUpState AttackSlashUpState { get; private set; }
+        public BossAttackPierceState AttackPierceState { get; private set; }
+        public BossAttackSkill1State AttackSkill1State { get; private set; }
+        public BossAttackSkill2State AttackSkill2State { get; private set; }
+        public BossAttackUltiState AttackUltiState { get; private set; }
         public BossDeadState DeadState { get; private set; }
         public BossAttackManager attackManager { get; private set; }
         #endregion
@@ -33,7 +37,11 @@ namespace Enemies.Boss
             IdleState = new BossIdleState(this, StateMachine, "Idle", this);
             MoveState = new BossMoveState(this, StateMachine, "Move", this);
             BattleState = new BossBattleState(this, StateMachine, "Move", this);
-            AttackState = new BossAttackState(this, StateMachine, "SlashUp", this);
+            AttackSlashUpState = new BossAttackSlashUpState(this, StateMachine, "SlashUp", this);
+            AttackPierceState = new BossAttackPierceState(this, StateMachine, "Pierce", this);
+            AttackSkill1State = new BossAttackSkill1State(this, StateMachine, "Skill1", this);
+            AttackSkill2State = new BossAttackSkill2State(this, StateMachine, "Skill2", this);
+            AttackUltiState = new BossAttackUltiState(this, StateMachine, "Ulti", this);
             DeadState = new BossDeadState(this, StateMachine, "Dead", this);
             attackManager = GetComponent<BossAttackManager>();
         }
@@ -59,26 +67,22 @@ namespace Enemies.Boss
             switch (attackType)
             {
                 case "SlashUp":
-                    AttackState = new BossAttackState(this, StateMachine, "SlashUp", this);
-                    //animator.SetTrigger("SlashUp");
+                    StateMachine.ChangeState(AttackSlashUpState);
                     break;
                 case "Pierce":
-                    AttackState = new BossAttackState(this, StateMachine, "Pierce", this);
-                    //animator.SetTrigger("Pierce");
+                    StateMachine.ChangeState(AttackPierceState);
                     break;
                 case "Skill1":
-                    AttackState = new BossAttackState(this, StateMachine, "Skill1", this);
-                    //animator.SetTrigger("Skill1");
+                    StateMachine.ChangeState(AttackSkill1State);
                     break;
                 case "Skill2":
-                    AttackState = new BossAttackState(this, StateMachine, "Skill2", this);
-                    //animator.SetTrigger("Skill1");
+                    StateMachine.ChangeState(AttackSkill2State);
                     break;
                 case "Ulti":
-                    AttackState = new BossAttackState(this, StateMachine, "Ulti", this);
-                    //animator.SetTrigger("Ulti");
+                    StateMachine.ChangeState(AttackUltiState);
                     break;
             }
+            return;
         }
 
 

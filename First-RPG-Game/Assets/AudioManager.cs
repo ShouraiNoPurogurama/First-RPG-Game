@@ -53,7 +53,7 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        if(src != null && Vector2.Distance(PlayerManager.Instance.player.transform.position, src.position) > minDistanceToPlaySound)
+        if (src != null && Vector2.Distance(PlayerManager.Instance.player.transform.position, src.position) > minDistanceToPlaySound)
         {
             return;
         }

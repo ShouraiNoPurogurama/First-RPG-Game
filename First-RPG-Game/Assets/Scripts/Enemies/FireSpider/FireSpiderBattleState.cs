@@ -61,8 +61,8 @@ namespace Enemies.FireSpider
             if (PlayerInAttackRange())
             {
                 fireSpider.SetZeroVelocity();
-                StateMachine.ChangeState(fireSpider.AttackState);
-                return;
+                StateMachine.ChangeState(fireSpider.IdleState);
+                //return;
             }
 
             if (fireSpider.IsWallDetected())

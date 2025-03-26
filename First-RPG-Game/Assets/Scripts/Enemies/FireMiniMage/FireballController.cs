@@ -50,17 +50,6 @@ namespace Assets.Scripts.Enemies.FireMiniMage
                 //rb.linearVelocity = Vector2.zero;
                 Destroy(gameObject);
             }
-            /*
-            if (collision.gameObject.layer == LayerMask.NameToLayer(targetLayerName))
-            {
-                Debug.Log("Trung player");
-                _myStats.DoDamage(collision.GetComponent<CharacterStats>());
-                Destroy(gameObject); 
-            }
-            else if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
-            {
-                Destroy(gameObject);
-            }*/
         }
 
         public void FlipFireball()

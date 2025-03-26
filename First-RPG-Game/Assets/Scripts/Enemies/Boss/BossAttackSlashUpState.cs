@@ -4,10 +4,10 @@ using System.Collections;
 
 namespace Enemies.Boss
 {
-    public class BossAttackState : EnemyState
+    public class BossAttackSlashUpState : EnemyState
     {
         private EnemyBoss boss;
-        public BossAttackState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, EnemyBoss _boss) : base(enemyBase, stateMachine, animBoolName)
+        public BossAttackSlashUpState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, EnemyBoss _boss) : base(enemyBase, stateMachine, animBoolName)
         {
             boss = _boss;
         }
@@ -19,13 +19,17 @@ namespace Enemies.Boss
         public override void Update()
         {
             base.Update();
+
+            //boss.attackManager.HandleAttackLogic();
+
             boss.SetZeroVelocity();
 
             if (TriggerCalled)
             {
                 TriggerCalled = false;
-                //boss.lastTimeAttacked = Time.time;
-                boss.attackManager.HandleAttackLogic(); // Gọi Attack Manager
+                boss.lastTimeAttacked = Time.time;
+                boss.attackCooldown = boss.Animator.GetCurrentAnimatorStateInfo(0).length;
+                //boss.attackManager.HandleAttackLogic(); // Gọi Attack Manager
                 StateMachine.ChangeState(boss.BattleState);
             }
         }
