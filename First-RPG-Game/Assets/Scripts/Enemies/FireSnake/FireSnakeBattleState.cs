@@ -58,14 +58,19 @@ namespace Enemies.FireSnake
             //Debug.Log(_moveDir);
 
             //if player in attack range, block FireSnake movement
-            if (PlayerInAttackRange())
+            if (PlayerInAttackRange() && CanAttack())
             {
                 fireSnake.SetZeroVelocity();
-                StateMachine.ChangeState(fireSnake.IdleState);
+                StateMachine.ChangeState(fireSnake.AttackState);
                 return;
             }
-
-            fireSnake.SetVelocity(fireSnake.moveSpeed * _moveDir, Rb.linearVelocity.y);
+            if (fireSnake.IsWallDetected())
+            {
+                fireSnake.Flip();
+                fireSnake.SetVelocity(fireSnake.moveSpeed * _moveDir, Rb.linearVelocity.y);
+            }
+            else
+                fireSnake.SetVelocity(fireSnake.moveSpeed * _moveDir, Rb.linearVelocity.y);
         }
 
         public override void Exit()
@@ -90,10 +95,17 @@ namespace Enemies.FireSnake
         {
             AttachCurrentPlayerIfNotExists();
 
-            var result = fireSnake.IsPlayerDetected().distance <= fireSnake.attackDistance &&
-                   (fireSnake.FacingDir == -1 && _player.transform.position.x <= fireSnake.transform.position.x ||
-                    fireSnake.FacingDir == 1 && _player.transform.position.x >= fireSnake.transform.position.x);
+            var result = fireSnake.IsPlayerDetected().distance != 0 &&
+             fireSnake.IsPlayerDetected().distance <= fireSnake.attackDistance &&
+             (fireSnake.FacingDir == -1 && _player.transform.position.x <= fireSnake.transform.position.x ||
+              fireSnake.FacingDir == 1 && _player.transform.position.x >= fireSnake.transform.position.x);
 
+            if (Mathf.Abs(_player.transform.position.x - fireSnake.transform.position.x) < fireSnake.attackDistance &&
+                Mathf.Abs(_player.transform.position.y - fireSnake.transform.position.y) <=
+                fireSnake.CapsuleCollider.bounds.size.y)
+            {
+                result = true;
+            }
             return result;
         }
 

@@ -17,23 +17,18 @@ namespace Enemies.FireQueen
         }
         public override void Update()
         {
-            try
-            {
-                base.Update();
 
-                fireQueen.SetZeroVelocity();
+            base.Update();
 
-                if (TriggerCalled)
-                {
-                    TriggerCalled = false;
-                    fireQueen.lastTimeAttacked = Time.time;
-                    StateMachine.ChangeState(fireQueen.BattleState);
-                }
-            }
-            catch (Exception ex)
+            fireQueen.SetZeroVelocity();
+
+            if (TriggerCalled)
             {
-                Debug.LogError("Exception in Update(): " + ex.Message);
+                TriggerCalled = false;
+                fireQueen.lastTimeAttacked = Time.time;
+                StateMachine.ChangeState(fireQueen.BattleState);
             }
+
         }
 
         public override void Exit()

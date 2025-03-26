@@ -15,15 +15,13 @@ namespace Enemies.FireWorm
 
         public override void Update()
         {
-            base.Update();
-
-            fireWorm.SetVelocity(fireWorm.FacingDir * fireWorm.moveSpeed, fireWorm.Rb.linearVelocity.y);
+            base.Update();          
 
             if (!fireWorm.IsBusy && (fireWorm.IsWallDetected() || !fireWorm.IsGroundDetected()))
             {
                 fireWorm.Flip();
             }
-
+            fireWorm.SetVelocity(fireWorm.FacingDir * fireWorm.moveSpeed, fireWorm.Rb.linearVelocity.y);
         }
 
         public override void Exit()

@@ -17,8 +17,9 @@ namespace Enemies.Boss
         public int Skill2Damage = 80;// Hồi gấp 3 lần chiêu thường
         public int ultiDamage = 150; // Hồi gấp 5 lần chiêu thường
 
+        [SerializeField] public Vector2 knockBackPlayer = new Vector2(5, 5);
         #region States
-        
+
         public BossIdleState IdleState { get; private set; }
         public BossMoveState MoveState { get; private set; }
         public BossBattleState BattleState { get; private set; }

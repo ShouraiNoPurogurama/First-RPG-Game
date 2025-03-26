@@ -27,6 +27,20 @@ namespace Enemies.Boss
                 }
             }
         }
+        private void PlayerKnock()
+        {
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(boss.attackCheck.position, boss.attackCheckRadius);
+
+            foreach (var hit in colliders)
+            {
+                var player = hit.GetComponent<Player>();
+                if (player)
+                {
+                    player.BossAttackPlayerKnock(boss.knockBackPlayer);
+                    //boss.knockBackPlayer = new Vector2(5, 5);
+                }
+            }
+        }
 
         private void OpenCounterWindow() => boss.OpenCounterAttackWindow();
         private void CloseCounterWindow() => boss.CloseCounterAttackWindow();

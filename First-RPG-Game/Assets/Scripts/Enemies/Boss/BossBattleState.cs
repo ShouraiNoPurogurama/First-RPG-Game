@@ -60,14 +60,20 @@ namespace Enemies.Boss
             //Debug.Log(_moveDir);
 
             //if player in attack range, block boss movement
-            if (PlayerInAttackRange())
+            if (PlayerInAttackRange() && CanAttack())
             {
                 boss.SetZeroVelocity();
-                StateMachine.ChangeState(boss.IdleState);
+                StateMachine.ChangeState(boss.AttackState);
                 return;
             }
 
-            boss.SetVelocity(boss.moveSpeed * _moveDir, Rb.linearVelocity.y);
+            if (boss.IsWallDetected())
+            {
+                boss.Flip();
+                boss.SetVelocity(boss.moveSpeed * _moveDir, Rb.linearVelocity.y);
+            }
+            else
+                boss.SetVelocity(boss.moveSpeed * _moveDir, Rb.linearVelocity.y);
         }
 
         public override void Exit()
@@ -79,7 +85,7 @@ namespace Enemies.Boss
         {
             AttachCurrentPlayerIfNotExists();
 
-            if (Mathf.Approximately(boss.lastTimeAttacked, 0) || Time.time >= boss.lastTimeAttacked)
+            if (Mathf.Approximately(boss.lastTimeAttacked, 0) || Time.time >= boss.lastTimeAttacked + boss.attackCooldown)
             {
                 //Debug.Log(Time.time >= boss.lastTimeAttacked + boss.attackCooldown);
                 // _boss.lastTimeAttacked = Time.time;
@@ -93,10 +99,17 @@ namespace Enemies.Boss
         {
             AttachCurrentPlayerIfNotExists();
 
-            var result = boss.IsPlayerDetected().distance <= boss.attackDistance &&
-                   (boss.FacingDir == -1 && _player.transform.position.x <= boss.transform.position.x ||
-                    boss.FacingDir == 1 && _player.transform.position.x >= boss.transform.position.x);
+            var result = boss.IsPlayerDetected().distance != 0 &&
+                     boss.IsPlayerDetected().distance <= boss.attackDistance &&
+                     (boss.FacingDir == -1 && _player.transform.position.x <= boss.transform.position.x ||
+                      boss.FacingDir == 1 && _player.transform.position.x >= boss.transform.position.x);
 
+            if (Mathf.Abs(_player.transform.position.x - boss.transform.position.x) < boss.attackDistance &&
+                Mathf.Abs(_player.transform.position.y - boss.transform.position.y) <=
+                boss.CapsuleCollider.bounds.size.y)
+            {
+                result = true;
+            }
             return result;
         }
 

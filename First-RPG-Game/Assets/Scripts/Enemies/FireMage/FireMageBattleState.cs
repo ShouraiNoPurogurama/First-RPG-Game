@@ -61,11 +61,17 @@ namespace Enemies.FireMage
             if (PlayerInAttackRange())
             {
                 fireMage.SetZeroVelocity();
-                StateMachine.ChangeState(fireMage.IdleState);
+                StateMachine.ChangeState(fireMage.AttackState);
                 return;
             }
 
-            fireMage.SetVelocity(fireMage.moveSpeed * _moveDir, Rb.linearVelocity.y);
+            if (fireMage.IsWallDetected())
+            {
+                fireMage.Flip();
+                fireMage.SetVelocity(fireMage.moveSpeed * _moveDir, Rb.linearVelocity.y);
+            }
+            else
+                fireMage.SetVelocity(fireMage.moveSpeed * _moveDir, Rb.linearVelocity.y);
         }
 
         public override void Exit()
@@ -90,10 +96,17 @@ namespace Enemies.FireMage
         {
             AttachCurrentPlayerIfNotExists();
 
-            var result = fireMage.IsPlayerDetected().distance <= fireMage.attackDistance &&
-                   (fireMage.FacingDir == -1 && _player.transform.position.x <= fireMage.transform.position.x ||
-                    fireMage.FacingDir == 1 && _player.transform.position.x >= fireMage.transform.position.x);
+            var result = fireMage.IsPlayerDetected().distance != 0 &&
+                         fireMage.IsPlayerDetected().distance <= fireMage.attackDistance &&
+                         (fireMage.FacingDir == -1 && _player.transform.position.x <= fireMage.transform.position.x ||
+                          fireMage.FacingDir == 1 && _player.transform.position.x >= fireMage.transform.position.x);
 
+            if (Mathf.Abs(_player.transform.position.x - fireMage.transform.position.x) < fireMage.attackDistance &&
+                Mathf.Abs(_player.transform.position.y - fireMage.transform.position.y) <=
+                fireMage.CapsuleCollider.bounds.size.y)
+            {
+                result = true;
+            }
             return result;
         }
 

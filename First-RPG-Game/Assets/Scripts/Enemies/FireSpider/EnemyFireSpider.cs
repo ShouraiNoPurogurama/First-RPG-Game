@@ -42,10 +42,8 @@ namespace Enemies.FireSpider
 
             //Debug.Log("heal------------------------");
             if (Stats.currentHp <= 0) return; // Nếu đã chết, không hồi máu nữa
-            Debug.Log("heal heal heal ------------------------");
+            //Debug.Log("heal heal heal ------------------------");
             Stats.RecoverHPBy(healAmount);
-            //Stats.currentHp = Mathf.Min(Stats.currentHp + healAmount, Stats.maxHp.ModifiedValue);
-            //Debug.Log("FireSpider healed: " + healAmount);
         }
 
         public override void Flip()

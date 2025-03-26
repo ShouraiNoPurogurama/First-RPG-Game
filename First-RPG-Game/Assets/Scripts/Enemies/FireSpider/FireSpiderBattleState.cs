@@ -61,11 +61,17 @@ namespace Enemies.FireSpider
             if (PlayerInAttackRange())
             {
                 fireSpider.SetZeroVelocity();
-                StateMachine.ChangeState(fireSpider.IdleState);
+                StateMachine.ChangeState(fireSpider.AttackState);
                 return;
             }
 
-            fireSpider.SetVelocity(fireSpider.moveSpeed * _moveDir, Rb.linearVelocity.y);
+            if (fireSpider.IsWallDetected())
+            {
+                fireSpider.Flip();
+                fireSpider.SetVelocity(fireSpider.moveSpeed * _moveDir, Rb.linearVelocity.y);
+            }
+            else
+                fireSpider.SetVelocity(fireSpider.moveSpeed * _moveDir, Rb.linearVelocity.y);
         }
 
         public override void Exit()
@@ -90,10 +96,17 @@ namespace Enemies.FireSpider
         {
             AttachCurrentPlayerIfNotExists();
 
-            var result = fireSpider.IsPlayerDetected().distance <= fireSpider.attackDistance &&
-                   (fireSpider.FacingDir == -1 && _player.transform.position.x <= fireSpider.transform.position.x ||
-                    fireSpider.FacingDir == 1 && _player.transform.position.x >= fireSpider.transform.position.x);
+            var result = fireSpider.IsPlayerDetected().distance != 0 &&
+             fireSpider.IsPlayerDetected().distance <= fireSpider.attackDistance &&
+             (fireSpider.FacingDir == -1 && _player.transform.position.x <= fireSpider.transform.position.x ||
+              fireSpider.FacingDir == 1 && _player.transform.position.x >= fireSpider.transform.position.x);
 
+            if (Mathf.Abs(_player.transform.position.x - fireSpider.transform.position.x) < fireSpider.attackDistance &&
+                Mathf.Abs(_player.transform.position.y - fireSpider.transform.position.y) <=
+                fireSpider.CapsuleCollider.bounds.size.y)
+            {
+                result = true;
+            }
             return result;
         }
 
