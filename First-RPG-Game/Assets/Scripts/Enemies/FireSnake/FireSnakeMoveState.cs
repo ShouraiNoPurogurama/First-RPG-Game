@@ -17,12 +17,12 @@ namespace Enemies.FireSnake
         {
             base.Update();
 
-            fireSnake.SetVelocity(fireSnake.FacingDir * fireSnake.moveSpeed, fireSnake.Rb.linearVelocity.y);
 
             if (!fireSnake.IsBusy && (fireSnake.IsWallDetected() || !fireSnake.IsGroundDetected()))
             {
                 fireSnake.Flip();
             }
+            fireSnake.SetVelocity(fireSnake.FacingDir * fireSnake.moveSpeed, fireSnake.Rb.linearVelocity.y);
 
         }
 

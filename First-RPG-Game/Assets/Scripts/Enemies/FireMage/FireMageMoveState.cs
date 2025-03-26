@@ -17,12 +17,12 @@ namespace Enemies.FireMage
         {
             base.Update();
 
-            fireMage.SetVelocity(fireMage.FacingDir * fireMage.moveSpeed, fireMage.Rb.linearVelocity.y);
 
             if (!fireMage.IsBusy && (fireMage.IsWallDetected() || !fireMage.IsGroundDetected()))
             {
                 fireMage.Flip();
             }
+            fireMage.SetVelocity(fireMage.FacingDir * fireMage.moveSpeed, fireMage.Rb.linearVelocity.y);
 
         }
 

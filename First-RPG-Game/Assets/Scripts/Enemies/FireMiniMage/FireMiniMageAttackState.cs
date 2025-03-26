@@ -37,16 +37,6 @@ namespace Enemies.FireMiniMage
                 FireMiniMage.lastTimeAttacked = Time.time;
                 StateMachine.ChangeState(FireMiniMage.BattleState);
             }
-            /*base.Update();
-
-            FireMiniMage.SetZeroVelocity();
-
-            if (TriggerCalled)
-            {
-                TriggerCalled = false;
-                FireMiniMage.lastTimeAttacked = Time.time;
-                StateMachine.ChangeState(FireMiniMage.BattleState);
-            }*/
         }
         private bool CanThrowAttack()
         {

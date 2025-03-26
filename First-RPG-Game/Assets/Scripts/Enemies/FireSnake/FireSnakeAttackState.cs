@@ -17,23 +17,17 @@ namespace Enemies.FireSnake
         }
         public override void Update()
         {
-            try
-            {
-                base.Update();
+            base.Update();
 
-                fireSnake.SetZeroVelocity();
+            fireSnake.SetZeroVelocity();
 
-                if (TriggerCalled)
-                {
-                    TriggerCalled = false;
-                    fireSnake.lastTimeAttacked = Time.time;
-                    StateMachine.ChangeState(fireSnake.BattleState);
-                }
-            }
-            catch (Exception ex)
+            if (TriggerCalled)
             {
-                Debug.LogError("Exception in Update(): " + ex.Message);
+                TriggerCalled = false;
+                fireSnake.lastTimeAttacked = Time.time;
+                StateMachine.ChangeState(fireSnake.BattleState);
             }
+
         }
 
         public override void Exit()

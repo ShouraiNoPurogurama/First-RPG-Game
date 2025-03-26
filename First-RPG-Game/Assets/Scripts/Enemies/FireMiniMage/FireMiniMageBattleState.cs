@@ -72,11 +72,17 @@ namespace Enemies.FireMiniMage
             if (PlayerInAttackRange())
             {
                 FireMiniMage.SetZeroVelocity();
-                StateMachine.ChangeState(FireMiniMage.IdleState);
+                StateMachine.ChangeState(FireMiniMage.AttackState);
                 return;
             }
 
-            FireMiniMage.SetVelocity(FireMiniMage.moveSpeed * _moveDir, Rb.linearVelocity.y);
+            if (FireMiniMage.IsWallDetected())
+            {
+                FireMiniMage.Flip();
+                FireMiniMage.SetVelocity(FireMiniMage.moveSpeed * _moveDir, Rb.linearVelocity.y);
+            }
+            else
+                FireMiniMage.SetVelocity(FireMiniMage.moveSpeed * _moveDir, Rb.linearVelocity.y);
         }
         private bool CanThrowBallAttack()
         {
@@ -106,10 +112,17 @@ namespace Enemies.FireMiniMage
         {
             AttachCurrentPlayerIfNotExists();
 
-            var result = FireMiniMage.IsPlayerDetected().distance <= FireMiniMage.attackDistance &&
-                   (FireMiniMage.FacingDir == -1 && _player.transform.position.x <= FireMiniMage.transform.position.x ||
-                    FireMiniMage.FacingDir == 1 && _player.transform.position.x >= FireMiniMage.transform.position.x);
+            var result = FireMiniMage.IsPlayerDetected().distance != 0 &&
+                         FireMiniMage.IsPlayerDetected().distance <= FireMiniMage.attackDistance &&
+                         (FireMiniMage.FacingDir == -1 && _player.transform.position.x <= FireMiniMage.transform.position.x ||
+                          FireMiniMage.FacingDir == 1 && _player.transform.position.x >= FireMiniMage.transform.position.x);
 
+            if (Mathf.Abs(_player.transform.position.x - FireMiniMage.transform.position.x) < FireMiniMage.attackDistance &&
+                Mathf.Abs(_player.transform.position.y - FireMiniMage.transform.position.y) <=
+                FireMiniMage.CapsuleCollider.bounds.size.y)
+            {
+                result = true;
+            }
             return result;
         }
 

@@ -61,11 +61,17 @@ namespace Enemies.FireQueen
             if (PlayerInAttackRange())
             {
                 fireQueen.SetZeroVelocity();
-                StateMachine.ChangeState(fireQueen.IdleState);
+                StateMachine.ChangeState(fireQueen.AttackState);
                 return;
             }
 
-            fireQueen.SetVelocity(fireQueen.moveSpeed * _moveDir, Rb.linearVelocity.y);
+            if (fireQueen.IsWallDetected())
+            {
+                fireQueen.Flip();
+                fireQueen.SetVelocity(fireQueen.moveSpeed * _moveDir, Rb.linearVelocity.y);
+            }
+            else
+                fireQueen.SetVelocity(fireQueen.moveSpeed * _moveDir, Rb.linearVelocity.y);
         }
 
         public override void Exit()
@@ -90,10 +96,17 @@ namespace Enemies.FireQueen
         {
             AttachCurrentPlayerIfNotExists();
 
-            var result = fireQueen.IsPlayerDetected().distance <= fireQueen.attackDistance &&
-                   (fireQueen.FacingDir == -1 && _player.transform.position.x <= fireQueen.transform.position.x ||
-                    fireQueen.FacingDir == 1 && _player.transform.position.x >= fireQueen.transform.position.x);
+            var result = fireQueen.IsPlayerDetected().distance != 0 &&
+                         fireQueen.IsPlayerDetected().distance <= fireQueen.attackDistance &&
+                         (fireQueen.FacingDir == -1 && _player.transform.position.x <= fireQueen.transform.position.x ||
+                          fireQueen.FacingDir == 1 && _player.transform.position.x >= fireQueen.transform.position.x);
 
+            if (Mathf.Abs(_player.transform.position.x - fireQueen.transform.position.x) < fireQueen.attackDistance &&
+                Mathf.Abs(_player.transform.position.y - fireQueen.transform.position.y) <=
+                fireQueen.CapsuleCollider.bounds.size.y)
+            {
+                result = true;
+            }
             return result;
         }
 
