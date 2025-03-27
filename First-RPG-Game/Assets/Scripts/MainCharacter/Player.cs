@@ -239,5 +239,11 @@ namespace MainCharacter
         }
 
         public void AnimationTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
+
+        // knock player
+        public void BossAttackPlayerKnock(Vector2 vt)
+        {
+            knockBackPower = vt;
+        }    
     }
 }

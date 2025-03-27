@@ -4,6 +4,7 @@ namespace Enemies.FireQueen
 {
     public class EnemyFireQueen : Enemy
     {
+        [SerializeField] public int attackSfxIndex = 0;
         #region States
         public FireQueenIdleState IdleState { get; private set; }
         public FireQueenMoveState MoveState { get; private set; }

@@ -1,4 +1,5 @@
-﻿using Enemies.FireMiniMage;
+﻿using Assets.Scripts.Enemies.FireMiniMage;
+using Enemies.FireMiniMage;
 using MainCharacter;
 using Stats;
 using UnityEngine;
@@ -27,6 +28,17 @@ namespace Enemies.FireMiniMage
                     FireMiniMage.Stats.DoDamage(player.GetComponent<PlayerStats>());
                 }
             }
+        }
+        private void AnimationFireballAttackTrigger()
+        {
+            //base.AnimationFireballAttackTrigger();
+
+            Vector3 spawnPosition = FireMiniMage.attackCheck.position - new Vector3(1f * FireMiniMage.FacingDir, 0, 0);
+            // Tạo fire ball prefab tại vị trí attackCheck
+            GameObject newfireball = Instantiate(FireMiniMage.fireballPrefab, spawnPosition, Quaternion.identity);
+
+            // Thiết lập hướng bay cho fireball
+            newfireball.GetComponent<FireballController>().SetupFireball(FireMiniMage.fireballSpeed * FireMiniMage.FacingDir, FireMiniMage.Stats);
         }
 
         private void OpenCounterWindow() => FireMiniMage.OpenCounterAttackWindow();

@@ -181,6 +181,30 @@ namespace Stats
 
             targetStats.TakeDamage(totalDamage, Color.red);
         }
+        public virtual void DoDamageDontKnock(CharacterStats targetStats)
+        {
+            if (TargetCanDodgeAttack(targetStats))
+            {
+                return;
+            }
+
+            int totalDamage = damage.ModifiedValue + strength.ModifiedValue;
+
+
+            if (CanCrit())
+            {
+                totalDamage = CalculateCriticalDamage(totalDamage);
+            }
+
+            totalDamage = DecreaseDamageByArmor(targetStats, totalDamage);
+
+            Debug.Log("Total damage: " + totalDamage);
+
+            //If equipments have ailment effects then do magical damage
+            // DoMagicalDamage(targetStats);
+
+            targetStats.TakeDamageNoImpact(totalDamage, Color.red);
+        }
 
         public virtual void DoMagicalDamage(CharacterStats targetStats, float dmgScale = 1)
         {
@@ -465,6 +489,21 @@ namespace Stats
         {
             if (color == default) color = Color.white;
             GetComponent<Entity>().DamageImpact();
+
+            _fx.Flash();
+
+            DecreaseHPBy(dmg);
+
+            if (dmg > 0) _fx.CreatePopUpText(dmg.ToString(), color);
+
+            if (currentHp <= 0)
+            {
+                Die();
+            }
+        }
+        public virtual void TakeDamageNoImpact(int dmg, Color color = default)
+        {
+            if (color == default) color = Color.white;
 
             _fx.Flash();
 

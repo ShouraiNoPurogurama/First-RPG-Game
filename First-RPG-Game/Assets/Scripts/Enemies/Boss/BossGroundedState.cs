@@ -24,7 +24,7 @@ namespace Enemies.Boss
         {
             base.Update();
 
-            if (boss.IsPlayerDetected() || Vector2.Distance(boss.transform.position, _player.position) < 2)
+            if (boss.IsPlayerDetected() || Vector2.Distance(boss.transform.position, _player.position) < 10)
             {
                 StateMachine.ChangeState(boss.BattleState);
             }

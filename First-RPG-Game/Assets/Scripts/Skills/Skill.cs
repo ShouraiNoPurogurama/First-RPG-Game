@@ -40,9 +40,11 @@ namespace Skills
                 UseSkill();
                 CooldownTimer = CoolDown;
                 Debug.Log("Creating popup text");
-                Player.FX.CreatePopUpText("CoolDown", null);
                 return true;
             }
+
+            Player.FX.CreatePopUpText("CoolDown", null);
+            
         
             return false;
         }
