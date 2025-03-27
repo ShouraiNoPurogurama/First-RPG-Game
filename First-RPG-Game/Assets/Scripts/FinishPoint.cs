@@ -17,6 +17,7 @@ public class FinishPoint : MonoBehaviour
             }
             else
             {
+                //SaveManager.instance.SaveGame();
                 SceneController.instance.LoadScene(levelName);
             }
         }

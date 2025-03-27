@@ -1,9 +1,8 @@
+using MainCharacter.Water_Map;
 using Skills;
 using System;
 using System.Linq;
-using MainCharacter.Water_Map;
 using UnityEngine;
-using NUnit.Framework.Constraints;
 
 namespace MainCharacter
 {
@@ -185,12 +184,12 @@ namespace MainCharacter
                 StateMachine.ChangeState(DashState);
             }
         }
-        
+
         public override void ReduceAttackSpeedBy(float slowPercentage, float slowDuration)
         {
             //Increase attack cooldown bc we dont have attack speed
-             _attackSpeed *= 1 - slowPercentage;
-            
+            _attackSpeed *= 1 - slowPercentage;
+
             Invoke("ReturnDefaultAttackSpeed", slowDuration);
         }
 
@@ -207,7 +206,7 @@ namespace MainCharacter
             jumpForce *= 1 - slowPercentage;
             dashSpeed *= 1 - slowPercentage;
             Animator.speed *= 1 - slowPercentage;
-            
+
             Invoke("ReturnDefaultSpeed", slowDuration);
         }
 
@@ -225,12 +224,12 @@ namespace MainCharacter
         protected override void ReturnDefaultSpeed()
         {
             base.ReturnDefaultSpeed();
-            
+
             moveSpeed = _defaultMoveSpeed;
             jumpForce = _defaultJumpForce;
             dashSpeed = _defaultDashSpeed;
         }
-        
+
         public override void Die()
         {
             base.Die();

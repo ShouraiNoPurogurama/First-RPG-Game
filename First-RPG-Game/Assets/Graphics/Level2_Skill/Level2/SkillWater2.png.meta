@@ -1,0 +1,486 @@
+fileFormatVersion: 2
+guid: 659e73c445348de4fa8753fac6281a5f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2238060333644597461
+    second: SkillWater2_0
+  - first:
+      213: 1170390103318423496
+    second: SkillWater2_1
+  - first:
+      213: -4739723966932518767
+    second: SkillWater2_2
+  - first:
+      213: 5979773458639073650
+    second: SkillWater2_3
+  - first:
+      213: 7947551695865211084
+    second: SkillWater2_4
+  - first:
+      213: 4669411137399315519
+    second: SkillWater2_5
+  - first:
+      213: -6361669685426868749
+    second: SkillWater2_6
+  - first:
+      213: 8971122877341390319
+    second: SkillWater2_7
+  - first:
+      213: -4181376736225507381
+    second: SkillWater2_8
+  - first:
+      213: -3977786400634314762
+    second: SkillWater2_9
+  - first:
+      213: -1534621614858112733
+    second: SkillWater2_10
+  - first:
+      213: 7630088106809463317
+    second: SkillWater2_11
+  - first:
+      213: 2626858116993354754
+    second: SkillWater2_12
+  - first:
+      213: -7774437348119537432
+    second: SkillWater2_13
+  - first:
+      213: 5181237562659491790
+    second: SkillWater2_14
+  - first:
+      213: 3466656176362047046
+    second: SkillWater2_15
+  - first:
+      213: 5197881717518093495
+    second: SkillWater2_16
+  - first:
+      213: 4015013880502430395
+    second: SkillWater2_17
+  - first:
+      213: 5726597336119451389
+    second: SkillWater2_18
+  - first:
+      213: -3219941287656140210
+    second: SkillWater2_19
+  - first:
+      213: 8993669320790257548
+    second: SkillWater2_20
+  - first:
+      213: -7643648733242977126
+    second: SkillWater2_21
+  - first:
+      213: -3616210202185759277
+    second: SkillWater2_22
+  - first:
+      213: -1462215813410593183
+    second: SkillWater2_23
+  - first:
+      213: -1619593833378537069
+    second: SkillWater2_24
+  - first:
+      213: -963603702690738231
+    second: SkillWater2_25
+  - first:
+      213: -3832389355139550559
+    second: SkillWater2_26
+  - first:
+      213: 144032297139546347
+    second: SkillWater2_27
+  - first:
+      213: 5234747418191077838
+    second: SkillWater2_28
+  - first:
+      213: -2386984755213055732
+    second: SkillWater2_29
+  - first:
+      213: 1523589580951016025
+    second: SkillWater2_30
+  - first:
+      213: -8750599801661035612
+    second: SkillWater2_31
+  - first:
+      213: -1716176068704425025
+    second: SkillWater2_32
+  - first:
+      213: 8519024865744947890
+    second: SkillWater2_33
+  - first:
+      213: 5438858008479759499
+    second: SkillWater2_34
+  - first:
+      213: 8487411131109918107
+    second: SkillWater2_35
+  - first:
+      213: -7590609050885466961
+    second: SkillWater2_36
+  - first:
+      213: 5715322863696667038
+    second: SkillWater2_37
+  - first:
+      213: 6793338714737873583
+    second: SkillWater2_38
+  - first:
+      213: 3829271845962824016
+    second: SkillWater2_39
+  - first:
+      213: 4373198146274284829
+    second: SkillWater2_40
+  - first:
+      213: 5347574487578520572
+    second: SkillWater2_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SkillWater2_0
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 461
+        width: 100
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b27b83bfbffc0f0e0800000000000000
+      internalID: -2238060333644597461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkillWater2_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 464
+        width: 41
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198f4990a2e193eb0800000000000000
+      internalID: -4739723966932518767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkillWater2_3
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 463
+        width: 82
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 271bd77474c6cf250800000000000000
+      internalID: 5979773458639073650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkillWater2_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 311
+        width: 106
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc86912d8206b4e60800000000000000
+      internalID: 7947551695865211084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkillWater2_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 311
+        width: 112
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3c50fa90b41dc040800000000000000
+      internalID: 4669411137399315519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkillWater2_6
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 311
+        width: 114
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fda2cd602fc6b7a0800000000000000
+      internalID: -6361669685426868749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkillWater2_7
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 159
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe55054d9b4df7c70800000000000000
+      internalID: 8971122877341390319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkillWater2_8
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 158
+        width: 139
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc742352304c8f5c0800000000000000
+      internalID: -4181376736225507381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkillWater2_11
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 159
+        width: 132
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5129f4b05b483e960800000000000000
+      internalID: 7630088106809463317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkillWater2_35
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 9
+        width: 132
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b95c08c947759c570800000000000000
+      internalID: 8487411131109918107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4e19d18653f7e2d48b1b98eccb4d096a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SkillWater2_0: -2238060333644597461
+      SkillWater2_11: 7630088106809463317
+      SkillWater2_2: -4739723966932518767
+      SkillWater2_3: 5979773458639073650
+      SkillWater2_35: 8487411131109918107
+      SkillWater2_4: 7947551695865211084
+      SkillWater2_5: 4669411137399315519
+      SkillWater2_6: -6361669685426868749
+      SkillWater2_7: 8971122877341390319
+      SkillWater2_8: -4181376736225507381
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
