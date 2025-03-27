@@ -120,7 +120,7 @@ namespace Enemies.WindBoss
 
         public override void Die()
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, 10);
+            // transform.position = new Vector3(transform.position.x, transform.position.y, 10);
             StateMachine.ChangeState(DeadState);
             base.Die();
         }

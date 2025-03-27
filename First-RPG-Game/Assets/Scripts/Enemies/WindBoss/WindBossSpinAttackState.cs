@@ -44,7 +44,6 @@ namespace Enemies.WindBoss
             base.Update();
 
             _hitTimer -= Time.deltaTime;
-            StateTimer -= Time.deltaTime;
 
             _currentSpinSpeed += _acceleration * Time.deltaTime;
 
