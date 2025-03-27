@@ -20505,6 +20505,7 @@ MonoBehaviour:
   windFX: {fileID: 537286154}
   earthFX: {fileID: 568292049}
   tauntFX: {fileID: 0}
+  fallingLeavesFX: {fileID: 0}
 --- !u!4 &167128048
 Transform:
   m_ObjectHideFlags: 0
@@ -48150,6 +48151,7 @@ MonoBehaviour:
   windFX: {fileID: 2008568882}
   earthFX: {fileID: 2033035039}
   tauntFX: {fileID: 29583036}
+  fallingLeavesFX: {fileID: 0}
 --- !u!50 &550122081
 Rigidbody2D:
   serializedVersion: 5
@@ -74635,7 +74637,7 @@ MonoBehaviour:
     baseValue: 0
     modifiers: 
   maxHp:
-    baseValue: 750
+    baseValue: 200
     modifiers: 
   armor:
     baseValue: 0
@@ -74717,6 +74719,7 @@ MonoBehaviour:
   windFX: {fileID: 773334621}
   earthFX: {fileID: 1737424477}
   tauntFX: {fileID: 29583036}
+  fallingLeavesFX: {fileID: 1110677747}
 --- !u!4 &1029451796
 Transform:
   m_ObjectHideFlags: 0
@@ -136244,10 +136247,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 238489212}
     m_Modifications:
-    - target: {fileID: 2970456238541348106, guid: 095a79b83fe2bc64f88c0e92fa3c934d, type: 3}
-      propertyPath: hitFxThunder
-      value: 
-      objectReference: {fileID: 4225218983086929628, guid: d508983fd40fba046aa978166dea4001, type: 3}
     - target: {fileID: 6562537984865416428, guid: 095a79b83fe2bc64f88c0e92fa3c934d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.95
@@ -136307,32 +136306,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8883135621120739765, guid: 095a79b83fe2bc64f88c0e92fa3c934d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4704513560207835861}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 095a79b83fe2bc64f88c0e92fa3c934d, type: 3}
---- !u!1 &4704513560207835860 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8883135621120739765, guid: 095a79b83fe2bc64f88c0e92fa3c934d, type: 3}
-  m_PrefabInstance: {fileID: 4704513560207835859}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4704513560207835861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4704513560207835860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0e526aa05b8b6d4583ce5bc711a69b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  possibleItemDrop: 50
-  possibleDrop:
-  - {fileID: 11400000, guid: 3bef6eb6814c30a45a3114a51c9fabfd, type: 2}
-  dropPrefab: {fileID: 6028389408080686030, guid: 999a9383fbe58bf47a1474c472811631, type: 3}
 --- !u!1001 &5143948133433044081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -136411,22 +136386,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySoul
       objectReference: {fileID: 0}
+    - target: {fileID: 1328060640957014593, guid: 3360c4b2fba8e9e4f8cd0467658b6837, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4376143808641292472, guid: 3360c4b2fba8e9e4f8cd0467658b6837, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4376143808641292472, guid: 3360c4b2fba8e9e4f8cd0467658b6837, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5576350668058257188, guid: 3360c4b2fba8e9e4f8cd0467658b6837, type: 3}
-      propertyPath: hitFx0
-      value: 
-      objectReference: {fileID: 1852024567466316272, guid: 317f628051b8eb34597f367356542d52, type: 3}
-    - target: {fileID: 5576350668058257188, guid: 3360c4b2fba8e9e4f8cd0467658b6837, type: 3}
-      propertyPath: hitFxThunder
-      value: 
-      objectReference: {fileID: 4225218983086929628, guid: d508983fd40fba046aa978166dea4001, type: 3}
     - target: {fileID: 7819091205566649963, guid: 3360c4b2fba8e9e4f8cd0467658b6837, type: 3}
       propertyPath: m_LocalPosition.x
       value: 31.47
@@ -136470,32 +136441,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1328060640957014593, guid: 3360c4b2fba8e9e4f8cd0467658b6837, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5228567364499667896}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3360c4b2fba8e9e4f8cd0467658b6837, type: 3}
---- !u!1 &5228567364499667895 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1328060640957014593, guid: 3360c4b2fba8e9e4f8cd0467658b6837, type: 3}
-  m_PrefabInstance: {fileID: 5228567364499667894}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5228567364499667896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5228567364499667895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0e526aa05b8b6d4583ce5bc711a69b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  possibleItemDrop: 50
-  possibleDrop:
-  - {fileID: 11400000, guid: 3bef6eb6814c30a45a3114a51c9fabfd, type: 2}
-  dropPrefab: {fileID: 6028389408080686030, guid: 999a9383fbe58bf47a1474c472811631, type: 3}
 --- !u!1001 &5938935449726647841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -136610,14 +136557,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3824509513883395246, guid: 01a93c829a1d6a842b0ee0e345ad9708, type: 3}
-      propertyPath: hitFx0
-      value: 
-      objectReference: {fileID: 1852024567466316272, guid: 317f628051b8eb34597f367356542d52, type: 3}
-    - target: {fileID: 3824509513883395246, guid: 01a93c829a1d6a842b0ee0e345ad9708, type: 3}
-      propertyPath: hitFxThunder
-      value: 
-      objectReference: {fileID: 4225218983086929628, guid: d508983fd40fba046aa978166dea4001, type: 3}
     - target: {fileID: 5846376752217468672, guid: 01a93c829a1d6a842b0ee0e345ad9708, type: 3}
       propertyPath: m_Name
       value: EnemyArcher
@@ -136629,32 +136568,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5846376752217468672, guid: 01a93c829a1d6a842b0ee0e345ad9708, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6459107027417168581}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01a93c829a1d6a842b0ee0e345ad9708, type: 3}
---- !u!1 &6459107027417168580 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5846376752217468672, guid: 01a93c829a1d6a842b0ee0e345ad9708, type: 3}
-  m_PrefabInstance: {fileID: 6459107027417168579}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6459107027417168581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6459107027417168580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0e526aa05b8b6d4583ce5bc711a69b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  possibleItemDrop: 50
-  possibleDrop:
-  - {fileID: 11400000, guid: 3bef6eb6814c30a45a3114a51c9fabfd, type: 2}
-  dropPrefab: {fileID: 6028389408080686030, guid: 999a9383fbe58bf47a1474c472811631, type: 3}
 --- !u!1001 &7366837295747981739
 PrefabInstance:
   m_ObjectHideFlags: 0

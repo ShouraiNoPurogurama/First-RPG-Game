@@ -12,19 +12,20 @@ namespace Enemies.WindBoss
             _windBoss = windBoss;
         }
 
-        void Start()
+        public override void Enter()
         {
-            StateTimer = 2;
+            base.Enter();
+            Debug.Log("WindBossSummonState started");
+            StateTimer = 1.5f;
             _windBoss.SetZeroVelocity();
         }
 
         public override void Update()
         {
-            StateTimer -= Time.deltaTime;
+            base.Update();
             
-            if (TriggerCalled || StateTimer <= 0)
+            if (StateTimer <= 0)
             {
-                TriggerCalled = false;
                 _windBoss.lastTimeAttacked = Time.time;
                 StateMachine.ChangeState(_windBoss.BattleState);
             }
@@ -32,7 +33,6 @@ namespace Enemies.WindBoss
 
         public override void Exit()
         {
-            TriggerCalled = false;
             _windBoss.lastTimeSummon = Time.time;
             base.Exit();
         }

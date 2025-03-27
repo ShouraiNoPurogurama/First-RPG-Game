@@ -23,8 +23,6 @@ namespace Enemies.WindBoss
         public override void Update()
         {
             base.Update();
-
-            Debug.Log("IsBusy: " + _windBoss.IsBusy);
             
             if (!_windBoss.IsBusy)
             {

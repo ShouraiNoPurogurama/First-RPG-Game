@@ -4799,7 +4799,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1060432067
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -9632,7 +9632,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1060432067
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -14571,7 +14571,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1060432067
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -19632,7 +19632,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1060432067
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -19740,7 +19740,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -689662421
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: -10
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.8706199, g: 0.15840112, b: 0.15840112, a: 1}
@@ -24641,7 +24641,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1060432067
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -24782,7 +24782,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -689662421
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -85727878, guid: 687df074731fbf744b668d2275dbb675, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -24843,6 +24843,7 @@ GameObject:
   - component: {fileID: 2970456238541348106}
   - component: {fileID: 9205319364330357687}
   - component: {fileID: 4775884170675973590}
+  - component: {fileID: 1479746236314812461}
   m_Layer: 7
   m_Name: Enemy_Skeleton (1) 1
   m_TagString: Untagged
@@ -24955,6 +24956,7 @@ MonoBehaviour:
   flashDuration: 0.2
   hitFx: {fileID: 1057642753625682144, guid: 9426a43a35b7f864f8f046884b5ef95a, type: 3}
   hitFx0: {fileID: 1852024567466316272, guid: 317f628051b8eb34597f367356542d52, type: 3}
+  hitFxThunder: {fileID: 4225218983086929628, guid: d508983fd40fba046aa978166dea4001, type: 3}
   chillColor:
   - {r: 0.390566, g: 0.677757, b: 1, a: 1}
   - {r: 0.6320754, g: 0.8143635, b: 1, a: 1}
@@ -24972,6 +24974,7 @@ MonoBehaviour:
   windFX: {fileID: 624846800291046342}
   earthFX: {fileID: 5858289074375792398}
   tauntFX: {fileID: 0}
+  fallingLeavesFX: {fileID: 0}
 --- !u!114 &9205319364330357687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25077,3 +25080,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0.11506149, y: -0.061544523}
   m_Size: {x: 1.2652929, y: 2.0542843}
   m_Direction: 0
+--- !u!114 &1479746236314812461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8883135621120739765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0e526aa05b8b6d4583ce5bc711a69b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  possibleItemDrop: 50
+  possibleDrop:
+  - {fileID: 11400000, guid: 3bef6eb6814c30a45a3114a51c9fabfd, type: 2}
+  dropPrefab: {fileID: 6028389408080686030, guid: 999a9383fbe58bf47a1474c472811631, type: 3}

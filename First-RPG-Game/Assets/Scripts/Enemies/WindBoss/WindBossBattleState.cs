@@ -39,11 +39,13 @@ namespace Enemies.WindBoss
             {
                 playedTauntFX = true;
                 _windBoss.FX.StartTauntFX();
+                _windBoss.FX.IncreaseFallingLeavesFX();
             }
 
             if (isDesperate)
             {
                 _windBoss.FX.IncreaseTauntFX();
+                _windBoss.FX.IncreaseFallingLeavesFX();
             }
 
             if (playerDetected)
@@ -59,6 +61,12 @@ namespace Enemies.WindBoss
                 if (Mathf.Abs(playerDistance - _windBoss.attackDistance) <=10 && Mathf.Abs(playerDistance - _windBoss.attackDistance) >= 4 && CanDash())
                 {
                     StateMachine.ChangeState(_windBoss.DashState);
+                    return;
+                }
+                
+                if (CanSummonMinions())
+                {
+                    StateMachine.ChangeState(_windBoss.SummonState);
                     return;
                 }
 
@@ -77,16 +85,7 @@ namespace Enemies.WindBoss
                     }
                 }
             }
-
-            // if (isLowHp)
-            // {
-            if (CanSummonMinions())
-            {
-                StateMachine.ChangeState(_windBoss.SummonState);
-                return;
-            }
-            // }
-
+            
             if (isDesperate && CanDesperationMode())
             {
                 StateMachine.ChangeState(_windBoss.TauntState);
@@ -149,7 +148,10 @@ namespace Enemies.WindBoss
             return false;
         }
 
-        private bool CanSummonMinions() => Time.time >= _windBoss.lastTimeSummon + _windBoss.summonCoolDown;
+        private bool CanSummonMinions()
+        {
+            return Time.time >= _windBoss.lastTimeSummon + _windBoss.summonCoolDown;
+        }
 
         public bool PlayerInAttackRange()
         {

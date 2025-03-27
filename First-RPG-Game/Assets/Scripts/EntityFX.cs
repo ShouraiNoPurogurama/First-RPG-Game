@@ -1,4 +1,5 @@
 using System.Collections;
+using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
 
@@ -38,6 +39,8 @@ public class EntityFX : MonoBehaviour
     
     [Header("Other FX")]
     [SerializeField] private ParticleSystem tauntFX;
+
+    [SerializeField] [CanBeNull] private ParticleSystem fallingLeavesFX;
     
     
     private void Start()
@@ -165,13 +168,28 @@ public class EntityFX : MonoBehaviour
         tauntFX.Play();
     }
     
+    public void IncreaseFallingLeavesFX()
+    {
+        if (fallingLeavesFX)
+        {
+            var emission = fallingLeavesFX.emission;
+            emission.rateOverTimeMultiplier *= 1.5f; 
+
+            var main = fallingLeavesFX.main;
+            main.startSpeed = new ParticleSystem.MinMaxCurve(main.startSpeed.constant * 1.5f);
+        }
+    }
+    
     public void IncreaseTauntFX()
     {
         var emission = tauntFX.emission;
-        emission.rateOverTimeMultiplier *= 1.25f; 
+        emission.rateOverTimeMultiplier *= 1.5f;
+
+        var size = tauntFX.sizeOverLifetime;
+        size.sizeMultiplier *= 1.5f;
 
         var main = tauntFX.main;
-        main.startSpeed = new ParticleSystem.MinMaxCurve(main.startSpeed.constant * 1.25f);
+        main.startSpeed = new ParticleSystem.MinMaxCurve(main.startSpeed.constant * 1.5f);
     }
 
     public void IgniteFxFor(float seconds)

@@ -48,7 +48,7 @@ namespace Enemies.WindBoss
             float regenInterval = _desperationDuration / 3;
             if (_regenCount > 0 && Time.time >= _lastTimeRegenInterval + regenInterval)
             {
-                int regenAmount = Mathf.RoundToInt(_windBoss.Stats.maxHp.ModifiedValue * 0.1f);
+                int regenAmount = Mathf.RoundToInt(_windBoss.Stats.maxHp.ModifiedValue * 0.2f);
                 _windBoss.Stats.RecoverHPBy(regenAmount);
                 _lastTimeRegenInterval = Time.time;
                 _regenCount--;
