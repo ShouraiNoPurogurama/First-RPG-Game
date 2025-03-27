@@ -210,4 +210,9 @@ public class SoundManager : MonoBehaviour
         sfxSlider.value = sfxVolume;
         bgmSlider.value = bgmVolume;
     }
+
+    public static void PlayClick()
+    {
+        PlaySFX("Click", 0);
+    }
 }
