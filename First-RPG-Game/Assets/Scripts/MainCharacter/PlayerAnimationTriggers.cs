@@ -20,6 +20,8 @@ namespace MainCharacter
 
             foreach (var hit in colliders)
             {
+                PlaySwordSound();
+
                 var enemy = hit.GetComponent<Enemy>();
                 if (enemy is not null)
                 {
@@ -48,6 +50,31 @@ namespace MainCharacter
         private void ThrowSword()
         {
             SkillManager.Instance.Sword.CreateSword();
+            SoundManager.PlaySFX("Attack", 4, true);
+        }
+        private void PlayCatchSwordSound()
+        {
+            SkillManager.Instance.Sword.CreateSword();
+            SoundManager.PlaySFX("Hurt", null, true);
+        }
+
+        private void PlaySwordSound()
+        {
+            SoundManager.PlaySFX("Attack", 0, true);
+        }
+
+        private void PlayDashSound()
+        {
+            SoundManager.PlaySFX("Attack", 3, true);
+        }
+
+        public void PlayFootstepSound()
+        {
+            SoundManager.PlaySFX("Footstep", null, true);
+        }
+        public void PlayDeadSound()
+        {
+            SoundManager.PlaySFX("Dead", null, false);
         }
     }
 }
