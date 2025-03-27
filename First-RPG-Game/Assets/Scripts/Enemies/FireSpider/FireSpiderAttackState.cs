@@ -17,23 +17,18 @@ namespace Enemies.FireSpider
         }
         public override void Update()
         {
-            try
-            {
-                base.Update();
 
-                fireSpider.SetZeroVelocity();
+            base.Update();
 
-                if (TriggerCalled)
-                {
-                    TriggerCalled = false;
-                    fireSpider.lastTimeAttacked = Time.time;
-                    StateMachine.ChangeState(fireSpider.BattleState);
-                }
-            }
-            catch (Exception ex)
+            fireSpider.SetZeroVelocity();
+
+            if (TriggerCalled)
             {
-                Debug.LogError("Exception in Update(): " + ex.Message);
+                TriggerCalled = false;
+                fireSpider.lastTimeAttacked = Time.time;
+                StateMachine.ChangeState(fireSpider.BattleState);
             }
+
         }
 
         public override void Exit()

@@ -17,12 +17,12 @@ namespace Enemies.FireSpider
         {
             base.Update();
 
-            fireSpider.SetVelocity(fireSpider.FacingDir * fireSpider.moveSpeed, fireSpider.Rb.linearVelocity.y);
 
             if (!fireSpider.IsBusy && (fireSpider.IsWallDetected() || !fireSpider.IsGroundDetected()))
             {
                 fireSpider.Flip();
             }
+            fireSpider.SetVelocity(fireSpider.FacingDir * fireSpider.moveSpeed, fireSpider.Rb.linearVelocity.y);
 
         }
 

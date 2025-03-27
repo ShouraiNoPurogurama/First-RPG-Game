@@ -57,15 +57,16 @@ namespace Enemies.FireWorm
                 }
             }
 
+
             _moveDir = _player.position.x > fireWorm.transform.position.x ? 1 : -1;
-            Debug.Log(_moveDir);
+            //Debug.Log(_moveDir);
 
             //if player in attack range, block fireWorm movement
             if (PlayerInAttackRange())
             {
                 fireWorm.SetZeroVelocity();
                 StateMachine.ChangeState(fireWorm.IdleState);
-                return;
+                //return;
             }
 
             fireWorm.SetVelocity(fireWorm.moveSpeed * _moveDir, Rb.linearVelocity.y);
@@ -93,10 +94,17 @@ namespace Enemies.FireWorm
         {
             AttachCurrentPlayerIfNotExists();
 
-            var result = fireWorm.IsPlayerDetected().distance <= fireWorm.attackDistance &&
-                   (fireWorm.FacingDir == -1 && _player.transform.position.x <= fireWorm.transform.position.x ||
-                    fireWorm.FacingDir == 1 && _player.transform.position.x >= fireWorm.transform.position.x);
+            var result = fireWorm.IsPlayerDetected().distance != 0 &&
+             fireWorm.IsPlayerDetected().distance <= fireWorm.attackDistance &&
+             (fireWorm.FacingDir == -1 && _player.transform.position.x <= fireWorm.transform.position.x ||
+              fireWorm.FacingDir == 1 && _player.transform.position.x >= fireWorm.transform.position.x);
 
+            if (Mathf.Abs(_player.transform.position.x - fireWorm.transform.position.x) < fireWorm.attackDistance &&
+                Mathf.Abs(_player.transform.position.y - fireWorm.transform.position.y) <=
+                fireWorm.CapsuleCollider.bounds.size.y)
+            {
+                result = true;
+            }
             return result;
         }
 

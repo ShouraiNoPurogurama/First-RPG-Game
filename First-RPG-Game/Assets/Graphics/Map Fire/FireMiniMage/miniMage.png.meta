@@ -613,10 +613,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 1166
-        width: 384
+        width: 182
         height: 106
       alignment: 9
-      pivot: {x: 0.38, y: 0.38}
+      pivot: {x: 0.78, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -635,10 +635,10 @@ TextureImporter:
         serializedVersion: 2
         x: 384
         y: 1166
-        width: 384
+        width: 182
         height: 106
       alignment: 9
-      pivot: {x: 0.38, y: 0.38}
+      pivot: {x: 0.78, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -657,10 +657,10 @@ TextureImporter:
         serializedVersion: 2
         x: 768
         y: 1166
-        width: 384
+        width: 182
         height: 106
       alignment: 9
-      pivot: {x: 0.38, y: 0.38}
+      pivot: {x: 0.78, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -677,12 +677,12 @@ TextureImporter:
       name: miniMage_13
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1154
         y: 1166
-        width: 384
+        width: 182
         height: 106
       alignment: 9
-      pivot: {x: 0.38, y: 0.38}
+      pivot: {x: 0.78, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -699,12 +699,12 @@ TextureImporter:
       name: miniMage_14
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1535
         y: 1166
-        width: 384
+        width: 182
         height: 106
       alignment: 9
-      pivot: {x: 0.38, y: 0.38}
+      pivot: {x: 0.78, y: 0.38}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1883,6 +1883,94 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: miniMage_68
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1190
+        width: 50
+        height: 40
+      alignment: 9
+      pivot: {x: 0.67, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceba4fc412f09f54d9c5ce36fcb49a3a
+      internalID: 1733287707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: miniMage_69
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 1190
+        width: 50
+        height: 40
+      alignment: 9
+      pivot: {x: 0.67, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c26128cffc8b54ca531e38952dacce
+      internalID: -27527238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: miniMage_70
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 1190
+        width: 50
+        height: 40
+      alignment: 9
+      pivot: {x: 0.67, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c840494620fe1448af96299ccce20b
+      internalID: 832140974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: miniMage_71
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 1190
+        width: 50
+        height: 40
+      alignment: 9
+      pivot: {x: 0.67, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c717014bce23aab4a86bf4cd20d12e09
+      internalID: -120361568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -1962,7 +2050,11 @@ TextureImporter:
       miniMage_65: 991722581094399783
       miniMage_66: -8339264066108842539
       miniMage_67: 2843603064111913554
+      miniMage_68: 1733287707
+      miniMage_69: -27527238
       miniMage_7: 8849236076748185578
+      miniMage_70: 832140974
+      miniMage_71: -120361568
       miniMage_8: -4392610265357408466
       miniMage_9: 3391033332811271255
   mipmapLimitGroupName: 
