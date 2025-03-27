@@ -7,6 +7,11 @@ namespace UI
 {
     public class UI_InGame : MonoBehaviour
     {
+        [Header("HP UI")]
+        [SerializeField] private PlayerStats playerStats;
+        [SerializeField] private Slider slider;
+        [SerializeField] private Color normalColor = Color.red;
+        [SerializeField] private Color lowHPColor = Color.yellow;
 
         [Header("Skill UI")]
         [SerializeField] private Image dashSkillImage;
@@ -30,15 +35,32 @@ namespace UI
         [SerializeField] private Color color5 = Color.green;
 
         private SkillManager skillManager;
-        private CharacterStats characterStats;
-        private PlayerStats playerStats;
+        private CharacterStats _characterStats;
+        private Image _fillImage;
 
         void Start()
         {
             skillManager = SkillManager.Instance;
 
-            playerStats = FindObjectOfType<PlayerStats>();
+            if (playerStats == null)
+            {
+                Debug.LogError("UI_InGame: PlayerStats is missing!");
+                enabled = false;
+                return;
+            }
 
+            _characterStats = playerStats;
+            _fillImage = slider?.fillRect?.GetComponent<Image>();
+
+            if (slider == null || _fillImage == null)
+            {
+                Debug.LogError("UI_InGame: Slider or FillImage is missing!");
+                enabled = false;
+                return;
+            }
+
+            _characterStats.OnHPChanged += UpdateHealthUI;
+            UpdateHealthUI();
         }
 
         void Update()
@@ -66,66 +88,73 @@ namespace UI
             CheckCooldownOf(crystalImage, skillManager.Crystal.CoolDown);
             CheckCooldownOf(blackholeImage, skillManager.BlackHole.CoolDown);
 
-            
             UpdateUIColor();
         }
 
         private void SetCooldownOf(Image _image)
         {
-            if (_image.fillAmount <= 0)
+            if (_image != null && _image.fillAmount <= 0)
                 _image.fillAmount = 1;
         }
 
         private void CheckCooldownOf(Image _image, float _cooldown)
         {
-            if (_image.fillAmount > 0)
-                _image.fillAmount -= 1 / _cooldown * Time.deltaTime;
+            if (_image != null && _cooldown > 0 && _image.fillAmount > 0)
+                _image.fillAmount -= Time.deltaTime / _cooldown;
         }
 
         private void UpdateUIColor()
         {
-    
-            int fireDamageVal = playerStats.fireDamage.ModifiedValue;
-            int iceDamageVal = playerStats.iceDamage.ModifiedValue;
-            int lightningDamageVal = playerStats.lightingDamage.ModifiedValue;
-            int earthDamageVal = playerStats.earthDamage.ModifiedValue;
-            int windDamageVal = playerStats.windDamage.ModifiedValue;
+            if (playerStats == null) return;
 
+            int[] damageValues = {
+                playerStats.fireDamage.ModifiedValue,
+                playerStats.iceDamage.ModifiedValue,
+                playerStats.lightingDamage.ModifiedValue,
+                playerStats.earthDamage.ModifiedValue,
+                playerStats.windDamage.ModifiedValue
+            };
 
+            Color[] colors = { color1, color2, color3, color4, color5 };
 
-            Color selectedColor;
-
-            if (fireDamageVal >= iceDamageVal && fireDamageVal >= lightningDamageVal &&
-                fireDamageVal >= earthDamageVal && fireDamageVal >= windDamageVal)
+            int maxIndex = 0;
+            for (int i = 1; i < damageValues.Length; i++)
             {
-                selectedColor = color1; 
-            }
-            else if (iceDamageVal >= fireDamageVal && iceDamageVal >= lightningDamageVal &&
-                     iceDamageVal >= earthDamageVal && iceDamageVal >= windDamageVal)
-            {
-                selectedColor = color2; 
-            }
-            else if (lightningDamageVal >= fireDamageVal && lightningDamageVal >= iceDamageVal &&
-                     lightningDamageVal >= earthDamageVal && lightningDamageVal >= windDamageVal)
-            {
-                selectedColor = color3; 
-            }
-            else if (earthDamageVal >= fireDamageVal && earthDamageVal >= iceDamageVal &&
-                     earthDamageVal >= lightningDamageVal && earthDamageVal >= windDamageVal)
-            {
-                selectedColor = color4; 
-            }
-            else
-            {
-                selectedColor = color5; 
+                if (damageValues[i] > damageValues[maxIndex])
+                    maxIndex = i;
             }
 
+            Color selectedColor = colors[maxIndex];
 
+            // Gán màu cho tất cả skill images
             dashSkillImage.color = selectedColor;
             crystalSkillImage.color = selectedColor;
             cloneSkillImage.color = selectedColor;
             blackholeSkillImage.color = selectedColor;
             swordSkillImage.color = selectedColor;
+        }
+
+        private void UpdateHealthUI()
+        {
+            if (_characterStats == null || slider == null || _fillImage == null)
+            {
+                Debug.LogError("UI_InGame: CharacterStats, Slider, or FillImage is missing!");
+                return;
+            }
+
+            float maxHp = _characterStats.GetMaxHealthValue();
+            float currentHp = _characterStats.currentHp;
+
+            slider.maxValue = maxHp;
+            slider.value = currentHp;
+
+            _fillImage.color = (currentHp / maxHp <= 0.3f) ? lowHPColor : normalColor;
+        }
+
+        private void OnDestroy()
+        {
+            if (_characterStats != null)
+                _characterStats.OnHPChanged -= UpdateHealthUI;
         }
     }
 }
