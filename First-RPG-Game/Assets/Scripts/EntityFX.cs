@@ -17,6 +17,8 @@ public class EntityFX : MonoBehaviour
 
     [Header("Hit FX")]
     [SerializeField] private GameObject hitFx;
+    [SerializeField] private GameObject hitFx0;
+    [SerializeField] private GameObject hitFxThunder;
 
     [Header("Ailment Colors")]
     [SerializeField] private Color[] chillColor;
@@ -33,6 +35,9 @@ public class EntityFX : MonoBehaviour
     
     [SerializeField] private ParticleSystem windFX;
     [SerializeField] private ParticleSystem earthFX;
+    
+    [Header("Other FX")]
+    [SerializeField] private ParticleSystem tauntFX;
     
     
     private void Start()
@@ -82,7 +87,7 @@ public class EntityFX : MonoBehaviour
     public void CreateHitFx(Transform target, bool critical)
     {
         float zRotation = 0;
-        float xPosition = .5f;
+        float xPosition = .25f;
         float yPosition = 0;
 
         Vector3 hitRotation = new Vector3(0, 0, zRotation);
@@ -105,6 +110,29 @@ public class EntityFX : MonoBehaviour
 
         GameObject newHitFx = Instantiate(hitPrefab, target.position + new Vector3(xPosition, yPosition), Quaternion.identity);
         newHitFx.transform.Rotate(hitRotation);
+        Destroy(newHitFx, .5f);
+    }
+    
+    public void CreateHitFx0(Transform target, bool critical)
+    {
+        float zRotation = 0;
+        float xPosition = .5f;
+        float yPosition = 0;
+
+        Vector3 hitRotation = new Vector3(0, 0, zRotation);
+
+        GameObject hitPrefab = hitFx0;
+
+        GameObject newHitFx = Instantiate(hitPrefab, target.position + new Vector3(xPosition, yPosition), Quaternion.identity);
+        newHitFx.transform.Rotate(hitRotation);
+        Destroy(newHitFx, .5f);
+    }
+    
+    public void CreateHitFxThunder(Transform target)
+    {
+        GameObject hitPrefab = hitFxThunder;
+
+        GameObject newHitFx = Instantiate(hitPrefab, target.position , Quaternion.identity);
         Destroy(newHitFx, .5f);
     }
 
@@ -132,6 +160,20 @@ public class EntityFX : MonoBehaviour
         windFX.Stop();
     }
 
+    public void StartTauntFX()
+    {
+        tauntFX.Play();
+    }
+    
+    public void IncreaseTauntFX()
+    {
+        var emission = tauntFX.emission;
+        emission.rateOverTimeMultiplier *= 1.25f; 
+
+        var main = tauntFX.main;
+        main.startSpeed = new ParticleSystem.MinMaxCurve(main.startSpeed.constant * 1.25f);
+    }
+
     public void IgniteFxFor(float seconds)
     {
         igniteFX.Play();
@@ -139,7 +181,7 @@ public class EntityFX : MonoBehaviour
         InvokeRepeating("IgniteColorFX", 0, .3f);
         Invoke("CancelColorChange", seconds);
     }
-
+    
     private void IgniteColorFX()
     {
         if (_spriteRenderer.color != igniteColor[0])

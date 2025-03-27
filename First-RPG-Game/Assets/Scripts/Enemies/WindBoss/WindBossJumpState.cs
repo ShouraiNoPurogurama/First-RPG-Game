@@ -16,7 +16,6 @@ namespace Enemies.WindBoss
         {
             base.Enter();
             Rb.linearVelocity = new Vector2(_windBoss.jumpVelocity.x * -_windBoss.FacingDir, _windBoss.jumpVelocity.y);
-            _windBoss.lastTimeJumped = Time.time;
         }
 
         public override void Update()
