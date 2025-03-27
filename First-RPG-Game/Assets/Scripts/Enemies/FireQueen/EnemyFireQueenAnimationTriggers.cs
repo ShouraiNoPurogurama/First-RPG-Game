@@ -10,7 +10,7 @@ namespace Enemies.FireQueen
 
         private void AnimationTrigger()
         {
-            Debug.Log("AnimationTrigger() called!");
+            //Debug.Log("AnimationTrigger() called!");
             fireQueen.AnimationFinishTrigger();
         }
 

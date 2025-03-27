@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 namespace Enemies.FireQueen
 {
@@ -13,27 +14,22 @@ namespace Enemies.FireQueen
 
         public override void Enter()
         {
+            //AudioManager.instance.PlaySfx(fireQueen.attackSfxIndex, fireQueen.transform);
             base.Enter();
         }
         public override void Update()
         {
-            try
-            {
-                base.Update();
+            base.Update();
 
-                fireQueen.SetZeroVelocity();
+            fireQueen.SetZeroVelocity();
 
-                if (TriggerCalled)
-                {
-                    TriggerCalled = false;
-                    fireQueen.lastTimeAttacked = Time.time;
-                    StateMachine.ChangeState(fireQueen.BattleState);
-                }
-            }
-            catch (Exception ex)
+            if (TriggerCalled)
             {
-                Debug.LogError("Exception in Update(): " + ex.Message);
+                TriggerCalled = false;
+                fireQueen.lastTimeAttacked = Time.time;
+                StateMachine.ChangeState(fireQueen.BattleState);
             }
+
         }
 
         public override void Exit()

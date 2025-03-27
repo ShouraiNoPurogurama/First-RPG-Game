@@ -60,7 +60,7 @@ namespace UI
 
         public void OnPointerExit(PointerEventData eventData)
         {
-            ui.toolTipUI.HideToolTip();
+            ui?.toolTipUI?.HideToolTip();
 
         }
 
@@ -70,7 +70,7 @@ namespace UI
             {
                 return;
             }
-            ui.toolTipUI.ShowToolTip(item.data);
+            ui?.toolTipUI?.ShowToolTip(item.data);
         }
     }
 }

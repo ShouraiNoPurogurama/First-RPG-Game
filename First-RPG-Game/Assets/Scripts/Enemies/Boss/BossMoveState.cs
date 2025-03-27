@@ -17,12 +17,12 @@ namespace Enemies.Boss
         {
             base.Update();
 
-            boss.SetVelocity(boss.FacingDir * boss.moveSpeed, boss.Rb.linearVelocity.y);
 
             if (!boss.IsBusy && (boss.IsWallDetected() || !boss.IsGroundDetected()))
             {
                 boss.Flip();
             }
+            boss.SetVelocity(boss.FacingDir * boss.moveSpeed, boss.Rb.linearVelocity.y);
 
         }
 

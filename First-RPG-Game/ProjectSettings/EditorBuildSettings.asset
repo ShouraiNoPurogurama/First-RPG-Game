@@ -6,11 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/AuthScene.unity
+    guid: caa7e797ce2dc3940a0a9a54c1205c55
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: b796fd55154dd5c4ead232d58e3ffe76
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    guid: 47c6102943eac70428f695e48a039362
   - enabled: 1
     path: Assets/Scenes/Level2.unity
     guid: 5646b19798bbc504db64692140ea21b2
@@ -18,8 +21,26 @@ EditorBuildSettings:
     path: Assets/Scenes/Level2_Boss.unity
     guid: 2658b9c3fa6321f489445cf943e0ca82
   - enabled: 1
-    path: Assets/Scenes/AuthScene.unity
-    guid: caa7e797ce2dc3940a0a9a54c1205c55
+    path: Assets/Scenes/EarthScene.unity
+    guid: 2c8a46bf2b8710f46b95b239bec64ebd
+  - enabled: 1
+    path: Assets/Scenes/FightLastBoss.unity
+    guid: d415c161c8d5ec24bb06db273b7f5979
+  - enabled: 1
+    path: Assets/Scenes/InventoryScene.unity
+    guid: 536f4c494d02dc945ad6c3a785ee51c5
+  - enabled: 1
+    path: Assets/Scenes/MapLast.unity
+    guid: aa3c1060c3ddaf646a597e01aadc01cb
+  - enabled: 1
+    path: Assets/Scenes/SampleScene - Fire.unity
+    guid: 65ce16e87e76c4d4b846d72e73f44fbf
+  - enabled: 1
+    path: Assets/Scenes/ThunderMap.unity
+    guid: d4bc45d2fc5b08d4e8011bdf0fc04d49
+  - enabled: 1
+    path: Assets/Scenes/WindMap.unity
+    guid: bbbcba6be6eda174ca3a8b52d83b7b82
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

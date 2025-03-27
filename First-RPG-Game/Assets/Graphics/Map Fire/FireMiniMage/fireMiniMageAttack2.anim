@@ -146,7 +146,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.2
+  - time: 1.1
     functionName: AttackTrigger
     data: 
     objectReferenceParameter: {fileID: 0}
@@ -154,14 +154,14 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 2.3
-    functionName: AnimationTrigger
+    functionName: CloseCounterWindow
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 2.3
-    functionName: CloseCounterWindow
+    functionName: AnimationTrigger
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

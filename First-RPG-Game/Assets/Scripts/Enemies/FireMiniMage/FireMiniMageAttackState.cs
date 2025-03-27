@@ -17,36 +17,31 @@ namespace Enemies.FireMiniMage
         }
         public override void Update()
         {
-            
-            try
+
+            base.Update();
+
+            if (FireMiniMage.IsPlayerDetected().distance != 0 && FireMiniMage.IsPlayerDetected().distance <= FireMiniMage.attackDistance) 
             {
-                base.Update();
-
-                FireMiniMage.SetZeroVelocity();
-
-                if (TriggerCalled)
+                if (CanThrowAttack())
                 {
-                    TriggerCalled = false;
-                    FireMiniMage.lastTimeAttacked = Time.time;
-                    StateMachine.ChangeState(FireMiniMage.BattleState);
+                    StateMachine.ChangeState(FireMiniMage.ThrowAttackState);
+                    return;
                 }
             }
-            catch (Exception ex)
-            {
-                Debug.LogError("Exception in Update(): " + ex.Message);
-            }
-            /*base.Update();
 
             FireMiniMage.SetZeroVelocity();
-
+            
             if (TriggerCalled)
             {
                 TriggerCalled = false;
                 FireMiniMage.lastTimeAttacked = Time.time;
                 StateMachine.ChangeState(FireMiniMage.BattleState);
-            }*/
+            }
         }
-
+        private bool CanThrowAttack()
+        {
+            return Time.time >= FireMiniMage.lastTimeAttacked + FireMiniMage.attackCooldown && FireMiniMage.IsPlayerDetected().distance <= FireMiniMage.throwballDistance;
+        }
         public override void Exit()
         {
             base.Exit();

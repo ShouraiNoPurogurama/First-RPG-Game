@@ -88,7 +88,7 @@ namespace Save_and_Load
             try
             {
                 string jsonData = File.ReadAllText(fullPath);
-                string json = JsonUtility.ToJson(await GetDataFromAPIAsync("dathlecnx"));
+                string json = JsonUtility.ToJson(await GetDataFromAPIAsync());
                 return JsonUtility.FromJson<GameData>(json);
             }
             catch (Exception e)
@@ -106,9 +106,9 @@ namespace Save_and_Load
                 File.Delete(fullPath);
             }
         }
-        public async Task<GameData> GetDataFromAPIAsync(string username)
+        public async Task<GameData> GetDataFromAPIAsync()
         {
-            string getUrl = $"{apiUrl}?username={username}";
+            string getUrl = $"{apiUrl}";
             using (UnityWebRequest request = UnityWebRequest.Get(getUrl))
             {
                 request.SetRequestHeader("accept", "*/*");
