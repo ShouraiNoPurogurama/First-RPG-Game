@@ -14,7 +14,7 @@ namespace Enemies.FireQueen
 
         public override void Enter()
         {
-            AudioManager.instance.PlaySfx(fireQueen.attackSfxIndex, fireQueen.transform);
+            //AudioManager.instance.PlaySfx(fireQueen.attackSfxIndex, fireQueen.transform);
             base.Enter();
         }
         public override void Update()
