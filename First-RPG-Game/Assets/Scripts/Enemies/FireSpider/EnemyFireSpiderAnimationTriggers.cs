@@ -10,7 +10,7 @@ namespace Enemies.FireSpider
 
         private void AnimationTrigger()
         {
-            Debug.Log("AnimationTrigger() called!");
+            //Debug.Log("AnimationTrigger() called!");
             fireSpider.AnimationFinishTrigger();
         }
 

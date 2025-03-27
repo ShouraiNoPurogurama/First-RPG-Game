@@ -52,7 +52,7 @@ namespace Enemies.Skeleton
             if (PlayerInAttackRange())
             {
                 _skeleton.SetZeroVelocity();
-                StateMachine.ChangeState(_skeleton.IdleState);
+                //StateMachine.ChangeState(_skeleton.IdleState);
                 return;
             }
 

@@ -70,7 +70,7 @@ namespace Enemies.WindBoss
                         return;
                     }
 
-                    if (isLowHp && CanSpinAttack())
+                    if (CanSpinAttack())
                     {
                         StateMachine.ChangeState(_windBoss.EnterSpinAttackState);
                         return;

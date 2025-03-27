@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Enemy
+  - Audio
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - FX
   - Item
   - SkillPrefabs
-  - 
+  - Bridge
   - 
   - 
   - 
@@ -47,6 +48,9 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 3073329427
+    locked: 0
+  - name: ForeGround
+    uniqueID: 3681588029
     locked: 0
   - name: Item
     uniqueID: 4056777469

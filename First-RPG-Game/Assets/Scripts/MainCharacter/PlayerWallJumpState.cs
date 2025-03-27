@@ -14,12 +14,12 @@ namespace MainCharacter
             Player.SetVelocity( -Player.FacingDir * Player.moveSpeed * 0.7f, Rb.linearVelocity.y + Player.jumpForce);
 
             Player.StartCoroutine("BusyFor", .18f);
+            SoundManager.PlaySFX("WallJump", 0);
         }
 
         public override void Update()
         {
             base.Update();
-            // AudioManager.instance.PlaySfx(31, null);
 
             if (xInput != 0 && !Player.IsBusy)
             {
@@ -37,7 +37,7 @@ namespace MainCharacter
         public override void Exit()
         {
             base.Exit();
-            // AudioManager.instance.StopSfx(31);
+            SoundManager.PlaySFX("WallJump", 1);
         }
     }
 }

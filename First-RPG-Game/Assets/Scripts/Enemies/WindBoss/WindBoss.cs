@@ -156,8 +156,8 @@ namespace Enemies.WindBoss
         {
             Instantiate(archerPrefab, new Vector3(transform.position.x + GetRandomOffset(), transform.position.y, 0f),
                 Quaternion.identity);
-            Instantiate(archerPrefab, new Vector3(transform.position.x + GetRandomOffset(), transform.position.y, 0f),
-                Quaternion.identity);
+            // Instantiate(archerPrefab, new Vector3(transform.position.x + GetRandomOffset(), transform.position.y, 0f),
+            //     Quaternion.identity);
             Instantiate(skeletonPrefab, new Vector3(transform.position.x + GetRandomOffset(), transform.position.y, 0f),
                 Quaternion.identity);
             Instantiate(skeletonPrefab, new Vector3(transform.position.x + GetRandomOffset(), transform.position.y, 0f),

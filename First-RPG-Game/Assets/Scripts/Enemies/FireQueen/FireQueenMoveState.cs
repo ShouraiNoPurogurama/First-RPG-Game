@@ -17,12 +17,12 @@ namespace Enemies.FireQueen
         {
             base.Update();
 
-            fireQueen.SetVelocity(fireQueen.FacingDir * fireQueen.moveSpeed, fireQueen.Rb.linearVelocity.y);
 
             if (!fireQueen.IsBusy && (fireQueen.IsWallDetected() || !fireQueen.IsGroundDetected()))
             {
                 fireQueen.Flip();
             }
+            fireQueen.SetVelocity(fireQueen.FacingDir * fireQueen.moveSpeed, fireQueen.Rb.linearVelocity.y);
 
         }
 

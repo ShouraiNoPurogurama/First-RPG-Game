@@ -17,24 +17,6 @@ namespace Enemies.FireMage
         }
         public override void Update()
         {
-            /*
-            try
-            {
-                base.Update();
-
-                fireMage.SetZeroVelocity();
-
-                if (TriggerCalled)
-                {
-                    TriggerCalled = false;
-                    fireMage.lastTimeAttacked = Time.time;
-                    StateMachine.ChangeState(fireMage.BattleState);
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.LogError("Exception in Update(): " + ex.Message);
-            }*/
             base.Update();
 
             fireMage.SetZeroVelocity();

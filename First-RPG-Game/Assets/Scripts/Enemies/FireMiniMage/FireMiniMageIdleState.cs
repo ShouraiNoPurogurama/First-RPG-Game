@@ -16,20 +16,8 @@ namespace Enemies.FireMiniMage
         
         public override void Update()
         {
-            //Debug.Log("player: " + FireMiniMage.BattleState.PlayerInAttackRange());
-            //Debug.Log("atk" + FireMiniMage.BattleState.CanAttack());
-            if (FireMiniMage.BattleState.PlayerInAttackRange() && FireMiniMage.BattleState.CanAttack())
-            {
-                //Debug.Log("attacking dsdsđsdsd");
-                StateMachine.ChangeState(FireMiniMage.AttackState);
-            }
 
             base.Update();
-
-            if (FireMiniMage.BattleState.PlayerInAttackRange() && !FireMiniMage.BattleState.CanAttack())
-            {
-                return;
-            }
 
             if (StateTimer <= 0)
             {

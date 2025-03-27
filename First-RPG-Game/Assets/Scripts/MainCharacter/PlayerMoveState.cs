@@ -9,7 +9,6 @@ namespace MainCharacter
         public override void Enter()
         {
             base.Enter();
-            //AudioManager.instance.PlaySfx(13, null);
         }
 
         public override void Update()
@@ -19,6 +18,7 @@ namespace MainCharacter
             if (xInput == 0 || Player.IsWallDetected())
             {
                 StateMachine.ChangeState(Player.IdleState);
+                Player.SetVelocity(0, Rb.linearVelocity.y);
             }
         
             Player.SetVelocity(xInput * Player.moveSpeed, Rb.linearVelocity.y);
@@ -27,7 +27,6 @@ namespace MainCharacter
         public override void Exit()
         {
             base.Exit();
-            //AudioManager.instance.StopSfx(13);
         }
     }
 }
