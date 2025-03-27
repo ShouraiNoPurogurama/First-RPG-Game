@@ -1,6 +1,6 @@
+using Manager_Controller;
 using System.Collections.Generic;
 using System.Linq;
-using Manager_Controller;
 using UnityEngine;
 
 namespace Save_and_Load
@@ -41,7 +41,7 @@ namespace Save_and_Load
         public async void LoadGame()
         {
             gameData = await fileDataHandler.Load();
-            await APITrigger.Instance.LoadRubyDB();
+            //await APITrigger.Instance.LoadRubyDB();
             if (this.gameData == null)
             {
                 Debug.Log("No save data found");

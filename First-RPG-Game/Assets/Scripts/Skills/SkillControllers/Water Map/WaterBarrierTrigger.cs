@@ -1,5 +1,5 @@
-﻿using System.Collections;
-using MainCharacter;
+﻿using Stats;
+using System.Collections;
 using UnityEngine;
 
 namespace WaterMap
@@ -9,6 +9,7 @@ namespace WaterMap
         private Animator anim;
         [SerializeField] private float waterInterval = 5f;
         [SerializeField] private float waterDuration = 1f;
+        [SerializeField] private int damage = 20;
         private void Start()
         {
             anim = GetComponent<Animator>();
@@ -27,12 +28,7 @@ namespace WaterMap
         }
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            Player player = collision.GetComponent<Player>();
-            if (player != null)
-            {
-                player.Stats.TakeDamage(20);
-            }
-
+            collision.GetComponent<CharacterStats>()?.TakeDamage(damage);
         }
     }
 }
