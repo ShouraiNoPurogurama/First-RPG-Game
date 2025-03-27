@@ -1,11 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
-using MainCharacter;
-using Newtonsoft.Json;
-using Stats;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -18,7 +16,7 @@ namespace Save_and_Load
         private bool encryptData;
         private string apiUrl = "http://prn-222.food/api/v1/Data";
         public string token = "";
-        
+
         public FileDataHandler(string _dataDirPath, string _dataFileName, bool _encryptData)
         {
             dataDirPath = _dataDirPath;
@@ -26,7 +24,7 @@ namespace Save_and_Load
             encryptData = _encryptData;
             token = PlayerPrefs.GetString("authToken");
         }
-        
+
         public async void Save(GameData data)
         {
             try
@@ -90,7 +88,7 @@ namespace Save_and_Load
             try
             {
                 string jsonData = File.ReadAllText(fullPath);
-                string json = JsonUtility.ToJson(await GetDataFromAPIAsync("dathlecnx"));
+                string json = JsonUtility.ToJson(await GetDataFromAPIAsync());
                 return JsonUtility.FromJson<GameData>(json);
             }
             catch (Exception e)
@@ -108,9 +106,9 @@ namespace Save_and_Load
                 File.Delete(fullPath);
             }
         }
-        public async Task<GameData> GetDataFromAPIAsync(string username)
+        public async Task<GameData> GetDataFromAPIAsync()
         {
-            string getUrl = $"{apiUrl}?username={username}";
+            string getUrl = $"{apiUrl}";
             using (UnityWebRequest request = UnityWebRequest.Get(getUrl))
             {
                 request.SetRequestHeader("accept", "*/*");

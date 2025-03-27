@@ -1,11 +1,4 @@
 ﻿using Enemies;
-using Stats;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
 using UnityEngine;
 
 namespace Assets.Scripts.Enemies.DarkBoss
@@ -19,6 +12,7 @@ namespace Assets.Scripts.Enemies.DarkBoss
         public DarkBossAttackState AttackState { get; private set; }
         public DarkBossTeleportState TeleportState { get; private set; }
         public DarkBossCastState CastState { get; private set; }
+        public DarkBossSummonState SummonState { get; private set; }
 
         [Header("Teleport info")]
         [SerializeField] public BoxCollider2D arena;
@@ -30,10 +24,15 @@ namespace Assets.Scripts.Enemies.DarkBoss
 
         [Header("Cast animation")]
         [SerializeField] private GameObject arrowPrefab;
-        [SerializeField] private int arrowCount = 16; // Số lượng mũi tên
-        [SerializeField] private float spawnRadius = 2f; // Bán kính vòng tròn
+        [SerializeField] private int arrowCount = 16; 
+        [SerializeField] private float spawnRadius = 2f; 
         [SerializeField] private float arrowSpeed = 5f;
 
+        [Header("Summon")]
+        [SerializeField] private GameObject summonPrefab;
+        [SerializeField] private int summonCount = 3;
+
+        public bool IsCallSummoned { get; set; } = true;
         protected override void Awake()
         {
             base.Awake();
@@ -44,6 +43,7 @@ namespace Assets.Scripts.Enemies.DarkBoss
             AttackState = new DarkBossAttackState(this, StateMachine, "Attack", this);
             TeleportState = new DarkBossTeleportState(this, StateMachine, "Teleport", this);
             CastState = new DarkBossCastState(this, StateMachine, "Cast", this);
+            SummonState = new DarkBossSummonState(this, StateMachine, "Summon", this);
             counterImage.SetActive(false);
         }
 
@@ -107,8 +107,8 @@ namespace Assets.Scripts.Enemies.DarkBoss
 
         public void ShootArrows()
         {
-            float angleStep = 360f / arrowCount; // Góc giữa mỗi mũi tên
-            float angle = 0f; // Bắt đầu từ góc 0 độ
+            float angleStep = 360f / arrowCount; 
+            float angle = 0f; 
 
             for (int i = 0; i < arrowCount; i++)
             {
@@ -118,24 +118,31 @@ namespace Assets.Scripts.Enemies.DarkBoss
                     transform.position.y + spawnRadius * Mathf.Sin(radian)
                 );
 
-                // Tính hướng bắn
                 Vector2 shootDirection = (spawnPos - (Vector2)transform.position).normalized;
 
-                // Xoay mũi tên theo hướng bắn
                 float arrowRotation = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
                 Quaternion arrowRotationQuat = Quaternion.Euler(0, 0, arrowRotation);
 
-                // Tạo mũi tên
                 GameObject arrow = Instantiate(arrowPrefab, spawnPos, arrowRotationQuat);
                 Arrow_Controller arrowController = arrow.GetComponent<Arrow_Controller>();
 
-                // Gán vận tốc ban đầu
                 arrowController.SetVelocity(shootDirection * arrowSpeed);
 
-                angle += angleStep; // Tăng góc cho lần bắn tiếp theo
+                angle += angleStep; 
             }
         }
 
+        public void Summon()
+        {
+            for (int i = 0; i < summonCount; i++)
+            {
+                Vector2 spawnPos = new Vector2(
+                    GameObject.Find("Player").transform.position.x + UnityEngine.Random.Range(-10, 10),
+                    GameObject.Find("Player").transform.position.y
+                );
+                Instantiate(summonPrefab, spawnPos, Quaternion.identity);
+            }
+        }
 
 
     }

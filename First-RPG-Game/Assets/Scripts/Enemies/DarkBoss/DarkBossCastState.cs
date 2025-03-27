@@ -7,7 +7,7 @@ namespace Assets.Scripts.Enemies.DarkBoss
     public class DarkBossCastState : EnemyState
     {
         private DarkBoss _darkBoss;
-        private Vector2 _targetPosition; // Desired center position
+        private Vector2 _targetPosition; 
         private float _moveSpeed = 3f;
         private float defaultGravityScale;
         private Coroutine shootCoroutine;
@@ -16,7 +16,7 @@ namespace Assets.Scripts.Enemies.DarkBoss
             : base(enemyBase, stateMachine, animBoolName)
         {
             _darkBoss = darkBoss;
-            _targetPosition = new Vector2(0, 0); // Set the desired center position
+            _targetPosition = new Vector2(0, 0); 
         }
 
         public override void Enter()
@@ -24,10 +24,8 @@ namespace Assets.Scripts.Enemies.DarkBoss
             base.Enter();
             defaultGravityScale = _darkBoss.Rb.gravityScale;
             _darkBoss.Rb.gravityScale = 0;
-            StateTimer = 5f; // time for cast state
+            StateTimer = 5f; 
             MoveToCenter();
-
-            // Bắt đầu Coroutine bắn tên mỗi 0.5 giây
             shootCoroutine = _darkBoss.StartCoroutine(ShootArrowsPeriodically());
         }
 
@@ -38,8 +36,6 @@ namespace Assets.Scripts.Enemies.DarkBoss
             // Move towards the target position
             _darkBoss.transform.position = Vector2.MoveTowards(_darkBoss.transform.position, _targetPosition, _moveSpeed * Time.deltaTime);
 
-            // Decrease the state timer
-            StateTimer -= Time.deltaTime;
 
             // Transition to the MoveState if the timer runs out
             if (StateTimer <= 0)
@@ -68,7 +64,6 @@ namespace Assets.Scripts.Enemies.DarkBoss
             base.Exit();
             _darkBoss.Rb.gravityScale = defaultGravityScale;
 
-            // Dừng bắn tên khi rời khỏi trạng thái
             if (shootCoroutine != null)
             {
                 _darkBoss.StopCoroutine(shootCoroutine);
