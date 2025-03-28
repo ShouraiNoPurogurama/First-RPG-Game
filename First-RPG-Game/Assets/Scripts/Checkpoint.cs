@@ -32,25 +32,19 @@ public class Checkpoint : MonoBehaviour
     }
     private bool AllEnemiesBeforeCheckpointDead()
     {
+        Debug.Log("Check enemies");
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject enemy in enemies)
         {
-            if (checkEnemiesBefore)
+            if (enemy.transform.position.x < transform.position.x)
             {
-                if (enemy.transform.position.x < transform.position.x)
-                {
-                    var enemyStats = enemy.GetComponent<EnemyStats>();
-                    if (enemyStats != null && enemyStats.currentHp > 0)
-                    {
-                        return false;
-                    }
-                }
-            }
-            else
-            {
-                var enemyStats = enemy.GetComponent<EnemyStats>();
+                Debug.Log("Enemy found");
+                EnemyStats enemyStats = enemy.GetComponent<EnemyStats>();
                 if (enemyStats != null && enemyStats.currentHp > 0)
                 {
+                    Debug.Log("Enemy alive");
+                    Debug.Log("Enemy name: " + enemy.name);
+                    Debug.Log("Enemy hp: " + enemyStats.currentHp);
                     return false;
                 }
             }

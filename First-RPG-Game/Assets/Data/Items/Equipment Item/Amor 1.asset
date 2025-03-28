@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c87cb599c42014ea37ad6c81f3bbeb, type: 3}
+  m_Name: Amor 1
+  m_EditorClassIdentifier: 
+  itemName: Amor
+  icon: {fileID: -965925972, guid: fd2407992da6bd540b52d9e292139926, type: 3}
+  itemType: 1
+  itemId: c5fd4ee0cee8bf8459eb6ac4eefc5346
+  dropChance: 97.3
+  equipmentType: 2
+  itemEffects: []
+  strength: 0
+  agility: 0
+  intelligence: 0
+  vitality: 0
+  maxHp: 0
+  armor: 20
+  evasion: 0
+  magicResistance: 0
+  damage: 0
+  critChance: 0
+  critPower: 0
+  fireDamage: 0
+  iceDamage: 0
+  lightingDamage: 0
+  earthDamage: 0
+  windDamage: 0
+  craftingMaterials: []

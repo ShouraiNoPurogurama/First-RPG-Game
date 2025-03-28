@@ -1,11 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
-using MainCharacter;
-using Newtonsoft.Json;
-using Stats;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -18,7 +16,7 @@ namespace Save_and_Load
         private bool encryptData;
         private string apiUrl = "http://prn-222.food/api/v1/Data";
         public string token = "";
-        
+
         public FileDataHandler(string _dataDirPath, string _dataFileName, bool _encryptData)
         {
             dataDirPath = _dataDirPath;
@@ -26,7 +24,7 @@ namespace Save_and_Load
             encryptData = _encryptData;
             token = PlayerPrefs.GetString("authToken");
         }
-        
+
         public async void Save(GameData data)
         {
             try
@@ -54,7 +52,6 @@ namespace Save_and_Load
         }
         public async Task PostDataAsync(string jsonData)
         {
-            Debug.Log("🟢 Dữ liệu gửi lên API: " + jsonData);
             byte[] jsonToSend = Encoding.UTF8.GetBytes(jsonData);
 
             using (UnityWebRequest request = new UnityWebRequest(apiUrl, "POST"))
@@ -72,6 +69,7 @@ namespace Save_and_Load
                 if (request.result == UnityWebRequest.Result.Success)
                 {
                     Debug.Log("🟢 Dữ liệu gửi thành công: " + request.downloadHandler.text);
+                    Debug.Log("🟢 Dữ liệu gửi thành công: " + jsonData);
                 }
                 else
                 {
@@ -81,16 +79,10 @@ namespace Save_and_Load
         }
         public async Task<GameData> Load()
         {
-            string fullPath = Path.Combine(dataDirPath, dataFileName);
-            if (!File.Exists(fullPath))
-            {
-                return null;
-            }
-
             try
             {
-                string jsonData = File.ReadAllText(fullPath);
-                string json = JsonUtility.ToJson(await GetDataFromAPIAsync("dathlecnx"));
+                string json = JsonUtility.ToJson(await GetDataFromAPIAsync());
+                Debug.Log("🟢 Dữ liệu nhận từ API: " + json);
                 return JsonUtility.FromJson<GameData>(json);
             }
             catch (Exception e)
@@ -108,14 +100,14 @@ namespace Save_and_Load
                 File.Delete(fullPath);
             }
         }
-        public async Task<GameData> GetDataFromAPIAsync(string username)
+        public async Task<GameData> GetDataFromAPIAsync()
         {
-            string getUrl = $"{apiUrl}?username={username}";
+            string getUrl = $"{apiUrl}";
             using (UnityWebRequest request = UnityWebRequest.Get(getUrl))
             {
                 request.SetRequestHeader("accept", "*/*");
                 request.SetRequestHeader("Authorization", "Bearer " + token);
-
+                Debug.Log("🟢 Dữ liệu GET API: " + request.url);
                 var tcs = new TaskCompletionSource<bool>();
                 request.SendWebRequest().completed += operation => tcs.SetResult(true);
                 await tcs.Task;
@@ -155,7 +147,7 @@ namespace Save_and_Load
             equipList.Reverse();
             gameData.equipmentId = equipList;
 
-            gameData.closeCheckpointId = "";
+            gameData.closeCheckpointId = targetData.closeCheckpointId;
 
             gameData.checkpoints = new SerializableDictionary<string, bool>();
             foreach (var kvp in targetData.checkPoints)

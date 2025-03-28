@@ -219,7 +219,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 0.90943396, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 0, g: 1, b: 0.020039558, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2797,6 +2797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loginPanel: {fileID: 297508960}
   registerPanel: {fileID: 57455257}
+  instance: {fileID: 0}
   loginUsernameInput: {fileID: 2129068376}
   loginPasswordInput: {fileID: 512323884}
   loginResponseText: {fileID: 2069612448}
@@ -3993,7 +3994,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 0.645283, g: 0.028002774, b: 0.028002774, a: 1}
+  m_fontColor: {r: 0.027450994, g: 0.64705884, b: 0.09338097, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
