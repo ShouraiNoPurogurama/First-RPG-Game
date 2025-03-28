@@ -20,6 +20,7 @@ namespace UI
             _rectTransform = GetComponent<RectTransform>();
             _entity = GetComponentInParent<Entity>();
             _slider = GetComponentInChildren<Slider>();
+            
             _characterStats = GetComponentInParent<CharacterStats>();
 
             // Lấy component Image từ Fill Area

@@ -71,7 +71,9 @@ namespace UI
             endText.SetActive(true);
             yield return new WaitForSeconds(1.5f);
             restartButton.SetActive(true);
+            Time.timeScale = 1f;
         }
         public void RestartGameButton() => SceneController.instance.RestartScene();
+        public void ExitGame() => Application.Quit();
     }
 }

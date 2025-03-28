@@ -328,6 +328,7 @@ namespace Inventory_and_Item
         {
             foreach (KeyValuePair<string, int> pair in _data.inventory)
             {
+#if UNITY_EDITOR
                 foreach (var item in GetItemDataBase())
                 {
                     if (item != null && item.itemId == pair.Key)
@@ -338,10 +339,12 @@ namespace Inventory_and_Item
                         loadedItems.Add(itemToLoad);
                     }
                 }
+#endif
             }
 
             foreach (string loadedItemId in _data.equipmentId)
             {
+#if UNITY_EDITOR
                 foreach (var item in GetItemDataBase())
                 {
                     if (item != null && loadedItemId == item.itemId)
@@ -349,6 +352,7 @@ namespace Inventory_and_Item
                         loadedEquipment.Add(item as ItemData_Equipment);
                     }
                 }
+#endif
             }
             AddStartingItem();
         }
