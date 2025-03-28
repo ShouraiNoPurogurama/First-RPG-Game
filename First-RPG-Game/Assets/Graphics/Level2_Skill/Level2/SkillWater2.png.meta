@@ -195,10 +195,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -236,15 +236,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SkillWater2_0
+      name: SkillWater_03
       rect:
         serializedVersion: 2
         x: 325
-        y: 461
+        y: 462
         width: 100
         height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -258,15 +258,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkillWater2_2
+      name: SkillWater_01
       rect:
         serializedVersion: 2
         x: 55
         y: 464
         width: 41
         height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.65}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -280,15 +280,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkillWater2_3
+      name: SkillWater_02
       rect:
         serializedVersion: 2
         x: 183
         y: 463
         width: 82
         height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -302,15 +302,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkillWater2_4
+      name: SkillWater_04
       rect:
         serializedVersion: 2
         x: 23
         y: 311
         width: 106
         height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -324,15 +324,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkillWater2_5
+      name: SkillWater_05
       rect:
         serializedVersion: 2
         x: 167
         y: 311
         width: 112
         height: 82
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -346,15 +346,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkillWater2_6
+      name: SkillWater_06
       rect:
         serializedVersion: 2
         x: 319
         y: 311
         width: 114
         height: 82
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.48, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -368,15 +368,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkillWater2_7
+      name: SkillWater_07
       rect:
         serializedVersion: 2
         x: 15
         y: 159
         width: 124
         height: 121
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -390,15 +390,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkillWater2_8
+      name: SkillWater_08
       rect:
         serializedVersion: 2
         x: 153
         y: 158
         width: 139
         height: 123
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.52, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -412,15 +412,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkillWater2_11
+      name: SkillWater_09
       rect:
         serializedVersion: 2
         x: 308
         y: 159
         width: 132
         height: 123
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.18}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -434,15 +434,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkillWater2_35
+      name: SkillWater_10
       rect:
         serializedVersion: 2
         x: 8
         y: 9
         width: 132
         height: 121
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -469,16 +469,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SkillWater2_0: -2238060333644597461
-      SkillWater2_11: 7630088106809463317
-      SkillWater2_2: -4739723966932518767
-      SkillWater2_3: 5979773458639073650
-      SkillWater2_35: 8487411131109918107
-      SkillWater2_4: 7947551695865211084
-      SkillWater2_5: 4669411137399315519
-      SkillWater2_6: -6361669685426868749
-      SkillWater2_7: 8971122877341390319
-      SkillWater2_8: -4181376736225507381
+      SkillWater_01: -4739723966932518767
+      SkillWater_02: 5979773458639073650
+      SkillWater_03: -2238060333644597461
+      SkillWater_04: 7947551695865211084
+      SkillWater_05: 4669411137399315519
+      SkillWater_06: -6361669685426868749
+      SkillWater_07: 8971122877341390319
+      SkillWater_08: -4181376736225507381
+      SkillWater_09: 7630088106809463317
+      SkillWater_10: 8487411131109918107
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

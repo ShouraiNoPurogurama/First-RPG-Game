@@ -52,7 +52,6 @@ namespace Save_and_Load
         }
         public async Task PostDataAsync(string jsonData)
         {
-            Debug.Log("🟢 Dữ liệu gửi lên API: " + jsonData);
             byte[] jsonToSend = Encoding.UTF8.GetBytes(jsonData);
 
             using (UnityWebRequest request = new UnityWebRequest(apiUrl, "POST"))
@@ -70,6 +69,7 @@ namespace Save_and_Load
                 if (request.result == UnityWebRequest.Result.Success)
                 {
                     Debug.Log("🟢 Dữ liệu gửi thành công: " + request.downloadHandler.text);
+                    Debug.Log("🟢 Dữ liệu gửi thành công: " + jsonData);
                 }
                 else
                 {
@@ -79,16 +79,10 @@ namespace Save_and_Load
         }
         public async Task<GameData> Load()
         {
-            string fullPath = Path.Combine(dataDirPath, dataFileName);
-            if (!File.Exists(fullPath))
-            {
-                return null;
-            }
-
             try
             {
-                string jsonData = File.ReadAllText(fullPath);
                 string json = JsonUtility.ToJson(await GetDataFromAPIAsync());
+                Debug.Log("🟢 Dữ liệu nhận từ API: " + json);
                 return JsonUtility.FromJson<GameData>(json);
             }
             catch (Exception e)
@@ -113,7 +107,7 @@ namespace Save_and_Load
             {
                 request.SetRequestHeader("accept", "*/*");
                 request.SetRequestHeader("Authorization", "Bearer " + token);
-
+                Debug.Log("🟢 Dữ liệu GET API: " + request.url);
                 var tcs = new TaskCompletionSource<bool>();
                 request.SendWebRequest().completed += operation => tcs.SetResult(true);
                 await tcs.Task;
@@ -153,7 +147,7 @@ namespace Save_and_Load
             equipList.Reverse();
             gameData.equipmentId = equipList;
 
-            gameData.closeCheckpointId = "";
+            gameData.closeCheckpointId = targetData.closeCheckpointId;
 
             gameData.checkpoints = new SerializableDictionary<string, bool>();
             foreach (var kvp in targetData.checkPoints)

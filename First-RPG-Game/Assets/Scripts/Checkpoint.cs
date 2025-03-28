@@ -42,6 +42,9 @@ public class Checkpoint : MonoBehaviour
                 EnemyStats enemyStats = enemy.GetComponent<EnemyStats>();
                 if (enemyStats != null && enemyStats.currentHp > 0)
                 {
+                    Debug.Log("Enemy alive");
+                    Debug.Log("Enemy name: " + enemy.name);
+                    Debug.Log("Enemy hp: " + enemyStats.currentHp);
                     return false;
                 }
             }
