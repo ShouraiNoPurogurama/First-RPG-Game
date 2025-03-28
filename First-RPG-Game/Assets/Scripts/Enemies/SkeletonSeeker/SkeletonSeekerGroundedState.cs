@@ -1,39 +1,36 @@
-﻿using Enemies;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class SkeletonSeekerGroundedState : EnemyState
+namespace Enemies.SkeletonSeeker
 {
-    protected SkeletonSeeker SkeletonSeeker;
-    private Transform _player;
-
-    protected SkeletonSeekerGroundedState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, SkeletonSeeker skeletonSeeker) : base(enemyBase, stateMachine, animBoolName)
+    public class SkeletonSeekerGroundedState : EnemyState
     {
-        SkeletonSeeker = skeletonSeeker;
-    }
-    public override void Enter()
-    {
-        base.Enter();
+        protected SkeletonSeeker SkeletonSeeker;
+        private Transform _player;
 
-        _player = GameObject.Find("Player").transform;
-    }
-
-    public override void Update()
-    {
-        base.Update();
-
-        if (SkeletonSeeker.IsPlayerDetected() || Vector2.Distance(SkeletonSeeker.transform.position, _player.position) < 2)
+        protected SkeletonSeekerGroundedState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, SkeletonSeeker skeletonSeeker) : base(enemyBase, stateMachine, animBoolName)
         {
-            StateMachine.ChangeState(SkeletonSeeker.BattleState);
+            SkeletonSeeker = skeletonSeeker;
         }
-    }
+        public override void Enter()
+        {
+            base.Enter();
 
-    public override void Exit()
-    {
-        base.Exit();
+            _player = GameObject.Find("Player").transform;
+        }
+
+        public override void Update()
+        {
+            base.Update();
+
+            if (SkeletonSeeker.IsPlayerDetected() || Vector2.Distance(SkeletonSeeker.transform.position, _player.position) < 2)
+            {
+                StateMachine.ChangeState(SkeletonSeeker.BattleState);
+            }
+        }
+
+        public override void Exit()
+        {
+            base.Exit();
+        }
     }
 }

@@ -1,8 +1,6 @@
-using System.Collections;
 using MainCharacter;
 using Stats;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Enemies.WindBoss
 {
@@ -50,7 +48,6 @@ namespace Enemies.WindBoss
         public WindBossStunnedState StunnedState { get; private set; }
         public WindBossJumpState JumpState { get; private set; }
         public WindBossMeleeAttackState MeleeAttackState { get; private set; }
-        public WindBossRunState RunState { get; private set; }
         public WindBossLeapState LeapState { get; private set; }
         public WindBossEnterSpinAttackState EnterSpinAttackState { get; private set; }
         public WindBossSpinAttackState SpinAttackState { get; private set; }
@@ -69,7 +66,6 @@ namespace Enemies.WindBoss
             StunnedState = new WindBossStunnedState(this, StateMachine, "Stunned", this);
             JumpState = new WindBossJumpState(this, StateMachine, "Jump", this);
             MeleeAttackState = new WindBossMeleeAttackState(this, StateMachine, "Attack", this);
-            // RunState = new WindBossRunState(this, StateMachine, "Run", this);
             LeapState = new WindBossLeapState(this, StateMachine, "Leap", this);
             EnterSpinAttackState = new WindBossEnterSpinAttackState(this, StateMachine, "EnterSpinAttack", this);
             SpinAttackState = new WindBossSpinAttackState(this, StateMachine, "SpinAttack", this);

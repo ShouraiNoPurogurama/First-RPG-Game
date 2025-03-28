@@ -1,32 +1,33 @@
-﻿using Enemies;
-
-public class BossSkeletonKnightMoveState : BossSkeletonKnightGroundState
+﻿namespace Enemies.Map_Water.Boss
 {
-    private BossSkeletonKnight enemy;
-    public BossSkeletonKnightMoveState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, BossSkeletonKnight enemy) : base(enemyBase, stateMachine, animBoolName, enemy)
+    public class BossSkeletonKnightMoveState : BossSkeletonKnightGroundState
     {
-        this.enemy = enemy;
-    }
-
-    public override void Enter()
-    {
-        base.Enter();
-    }
-
-    public override void Update()
-    {
-        base.Update();
-
-        enemy.SetVelocity(enemy.FacingDir * enemy.moveSpeed, Rb.linearVelocity.y);
-
-        if (!enemy.IsBusy && (enemy.IsWallDetected() || !enemy.IsGroundDetected()))
+        private BossSkeletonKnight enemy;
+        public BossSkeletonKnightMoveState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, BossSkeletonKnight enemy) : base(enemyBase, stateMachine, animBoolName, enemy)
         {
-            enemy.Flip();
+            this.enemy = enemy;
         }
-    }
 
-    public override void Exit()
-    {
-        base.Exit();
+        public override void Enter()
+        {
+            base.Enter();
+        }
+
+        public override void Update()
+        {
+            base.Update();
+
+            enemy.SetVelocity(enemy.FacingDir * enemy.moveSpeed, Rb.linearVelocity.y);
+
+            if (!enemy.IsBusy && (enemy.IsWallDetected() || !enemy.IsGroundDetected()))
+            {
+                enemy.Flip();
+            }
+        }
+
+        public override void Exit()
+        {
+            base.Exit();
+        }
     }
 }

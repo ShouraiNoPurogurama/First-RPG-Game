@@ -1,36 +1,35 @@
-using Enemies;
-using Enemies.Orc;
-using MainCharacter;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
-public class OrcBattleState : EnemyState
+namespace Enemies.Orc
 {
-    private Orc Orc;
-    private Transform Player;
-
-    private int moveDir;
-    public OrcBattleState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, Orc orc) : base(enemyBase, stateMachine, animBoolName)
+    public class OrcBattleState : EnemyState
     {
-        this.Orc = orc;
-    }
+        private Orc Orc;
+        private Transform Player;
 
-    public override void Enter()
-    {
-        base.Enter();
-        Player = GameObject.Find("Player").transform;
-    }
+        private int moveDir;
+        public OrcBattleState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, Orc orc) : base(enemyBase, stateMachine, animBoolName)
+        {
+            this.Orc = orc;
+        }
 
-    public override void Update()
-    {
-        base.Update();
-        moveDir = Player.position.x > Orc.transform.position.x ? 1 : -1;
+        public override void Enter()
+        {
+            base.Enter();
+            Player = GameObject.Find("Player").transform;
+        }
 
-        Orc.SetVelocity(Orc.moveSpeed * moveDir, Rb.linearVelocity.y);
-    }
+        public override void Update()
+        {
+            base.Update();
+            moveDir = Player.position.x > Orc.transform.position.x ? 1 : -1;
 
-    public override void Exit()
-    {
-        base.Exit();
+            Orc.SetVelocity(Orc.moveSpeed * moveDir, Rb.linearVelocity.y);
+        }
+
+        public override void Exit()
+        {
+            base.Exit();
+        }
     }
 }

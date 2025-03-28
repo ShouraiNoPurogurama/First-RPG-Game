@@ -1,7 +1,6 @@
-﻿using Skills;
-using UnityEngine;
+﻿using MainCharacter;
 
-namespace MainCharacter
+namespace Skills.SkillControllers.Thunder_Map.TeleportSwordSkill
 {
     public class PlayerTeleportSwordState : PlayerState
     {

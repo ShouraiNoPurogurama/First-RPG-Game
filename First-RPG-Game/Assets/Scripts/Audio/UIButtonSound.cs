@@ -1,15 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIButtonSound : MonoBehaviour
+namespace Audio
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private void Start()
+    public class UIButtonSound : MonoBehaviour
     {
-        Button btn = GetComponent<Button>();
-        if (btn != null)
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        private void Start()
         {
-            btn.onClick.AddListener(() => SoundManager.PlayClick());
+            Button btn = GetComponent<Button>();
+            if (btn != null)
+            {
+                btn.onClick.AddListener(() => SoundManager.PlayClick());
+            }
         }
     }
 }
