@@ -1,5 +1,3 @@
-using MainCharacter;
-using Stats;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;

@@ -36,11 +36,11 @@ namespace Assets.Scripts.Enemies.DarkBoss
         {
             base.Update();
 
-            if(DarkBoss.Stats.currentHp <= DarkBoss.Stats.maxHp.GetValue() * 1 / 2 && DarkBoss.IsCallSummoned && DarkBoss.Stats.currentHp >= DarkBoss.Stats.maxHp.GetValue() * 1/4)
+            if(DarkBoss.Stats.currentHp <= DarkBoss.Stats.maxHp.GetValue() * 1 / 2 && DarkBoss.IsCallSummoned && DarkBoss.Stats.currentHp >= 70)
             {
                 StateMachine.ChangeState(DarkBoss.SummonState);
             }
-            if(DarkBoss.Stats.currentHp <= DarkBoss.Stats.maxHp.GetValue() * 1 / 4)
+            if(DarkBoss.Stats.currentHp <= 70)
             {
                 StateMachine.ChangeState(DarkBoss.CastState);
             }

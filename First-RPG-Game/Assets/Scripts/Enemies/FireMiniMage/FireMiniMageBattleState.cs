@@ -1,5 +1,4 @@
 ﻿using MainCharacter;
-using UnityEditor.Searcher;
 using UnityEngine;
 
 namespace Enemies.FireMiniMage
