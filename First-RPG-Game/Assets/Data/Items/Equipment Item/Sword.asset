@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c87cb599c42014ea37ad6c81f3bbeb, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Sword
   icon: {fileID: 397739693, guid: be55291aae08d434db3da3b59db3ab4a, type: 3}
   itemType: 1
+  itemId: 5dce28db59bcf18498b77325a64b0567
   dropChance: 100
   equipmentType: 1
   itemEffects: []
@@ -32,4 +33,6 @@ MonoBehaviour:
   fireDamage: 0
   iceDamage: 0
   lightingDamage: 0
+  earthDamage: 0
+  windDamage: 0
   craftingMaterials: []

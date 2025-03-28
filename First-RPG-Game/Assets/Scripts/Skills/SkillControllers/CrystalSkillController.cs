@@ -78,6 +78,7 @@ namespace Skills.SkillControllers
             {
                 _canGrow = true;
                 Animator.SetTrigger("Explode");
+                SoundManager.PlaySFX("Explosion", 0);
             }
             else
             {

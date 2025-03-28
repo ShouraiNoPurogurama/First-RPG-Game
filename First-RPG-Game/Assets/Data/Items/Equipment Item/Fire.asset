@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c87cb599c42014ea37ad6c81f3bbeb, type: 3}
   m_Name: Fire
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Fire
   icon: {fileID: -191816445, guid: be55291aae08d434db3da3b59db3ab4a, type: 3}
   itemType: 1
+  itemId: f476bb3015796b844a3b79c7c91504df
   dropChance: 100
   equipmentType: 0
   itemEffects: []
@@ -32,4 +33,6 @@ MonoBehaviour:
   fireDamage: 20
   iceDamage: 0
   lightingDamage: 0
+  earthDamage: 0
+  windDamage: 0
   craftingMaterials: []

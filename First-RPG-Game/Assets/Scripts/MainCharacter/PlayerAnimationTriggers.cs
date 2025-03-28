@@ -20,9 +20,9 @@ namespace MainCharacter
 
             foreach (var hit in colliders)
             {
-                PlaySwordSound();
-
                 var enemy = hit.GetComponent<Enemy>();
+                PlaySwordSound(enemy);
+
                 if (enemy is not null)
                 {
                     Player.Stats.DoDamage(enemy.GetComponent<EnemyStats>());
@@ -58,9 +58,17 @@ namespace MainCharacter
             SoundManager.PlaySFX("Hurt", null, true);
         }
 
-        private void PlaySwordSound()
+        private void PlaySwordSound(Enemy enemy)
         {
-            SoundManager.PlaySFX("Attack", 0, true);
+            if (enemy is not null)
+            {
+                SoundManager.PlaySFX("Attack", 6, true);
+            }
+            else
+            {
+
+                SoundManager.PlaySFX("Attack", 0, true);
+            }
         }
 
         private void PlayDashSound()

@@ -35,6 +35,7 @@ namespace Skills
         public override void UseSkill()
         {
             base.UseSkill();
+            SoundManager.PlaySFX("Attack", 5);
 
             GameObject newBlackHole = Instantiate(blackHolePrefab, Player.transform.position, Quaternion.identity);
 
@@ -51,6 +52,7 @@ namespace Skills
             if (_currentBlackHole.PlayerCanExitState)
             {
                 _currentBlackHole = null;
+                SoundManager.StopSFX();
                 return true;
             }
 

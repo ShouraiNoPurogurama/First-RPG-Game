@@ -15,7 +15,8 @@ MonoBehaviour:
   itemName: Amor
   icon: {fileID: 1625896041, guid: be55291aae08d434db3da3b59db3ab4a, type: 3}
   itemType: 1
-  dropChance: 87
+  itemId: 3c96b580a40108147b5a1e5f98d404aa
+  dropChance: 87.4
   equipmentType: 2
   itemEffects: []
   strength: 0
@@ -32,4 +33,6 @@ MonoBehaviour:
   fireDamage: 0
   iceDamage: 0
   lightingDamage: 0
+  earthDamage: 0
+  windDamage: 0
   craftingMaterials: []
