@@ -38,7 +38,7 @@ public class BossSkeletonKnightBattleState : EnemyState
         }
         else
         {
-            if (StateTimer < 0 || Vector2.Distance(_player.transform.position, enemy.transform.position) > 2)
+            if (StateTimer < 0 || Vector2.Distance(_player.transform.position, enemy.transform.position) > 7)
             {
                 StateMachine.ChangeState(enemy.IdleState);
             }

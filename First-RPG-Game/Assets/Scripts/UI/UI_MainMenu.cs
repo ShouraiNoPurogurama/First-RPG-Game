@@ -23,7 +23,9 @@ namespace UI
         }
         public void NewGame()
         {
-            SaveManager.instance.DeleteSavedData();
+            SaveManager.instance.NewGame();
+            //SaveManager.instance.DeleteSavedData();
+            SaveManager.instance.SaveGame();
             SceneManager.LoadScene(sceneName);
         }
         public void ExitGame()
@@ -34,7 +36,12 @@ namespace UI
         {
             fadeScreen.FadeOut();
             yield return new WaitForSeconds(_delay);
-            SceneManager.LoadScene(SaveManager.instance.GetGameData().screenName);
+            SaveManager.instance.LoadGame();
+            yield return new WaitUntil(() =>
+                 SaveManager.instance.gameData != null &&
+            !string.IsNullOrEmpty(SaveManager.instance.gameData.screenName));
+            string sceneToLoad = SaveManager.instance.gameData.screenName;
+            SceneManager.LoadScene(sceneToLoad);
         }
     }
 }

@@ -1,4 +1,4 @@
-using Manager_Controller;
+﻿using Manager_Controller;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -7,7 +7,7 @@ namespace Save_and_Load
 {
     public class SaveManager : MonoBehaviour
     {
-        private GameData gameData;
+        public GameData gameData;
         public static SaveManager instance;
         [SerializeField] private string fileName;
         [SerializeField] private bool encryptData;
@@ -23,10 +23,8 @@ namespace Save_and_Load
 
         private void Awake()
         {
-            if (instance != null)
-                DontDestroyOnLoad(instance.gameObject);
-            else
-                instance = this;
+            instance = this;
+            fileDataHandler = new FileDataHandler(Application.persistentDataPath, fileName, encryptData);
         }
         private void Start()
         {
@@ -36,12 +34,30 @@ namespace Save_and_Load
         }
         public void NewGame()
         {
+            fileDataHandler.Delete();
+
+            // Khởi tạo dữ liệu game mới
             gameData = new GameData();
+            gameData.screenName = "Level2";
+            gameData.gold = 0;
+            gameData.strength = 10;
+            gameData.agility = 10;
+            gameData.intelligence = 10;
+            gameData.vitality = 10;
+
+            // Reset lại các danh sách và dictionary về trạng thái rỗng
+            gameData.inventory = new SerializableDictionary<string, int>();
+            gameData.equipmentId = new List<string>();
+            gameData.closeCheckpointId = "";
+            gameData.checkpoints = new SerializableDictionary<string, bool>();
+
+            Debug.Log("New game data đã được reset.");
         }
         public async void LoadGame()
         {
             gameData = await fileDataHandler.Load();
-            //await APITrigger.Instance.LoadRubyDB();
+            Debug.Log("Load game data " + gameData.closeCheckpointId);
+            await APITrigger.Instance.LoadRubyDB();
             if (this.gameData == null)
             {
                 Debug.Log("No save data found");
@@ -56,14 +72,18 @@ namespace Save_and_Load
         {
             if (GameManager.Instance.isDied)
             {
-                GameManager.Instance.latestCheckpointData.checkpoints = SceneController.instance.GetCheckpoints();
-                Debug.Log("Update " + string.Join(", ", GameManager.Instance.latestCheckpointData.checkpoints.Select(kvp => kvp.Key + "=" + kvp.Value)));
-                fileDataHandler.Save(GameManager.Instance.latestCheckpointData);
+                foreach (ISaveManager saveManager in saveManagers)
+                {
+                    Debug.Log("Save data" + gameData.closeCheckpointId);
+                    saveManager.SaveData(ref gameData);
+                }
+                fileDataHandler.Save(gameData);
             }
             else
             {
                 foreach (ISaveManager saveManager in saveManagers)
                 {
+                    Debug.Log("Save data" + gameData.closeCheckpointId);
                     saveManager.SaveData(ref gameData);
                 }
                 fileDataHandler.Save(gameData);
@@ -99,6 +119,12 @@ namespace Save_and_Load
                 saveManager.SaveData(ref gameData);
             }
             return gameData;
+        }
+
+        public string GetSceneName()
+        {
+            //StartCoroutine(LoadGame());
+            return gameData.screenName;
         }
     }
 }

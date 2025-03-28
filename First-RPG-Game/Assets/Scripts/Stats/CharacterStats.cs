@@ -175,7 +175,7 @@ namespace Stats
             totalDamage = DecreaseDamageByArmor(targetStats, totalDamage);
 
             Debug.Log("Total damage: " + totalDamage);
-            
+
             //If equipments have ailment effects then do magical damage
             // DoMagicalDamage(targetStats);
 
@@ -248,7 +248,7 @@ namespace Stats
                                  earthDamageVal > lightingDamageVal && earthDamageVal > windDamageVal;
             bool canApplyWind = windDamageVal > fireDamageVal && windDamageVal > iceDamageVal &&
                                 windDamageVal > lightingDamageVal && windDamageVal > earthDamageVal;
-            
+
             targetStats.TakeDamage(Mathf.RoundToInt(totalMagicalDamage * dmgScale), damageColor);
 
             while (!canApplyIgnite && !canApplyChill && !canApplyShock && !canApplyWind && !canApplyEarth)
@@ -298,7 +298,7 @@ namespace Stats
             {
                 targetStats.SetupShockDamage(Mathf.RoundToInt(lightingDamageVal * .4f));
             }
-            
+
             targetStats.ApplyAilments(canApplyIgnite, canApplyChill, canApplyShock, canApplyEarth, canApplyWind);
         }
 
@@ -528,7 +528,8 @@ namespace Stats
 
         protected virtual void Die()
         {
-            isDead = false;
+            isDead = true;
+            currentHp = 0;
         }
 
         public void KillEntity()

@@ -1,9 +1,9 @@
 ﻿using MainCharacter;
+using Save_and_Load;
+using Spawn;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Save_and_Load;
-using Spawn;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour, ISaveManager
@@ -122,9 +122,25 @@ public class SceneController : MonoBehaviour, ISaveManager
         {
             cp.ActivateCheckpoint();
         }
+        foreach (Checkpoint cp in toActivate)
+        {
+            cp.ActivateCheckpoint();
+        }
+
+        // Lưu lại id của checkpoint gần nhất
         closetCheckpointId = _data.closeCheckpointId;
-        Invoke("PlacePlayerAtClosetCheckpoint", .1f);
+
+        // Đợi cho đến khi PlayerManager và tất cả Checkpoint đã được khởi tạo xong
+        StartCoroutine(PlacePlayerAfterReady());
     }
+
+    private IEnumerator PlacePlayerAfterReady()
+    {
+        yield return new WaitUntil(() => PlayerManager.Instance != null && PlayerManager.Instance.player != null);
+        yield return new WaitUntil(() => FindObjectsOfType<Checkpoint>().Length > 0);
+        PlacePlayerAtClosetCheckpoint();
+    }
+
     /// <summary>
     /// Place player at the closet checkpoint
     /// </summary>
@@ -153,6 +169,7 @@ public class SceneController : MonoBehaviour, ISaveManager
         Checkpoint cp = FindClosestCheckpoint();
         if (cp != null)
         {
+            Debug.Log("Closest checkpoint: " + cp.id);
             _data.closeCheckpointId = cp.id;
         }
         else
@@ -177,14 +194,14 @@ public class SceneController : MonoBehaviour, ISaveManager
     /// <returns></returns>
     private Checkpoint FindClosestCheckpoint()
     {
-        float closestDistance = Mathf.Infinity;
+        float closestDistance = -1;
         Checkpoint closestCheckpoint = null;
 
         foreach (var checkpoint in checkpoints)
         {
             float distanceToCheckpoint = Vector2.Distance(PlayerManager.Instance.player.transform.position, checkpoint.transform.position);
-
-            if (distanceToCheckpoint < closestDistance && checkpoint.activationStatus == true)
+            Debug.Log("Distance to " + checkpoint.id + ": " + distanceToCheckpoint);
+            if (distanceToCheckpoint > closestDistance && checkpoint.activationStatus == true)
             {
                 closestDistance = distanceToCheckpoint;
                 closestCheckpoint = checkpoint;
