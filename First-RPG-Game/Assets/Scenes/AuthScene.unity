@@ -2797,6 +2797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loginPanel: {fileID: 297508960}
   registerPanel: {fileID: 57455257}
+  instance: {fileID: 0}
   loginUsernameInput: {fileID: 2129068376}
   loginPasswordInput: {fileID: 512323884}
   loginResponseText: {fileID: 2069612448}
