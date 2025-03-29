@@ -16,6 +16,8 @@ namespace Enemies.FireSnake
 
         private void AttackTrigger()
         {
+            SoundManager.PlaySFX("FireSnake", 1, true);
+
             Collider2D[] colliders = Physics2D.OverlapCircleAll(fireSnake.attackCheck.position, fireSnake.attackCheckRadius);
 
             foreach (var hit in colliders)
@@ -27,7 +29,10 @@ namespace Enemies.FireSnake
                 }
             }
         }
-
+        private void playStep()
+        {
+            SoundManager.PlaySFX("FireSnake", 0, true);
+        }
         private void OpenCounterWindow() => fireSnake.OpenCounterAttackWindow();
         private void CloseCounterWindow() => fireSnake.CloseCounterAttackWindow();
     }

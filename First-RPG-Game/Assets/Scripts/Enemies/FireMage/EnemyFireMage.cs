@@ -55,10 +55,15 @@ namespace Enemies.FireMage
         }
         public void SpawnFireballs()
         {
+            SoundManager.PlaySFX("FireMage", 3, true);
             // random ball fall
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 5; i++)
             {
-                Vector3 randomPos = transform.position + new Vector3(Random.Range(-25f, 25f), 20f, 0);
+                Vector3 randomPos = transform.position + new Vector3(Random.Range(-20f, 20f), 20f, 0);
+                Instantiate(MeteoritePrefab, randomPos, Quaternion.identity);
+                randomPos = transform.position + new Vector3(Random.Range(-20f, 20f), 18f, 0);
+                Instantiate(MeteoritePrefab, randomPos, Quaternion.identity);
+                randomPos = transform.position + new Vector3(Random.Range(-20f, 20f), 19f, 0);
                 Instantiate(MeteoritePrefab, randomPos, Quaternion.identity);
             }
         }

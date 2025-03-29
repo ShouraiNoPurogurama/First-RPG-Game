@@ -18,6 +18,8 @@ namespace Enemies.FireMiniMage
 
         private void AttackTrigger()
         {
+            SoundManager.PlaySFX("FireMiniMage", 0, true);
+
             Collider2D[] colliders = Physics2D.OverlapCircleAll(FireMiniMage.attackCheck.position, FireMiniMage.attackCheckRadius);
 
             foreach (var hit in colliders)
@@ -34,7 +36,7 @@ namespace Enemies.FireMiniMage
             //base.AnimationFireballAttackTrigger();
 
             Vector3 spawnPosition = FireMiniMage.attackCheck.position - new Vector3(1f * FireMiniMage.FacingDir, 0, 0);
-            // Tạo fire ball prefab tại vị trí attackCheck
+            SoundManager.PlaySFX("FireMiniMage", 1, true);
             GameObject newfireball = Instantiate(FireMiniMage.fireballPrefab, spawnPosition, Quaternion.identity);
 
             // Thiết lập hướng bay cho fireball

@@ -13,6 +13,7 @@ namespace Enemies.FireMage
 
         public override void Enter()
         {
+            SoundManager.PlaySFX("FireMage", 0, true);
             base.Enter();
         }
         public override void Update()
