@@ -66,9 +66,17 @@ namespace Enemies.Map_Water.Magic_Skeleton
             {
                 Debug.Log("Player found");
 
+                float healthPercent = (float)BossKnight.Stats.currentHp / BossKnight.Stats.GetMaxHealthValue();
+
+                if (healthPercent <= 0.5f)
+                {
+                    isWaterExplosion = true;
+                }
+
                 if (isWaterExplosion)
                 {
                     StartCoroutine(SpawnFixedExplosions());
+                    StartCoroutine(SpawnExplosionsCoroutine(player));
                 }
                 else
                 {

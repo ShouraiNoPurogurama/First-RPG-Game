@@ -30,6 +30,7 @@ public class BossSkeletonKnightAttackState : EnemyState
 
         if (TriggerCalled)
         {
+            Debug.Log("Attack trigger called");
             TriggerCalled = false;
             enemy.lastTimeAttacked = Time.time;
             if (enemy.CanTeleport())
