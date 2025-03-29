@@ -32,7 +32,10 @@ public class BossSkeletonKnightAttackState : EnemyState
         {
             TriggerCalled = false;
             enemy.lastTimeAttacked = Time.time;
-            StateMachine.ChangeState(enemy.BattleState);
+            if (enemy.CanTeleport())
+                StateMachine.ChangeState(enemy.DisappearState);
+            else
+                StateMachine.ChangeState(enemy.BattleState);
         }
     }
 

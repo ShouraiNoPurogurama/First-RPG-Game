@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Enemies
 {
@@ -11,7 +10,7 @@ namespace Enemies
         [Header("Stunned info")]
         public float stunDuration = 1f;
 
-        public Vector2 stunDirection = new Vector2(5,8);
+        public Vector2 stunDirection = new Vector2(5, 8);
         private bool _canBeStunned;
         [SerializeField] public GameObject counterImage;
 
@@ -24,13 +23,15 @@ namespace Enemies
 
         [Header("Attack info")]
         public float attackDistance;
-
+        public float agroDistance = 2;
         public float attackCooldown;
         private float _defaultAttackCooldown;
         [HideInInspector] public float lastTimeAttacked;
-        
+
+        public float minAttackCooldown = 1;
+        public float maxAttackCooldown = 2;
         protected EnemyStateMachine StateMachine { get; private set; }
-        
+
         public string LastAnimBoolName { get; private set; }
 
         protected override void Awake()
@@ -114,7 +115,7 @@ namespace Enemies
         {
             //Increase attack cooldown bc we dont have attack speed
             attackCooldown *= 1 + slowPercentage;
-            
+
             Invoke("ReturnDefaultAttackSpeed", slowDuration);
         }
 
@@ -144,27 +145,36 @@ namespace Enemies
         {
             LastAnimBoolName = animName;
         }
-        
+
         public virtual void AnimationFinishTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
 
         public virtual void AnimationSpecialAttackTrigger()
         {
-            
+
         }
-        
+
         public virtual void SecondaryAnimationSpecialAttackTrigger()
         {
-            
+
         }
 
         public virtual void BusyMarker()
         {
-            
+
         }
-        
+
         public virtual RaycastHit2D IsPlayerDetected()
             => Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDir, 50, whatIsPlayer);
+        public bool IsPlayerInAttackRange()
+        {
+            Collider2D[] hits = Physics2D.OverlapCircleAll(
+                attackCheck.position,
+                attackCheckRadius,
+                whatIsPlayer
+            );
 
+            return hits.Length > 0;
+        }
 
         protected override void OnDrawGizmos()
         {
@@ -173,7 +183,7 @@ namespace Enemies
             Gizmos.color = Color.yellow;
             Gizmos.DrawLine(transform.position,
                 new Vector3(transform.position.x + attackDistance * FacingDir, transform.position.y));
-            
+
         }
     }
 }

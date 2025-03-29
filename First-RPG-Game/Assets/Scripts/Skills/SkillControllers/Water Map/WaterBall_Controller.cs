@@ -16,7 +16,7 @@ namespace Skills.SkillControllers.Water_Map
 
         [SerializeField] private float whirlpoolOffsetY;
 
-        private CharacterStats myStats;
+        public CharacterStats myStats;
 
         private void Update()
         {
@@ -32,10 +32,32 @@ namespace Skills.SkillControllers.Water_Map
         {
             if (collision.gameObject.layer == LayerMask.NameToLayer(targetLayerName))
             {
-                //collision.GetComponent<CharacterStats>()?.TakeDamage(damage);
-                myStats.DoDamage(collision.GetComponent<CharacterStats>());
-                Transform playerTransform = collision.transform;
-                WhirlpoolSkill.Instance.SpawnWhirlpool(playerTransform, whirlpoolOffsetY);
+                var collisionStats = collision.GetComponent<CharacterStats>();
+
+                if (myStats == null)
+                {
+                    Debug.LogError($"{name}: myStats is NULL. Did you forget to call SetupWaterBall()?");
+                }
+
+                if (collisionStats == null)
+                {
+                    Debug.LogError($"{name}: The object {collision.gameObject.name} does NOT have CharacterStats, but is on the target layer '{targetLayerName}'.");
+                }
+
+                if (myStats != null && collisionStats != null)
+                {
+                    myStats.DoDamage(collisionStats);
+
+                    if (WhirlpoolSkill.Instance != null)
+                    {
+                        WhirlpoolSkill.Instance.SpawnWhirlpool(collision.transform, whirlpoolOffsetY);
+                    }
+                    else
+                    {
+                        Debug.LogError($"{name}: WhirlpoolSkill.Instance is NULL. Make sure WhirlpoolSkill is in the scene and set up properly.");
+                    }
+                }
+
                 Destroy(gameObject);
             }
         }

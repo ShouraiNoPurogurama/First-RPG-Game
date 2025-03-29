@@ -10,15 +10,38 @@ namespace Enemies.Map_Water.Magic_Skeleton
     {
         private BossSkeletonKnight BossKnight => GetComponentInParent<BossSkeletonKnight>();
 
-        [SerializeField] private GameObject waterExplosionPrefab;
+        private Animator anim;
 
+        [Header("Thông số cho kiểu spawn ngẫu nhiên quanh Player")]
+        [SerializeField] private GameObject watterAttackFollowing;
         [SerializeField] private float randomRange = 1f;
         [SerializeField] private int numberOfExplosions = 3;
         [SerializeField] private float minDistanceBetweenExplosions = 1f;
         [SerializeField] private float explosionDelay = 0.5f;
+
+        [Header("Turn on/Turn off Spawn Water Explosion")]
+        [SerializeField] private bool isWaterExplosion = false;
+
+        [Header("Setup SpawnFixedExplosions")]
+        [SerializeField] private GameObject waterExplosionPrefab;
+        [SerializeField] private int fixedExplosionCount = 5;
+        [SerializeField] private float distanceBetweenFixedExplosions = 1f;
+
         private void AnimationTrigger()
         {
             BossKnight.AnimationFinishTrigger();
+        }
+
+        private void Ontransparent()
+        {
+            BossKnight.Stats.MakeInvincible(true);
+            BossKnight.SetTransparent(true);
+        }
+
+        private void OnAppear()
+        {
+            BossKnight.Stats.MakeInvincible(false);
+            BossKnight.SetTransparent(false);
         }
 
         private void AttackTrigger()
@@ -34,6 +57,7 @@ namespace Enemies.Map_Water.Magic_Skeleton
                 }
             }
         }
+
         private void SpecialAttackTrigger()
         {
             Debug.Log("Special Attack Trigger");
@@ -41,10 +65,34 @@ namespace Enemies.Map_Water.Magic_Skeleton
             if (player)
             {
                 Debug.Log("Player found");
-                StartCoroutine(SpawnExplosionsCoroutine(player));
+
+                if (isWaterExplosion)
+                {
+                    StartCoroutine(SpawnFixedExplosions());
+                }
+                else
+                {
+                    StartCoroutine(SpawnExplosionsCoroutine(player));
+                }
             }
         }
+        private IEnumerator SpawnFixedExplosions()
+        {
+            Vector3 groundPos = BossKnight.groundCheck.position;
 
+            for (int i = 0; i < fixedExplosionCount; i++)
+            {
+                float offsetX = distanceBetweenFixedExplosions * i;
+                Vector3 spawnPos = new Vector3(
+                    groundPos.x + offsetX,
+                    groundPos.y + .5f,
+                    groundPos.z
+                );
+
+                Instantiate(waterExplosionPrefab, spawnPos, Quaternion.identity);
+                yield return new WaitForSeconds(0.1f);
+            }
+        }
         private IEnumerator SpawnExplosionsCoroutine(Player player)
         {
             List<Vector3> usedPositions = new List<Vector3>();
@@ -79,13 +127,13 @@ namespace Enemies.Map_Water.Magic_Skeleton
 
                 if (foundValidPos)
                 {
-                    Debug.Log($"SpawnPos = {spawnPos}");
-                    Instantiate(waterExplosionPrefab, spawnPos, Quaternion.identity);
+                    Instantiate(watterAttackFollowing, spawnPos, Quaternion.identity);
                     usedPositions.Add(spawnPos);
                 }
                 yield return new WaitForSeconds(explosionDelay);
             }
         }
+
         private void OpenCounterWindow() => BossKnight.OpenCounterAttackWindow();
         private void CloseCounterWindow() => BossKnight.CloseCounterAttackWindow();
     }

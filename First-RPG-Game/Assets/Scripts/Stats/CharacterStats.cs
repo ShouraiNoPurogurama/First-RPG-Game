@@ -81,7 +81,7 @@ namespace Stats
         [SerializeField] public int currentHp;
 
         public System.Action OnHPChanged;
-
+        public bool isInvincible { get; private set; }
         public bool isDead { get; private set; }
 
         public CharacterStats(Stat maxHp)
@@ -487,6 +487,8 @@ namespace Stats
 
         public virtual void TakeDamage(int dmg, Color color = default)
         {
+            if (isInvincible)
+                return;
             if (color == default) color = Color.white;
             GetComponent<Entity>().DamageImpact();
 
@@ -567,6 +569,8 @@ namespace Stats
             currentHp += hpModify;
             OnHPChanged?.Invoke();
         }
+
+        public void MakeInvincible(bool _invincible) => isInvincible = _invincible;
 
         public Stat GetStat(StatType _statType)
         {

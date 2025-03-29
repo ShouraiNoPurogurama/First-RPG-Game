@@ -1,4 +1,5 @@
 ﻿using Manager_Controller;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -32,6 +33,7 @@ namespace Save_and_Load
             saveManagers = FindAllSaveManagers();
             LoadGame();
         }
+
         public void NewGame()
         {
             fileDataHandler.Delete();
@@ -67,6 +69,16 @@ namespace Save_and_Load
             {
                 saveManager.LoadData(gameData);
             }
+        }
+
+        public IEnumerator SaveGameCoroutine()
+        {
+            foreach (ISaveManager saveManager in saveManagers)
+            {
+                saveManager.SaveData(ref gameData);
+            }
+
+            yield return fileDataHandler.SaveCoroutine(gameData);
         }
         public void SaveGame()
         {

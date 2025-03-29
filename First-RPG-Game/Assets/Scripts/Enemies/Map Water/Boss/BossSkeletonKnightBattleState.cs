@@ -1,4 +1,4 @@
-using Enemies;
+﻿using Enemies;
 using MainCharacter;
 using UnityEngine;
 
@@ -22,16 +22,13 @@ public class BossSkeletonKnightBattleState : EnemyState
     public override void Update()
     {
         base.Update();
-
         if (enemy.IsPlayerDetected())
         {
             StateTimer = enemy.battleTime;
 
-            if (enemy.IsGroundDetected() &&
-                enemy.IsPlayerDetected().distance <= enemy.attackDistance &&
+            if (enemy.IsGroundDetected() && enemy.IsPlayerDetected().distance <= enemy.attackDistance &&
                 CanAttack())
             {
-                Debug.Log(enemy.IsPlayerDetected().collider.gameObject.name);
                 StateMachine.ChangeState(enemy.AttackState);
                 return;
             }
@@ -50,7 +47,6 @@ public class BossSkeletonKnightBattleState : EnemyState
         if (PlayerInAttackRange())
         {
             enemy.SetZeroVelocity();
-            StateMachine.ChangeState(enemy.IdleState);
             return;
         }
 
@@ -79,17 +75,9 @@ public class BossSkeletonKnightBattleState : EnemyState
     {
         AttachCurrentPlayerIfNotExists();
 
-        var result = enemy.IsPlayerDetected().distance != 0 &&
-                     enemy.IsPlayerDetected().distance <= enemy.attackDistance &&
-                     (enemy.FacingDir == -1 && _player.transform.position.x <= enemy.transform.position.x ||
-                      enemy.FacingDir == 1 && _player.transform.position.x >= enemy.transform.position.x);
-
-        if (Mathf.Abs(_player.transform.position.x - enemy.transform.position.x) < enemy.attackDistance &&
-            Mathf.Abs(_player.transform.position.y - enemy.transform.position.y) <=
-            enemy.CapsuleCollider.bounds.size.y)
-        {
-            result = true;
-        }
+        var result = enemy.IsPlayerDetected().distance <= enemy.attackDistance &&
+               (enemy.FacingDir == -1 && _player.transform.position.x <= enemy.transform.position.x ||
+                enemy.FacingDir == 1 && _player.transform.position.x >= enemy.transform.position.x);
 
         return result;
     }
