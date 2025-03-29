@@ -1,9 +1,9 @@
-﻿using UnityEngine;
-using Enemies;
+﻿using Enemies;
 using MainCharacter;
 using Stats;
+using UnityEngine;
 
-namespace Skills
+namespace Skills.SkillControllers.Thunder_Map.TeleportSwordSkill
 {
     public class TeleportSwordController : MonoBehaviour
     {

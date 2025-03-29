@@ -1,47 +1,48 @@
-﻿using Enemies;
-using MainCharacter;
+﻿using MainCharacter;
 using Stats;
 using UnityEngine;
 
-
-public class SkeletonSeekerAnimationTrigger : MonoBehaviour
+namespace Enemies.SkeletonSeeker
 {
-    private Enemy Enemy => GetComponentInParent<Enemy>();
-
-    private void AnimationTrigger()
+    public class SkeletonSeekerAnimationTrigger : MonoBehaviour
     {
-        Enemy.AnimationFinishTrigger();
-    }
+        private Enemy Enemy => GetComponentInParent<Enemy>();
 
-    private void AttackTrigger()
-    {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(Enemy.attackCheck.position, Enemy.attackCheckRadius);
-
-        foreach (var hit in colliders)
+        private void AnimationTrigger()
         {
-            var player = hit.GetComponent<Player>();
-            if (player)
+            Enemy.AnimationFinishTrigger();
+        }
+
+        private void AttackTrigger()
+        {
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(Enemy.attackCheck.position, Enemy.attackCheckRadius);
+
+            foreach (var hit in colliders)
             {
-                Enemy.Stats.DoDamage(player.GetComponent<PlayerStats>());
+                var player = hit.GetComponent<Player>();
+                if (player)
+                {
+                    Enemy.Stats.DoDamage(player.GetComponent<PlayerStats>());
+                }
             }
         }
-    }
 
-    private void OpenCounterWindow() => Enemy.OpenCounterAttackWindow();
-    private void CloseCounterWindow() => Enemy.CloseCounterAttackWindow();
+        private void OpenCounterWindow() => Enemy.OpenCounterAttackWindow();
+        private void CloseCounterWindow() => Enemy.CloseCounterAttackWindow();
 
-    private void SpecialAttackTrigger()
-    {
-        Enemy.AnimationSpecialAttackTrigger();
-    }
+        private void SpecialAttackTrigger()
+        {
+            Enemy.AnimationSpecialAttackTrigger();
+        }
 
-    private void SecondaryAttackTrigger()
-    {
-        Enemy.SecondaryAnimationSpecialAttackTrigger();
-    }
+        private void SecondaryAttackTrigger()
+        {
+            Enemy.SecondaryAnimationSpecialAttackTrigger();
+        }
 
-    private void BusyMarker()
-    {
-        Enemy.BusyMarker();
+        private void BusyMarker()
+        {
+            Enemy.BusyMarker();
+        }
     }
 }

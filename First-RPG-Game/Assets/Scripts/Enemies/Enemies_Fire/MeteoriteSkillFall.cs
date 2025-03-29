@@ -1,3 +1,4 @@
+using Audio;
 using MainCharacter;
 using UnityEngine;
 
@@ -34,6 +35,7 @@ namespace Enemies.Enemies_Fire
             if (IsGroundDetected())
             {
                 rb.linearVelocity = Vector2.zero;
+                SoundManager.PlaySFX("FireMage", 2, true);
                 TriggerAnimation("Explode");
             }
         }
@@ -50,6 +52,7 @@ namespace Enemies.Enemies_Fire
                 if (player.StateMachine.CurrentState is PlayerCounterAttackState)
                 {
                     rb.linearVelocity = Vector2.zero;
+                    SoundManager.PlaySFX("FireMage", 2, true);
                     TriggerAnimation("Explode");
                     //Destroy(gameObject);  
                     return;
@@ -57,6 +60,7 @@ namespace Enemies.Enemies_Fire
                 //Debug.Log("Cham roi ne");
                 player.Stats.TakeDamage(30, Color.yellow);
                 rb.linearVelocity = Vector2.zero;
+                SoundManager.PlaySFX("FireMage", 2, true);
                 TriggerAnimation("Explode");
                 //Destroy(gameObject);
             }

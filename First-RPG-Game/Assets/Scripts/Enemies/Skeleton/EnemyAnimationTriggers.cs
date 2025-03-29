@@ -23,6 +23,7 @@ namespace Enemies.Skeleton
                 if (player)
                 {
                     Enemy.Stats.DoDamage(player.GetComponent<PlayerStats>());
+                    player.FX.CreateHitFx0(player.transform, false);
                 }
             }
         }
@@ -38,6 +39,11 @@ namespace Enemies.Skeleton
         private void SecondaryAttackTrigger()
         {
             Enemy.SecondaryAnimationSpecialAttackTrigger();
+        }
+        
+        private void ThirdinaryAttackTrigger()
+        {
+            Enemy.ThirdinaryAnimationSpecialAttackTrigger();
         }
         
         private void BusyMarker()

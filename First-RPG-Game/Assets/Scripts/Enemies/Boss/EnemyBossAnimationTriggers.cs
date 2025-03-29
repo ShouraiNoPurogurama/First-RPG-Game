@@ -1,10 +1,11 @@
-﻿using MainCharacter;
+﻿using Audio;
+using MainCharacter;
 using Stats;
 using UnityEngine;
 
 namespace Enemies.Boss
 {
-    public class EnemyBossAnimationTriggers : MonoBehaviour
+    public class EarthBossAnimationTriggers : MonoBehaviour
     {
         private EnemyBoss boss => GetComponentInParent<EnemyBoss>();
 
@@ -21,6 +22,7 @@ namespace Enemies.Boss
             foreach (var hit in colliders)
             {
                 var player = hit.GetComponent<Player>();
+                player.BossAttackPlayerKnock(boss.knockBackPlayer);
                 if (player)
                 {
                     //Vector2 knockBackValue = boss.knockBackPlayer;
@@ -42,11 +44,15 @@ namespace Enemies.Boss
                     Vector2 knockBackValue = boss.knockBackPlayer;
                     player.BossAttackPlayerKnock(knockBackValue);
                     boss.Stats.DoDamage(player.GetComponent<PlayerStats>());
+                    player.BossAttackPlayerKnock(new Vector2(1, 5));
                 }
             }
             boss.knockBackPlayer = new Vector2(1, 5);
         }
-
+        private void startSound()
+        {
+            SoundManager.PlaySFX("FireBoss", 3, true);
+        }
         private void OpenCounterWindow() => boss.OpenCounterAttackWindow();
         private void CloseCounterWindow() => boss.CloseCounterAttackWindow();
     }

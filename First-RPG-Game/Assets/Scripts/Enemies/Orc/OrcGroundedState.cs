@@ -28,11 +28,6 @@ namespace Enemies.Orc
             {
                 StateMachine.ChangeState(Orc.battleState);
             }
-
-            if (!Orc.IsBusy && (Orc.IsWallDetected() || !Orc.IsGroundDetected()))
-            {
-                Orc.Flip();
-            }
         }
 
         public override void Exit()

@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using System.Collections;
+using Audio;
 
 namespace Enemies.Boss
 {
@@ -15,6 +16,7 @@ namespace Enemies.Boss
         public override void Enter()
         {
             base.Enter();
+            SoundManager.PlaySFX("FireBoss", 5, true);
         }
         public override void Update()
         {

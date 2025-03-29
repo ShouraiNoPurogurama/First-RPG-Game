@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69771012e95168e498a96c6869cfbfe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockBackDirection: {x: 3, y: 4}
+  knockBackPower: {x: 5, y: 5}
   knockBackDuration: 0.25
   attackCheck: {fileID: 5459866427415620882}
   attackCheckRadius: 0.8
@@ -71,6 +71,7 @@ MonoBehaviour:
   moveSpeed: 2
   idleTime: 1
   battleTime: 3
+  defaultMoveSpeed: 0
   attackDistance: 0.98
   attackCooldown: 2
   lastTimeAttacked: 0
@@ -159,9 +160,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262a1e0589b702e4aa6d299b38222017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  popUpTextPrefab: {fileID: 7055979430217318447, guid: 76d660feac31fd5408ab26278d893e1f, type: 3}
   hitMat: {fileID: 2100000, guid: d9d92a4940250db4d85c1b424738b172, type: 2}
   flashDuration: 0.15
   hitFx: {fileID: 1057642753625682144, guid: 9426a43a35b7f864f8f046884b5ef95a, type: 3}
+  chillColor: []
+  igniteColor: []
+  shockColor: []
+  windColor: []
+  earthColor: []
+  igniteFX: {fileID: 0}
+  chillFX: {fileID: 0}
+  shockFX: {fileID: 0}
+  windFX: {fileID: 0}
+  earthFX: {fileID: 0}
 --- !u!1 &4250227539197042262
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,7 +250,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -689662421
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -85727878, guid: 687df074731fbf744b668d2275dbb675, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -359,7 +371,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -689662421
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: -10
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.8706199, g: 0.15840112, b: 0.15840112, a: 1}

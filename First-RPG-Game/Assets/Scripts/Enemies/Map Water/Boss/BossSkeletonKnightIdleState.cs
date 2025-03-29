@@ -1,34 +1,34 @@
-﻿using Enemies;
-
-
-public class BossSkeletonKnightIdleState : EnemyState
+﻿namespace Enemies.Map_Water.Boss
 {
-    private BossSkeletonKnight enemy;
-
-    public BossSkeletonKnightIdleState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, BossSkeletonKnight enemy) : base(enemyBase, stateMachine, animBoolName)
+    public class BossSkeletonKnightIdleState : EnemyState
     {
-        this.enemy = enemy;
-    }
+        private BossSkeletonKnight enemy;
 
-    public override void Enter()
-    {
-        base.Enter();
-
-        StateTimer = enemy.idleTime;
-    }
-
-    public override void Update()
-    {
-        base.Update();
-
-        if (StateTimer <= 0)
+        public BossSkeletonKnightIdleState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, BossSkeletonKnight enemy) : base(enemyBase, stateMachine, animBoolName)
         {
-            StateMachine.ChangeState(enemy.MoveState);
+            this.enemy = enemy;
         }
-    }
 
-    public override void Exit()
-    {
-        base.Exit();
+        public override void Enter()
+        {
+            base.Enter();
+
+            StateTimer = enemy.idleTime;
+        }
+
+        public override void Update()
+        {
+            base.Update();
+
+            if (StateTimer <= 0)
+            {
+                StateMachine.ChangeState(enemy.MoveState);
+            }
+        }
+
+        public override void Exit()
+        {
+            base.Exit();
+        }
     }
 }
