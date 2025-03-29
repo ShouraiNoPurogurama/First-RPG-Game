@@ -1,27 +1,23 @@
 using MainCharacter;
 using UnityEngine;
+using System.Collections;
 using UnityEngine.Serialization;
 
 namespace WindMap
 {
     public class FlyingWindController : MonoBehaviour
     {
-        [FormerlySerializedAs("rockPrefab")]
         [Header("Trap Settings")]
         public GameObject windPrefab;
+
         public Transform spawnPoint;
         public float minThrowInterval = 1.5f;
         public float maxThrowInterval = 3.5f;
         public float throwForce = 10f;
-        public float rockLifetime = 5f;
+        public float windLifetime = 30f;
 
-        [Header("Detection Area")]
-        public Vector2 detectionAreaSize = new Vector2(10f, 5f);
-        
-        [SerializeField] public LayerMask whatIsPlayer; 
 
         private Transform _player;
-        private bool _playerInRegion;
 
         private void Start()
         {
@@ -29,25 +25,13 @@ namespace WindMap
             StartCoroutine(SummonWindRoutine());
         }
 
-        private void Update()
-        {
-            _playerInRegion = Physics2D.OverlapBox(transform.position, detectionAreaSize, 0f, whatIsPlayer);
-            if (_playerInRegion)
-            {
-                Debug.Log(_playerInRegion);
-            }
-        }
-
-        private System.Collections.IEnumerator SummonWindRoutine()
+        private IEnumerator SummonWindRoutine()
         {
             while (true)
             {
                 yield return new WaitForSeconds(Random.Range(minThrowInterval, maxThrowInterval));
 
-                if (_playerInRegion)
-                {
-                    SummonWind();
-                }
+                SummonWind();
             }
         }
 
@@ -55,7 +39,10 @@ namespace WindMap
         {
             if (windPrefab == null || spawnPoint == null) return;
 
-            GameObject wind = Instantiate(windPrefab, spawnPoint.position, Quaternion.identity);
+            Debug.Log("Summoning wind");
+            var yOffset = Random.Range(-4f, 4f);
+            var spawnPosition = new Vector3(spawnPoint.position.x, spawnPoint.position.y + yOffset, spawnPoint.position.z);
+            GameObject wind = Instantiate(windPrefab, spawnPosition, Quaternion.identity);
             Rigidbody2D rb = wind.GetComponent<Rigidbody2D>();
 
             if (rb != null)
@@ -64,14 +51,8 @@ namespace WindMap
                 rb.linearVelocity = direction * throwForce;
             }
 
-            Destroy(wind, rockLifetime);
+            Destroy(wind, windLifetime);
         }
-
-        // Debug visualization in Scene View
-        private void OnDrawGizmosSelected()
-        {
-            Gizmos.color = new Color(1, 0, 0, 0.3f);
-            Gizmos.DrawCube(transform.position, detectionAreaSize);
-        }
+        
     }
 }

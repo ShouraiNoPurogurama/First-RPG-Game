@@ -44,7 +44,7 @@ public class Arrow_Controller : MonoBehaviour
     }
     public void SetVelocity(Vector2 velocity)
     {
-        if (this == null || gameObject == null || rb == null) return; // Tránh lỗi khi object bị hủy
+        if (this == null || gameObject == null || rb == null) return; 
         rb.linearVelocity = velocity;
     }
 
