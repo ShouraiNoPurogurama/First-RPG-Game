@@ -11,15 +11,9 @@ public class FinishPoint : MonoBehaviour
         {
             Debug.Log("Player đã chạm vào FinishPoint!");
 
-            if (goNextLevel)
-            {
-                SceneController.instance.NextLevel();
-            }
-            else
-            {
+            
                 //SaveManager.instance.SaveGame();
                 SceneController.instance.LoadScene(levelName);
-            }
         }
     }
 }
