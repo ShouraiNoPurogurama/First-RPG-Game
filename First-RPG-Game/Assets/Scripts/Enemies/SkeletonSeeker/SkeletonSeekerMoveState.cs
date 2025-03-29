@@ -1,35 +1,30 @@
-﻿using Enemies;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-public class SkeletonSeekerMoveState : SkeletonSeekerGroundedState
+﻿namespace Enemies.SkeletonSeeker
 {
-    public SkeletonSeekerMoveState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, SkeletonSeeker skeletonSeeker) : base(enemyBase, stateMachine, animBoolName, skeletonSeeker)
+    public class SkeletonSeekerMoveState : SkeletonSeekerGroundedState
     {
-    }
-    public override void Enter()
-    {
-        base.Enter();
-    }
-
-    public override void Update()
-    {
-        base.Update();
-
-        SkeletonSeeker.SetVelocity(SkeletonSeeker.FacingDir * SkeletonSeeker.moveSpeed, Rb.linearVelocity.y);
-
-        if (!SkeletonSeeker.IsBusy && (SkeletonSeeker.IsWallDetected() || !SkeletonSeeker.IsGroundDetected()))
+        public SkeletonSeekerMoveState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, SkeletonSeeker skeletonSeeker) : base(enemyBase, stateMachine, animBoolName, skeletonSeeker)
         {
-            SkeletonSeeker.Flip();
         }
-    }
+        public override void Enter()
+        {
+            base.Enter();
+        }
 
-    public override void Exit()
-    {
-        base.Exit();
+        public override void Update()
+        {
+            base.Update();
+
+            SkeletonSeeker.SetVelocity(SkeletonSeeker.FacingDir * SkeletonSeeker.moveSpeed, Rb.linearVelocity.y);
+
+            if (!SkeletonSeeker.IsBusy && (SkeletonSeeker.IsWallDetected() || !SkeletonSeeker.IsGroundDetected()))
+            {
+                SkeletonSeeker.Flip();
+            }
+        }
+
+        public override void Exit()
+        {
+            base.Exit();
+        }
     }
 }

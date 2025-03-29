@@ -1,65 +1,65 @@
-using Enemies;
-using System.Xml;
-using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
-public class SkeletonSeeker : Enemy
+namespace Enemies.SkeletonSeeker
 {
-    public SkeletonSeekerAttackState AttackState { get; set; }
-    public SkeletonSeekerBattleState BattleState { get; set; }
-    public SkeletonSeekerDeadState DeadState { get; set; }
-    public SkeletonSeekerGroundedState GroundedState { get; set; }
-    public SkeletonSeekerMoveState MoveState { get; set; }
-    public SkeletonSeekerIdleState IdleState { get; set; }
-    public SkeletonSeekerSpawnState SpawnState { get; set; }
-    public SkeletonSeekerStunnedState StunnedState { get; set; }
-
-
-    protected override void Awake()
+    public class SkeletonSeeker : Enemy
     {
-        base.Awake();
-        IdleState = new SkeletonSeekerIdleState(this, StateMachine, "Idle", this);
-        MoveState = new SkeletonSeekerMoveState(this, StateMachine, "Move", this);
-        BattleState = new SkeletonSeekerBattleState(this, StateMachine, "Move", this);
-        AttackState = new SkeletonSeekerAttackState(this, StateMachine, "Attack", this);
-        DeadState = new SkeletonSeekerDeadState(this, StateMachine, "Dead", this);
-        SpawnState = new SkeletonSeekerSpawnState(this, StateMachine, "Spawn", this);
-        StunnedState = new SkeletonSeekerStunnedState(this, StateMachine, "Stunned", this);
-        counterImage.SetActive(false);
+        public SkeletonSeekerAttackState AttackState { get; set; }
+        public SkeletonSeekerBattleState BattleState { get; set; }
+        public SkeletonSeekerDeadState DeadState { get; set; }
+        public SkeletonSeekerGroundedState GroundedState { get; set; }
+        public SkeletonSeekerMoveState MoveState { get; set; }
+        public SkeletonSeekerIdleState IdleState { get; set; }
+        public SkeletonSeekerSpawnState SpawnState { get; set; }
+        public SkeletonSeekerStunnedState StunnedState { get; set; }
 
-    }
-    protected override void Start()
-    {
-        base.Start();
 
-        StateMachine.Initialize(SpawnState);
-    }
-
-    public override bool IsCanBeStunned(bool forceStun)
-    {
-        if (base.IsCanBeStunned(forceStun))
+        protected override void Awake()
         {
-            StateMachine.ChangeState(StunnedState);
-            return true;
+            base.Awake();
+            IdleState = new SkeletonSeekerIdleState(this, StateMachine, "Idle", this);
+            MoveState = new SkeletonSeekerMoveState(this, StateMachine, "Move", this);
+            BattleState = new SkeletonSeekerBattleState(this, StateMachine, "Move", this);
+            AttackState = new SkeletonSeekerAttackState(this, StateMachine, "Attack", this);
+            DeadState = new SkeletonSeekerDeadState(this, StateMachine, "Dead", this);
+            SpawnState = new SkeletonSeekerSpawnState(this, StateMachine, "Spawn", this);
+            StunnedState = new SkeletonSeekerStunnedState(this, StateMachine, "Stunned", this);
+            counterImage.SetActive(false);
+
+        }
+        protected override void Start()
+        {
+            base.Start();
+
+            StateMachine.Initialize(SpawnState);
         }
 
-        return false;
-    }
+        public override bool IsCanBeStunned(bool forceStun)
+        {
+            if (base.IsCanBeStunned(forceStun))
+            {
+                StateMachine.ChangeState(StunnedState);
+                return true;
+            }
 
-    public override void Flip()
-    {
-        if (IsBusy)
-            return;
+            return false;
+        }
 
-        base.Flip();
+        public override void Flip()
+        {
+            if (IsBusy)
+                return;
 
-        StartCoroutine("BusyFor", .3f);
-    }
+            base.Flip();
 
-    public override void Die()
-    {
-        transform.position = new Vector3(transform.position.x, transform.position.y, 10);
-        StateMachine.ChangeState(DeadState);
-        base.Die();
+            StartCoroutine("BusyFor", .3f);
+        }
+
+        public override void Die()
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, 10);
+            StateMachine.ChangeState(DeadState);
+            base.Die();
+        }
     }
 }

@@ -1,5 +1,4 @@
-﻿using Assets.Scripts.Enemies.FireMiniMage;
-using Enemies.FireMiniMage;
+﻿using Enemies.FireMiniMage;
 using MainCharacter;
 using Stats;
 using UnityEngine;

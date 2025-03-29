@@ -2,7 +2,7 @@
 using Stats;
 using UnityEngine;
 
-namespace Assets.Scripts.Enemies.FireMiniMage
+namespace Enemies.FireMiniMage
 {
     public class FireballController : MonoBehaviour
     {
