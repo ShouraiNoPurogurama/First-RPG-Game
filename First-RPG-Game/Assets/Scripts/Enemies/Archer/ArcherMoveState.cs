@@ -17,8 +17,6 @@ namespace Enemies.Archer
         public override void Update()
         {
             base.Update();
-
-            Debug.Log(Archer.defaultMoveSpeed);
             
             Archer.SetVelocity(Archer.FacingDir * Archer.defaultMoveSpeed, Rb.linearVelocity.y);
             
