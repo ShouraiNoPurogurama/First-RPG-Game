@@ -21,7 +21,7 @@ namespace Enemies.Infantryman
         public override void Update()
         {
             base.Update();
-            Debug.Log("MoveState: Speed=" + enemy.moveSpeed + ", FacingDir=" + enemy.FacingDir);
+            //Debug.Log("MoveState: Speed=" + enemy.moveSpeed + ", FacingDir=" + enemy.FacingDir);
             enemy.SetVelocity(enemy.moveSpeed* enemy.FacingDir, Rb.linearVelocity.y);
             if (!enemy.IsGroundDetected())
             {

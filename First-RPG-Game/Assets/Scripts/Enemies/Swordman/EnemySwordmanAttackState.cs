@@ -22,6 +22,8 @@ namespace Enemies.Swordman
 
             if(TriggerCalled)
             {
+                TriggerCalled = false;
+                enemy.lastTimeAttacked = Time.time;
                 StateMachine.ChangeState(enemy.BattleState);
             }
         }
@@ -29,7 +31,7 @@ namespace Enemies.Swordman
         public override void Exit()
         {
             base.Exit();
-            enemy.lastTimeAttacked = Time.time;
+            //enemy.lastTimeAttacked = Time.time;
         }
 
 
