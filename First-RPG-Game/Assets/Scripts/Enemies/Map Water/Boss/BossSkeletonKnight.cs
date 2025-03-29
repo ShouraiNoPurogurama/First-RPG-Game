@@ -1,4 +1,5 @@
 using Enemies;
+using Enemies.Map_Water.Boss;
 using UnityEngine;
 
 public class BossSkeletonKnight : Enemy
