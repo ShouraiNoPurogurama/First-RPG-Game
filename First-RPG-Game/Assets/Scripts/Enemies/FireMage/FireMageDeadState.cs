@@ -15,6 +15,7 @@ namespace Enemies.FireMage
         public override void Enter()
         {
             _fireMage.Animator.SetTrigger("Dead");
+            SoundManager.PlaySFX("FireMage", 1, true);
             //Debug.Log("DEAD -----------------------" + _fireMage.LastAnimBoolName);
             base.Enter();
 

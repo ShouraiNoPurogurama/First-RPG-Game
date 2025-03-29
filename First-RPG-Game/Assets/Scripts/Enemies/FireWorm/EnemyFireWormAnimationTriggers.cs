@@ -16,6 +16,8 @@ namespace Enemies.FireWorm
 
         private void AttackTrigger()
         {
+            SoundManager.PlaySFX("FireWorm", 1, true);
+
             Collider2D[] colliders = Physics2D.OverlapCircleAll(fireWorm.attackCheck.position, fireWorm.attackCheckRadius);
 
             foreach (var hit in colliders)
@@ -27,7 +29,10 @@ namespace Enemies.FireWorm
                 }
             }
         }
-
+        private void playStep()
+        {
+            SoundManager.PlaySFX("FireWorm", 0, true);
+        }
         private void OpenCounterWindow() => fireWorm.OpenCounterAttackWindow();
         private void CloseCounterWindow() => fireWorm.CloseCounterAttackWindow();
     }

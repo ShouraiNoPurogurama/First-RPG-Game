@@ -15,6 +15,7 @@ namespace Enemies.Boss
         public override void Enter()
         {
             base.Enter();
+            SoundManager.PlaySFX("FireBoss", 1, true);
         }
         public override void Update()
         {
