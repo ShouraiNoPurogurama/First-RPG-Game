@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Enemies.Boss
 {
-    public class EnemyBossAnimationTriggers : MonoBehaviour
+    public class EarthBossAnimationTriggers : MonoBehaviour
     {
         private EnemyBoss boss => GetComponentInParent<EnemyBoss>();
 

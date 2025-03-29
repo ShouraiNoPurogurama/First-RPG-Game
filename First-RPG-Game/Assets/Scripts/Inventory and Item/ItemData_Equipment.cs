@@ -40,6 +40,8 @@ namespace Inventory_and_Item
         public int fireDamage;
         public int iceDamage;
         public int lightingDamage;
+        public int earthDamage;
+        public int windDamage;
 
         [Header("Craft requirements")]
         public List<InventoryItem> craftingMaterials;
@@ -68,6 +70,8 @@ namespace Inventory_and_Item
             playerStats.fireDamage.RemoveModifier(fireDamage);
             playerStats.iceDamage.RemoveModifier(iceDamage);
             playerStats.lightingDamage.RemoveModifier(lightingDamage);
+            playerStats.earthDamage.RemoveModifier(lightingDamage);
+            playerStats.windDamage.RemoveModifier(lightingDamage);
         }
 
         public void AddModifiers()
@@ -91,6 +95,8 @@ namespace Inventory_and_Item
             playerStats.fireDamage.AddModifier(fireDamage);
             playerStats.iceDamage.AddModifier(iceDamage);
             playerStats.lightingDamage.AddModifier(lightingDamage);
+            playerStats.windDamage.AddModifier(lightingDamage);
+            playerStats.earthDamage.AddModifier(lightingDamage);
         }
 
         public void Effect(Transform enemyPosition)
@@ -122,6 +128,8 @@ namespace Inventory_and_Item
             AddItemDescription(fireDamage, "Fire damage");
             AddItemDescription(iceDamage, "Ice damage");
             AddItemDescription(lightingDamage, "Lighting dmg. ");
+            AddItemDescription(earthDamage, "Earth dmg. ");
+            AddItemDescription(windDamage, "Wind dmg. ");
 
             return sb.ToString();
         }
