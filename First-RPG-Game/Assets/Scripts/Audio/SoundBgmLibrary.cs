@@ -1,38 +1,41 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundBgmLibrary : MonoBehaviour
+namespace Audio
 {
-    [SerializeField] private List<BgmTrack> bgmTracks;
-    private Dictionary<string, AudioClip> bgmDictionary;
-
-    private void Awake()
+    public class SoundBgmLibrary : MonoBehaviour
     {
-        InitializeDictionary();
-    }
+        [SerializeField] private List<BgmTrack> bgmTracks;
+        private Dictionary<string, AudioClip> bgmDictionary;
 
-    private void InitializeDictionary()
-    {
-        bgmDictionary = new Dictionary<string, AudioClip>();
-        foreach (BgmTrack track in bgmTracks)
+        private void Awake()
         {
-            bgmDictionary.Add(track.name, track.clip);
+            InitializeDictionary();
+        }
+
+        private void InitializeDictionary()
+        {
+            bgmDictionary = new Dictionary<string, AudioClip>();
+            foreach (BgmTrack track in bgmTracks)
+            {
+                bgmDictionary.Add(track.name, track.clip);
+            }
+        }
+
+        public AudioClip GetClip(string name)
+        {
+            if (bgmDictionary.ContainsKey(name))
+            {
+                return bgmDictionary[name];
+            }
+            return null;
         }
     }
 
-    public AudioClip GetClip(string name)
+    [System.Serializable]
+    public struct BgmTrack
     {
-        if (bgmDictionary.ContainsKey(name))
-        {
-            return bgmDictionary[name];
-        }
-        return null;
+        public string name;
+        public AudioClip clip;
     }
-}
-
-[System.Serializable]
-public struct BgmTrack
-{
-    public string name;
-    public AudioClip clip;
 }

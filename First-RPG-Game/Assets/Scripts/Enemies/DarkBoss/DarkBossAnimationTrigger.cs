@@ -1,39 +1,35 @@
-﻿using Assets.Scripts.Enemies.DarkBoss;
-using MainCharacter;
+﻿using MainCharacter;
 using Stats;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
-
-public class DarkBossAnimationTrigger : MonoBehaviour
+namespace Enemies.DarkBoss
 {
-    private DarkBoss DarkBoss => GetComponentInParent<DarkBoss>();
-    private void AnimationTrigger()
+    public class DarkBossAnimationTrigger : MonoBehaviour
     {
-        DarkBoss.AnimationFinishTrigger();
-    }
-
-    private void TeleportTrigger()
-    {
-        DarkBoss.FindPosition();
-    }
-    private void AttackTrigger()
-    {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(DarkBoss.attackCheck.position, DarkBoss.attackCheckRadius);
-        foreach (var hit in colliders)
+        private DarkBoss DarkBoss => GetComponentInParent<DarkBoss>();
+        private void AnimationTrigger()
         {
-            var player = hit.GetComponent<Player>();
-            if (player)
+            DarkBoss.AnimationFinishTrigger();
+        }
+
+        private void TeleportTrigger()
+        {
+            DarkBoss.FindPosition();
+        }
+        private void AttackTrigger()
+        {
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(DarkBoss.attackCheck.position, DarkBoss.attackCheckRadius);
+            foreach (var hit in colliders)
             {
-                DarkBoss.Stats.DoDamage(player.GetComponent<PlayerStats>());
+                var player = hit.GetComponent<Player>();
+                if (player)
+                {
+                    DarkBoss.Stats.DoDamage(player.GetComponent<PlayerStats>());
+                }
             }
         }
-    }
-    private void OpenCounterWindow() => DarkBoss.OpenCounterAttackWindow();
-    private void CloseCounterWindow() => DarkBoss.CloseCounterAttackWindow();
+        private void OpenCounterWindow() => DarkBoss.OpenCounterAttackWindow();
+        private void CloseCounterWindow() => DarkBoss.CloseCounterAttackWindow();
 
+    }
 }

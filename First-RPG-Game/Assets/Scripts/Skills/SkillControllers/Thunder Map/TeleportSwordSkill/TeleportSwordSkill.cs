@@ -1,7 +1,7 @@
 ﻿using MainCharacter;
 using UnityEngine;
 
-namespace Skills
+namespace Skills.SkillControllers.Thunder_Map.TeleportSwordSkill
 {
     public class TeleportSwordSkill : MonoBehaviour
     {

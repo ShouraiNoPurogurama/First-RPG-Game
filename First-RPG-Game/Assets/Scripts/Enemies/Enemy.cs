@@ -158,6 +158,11 @@ namespace Enemies
 
         }
 
+        public virtual void ThirdinaryAnimationSpecialAttackTrigger()
+        {
+            
+        }
+
         public virtual void BusyMarker()
         {
 

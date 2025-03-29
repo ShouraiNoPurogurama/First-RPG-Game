@@ -1,8 +1,7 @@
 ﻿using MainCharacter;
-using Skills.SkillControllers;
 using UnityEngine;
 
-namespace Skills
+namespace Skills.SkillControllers.Thunder_Map
 {
     public class ThunderMapSkillManager : MonoBehaviour
     {
@@ -14,11 +13,11 @@ namespace Skills
 
         public Player Player => player; // Getter để TeleportSwordSkill truy cập
 
-        private TeleportSwordSkill _teleportSkill;
+        private TeleportSwordSkill.TeleportSwordSkill _teleportSkill;
 
         private void Start()
         {
-            _teleportSkill = GetComponent<TeleportSwordSkill>(); // Lấy TeleportSwordSkill
+            _teleportSkill = GetComponent<TeleportSwordSkill.TeleportSwordSkill>(); // Lấy TeleportSwordSkill
             if (_teleportSkill != null)
             {
                 _teleportSkill.EnableSkill(true); // Bật skill trong map Thunder

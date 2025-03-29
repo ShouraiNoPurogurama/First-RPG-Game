@@ -1,33 +1,30 @@
-﻿using Enemies.Skeleton;
-using MainCharacter;
+﻿using MainCharacter;
 using Stats;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
-public class GiantAnimationTrigger : MonoBehaviour
+namespace Enemies.Giant
 {
-    private Giant Giant => GetComponentInParent<Giant>();
-    private void AnimationTrigger()
+    public class GiantAnimationTrigger : MonoBehaviour
     {
-        Giant.AnimationFinishTrigger();
-    }
-    private void AttackTrigger()
-    {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(Giant.attackCheck.position, Giant.attackCheckRadius);
-        foreach (var hit in colliders)
+        private Giant Giant => GetComponentInParent<Giant>();
+        private void AnimationTrigger()
         {
-            var player = hit.GetComponent<Player>();
-            if (player)
+            Giant.AnimationFinishTrigger();
+        }
+        private void AttackTrigger()
+        {
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(Giant.attackCheck.position, Giant.attackCheckRadius);
+            foreach (var hit in colliders)
             {
-                Giant.Stats.DoDamage(player.GetComponent<PlayerStats>());
+                var player = hit.GetComponent<Player>();
+                if (player)
+                {
+                    Giant.Stats.DoDamage(player.GetComponent<PlayerStats>());
+                }
             }
         }
+        private void OpenCounterWindow() => Giant.OpenCounterAttackWindow();
+        private void CloseCounterWindow() => Giant.CloseCounterAttackWindow();
     }
-    private void OpenCounterWindow() => Giant.OpenCounterAttackWindow();
-    private void CloseCounterWindow() => Giant.CloseCounterAttackWindow();
 }
 

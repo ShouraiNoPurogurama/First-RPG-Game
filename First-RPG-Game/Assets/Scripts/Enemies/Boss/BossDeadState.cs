@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Audio;
+using UnityEngine;
 
 namespace Enemies.Boss
 {
@@ -17,6 +18,7 @@ namespace Enemies.Boss
             _boss.Animator.SetTrigger("Dead");
             //Debug.Log("DEAD -----------------------" + _boss.LastAnimBoolName);
             base.Enter();
+            SoundManager.PlaySFX("FireBoss", 5, true);
 
             //_boss.Animator.SetBool(_boss.LastAnimBoolName, true);
             //_boss.Animator.speed = 0;

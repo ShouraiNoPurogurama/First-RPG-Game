@@ -1,36 +1,31 @@
-﻿using Enemies;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-public class SkeletonSeekerIdleState : SkeletonSeekerGroundedState
+﻿namespace Enemies.SkeletonSeeker
 {
-    public SkeletonSeekerIdleState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, SkeletonSeeker skeletonSeeker) : base(enemyBase, stateMachine, animBoolName, skeletonSeeker)
+    public class SkeletonSeekerIdleState : SkeletonSeekerGroundedState
     {
-    }
+        public SkeletonSeekerIdleState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, SkeletonSeeker skeletonSeeker) : base(enemyBase, stateMachine, animBoolName, skeletonSeeker)
+        {
+        }
 
-    public override void Enter()
-    {
-        base.Enter();
+        public override void Enter()
+        {
+            base.Enter();
 
-        StateTimer = SkeletonSeeker.idleTime;
-    }
+            StateTimer = SkeletonSeeker.idleTime;
+        }
 
-    public override void Update()
-    {
-        base.Update();
+        public override void Update()
+        {
+            base.Update();
 
-        //if (StateTimer <= 0)
-        //{
-        //    StateMachine.ChangeState(SkeletonSeeker.MoveState);
-        //}
-    }
+            //if (StateTimer <= 0)
+            //{
+            //    StateMachine.ChangeState(SkeletonSeeker.MoveState);
+            //}
+        }
 
-    public override void Exit()
-    {
-        base.Exit();
+        public override void Exit()
+        {
+            base.Exit();
+        }
     }
 }

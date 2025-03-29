@@ -1,5 +1,4 @@
-﻿using Assets.Scripts.Enemies.FireMiniMage;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Enemies.FireMiniMage
 {

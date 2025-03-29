@@ -1,3 +1,4 @@
+using System.Xml;
 using UnityEngine;
 
 namespace Enemies.Swordman
@@ -10,7 +11,7 @@ namespace Enemies.Swordman
         public EnemySwordmanBattleState BattleState { get; private set; }
         public EnemySwordmanAttackState AttackState { get; private set; }
         //    //public enemyswordmanstunnedstate stunnedstate { get; private set; }
-        //    //public enemyswordmandeadstate deadstate { get; private set; }
+        //public EnemySwordmanDeadState DeadState { get; private set; }
 
         //    protected override void Awake()
         //    {

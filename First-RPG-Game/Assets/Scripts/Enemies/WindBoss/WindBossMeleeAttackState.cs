@@ -23,14 +23,12 @@ namespace Enemies.WindBoss
         public override void Update()
         {
             base.Update();
-
-            Debug.Log("IsBusy: " + _windBoss.IsBusy);
             
             if (!_windBoss.IsBusy)
             {
                 FaceToPlayer();
 
-                _windBoss.SetVelocity(_windBoss.FacingDir * _windBoss.defaultMoveSpeed * 1.3f, Rb.linearVelocity.y);
+                _windBoss.SetVelocity(_windBoss.FacingDir * _windBoss.defaultMoveSpeed * 2.5f, Rb.linearVelocity.y);
             }
             else
             {

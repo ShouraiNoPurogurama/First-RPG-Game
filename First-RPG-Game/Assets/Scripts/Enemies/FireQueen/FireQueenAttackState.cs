@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Audio;
+using System;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
@@ -14,7 +15,7 @@ namespace Enemies.FireQueen
 
         public override void Enter()
         {
-            //AudioManager.instance.PlaySfx(fireQueen.attackSfxIndex, fireQueen.transform);
+            SoundManager.PlaySFX("FireQueen", 0, true);
             base.Enter();
         }
         public override void Update()

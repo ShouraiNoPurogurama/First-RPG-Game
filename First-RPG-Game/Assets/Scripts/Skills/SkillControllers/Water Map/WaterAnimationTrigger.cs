@@ -1,7 +1,7 @@
 using Stats;
 using UnityEngine;
 
-namespace MainCharacter.Water_Map
+namespace Skills.SkillControllers.Water_Map
 {
     public class WaterAnimationTrigger : MonoBehaviour
     {

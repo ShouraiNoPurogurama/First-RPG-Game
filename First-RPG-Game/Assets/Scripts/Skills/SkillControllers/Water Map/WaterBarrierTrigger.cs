@@ -1,8 +1,8 @@
-﻿using Stats;
-using System.Collections;
+﻿using System.Collections;
+using Stats;
 using UnityEngine;
 
-namespace WaterMap
+namespace Skills.SkillControllers.Water_Map
 {
     public class WaterBarrierTrigger : MonoBehaviour
     {

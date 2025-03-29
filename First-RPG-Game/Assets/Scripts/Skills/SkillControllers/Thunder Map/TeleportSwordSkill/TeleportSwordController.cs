@@ -1,9 +1,9 @@
-﻿using UnityEngine;
-using Enemies;
+﻿using Enemies;
 using MainCharacter;
 using Stats;
+using UnityEngine;
 
-namespace Skills
+namespace Skills.SkillControllers.Thunder_Map.TeleportSwordSkill
 {
     public class TeleportSwordController : MonoBehaviour
     {
@@ -31,25 +31,25 @@ namespace Skills
             transform.right = _rb.linearVelocity; // Xoay kiếm theo hướng bay
         }
 
-        private void OnTriggerEnter2D(Collider2D collision)
-        {
-            if (_hasHitWall) return;
+        //private void OnTriggerEnter2D(Collider2D collision)
+        //{
+        //    if (_hasHitWall) return;
 
-            // Kiểm tra va chạm với tường (giả sử tường có tag "Wall")
-            if (collision.CompareTag("Ground"))
-            {
-                _hasHitWall = true;
-                TeleportPlayer();
-                Destroy(gameObject); // Hủy kiếm sau khi dịch chuyển
-            }
-            // Kiểm tra va chạm với kẻ địch
-            else if (collision.GetComponent<Enemy>() != null)
-            {
-                Enemy enemy = collision.GetComponent<Enemy>();
-                _player.Stats.DoDamage(enemy.GetComponent<EnemyStats>()); // Gây sát thương
-                Destroy(gameObject); // Hủy kiếm khi trúng kẻ địch
-            }
-        }
+        //    // Kiểm tra va chạm với tường (giả sử tường có tag "Wall")
+        //    if (collision.CompareTag("Ground"))
+        //    {
+        //        _hasHitWall = true;
+        //        TeleportPlayer();
+        //        Destroy(gameObject); // Hủy kiếm sau khi dịch chuyển
+        //    }
+        //    // Kiểm tra va chạm với kẻ địch
+        //    else if (collision.GetComponent<Enemy>() != null)
+        //    {
+        //        Enemy enemy = collision.GetComponent<Enemy>();
+        //        _player.Stats.DoDamage(enemy.GetComponent<EnemyStats>()); // Gây sát thương
+        //        Destroy(gameObject); // Hủy kiếm khi trúng kẻ địch
+        //    }
+        //}
 
         private void TeleportPlayer()
         {

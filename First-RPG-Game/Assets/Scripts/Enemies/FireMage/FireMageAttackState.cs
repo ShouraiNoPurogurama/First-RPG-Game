@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Audio;
+using System;
 using UnityEngine;
 
 namespace Enemies.FireMage
@@ -13,6 +14,7 @@ namespace Enemies.FireMage
 
         public override void Enter()
         {
+            SoundManager.PlaySFX("FireMage", 0, true);
             base.Enter();
         }
         public override void Update()

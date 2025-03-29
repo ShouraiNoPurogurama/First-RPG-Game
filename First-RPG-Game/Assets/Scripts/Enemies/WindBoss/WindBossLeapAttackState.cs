@@ -58,7 +58,7 @@ namespace Enemies.WindBoss
                     _leapSpeed * Time.deltaTime
                 );
 
-                if (HasLanded())
+                if (HasLanded() || TriggerCalled)
                 {
                     _attacked = true;
                     _windBoss.lastTimeAttacked = Time.time;
@@ -72,6 +72,7 @@ namespace Enemies.WindBoss
 
         public override void Exit()
         {
+            TriggerCalled = false;
             _attacked = false;
             base.Exit();
         }

@@ -8,14 +8,23 @@ namespace Enemies.WindBoss
 {
     public class WindBoss : Enemy
     {
+        [SerializeField]
+        public GameObject FinishPoint;
+        
         [Header("WindBoss specific info")]
         public Vector2 jumpVelocity;
+        
+        public float dashCooldown;
+        [HideInInspector] public float lastTimeDashed;
 
-        [SerializeField] public float runSpeed;
-        [SerializeField] public float runDuration = 0.25f;
+        [Header("Taunt info")]
+        [HideInInspector] public bool enteredTaunt;
 
-        public float jumpCooldown;
-        [HideInInspector] public float lastTimeJumped;
+        [Header("Summon info")]
+        [SerializeField] private GameObject archerPrefab;
+
+        [SerializeField] private GameObject skeletonPrefab;
+        [SerializeField] private GameObject soulPrefab;
 
         [Header("Leap attack info")]
         public float triggerLeapDistance; //How close player should be to trigger jump on battle state
@@ -34,6 +43,10 @@ namespace Enemies.WindBoss
         [HideInInspector] public float lastTimeSpin;
         [SerializeField] public float spinDuration;
 
+        [Header("Summon minions info")]
+        [SerializeField] public float summonCoolDown;
+
+        [HideInInspector] public float lastTimeSummon;
 
         private CharacterStats _myStats;
 
@@ -50,10 +63,13 @@ namespace Enemies.WindBoss
         public WindBossStunnedState StunnedState { get; private set; }
         public WindBossJumpState JumpState { get; private set; }
         public WindBossMeleeAttackState MeleeAttackState { get; private set; }
-        public WindBossRunState RunState { get; private set; }
+        public WindBossDashState DashState { get; private set; }
         public WindBossLeapState LeapState { get; private set; }
         public WindBossEnterSpinAttackState EnterSpinAttackState { get; private set; }
         public WindBossSpinAttackState SpinAttackState { get; private set; }
+        public WindBossTauntState TauntState { get; private set; }
+
+        public WindBossSummonState SummonState { get; private set; }
 
         #endregion
 
@@ -69,10 +85,12 @@ namespace Enemies.WindBoss
             StunnedState = new WindBossStunnedState(this, StateMachine, "Stunned", this);
             JumpState = new WindBossJumpState(this, StateMachine, "Jump", this);
             MeleeAttackState = new WindBossMeleeAttackState(this, StateMachine, "Attack", this);
-            // RunState = new WindBossRunState(this, StateMachine, "Run", this);
+            DashState = new WindBossDashState(this, StateMachine, "Dash", this);
             LeapState = new WindBossLeapState(this, StateMachine, "Leap", this);
             EnterSpinAttackState = new WindBossEnterSpinAttackState(this, StateMachine, "EnterSpinAttack", this);
             SpinAttackState = new WindBossSpinAttackState(this, StateMachine, "SpinAttack", this);
+            TauntState = new WindBossTauntState(this, StateMachine, "Taunt", this);
+            SummonState = new WindBossSummonState(this, StateMachine, "Summon", this);
         }
 
         protected override void Start()
@@ -105,12 +123,13 @@ namespace Enemies.WindBoss
 
         public override void Die()
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, 10);
+            // transform.position = new Vector3(transform.position.x, transform.position.y, 10);
             StateMachine.ChangeState(DeadState);
+            FinishPoint.SetActive(true);
             base.Die();
         }
 
-        public override void AnimationSpecialAttackTrigger()
+        public override void AnimationSpecialAttackTrigger() //Throw hammer
         {
             base.AnimationSpecialAttackTrigger();
             float xOffset = FacingDir < 0 ? -2.5f : 2.5f;
@@ -121,7 +140,7 @@ namespace Enemies.WindBoss
             newHammer.GetComponent<WindBossHammerController>().SetupHammer(hammerSpeed, Stats);
         }
 
-        public override void SecondaryAnimationSpecialAttackTrigger()
+        public override void SecondaryAnimationSpecialAttackTrigger() //Melee attack
         {
             Collider2D[] colliders = Physics2D.OverlapCircleAll(attackCheck.position, attackCheckRadius);
 
@@ -131,10 +150,30 @@ namespace Enemies.WindBoss
                 if (player)
                 {
                     Stats.DoMagicalDamage(player.GetComponent<PlayerStats>());
-                    Debug.Log("Freeze boss movement");
                     SetZeroVelocity();
+                    FX.CreateHitFxThunder(player.transform);
                 }
             }
+        }
+
+        public override void ThirdinaryAnimationSpecialAttackTrigger()
+        {
+            Instantiate(archerPrefab, new Vector3(transform.position.x + GetRandomOffset(), transform.position.y, 0f),
+                Quaternion.identity);
+            // Instantiate(archerPrefab, new Vector3(transform.position.x + GetRandomOffset(), transform.position.y, 0f),
+            //     Quaternion.identity);
+            Instantiate(skeletonPrefab, new Vector3(transform.position.x + GetRandomOffset(), transform.position.y, 0f),
+                Quaternion.identity);
+            Instantiate(skeletonPrefab, new Vector3(transform.position.x + GetRandomOffset(), transform.position.y, 0f),
+                Quaternion.identity);
+            Instantiate(soulPrefab, new Vector3(transform.position.x + GetRandomOffset(), transform.position.y, 0f),
+                Quaternion.identity);
+        }
+
+        private float GetRandomOffset()
+        {
+            float xOffset = FacingDir < 0 ? Random.Range(-2, -8) : Random.Range(2, 8);
+            return xOffset;
         }
 
         public override void BusyMarker()

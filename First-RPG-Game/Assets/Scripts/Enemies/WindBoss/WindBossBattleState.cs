@@ -8,6 +8,7 @@ namespace Enemies.WindBoss
         private WindBoss _windBoss;
         private Transform _player;
         private int _moveDir;
+        private bool playedTauntFX;
 
         public WindBossBattleState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, WindBoss windBoss) :
             base(
@@ -29,49 +30,75 @@ namespace Enemies.WindBoss
         {
             base.Update();
 
-            if (_windBoss.IsPlayerDetected() && _windBoss.IsPlayerDetected().distance != 0)
+            float playerDistance = _windBoss.IsPlayerDetected().distance;
+            bool playerDetected = playerDistance != 0;
+            bool isLowHp = _windBoss.Stats.currentHp <= _windBoss.Stats.maxHp.ModifiedValue * 0.5;
+            bool isDesperate = _windBoss.Stats.currentHp <= _windBoss.Stats.maxHp.ModifiedValue * 0.25;
+
+            if (isLowHp && !playedTauntFX)
+            {
+                playedTauntFX = true;
+                _windBoss.FX.StartTauntFX();
+                _windBoss.FX.IncreaseFallingLeavesFX();
+            }
+
+            if (isDesperate)
+            {
+                _windBoss.FX.IncreaseTauntFX();
+                _windBoss.FX.IncreaseFallingLeavesFX();
+            }
+
+            if (playerDetected)
             {
                 StateTimer = _windBoss.battleTime;
 
-                if (_windBoss.IsPlayerDetected().distance < _windBoss.triggerLeapDistance)
+                if (isLowHp && playerDistance < _windBoss.triggerLeapDistance && CanLeap())
                 {
-                    if (_windBoss.Stats.currentHp <= _windBoss.Stats.maxHp.ModifiedValue * 0.5 && CanLeap())
+                    StateMachine.ChangeState(_windBoss.LeapState);
+                    return;
+                }
+
+                if (Mathf.Abs(playerDistance - _windBoss.attackDistance) <=10 && Mathf.Abs(playerDistance - _windBoss.attackDistance) >= 4 && CanDash())
+                {
+                    StateMachine.ChangeState(_windBoss.DashState);
+                    return;
+                }
+                
+                if (CanSummonMinions())
+                {
+                    StateMachine.ChangeState(_windBoss.SummonState);
+                    return;
+                }
+
+                if (playerDistance < _windBoss.attackDistance)
+                {
+                    if (CanMeleeAttack())
                     {
-                        StateMachine.ChangeState(_windBoss.LeapState);
+                        StateMachine.ChangeState(_windBoss.MeleeAttackState);
                         return;
                     }
 
-                    if (CanSpinAttack() && _windBoss.IsPlayerDetected().distance < _windBoss.attackDistance)
+                    if (CanSpinAttack())
                     {
                         StateMachine.ChangeState(_windBoss.EnterSpinAttackState);
                         return;
                     }
-
-                    if (
-                        _windBoss.IsPlayerDetected().distance < _windBoss.attackDistance)
-                    {
-                        if (CanMeleeAttack())
-                        {
-                            StateMachine.ChangeState(_windBoss.MeleeAttackState);
-                            return;
-                        }
-                    }
-                    else
-                    {
-                        StateMachine.ChangeState(_windBoss.MoveState);
-                        return;
-                    }
-                }
-
-                if (_windBoss.IsGroundDetected() && _windBoss.IsPlayerDetected().distance <= _windBoss.attackDistance &&
-                    CanAttack())
-                {
-                    StateMachine.ChangeState(_windBoss.MeleeAttackState);
-                    return;
                 }
             }
+            
+            if (isDesperate && CanDesperationMode())
+            {
+                StateMachine.ChangeState(_windBoss.TauntState);
+                return;
+            }
 
+            HandleFlipping();
 
+            _windBoss.SetVelocity(_windBoss.moveSpeed * 1.1f * _windBoss.FacingDir, Rb.linearVelocity.y);
+        }
+
+        private void HandleFlipping()
+        {
             if (_player.transform.position.x > _windBoss.transform.position.x && _windBoss.FacingDir == -1)
                 _windBoss.Flip();
             else if (_player.transform.position.x < _windBoss.transform.position.x && _windBoss.FacingDir == 1)
@@ -91,6 +118,8 @@ namespace Enemies.WindBoss
             base.Exit();
         }
 
+        public bool CanDash() => Time.time >= _windBoss.lastTimeDashed + _windBoss.dashCooldown;
+
         public bool CanAttack()
         {
             AttachCurrentPlayerIfNotExists();
@@ -104,6 +133,8 @@ namespace Enemies.WindBoss
             return false;
         }
 
+        private bool CanDesperationMode() => !_windBoss.enteredTaunt;
+
         public bool CanSpinAttack()
         {
             AttachCurrentPlayerIfNotExists();
@@ -115,6 +146,11 @@ namespace Enemies.WindBoss
             }
 
             return false;
+        }
+
+        private bool CanSummonMinions()
+        {
+            return Time.time >= _windBoss.lastTimeSummon + _windBoss.summonCoolDown;
         }
 
         public bool PlayerInAttackRange()
