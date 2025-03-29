@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 5826292584797009220}
   - component: {fileID: 4348717680915847364}
   - component: {fileID: 4508141506284133139}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Animator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,4 +204,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 20
   explosionRadius: 2.36
-  pushForce: 5

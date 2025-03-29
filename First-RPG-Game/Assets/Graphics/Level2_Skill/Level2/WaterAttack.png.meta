@@ -1,0 +1,424 @@
+fileFormatVersion: 2
+guid: 6d3e2245c469ec942a4f10ba5ba2733d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1025153736365200039
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_0
+  - first:
+      213: -8691919204000637877
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_1
+  - first:
+      213: -5268620462614160045
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_2
+  - first:
+      213: -3629673496045528844
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_3
+  - first:
+      213: 1285255511128452219
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_4
+  - first:
+      213: -2752224039033800763
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_5
+  - first:
+      213: -4497699102432669680
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_6
+  - first:
+      213: 9179854326801884210
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_7
+  - first:
+      213: 856126801009761821
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_8
+  - first:
+      213: -7603027987093604703
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_9
+  - first:
+      213: 7508248642119192778
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_10
+  - first:
+      213: -657968955741994500
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_11
+  - first:
+      213: -5982471049406548717
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_12
+  - first:
+      213: -3664352631526134102
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_13
+  - first:
+      213: -1057270931380777750
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_14
+  - first:
+      213: 692564956160492154
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_15
+  - first:
+      213: -2833487347084285409
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_16
+  - first:
+      213: -6142902928755099419
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_17
+  - first:
+      213: 9145199713458850433
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_18
+  - first:
+      213: 5954560159214951569
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_19
+  - first:
+      213: 440191237351823518
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_20
+  - first:
+      213: -6946350299299550765
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_21
+  - first:
+      213: -8834362005851163005
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_22
+  - first:
+      213: 2785069204446948506
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_23
+  - first:
+      213: 4688470364396394521
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_24
+  - first:
+      213: -3570225512971018953
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_25
+  - first:
+      213: 3939905947517826449
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_26
+  - first:
+      213: 1037027909159066213
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_27
+  - first:
+      213: 2742499549668581801
+    second: f5cde843-23d5-4dfd-8367-b460937a7c0e_removalai_preview_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WaterAttack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 221
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d14ad95c1a7854ba966661f1610595
+      internalID: -186179150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterAttack_1
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 480
+        width: 221
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42a43af62e5c5340a319b3f91248888
+      internalID: 229523560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterAttack_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 221
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7eb1f157e5ae7e459fc87e52133dc74
+      internalID: -1951927653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterAttack_3
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 360
+        width: 221
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef0842fdca337d4a97b61c47a509e6b
+      internalID: 76548190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterAttack_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 221
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e541f8139571e45b88b28995f6e4b6
+      internalID: 1774568642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterAttack_5
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 240
+        width: 221
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e4d25ce2d2d234e854857e918515b4
+      internalID: -402155447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterAttack_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 221
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ff2521ecfe8674f939fa59c49603b9
+      internalID: 1871365320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterAttack_7
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 120
+        width: 221
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834776f08b0e9f649a6815f6de21c878
+      internalID: 1565721560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterAttack_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 221
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e5e622948d3a041b9f9602b68491cd
+      internalID: -265579227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 67f2a7cd371861143aa3716caae7b325
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WaterAttack_0: -186179150
+      WaterAttack_1: 229523560
+      WaterAttack_2: -1951927653
+      WaterAttack_3: 76548190
+      WaterAttack_4: 1774568642
+      WaterAttack_5: -402155447
+      WaterAttack_6: 1871365320
+      WaterAttack_7: 1565721560
+      WaterAttack_8: -265579227
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

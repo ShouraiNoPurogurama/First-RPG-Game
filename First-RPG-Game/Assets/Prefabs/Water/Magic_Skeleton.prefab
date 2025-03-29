@@ -9681,6 +9681,7 @@ GameObject:
   - component: {fileID: 4177418949896946994}
   - component: {fileID: 3338513691305576206}
   - component: {fileID: 7558890058951713806}
+  - component: {fileID: 8932558891123466463}
   m_Layer: 7
   m_Name: Magic_Skeleton
   m_TagString: Enemy
@@ -9794,6 +9795,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   knockBackPower: {x: 5, y: 5}
   knockBackDuration: 0.25
+  _isKnocked: 0
   attackCheck: {fileID: 5197827287857455254}
   attackCheckRadius: 1.4
   groundCheck: {fileID: 2189883802147183846}
@@ -9814,8 +9816,11 @@ MonoBehaviour:
   battleTime: 3
   defaultMoveSpeed: 0
   attackDistance: 10
+  agroDistance: 2
   attackCooldown: 2
   lastTimeAttacked: 0
+  minAttackCooldown: 1
+  maxAttackCooldown: 2
   jumpVelocity: {x: 20, y: 10}
   waterBall: {fileID: 9036073031353354244}
   arrowSpeed: 7
@@ -9831,7 +9836,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155815485641523341}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 262a1e0589b702e4aa6d299b38222017, type: 3}
   m_Name: 
@@ -9885,7 +9890,7 @@ MonoBehaviour:
     baseValue: 0
     modifiers: 
   maxHp:
-    baseValue: 1059
+    baseValue: 50
     modifiers: 
   armor:
     baseValue: 0
@@ -9940,6 +9945,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2495ae81be12c024fb009a2141ab058b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8932558891123466463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155815485641523341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0e526aa05b8b6d4583ce5bc711a69b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  possibleItemDrop: 1
+  possibleDrop:
+  - {fileID: 11400000, guid: 3bef6eb6814c30a45a3114a51c9fabfd, type: 2}
+  dropPrefab: {fileID: 6028389408080686030, guid: 999a9383fbe58bf47a1474c472811631, type: 3}
 --- !u!1 &2325621205796762322
 GameObject:
   m_ObjectHideFlags: 0
@@ -9977,7 +9998,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -1.54, y: 2.53}
+  m_AnchoredPosition: {x: -0.49, y: 2.56}
   m_SizeDelta: {x: 1271.25, y: 338.75006}
   m_Pivot: {x: 0.48362374, y: 0.5}
 --- !u!223 &1992832605231308854
@@ -25228,7 +25249,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2773101487191985467, guid: c22aff650a6f9784aa331db6b1fbb857, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7228801527852284002}
   m_SourcePrefab: {fileID: 100100000, guid: c22aff650a6f9784aa331db6b1fbb857, type: 3}
 --- !u!4 &5973970145501630698 stripped
 Transform:
@@ -25240,3 +25264,16 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2773101487191985467, guid: c22aff650a6f9784aa331db6b1fbb857, type: 3}
   m_PrefabInstance: {fileID: 6564732682207642943}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7228801527852284002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9036073031353354244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38682372a3b0fa942ab0d79b03f5c048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whirlpoolPrefab: {fileID: 1712309094947340196, guid: cb5ff59dde8c68144a182abbcf82950b, type: 3}

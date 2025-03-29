@@ -122,10 +122,6 @@ public class SceneController : MonoBehaviour, ISaveManager
         {
             cp.ActivateCheckpoint();
         }
-        foreach (Checkpoint cp in toActivate)
-        {
-            cp.ActivateCheckpoint();
-        }
 
         // Lưu lại id của checkpoint gần nhất
         closetCheckpointId = _data.closeCheckpointId;

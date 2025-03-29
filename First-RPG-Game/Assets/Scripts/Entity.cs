@@ -1,29 +1,29 @@
+using Stats;
 using System;
 using System.Collections;
-using Stats;
 using UnityEngine;
 
 public class Entity : MonoBehaviour
 {
     public int FacingDir { get; private set; } = 1;
     private bool _isFacingRight = true;
-    
+
     public bool IsBusy { get; private set; }
 
     public SpriteRenderer Sr { get; private set; }
 
     [Header("Knock back info")]
-    [SerializeField] protected Vector2 knockBackPower = new Vector2(5,5);
+    [SerializeField] protected Vector2 knockBackPower = new Vector2(5, 5);
 
     [SerializeField] protected float knockBackDuration = 0.25f;
-    private bool _isKnocked;
+    public bool _isKnocked;
 
     [Header("Collision info")]
     public Transform attackCheck;
 
     public float attackCheckRadius;
 
-    [SerializeField] protected Transform groundCheck;
+    [SerializeField] public Transform groundCheck;
     [SerializeField] public float groundCheckDistance = 0.6f;
     [SerializeField] protected LayerMask whatIsGround;
     [SerializeField] public Transform wallCheck;
@@ -68,7 +68,7 @@ public class Entity : MonoBehaviour
     {
 
     }
-    
+
     public virtual void SlowEntityBy(float slowPercentage, float slowDuration)
     {
     }
@@ -80,12 +80,12 @@ public class Entity : MonoBehaviour
     protected virtual void ReturnDefaultAttackSpeed()
     {
     }
-    
+
     protected virtual void ReturnDefaultSpeed()
     {
         Animator.speed = 1;
     }
-    
+
     public virtual void DamageImpact()
     {
         StartCoroutine(nameof(HitKnockBack));
@@ -173,7 +173,7 @@ public class Entity : MonoBehaviour
             return;
         Rb.linearVelocity = new Vector2(0, 0);
     }
-    
+
 
 
     /// <summary>
@@ -200,11 +200,18 @@ public class Entity : MonoBehaviour
     public void SetTransparent(bool transparent)
     {
         Sr.color = transparent ? Color.clear : Color.white;
-        
+
     }
 
     public virtual void Die()
     {
-        
+
+    }
+    public virtual void SetupDefailtFacingDir(int _direction)
+    {
+        FacingDir = _direction;
+
+        if (FacingDir == -1)
+            _isFacingRight = false;
     }
 }

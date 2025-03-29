@@ -1,51 +1,52 @@
-﻿using UnityEngine;
-
-namespace Enemies.Map_Water.Boss
+﻿using Enemies;
+using UnityEngine;
+public class BossSkeletonKnightAttackState : EnemyState
 {
-    public class BossSkeletonKnightAttackState : EnemyState
+    private BossSkeletonKnight enemy;
+    private int _comboCounter;
+    private readonly float _comboWindow = 2f;
+
+    public BossSkeletonKnightAttackState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, BossSkeletonKnight enemy) : base(enemyBase, stateMachine, animBoolName)
     {
-        private BossSkeletonKnight enemy;
-        private int _comboCounter;
-        private readonly float _comboWindow = 2f;
+        this.enemy = enemy;
+    }
 
-        public BossSkeletonKnightAttackState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, BossSkeletonKnight enemy) : base(enemyBase, stateMachine, animBoolName)
+    public override void Enter()
+    {
+        base.Enter();
+
+        if (Time.time >= enemy.lastTimeAttacked + _comboWindow)
         {
-            this.enemy = enemy;
+            _comboCounter = 0;
         }
+        enemy.Animator.SetInteger("ComboCounter", _comboCounter);
+    }
 
-        public override void Enter()
+    public override void Update()
+    {
+        base.Update();
+
+        enemy.SetZeroVelocity();
+
+        if (TriggerCalled)
         {
-            base.Enter();
-
-            if (Time.time >= enemy.lastTimeAttacked + _comboWindow)
-            {
-                _comboCounter = 0;
-            }
-            enemy.Animator.SetInteger("ComboCounter", _comboCounter);
-        }
-
-        public override void Update()
-        {
-            base.Update();
-
-            enemy.SetZeroVelocity();
-
-            if (TriggerCalled)
-            {
-                TriggerCalled = false;
-                enemy.lastTimeAttacked = Time.time;
+            Debug.Log("Attack trigger called");
+            TriggerCalled = false;
+            enemy.lastTimeAttacked = Time.time;
+            if (enemy.CanTeleport())
+                StateMachine.ChangeState(enemy.DisappearState);
+            else
                 StateMachine.ChangeState(enemy.BattleState);
-            }
         }
+    }
 
-        public override void Exit()
+    public override void Exit()
+    {
+        base.Exit();
+        _comboCounter++;
+        if (_comboCounter > 2)
         {
-            base.Exit();
-            _comboCounter++;
-            if (_comboCounter > 2)
-            {
-                _comboCounter = 0;
-            }
+            _comboCounter = 0;
         }
     }
 }
