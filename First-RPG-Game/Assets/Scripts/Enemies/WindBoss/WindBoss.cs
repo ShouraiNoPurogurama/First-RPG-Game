@@ -8,6 +8,9 @@ namespace Enemies.WindBoss
 {
     public class WindBoss : Enemy
     {
+        [SerializeField]
+        public GameObject FinishPoint;
+        
         [Header("WindBoss specific info")]
         public Vector2 jumpVelocity;
         
@@ -122,6 +125,7 @@ namespace Enemies.WindBoss
         {
             // transform.position = new Vector3(transform.position.x, transform.position.y, 10);
             StateMachine.ChangeState(DeadState);
+            FinishPoint.SetActive(true);
             base.Die();
         }
 
