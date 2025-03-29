@@ -981,8 +981,12 @@ PolygonCollider2D:
       - {x: -7.006789, y: 9.383682}
       - {x: -7.391576, y: -12.054586}
       - {x: 141.96443, y: -21.905058}
-      - {x: 249.58336, y: -21.800758}
-      - {x: 250.30742, y: -6.2826414}
+      - {x: 150.74515, y: -30.088013}
+      - {x: 243.57669, y: -69.631584}
+      - {x: 292.03024, y: -52.736404}
+      - {x: 341.3491, y: -30.310507}
+      - {x: 279.46335, y: 2.460815}
+      - {x: 334.91113, y: 15.141823}
       - {x: 249.73811, y: 15.985573}
   m_UseDelaunayMesh: 0
 --- !u!1001 &36272666
@@ -2211,7 +2215,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 46215449997071657, guid: 31c6cc70b29eb7547a712e03bc77cd0b, type: 3}
       propertyPath: levelName
-      value: SampleScene - Fire
+      value: EarthScene
       objectReference: {fileID: 0}
     - target: {fileID: 3573871016120728678, guid: 31c6cc70b29eb7547a712e03bc77cd0b, type: 3}
       propertyPath: m_ChunkCullingBounds.x
@@ -34295,7 +34299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2804911639366826441, guid: 1c687102db9b9fb43af495f56088721e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4856732818203939168, guid: 1c687102db9b9fb43af495f56088721e, type: 3}
       propertyPath: m_Pivot.x
