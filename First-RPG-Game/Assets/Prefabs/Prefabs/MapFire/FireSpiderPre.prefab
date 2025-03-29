@@ -589,6 +589,7 @@ GameObject:
   - component: {fileID: 1318778169273537072}
   - component: {fileID: 5197875015603602351}
   - component: {fileID: 6366973715183279242}
+  - component: {fileID: 3777510037844517290}
   m_Layer: 7
   m_Name: FireSpiderPre
   m_TagString: Untagged
@@ -817,6 +818,23 @@ MonoBehaviour:
   ailmentDuration: 0
   ShockEffectPrefab: {fileID: 0}
   currentHp: 0
+--- !u!114 &3777510037844517290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7464053331906975964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0e526aa05b8b6d4583ce5bc711a69b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  possibleItemDrop: 2
+  possibleDrop:
+  - {fileID: 11400000, guid: 3bef6eb6814c30a45a3114a51c9fabfd, type: 2}
+  - {fileID: 11400000, guid: ce2aedd4da619fb4086a54a016fd76d4, type: 2}
+  dropPrefab: {fileID: 6028389408080686030, guid: 96174e1147098324b8268c3ce033c22b, type: 3}
 --- !u!1 &8407571475394615876
 GameObject:
   m_ObjectHideFlags: 0
