@@ -8,7 +8,7 @@ public class ArrowController : MonoBehaviour
     [SerializeField] private string targetLayerName = "Player";
     [SerializeField] private int damage;
 
-    [SerializeField] private float xVelocity;
+    [SerializeField] private float xVelocity = 15;
     [SerializeField] private Rigidbody2D rb;
 
     [SerializeField] private bool canMove = true;
@@ -20,6 +20,7 @@ public class ArrowController : MonoBehaviour
     {
         xVelocity = speed;
         _myStats = stats;
+        Debug.Log("Arrow speed: " + xVelocity);
     }
     
     private void Update()
@@ -30,6 +31,7 @@ public class ArrowController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Arrow hit: " + collision.gameObject.name);
         if (collision.gameObject.layer == LayerMask.NameToLayer(targetLayerName))
         {
             _myStats.DoDamage(collision.GetComponent<CharacterStats>());
@@ -43,6 +45,7 @@ public class ArrowController : MonoBehaviour
 
     private void StuckInto(Collider2D collision)
     {
+        Debug.Log("Stuck into: " + collision.gameObject.name);
         GetComponentInChildren<ParticleSystem>().Stop();
         GetComponent<CapsuleCollider2D>().enabled = false;
         canMove = false;

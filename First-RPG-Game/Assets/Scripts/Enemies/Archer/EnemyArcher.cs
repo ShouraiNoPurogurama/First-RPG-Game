@@ -93,6 +93,7 @@ namespace Enemies.Archer
         public override void AnimationSpecialAttackTrigger()
         {
             base.AnimationSpecialAttackTrigger();
+            
             GameObject newArrow = Instantiate(arrowPrefab, attackCheck.position, Quaternion.identity);
 
             newArrow.GetComponent<ArrowController>().SetupArrow(arrowSpeed * FacingDir, Stats);

@@ -174,10 +174,8 @@ namespace Stats
 
             totalDamage = DecreaseDamageByArmor(targetStats, totalDamage);
 
-            Debug.Log("Total damage: " + totalDamage);
-
             //If equipments have ailment effects then do magical damage
-            // DoMagicalDamage(targetStats);
+            DoMagicalDamage(targetStats);
 
             targetStats.TakeDamage(totalDamage, Color.red);
         }
@@ -470,6 +468,7 @@ namespace Stats
 
         private bool TargetCanDodgeAttack(CharacterStats targetStats)
         {
+            if (targetStats is null) return false;
             int totalEvasion = targetStats.evasion.ModifiedValue + targetStats.agility.ModifiedValue;
 
             if (isShocked)

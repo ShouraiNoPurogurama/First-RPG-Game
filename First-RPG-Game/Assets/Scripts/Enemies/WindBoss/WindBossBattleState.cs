@@ -9,6 +9,7 @@ namespace Enemies.WindBoss
         private Transform _player;
         private int _moveDir;
         private bool playedTauntFX;
+        private bool firstDesperation = true;
 
         public WindBossBattleState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, WindBoss windBoss) :
             base(
@@ -32,8 +33,8 @@ namespace Enemies.WindBoss
 
             float playerDistance = _windBoss.IsPlayerDetected().distance;
             bool playerDetected = playerDistance != 0;
-            bool isLowHp = _windBoss.Stats.currentHp <= _windBoss.Stats.maxHp.ModifiedValue * 0.5;
-            bool isDesperate = _windBoss.Stats.currentHp <= _windBoss.Stats.maxHp.ModifiedValue * 0.25;
+            bool isLowHp = _windBoss.Stats.currentHp <= _windBoss.Stats.maxHp.ModifiedValue * 0.75;
+            bool isDesperate = _windBoss.Stats.currentHp <= _windBoss.Stats.maxHp.ModifiedValue * 0.35;
 
             if (isLowHp && !playedTauntFX)
             {
@@ -42,8 +43,9 @@ namespace Enemies.WindBoss
                 _windBoss.FX.IncreaseFallingLeavesFX();
             }
 
-            if (isDesperate)
+            if (isDesperate && firstDesperation)
             {
+                firstDesperation = false;
                 _windBoss.FX.IncreaseTauntFX();
                 _windBoss.FX.IncreaseFallingLeavesFX();
             }
@@ -63,12 +65,6 @@ namespace Enemies.WindBoss
                     StateMachine.ChangeState(_windBoss.DashState);
                     return;
                 }
-                
-                if (CanSummonMinions())
-                {
-                    StateMachine.ChangeState(_windBoss.SummonState);
-                    return;
-                }
 
                 if (playerDistance < _windBoss.attackDistance)
                 {
@@ -83,6 +79,12 @@ namespace Enemies.WindBoss
                         StateMachine.ChangeState(_windBoss.EnterSpinAttackState);
                         return;
                     }
+                }
+                
+                if (CanSummonMinions())
+                {
+                    StateMachine.ChangeState(_windBoss.SummonState);
+                    return;
                 }
             }
             

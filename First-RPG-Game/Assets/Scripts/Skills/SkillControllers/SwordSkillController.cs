@@ -159,6 +159,7 @@ namespace Skills.SkillControllers
                 
                 if (Vector2.Distance(_player.transform.position, transform.position) > _maxTravelDistance && !_wasStopped)
                 {
+                    Debug.Log("Stopped");
                     StopWhenSpinning();
                 }
 
