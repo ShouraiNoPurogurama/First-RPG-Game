@@ -15,4 +15,5 @@ MonoBehaviour:
   itemName: element red
   icon: {fileID: 1408612788, guid: be55291aae08d434db3da3b59db3ab4a, type: 3}
   itemType: 0
-  dropChance: 98.1
+  itemId: e5f3ca059273e4440b5d7d06c778a218
+  dropChance: 100

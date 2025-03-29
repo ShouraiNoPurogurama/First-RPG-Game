@@ -1,7 +1,7 @@
-﻿using Enemies;
+﻿using Skills;
 using UnityEngine;
 
-namespace Assets.Scripts.Enemies.DarkBoss
+namespace Enemies.DarkBoss
 {
     public class DarkBoss : Enemy
     {

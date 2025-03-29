@@ -1,39 +1,34 @@
-﻿using Enemies;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-public class GiantIdleState : GiantGroundedState
+﻿namespace Enemies.Giant
 {
-    public GiantIdleState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, Giant giant) : base(enemyBase, stateMachine, animBoolName, giant)
+    public class GiantIdleState : GiantGroundedState
     {
-    }
-
-    public override void Enter()
-    {
-        base.Enter();
-        StateTimer = Giant.idleTime;
-    }
-    public override void Update()
-    {
-        if (Giant.BattleState.PlayerInAttackRange() && Giant.BattleState.CanAttack())
+        public GiantIdleState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName, Giant giant) : base(enemyBase, stateMachine, animBoolName, giant)
         {
-            StateMachine.ChangeState(Giant.AttackState);
         }
 
-        base.Update();
+        public override void Enter()
+        {
+            base.Enter();
+            StateTimer = Giant.idleTime;
+        }
+        public override void Update()
+        {
+            if (Giant.BattleState.PlayerInAttackRange() && Giant.BattleState.CanAttack())
+            {
+                StateMachine.ChangeState(Giant.AttackState);
+            }
 
-        if (Giant.BattleState.PlayerInAttackRange() && !Giant.BattleState.CanAttack())
-        {
-            return;
+            base.Update();
+
+            if (Giant.BattleState.PlayerInAttackRange() && !Giant.BattleState.CanAttack())
+            {
+                return;
+            }
+            if (StateTimer <= 0)
+            {
+                StateMachine.ChangeState(Giant.MoveState);
+            }
         }
-        if (StateTimer <= 0)
-        {
-            StateMachine.ChangeState(Giant.MoveState);
-        }
+        public override void Exit() { base.Exit(); }
     }
-    public override void Exit() { base.Exit(); }
 }

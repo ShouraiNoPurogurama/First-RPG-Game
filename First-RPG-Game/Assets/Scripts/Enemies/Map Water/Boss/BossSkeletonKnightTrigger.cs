@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Enemies.Map_Water.Magic_Skeleton
+namespace Enemies.Map_Water.Boss
 {
     public class BossSkeletonKnightTrigger : MonoBehaviour
     {

@@ -323,7 +323,7 @@ namespace Inventory_and_Item
             }
             return null;
         }
-
+#if UNITY_EDITOR
         public void LoadData(GameData _data)
         {
             foreach (KeyValuePair<string, int> pair in _data.inventory)
@@ -376,8 +376,7 @@ namespace Inventory_and_Item
                 _data.equipmentId.Add(pair.Key.itemId);
             }
         }
-
-#if UNITY_EDITOR
+        
         private List<ItemData> GetItemDataBase()
         {
             List<ItemData> itemDataBase = new List<ItemData>();

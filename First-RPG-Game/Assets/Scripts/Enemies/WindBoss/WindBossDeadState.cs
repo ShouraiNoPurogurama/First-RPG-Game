@@ -27,11 +27,7 @@ namespace Enemies.WindBoss
         public override void Update()
         {
             base.Update();
-
-            if (StateTimer > 0)
-            {
-                Rb.linearVelocity = new Vector2(0, 10);
-            }
+            
         }
 
         public override void Exit()

@@ -1,80 +1,82 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundEffectLibrary : MonoBehaviour
+namespace Audio
 {
-    [SerializeField] private SoundEffectGroup[] soundEffectGroups;
-    private Dictionary<string, List<AudioClip>> soundDictionary;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-
-    private void Awake()
+    public class SoundEffectLibrary : MonoBehaviour
     {
-        InitializeDictionary();
-    }
+        [SerializeField] private SoundEffectGroup[] soundEffectGroups;
+        private Dictionary<string, List<AudioClip>> soundDictionary;
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-    private void InitializeDictionary()
-    {
-        soundDictionary = new Dictionary<string, List<AudioClip>>();
-        foreach (SoundEffectGroup soundEffectGroup in soundEffectGroups)
+        private void Awake()
         {
-            soundDictionary.Add(soundEffectGroup.name, soundEffectGroup.clips);
+            InitializeDictionary();
         }
-    }
 
-    public AudioClip GetRandomClip (string name)
-    {
-        if (soundDictionary.ContainsKey(name))
+        private void InitializeDictionary()
         {
-            List<AudioClip> clips = soundDictionary[name];
-            if (clips.Count == 0)
-            {
-                return null;
-            }
-            return clips[UnityEngine.Random.Range(0, clips.Count)];
-        }
-        return null;
-    }
-
-    public AudioClip[] GetClip(string name)
-    {
-        if (soundDictionary.ContainsKey(name))
-        {
+            soundDictionary = new Dictionary<string, List<AudioClip>>();
             foreach (SoundEffectGroup soundEffectGroup in soundEffectGroups)
             {
-                if (soundEffectGroup.name == name)
-                {
-                    return soundEffectGroup.clips.ToArray();
-                }
+                soundDictionary.Add(soundEffectGroup.name, soundEffectGroup.clips);
             }
-            //List<AudioClip> clips = soundDictionary[name];
-            //if (clips.Count == 0)
-            //{
-            //    return null;
-            //}
-            //return clips;
         }
-        return null;
-    }
 
-    public AudioClip GetClipWithIndex(string name, int index)
-    {
-        if (soundDictionary.ContainsKey(name))
+        public AudioClip GetRandomClip (string name)
         {
-            List<AudioClip> clips = soundDictionary[name];
-            if (clips.Count == 0)
+            if (soundDictionary.ContainsKey(name))
             {
-                return null;
+                List<AudioClip> clips = soundDictionary[name];
+                if (clips.Count == 0)
+                {
+                    return null;
+                }
+                return clips[UnityEngine.Random.Range(0, clips.Count)];
             }
-            return clips[index];
+            return null;
         }
-        return null;
-    }
-}
 
-[System.Serializable]
-public struct SoundEffectGroup
-{
-    public string name;
-    public List<AudioClip> clips;
+        public AudioClip[] GetClip(string name)
+        {
+            if (soundDictionary.ContainsKey(name))
+            {
+                foreach (SoundEffectGroup soundEffectGroup in soundEffectGroups)
+                {
+                    if (soundEffectGroup.name == name)
+                    {
+                        return soundEffectGroup.clips.ToArray();
+                    }
+                }
+                //List<AudioClip> clips = soundDictionary[name];
+                //if (clips.Count == 0)
+                //{
+                //    return null;
+                //}
+                //return clips;
+            }
+            return null;
+        }
+
+        public AudioClip GetClipWithIndex(string name, int index)
+        {
+            if (soundDictionary.ContainsKey(name))
+            {
+                List<AudioClip> clips = soundDictionary[name];
+                if (clips.Count == 0)
+                {
+                    return null;
+                }
+                return clips[index];
+            }
+            return null;
+        }
+    }
+
+    [System.Serializable]
+    public struct SoundEffectGroup
+    {
+        public string name;
+        public List<AudioClip> clips;
+    }
 }

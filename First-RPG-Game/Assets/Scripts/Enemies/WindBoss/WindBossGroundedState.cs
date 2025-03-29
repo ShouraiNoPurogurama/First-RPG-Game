@@ -25,8 +25,9 @@ namespace Enemies.WindBoss
         {
             base.Update();
             
-            if (StateTimer <= 0 && (WindBoss.IsPlayerDetected() || Vector2.Distance(WindBoss.transform.position, Player.position) < WindBoss.attackDistance + 5))
+            if (StateTimer <= 0 && (WindBoss.IsPlayerDetected() || Vector2.Distance(WindBoss.transform.position, Player.position) < WindBoss.attackDistance + 20))
             {
+                Debug.Log("WindBossGroundedState: Player detected, changing state to WindBossBattleState");
                 StateMachine.ChangeState(WindBoss.BattleState);
             }
         }

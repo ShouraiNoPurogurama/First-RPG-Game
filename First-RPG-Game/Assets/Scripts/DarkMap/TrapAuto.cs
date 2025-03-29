@@ -1,26 +1,23 @@
 ﻿using MainCharacter;
 using Stats;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
-
-public class TrapAuto : MonoBehaviour
+namespace DarkMap
 {
-    [SerializeField] private int damage;
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class TrapAuto : MonoBehaviour
     {
-        if (collision.GetComponent<Player>())
+        [SerializeField] private int damage;
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            CharacterStats targetStats = collision.GetComponent<CharacterStats>();
-            if (targetStats != null)
+            if (collision.GetComponent<Player>())
             {
-                targetStats.TakeDamage(damage);
+                CharacterStats targetStats = collision.GetComponent<CharacterStats>();
+                if (targetStats != null)
+                {
+                    targetStats.TakeDamage(damage);
+                }
             }
         }
-    }
     
+    }
 }
