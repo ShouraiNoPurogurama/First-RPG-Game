@@ -1,5 +1,4 @@
-using Enemies;
-using Enemies.Map_Water.Boss;
+﻿using Enemies;
 using MainCharacter;
 using UnityEngine;
 
@@ -51,7 +50,7 @@ public class BossSkeletonKnightBattleState : EnemyState
         if (PlayerInAttackRange())
         {
             enemy.SetZeroVelocity();
-            StateMachine.ChangeState(enemy.IdleState);
+            //StateMachine.ChangeState(enemy.IdleState);
             return;
         }
 
