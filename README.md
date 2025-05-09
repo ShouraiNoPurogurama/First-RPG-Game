@@ -1,5 +1,3 @@
-# My First RPG Game
-
 A Unity-based RPG game featuring multiple maps, character progression, and interactive gameplay elements.
 
 ## 🎮 Features
